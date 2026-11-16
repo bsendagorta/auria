@@ -1,0 +1,89 @@
+{
+ "ts": "2026-11-16T23:13:55+01:00",
+ "salidas_desde_8": 35,
+ "salidas_anio": 5732,
+ "actuaciones": [
+  {
+   "tipo": "SANEADO DE CONSTRUCCIONES",
+   "familia": "METEO_ASISTENCIA",
+   "ubicacion": "BARAKALDO",
+   "zona": "CL Lope García de Salazar",
+   "parque": "URIOSTE",
+   "parque_nombre": "Urioste (Ortuella)",
+   "vehiculos": [
+    {
+     "tipo": "Furgón utiles varios",
+     "estado": "EN_SINIESTRO",
+     "estado_txt": "Vehículo parado en siniestro"
+    }
+   ],
+   "n_vehiculos": 1,
+   "estado": "EN_SINIESTRO"
+  }
+ ],
+ "por_parque": {
+  "URIOSTE": {
+   "actuaciones": 1,
+   "vehiculos": 1,
+   "en_ruta": 0,
+   "en_siniestro": 1,
+   "regresando": 0
+  },
+  "ARTAZA": {
+   "actuaciones": 0,
+   "vehiculos": 0,
+   "en_ruta": 0,
+   "en_siniestro": 0,
+   "regresando": 0
+  },
+  "DERIO": {
+   "actuaciones": 0,
+   "vehiculos": 0,
+   "en_ruta": 0,
+   "en_siniestro": 0,
+   "regresando": 0
+  },
+  "BASAURI": {
+   "actuaciones": 0,
+   "vehiculos": 0,
+   "en_ruta": 0,
+   "en_siniestro": 0,
+   "regresando": 0
+  },
+  "IURRETA": {
+   "actuaciones": 0,
+   "vehiculos": 0,
+   "en_ruta": 0,
+   "en_siniestro": 0,
+   "regresando": 0
+  },
+  "ARRATZU": {
+   "actuaciones": 0,
+   "vehiculos": 0,
+   "en_ruta": 0,
+   "en_siniestro": 0,
+   "regresando": 0
+  },
+  "MARKINA": {
+   "actuaciones": 0,
+   "vehiculos": 0,
+   "en_ruta": 0,
+   "en_siniestro": 0,
+   "regresando": 0
+  },
+  "ZALLA": {
+   "actuaciones": 0,
+   "vehiculos": 0,
+   "en_ruta": 0,
+   "en_siniestro": 0,
+   "regresando": 0
+  },
+  "SIN_PARQUE": {
+   "actuaciones": 0,
+   "vehiculos": 0,
+   "en_ruta": 0,
+   "en_siniestro": 0,
+   "regresando": 0
+  }
+ }
+}
