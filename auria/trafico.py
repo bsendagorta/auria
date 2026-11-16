@@ -12,6 +12,9 @@ from . import config
 from .familias import normaliza
 from .parques import PARQUES, parque_mas_cercano
 
+BILBAO_LAT = (43.235, 43.290)     # caja aproximada del término municipal de Bilbao
+BILBAO_LON = (-2.985, -2.880)
+
 
 def descargar(dia: date = None, max_paginas: int = 40) -> pd.DataFrame:
     dia = dia or date.today()
@@ -38,6 +41,11 @@ def por_parque(df: pd.DataFrame) -> pd.DataFrame:
     d["lat"] = pd.to_numeric(d["latitude"], errors="coerce")
     d["lon"] = pd.to_numeric(d["longitude"], errors="coerce")
     d = d[(d["lat"] > 42.9) & (d["lat"] < 43.5) & (d["lon"] < -2.3) & (d["lon"] > -3.5)]
+    if "incidenceId" in d:
+        d = d.drop_duplicates("incidenceId")            # la API repite incidencias entre páginas
+    # Bilbao tiene servicio de bomberos propio y publica cientos de obras urbanas: se excluye su casco
+    bilbao = d["lat"].between(*BILBAO_LAT) & d["lon"].between(*BILBAO_LON)
+    d = d[~bilbao]
     if d.empty:
         return vacio
     d["parque"] = [parque_mas_cercano(a, b) for a, b in zip(d["lat"], d["lon"])]

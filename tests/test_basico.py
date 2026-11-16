@@ -78,9 +78,12 @@ def test_trafico():
         {"province": "Gipuzkoa", "incidenceType": "Accidente", "cause": "Alcance", "latitude": "43.30",
          "longitude": "-2.00", "incidenceLevel": ""},
         {"province": "BIZKAIA", "incidenceType": "Obra", "cause": "Obra", "latitude": "0.0", "longitude": "0.0"},
+        {"province": "Bizkaia", "incidenceType": "Obra", "cause": "Obra", "latitude": "43.258",
+         "longitude": "-2.941"},  # Bilbao: excluido
     ])
     t = trafico.por_parque(df)
     assert t.loc["URIOSTE", "accidentes"] == 1 and t["accidentes"].sum() == 1
+    assert t["obras"].sum() == 0
 
 
 if __name__ == "__main__":
