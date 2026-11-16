@@ -11,7 +11,18 @@ import sys
 import time
 from datetime import datetime
 
+import json
+
+from . import config
+from .directo import enriquecer
 from .recolector_online import TZ, capturar
+
+
+def publicar_directo(datos):
+    """Deja la situación en directo en prediccion/directo.json (lo lee el panel)."""
+    d = enriquecer(datos)
+    (config.DIR_PREDICCION / "directo.json").write_text(json.dumps(d, ensure_ascii=False, indent=1),
+                                                       encoding="utf-8")
 
 
 def subir(mensaje):
@@ -32,7 +43,7 @@ def main(argv=None):
     while time.monotonic() < fin:
         t0 = time.monotonic()
         try:
-            capturar()
+            publicar_directo(capturar())
             ok += 1
         except Exception:
             fallos += 1          # ya queda registrado en capturas_*.csv con ok=0

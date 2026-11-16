@@ -1,5 +1,5 @@
 # Lee bizkaia.eus cada minuto, sin interrupción: cada hora arranca un tramo de 57 min que captura
-# cada 60 s y sube los datos cada 10 min. (Repositorio público = minutos de Actions ilimitados.)
+# cada 60 s y sube los datos cada 2 min (y prediccion/directo.json para el panel). (Repositorio público = minutos de Actions ilimitados.)
 name: Recolector cada minuto
 on:
   schedule:
@@ -25,4 +25,4 @@ jobs:
       - name: Capturar cada minuto durante 57 min
         env:
           AURIA_ORIGEN: github-min
-        run: python -m auria.bucle --minutos 57 --intervalo 60 --subir-cada 10
+        run: python -m auria.bucle --minutos 57 --intervalo 60 --subir-cada 2

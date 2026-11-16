@@ -83,12 +83,28 @@ FAMILIA_ICONO = {"INCENDIO_URBANO": "🔥", "INCENDIO_FORESTAL_EXTERIOR": "🌲"
                  "GAS_MMPP": "☣️", "OTRAS_ASISTENCIAS": "🛠️", "OTROS": "•"}
 
 
-@st.cache_data(ttl=55, show_spinner=False)
+@st.cache_data(ttl=50, show_spinner=False)
 def leer_directo():
+    """Situación en directo publicada por el recolector de GitHub cada minuto (prediccion/directo.json).
+    Si no está disponible (o en local), se intenta leer bizkaia.eus directamente."""
     try:
-        return directo.leer(), None
+        repo = st.secrets.get("GITHUB_REPO", REPO_POR_DEFECTO)
+    except Exception:
+        repo = REPO_POR_DEFECTO
+    try:
+        r = requests.get(f"https://raw.githubusercontent.com/{repo}/main/prediccion/directo.json",
+                         params={"t": int(datetime.now().timestamp() // 50)}, timeout=10)
+        r.raise_for_status()
+        return r.json(), None
     except Exception as e:
-        return None, str(e)
+        err = str(e)
+    try:
+        from auria import recolector_online
+        import auria.config as cfg
+        html = requests.get(cfg.URL_SALIDAS_ONLINE, timeout=6, headers={"User-Agent": cfg.USER_AGENT}).text
+        return directo.enriquecer(recolector_online.parsear(html)), None
+    except Exception as e2:
+        return None, f"{err} / {e2}"
 
 
 @st.fragment(run_every=60)
@@ -101,7 +117,11 @@ def seccion_directo():
         if act:
             st.dataframe(pd.DataFrame(act), hide_index=True, width="stretch")
         return
-    hora = datetime.fromisoformat(vivo["ts"]).strftime("%H:%M:%S")
+    ts = datetime.fromisoformat(vivo["ts"])
+    hora = ts.strftime("%H:%M:%S")
+    retraso = (datetime.now(ts.tzinfo) - ts).total_seconds() / 60
+    if retraso > 10:
+        st.warning(f"La última lectura en directo es de hace {retraso:.0f} min (el recolector puede estar parado).")
     a, b, c, d = st.columns(4)
     a.metric("Actuaciones en curso", len(vivo["actuaciones"]))
     b.metric("Vehículos fuera", sum(x["n_vehiculos"] for x in vivo["actuaciones"]))
@@ -122,7 +142,8 @@ def seccion_directo():
         st.dataframe(pd.DataFrame(filas), hide_index=True, width="stretch")
     else:
         st.success("Sin actuaciones en curso en este momento.")
-    st.caption(f"Leído de bizkaia.eus a las {hora} · se actualiza cada minuto. El parque es el de la zona del "
+    st.caption(f"Leído de bizkaia.eus a las {hora} · el recolector lee cada minuto y el panel se refresca solo. "
+               "El parque es el de la zona del "
                "municipio: la web no indica de qué parque sale cada vehículo.")
 
 
