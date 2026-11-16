@@ -30,5 +30,6 @@ jobs:
       - name: Predicción próximas 6 horas
         run: python -m auria.prevision
       - name: Subir datos
+        if: always()
         run: |
           scripts/subir_datos.sh "datos: ciclo $(date -u +%Y-%m-%dT%H:%MZ)"

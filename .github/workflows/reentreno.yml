@@ -30,7 +30,9 @@ jobs:
       - name: Histórico y tasas base (lunes, primera vez o forzado)
         run: |
           if [ "$(date -u +%u)" = "1" ] || [ ! -f datos/modelo/base_horaria.csv ] || [ "${{ github.event.inputs.historico }}" = "true" ]; then
-            python -m auria.historico
+            # Open Data Bizkaia no responde desde los servidores de GitHub (bloqueo de red):
+            # si falla, se conserva la tasa base que ya está en el repositorio.
+            python -m auria.historico || echo "::warning::No se pudo descargar el histórico; se mantiene la tasa base actual"
           else
             echo "No es lunes: se mantiene la tasa base"
           fi
@@ -39,5 +41,6 @@ jobs:
       - name: Resumen de capturas
         run: python -m auria.resumen_online || true
       - name: Subir modelo y métricas
+        if: always()
         run: |
           scripts/subir_datos.sh "modelo: reentreno $(date -u +%Y-%m-%d)"
