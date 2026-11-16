@@ -1,8 +1,25 @@
 {
- "ts": "2026-11-17T00:13:08+01:00",
+ "ts": "2026-11-17T00:15:08+01:00",
  "salidas_desde_8": 38,
  "salidas_anio": 5732,
  "actuaciones": [
+  {
+   "tipo": "SANEADO DE CONSTRUCCIONES",
+   "familia": "METEO_ASISTENCIA",
+   "ubicacion": "PORTUGALETE",
+   "zona": "AV Ballonti",
+   "parque": "URIOSTE",
+   "parque_nombre": "Urioste (Ortuella)",
+   "vehiculos": [
+    {
+     "tipo": "Furgón utiles varios",
+     "estado": "PROPUESTO",
+     "estado_txt": "Vehículo propuesto"
+    }
+   ],
+   "n_vehiculos": 1,
+   "estado": "PROPUESTO"
+  },
   {
    "tipo": "SANEADO DE CONSTRUCCIONES",
    "familia": "METEO_ASISTENCIA",
@@ -50,9 +67,9 @@
  ],
  "por_parque": {
   "URIOSTE": {
-   "actuaciones": 1,
-   "vehiculos": 1,
-   "propuesto": 0,
+   "actuaciones": 2,
+   "vehiculos": 2,
+   "propuesto": 1,
    "en_ruta": 0,
    "en_siniestro": 1,
    "regresando": 0
