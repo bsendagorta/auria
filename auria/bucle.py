@@ -35,10 +35,12 @@ def main(argv=None):
     ap.add_argument("--minutos", type=float, default=57)
     ap.add_argument("--intervalo", type=int, default=60, help="segundos entre capturas")
     ap.add_argument("--subir-cada", type=float, default=10, help="minutos entre subidas a git (0 = no subir)")
+    ap.add_argument("--prevision-cada", type=float, default=0, help="minutos entre predicciones (0 = no)")
     a = ap.parse_args(argv)
 
     fin = time.monotonic() + a.minutos * 60
     ultima_subida = time.monotonic()
+    ultima_prevision = None
     ok = fallos = 0
     while time.monotonic() < fin:
         t0 = time.monotonic()
@@ -47,6 +49,15 @@ def main(argv=None):
             ok += 1
         except Exception:
             fallos += 1          # ya queda registrado en capturas_*.csv con ok=0
+        if a.prevision_cada and (ultima_prevision is None
+                                 or time.monotonic() - ultima_prevision >= a.prevision_cada * 60):
+            try:
+                from .prevision import predecir
+                predecir(6)
+                print("predicción actualizada", flush=True)
+            except BaseException as e:      # incluye SystemExit si falta la tasa base
+                print(f"Aviso predicción: {e}", flush=True)
+            ultima_prevision = time.monotonic()
         if a.subir_cada and time.monotonic() - ultima_subida >= a.subir_cada * 60:
             subir(f"datos: capturas por minuto hasta {datetime.now(TZ):%H:%M}")
             ultima_subida = time.monotonic()
