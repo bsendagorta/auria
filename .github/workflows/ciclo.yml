@@ -1,9 +1,9 @@
-# Cada 30 min: captura las salidas en directo y recalcula la predicción de las próximas 6 horas.
-# (Repositorio privado + plan gratuito = 2.000 min/mes. Si el repo es público, puedes bajar a */10.)
+# Cada 15 min: recalcula la predicción de las próximas 6 horas (y hace una captura de respaldo).
+# La captura continua, cada minuto, la hace la tarea "Recolector cada minuto".
 name: Ciclo AURIA (captura + predicción)
 on:
   schedule:
-    - cron: "7,37 * * * *"
+    - cron: "7,22,37,52 * * * *"
   workflow_dispatch:
 concurrency:
   group: datos-auria

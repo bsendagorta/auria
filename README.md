@@ -5,11 +5,11 @@ Predice, hora a hora y para las próximas 6 horas, cuántas salidas tendrá cada
 ## Cómo funciona (coste cero)
 
 ```
-GitHub Actions ─ cada 30 min ─▶ captura bizkaia.eus (salidas activas + contadores)
-                              ─▶ predicción 6 h por parque ─▶ prediccion/ultima.json
+GitHub Actions ─ cada minuto ──▶ captura bizkaia.eus (salidas activas, vehículos, contadores)
+               ─ cada 15 min ─▶ predicción 6 h por parque ─▶ prediccion/ultima.json
                ─ cada noche ───▶ reentrena LightGBM horario (solo se activa si mejora)
                ─ lunes ────────▶ descarga histórico Open Data Bizkaia y recalcula tasas base
-Mac (launchd)  ─ cada 5 min ──▶ captura más densa (datos/online/mac, opcional)
+Mac (launchd)  ─ cada 5 min ──▶ captura de respaldo local (datos/online/mac, opcional)
 Streamlit Cloud ─────────────▶ panel con mapa, semáforo por parque y factores
                 ─ cada minuto ─▶ lee bizkaia.eus en directo: actuaciones en curso, parque y estado de cada vehículo
 ```
