@@ -43,6 +43,8 @@ class _Parser(HTMLParser):
         self.tarjetas = []
         self._tarjeta = None
         self._etiqueta = None
+        self._panel = 0            # profundidad dentro del desplegable "Conocer todos los vehículos"
+        self._li_panel = False
 
     def handle_starttag(self, tag, attrs):
         a = dict(attrs)
@@ -53,13 +55,26 @@ class _Parser(HTMLParser):
             if tag == "ul":
                 self.en_lista += 1
             if tag == "div" and "card-body" in (a.get("class") or ""):
-                self._tarjeta = {"tipo": "", "ubicacion": "", "zona": "", "vehiculos": []}
+                self._tarjeta = {"tipo": "", "ubicacion": "", "zona": "", "vehiculos": [], "panel": []}
                 self.tarjetas.append(self._tarjeta)
                 self._etiqueta = None
+            if tag == "div":
+                if self._panel:
+                    self._panel += 1
+                elif (a.get("id") or "").startswith("panel_vehiculos"):
+                    self._panel = 1
+            if self._panel and tag == "li":
+                self._li_panel = True
+                if self._tarjeta is not None:
+                    self._tarjeta["panel"].append("")
 
     def handle_endtag(self, tag):
         if self.en_lista and tag == "ul":
             self.en_lista -= 1
+        if self._panel and tag == "div":
+            self._panel -= 1
+        if tag == "li":
+            self._li_panel = False
 
     def handle_data(self, data):
         t = " ".join(data.split())
@@ -68,7 +83,13 @@ class _Parser(HTMLParser):
         self.textos.append(t)
         if not (self.en_lista and self._tarjeta is not None):
             return
+        if self._panel:                        # vehículos del desplegable
+            if self._li_panel and self._tarjeta["panel"]:
+                self._tarjeta["panel"][-1] = (self._tarjeta["panel"][-1] + " " + t).strip()
+            return
         low = t.lower()
+        if low.startswith("conocer todos"):
+            return
         if low.startswith("tipo de siniestro"):
             self._etiqueta = "tipo"
         elif low.startswith("ubicaci"):
@@ -92,6 +113,12 @@ def parsear(html: str) -> dict:
     if not (m8 and ma):
         raise ValueError("No se encontraron los contadores: la web puede haber cambiado")
     tarjetas = [t for t in p.tarjetas if t["tipo"]]
+    for t in tarjetas:
+        panel = [v for v in t.pop("panel") if v]
+        if panel:                              # "Varios vehículos implicados" -> lista real del desplegable
+            t["vehiculos"] = panel
+        else:
+            t["vehiculos"] = [v for v in t["vehiculos"] if not v.lower().startswith("varios veh")]
     return {"desde_8": int(m8.group(1)), "anio": int(ma.group(1)), "activas": tarjetas}
 
 

@@ -132,7 +132,8 @@ def seccion_directo():
         st.markdown("**Zonas de parque con actuaciones:** " + " · ".join(
             f"{directo.PARQUES.get(p, {}).get('nombre', 'Fuera de zona')} "
             f"({v['actuaciones']} act., {v['vehiculos']} veh.: "
-            f"{v['en_ruta']} en ruta, {v['en_siniestro']} en siniestro, {v['regresando']} regresando)"
+            f"{v.get('propuesto', 0)} propuestos, {v['en_ruta']} en ruta, {v['en_siniestro']} en siniestro, "
+            f"{v['regresando']} regresando)"
             for p, v in ocupados))
         filas = [{
             "": FAMILIA_ICONO.get(x["familia"], "•"), "siniestro": x["tipo"], "municipio": x["ubicacion"],

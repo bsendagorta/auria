@@ -4,6 +4,9 @@ La web lista, para cada actuación en curso, el tipo, el municipio, la calle y l
   "Bomba urbana pesada (Vehículo va a un siniestro)"      -> EN_RUTA
   "Furgón utiles varios (Vehículo parado en siniestro)"  -> EN_SINIESTRO
   "Bomba urbana pesada (Vehículo volviendo de un sin.)"  -> REGRESANDO
+  "Auto escala articulada (Vehículo propuesto)"           -> PROPUESTO (asignado, aún sin salir)
+Si hay varios, la tarjeta dice "Varios vehículos implicados" y la lista va en el desplegable
+"Conocer todos los vehículos" (se lee del HTML aunque esté plegado).
 El parque se deduce del municipio (zona oficial de cada parque); la web no dice de qué parque sale cada vehículo.
 
 Uso: python -m auria.directo          (imprime la situación actual)
@@ -17,11 +20,12 @@ from .parques import PARQUES, SIN_PARQUE, parque_de_nombre
 
 TZ = ZoneInfo("Europe/Madrid")
 ESTADOS = {
+    "PROPUESTO": ("propuesto", "asignado"),
     "EN_RUTA": ("va a", "en camino", "salida"),
     "EN_SINIESTRO": ("parado en", "en siniestro", "trabajando"),
     "REGRESANDO": ("volviendo", "regresa", "vuelta"),
 }
-ESTADO_TXT = {"EN_RUTA": "🚨 en ruta", "EN_SINIESTRO": "🔥 en el siniestro", "REGRESANDO": "↩️ regresando",
+ESTADO_TXT = {"PROPUESTO": "📋 propuesto", "EN_RUTA": "🚨 en ruta", "EN_SINIESTRO": "🔥 en el siniestro", "REGRESANDO": "↩️ regresando",
               "OTRO": "· otro"}
 _RX = re.compile(r"^(.*?)\s*\((.*)\)\s*$")
 
@@ -51,14 +55,15 @@ def enriquecer(datos: dict) -> dict:
         mias = [a for a in acts if a["parque"] == p]
         vs = [v for a in mias for v in a["vehiculos"]]
         por_parque[p] = {"actuaciones": len(mias), "vehiculos": len(vs),
-                         **{k.lower(): sum(v["estado"] == k for v in vs) for k in ("EN_RUTA", "EN_SINIESTRO", "REGRESANDO")}}
+                         **{k.lower(): sum(v["estado"] == k for v in vs)
+                            for k in ("PROPUESTO", "EN_RUTA", "EN_SINIESTRO", "REGRESANDO")}}
     return {"ts": datetime.now(TZ).isoformat(timespec="seconds"), "salidas_desde_8": datos["desde_8"],
             "salidas_anio": datos["anio"], "actuaciones": acts, "por_parque": por_parque}
 
 
 def _estado_actuacion(vs):
     est = {v["estado"] for v in vs}
-    for k in ("EN_RUTA", "EN_SINIESTRO", "REGRESANDO"):
+    for k in ("EN_RUTA", "EN_SINIESTRO", "PROPUESTO", "REGRESANDO"):
         if k in est:
             return k
     return "OTRO"

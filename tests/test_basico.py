@@ -50,15 +50,18 @@ def test_historico():
 def test_recolector_y_resumen():
     html = (FIX / "pagina_salidas.html").read_text(encoding="utf-8")
     d = R.parsear(html)
-    assert d["desde_8"] == 34 and d["anio"] == 5732 and len(d["activas"]) == 2
+    assert d["desde_8"] == 34 and d["anio"] == 5732 and len(d["activas"]) == 3
     assert d["activas"][1]["zona"] == "AV Algorta"
+    assert d["activas"][2]["vehiculos"] == ["Transporte Material y Personal (Vehículo propuesto)",
+                                            "Auto escala articulada (Vehículo propuesto)"], d["activas"][2]
+    assert d["activas"][2]["zona"] == "CL El Carmen"
     with tempfile.TemporaryDirectory() as tmp:
         t0 = datetime(2026, 11, 15, 23, 50, tzinfo=R.TZ)
         for i, suma in enumerate([0, 3, 5, 9]):
             dd = {**d, "anio": d["anio"] + suma}
             R.guardar(dd, t0 + timedelta(minutes=10 * i), R.carpeta_origen(tmp))
         _, horario, acts = S.resumir(tmp, guardar=False)
-        assert len(acts) == 2, "la misma actuación a caballo de medianoche no se duplica"
+        assert len(acts) == 3, "la misma actuación a caballo de medianoche no se duplica"
         assert set(acts["parque"]) == {"URIOSTE", "ARTAZA"}
         assert horario["salidas"].sum() == 9
 
@@ -68,8 +71,10 @@ def test_directo():
     assert directo.vehiculo("Autoescala (Vehículo va a un siniestro)")["estado"] == "EN_RUTA"
     assert directo.vehiculo("Furgón utiles varios (Vehículo parado en siniestro)")["estado"] == "EN_SINIESTRO"
     d = directo.leer((FIX / "pagina_salidas.html").read_text(encoding="utf-8"))
-    assert [a["parque"] for a in d["actuaciones"]] == ["URIOSTE", "ARTAZA"]
+    assert [a["parque"] for a in d["actuaciones"]] == ["URIOSTE", "ARTAZA", "ARTAZA"]
     assert d["por_parque"]["URIOSTE"]["en_siniestro"] == 1
+    assert d["por_parque"]["ARTAZA"]["propuesto"] == 2
+    assert directo.vehiculo("Auto escala articulada (Vehículo propuesto)")["estado"] == "PROPUESTO"
 
 
 def test_reglas_y_calendario():
