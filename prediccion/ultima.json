@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-16T23:14+01:00",
+ "generado": "2026-11-16T23:15+01:00",
  "horizonte_h": 6,
  "modelo": "base+reglas",
  "fuentes_ok": {
@@ -10,7 +10,7 @@
   "salidas_esperadas_6h": 5.2,
   "normal_6h": 3.6,
   "contador": {
-   "ts": "2026-11-16T23:14:57+01:00",
+   "ts": "2026-11-16T23:15:54+01:00",
    "desde_8": 35,
    "anio": 5732
   }
@@ -32,8 +32,8 @@
     "Rachas fuertes (80-100 km/h)"
    ],
    "directo": {
-    "activas": 0,
-    "nuevas_1h": 0
+    "activas": 1,
+    "nuevas_1h": 1
    },
    "horas": [
     {
@@ -1936,6 +1936,13 @@
    "zona": "CL Lope García de Salazar",
    "vehiculos": "Furgón utiles varios (Vehículo parado en siniestro)",
    "parque": "URIOSTE"
+  },
+  {
+   "tipo": "SANEADO DE CONSTRUCCIONES",
+   "ubicacion": "GETXO",
+   "zona": "CL El Carmen",
+   "vehiculos": "Transporte Material y Personal (Vehículo propuesto)",
+   "parque": "ARTAZA"
   }
  ],
  "niveles": {

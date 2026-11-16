@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-16T23:13:55+01:00",
+ "ts": "2026-11-16T23:17:56+01:00",
  "salidas_desde_8": 35,
  "salidas_anio": 5732,
  "actuaciones": [
@@ -19,6 +19,23 @@
    ],
    "n_vehiculos": 1,
    "estado": "EN_SINIESTRO"
+  },
+  {
+   "tipo": "SANEADO DE CONSTRUCCIONES",
+   "familia": "METEO_ASISTENCIA",
+   "ubicacion": "GETXO",
+   "zona": "CL El Carmen",
+   "parque": "ARTAZA",
+   "parque_nombre": "Artaza (Leioa)",
+   "vehiculos": [
+    {
+     "tipo": "Transporte Material y Personal",
+     "estado": "OTRO",
+     "estado_txt": "Vehículo propuesto"
+    }
+   ],
+   "n_vehiculos": 1,
+   "estado": "OTRO"
   }
  ],
  "por_parque": {
@@ -30,8 +47,8 @@
    "regresando": 0
   },
   "ARTAZA": {
-   "actuaciones": 0,
-   "vehiculos": 0,
+   "actuaciones": 1,
+   "vehiculos": 1,
    "en_ruta": 0,
    "en_siniestro": 0,
    "regresando": 0
