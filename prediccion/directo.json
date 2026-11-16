@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-16T23:34:51+01:00",
+ "ts": "2026-11-16T23:37:50+01:00",
  "salidas_desde_8": 36,
  "salidas_anio": 5732,
  "actuaciones": [
@@ -13,12 +13,12 @@
    "vehiculos": [
     {
      "tipo": "Furgón utiles varios",
-     "estado": "EN_SINIESTRO",
-     "estado_txt": "Vehículo parado en siniestro"
+     "estado": "REGRESANDO",
+     "estado_txt": "Vehículo volviendo de un sin."
     }
    ],
    "n_vehiculos": 1,
-   "estado": "EN_SINIESTRO"
+   "estado": "REGRESANDO"
   },
   {
    "tipo": "SANEADO DE CONSTRUCCIONES",
@@ -54,8 +54,8 @@
    "vehiculos": 1,
    "propuesto": 0,
    "en_ruta": 0,
-   "en_siniestro": 1,
-   "regresando": 0
+   "en_siniestro": 0,
+   "regresando": 1
   },
   "ARTAZA": {
    "actuaciones": 1,
