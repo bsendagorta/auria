@@ -1,6 +1,6 @@
 {
- "ts": "2026-11-16T23:17:56+01:00",
- "salidas_desde_8": 35,
+ "ts": "2026-11-16T23:20:56+01:00",
+ "salidas_desde_8": 36,
  "salidas_anio": 5732,
  "actuaciones": [
   {
@@ -29,9 +29,9 @@
    "parque_nombre": "Artaza (Leioa)",
    "vehiculos": [
     {
-     "tipo": "Transporte Material y Personal",
+     "tipo": "Varios vehículos implicados",
      "estado": "OTRO",
-     "estado_txt": "Vehículo propuesto"
+     "estado_txt": ""
     }
    ],
    "n_vehiculos": 1,
