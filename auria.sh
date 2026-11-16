@@ -5,6 +5,7 @@
 #   modelo      entrena y valida los modelos (nivel Bizkaia y municipio)
 #   todo        las tres anteriores en orden
 #   captura     hace una captura de las salidas en directo ahora
+#   directo     muestra las actuaciones en curso con parque y estado de cada vehículo
 #   resumen     resume lo capturado en directo (series diarias/horarias)
 #   estado      ¿está funcionando el recolector?
 #   prevision   predicción de las próximas 6 horas por parque (prediccion/ultima.json)
@@ -25,9 +26,10 @@ case "$1" in
   captura)   AURIA_ORIGEN=mac $PY -m auria.recolector_online ;;
   resumen)   $PY -m auria.resumen_online ;;
   prevision) $PY -m auria.prevision ;;
+  directo)   $PY -m auria.directo ;;
   entrenar)  $PY -m auria.horario ;;
   panel)     .venv/bin/streamlit run streamlit_app.py ;;
   estado)    launchctl print "gui/$(id -u)/eus.auria.recolector" 2>/dev/null | grep -E "state|last exit" || echo "Recolector no instalado"
              echo "--- últimas líneas del log ---"; tail -n 5 datos/online/recolector.log 2>/dev/null || true ;;
-  *)         sed -n '2,13p' "$0" ;;
+  *)         sed -n '2,14p' "$0" ;;
 esac

@@ -56,19 +56,69 @@ if datos is None:
     st.stop()
 
 gen = datetime.fromisoformat(datos["generado"])
-c1, c2, c3, c4 = st.columns(4)
+c1, c2 = st.columns(2)
 c1.metric("Actualizado", gen.strftime("%d/%m %H:%M"))
 biz = datos["bizkaia"]
 c2.metric("Salidas esperadas (6 h, Bizkaia)", biz["salidas_esperadas_6h"],
           f"{biz['salidas_esperadas_6h'] - biz['normal_6h']:+.1f} vs normal", delta_color="inverse")
-if biz.get("contador"):
-    c3.metric("Salidas hoy desde las 08:00", biz["contador"]["desde_8"])
-    c4.metric("Salidas este año", f"{biz['contador']['anio']:,}".replace(",", "."))
 avisos = [k for k, ok in datos.get("fuentes_ok", {}).items() if not ok]
 st.caption(f"Modelo: **{datos['modelo']}** · fuente: {origen}"
            + (f" · ⚠️ sin datos de: {', '.join(avisos)}" if avisos else ""))
 
 parques = datos["parques"]
+
+# --- en directo (se refresca solo cada minuto, leyendo bizkaia.eus) -------------------------
+from auria import directo  # noqa: E402
+
+FAMILIA_ICONO = {"INCENDIO_URBANO": "🔥", "INCENDIO_FORESTAL_EXTERIOR": "🌲", "INCENDIO_INDUSTRIAL": "🏭",
+                 "TRAFICO": "🚗", "RESCATE_SALVAMENTO": "🆘", "METEO_ASISTENCIA": "🌬️", "ABEJAS_AVISPAS": "🐝",
+                 "GAS_MMPP": "☣️", "OTRAS_ASISTENCIAS": "🛠️", "OTROS": "•"}
+
+
+@st.cache_data(ttl=55, show_spinner=False)
+def leer_directo():
+    try:
+        return directo.leer(), None
+    except Exception as e:
+        return None, str(e)
+
+
+@st.fragment(run_every=60)
+def seccion_directo():
+    vivo, err = leer_directo()
+    st.subheader("🔴 En directo")
+    if vivo is None:
+        st.warning(f"No se pudo leer bizkaia.eus ahora ({err}). Se muestra la última captura del recolector.")
+        act = datos.get("activas_ahora") or []
+        if act:
+            st.dataframe(pd.DataFrame(act), hide_index=True, width="stretch")
+        return
+    hora = datetime.fromisoformat(vivo["ts"]).strftime("%H:%M:%S")
+    a, b, c, d = st.columns(4)
+    a.metric("Actuaciones en curso", len(vivo["actuaciones"]))
+    b.metric("Vehículos fuera", sum(x["n_vehiculos"] for x in vivo["actuaciones"]))
+    c.metric("Salidas hoy desde las 08:00", vivo["salidas_desde_8"])
+    d.metric("Salidas este año", f"{vivo['salidas_anio']:,}".replace(",", "."))
+    ocupados = [(p, v) for p, v in vivo["por_parque"].items() if v["actuaciones"]]
+    if ocupados:
+        st.markdown("**Zonas de parque con actuaciones:** " + " · ".join(
+            f"{directo.PARQUES.get(p, {}).get('nombre', 'Fuera de zona')} "
+            f"({v['actuaciones']} act., {v['vehiculos']} veh.: "
+            f"{v['en_ruta']} en ruta, {v['en_siniestro']} en siniestro, {v['regresando']} regresando)"
+            for p, v in ocupados))
+        filas = [{
+            "": FAMILIA_ICONO.get(x["familia"], "•"), "siniestro": x["tipo"], "municipio": x["ubicacion"],
+            "zona": x["zona"], "parque (zona)": x["parque_nombre"],
+            "vehículos": "\n".join(f"{v['tipo']} — {directo.ESTADO_TXT[v['estado']]}" for v in x["vehiculos"]),
+        } for x in vivo["actuaciones"]]
+        st.dataframe(pd.DataFrame(filas), hide_index=True, width="stretch")
+    else:
+        st.success("Sin actuaciones en curso en este momento.")
+    st.caption(f"Leído de bizkaia.eus a las {hora} · se actualiza cada minuto. El parque es el de la zona del "
+               "municipio: la web no indica de qué parque sale cada vehículo.")
+
+
+seccion_directo()
 
 # --- mapa
 df_mapa = pd.DataFrame([{
@@ -116,14 +166,6 @@ h = pd.DataFrame([{
 } for x in p["horas"]])
 st.line_chart(h.set_index("hora")[["esperadas", "normal"]])
 st.dataframe(h, hide_index=True, width="stretch")
-
-# --- en directo
-st.subheader("Actuaciones activas ahora (bizkaia.eus)")
-act = datos.get("activas_ahora") or []
-if act:
-    st.dataframe(pd.DataFrame(act), hide_index=True, width="stretch")
-else:
-    st.caption("Ninguna actuación activa en la última captura (o el recolector aún no tiene datos).")
 
 with st.expander("Cómo se calcula"):
     st.markdown("""

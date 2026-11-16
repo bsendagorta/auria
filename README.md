@@ -11,6 +11,7 @@ GitHub Actions ─ cada 30 min ─▶ captura bizkaia.eus (salidas activas + con
                ─ lunes ────────▶ descarga histórico Open Data Bizkaia y recalcula tasas base
 Mac (launchd)  ─ cada 5 min ──▶ captura más densa (datos/online/mac, opcional)
 Streamlit Cloud ─────────────▶ panel con mapa, semáforo por parque y factores
+                ─ cada minuto ─▶ lee bizkaia.eus en directo: actuaciones en curso, parque y estado de cada vehículo
 ```
 
 **Predicción** = tasa normal del parque para ese mes y franja horaria (histórico 2023-hoy) × multiplicadores:
@@ -40,6 +41,7 @@ Los multiplicadores iniciales están en `auria/reglas.py` y son provisionales. C
 | `historico` | Descarga y limpia el histórico de Open Data Bizkaia y recalcula las tasas base |
 | `prevision` | Predicción de las próximas 6 horas por parque |
 | `panel` | Abre el panel en el navegador |
+| `directo` | Actuaciones en curso ahora: parque, tipo y estado de cada vehículo (en ruta / en siniestro / regresando) |
 | `captura` / `resumen` / `estado` | Recolector en directo |
 | `entrenar` | Reentrena el modelo horario |
 | `meteo` / `modelo` / `todo` | Modelo mensual por municipio (análisis de qué variables pesan) |

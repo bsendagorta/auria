@@ -5,7 +5,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from auria import calendario, historico, recolector_online as R, reglas, resumen_online as S, trafico
+from auria import calendario, directo, historico, recolector_online as R, reglas, resumen_online as S, trafico
 from auria.familias import familia
 from auria.parques import PARQUES, parque_de_nombre
 
@@ -61,6 +61,15 @@ def test_recolector_y_resumen():
         assert len(acts) == 2, "la misma actuación a caballo de medianoche no se duplica"
         assert set(acts["parque"]) == {"URIOSTE", "ARTAZA"}
         assert horario["salidas"].sum() == 9
+
+
+def test_directo():
+    assert directo.vehiculo("Bomba urbana pesada (Vehículo volviendo de un sin.)")["estado"] == "REGRESANDO"
+    assert directo.vehiculo("Autoescala (Vehículo va a un siniestro)")["estado"] == "EN_RUTA"
+    assert directo.vehiculo("Furgón utiles varios (Vehículo parado en siniestro)")["estado"] == "EN_SINIESTRO"
+    d = directo.leer((FIX / "pagina_salidas.html").read_text(encoding="utf-8"))
+    assert [a["parque"] for a in d["actuaciones"]] == ["URIOSTE", "ARTAZA"]
+    assert d["por_parque"]["URIOSTE"]["en_siniestro"] == 1
 
 
 def test_reglas_y_calendario():
