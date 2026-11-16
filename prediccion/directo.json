@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-16T23:23:56+01:00",
+ "ts": "2026-11-16T23:28:51+01:00",
  "salidas_desde_8": 36,
  "salidas_anio": 5732,
  "actuaciones": [
@@ -29,33 +29,41 @@
    "parque_nombre": "Artaza (Leioa)",
    "vehiculos": [
     {
-     "tipo": "Varios vehículos implicados",
-     "estado": "OTRO",
-     "estado_txt": ""
+     "tipo": "Transporte Material y Personal",
+     "estado": "EN_SINIESTRO",
+     "estado_txt": "Vehículo parado en siniestro"
+    },
+    {
+     "tipo": "Furgón utiles varios",
+     "estado": "EN_SINIESTRO",
+     "estado_txt": "Vehículo parado en siniestro"
     }
    ],
-   "n_vehiculos": 1,
-   "estado": "OTRO"
+   "n_vehiculos": 2,
+   "estado": "EN_SINIESTRO"
   }
  ],
  "por_parque": {
   "URIOSTE": {
    "actuaciones": 1,
    "vehiculos": 1,
+   "propuesto": 0,
    "en_ruta": 0,
    "en_siniestro": 1,
    "regresando": 0
   },
   "ARTAZA": {
    "actuaciones": 1,
-   "vehiculos": 1,
+   "vehiculos": 2,
+   "propuesto": 0,
    "en_ruta": 0,
-   "en_siniestro": 0,
+   "en_siniestro": 2,
    "regresando": 0
   },
   "DERIO": {
    "actuaciones": 0,
    "vehiculos": 0,
+   "propuesto": 0,
    "en_ruta": 0,
    "en_siniestro": 0,
    "regresando": 0
@@ -63,6 +71,7 @@
   "BASAURI": {
    "actuaciones": 0,
    "vehiculos": 0,
+   "propuesto": 0,
    "en_ruta": 0,
    "en_siniestro": 0,
    "regresando": 0
@@ -70,6 +79,7 @@
   "IURRETA": {
    "actuaciones": 0,
    "vehiculos": 0,
+   "propuesto": 0,
    "en_ruta": 0,
    "en_siniestro": 0,
    "regresando": 0
@@ -77,6 +87,7 @@
   "ARRATZU": {
    "actuaciones": 0,
    "vehiculos": 0,
+   "propuesto": 0,
    "en_ruta": 0,
    "en_siniestro": 0,
    "regresando": 0
@@ -84,6 +95,7 @@
   "MARKINA": {
    "actuaciones": 0,
    "vehiculos": 0,
+   "propuesto": 0,
    "en_ruta": 0,
    "en_siniestro": 0,
    "regresando": 0
@@ -91,6 +103,7 @@
   "ZALLA": {
    "actuaciones": 0,
    "vehiculos": 0,
+   "propuesto": 0,
    "en_ruta": 0,
    "en_siniestro": 0,
    "regresando": 0
@@ -98,6 +111,7 @@
   "SIN_PARQUE": {
    "actuaciones": 0,
    "vehiculos": 0,
+   "propuesto": 0,
    "en_ruta": 0,
    "en_siniestro": 0,
    "regresando": 0

@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-16T23:15+01:00",
+ "generado": "2026-11-16T23:26+01:00",
  "horizonte_h": 6,
  "modelo": "base+reglas",
  "fuentes_ok": {
@@ -10,8 +10,8 @@
   "salidas_esperadas_6h": 5.2,
   "normal_6h": 3.6,
   "contador": {
-   "ts": "2026-11-16T23:15:54+01:00",
-   "desde_8": 35,
+   "ts": "2026-11-16T23:26:49+01:00",
+   "desde_8": 36,
    "anio": 5732
   }
  },
@@ -1941,7 +1941,7 @@
    "tipo": "SANEADO DE CONSTRUCCIONES",
    "ubicacion": "GETXO",
    "zona": "CL El Carmen",
-   "vehiculos": "Transporte Material y Personal (Vehículo propuesto)",
+   "vehiculos": "Transporte Material y Personal (Vehículo parado en siniestro) | Furgón utiles varios (Vehículo parado en siniestro)",
    "parque": "ARTAZA"
   }
  ],
