@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-16T23:28:51+01:00",
+ "ts": "2026-11-16T23:31:51+01:00",
  "salidas_desde_8": 36,
  "salidas_anio": 5732,
  "actuaciones": [
@@ -37,9 +37,14 @@
      "tipo": "Furgón utiles varios",
      "estado": "EN_SINIESTRO",
      "estado_txt": "Vehículo parado en siniestro"
+    },
+    {
+     "tipo": "Auto escala articulada",
+     "estado": "PROPUESTO",
+     "estado_txt": "Vehículo propuesto"
     }
    ],
-   "n_vehiculos": 2,
+   "n_vehiculos": 3,
    "estado": "EN_SINIESTRO"
   }
  ],
@@ -54,8 +59,8 @@
   },
   "ARTAZA": {
    "actuaciones": 1,
-   "vehiculos": 2,
-   "propuesto": 0,
+   "vehiculos": 3,
+   "propuesto": 1,
    "en_ruta": 0,
    "en_siniestro": 2,
    "regresando": 0
