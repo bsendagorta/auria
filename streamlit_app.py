@@ -1,10 +1,9 @@
 """AURIA — Panel de riesgo por parque (Streamlit).
 
 Local:   .venv/bin/streamlit run streamlit_app.py
-Nube:    Streamlit Community Cloud -> New app -> este repositorio -> streamlit_app.py
-         Para leer siempre la última predicción sin esperar al redespliegue, añade en Secrets:
-             GITHUB_TOKEN = "github_pat_..."   (permiso de solo lectura de contenidos del repo)
-             GITHUB_REPO  = "usuario/auria"
+Nube:    https://auria-bizkaia.streamlit.app (Streamlit Community Cloud, repo bsendagorta/auria)
+         Lee la última predicción de GitHub cada 2 min. Si el repo vuelve a ser privado, añade en Secrets:
+             GITHUB_TOKEN = "github_pat_..."   (solo lectura de contenidos)   y   GITHUB_REPO = "usuario/auria"
 """
 import base64
 import json
@@ -28,21 +27,30 @@ FAMILIA_TXT = {
 }
 
 
-@st.cache_data(ttl=300)
+REPO_POR_DEFECTO = "bsendagorta/auria"
+
+
+@st.cache_data(ttl=120)
 def cargar():
+    """Última predicción: del repositorio público en GitHub (siempre al día); si falla, la copia local."""
     try:
-        tok, repo = st.secrets["GITHUB_TOKEN"], st.secrets["GITHUB_REPO"]
+        repo = st.secrets.get("GITHUB_REPO", REPO_POR_DEFECTO)
+        tok = st.secrets.get("GITHUB_TOKEN")
     except Exception:
-        tok = repo = None
-    if tok and repo:
-        try:
+        repo, tok = REPO_POR_DEFECTO, None
+    try:
+        if tok:   # repositorio privado
             r = requests.get(f"https://api.github.com/repos/{repo}/contents/prediccion/ultima.json",
                              headers={"Authorization": f"Bearer {tok}", "Accept": "application/vnd.github+json"},
                              timeout=15)
             r.raise_for_status()
             return json.loads(base64.b64decode(r.json()["content"])), "GitHub (en vivo)"
-        except Exception as e:
-            st.warning(f"No se pudo leer de GitHub ({e}); uso la copia local.")
+        r = requests.get(f"https://raw.githubusercontent.com/{repo}/main/prediccion/ultima.json",
+                         params={"t": int(datetime.now().timestamp() // 120)}, timeout=15)
+        r.raise_for_status()
+        return r.json(), "GitHub (en vivo)"
+    except Exception:
+        pass
     p = Path(__file__).parent / "prediccion" / "ultima.json"
     if not p.exists():
         return None, None
