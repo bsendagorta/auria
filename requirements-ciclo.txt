@@ -1,0 +1,6 @@
+# Dependencias mínimas del ciclo cada 30 min (instalación rápida)
+pandas>=2.1
+numpy>=1.26
+requests>=2.31
+holidays>=0.50
+lightgbm>=4.3

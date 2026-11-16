@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+datos/crudo/
+datos/procesado/
+# capturas del Mac (no se mezclan con las de GitHub salvo que lo decidas)
+datos/online/local/
+datos/online/mac/
+.streamlit/secrets.toml

@@ -1,0 +1,43 @@
+# Cada noche (~03:15 hora peninsular): reentrena el modelo horario si hay datos suficientes.
+# Los lunes además descarga el histórico de Open Data Bizkaia y recalcula las tasas base.
+name: Reentrenamiento nocturno AURIA
+on:
+  schedule:
+    - cron: "17 2 * * *"
+  workflow_dispatch:
+    inputs:
+      historico:
+        description: "Forzar descarga del histórico y recálculo de tasas base"
+        type: boolean
+        default: false
+concurrency:
+  group: datos-auria
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  reentreno:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - run: pip install -q -r requirements.txt
+      - name: Histórico y tasas base (lunes, primera vez o forzado)
+        run: |
+          if [ "$(date -u +%u)" = "1" ] || [ ! -f datos/modelo/base_horaria.csv ] || [ "${{ github.event.inputs.historico }}" = "true" ]; then
+            python -m auria.historico
+          else
+            echo "No es lunes: se mantiene la tasa base"
+          fi
+      - name: Reentrenar modelo horario
+        run: python -m auria.horario
+      - name: Resumen de capturas
+        run: python -m auria.resumen_online || true
+      - name: Subir modelo y métricas
+        run: |
+          scripts/subir_datos.sh "modelo: reentreno $(date -u +%Y-%m-%d)"
