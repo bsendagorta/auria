@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-16T23:55:08+01:00",
+ "ts": "2026-11-16T23:58:08+01:00",
  "salidas_desde_8": 37,
  "salidas_anio": 5732,
  "actuaciones": [
@@ -13,8 +13,8 @@
    "vehiculos": [
     {
      "tipo": "Auto escala articulada",
-     "estado": "PROPUESTO",
-     "estado_txt": "Vehículo propuesto"
+     "estado": "EN_RUTA",
+     "estado_txt": "Vehículo va a un siniestro"
     },
     {
      "tipo": "Transporte Material y Personal",
@@ -23,7 +23,7 @@
     }
    ],
    "n_vehiculos": 2,
-   "estado": "PROPUESTO"
+   "estado": "EN_RUTA"
   },
   {
    "tipo": "SANEADO DE CONSTRUCCIONES",
@@ -57,8 +57,8 @@
   "URIOSTE": {
    "actuaciones": 1,
    "vehiculos": 2,
-   "propuesto": 2,
-   "en_ruta": 0,
+   "propuesto": 1,
+   "en_ruta": 1,
    "en_siniestro": 0,
    "regresando": 0
   },
