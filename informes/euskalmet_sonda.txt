@@ -1,15 +1,77 @@
-disponible: True | secreto: 1628 caracteres, cabeceras [], saltos 0 | huella 64 caracteres
+disponible: True | secreto: 1678 caracteres, cabeceras ['BEGIN PRIVATE KEY'], saltos 2 | huella 64 caracteres
 
-cuerpo normalizado 1628 sha fc12b1caa83654cc | huella sha 469a56dcac68a0ed
+cuerpo normalizado 1624 sha 6ca51d83b279bce2 | huella sha 2c77de34aba998bf
 
-== /euskalmet/geo/regions -> 403
-{"code":"NOT_VERIFIED_JWT","message":"JWT was NOT verified: INVALID_SIGNATURE"}
+== /euskalmet/geo/regions -> 200
+[ {
+  "key" : "euskalmet/geo/regions/basque_country",
+  "regionId" : "basque_country"
+}, {
+  "key" : "euskalmet/geo/regions/europe",
+  "regionId" : "europe"
+}, {
+  "key" : "euskalmet/geo/regions/iberic_peninsula",
+  "regionId" : "iberic_peninsula"
+} ]
 
-== /euskalmet/geo/regions/basque_country -> 403
-{"code":"NOT_VERIFIED_JWT","message":"JWT was NOT verified: INVALID_SIGNATURE"}
+== /euskalmet/geo/regions/basque_country -> 200
+{
+  "oid" : "euskalmet/geo/regions/basque_country",
+  "numericId" : 0,
+  "entityVersion" : 0,
+  "nameByLang" : {
+    "SPANISH" : "Pa�s Vasco",
+    "BASQUE" : "Euskal Herria"
+  },
+  "region" : {
+    "typeId" : "summarizedRegion",
+    "key" : "euskalmet/geo/regions/basque_country",
+    "regionId" : "basque_country"
+  }
+}
 
-== /euskalmet/geo/regions/basque_country/zones -> 403
-{"code":"NOT_VERIFIED_JWT","message":"JWT was NOT verified: INVALID_SIGNATURE"}
+== /euskalmet/geo/regions/basque_country/zones -> 200
+[ {
+  "key" : "euskalmet/geo/regions/basque_country/zones/cantabrian_mountains",
+  "regionId" : "basque_country",
+  "regionZoneId" : "cantabrian_mountains"
+}, {
+  "key" : "euskalmet/geo/regions/basque_country/zones/cantabrian_valleys",
+  "regionId" : "basque_country",
+  "regionZoneId" : "cantabrian_valleys"
+}, {
+  "key" : "euskalmet/geo/regions/basque_country/zones/coast_zone",
+  "regionId" : "basque_country",
+  "regionZoneId" : "coast_zone"
+}, {
+  "key" : "euskalmet/geo/regions/basque_country/zones/donostialdea",
+  "regionId" : "basque_country",
+  "regionZoneId" : "donostialdea"
+}, {
+  "key" : "euskalmet/geo/regions/basque_country/zones/ebro_valley",
+  "regionId" : "basque_country",
+  "regionZoneId" : "ebro_valley"
+}, {
+  "key" : "euskalmet/geo/regions/basque_country/zones/great_bilbao",
+  "regionId" : "basque_country",
+  "regionZoneId" : "great_bilbao"
+}, {
+  "key" : "euskalmet/geo/regions/basque_country/zones/interior_basins",
+  "regionId" : "basque_country",
+  "regionZoneId" : "interior_basins"
+}, {
+  "key" : "euskalmet/geo/regions/basque_country/zones/pyrenees",
+  "regionId" : "basque_country",
+  "regionZoneId" : "pyrenees"
+}, {
+  "key" : "euskalmet/geo/regions/basque_country/zones/southern_mountain",
+  "regionId" : "basque_country",
+  "regionZoneId" : "southern_mountain"
+}, {
+  "key" : "euskalmet/geo/regions/basque_country/zones/vitoria_gasteiz",
+  "regionId" : "basque_country",
+  "regionZoneId" : "vitoria_gasteiz"
+} ]
 
-== /euskalmet/alerts/zones/basque_country/forecast/at/2026/11/17 -> 403
-{"code":"NOT_VERIFIED_JWT","message":"JWT was NOT verified: INVALID_SIGNATURE"}
+== /euskalmet/alerts/zones/basque_country/forecast/at/2026/11/17 -> 200
+[ ]
