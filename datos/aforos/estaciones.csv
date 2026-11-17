@@ -1,0 +1,161 @@
+meterId,carretera,pk,estacion,detector,municipality,lat,lon
+382,A-8,116.0,42-ETD-01 Rekalde AFO-IKUSI,Rapido Cantabria,Bilbao,43.24768,-2.935795
+28,A-8,114.5,11-ETD-01 Irusta AFO-IPAR,Salida Miraflores,Bilbao,43.23911,-2.92554
+29,A-8,114.5,11-ETD-01 Irusta AFO-IPAR,Salida Zabalburu,Bilbao,43.23911,-2.92554
+30,A-8,114.5,11-ETD-01 Irusta AFO-IPAR,Lento Cantabria,Bilbao,43.23911,-2.92554
+31,A-8,114.5,11-ETD-01 Irusta AFO-IPAR,Rapido Cantabria,Bilbao,43.23911,-2.92554
+32,A-8,91.0,14-ETD-01 Iurreta,Lento Bilbao,Iurreta,43.1889,-2.6717
+33,A-8,91.0,14-ETD-01 Iurreta,Central Bilbao,Iurreta,43.1889,-2.6717
+34,A-8,91.0,14-ETD-01 Iurreta,Rapido Bilbao,Iurreta,43.1889,-2.6717
+35,A-8,91.0,14-ETD-01 Iurreta,Lento Donosti,Iurreta,43.1889,-2.6717
+36,A-8,91.0,14-ETD-01 Iurreta,Central Donosti,Iurreta,43.1889,-2.6717
+37,A-8,91.0,14-ETD-01 Iurreta,Rapido Donosti,Iurreta,43.1889,-2.6717
+38,A-8,96.0,15-ETD-01 Montorra,Lento Bilbao,Amorebieta-Etxano,43.21605,-2.7173
+39,A-8,96.0,15-ETD-01 Montorra,Central Bilbao,Amorebieta-Etxano,43.21605,-2.7173
+40,A-8,96.0,15-ETD-01 Montorra,Rapido Bilbao,Amorebieta-Etxano,43.21605,-2.7173
+41,A-8,96.0,15-ETD-01 Montorra,Lento Donosti,Amorebieta-Etxano,43.21605,-2.7173
+42,A-8,96.0,15-ETD-01 Montorra,Central Donosti,Amorebieta-Etxano,43.21605,-2.7173
+43,A-8,96.0,15-ETD-01 Montorra,Rapido Donosti,Amorebieta-Etxano,43.21605,-2.7173
+44,A-8,116.0,18-ETD-01 Rekalde Baja 11-11-2013,Lento Irun,Bilbao,43.24768,-2.935795
+45,A-8,116.0,18-ETD-01 Rekalde Baja 11-11-2013,Central Irun,Bilbao,43.24768,-2.935795
+46,A-8,116.0,18-ETD-01 Rekalde Baja 11-11-2013,RapidoIrun,Bilbao,43.24768,-2.935795
+47,A-8,116.0,18-ETD-01 Rekalde Baja 11-11-2013,Lento Santander,Bilbao,43.24768,-2.935795
+48,A-8,116.0,18-ETD-01 Rekalde Baja 11-11-2013,Central Santander,Bilbao,43.24768,-2.935795
+49,A-8,116.0,18-ETD-01 Rekalde Baja 11-11-2013,Rapido Santander,Bilbao,43.24768,-2.935795
+50,A-8,122.5,19-ETD-01 Cruces,Lento Irun,Barakaldo,43.2873,-2.9861
+51,A-8,122.5,19-ETD-01 Cruces,Central Lento Irun,Barakaldo,43.2873,-2.9861
+52,A-8,122.5,19-ETD-01 Cruces,Central Rapido Irun,Barakaldo,43.2873,-2.9861
+53,A-8,122.5,19-ETD-01 Cruces,Rapido Irun,Barakaldo,43.2873,-2.9861
+54,A-8,122.5,19-ETD-01 Cruces,Lento Santander,Barakaldo,43.2873,-2.9861
+55,A-8,122.5,19-ETD-01 Cruces,Central Lento Santander,Barakaldo,43.2873,-2.9861
+56,A-8,122.5,19-ETD-01 Cruces,Central Rapido Santander,Barakaldo,43.2873,-2.9861
+57,A-8,122.5,19-ETD-01 Cruces,Rapido Santander,Barakaldo,43.2873,-2.9861
+58,A-8,123.31,20-ETD-01 Max Center,Lento Cantabria,Barakaldo,43.28522,-2.996849
+59,A-8,123.31,20-ETD-01 Max Center,2º Carril,Barakaldo,43.28522,-2.996849
+60,A-8,123.31,20-ETD-01 Max Center,3º Carril,Barakaldo,43.28522,-2.996849
+61,A-8,123.31,20-ETD-01 Max Center,Rapido Cantabriai,Barakaldo,43.28522,-2.996849
+62,A-8,130.5,21-ETD-01 Ugaldebieta AFO-IPAR,Lento Bilbao,Santurtzi,43.32481,-3.062233
+63,A-8,130.5,21-ETD-01 Ugaldebieta AFO-IPAR,Central 1 Bilbao,Santurtzi,43.32481,-3.062233
+64,A-8,130.5,21-ETD-01 Ugaldebieta AFO-IPAR,Central 2 Bilbao,Santurtzi,43.32481,-3.062233
+65,A-8,130.5,21-ETD-01 Ugaldebieta AFO-IPAR,Rápido Bilbao,Santurtzi,43.32481,-3.062233
+66,A-8,130.5,21-ETD-01 Ugaldebieta AFO-IPAR,Ràpido Cantabria,Santurtzi,43.32481,-3.062233
+67,A-8,130.5,21-ETD-01 Ugaldebieta AFO-IPAR,Central 2 Cantabria,Santurtzi,43.32481,-3.062233
+68,A-8,130.5,21-ETD-01 Ugaldebieta AFO-IPAR,Central 1 Cantabria,Santurtzi,43.32481,-3.062233
+69,A-8,130.5,21-ETD-01 Ugaldebieta AFO-IPAR,Lento Cantabria,Santurtzi,43.32481,-3.062233
+70,A-8,129.0,22-ETD-01 Santurtzi Inc. A8,Entrada Bilbao A-8,Ortuella,43.31728,-3.047059
+71,A-8,129.0,22-ETD-01 Santurtzi Inc. A8,SuperSur Bilbao,Ortuella,43.31728,-3.047059
+72,A-8,129.0,22-ETD-01 Santurtzi Inc. A8,Lento Santurtzi,Ortuella,43.31728,-3.047059
+73,A-8,129.0,22-ETD-01 Santurtzi Inc. A8,Rapido Santurtzi,Ortuella,43.31728,-3.047059
+74,A-8,138.5,23-ETD-01 El Haya,Lento Cantabria,Muskiz,43.34299,-3.140078
+75,A-8,138.5,23-ETD-01 El Haya,Rapido Cantabria,Muskiz,43.34299,-3.140078
+76,A-8,138.5,23-ETD-01 El Haya,Lento Bilbao,Muskiz,43.34299,-3.140078
+77,A-8,138.5,23-ETD-01 El Haya,Central Bilbao,Muskiz,43.34299,-3.140078
+78,A-8,138.5,23-ETD-01 El Haya,Rapido Bilbao,Muskiz,43.34299,-3.140078
+79,A-8,127.0,24-ETD-01 Urioste Donosti AFO-IPAR,Lento Donosti,Ortuella,43.31218,-3.035826
+80,A-8,127.0,24-ETD-01 Urioste Donosti AFO-IPAR,Central-1 Donosti,Ortuella,43.31218,-3.035826
+81,A-8,127.0,24-ETD-01 Urioste Donosti AFO-IPAR,Central-2 Donosti,Ortuella,43.31218,-3.035826
+82,A-8,127.0,24-ETD-01 Urioste Donosti AFO-IPAR,Rápido Donosti,Ortuella,43.31218,-3.035826
+83,A-8,127.0,24-ETD-02 Urioste Cantabria AFO-IPAR,Lento Cantabria,Ortuella,43.312274,-3.0353
+84,A-8,127.0,24-ETD-02 Urioste Cantabria AFO-IPAR,Central Cantabria,Ortuella,43.312274,-3.0353
+85,A-8,127.0,24-ETD-02 Urioste Cantabria AFO-IPAR,Rapido Cantabria,Ortuella,43.312274,-3.0353
+114,AP-68,0.0,01-ETD-01 Buia,Lento Zaragoza,Arrigorriaga,43.2338,-2.913
+115,AP-68,0.0,01-ETD-01 Buia,Rapido Zaragoza,Arrigorriaga,43.2338,-2.913
+116,AP-68,0.0,01-ETD-01 Buia,Lento Bilbao,Arrigorriaga,43.2338,-2.913
+117,AP-68,0.0,01-ETD-01 Buia,Rapido Bilbao,Arrigorriaga,43.2338,-2.913
+118,AP-68,5.0,02-ETD-01 Arrigorriaga,Lento Zaragoza,Arrigorriaga,43.1954,-2.8954
+119,AP-68,5.0,02-ETD-01 Arrigorriaga,Central Zaragoza,Arrigorriaga,43.1954,-2.8954
+120,AP-68,5.0,02-ETD-01 Arrigorriaga,Rapido Zaragoza,Arrigorriaga,43.1954,-2.8954
+121,AP-68,5.0,02-ETD-01 Arrigorriaga,Lento Bilbao,Arrigorriaga,43.1954,-2.8954
+122,AP-68,5.0,02-ETD-01 Arrigorriaga,Central Bilbao,Arrigorriaga,43.1954,-2.8954
+123,AP-68,5.0,02-ETD-01 Arrigorriaga,Rapido Bilbao,Arrigorriaga,43.1954,-2.8954
+124,AP-68,11.0,04-ETD-01 Arakaldo,Lento Zaragoza,Asparrena,43.1582,-2.9308
+125,AP-68,11.0,04-ETD-01 Arakaldo,Central Zaragoza,Asparrena,43.1582,-2.9308
+126,AP-68,11.0,04-ETD-01 Arakaldo,Rapido Zaragoza,Asparrena,43.1582,-2.9308
+127,AP-68,11.0,04-ETD-01 Arakaldo,Lento Bilbao,Asparrena,43.1582,-2.9308
+128,AP-68,11.0,04-ETD-01 Arakaldo,Central Bilbao,Asparrena,43.1582,-2.9308
+129,AP-68,11.0,04-ETD-01 Arakaldo,Rapido Bilbao,Asparrena,43.1582,-2.9308
+130,AP-68,15.0,05-ETD-01 Orozko.Murueta,Lento Zaragoza,Orozko,43.1296,-2.9215
+131,AP-68,15.0,05-ETD-01 Orozko.Murueta,Central Zaragoza,Orozko,43.1296,-2.9215
+132,AP-68,15.0,05-ETD-01 Orozko.Murueta,Rapido Zaragoza,Orozko,43.1296,-2.9215
+133,AP-68,15.0,05-ETD-01 Orozko.Murueta,Lento Bilbao,Orozko,43.1296,-2.9215
+134,AP-68,15.0,05-ETD-01 Orozko.Murueta,Central Bilbao,Orozko,43.1296,-2.9215
+135,AP-68,15.0,05-ETD-01 Orozko.Murueta,Rapido Bilbao,Orozko,43.1296,-2.9215
+86,A-8,126.0,26-ETD-01 Sestao AFO-IPAR,Lento de Sestao a A-8,Valle de Trápaga-Trapagaran,43.30492,-3.021093
+87,A-8,126.0,26-ETD-01 Sestao AFO-IPAR,Rapido de Sestao a A-8,Valle de Trápaga-Trapagaran,43.30492,-3.021093
+88,A-8,126.0,26-ETD-01 Sestao AFO-IPAR,Lento Sestao,Valle de Trápaga-Trapagaran,43.30492,-3.021093
+89,A-8,126.0,26-ETD-01 Sestao AFO-IPAR,Rapido Sestao,Valle de Trápaga-Trapagaran,43.30492,-3.021093
+90,A-8,129.0,28-ETD-01 Nocedal AFO-IPAR,Lento Bilbao,Ortuella,43.31848,-3.050342
+91,A-8,129.0,28-ETD-01 Nocedal AFO-IPAR,Central Bilbao,Ortuella,43.31848,-3.050342
+92,A-8,129.0,28-ETD-01 Nocedal AFO-IPAR,"A-8 pk 129,000",Ortuella,43.31848,-3.050342
+93,A-8,125.5,30-ETD-01 Trapaga AFO-IPAR,Lento Cantabria,Valle de Trápaga-Trapagaran,43.29646,-3.019722
+94,A-8,125.5,30-ETD-01 Trapaga AFO-IPAR,Central Cantabria,Valle de Trápaga-Trapagaran,43.29646,-3.019722
+95,A-8,125.5,30-ETD-01 Trapaga AFO-IPAR,Rapido Cantabria,Valle de Trápaga-Trapagaran,43.29646,-3.019722
+96,A-8,125.5,30-ETD-02 Trapaga AFO-IPAR,Lento Bilbao,Valle de Trápaga-Trapagaran,43.29646,-3.020022
+97,A-8,125.5,30-ETD-02 Trapaga AFO-IPAR,Central Bilbao,Valle de Trápaga-Trapagaran,43.29646,-3.020022
+98,A-8,125.5,30-ETD-02 Trapaga AFO-IPAR,Rapido Bilbao,Valle de Trápaga-Trapagaran,43.29646,-3.020022
+99,A-8,116.0,42-ETD-01 Rekalde AFO-IKUSI,Lento Cantabria,Bilbao,43.24768,-2.935795
+100,A-8,116.0,42-ETD-01 Rekalde AFO-IKUSI,Central Cantabria,Bilbao,43.24768,-2.935795
+373,N-634,104.0,01-ETD-01 Basauri,Lento Donosti,Galdakao,43.23717,-2.8708
+374,N-634,104.0,01-ETD-01 Basauri,Rapido Donosti,Galdakao,43.23717,-2.8708
+375,N-634,104.0,01-ETD-01 Basauri,Lento Bilbao,Galdakao,43.23717,-2.8708
+376,N-634,104.0,01-ETD-01 Basauri,Rapido Bilbao,Galdakao,43.23717,-2.8708
+377,N-644,130.06,01-ETD-01 Santurtzi P.,Lento Incorporacion a A-8,Santurtzi,43.32347,-3.05021
+378,N-644,130.06,01-ETD-01 Santurtzi P.,Rapido Incorporacion a A-8,Santurtzi,43.32347,-3.05021
+379,N-644,130.06,01-ETD-01 Santurtzi P.,Lento Salida desde A-8,Santurtzi,43.32347,-3.05021
+380,N-644,130.06,01-ETD-01 Santurtzi P.,Rapido Salida desde A-8,Santurtzi,43.32347,-3.05021
+220,AP-8,81.7,13-ETD-01 Berriz,Bilbao,Berriz,43.1698,-2.5628
+221,AP-8,81.7,13-ETD-01 Berriz,Donosti,Berriz,43.1698,-2.5628
+222,AP-8,81.7,13-ETD-01 Berriz,Lento Bilbao,Berriz,43.1698,-2.5628
+223,AP-8,81.7,13-ETD-01 Berriz,Rapido Bilbao,Berriz,43.1698,-2.5628
+224,AP-8,81.7,13-ETD-01 Berriz,Lento Donosti,Berriz,43.1698,-2.5628
+225,AP-8,81.7,13-ETD-01 Berriz,Rapido Donosti,Berriz,43.1698,-2.5628
+232,AP-8,87.0,31-ETD-01 Gerediaga AFO-IPAR,Lento Bilbao,Abadiño,43.17411,-2.615571
+233,AP-8,87.0,31-ETD-01 Gerediaga AFO-IPAR,Central Bilbao,Abadiño,43.17411,-2.615571
+234,AP-8,87.0,31-ETD-01 Gerediaga AFO-IPAR,Rapido Bilbao,Abadiño,43.17411,-2.615571
+235,AP-8,87.0,31-ETD-01 Gerediaga AFO-IPAR,Lento Donosti,Abadiño,43.17411,-2.615571
+236,AP-8,87.0,31-ETD-01 Gerediaga AFO-IPAR,Central Donosti,Abadiño,43.17411,-2.615571
+237,AP-8,87.0,31-ETD-01 Gerediaga AFO-IPAR,Rapido Donosti,Abadiño,43.17411,-2.615571
+244,AP-8,81.7,33-ETD-01 Berriz AFO-IKUSI,Lento Irun,Berriz,43.1698,-2.5628
+245,AP-8,81.7,33-ETD-01 Berriz AFO-IKUSI,Rapido Irun,Berriz,43.1698,-2.5628
+246,AP-8,81.7,33-ETD-01 Berriz AFO-IKUSI,Rapido Bilbao,Berriz,43.1698,-2.5628
+247,AP-8,81.7,33-ETD-01 Berriz AFO-IKUSI,Lento Bilbao,Berriz,43.1698,-2.5628
+254,AP-8,101.0,35-ETD-01 Boroa AFO-IKUSI,Lento Irun,Amorebieta-Etxano,43.23135,-2.768933
+255,AP-8,101.0,35-ETD-01 Boroa AFO-IKUSI,Central Irun,Amorebieta-Etxano,43.23135,-2.768933
+256,AP-8,101.0,35-ETD-01 Boroa AFO-IKUSI,RapidoIrun,Amorebieta-Etxano,43.23135,-2.768933
+257,AP-8,101.0,35-ETD-01 Boroa AFO-IKUSI,Rapido Santander,Amorebieta-Etxano,43.23135,-2.768933
+258,AP-8,101.0,35-ETD-01 Boroa AFO-IKUSI,Central Santander,Amorebieta-Etxano,43.23135,-2.768933
+259,AP-8,101.0,35-ETD-01 Boroa AFO-IKUSI,Lento Santander,Amorebieta-Etxano,43.23135,-2.768933
+267,AP-8,96.0,38-ETD-01 Montorra AFO-IKUSI,Lento Bilbao,Amorebieta-Etxano,43.21605,-2.7173
+268,AP-8,96.0,38-ETD-01 Montorra AFO-IKUSI,Central Bilbao,Amorebieta-Etxano,43.21605,-2.7173
+269,AP-8,96.0,38-ETD-01 Montorra AFO-IKUSI,Rapido Bilbao,Amorebieta-Etxano,43.21605,-2.7173
+270,AP-8,96.0,38-ETD-01 Montorra AFO-IKUSI,Lento Donosti,Amorebieta-Etxano,43.21605,-2.7173
+271,AP-8,96.0,38-ETD-01 Montorra AFO-IKUSI,Central Donosti,Amorebieta-Etxano,43.21605,-2.7173
+272,AP-8,96.0,38-ETD-01 Montorra AFO-IKUSI,Rapido Donosti,Amorebieta-Etxano,43.21605,-2.7173
+277,AP-8,91.0,40-ETD-01 Iurreta AFO-IKUSI,Lento Irun,Iurreta,43.1889,-2.6717
+278,AP-8,91.0,40-ETD-01 Iurreta AFO-IKUSI,Central Irun,Iurreta,43.1889,-2.6717
+279,AP-8,91.0,40-ETD-01 Iurreta AFO-IKUSI,Rapido Irun,Iurreta,43.1889,-2.6717
+280,AP-8,107.4,41-ETD-01  El Pinchazo AFO-IKUSI,Lento Irun,Galdakao,43.2355,-2.8408
+281,AP-8,107.4,41-ETD-01  El Pinchazo AFO-IKUSI,Central Irun,Galdakao,43.2355,-2.8408
+282,AP-8,107.4,41-ETD-01  El Pinchazo AFO-IKUSI,RapidoIrun,Galdakao,43.2355,-2.8408
+283,BI-604,5.3,01-ETD-01 Alto Enekuri,Lento Bilbao,Erandio,43.28985,-2.96085
+284,BI-604,5.3,01-ETD-01 Alto Enekuri,Rapido Bilbao,Erandio,43.28985,-2.96085
+285,BI-604,5.3,01-ETD-01 Alto Enekuri,Rapido Salida Bilbao,Erandio,43.28985,-2.96085
+286,BI-604,5.3,01-ETD-01 Alto Enekuri,Lento Salida Bilbao,Erandio,43.28985,-2.96085
+287,BI-604,4.7,01-ETD-02 Ibarrekolanda,Lento Bilbao,Bilbao,43.28569,-2.958599
+288,BI-604,4.7,01-ETD-02 Ibarrekolanda,Rapido Bilbao,Bilbao,43.28569,-2.958599
+289,BI-604,4.7,01-ETD-02 Ibarrekolanda,Rapido Salida Bilbao,Bilbao,43.28569,-2.958599
+290,BI-604,4.7,01-ETD-02 Ibarrekolanda,Lento Salida Bilbao,Bilbao,43.28569,-2.958599
+291,BI-625,373.5,01-ETD-01 Arrankudiaga,Bilbao,Asparrena,43.157,-2.9393
+292,BI-625,373.5,01-ETD-01 Arrankudiaga,Gasteiz,Asparrena,43.157,-2.9393
+136,AP-68,20.0,06-ETD-01 Orozko.San Isidro,Lento Zaragoza,Orozko,43.0894,-2.9146
+137,AP-68,20.0,06-ETD-01 Orozko.San Isidro,Central Zaragoza,Orozko,43.0894,-2.9146
+138,AP-68,20.0,06-ETD-01 Orozko.San Isidro,Rapido Zaragoza,Orozko,43.0894,-2.9146
+139,AP-68,20.0,06-ETD-01 Orozko.San Isidro,Lento Bilbao,Orozko,43.0894,-2.9146
+140,AP-68,20.0,06-ETD-01 Orozko.San Isidro,Central Bilbao,Orozko,43.0894,-2.9146
+141,AP-68,20.0,06-ETD-01 Orozko.San Isidro,Rapido Bilbao,Orozko,43.0894,-2.9146
+200,AP-68,7.55,23-ETD-01 PK 7,Lento Bilbao,Ugao-Miraballes,43.1818,-2.898
+201,AP-68,7.55,23-ETD-01 PK 7,Central Bilbao,Ugao-Miraballes,43.1818,-2.898
+202,AP-68,7.55,23-ETD-01 PK 7,Rapido Bilbao,Ugao-Miraballes,43.1818,-2.898
+203,AP-68,5.5,24-ETD-01 PK 5,Lento Zaragoza,Arrigorriaga,43.1954,-2.8954
+204,AP-68,5.5,24-ETD-01 PK 5,Central Zaragoza,Arrigorriaga,43.1954,-2.8954
+205,AP-68,5.5,24-ETD-01 PK 5,Rapido Zaragoza,Arrigorriaga,43.1954,-2.8954
