@@ -1,6 +1,6 @@
 {
- "ts": "2026-11-17T23:35:38+01:00",
- "salidas_desde_8": 32,
+ "ts": "2026-11-17T23:38:38+01:00",
+ "salidas_desde_8": 33,
  "salidas_anio": 5804,
  "actuaciones": [
   {
@@ -19,23 +19,6 @@
    ],
    "n_vehiculos": 1,
    "estado": "EN_RUTA"
-  },
-  {
-   "tipo": "RETIRADA DE ÁRBOLES",
-   "familia": "METEO_ASISTENCIA",
-   "ubicacion": "A BI-3726 LEZAMA A GAZTELUMENDI",
-   "zona": "A BI-3726 LEZAMA A GAZTELUMENDI",
-   "parque": "SIN_PARQUE",
-   "parque_nombre": "Fuera de zona / Bilbao",
-   "vehiculos": [
-    {
-     "tipo": "Transporte Material y Personal",
-     "estado": "EN_SINIESTRO",
-     "estado_txt": "Vehículo parado en siniestro"
-    }
-   ],
-   "n_vehiculos": 1,
-   "estado": "EN_SINIESTRO"
   },
   {
    "tipo": "SANEADO DE CONSTRUCCIONES",
@@ -121,11 +104,11 @@
    "regresando": 0
   },
   "SIN_PARQUE": {
-   "actuaciones": 1,
-   "vehiculos": 1,
+   "actuaciones": 0,
+   "vehiculos": 0,
    "propuesto": 0,
    "en_ruta": 0,
-   "en_siniestro": 1,
+   "en_siniestro": 0,
    "regresando": 0
   }
  }
