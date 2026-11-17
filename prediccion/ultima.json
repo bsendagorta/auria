@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-17T08:38+01:00",
+ "generado": "2026-11-17T08:54+01:00",
  "horizonte_h": 6,
  "modelo": "base+reglas",
  "fuentes_ok": {
@@ -10,9 +10,9 @@
   "salidas_esperadas_6h": 4.8,
   "normal_6h": 4.8,
   "contador": {
-   "ts": "2026-11-17T08:38:14+01:00",
+   "ts": "2026-11-17T08:54:14+01:00",
    "desde_8": 0,
-   "anio": 5732
+   "anio": 5733
   }
  },
  "parques": [
@@ -22,8 +22,8 @@
    "lat": 43.213,
    "lon": -3.137,
    "salidas_esperadas_6h": 0.28,
-   "normal_6h": 0.28,
-   "prob_6h": 0.246,
+   "normal_6h": 0.27,
+   "prob_6h": 0.241,
    "ratio_max": 1.02,
    "nivel": "verde",
    "hora_pico": "2026-11-17T08:00:00",
@@ -37,9 +37,9 @@
    "horas": [
     {
      "hora": "2026-11-17T08:00:00",
-     "lambda": 0.0479,
-     "prob": 0.047,
-     "normal": 0.0468,
+     "lambda": 0.0466,
+     "prob": 0.046,
+     "normal": 0.0455,
      "ratio": 1.02,
      "nivel": "verde",
      "familias_top": [
@@ -50,7 +50,7 @@
       },
       {
        "familia": "METEO_ASISTENCIA",
-       "lambda": 0.012,
+       "lambda": 0.0108,
        "mult": 1.0
       },
       {
@@ -63,8 +63,8 @@
       "Incidencias de seguridad vial (objetos, desprendimientos)"
      ],
      "meteo": {
-      "temp": 18.7,
-      "humedad": 66.0,
+      "temp": 18.3,
+      "humedad": 68.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
       "racha_kmh": 45.7,
@@ -74,9 +74,9 @@
     },
     {
      "hora": "2026-11-17T09:00:00",
-     "lambda": 0.0479,
-     "prob": 0.047,
-     "normal": 0.0468,
+     "lambda": 0.0466,
+     "prob": 0.046,
+     "normal": 0.0455,
      "ratio": 1.02,
      "nivel": "verde",
      "familias_top": [
@@ -87,7 +87,7 @@
       },
       {
        "familia": "METEO_ASISTENCIA",
-       "lambda": 0.012,
+       "lambda": 0.0108,
        "mult": 1.0
       },
       {
@@ -100,20 +100,20 @@
       "Incidencias de seguridad vial (objetos, desprendimientos)"
      ],
      "meteo": {
-      "temp": 18.2,
-      "humedad": 70.0,
-      "lluvia_1h": 0.0,
+      "temp": 17.8,
+      "humedad": 72.0,
+      "lluvia_1h": 0.1,
       "lluvia_12h": 0.0,
-      "racha_kmh": 23.8,
+      "racha_kmh": 19.8,
       "viento_sur": false,
       "dias_sin_lluvia": 2.0
      }
     },
     {
      "hora": "2026-11-17T10:00:00",
-     "lambda": 0.0468,
-     "prob": 0.046,
-     "normal": 0.0468,
+     "lambda": 0.0455,
+     "prob": 0.044,
+     "normal": 0.0455,
      "ratio": 1.0,
      "nivel": "verde",
      "familias_top": [
@@ -124,7 +124,7 @@
       },
       {
        "familia": "METEO_ASISTENCIA",
-       "lambda": 0.012,
+       "lambda": 0.0108,
        "mult": 1.0
       },
       {
@@ -135,20 +135,20 @@
      ],
      "factores": [],
      "meteo": {
-      "temp": 18.4,
-      "humedad": 71.0,
+      "temp": 17.9,
+      "humedad": 73.0,
       "lluvia_1h": 0.0,
-      "lluvia_12h": 0.0,
-      "racha_kmh": 20.2,
+      "lluvia_12h": 0.1,
+      "racha_kmh": 16.9,
       "viento_sur": false,
       "dias_sin_lluvia": 2.0
      }
     },
     {
      "hora": "2026-11-17T11:00:00",
-     "lambda": 0.0468,
-     "prob": 0.046,
-     "normal": 0.0468,
+     "lambda": 0.0455,
+     "prob": 0.044,
+     "normal": 0.0455,
      "ratio": 1.0,
      "nivel": "verde",
      "familias_top": [
@@ -159,7 +159,7 @@
       },
       {
        "familia": "METEO_ASISTENCIA",
-       "lambda": 0.012,
+       "lambda": 0.0108,
        "mult": 1.0
       },
       {
@@ -170,55 +170,20 @@
      ],
      "factores": [],
      "meteo": {
-      "temp": 18.4,
+      "temp": 18.3,
       "humedad": 74.0,
       "lluvia_1h": 0.0,
-      "lluvia_12h": 0.0,
-      "racha_kmh": 17.3,
-      "viento_sur": false,
-      "dias_sin_lluvia": 2.0
-     }
-    },
-    {
-     "hora": "2026-11-17T12:00:00",
-     "lambda": 0.0468,
-     "prob": 0.046,
-     "normal": 0.0468,
-     "ratio": 1.0,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0167,
-       "mult": 1.0
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.012,
-       "mult": 1.0
-      },
-      {
-       "familia": "ABEJAS_AVISPAS",
-       "lambda": 0.0106,
-       "mult": 1.0
-      }
-     ],
-     "factores": [],
-     "meteo": {
-      "temp": 19.3,
-      "humedad": 72.0,
-      "lluvia_1h": 0.0,
-      "lluvia_12h": 0.0,
+      "lluvia_12h": 0.1,
       "racha_kmh": 18.0,
       "viento_sur": false,
       "dias_sin_lluvia": 2.0
      }
     },
     {
-     "hora": "2026-11-17T13:00:00",
-     "lambda": 0.0468,
-     "prob": 0.046,
-     "normal": 0.0468,
+     "hora": "2026-11-17T12:00:00",
+     "lambda": 0.0455,
+     "prob": 0.044,
+     "normal": 0.0455,
      "ratio": 1.0,
      "nivel": "verde",
      "familias_top": [
@@ -229,7 +194,7 @@
       },
       {
        "familia": "METEO_ASISTENCIA",
-       "lambda": 0.012,
+       "lambda": 0.0108,
        "mult": 1.0
       },
       {
@@ -240,11 +205,46 @@
      ],
      "factores": [],
      "meteo": {
-      "temp": 20.8,
-      "humedad": 65.0,
+      "temp": 19.5,
+      "humedad": 71.0,
       "lluvia_1h": 0.0,
-      "lluvia_12h": 0.0,
-      "racha_kmh": 29.7,
+      "lluvia_12h": 0.1,
+      "racha_kmh": 19.1,
+      "viento_sur": false,
+      "dias_sin_lluvia": 2.0
+     }
+    },
+    {
+     "hora": "2026-11-17T13:00:00",
+     "lambda": 0.0455,
+     "prob": 0.044,
+     "normal": 0.0455,
+     "ratio": 1.0,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0167,
+       "mult": 1.0
+      },
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0108,
+       "mult": 1.0
+      },
+      {
+       "familia": "ABEJAS_AVISPAS",
+       "lambda": 0.0106,
+       "mult": 1.0
+      }
+     ],
+     "factores": [],
+     "meteo": {
+      "temp": 20.9,
+      "humedad": 63.0,
+      "lluvia_1h": 0.0,
+      "lluvia_12h": 0.1,
+      "racha_kmh": 31.7,
       "viento_sur": false,
       "dias_sin_lluvia": 2.0
      }
@@ -259,7 +259,7 @@
    "lon": -2.497,
    "salidas_esperadas_6h": 0.17,
    "normal_6h": 0.17,
-   "prob_6h": 0.158,
+   "prob_6h": 0.159,
    "ratio_max": 1.01,
    "nivel": "verde",
    "hora_pico": "2026-11-17T08:00:00",
@@ -273,9 +273,9 @@
    "horas": [
     {
      "hora": "2026-11-17T08:00:00",
-     "lambda": 0.0289,
-     "prob": 0.028,
-     "normal": 0.0285,
+     "lambda": 0.0291,
+     "prob": 0.029,
+     "normal": 0.0287,
      "ratio": 1.01,
      "nivel": "verde",
      "familias_top": [
@@ -299,57 +299,92 @@
       "Incidencias de seguridad vial (objetos, desprendimientos)"
      ],
      "meteo": {
-      "temp": 19.8,
-      "humedad": 62.0,
+      "temp": 19.3,
+      "humedad": 66.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
       "racha_kmh": 42.8,
-      "viento_sur": true,
-      "dias_sin_lluvia": 2.0
-     }
-    },
-    {
-     "hora": "2026-11-17T09:00:00",
-     "lambda": 0.0289,
-     "prob": 0.028,
-     "normal": 0.0285,
-     "ratio": 1.01,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0105,
-       "mult": 1.0
-      },
-      {
-       "familia": "ABEJAS_AVISPAS",
-       "lambda": 0.0098,
-       "mult": 1.0
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0037,
-       "mult": 1.0
-      }
-     ],
-     "factores": [
-      "Incidencias de seguridad vial (objetos, desprendimientos)"
-     ],
-     "meteo": {
-      "temp": 18.6,
-      "humedad": 75.0,
-      "lluvia_1h": 0.2,
-      "lluvia_12h": 0.0,
-      "racha_kmh": 40.3,
       "viento_sur": false,
       "dias_sin_lluvia": 2.0
      }
     },
     {
+     "hora": "2026-11-17T09:00:00",
+     "lambda": 0.0291,
+     "prob": 0.029,
+     "normal": 0.0287,
+     "ratio": 1.01,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0105,
+       "mult": 1.0
+      },
+      {
+       "familia": "ABEJAS_AVISPAS",
+       "lambda": 0.0098,
+       "mult": 1.0
+      },
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0037,
+       "mult": 1.0
+      }
+     ],
+     "factores": [
+      "Incidencias de seguridad vial (objetos, desprendimientos)"
+     ],
+     "meteo": {
+      "temp": 18.2,
+      "humedad": 74.0,
+      "lluvia_1h": 0.2,
+      "lluvia_12h": 0.0,
+      "racha_kmh": 31.7,
+      "viento_sur": true,
+      "dias_sin_lluvia": 2.0
+     }
+    },
+    {
      "hora": "2026-11-17T10:00:00",
-     "lambda": 0.0285,
+     "lambda": 0.0287,
      "prob": 0.028,
-     "normal": 0.0285,
+     "normal": 0.0287,
+     "ratio": 1.0,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0105,
+       "mult": 1.0
+      },
+      {
+       "familia": "ABEJAS_AVISPAS",
+       "lambda": 0.0098,
+       "mult": 1.0
+      },
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0037,
+       "mult": 1.0
+      }
+     ],
+     "factores": [],
+     "meteo": {
+      "temp": 17.9,
+      "humedad": 78.0,
+      "lluvia_1h": 0.0,
+      "lluvia_12h": 0.2,
+      "racha_kmh": 17.3,
+      "viento_sur": false,
+      "dias_sin_lluvia": 2.0
+     }
+    },
+    {
+     "hora": "2026-11-17T11:00:00",
+     "lambda": 0.0287,
+     "prob": 0.028,
+     "normal": 0.0287,
      "ratio": 1.0,
      "nivel": "verde",
      "familias_top": [
@@ -372,54 +407,19 @@
      "factores": [],
      "meteo": {
       "temp": 18.3,
-      "humedad": 75.0,
-      "lluvia_1h": 0.1,
+      "humedad": 79.0,
+      "lluvia_1h": 0.0,
       "lluvia_12h": 0.2,
-      "racha_kmh": 25.2,
-      "viento_sur": false,
-      "dias_sin_lluvia": 2.0
-     }
-    },
-    {
-     "hora": "2026-11-17T11:00:00",
-     "lambda": 0.0285,
-     "prob": 0.028,
-     "normal": 0.0285,
-     "ratio": 1.0,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0105,
-       "mult": 1.0
-      },
-      {
-       "familia": "ABEJAS_AVISPAS",
-       "lambda": 0.0098,
-       "mult": 1.0
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0037,
-       "mult": 1.0
-      }
-     ],
-     "factores": [],
-     "meteo": {
-      "temp": 18.5,
-      "humedad": 77.0,
-      "lluvia_1h": 0.1,
-      "lluvia_12h": 0.3,
-      "racha_kmh": 20.3,
+      "racha_kmh": 11.2,
       "viento_sur": false,
       "dias_sin_lluvia": 2.0
      }
     },
     {
      "hora": "2026-11-17T12:00:00",
-     "lambda": 0.0285,
+     "lambda": 0.0287,
      "prob": 0.028,
-     "normal": 0.0285,
+     "normal": 0.0287,
      "ratio": 1.0,
      "nivel": "verde",
      "familias_top": [
@@ -441,20 +441,20 @@
      ],
      "factores": [],
      "meteo": {
-      "temp": 18.8,
-      "humedad": 80.0,
-      "lluvia_1h": 0.1,
-      "lluvia_12h": 0.4,
-      "racha_kmh": 19.3,
+      "temp": 19.1,
+      "humedad": 77.0,
+      "lluvia_1h": 0.0,
+      "lluvia_12h": 0.2,
+      "racha_kmh": 18.4,
       "viento_sur": false,
       "dias_sin_lluvia": 2.0
      }
     },
     {
      "hora": "2026-11-17T13:00:00",
-     "lambda": 0.0285,
+     "lambda": 0.0287,
      "prob": 0.028,
-     "normal": 0.0285,
+     "normal": 0.0287,
      "ratio": 1.0,
      "nivel": "verde",
      "familias_top": [
@@ -476,11 +476,11 @@
      ],
      "factores": [],
      "meteo": {
-      "temp": 20.3,
-      "humedad": 75.0,
+      "temp": 20.6,
+      "humedad": 72.0,
       "lluvia_1h": 0.0,
-      "lluvia_12h": 0.4,
-      "racha_kmh": 17.8,
+      "lluvia_12h": 0.2,
+      "racha_kmh": 24.1,
       "viento_sur": false,
       "dias_sin_lluvia": 2.0
      }
@@ -493,23 +493,23 @@
    "nombre": "Urioste (Ortuella)",
    "lat": 43.3075,
    "lon": -3.051,
-   "salidas_esperadas_6h": 1.57,
-   "normal_6h": 1.57,
-   "prob_6h": 0.793,
+   "salidas_esperadas_6h": 1.58,
+   "normal_6h": 1.58,
+   "prob_6h": 0.794,
    "ratio_max": 1.0,
    "nivel": "verde",
    "hora_pico": "2026-11-17T08:00:00",
    "factores": [],
    "directo": {
-    "activas": 0,
-    "nuevas_1h": 0
+    "activas": 1,
+    "nuevas_1h": 1
    },
    "horas": [
     {
      "hora": "2026-11-17T08:00:00",
-     "lambda": 0.2623,
+     "lambda": 0.2632,
      "prob": 0.231,
-     "normal": 0.2623,
+     "normal": 0.2632,
      "ratio": 1.0,
      "nivel": "verde",
      "familias_top": [
@@ -520,7 +520,7 @@
       },
       {
        "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0659,
+       "lambda": 0.0672,
        "mult": 1.0
       },
       {
@@ -531,8 +531,8 @@
      ],
      "factores": [],
      "meteo": {
-      "temp": 19.3,
-      "humedad": 63.0,
+      "temp": 18.9,
+      "humedad": 66.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
       "racha_kmh": 58.7,
@@ -542,9 +542,9 @@
     },
     {
      "hora": "2026-11-17T09:00:00",
-     "lambda": 0.2623,
+     "lambda": 0.2632,
      "prob": 0.231,
-     "normal": 0.2623,
+     "normal": 0.2632,
      "ratio": 1.0,
      "nivel": "verde",
      "familias_top": [
@@ -555,7 +555,7 @@
       },
       {
        "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0659,
+       "lambda": 0.0672,
        "mult": 1.0
       },
       {
@@ -566,20 +566,20 @@
      ],
      "factores": [],
      "meteo": {
-      "temp": 19.1,
-      "humedad": 66.0,
-      "lluvia_1h": 0.0,
+      "temp": 18.1,
+      "humedad": 73.0,
+      "lluvia_1h": 0.2,
       "lluvia_12h": 0.0,
-      "racha_kmh": 43.2,
+      "racha_kmh": 34.2,
       "viento_sur": true,
       "dias_sin_lluvia": 3.0
      }
     },
     {
      "hora": "2026-11-17T10:00:00",
-     "lambda": 0.2623,
+     "lambda": 0.2632,
      "prob": 0.231,
-     "normal": 0.2623,
+     "normal": 0.2632,
      "ratio": 1.0,
      "nivel": "verde",
      "familias_top": [
@@ -590,7 +590,7 @@
       },
       {
        "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0659,
+       "lambda": 0.0672,
        "mult": 1.0
       },
       {
@@ -601,20 +601,20 @@
      ],
      "factores": [],
      "meteo": {
-      "temp": 19.0,
-      "humedad": 68.0,
+      "temp": 18.5,
+      "humedad": 72.0,
       "lluvia_1h": 0.0,
-      "lluvia_12h": 0.0,
-      "racha_kmh": 28.4,
+      "lluvia_12h": 0.2,
+      "racha_kmh": 24.8,
       "viento_sur": false,
       "dias_sin_lluvia": 3.0
      }
     },
     {
      "hora": "2026-11-17T11:00:00",
-     "lambda": 0.2623,
+     "lambda": 0.2632,
      "prob": 0.231,
-     "normal": 0.2623,
+     "normal": 0.2632,
      "ratio": 1.0,
      "nivel": "verde",
      "familias_top": [
@@ -625,7 +625,7 @@
       },
       {
        "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0659,
+       "lambda": 0.0672,
        "mult": 1.0
       },
       {
@@ -636,20 +636,20 @@
      ],
      "factores": [],
      "meteo": {
-      "temp": 17.9,
-      "humedad": 81.0,
+      "temp": 18.4,
+      "humedad": 76.0,
       "lluvia_1h": 0.0,
-      "lluvia_12h": 0.0,
-      "racha_kmh": 18.2,
+      "lluvia_12h": 0.2,
+      "racha_kmh": 24.8,
       "viento_sur": false,
       "dias_sin_lluvia": 3.0
      }
     },
     {
      "hora": "2026-11-17T12:00:00",
-     "lambda": 0.2623,
+     "lambda": 0.2632,
      "prob": 0.231,
-     "normal": 0.2623,
+     "normal": 0.2632,
      "ratio": 1.0,
      "nivel": "verde",
      "familias_top": [
@@ -660,7 +660,7 @@
       },
       {
        "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0659,
+       "lambda": 0.0672,
        "mult": 1.0
       },
       {
@@ -671,20 +671,20 @@
      ],
      "factores": [],
      "meteo": {
-      "temp": 18.6,
-      "humedad": 79.0,
+      "temp": 18.7,
+      "humedad": 77.0,
       "lluvia_1h": 0.0,
-      "lluvia_12h": 0.0,
-      "racha_kmh": 8.5,
+      "lluvia_12h": 0.2,
+      "racha_kmh": 11.0,
       "viento_sur": false,
       "dias_sin_lluvia": 3.0
      }
     },
     {
      "hora": "2026-11-17T13:00:00",
-     "lambda": 0.2623,
+     "lambda": 0.2632,
      "prob": 0.231,
-     "normal": 0.2623,
+     "normal": 0.2632,
      "ratio": 1.0,
      "nivel": "verde",
      "familias_top": [
@@ -695,7 +695,7 @@
       },
       {
        "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0659,
+       "lambda": 0.0672,
        "mult": 1.0
       },
       {
@@ -706,11 +706,11 @@
      ],
      "factores": [],
      "meteo": {
-      "temp": 19.4,
-      "humedad": 77.0,
+      "temp": 20.3,
+      "humedad": 71.0,
       "lluvia_1h": 0.0,
-      "lluvia_12h": 0.0,
-      "racha_kmh": 17.0,
+      "lluvia_12h": 0.2,
+      "racha_kmh": 23.2,
       "viento_sur": false,
       "dias_sin_lluvia": 3.0
      }
@@ -725,7 +725,7 @@
    "lon": -2.987,
    "salidas_esperadas_6h": 0.85,
    "normal_6h": 0.85,
-   "prob_6h": 0.573,
+   "prob_6h": 0.574,
    "ratio_max": 1.0,
    "nivel": "verde",
    "hora_pico": "2026-11-17T08:00:00",
@@ -737,9 +737,9 @@
    "horas": [
     {
      "hora": "2026-11-17T08:00:00",
-     "lambda": 0.1417,
-     "prob": 0.132,
-     "normal": 0.1417,
+     "lambda": 0.1422,
+     "prob": 0.133,
+     "normal": 0.1422,
      "ratio": 1.0,
      "nivel": "verde",
      "familias_top": [
@@ -761,8 +761,8 @@
      ],
      "factores": [],
      "meteo": {
-      "temp": 19.8,
-      "humedad": 61.0,
+      "temp": 18.9,
+      "humedad": 67.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
       "racha_kmh": 54.0,
@@ -772,79 +772,9 @@
     },
     {
      "hora": "2026-11-17T09:00:00",
-     "lambda": 0.1417,
-     "prob": 0.132,
-     "normal": 0.1417,
-     "ratio": 1.0,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.046,
-       "mult": 1.0
-      },
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0437,
-       "mult": 1.0
-      },
-      {
-       "familia": "ABEJAS_AVISPAS",
-       "lambda": 0.0185,
-       "mult": 1.0
-      }
-     ],
-     "factores": [],
-     "meteo": {
-      "temp": 19.4,
-      "humedad": 64.0,
-      "lluvia_1h": 0.0,
-      "lluvia_12h": 0.0,
-      "racha_kmh": 40.3,
-      "viento_sur": false,
-      "dias_sin_lluvia": 3.0
-     }
-    },
-    {
-     "hora": "2026-11-17T10:00:00",
-     "lambda": 0.1417,
-     "prob": 0.132,
-     "normal": 0.1417,
-     "ratio": 1.0,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.046,
-       "mult": 1.0
-      },
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0437,
-       "mult": 1.0
-      },
-      {
-       "familia": "ABEJAS_AVISPAS",
-       "lambda": 0.0185,
-       "mult": 1.0
-      }
-     ],
-     "factores": [],
-     "meteo": {
-      "temp": 18.4,
-      "humedad": 78.0,
-      "lluvia_1h": 0.0,
-      "lluvia_12h": 0.0,
-      "racha_kmh": 5.0,
-      "viento_sur": false,
-      "dias_sin_lluvia": 3.0
-     }
-    },
-    {
-     "hora": "2026-11-17T11:00:00",
-     "lambda": 0.1417,
-     "prob": 0.132,
-     "normal": 0.1417,
+     "lambda": 0.1422,
+     "prob": 0.133,
+     "normal": 0.1422,
      "ratio": 1.0,
      "nivel": "verde",
      "familias_top": [
@@ -867,19 +797,89 @@
      "factores": [],
      "meteo": {
       "temp": 17.2,
-      "humedad": 90.0,
-      "lluvia_1h": 0.0,
+      "humedad": 84.0,
+      "lluvia_1h": 0.2,
       "lluvia_12h": 0.0,
-      "racha_kmh": 17.8,
+      "racha_kmh": 17.3,
+      "viento_sur": false,
+      "dias_sin_lluvia": 3.0
+     }
+    },
+    {
+     "hora": "2026-11-17T10:00:00",
+     "lambda": 0.1422,
+     "prob": 0.133,
+     "normal": 0.1422,
+     "ratio": 1.0,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.046,
+       "mult": 1.0
+      },
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0437,
+       "mult": 1.0
+      },
+      {
+       "familia": "ABEJAS_AVISPAS",
+       "lambda": 0.0185,
+       "mult": 1.0
+      }
+     ],
+     "factores": [],
+     "meteo": {
+      "temp": 17.4,
+      "humedad": 84.0,
+      "lluvia_1h": 0.0,
+      "lluvia_12h": 0.2,
+      "racha_kmh": 10.8,
+      "viento_sur": false,
+      "dias_sin_lluvia": 3.0
+     }
+    },
+    {
+     "hora": "2026-11-17T11:00:00",
+     "lambda": 0.1422,
+     "prob": 0.133,
+     "normal": 0.1422,
+     "ratio": 1.0,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.046,
+       "mult": 1.0
+      },
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0437,
+       "mult": 1.0
+      },
+      {
+       "familia": "ABEJAS_AVISPAS",
+       "lambda": 0.0185,
+       "mult": 1.0
+      }
+     ],
+     "factores": [],
+     "meteo": {
+      "temp": 18.0,
+      "humedad": 80.0,
+      "lluvia_1h": 0.0,
+      "lluvia_12h": 0.2,
+      "racha_kmh": 14.0,
       "viento_sur": false,
       "dias_sin_lluvia": 3.0
      }
     },
     {
      "hora": "2026-11-17T12:00:00",
-     "lambda": 0.1417,
-     "prob": 0.132,
-     "normal": 0.1417,
+     "lambda": 0.1422,
+     "prob": 0.133,
+     "normal": 0.1422,
      "ratio": 1.0,
      "nivel": "verde",
      "familias_top": [
@@ -901,20 +901,20 @@
      ],
      "factores": [],
      "meteo": {
-      "temp": 18.4,
-      "humedad": 81.0,
+      "temp": 18.5,
+      "humedad": 80.0,
       "lluvia_1h": 0.0,
-      "lluvia_12h": 0.0,
-      "racha_kmh": 9.7,
+      "lluvia_12h": 0.2,
+      "racha_kmh": 10.2,
       "viento_sur": false,
       "dias_sin_lluvia": 3.0
      }
     },
     {
      "hora": "2026-11-17T13:00:00",
-     "lambda": 0.1417,
-     "prob": 0.132,
-     "normal": 0.1417,
+     "lambda": 0.1422,
+     "prob": 0.133,
+     "normal": 0.1422,
      "ratio": 1.0,
      "nivel": "verde",
      "familias_top": [
@@ -936,11 +936,11 @@
      ],
      "factores": [],
      "meteo": {
-      "temp": 19.3,
-      "humedad": 78.0,
+      "temp": 19.5,
+      "humedad": 77.0,
       "lluvia_1h": 0.0,
-      "lluvia_12h": 0.0,
-      "racha_kmh": 13.6,
+      "lluvia_12h": 0.2,
+      "racha_kmh": 12.6,
       "viento_sur": false,
       "dias_sin_lluvia": 3.0
      }
@@ -967,9 +967,9 @@
    "horas": [
     {
      "hora": "2026-11-17T08:00:00",
-     "lambda": 0.0623,
+     "lambda": 0.0624,
      "prob": 0.06,
-     "normal": 0.0623,
+     "normal": 0.0624,
      "ratio": 1.0,
      "nivel": "verde",
      "familias_top": [
@@ -991,20 +991,20 @@
      ],
      "factores": [],
      "meteo": {
-      "temp": 19.5,
-      "humedad": 64.0,
+      "temp": 18.7,
+      "humedad": 70.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
       "racha_kmh": 52.6,
-      "viento_sur": true,
+      "viento_sur": false,
       "dias_sin_lluvia": 3.0
      }
     },
     {
      "hora": "2026-11-17T09:00:00",
-     "lambda": 0.0623,
+     "lambda": 0.0624,
      "prob": 0.06,
-     "normal": 0.0623,
+     "normal": 0.0624,
      "ratio": 1.0,
      "nivel": "verde",
      "familias_top": [
@@ -1026,20 +1026,20 @@
      ],
      "factores": [],
      "meteo": {
-      "temp": 18.8,
-      "humedad": 68.0,
-      "lluvia_1h": 0.1,
+      "temp": 17.9,
+      "humedad": 75.0,
+      "lluvia_1h": 0.3,
       "lluvia_12h": 0.0,
-      "racha_kmh": 39.6,
+      "racha_kmh": 37.8,
       "viento_sur": false,
       "dias_sin_lluvia": 3.0
      }
     },
     {
      "hora": "2026-11-17T10:00:00",
-     "lambda": 0.0623,
+     "lambda": 0.0624,
      "prob": 0.06,
-     "normal": 0.0623,
+     "normal": 0.0624,
      "ratio": 1.0,
      "nivel": "verde",
      "familias_top": [
@@ -1061,20 +1061,20 @@
      ],
      "factores": [],
      "meteo": {
-      "temp": 18.6,
-      "humedad": 72.0,
+      "temp": 17.5,
+      "humedad": 80.0,
       "lluvia_1h": 0.0,
-      "lluvia_12h": 0.1,
-      "racha_kmh": 19.1,
+      "lluvia_12h": 0.3,
+      "racha_kmh": 7.9,
       "viento_sur": false,
       "dias_sin_lluvia": 3.0
      }
     },
     {
      "hora": "2026-11-17T11:00:00",
-     "lambda": 0.0623,
+     "lambda": 0.0624,
      "prob": 0.06,
-     "normal": 0.0623,
+     "normal": 0.0624,
      "ratio": 1.0,
      "nivel": "verde",
      "familias_top": [
@@ -1096,20 +1096,20 @@
      ],
      "factores": [],
      "meteo": {
-      "temp": 18.8,
-      "humedad": 73.0,
+      "temp": 17.8,
+      "humedad": 81.0,
       "lluvia_1h": 0.0,
-      "lluvia_12h": 0.1,
-      "racha_kmh": 21.9,
+      "lluvia_12h": 0.3,
+      "racha_kmh": 9.7,
       "viento_sur": false,
       "dias_sin_lluvia": 3.0
      }
     },
     {
      "hora": "2026-11-17T12:00:00",
-     "lambda": 0.0623,
+     "lambda": 0.0624,
      "prob": 0.06,
-     "normal": 0.0623,
+     "normal": 0.0624,
      "ratio": 1.0,
      "nivel": "verde",
      "familias_top": [
@@ -1131,20 +1131,20 @@
      ],
      "factores": [],
      "meteo": {
-      "temp": 17.7,
-      "humedad": 84.0,
+      "temp": 18.1,
+      "humedad": 81.0,
       "lluvia_1h": 0.0,
-      "lluvia_12h": 0.1,
-      "racha_kmh": 11.0,
+      "lluvia_12h": 0.3,
+      "racha_kmh": 9.1,
       "viento_sur": false,
       "dias_sin_lluvia": 3.0
      }
     },
     {
      "hora": "2026-11-17T13:00:00",
-     "lambda": 0.0623,
+     "lambda": 0.0624,
      "prob": 0.06,
-     "normal": 0.0623,
+     "normal": 0.0624,
      "ratio": 1.0,
      "nivel": "verde",
      "familias_top": [
@@ -1166,11 +1166,11 @@
      ],
      "factores": [],
      "meteo": {
-      "temp": 19.1,
-      "humedad": 77.0,
+      "temp": 20.1,
+      "humedad": 71.0,
       "lluvia_1h": 0.0,
-      "lluvia_12h": 0.1,
-      "racha_kmh": 11.2,
+      "lluvia_12h": 0.3,
+      "racha_kmh": 21.1,
       "viento_sur": false,
       "dias_sin_lluvia": 3.0
      }
@@ -1205,7 +1205,7 @@
      "familias_top": [
       {
        "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0449,
+       "lambda": 0.0447,
        "mult": 1.0
       },
       {
@@ -1215,18 +1215,18 @@
       },
       {
        "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0151,
+       "lambda": 0.0152,
        "mult": 1.0
       }
      ],
      "factores": [],
      "meteo": {
-      "temp": 19.4,
-      "humedad": 66.0,
+      "temp": 19.1,
+      "humedad": 68.0,
       "lluvia_1h": 0.1,
       "lluvia_12h": 0.0,
       "racha_kmh": 46.1,
-      "viento_sur": true,
+      "viento_sur": false,
       "dias_sin_lluvia": 1.0
      }
     },
@@ -1240,7 +1240,7 @@
      "familias_top": [
       {
        "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0449,
+       "lambda": 0.0447,
        "mult": 1.0
       },
       {
@@ -1250,17 +1250,17 @@
       },
       {
        "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0151,
+       "lambda": 0.0152,
        "mult": 1.0
       }
      ],
      "factores": [],
      "meteo": {
-      "temp": 18.8,
-      "humedad": 68.0,
-      "lluvia_1h": 0.0,
+      "temp": 17.8,
+      "humedad": 78.0,
+      "lluvia_1h": 0.6,
       "lluvia_12h": 0.1,
-      "racha_kmh": 28.4,
+      "racha_kmh": 25.9,
       "viento_sur": false,
       "dias_sin_lluvia": 1.0
      }
@@ -1275,7 +1275,7 @@
      "familias_top": [
       {
        "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0449,
+       "lambda": 0.0447,
        "mult": 1.0
       },
       {
@@ -1285,17 +1285,17 @@
       },
       {
        "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0151,
+       "lambda": 0.0152,
        "mult": 1.0
       }
      ],
      "factores": [],
      "meteo": {
-      "temp": 18.9,
-      "humedad": 69.0,
+      "temp": 18.3,
+      "humedad": 74.0,
       "lluvia_1h": 0.0,
-      "lluvia_12h": 0.1,
-      "racha_kmh": 18.0,
+      "lluvia_12h": 0.7,
+      "racha_kmh": 10.4,
       "viento_sur": false,
       "dias_sin_lluvia": 1.0
      }
@@ -1310,7 +1310,7 @@
      "familias_top": [
       {
        "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0449,
+       "lambda": 0.0447,
        "mult": 1.0
       },
       {
@@ -1320,17 +1320,17 @@
       },
       {
        "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0151,
+       "lambda": 0.0152,
        "mult": 1.0
       }
      ],
      "factores": [],
      "meteo": {
-      "temp": 18.8,
-      "humedad": 72.0,
-      "lluvia_1h": 0.1,
-      "lluvia_12h": 0.1,
-      "racha_kmh": 18.5,
+      "temp": 18.5,
+      "humedad": 74.0,
+      "lluvia_1h": 0.0,
+      "lluvia_12h": 0.7,
+      "racha_kmh": 17.3,
       "viento_sur": false,
       "dias_sin_lluvia": 1.0
      }
@@ -1345,7 +1345,7 @@
      "familias_top": [
       {
        "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0449,
+       "lambda": 0.0447,
        "mult": 1.0
       },
       {
@@ -1355,17 +1355,17 @@
       },
       {
        "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0151,
+       "lambda": 0.0152,
        "mult": 1.0
       }
      ],
      "factores": [],
      "meteo": {
-      "temp": 19.0,
-      "humedad": 73.0,
+      "temp": 19.2,
+      "humedad": 74.0,
       "lluvia_1h": 0.0,
-      "lluvia_12h": 0.2,
-      "racha_kmh": 10.3,
+      "lluvia_12h": 0.7,
+      "racha_kmh": 14.9,
       "viento_sur": false,
       "dias_sin_lluvia": 1.0
      }
@@ -1380,7 +1380,7 @@
      "familias_top": [
       {
        "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0449,
+       "lambda": 0.0447,
        "mult": 1.0
       },
       {
@@ -1390,17 +1390,17 @@
       },
       {
        "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0151,
+       "lambda": 0.0152,
        "mult": 1.0
       }
      ],
      "factores": [],
      "meteo": {
-      "temp": 20.4,
-      "humedad": 71.0,
+      "temp": 20.7,
+      "humedad": 69.0,
       "lluvia_1h": 0.0,
-      "lluvia_12h": 0.2,
-      "racha_kmh": 15.8,
+      "lluvia_12h": 0.7,
+      "racha_kmh": 20.2,
       "viento_sur": false,
       "dias_sin_lluvia": 1.0
      }
@@ -1415,7 +1415,7 @@
    "lon": -2.634,
    "salidas_esperadas_6h": 0.44,
    "normal_6h": 0.44,
-   "prob_6h": 0.359,
+   "prob_6h": 0.358,
    "ratio_max": 1.0,
    "nivel": "verde",
    "hora_pico": "2026-11-17T08:00:00",
@@ -1427,9 +1427,9 @@
    "horas": [
     {
      "hora": "2026-11-17T08:00:00",
-     "lambda": 0.0741,
+     "lambda": 0.0738,
      "prob": 0.071,
-     "normal": 0.0741,
+     "normal": 0.0738,
      "ratio": 1.0,
      "nivel": "verde",
      "familias_top": [
@@ -1445,14 +1445,14 @@
       },
       {
        "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0121,
+       "lambda": 0.012,
        "mult": 1.0
       }
      ],
      "factores": [],
      "meteo": {
-      "temp": 18.7,
-      "humedad": 69.0,
+      "temp": 18.2,
+      "humedad": 73.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
       "racha_kmh": 33.8,
@@ -1462,9 +1462,9 @@
     },
     {
      "hora": "2026-11-17T09:00:00",
-     "lambda": 0.0741,
+     "lambda": 0.0738,
      "prob": 0.071,
-     "normal": 0.0741,
+     "normal": 0.0738,
      "ratio": 1.0,
      "nivel": "verde",
      "familias_top": [
@@ -1480,26 +1480,26 @@
       },
       {
        "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0121,
+       "lambda": 0.012,
        "mult": 1.0
       }
      ],
      "factores": [],
      "meteo": {
-      "temp": 17.8,
-      "humedad": 78.0,
-      "lluvia_1h": 0.3,
+      "temp": 17.4,
+      "humedad": 80.0,
+      "lluvia_1h": 0.2,
       "lluvia_12h": 0.0,
-      "racha_kmh": 28.1,
+      "racha_kmh": 29.2,
       "viento_sur": false,
       "dias_sin_lluvia": 2.0
      }
     },
     {
      "hora": "2026-11-17T10:00:00",
-     "lambda": 0.0741,
+     "lambda": 0.0738,
      "prob": 0.071,
-     "normal": 0.0741,
+     "normal": 0.0738,
      "ratio": 1.0,
      "nivel": "verde",
      "familias_top": [
@@ -1515,26 +1515,26 @@
       },
       {
        "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0121,
+       "lambda": 0.012,
        "mult": 1.0
       }
      ],
      "factores": [],
      "meteo": {
-      "temp": 18.3,
-      "humedad": 75.0,
+      "temp": 18.0,
+      "humedad": 77.0,
       "lluvia_1h": 0.0,
-      "lluvia_12h": 0.3,
-      "racha_kmh": 21.6,
+      "lluvia_12h": 0.2,
+      "racha_kmh": 15.5,
       "viento_sur": false,
       "dias_sin_lluvia": 2.0
      }
     },
     {
      "hora": "2026-11-17T11:00:00",
-     "lambda": 0.0741,
+     "lambda": 0.0738,
      "prob": 0.071,
-     "normal": 0.0741,
+     "normal": 0.0738,
      "ratio": 1.0,
      "nivel": "verde",
      "familias_top": [
@@ -1550,26 +1550,26 @@
       },
       {
        "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0121,
+       "lambda": 0.012,
        "mult": 1.0
       }
      ],
      "factores": [],
      "meteo": {
-      "temp": 18.6,
-      "humedad": 75.0,
+      "temp": 18.8,
+      "humedad": 77.0,
       "lluvia_1h": 0.0,
-      "lluvia_12h": 0.3,
-      "racha_kmh": 19.9,
+      "lluvia_12h": 0.2,
+      "racha_kmh": 15.5,
       "viento_sur": false,
       "dias_sin_lluvia": 2.0
      }
     },
     {
      "hora": "2026-11-17T12:00:00",
-     "lambda": 0.0741,
+     "lambda": 0.0738,
      "prob": 0.071,
-     "normal": 0.0741,
+     "normal": 0.0738,
      "ratio": 1.0,
      "nivel": "verde",
      "familias_top": [
@@ -1585,26 +1585,26 @@
       },
       {
        "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0121,
+       "lambda": 0.012,
        "mult": 1.0
       }
      ],
      "factores": [],
      "meteo": {
-      "temp": 19.0,
-      "humedad": 76.0,
+      "temp": 19.5,
+      "humedad": 74.0,
       "lluvia_1h": 0.0,
-      "lluvia_12h": 0.3,
-      "racha_kmh": 18.7,
+      "lluvia_12h": 0.2,
+      "racha_kmh": 20.3,
       "viento_sur": false,
       "dias_sin_lluvia": 2.0
      }
     },
     {
      "hora": "2026-11-17T13:00:00",
-     "lambda": 0.0741,
+     "lambda": 0.0738,
      "prob": 0.071,
-     "normal": 0.0741,
+     "normal": 0.0738,
      "ratio": 1.0,
      "nivel": "verde",
      "familias_top": [
@@ -1620,17 +1620,17 @@
       },
       {
        "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0121,
+       "lambda": 0.012,
        "mult": 1.0
       }
      ],
      "factores": [],
      "meteo": {
       "temp": 20.6,
-      "humedad": 70.0,
+      "humedad": 69.0,
       "lluvia_1h": 0.0,
-      "lluvia_12h": 0.3,
-      "racha_kmh": 24.7,
+      "lluvia_12h": 0.2,
+      "racha_kmh": 27.0,
       "viento_sur": false,
       "dias_sin_lluvia": 2.0
      }
@@ -1643,9 +1643,9 @@
    "nombre": "Arratzu",
    "lat": 43.309,
    "lon": -2.64,
-   "salidas_esperadas_6h": 0.39,
-   "normal_6h": 0.39,
-   "prob_6h": 0.32,
+   "salidas_esperadas_6h": 0.38,
+   "normal_6h": 0.38,
+   "prob_6h": 0.319,
    "ratio_max": 1.0,
    "nivel": "verde",
    "hora_pico": "2026-11-17T08:00:00",
@@ -1657,9 +1657,9 @@
    "horas": [
     {
      "hora": "2026-11-17T08:00:00",
-     "lambda": 0.0642,
+     "lambda": 0.0641,
      "prob": 0.062,
-     "normal": 0.0642,
+     "normal": 0.0641,
      "ratio": 1.0,
      "nivel": "verde",
      "familias_top": [
@@ -1681,20 +1681,20 @@
      ],
      "factores": [],
      "meteo": {
-      "temp": 18.3,
-      "humedad": 72.0,
+      "temp": 17.6,
+      "humedad": 79.0,
       "lluvia_1h": 0.4,
       "lluvia_12h": 0.0,
       "racha_kmh": 42.5,
-      "viento_sur": true,
+      "viento_sur": false,
       "dias_sin_lluvia": 2.0
      }
     },
     {
      "hora": "2026-11-17T09:00:00",
-     "lambda": 0.0642,
+     "lambda": 0.0641,
      "prob": 0.062,
-     "normal": 0.0642,
+     "normal": 0.0641,
      "ratio": 1.0,
      "nivel": "verde",
      "familias_top": [
@@ -1716,55 +1716,20 @@
      ],
      "factores": [],
      "meteo": {
-      "temp": 17.3,
-      "humedad": 81.0,
-      "lluvia_1h": 0.5,
+      "temp": 16.9,
+      "humedad": 85.0,
+      "lluvia_1h": 0.7,
       "lluvia_12h": 0.4,
-      "racha_kmh": 31.7,
-      "viento_sur": true,
-      "dias_sin_lluvia": 2.0
-     }
-    },
-    {
-     "hora": "2026-11-17T10:00:00",
-     "lambda": 0.0642,
-     "prob": 0.062,
-     "normal": 0.0642,
-     "ratio": 1.0,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0197,
-       "mult": 1.0
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.012,
-       "mult": 1.0
-      },
-      {
-       "familia": "ABEJAS_AVISPAS",
-       "lambda": 0.0103,
-       "mult": 1.0
-      }
-     ],
-     "factores": [],
-     "meteo": {
-      "temp": 17.1,
-      "humedad": 84.0,
-      "lluvia_1h": 0.3,
-      "lluvia_12h": 0.9,
       "racha_kmh": 21.2,
       "viento_sur": false,
       "dias_sin_lluvia": 2.0
      }
     },
     {
-     "hora": "2026-11-17T11:00:00",
-     "lambda": 0.0642,
+     "hora": "2026-11-17T10:00:00",
+     "lambda": 0.0641,
      "prob": 0.062,
-     "normal": 0.0642,
+     "normal": 0.0641,
      "ratio": 1.0,
      "nivel": "verde",
      "familias_top": [
@@ -1786,20 +1751,20 @@
      ],
      "factores": [],
      "meteo": {
-      "temp": 17.0,
-      "humedad": 87.0,
+      "temp": 16.5,
+      "humedad": 89.0,
       "lluvia_1h": 0.2,
-      "lluvia_12h": 1.2,
-      "racha_kmh": 7.1,
+      "lluvia_12h": 1.1,
+      "racha_kmh": 7.2,
       "viento_sur": false,
       "dias_sin_lluvia": 2.0
      }
     },
     {
-     "hora": "2026-11-17T12:00:00",
-     "lambda": 0.0642,
+     "hora": "2026-11-17T11:00:00",
+     "lambda": 0.0641,
      "prob": 0.062,
-     "normal": 0.0642,
+     "normal": 0.0641,
      "ratio": 1.0,
      "nivel": "verde",
      "familias_top": [
@@ -1822,19 +1787,19 @@
      "factores": [],
      "meteo": {
       "temp": 17.1,
-      "humedad": 89.0,
-      "lluvia_1h": 0.1,
-      "lluvia_12h": 1.4,
-      "racha_kmh": 9.5,
+      "humedad": 86.0,
+      "lluvia_1h": 0.3,
+      "lluvia_12h": 1.3,
+      "racha_kmh": 10.1,
       "viento_sur": false,
       "dias_sin_lluvia": 2.0
      }
     },
     {
-     "hora": "2026-11-17T13:00:00",
-     "lambda": 0.0642,
+     "hora": "2026-11-17T12:00:00",
+     "lambda": 0.0641,
      "prob": 0.062,
-     "normal": 0.0642,
+     "normal": 0.0641,
      "ratio": 1.0,
      "nivel": "verde",
      "familias_top": [
@@ -1856,11 +1821,46 @@
      ],
      "factores": [],
      "meteo": {
-      "temp": 17.9,
+      "temp": 17.6,
       "humedad": 86.0,
       "lluvia_1h": 0.0,
-      "lluvia_12h": 1.4,
-      "racha_kmh": 7.3,
+      "lluvia_12h": 1.6,
+      "racha_kmh": 14.1,
+      "viento_sur": false,
+      "dias_sin_lluvia": 2.0
+     }
+    },
+    {
+     "hora": "2026-11-17T13:00:00",
+     "lambda": 0.0641,
+     "prob": 0.062,
+     "normal": 0.0641,
+     "ratio": 1.0,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0197,
+       "mult": 1.0
+      },
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.012,
+       "mult": 1.0
+      },
+      {
+       "familia": "ABEJAS_AVISPAS",
+       "lambda": 0.0103,
+       "mult": 1.0
+      }
+     ],
+     "factores": [],
+     "meteo": {
+      "temp": 19.1,
+      "humedad": 80.0,
+      "lluvia_1h": 0.0,
+      "lluvia_12h": 1.6,
+      "racha_kmh": 17.6,
       "viento_sur": false,
       "dias_sin_lluvia": 2.0
      }
@@ -1874,8 +1874,15 @@
    "tipo": "SANEADO DE CONSTRUCCIONES",
    "ubicacion": "LEIOA",
    "zona": "CL Langileria",
-   "vehiculos": "Transporte Material y Personal (Vehículo parado en siniestro)",
+   "vehiculos": "Transporte Material y Personal (Vehículo volviendo de un sin.)",
    "parque": "ARTAZA"
+  },
+  {
+   "tipo": "SANEADO DE CONSTRUCCIONES",
+   "ubicacion": "SESTAO",
+   "zona": "GR Nuestra Señora del Carmen",
+   "vehiculos": "Auto escala articulada (Vehículo va a un siniestro)",
+   "parque": "URIOSTE"
   }
  ],
  "niveles": {

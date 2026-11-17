@@ -1,7 +1,7 @@
 {
- "ts": "2026-11-17T08:52:15+01:00",
+ "ts": "2026-11-17T08:54:15+01:00",
  "salidas_desde_8": 0,
- "salidas_anio": 5732,
+ "salidas_anio": 5733,
  "actuaciones": [
   {
    "tipo": "SANEADO DE CONSTRUCCIONES",
@@ -30,20 +30,20 @@
    "vehiculos": [
     {
      "tipo": "Auto escala articulada",
-     "estado": "PROPUESTO",
-     "estado_txt": "Vehículo propuesto"
+     "estado": "EN_RUTA",
+     "estado_txt": "Vehículo va a un siniestro"
     }
    ],
    "n_vehiculos": 1,
-   "estado": "PROPUESTO"
+   "estado": "EN_RUTA"
   }
  ],
  "por_parque": {
   "URIOSTE": {
    "actuaciones": 1,
    "vehiculos": 1,
-   "propuesto": 1,
-   "en_ruta": 0,
+   "propuesto": 0,
+   "en_ruta": 1,
    "en_siniestro": 0,
    "regresando": 0
   },
