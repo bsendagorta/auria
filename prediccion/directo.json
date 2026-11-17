@@ -1,6 +1,6 @@
 {
- "ts": "2026-11-17T13:21:14+01:00",
- "salidas_desde_8": 16,
+ "ts": "2026-11-17T13:24:15+01:00",
+ "salidas_desde_8": 17,
  "salidas_anio": 5800,
  "actuaciones": [
   {
@@ -45,19 +45,19 @@
   {
    "tipo": "SANEADO DE CONSTRUCCIONES",
    "familia": "METEO_ASISTENCIA",
-   "ubicacion": "BARAKALDO",
-   "zona": "CL Merindad de Uribe",
+   "ubicacion": "SANTURTZI",
+   "zona": "AV Antonio Alzaga",
    "parque": "URIOSTE",
    "parque_nombre": "Urioste (Ortuella)",
    "vehiculos": [
     {
      "tipo": "Auto escala articulada",
-     "estado": "REGRESANDO",
-     "estado_txt": "Vehículo volviendo de un sin."
+     "estado": "EN_RUTA",
+     "estado_txt": "Vehículo va a un siniestro"
     }
    ],
    "n_vehiculos": 1,
-   "estado": "REGRESANDO"
+   "estado": "EN_RUTA"
   }
  ],
  "por_parque": {
@@ -65,9 +65,9 @@
    "actuaciones": 1,
    "vehiculos": 1,
    "propuesto": 0,
-   "en_ruta": 0,
+   "en_ruta": 1,
    "en_siniestro": 0,
-   "regresando": 1
+   "regresando": 0
   },
   "ARTAZA": {
    "actuaciones": 0,
