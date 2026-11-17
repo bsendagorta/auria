@@ -332,6 +332,20 @@ with t_6h:
         tooltip=[alt.Tooltip("hora:T", format="%H:%M"), "serie", alt.Tooltip("value:Q", format=".2f")],
     ).properties(height=230), width="stretch")
 
+    ev = leer_csv("datos/eventos_auto.csv")
+    if ev is not None and len(ev):
+        ev["inicio"] = pd.to_datetime(ev["inicio"])
+        prox = ev[(ev["inicio"] >= pd.Timestamp.now().normalize()) &
+                  (ev["inicio"] <= pd.Timestamp.now().normalize() + pd.Timedelta(days=3))].sort_values("inicio")
+        with st.expander(f"📅 Fiestas y eventos con público en los próximos 3 días ({len(prox)})", expanded=False):
+            nom = {k: v["nombre"] for k, v in ((p["id"], p) for p in parques)}
+            prox = prox.assign(parque=prox["parques"].map(lambda x: ", ".join(nom.get(i, i) for i in str(x).split(";"))),
+                               cuando=prox["inicio"].dt.strftime("%a %d %H:%M"),
+                               nivel=prox["nivel"].map({1: "con público", 2: "masivo"}))
+            st.dataframe(prox[["cuando", "nombre", "nivel", "parque"]], hide_index=True, width="stretch")
+            st.caption("Fiestas locales: calendario laboral de Euskadi. Eventos: agenda cultural Kulturklik "
+                       "(Open Data Euskadi), asignados al parque por su municipio.")
+
     sel = st.selectbox("Detalle de un parque", [p["nombre"] for p in parques])
     p = next(x for x in parques if x["nombre"] == sel)
     st.dataframe(pd.DataFrame([{
@@ -559,6 +573,30 @@ with t_pat:
             st.dataframe(val[["dev_ref", "dev_situaciones", "mejora_pct", "salidas_test"]].rename(columns={
                 "dev_ref": "referencia", "dev_situaciones": "con situaciones", "mejora_pct": "mejora %",
                 "salidas_test": "salidas"}), width="stretch")
+
+    mv, _ = leer_json("datos/modelo/movilidad.json", 900)
+    if mv:
+        st.markdown("---")
+        st.markdown(f"### Presencia de gente (datos anónimos de móviles, MITMS) · {mv['dias']} días "
+                    f"({mv['desde']} → {mv['hasta']})")
+        perf = leer_csv("datos/modelo/movilidad_perfil.csv")
+        if perf is not None and len(perf):
+            nom = {p["id"]: p["nombre"].split(" (")[0] for p in parques}
+            pp = perf[perf["parque"] != "BILBAO"].assign(parque=lambda x: x["parque"].map(nom))
+            td = st.radio("Tipo de día", ["LJ", "V", "S", "D"], horizontal=True,
+                          format_func={"LJ": "Lunes-jueves", "V": "Viernes", "S": "Sábado", "D": "Domingo/festivo"}.get)
+            st.altair_chart(alt.Chart(pp[pp["tipo_dia"] == td]).mark_line(strokeWidth=2).encode(
+                x=alt.X("hora:O"), y=alt.Y("relativo:Q", title="presencia (1 = hora media del parque)"),
+                color=alt.Color("parque:N", legend=alt.Legend(orient="top", title=None)),
+                tooltip=["parque", "hora", alt.Tooltip("relativo:Q", format=".2f"),
+                         alt.Tooltip("visitante:Q", format=",.0f", title="viajes de visitantes")],
+            ).properties(height=260), width="stretch")
+        ta = pd.DataFrame(mv.get("top_aglomeraciones", []))
+        if len(ta):
+            st.markdown("**Días con más visitantes de lo normal** (índice 2 = el doble que un día parecido)")
+            st.dataframe(ta.assign(parque=ta["parque"].map({p["id"]: p["nombre"] for p in parques}).fillna(ta["parque"])),
+                         hide_index=True, width="stretch")
+        st.caption(mv.get("nota", ""))
 
 with st.expander("Cómo funciona AURIA"):
     st.markdown("""
