@@ -1,0 +1,27 @@
+# Estaciones de Euskalmet: catálogo de Bizkaia y histórico horario por parque (incremental, cada noche)
+name: Estaciones Euskalmet
+on:
+  schedule:
+    - cron: "41 3 * * *"
+  workflow_dispatch:
+concurrency:
+  group: estaciones-auria
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  estaciones:
+    runs-on: ubuntu-latest
+    timeout-minutes: 115
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -q pandas numpy requests PyJWT cryptography
+      - env:
+          EUSKALMET_PRIVATE_KEY: ${{ secrets.EUSKALMET_PRIVATE_KEY }}
+          EUSKALMET_FINGERPRINT: ${{ secrets.EUSKALMET_FINGERPRINT }}
+        run: python -m auria.estaciones --catalogo --historico --desde 2021-01-01
+      - if: always()
+        run: scripts/subir_datos.sh "datos - estaciones Euskalmet $(date -u +%Y-%m-%d)"
