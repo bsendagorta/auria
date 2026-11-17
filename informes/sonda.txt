@@ -1,4 +1,539 @@
-Traceback (most recent call last):
-  File "/home/runner/work/auria/auria/scripts/sonda.py", line 4, in <module>
-    from auria import euskalmet as E
-ModuleNotFoundError: No module named 'auria'
+== euskalmet /euskalmet/stations -> 200 application/json;charset=ISO-8859-1 None
+https://api.euskadi.eus/euskalmet/stations
+[ {
+  "key" : "euskalmet/stations/B090/20031006",
+  "stationId" : "B090",
+  "snapshotDate" : "2003-10-05T22:00:00Z"
+}, {
+  "key" : "euskalmet/stations/B090/20131213",
+  "stationId" : "B090",
+  "snapshotDate" : "2013-12-12T23:00:00Z"
+}, {
+  "key" : "euskalmet/stations/B090/20150508",
+  "stationId" : "B090",
+  "snapshotDate" : "2015-05-07T22:00:00Z"
+}, {
+  "key" : "euskalmet/stations/B090/20160504",
+  "stationId" : "B090",
+  "snapshotDate" : "2016-05-03T22:00:00Z"
+}, {
+  "key" : "euskalmet/stations/B090/20170216",
+  "stationId" : "B090",
+  "snapshotDate" : "2017-02-15T23:00:00Z"
+}, {
+  "key" : "euskalmet/stations/B090/20201225",
+  "stationId" : "B090",
+  "snapshotDate" : "2020-12-24T23:00:00Z"
+}, {
+  "key" : "euskalmet/stations/B090/20210505",
+  "stationId" : "B090",
+  "snapshotDate" : "2021-05-04T22:00:00Z"
+}, {
+  "key" : "euskalmet/stations/B090/20210524",
+  "stationId" : "B090",
+  "snapshotDate" : "2021-05-23T22:00:00Z"
+}, {
+  "key" : "euskalmet/stations/B090/20210623",
+  "stationId" : "B090",
+  "snapshotDate" : "2021-06-22T22:00:00Z"
+}, {
+  "key" : "euskalmet/stations/B090/20210624",
+  "stationId" : "B090",
+  "snapshotDate" : "2021-06-23T22:00:00Z"
+}, {
+  "key" : "euskalmet/stations/B090/20210625",
+  "stationId" : "B090",
+  "snapshotDate" : "2021-06-24T22:00:00Z"
+}, {
+  "key" : "euskalmet/stations/B090/20220713",
+  "stationId" : "B090",
+  "snapshotDate" : "2022-07-12T22:00:00Z"
+}, {
+  "key" : "euskalmet/stations/B090/20221003",
+  "stationId" : "B090",
+  "snapshotDate" : "2022-10-02T22:00:00Z"
+}, {
+  "key" : "euskalmet/stations/B091/20031006",
+  "stationId" : "B091",
+  "snapshotDate" : "2003-10-05T22:00:00Z"
+}, {
+  "key" : "euskalmet/stations/B091/20210526",
+  "stationId" : "B091",
+  "snapshotDate" : "2021-05-25T22:00:00Z"
+}, {
+  "key" : "euskalmet/stations/B092/20030722",
+  "stationId" : "B092",
+  "snapshotDate" : "2003-07-21T22:00:00Z"
+}, {
+  "key" : "euskalmet/stations/B092/20080505",
+  "stationId" : "B092",
+  "snapshotDate" : "2008-05-04T22:00:00Z"
+}, {
+  "key" : "euskalmet/stations/B092/20080507",
+  "stationId" : "B092",
+  "snapshotDate" : "2008-05-06T22:00:00Z"
+}, {
+  "key" : "euskalmet/stations/B092/20091119",
+  "stationId" : "B092",
+  "snapshotDate" : "2009-11-18T23:00:00Z"
+}, {
+  "key" : "euskalmet/stations/B092/20091120",
+  "stationId" : "B092",
+  "snapshotDate" : "2009-11-19T23:00:00Z"
+}, {
+  "key" : "euskalmet/stations/B092/20210505",
+  "stationId" : "B092",
+  "snapshotDate" : "2021-05-04T22:00:00Z"
+}, {
+  "key" : "euskalmet/stations/B092/2021
+
+== euskalmet /euskalmet/stations/C040 -> 200 application/json;charset=ISO-8859-1 2576
+https://api.euskadi.eus/euskalmet/stations/C040
+[ {
+  "key" : "euskalmet/stations/C040/20080125",
+  "stationId" : "C040",
+  "snapshotDate" : "2008-01-24T23:00:00Z"
+}, {
+  "key" : "euskalmet/stations/C040/20090415",
+  "stationId" : "C040",
+  "snapshotDate" : "2009-04-14T22:00:00Z"
+}, {
+  "key" : "euskalmet/stations/C040/20091002",
+  "stationId" : "C040",
+  "snapshotDate" : "2009-10-01T22:00:00Z"
+}, {
+  "key" : "euskalmet/stations/C040/20091007",
+  "stationId" : "C040",
+  "snapshotDate" : "2009-10-06T22:00:00Z"
+}, {
+  "key" : "euskalmet/stations/C040/20091013",
+  "stationId" : "C040",
+  "snapshotDate" : "2009-10-12T22:00:00Z"
+}, {
+  "key" : "euskalmet/stations/C040/20091015",
+  "stationId" : "C040",
+  "snapshotDate" : "2009-10-14T22:00:00Z"
+}, {
+  "key" : "euskalmet/stations/C040/20091020",
+  "stationId" : "C040",
+  "snapshotDate" : "2009-10-19T22:00:00Z"
+}, {
+  "key" : "euskalmet/stations/C040/20100224",
+  "stationId" : "C040",
+  "snapshotDate" : "2010-02-23T23:00:00Z"
+}, {
+  "key" : "euskalmet/stations/C040/20100621",
+  "stationId" : "C040",
+  "snapshotDate" : "2010-06-20T22:00:00Z"
+}, {
+  "key" : "euskalmet/stations/C040/20100622",
+  "stationId" : "C040",
+  "snapshotDate" : "2010-06-21T22:00:00Z"
+}, {
+  "key" : "euskalmet/stations/C040/20100625",
+  "stationId" : "C040",
+  "snapshotDate" : "2010-06-24T22:00:00Z"
+}, {
+  "key" : "euskalmet/stations/C040/20101018",
+  "stationId" : "C040",
+  "snapshotDate" : "2010-10-17T22:00:00Z"
+}, {
+  "key" : "euskalmet/stations/C040/20101029",
+  "stationId" : "C040",
+  "snapshotDate" : "2010-10-28T22:00:00Z"
+}, {
+  "key" : "euskalmet/stations/C040/20110204",
+  "stationId" : "C040",
+  "snapshotDate" : "2011-02-03T23:00:00Z"
+}, {
+  "key" : "euskalmet/stations/C040/20120523",
+  "stationId" : "C040",
+  "snapshotDate" : "2012-05-22T22:00:00Z"
+}, {
+  "key" : "euskalmet/stations/C040/20120625",
+  "stationId" : "C040",
+  "snapshotDate" : "2012-06-24T22:00:00Z"
+}, {
+  "key" : "euskalmet/stations/C040/20131211",
+  "stationId" : "C040",
+  "snapshotDate" : "2013-12-10T23:00:00Z"
+}, {
+  "key" : "euskalmet/stations/C040/20191025",
+  "stationId" : "C040",
+  "snapshotDate" : "2019-10-24T22:00:00Z"
+}, {
+  "key" : "euskalmet/stations/C040/20200406",
+  "stationId" : "C040",
+  "snapshotDate" : "2020-04-05T22:00:00Z"
+}, {
+  "key" : "euskalmet/stations/C040/20210505",
+  "stationId" : "C040",
+  "snapshotDate" : "2021-05-04T22:00:00Z"
+}, {
+  "key" : "euskalmet/stations/C040/20210623",
+  "stationId" : "C040",
+  "snapshotDate" : "2021-06-22T22:00:00Z"
+}, {
+  "key" : "euskalmet/stations/C040/2022
+
+== euskalmet /euskalmet/readings/aggregated/byDay/forStation/C040/at/2026/11/16 -> 200 application/json;charset=ISO-8859-1 None
+https://api.euskadi.eus/euskalmet/readings/aggregated/byDay/forStation/C040/at/2026/11/16
+{
+  "oid" : "euskalmet/readings/aggregated/byDay/forStation/C040/at/2026/11/16",
+  "numericId" : 0,
+  "entityVersion" : 0,
+  "station" : "C040",
+  "date" : "2026-11-16T11:00:00Z",
+  "items" : [ {
+    "typeId" : "met01a.model.stations.readings.aggregate.MT01DayStationSensorReadingsAggregateItem",
+    "sensorId" : "K026",
+    "measureType" : "measuresForSun",
+    "measureId" : "irradiance",
+    "key" : "K026/measuresForSun/irradiance",
+    "sensorPosition" : {
+      "at" : 200,
+      "unit" : "CENTIMETERS"
+    },
+    "readings" : [ {
+      "typeId" : "timeRangeMeasures",
+      "oid" : "euskalmet/readings/forStation/C040/K026/measures/measuresForSun/irradiance/at/2026/11/16/00",
+      "numericId" : 0,
+      "entityVersion" : 0,
+      "station" : "C040",
+      "sensor" : "K026",
+      "measureType" : "measuresForSun",
+      "measure" : "irradiance",
+      "dateRange" : "Date:(1794783600000..1794869999000)",
+      "slots" : [ {
+        "range" : "LocalTime:[00:00:00:000..00:09:59:999]",
+        "rangeDesc" : "00:00 - 00:09",
+        "lowerEndPointDesc" : "00:00",
+        "upperEndPointDesc" : "00:09"
+      }, {
+        "range" : "LocalTime:[00:10:00:000..00:19:59:999]",
+        "rangeDesc" : "00:10 - 00:19",
+        "lowerEndPointDesc" : "00:10",
+        "upperEndPointDesc" : "00:19"
+      }, {
+        "range" : "LocalTime:[00:20:00:000..00:29:59:999]",
+        "rangeDesc" : "00:20 - 00:29",
+        "lowerEndPointDesc" : "00:20",
+        "upperEndPointDesc" : "00:29"
+      }, {
+        "range" : "LocalTime:[00:30:00:000..00:39:59:999]",
+        "rangeDesc" : "00:30 - 00:39",
+        "lowerEndPointDesc" : "00:30",
+        "upperEndPointDesc" : "00:39"
+      }, {
+        "range" : "LocalTime:[00:40:00:000..00:49:59:999]",
+        "rangeDesc" : "00:40 - 00:49",
+        "lowerEndPointDesc" : "00:40",
+        "upperEndPointDesc" : "00:49"
+      }, {
+        "range" : "LocalTime:[00:50:00:000..00:59:59:999]",
+        "rangeDesc" : "00:50 - 00:59",
+        "lowerEndPointDesc" : "00:50",
+        "upperEndPointDesc" : "00:59"
+      } ],
+      "values" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.01 ]
+    }, {
+      "typeId" : "timeRangeMeasures",
+      "oid" : "euskalmet/readings/forStation/C040/K026/measures/measuresForSun/irradiance/at/2026/11/16/01",
+      "numericId" : 0,
+      "entityVersion" : 0,
+      "station" : "C040",
+      "sensor" : "K026",
+      "measureType" : "measuresForSun",
+      "measure" : "irradiance",
+      "dateRange" : "Date:(1794783600000..1794869999000)",
+  
+
+== euskalmet /euskalmet/readings/aggregated/byDay/forStation/C040/at/2021/03/10 -> 200 application/json;charset=ISO-8859-1 None
+https://api.euskadi.eus/euskalmet/readings/aggregated/byDay/forStation/C040/at/2021/03/10
+{
+  "oid" : "euskalmet/readings/aggregated/byDay/forStation/C040/at/2021/03/10",
+  "numericId" : 0,
+  "entityVersion" : 0,
+  "station" : "C040",
+  "date" : "2021-03-10T00:00:00Z",
+  "items" : [ {
+    "typeId" : "met01a.model.stations.readings.aggregate.MT01DayStationSensorReadingsAggregateItem",
+    "sensorId" : "Y045",
+    "measureType" : "measuresForWind",
+    "measureId" : "mean_speed",
+    "key" : "Y045/measuresForWind/mean_speed",
+    "sensorPosition" : {
+      "at" : 1100,
+      "unit" : "CENTIMETERS"
+    },
+    "readings" : [ {
+      "typeId" : "timeRangeMeasures",
+      "oid" : "euskalmet/readings/forStation/C040/Y045/measures/measuresForWind/mean_speed/at/2021/03/10/00",
+      "numericId" : 0,
+      "entityVersion" : 0,
+      "station" : "C040",
+      "sensor" : "Y045",
+      "measureType" : "measuresForWind",
+      "measure" : "mean_speed",
+      "dateRange" : "Date:[1615330800000..1615334399999]",
+      "slots" : [ {
+        "range" : "LocalTime:[00:00:00:000..00:09:59:999]",
+        "rangeDesc" : "00:00 - 00:09",
+        "lowerEndPointDesc" : "00:00",
+        "upperEndPointDesc" : "00:09"
+      }, {
+        "range" : "LocalTime:[00:10:00:000..00:19:59:999]",
+        "rangeDesc" : "00:10 - 00:19",
+        "lowerEndPointDesc" : "00:10",
+        "upperEndPointDesc" : "00:19"
+      }, {
+        "range" : "LocalTime:[00:20:00:000..00:29:59:999]",
+        "rangeDesc" : "00:20 - 00:29",
+        "lowerEndPointDesc" : "00:20",
+        "upperEndPointDesc" : "00:29"
+      }, {
+        "range" : "LocalTime:[00:30:00:000..00:39:59:999]",
+        "rangeDesc" : "00:30 - 00:39",
+        "lowerEndPointDesc" : "00:30",
+        "upperEndPointDesc" : "00:39"
+      }, {
+        "range" : "LocalTime:[00:40:00:000..00:49:59:999]",
+        "rangeDesc" : "00:40 - 00:49",
+        "lowerEndPointDesc" : "00:40",
+        "upperEndPointDesc" : "00:49"
+      }, {
+        "range" : "LocalTime:[00:50:00:000..00:59:59:999]",
+        "rangeDesc" : "00:50 - 00:59",
+        "lowerEndPointDesc" : "00:50",
+        "upperEndPointDesc" : "00:59"
+      } ],
+      "values" : [ 1.04, 0.29, 0.38, 0.37, 0.18, 0.47 ]
+    }, {
+      "typeId" : "timeRangeMeasures",
+      "oid" : "euskalmet/readings/forStation/C040/Y045/measures/measuresForWind/mean_speed/at/2021/03/10/01",
+      "numericId" : 0,
+      "entityVersion" : 0,
+      "station" : "C040",
+      "sensor" : "Y045",
+      "measureType" : "measuresForWind",
+      "measure" : "mean_speed",
+      "dateRange" : "Date:[1615334400000..1615337
+
+== mitms -> 403 text/html 3313
+https://movilidad-opendata.mitma.es/RSS.xml
+<!DOCTYPE html><html lang="en"> <head> <meta charset="UTF-8"> <meta http-equiv="X-UA-Compatible" content="IE=8; IE=EDGE"> <meta name="viewport" content="width=device-width, initial-scale=1"> <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> <style type="text/css"> body { height: 100%; font-family: Roboto, Helvetica, Arial, sans-serif; color: #6a6a6a; margin: 0; display: flex; align-items: center; justify-content: center; } input[type=date], input[type=email], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], select, textarea { color: #262626; vertical-align: baseline; margin: .2em; border-style: solid; border-width: 1px; border-color: #a9a9a9; background-color: #fff; box-sizing: border-box; padding: 2px .5em; appearance: none; border-radius: 0; } input:focus { border-color: #646464; box-shadow: 0 0 1px 0 #a2a2a2; outline: 0; } button { padding: .5em 1em; border: 1px solid; border-radius: 3px; min-width: 6em; font-weight: 400; font-size: .8em; cursor: pointer; } button.primary { color: #fff; background-color: rgb(47, 113, 178); border-color: rgb(34, 103, 173); }
+
+== mitms -> 403 text/html 3369
+https://movilidad-opendata.mitma.es/estudios_basicos/por-distritos/viajes/ficheros-diarios/2025-05/
+<!DOCTYPE html><html lang="en"> <head> <meta charset="UTF-8"> <meta http-equiv="X-UA-Compatible" content="IE=8; IE=EDGE"> <meta name="viewport" content="width=device-width, initial-scale=1"> <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> <style type="text/css"> body { height: 100%; font-family: Roboto, Helvetica, Arial, sans-serif; color: #6a6a6a; margin: 0; display: flex; align-items: center; justify-content: center; } input[type=date], input[type=email], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], select, textarea { color: #262626; vertical-align: baseline; margin: .2em; border-style: solid; border-width: 1px; border-color: #a9a9a9; background-color: #fff; box-sizing: border-box; padding: 2px .5em; appearance: none; border-radius: 0; } input:focus { border-color: #646464; box-shadow: 0 0 1px 0 #a2a2a2; outline: 0; } button { padding: .5em 1em; border: 1px solid; border-radius: 3px; min-width: 6em; font-weight: 400; font-size: .8em; cursor: pointer; } button.primary { color: #fff; background-color: rgb(47, 113, 178); border-color: rgb(34, 103, 173); }
+
+== mitms -> 403 text/html 3371
+https://movilidad-opendata.mitma.es/estudios_basicos/por-distritos/personas/ficheros-diarios/2025-05/
+<!DOCTYPE html><html lang="en"> <head> <meta charset="UTF-8"> <meta http-equiv="X-UA-Compatible" content="IE=8; IE=EDGE"> <meta name="viewport" content="width=device-width, initial-scale=1"> <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> <style type="text/css"> body { height: 100%; font-family: Roboto, Helvetica, Arial, sans-serif; color: #6a6a6a; margin: 0; display: flex; align-items: center; justify-content: center; } input[type=date], input[type=email], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], select, textarea { color: #262626; vertical-align: baseline; margin: .2em; border-style: solid; border-width: 1px; border-color: #a9a9a9; background-color: #fff; box-sizing: border-box; padding: 2px .5em; appearance: none; border-radius: 0; } input:focus { border-color: #646464; box-shadow: 0 0 1px 0 #a2a2a2; outline: 0; } button { padding: .5em 1em; border: 1px solid; border-radius: 3px; min-width: 6em; font-weight: 400; font-size: .8em; cursor: pointer; } button.primary { color: #fff; background-color: rgb(47, 113, 178); border-color: rgb(34, 103, 173); }
+
+== mitms -> 403 text/html 3363
+https://movilidad-opendata.mitma.es/zonificacion/zonificacion_distritos/nombres_distritos.csv
+<!DOCTYPE html><html lang="en"> <head> <meta charset="UTF-8"> <meta http-equiv="X-UA-Compatible" content="IE=8; IE=EDGE"> <meta name="viewport" content="width=device-width, initial-scale=1"> <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> <style type="text/css"> body { height: 100%; font-family: Roboto, Helvetica, Arial, sans-serif; color: #6a6a6a; margin: 0; display: flex; align-items: center; justify-content: center; } input[type=date], input[type=email], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], select, textarea { color: #262626; vertical-align: baseline; margin: .2em; border-style: solid; border-width: 1px; border-color: #a9a9a9; background-color: #fff; box-sizing: border-box; padding: 2px .5em; appearance: none; border-radius: 0; } input:focus { border-color: #646464; box-shadow: 0 0 1px 0 #a2a2a2; outline: 0; } button { padding: .5em 1em; border: 1px solid; border-radius: 3px; min-width: 6em; font-weight: 400; font-size: .8em; cursor: pointer; } button.primary { color: #fff; background-color: rgb(47, 113, 178); border-color: rgb(34, 103, 173); }
+
+== mitms -> 403 text/html 3353
+https://movilidad-opendata.mitma.es/zonificacion/relacion_ine_zonificacionMitma.csv
+<!DOCTYPE html><html lang="en"> <head> <meta charset="UTF-8"> <meta http-equiv="X-UA-Compatible" content="IE=8; IE=EDGE"> <meta name="viewport" content="width=device-width, initial-scale=1"> <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> <style type="text/css"> body { height: 100%; font-family: Roboto, Helvetica, Arial, sans-serif; color: #6a6a6a; margin: 0; display: flex; align-items: center; justify-content: center; } input[type=date], input[type=email], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], select, textarea { color: #262626; vertical-align: baseline; margin: .2em; border-style: solid; border-width: 1px; border-color: #a9a9a9; background-color: #fff; box-sizing: border-box; padding: 2px .5em; appearance: none; border-radius: 0; } input:focus { border-color: #646464; box-shadow: 0 0 1px 0 #a2a2a2; outline: 0; } button { padding: .5em 1em; border: 1px solid; border-radius: 3px; min-width: 6em; font-weight: 400; font-size: .8em; cursor: pointer; } button.primary { color: #fff; background-color: rgb(47, 113, 178); border-color: rgb(34, 103, 173); }
+
+== eventos -> 200 application/json None
+https://api.euskadi.eus/culture/events/v1.0/events/upcoming?_elements=3&_page=1
+{"totalItems":4201,"totalPages":1401,"currentPage":1,"items":[{"id":"2025122312065752","type":4,"typeEs":"Danza","typeEu":"Dantza","nameEs":"SCAPINO BALLET ROTTERDAM: \"LA MER\"","nameEu":"SCAPINO BALLET ROTTERDAM: \"LA MER\"","startDate":"2026-11-17T00:00:00Z","endDate":"2026-11-17T00:00:00Z","publicationDate":"2025-12-23T12:08:02Z","language":"NA","openingHoursEs":"19:30","openingHoursEu":"19:30","sourceNameEs":"kursaal.eus","sourceNameEu":"kursaal.eus","sourceUrlEs":"https://www.kursaal.eus/es/agenda/la-mer-scapino-ballet-rotterdam/","sourceUrlEu":"https://www.kursaal.eus/es/agenda/la-mer-scapino-ballet-rotterdam/","priceEs":"11 / 52 €","priceEu":"11 / 52 €","purchaseUrlEs":"https://shop.kursaal.eus/selection/event/date?productId=10229516993672&lang=es","purchaseUrlEu":"https://shop.kursaal.eus/selection/event/date?productId=10229516993672&lang=es","descriptionEs":"<div class=\"col-md-6\">\r\n<div class=\"descripcion\">\r\n<div class=\"col-md-6\">\r\n<div class=\"descripcion\">\r\n<div class=\"col-md-6\">\r\n<div class=\"descripcion\">\r\n<div class=\"col-md-6\">\r\n<div class=\"descripcion\">\r\n<p>Con la m&uacute;sica de Debussy (La Mer y Sir&egrave;nes) como tel&oacute;n de fondo, Nanine Linning contrasta la representaci&oacute;n rom&aacute;ntica del mar de principios del siglo XX con la cruda realidad actual: contaminaci&oacute;n, aumento del nivel del mar y ecosistemas en peligro de extinci&oacute;n. Las sirenas se convierten en una met&aacute;fora po&eacute;tica 
+
+== eventos -> 200 application/json None
+https://api.euskadi.eus/culture/events/v1.0/events/byMonth/2026/11?_elements=3&_page=1&provinceNoraCode=48
+{"totalItems":3710,"totalPages":1237,"currentPage":1,"items":[{"id":"2025120310233993","type":1,"typeEs":"Concierto","typeEu":"Kontzertua","nameEs":"\"JULIO IGLESIAS Experience por JULIO IGLESIAS Jr.\"","nameEu":"\"JULIO IGLESIAS Experience por JULIO IGLESIAS Jr.\"","startDate":"2026-11-01T00:00:00Z","endDate":"2026-11-01T00:00:00Z","publicationDate":"2025-12-03T10:38:50Z","language":"ES","openingHoursEs":"19:00","openingHoursEu":"19:00","sourceNameEs":"kursaal.eus","sourceNameEu":"kursaal.eus","sourceUrlEs":"https://www.kursaal.eus/es/agenda/julio-iglesias-experience-por-julio-iglesias-jr/","sourceUrlEu":"https://www.kursaal.eus/eu/agenda/julio-iglesias-experience-por-julio-iglesias-jr/","priceEs":"65 / 70 €","priceEu":"65 / 70 €","purchaseUrlEs":"https://shop.kursaal.eus/selection/event/date?productId=10229555344511&lang=es","purchaseUrlEu":"https://shop.kursaal.eus/selection/event/date?productId=10229555344511&lang=eu","descriptionEs":"<p class=\"ewa-rteLine\">JULIO IGLESIAS Jr. da voz a los grandes cl&aacute;sicos de su padre en un espect&aacute;culo lleno de energ&iacute;a, elegancia y emoci&oacute;n.</p>\r\n<p class=\"ewa-rteLine\">JULIO IGLESIAS Experience es mucho m&aacute;s que un concierto: es la &uacute;nica oportunidad de vivir, sentir y escuchar las grandes canciones del gran JULIO IGLESIAS, nuestro artista m&aacute;s internacional.</p>\r\n<p class=\"ewa-rteLine\">Julio Iglesias Jr. interpreta con pasi&oacute;n los &eacute;xitos que han acompa&ntilde;ado mill
+
+== eventos -> 200 application/json None
+https://api.euskadi.eus/culture/events/v1.0/eventType
+[{"id":"1","nameEs":"Concierto","nameEu":"Kontzertua"},{"id":"2","nameEs":"Teatro","nameEu":"Antzerkia"},{"id":"3","nameEs":"Exposición","nameEu":"Erakusketa"},{"id":"4","nameEs":"Danza","nameEu":"Dantza"},{"id":"5","nameEs":"Presentación","nameEu":"Aurkezpena"},{"id":"6","nameEs":"Conferencia","nameEu":"Hitzaldia"},{"id":"7","nameEs":"Bertsolarismo","nameEu":"Bertsolaritza"},{"id":"8","nameEs":"Feria","nameEu":"Azoka"},{"id":"9","nameEs":"Cine y audiovisuales","nameEu":"Zinema eta ikus-entzunezkoak"},{"id":"10","nameEs":"Eventos/jornadas","nameEu":"Ekitaldiak/jardunaldiak"},{"id":"11","nameEs":"Formación","nameEu":"Formakuntza"},{"id":"12","nameEs":"Concurso","nameEu":"Lehiaketa"},{"id":"13","nameEs":"Festival","nameEu":"Jaialdia"},{"id":"14","nameEs":"Actividad Infantil","nameEu":"Haur jarduera"},{"id":"15","nameEs":"Otro","nameEu":"Bestelakoa"},{"id":"16","nameEs":"Fiestas","nameEu":"Jaiak"}]
+
+== eventos -> 200 application/json 101688
+https://opendata.euskadi.eus/contenidos/ds_eventos/calendario_laboral_2026/opendata/calendario_laboral_2026.json
+[
+    {
+        "date": "2026/01/01",
+        "descripcionEs": "Año Nuevo",
+        "descriptionEu": "Urteberri eguna",
+        "municipalityEs": "CAE",
+        "MunicipalityEu": "EAE",
+        "territory": "Todos/denak",
+        "municipalitycode": null,
+        "latwgs84": null,
+        "lonwgs84": null
+    },
+    {
+        "date": "2026/01/06",
+        "descripcionEs": "Epifanía del Señor",
+        "descriptionEu": "Jaunaren epifania",
+        "municipalityEs": "CAE",
+        "MunicipalityEu": "EAE",
+        "territory": "Todos/denak",
+        "municipalitycode": null,
+        "latwgs84": null,
+        "lonwgs84": null
+    },
+    {
+        "date": "2026/03/19",
+        "descripcionEs": "San José",
+        "descriptionEu": "San Joseren eguna",
+        "municipalityEs": "CAE",
+        "MunicipalityEu": "EAE",
+        "territory": "Todos/denak",
+        "municipalitycode": null,
+        "latwgs84": null,
+        "lonwgs84": null
+    },
+    {
+        "date": "2026/04/02",
+        "descripcionEs": "Jueves Santo",
+        "descriptionEu": "Ostegun Santua",
+        "municipalityEs": "CAE",
+        "MunicipalityEu": "EAE",
+        "territory": "Todos/denak",
+        "municipalitycode": null,
+        "latwgs84": null,
+        "lonwgs84": null
+    },
+    {
+        "date": "2026/04/03",
+        "descripcionEs": "Viernes Santo",
+        "descriptionEu": "Ostiral Santua",
+        "municipalityEs": "CAE",
+        "MunicipalityEu": "EAE",
+        "territory": "Todos/denak",
+        "
+
+== eventos -> 200 application/json 84547
+https://opendata.euskadi.eus/contenidos/ds_eventos/calendario_laboral_2025/opendata/calendario_laboral_2025.json
+[
+ {
+   "date": "2025/1/1",
+   "descripcionEs": "Año Nuevo",
+   "descriptionEu": "Urteberri eguna",
+   "municipalityEs": "CAE",
+   "MunicipalityEu": "EAE",
+   "territory": "Todos/denak",
+   "municipalitycode": null,
+   "latwgs84": null,
+   "lonwgs84": null
+ },
+ {
+   "date": "2025/1/6",
+   "descripcionEs": "Epifanía del Señor",
+   "descriptionEu": "Jaunaren epifania",
+   "municipalityEs": "CAE",
+   "MunicipalityEu": "EAE",
+   "territory": "Todos/denak",
+   "municipalitycode": null,
+   "latwgs84": null,
+   "lonwgs84": null
+ },
+ {
+   "date": "2025/4/17",
+   "descripcionEs": "Jueves Santo",
+   "descriptionEu": "Ostegun Santua",
+   "municipalityEs": "CAE",
+   "MunicipalityEu": "EAE",
+   "territory": "Todos/denak",
+   "municipalitycode": null,
+   "latwgs84": null,
+   "lonwgs84": null
+ },
+ {
+   "date": "2025/4/18",
+   "descripcionEs": "Viernes Santo",
+   "descriptionEu": "Ostiral Santua",
+   "municipalityEs": "CAE",
+   "MunicipalityEu": "EAE",
+   "territory": "Todos/denak",
+   "municipalitycode": null,
+   "latwgs84": null,
+   "lonwgs84": null
+ },
+ {
+   "date": "2025/4/21",
+   "descripcionEs": "Lunes de Pascua de Resurrección",
+   "descriptionEu": "Pazko Astelehena",
+   "municipalityEs": "CAE",
+   "MunicipalityEu": "EAE",
+   "territory": "Todos/denak",
+   "municipalitycode": null,
+   "latwgs84": null,
+   "lonwgs84": null
+ },
+ {
+   "date": "2025/5/1",
+   "descripcionEs": "Fiesta del trabajo",
+   "descriptionEu": "Langileen eguna",
+   "municipalityEs": "CAE",
+   "MunicipalityEu": "
+
+== eventos -> 200 application/json 85571
+https://opendata.euskadi.eus/contenidos/ds_eventos/calendario_laboral_2024/opendata/calendario_laboral_2024.json
+[
+ {
+   "date": "2024/1/1",
+   "descriptionEs": "Año Nuevo",
+   "descriptionEu": "Urteberri eguna",
+   "municipalityEs": "CAE",
+   "municipalityEu": "EAE",
+   "territory": "Todos/denak",
+   "municipalitycode": null,
+   "latwgs84": null,
+   "lonwgs84": null
+ },
+ {
+   "date": "2024/1/6",
+   "descriptionEs": "Epifanía del Señor",
+   "descriptionEu": "Jaunaren epifania",
+   "municipalityEs": "CAE",
+   "municipalityEu": "EAE",
+   "territory": "Todos/denak",
+   "municipalitycode": null,
+   "latwgs84": null,
+   "lonwgs84": null
+ },
+ {
+   "date": "2024/3/28",
+   "descriptionEs": "Jueves Santo",
+   "descriptionEu": "Ostegun Santua",
+   "municipalityEs": "CAE",
+   "municipalityEu": "EAE",
+   "territory": "Todos/denak",
+   "municipalitycode": null,
+   "latwgs84": null,
+   "lonwgs84": null
+ },
+ {
+   "date": "2024/3/29",
+   "descriptionEs": "Viernes Santo",
+   "descriptionEu": "Ostiral Santua",
+   "municipalityEs": "CAE",
+   "municipalityEu": "EAE",
+   "territory": "Todos/denak",
+   "municipalitycode": null,
+   "latwgs84": null,
+   "lonwgs84": null
+ },
+ {
+   "date": "2024/4/1",
+   "descriptionEs": "Lunes de Pascua de Resurrección",
+   "descriptionEu": "Pazko Astelehena",
+   "municipalityEs": "CAE",
+   "municipalityEu": "EAE",
+   "territory": "Todos/denak",
+   "municipalitycode": null,
+   "latwgs84": null,
+   "lonwgs84": null
+ },
+ {
+   "date": "2024/5/1",
+   "descriptionEs": "Fiesta del trabajo",
+   "descriptionEu": "Langileen eguna",
+   "municipalityEs": "CAE",
+   "municipalityEu": "E
+
