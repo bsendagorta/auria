@@ -141,6 +141,13 @@ def leer_directo():
         return None, (ERRORES.get("prediccion/directo.json", "") + f" · web: {e}")
 
 
+def rumbo(g):
+    try:
+        return ["N", "NE", "E", "SE", "S", "SO", "O", "NO"][int(((float(g) + 22.5) % 360) // 45)]
+    except (TypeError, ValueError):
+        return "—"
+
+
 def kpi(col, valor, etiqueta, detalle=""):
     col.markdown(f'<div class="kpi"><div class="l">{etiqueta}</div><div class="v">{valor}</div>'
                  f'<div class="d">{detalle}</div></div>', unsafe_allow_html=True)
@@ -245,11 +252,13 @@ with t_6h:
     cols = st.columns(4)
     for i, p in enumerate(sorted(parques, key=lambda p: -p["ratio_max"])):
         fac = "<br>".join("· " + f for f in p["factores"][:3]) or "sin factores de riesgo activos"
+        sit = p.get("situacion_ahora") or "sin situación meteorológica destacable"
         cols[i % 4].markdown(f"""
 <div class="parque" style="--c:{NIVEL_HEX[p['nivel']]}">
  <div class="t">{EMOJI[p['nivel']]} {p['nombre']}</div>
  <div><span class="r">×{p['ratio_max']}</span> <span class="s">lo normal · pico {p['hora_pico'][11:16]}</span></div>
  <div class="s">Esperadas <b>{p['salidas_esperadas_6h']}</b> (normal {p['normal_6h']}) · P(≥1) <b>{p['prob_6h']:.0%}</b></div>
+ <div class="s" style="margin-top:.2rem"><b>Ahora:</b> {sit}</div>
  <div class="s" style="margin-top:.25rem">{fac}</div>
 </div>""", unsafe_allow_html=True)
     st.caption("Semáforo según cuántas veces supera lo normal: 🟢 <1,5 · 🟡 1,5-2,5 · 🟠 2,5-4 · 🔴 ≥4.")
@@ -274,7 +283,10 @@ with t_6h:
         "hora": x["hora"][11:16], "nivel": f"{EMOJI[x['nivel']]} ×{x['ratio']}", "esperadas": x["lambda"],
         "normal": x["normal"], "P(≥1)": x["prob"],
         "tipos más probables": ", ".join(FAMILIA_TXT.get(f["familia"], f["familia"]) for f in x["familias_top"]),
-        "racha km/h": x["meteo"]["racha_kmh"], "lluvia mm/h": x["meteo"]["lluvia_1h"], "T ºC": x["meteo"]["temp"],
+        "situación": x.get("situacion_txt", ""),
+        "viento": (f"{x['meteo'].get('viento_kmh') or 0:.0f} km/h de {rumbo(x['meteo'].get('dir_viento'))}, "
+                   f"racha {x['meteo']['racha_kmh']:.0f}"),
+        "lluvia mm/h": x["meteo"]["lluvia_1h"], "T ºC": x["meteo"]["temp"],
         "factores": "; ".join(x["factores"]),
     } for x in p["horas"]]), hide_index=True, width="stretch",
         column_config={"P(≥1)": st.column_config.ProgressColumn(format="percent", min_value=0.0, max_value=1.0)})
@@ -443,6 +455,35 @@ with t_pat:
             st.dataframe(mt.style.background_gradient(cmap="RdBu_r", vmin=0.5, vmax=1.5, axis=None)
                          .format("×{:.2f}", na_rep="—"), width="stretch")
         st.caption(pt["nota"])
+    es, _ = leer_json("datos/modelo/situaciones_efectos.json", 900)
+    if es and es.get("efectos"):
+        from auria.situaciones import SITUACIONES
+        st.markdown("---")
+        st.markdown(f"### Situaciones meteorológicas: efecto medido ({es['anios'][0]}-{es['anios'][-1]})")
+        st.caption("Multiplicador de salidas en un día con esa situación frente a un día normal del mismo mes y "
+                   "parque (meteo horaria ERA5 de cada parque × salidas SPEIS). ✓ = intervalo del 95 % no "
+                   "incluye 1. Solo se aplican en directo los tipos que mejoran la predicción del año de prueba.")
+        filas = []
+        for fam, ef in es["efectos"].items():
+            for s_, e in ef.items():
+                filas.append({"tipo": pt["etiquetas"].get(fam, fam) if pt else fam,
+                              "situación": " ".join(SITUACIONES[s_]), "×": e["m"],
+                              "IC 95 %": f"{e['lo']}-{e['hi']}", "claro": "✓" if (e["lo"] > 1 or e["hi"] < 1) else "",
+                              "días": e["dias"], "en directo": "sí" if es.get("activo", {}).get(fam) else "no"})
+        tabla = pd.DataFrame(filas)
+        solo = st.toggle("Solo efectos claros", value=True)
+        if solo:
+            tabla = tabla[tabla["claro"] == "✓"]
+        st.dataframe(tabla.sort_values("×", ascending=False), hide_index=True, width="stretch",
+                     column_config={"×": st.column_config.NumberColumn(format="×%.2f")})
+        val = pd.DataFrame(es.get("validacion", {})).T
+        if len(val):
+            val.index = [pt["etiquetas"].get(i, i) if pt else i for i in val.index]
+            st.markdown(f"**Validación en {es['anio_test']}** (desviación de Poisson; mejora > 0 = las "
+                        "situaciones predicen mejor que solo la referencia)")
+            st.dataframe(val[["dev_ref", "dev_situaciones", "mejora_pct", "salidas_test"]].rename(columns={
+                "dev_ref": "referencia", "dev_situaciones": "con situaciones", "mejora_pct": "mejora %",
+                "salidas_test": "salidas"}), width="stretch")
 
 with st.expander("Cómo funciona AURIA"):
     st.markdown("""

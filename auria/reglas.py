@@ -45,11 +45,18 @@ REGLAS = [
 ]
 
 
+# reglas meteorológicas escritas a mano: se desactivan para los tipos de siniestro cuyo efecto ya está
+# medido con datos reales (auria.efectos_meteo)
+METEO = {"Rachas muy fuertes (≥100 km/h)", "Rachas fuertes (80-100 km/h)", "Rachas de 60-80 km/h",
+         "Lluvia intensa (≥10 mm/h)", "Lluvia moderada", "Lluvia acumulada alta (≥40 mm en 12 h)",
+         "Viento sur seco y cálido (riesgo forestal)", "Vegetación seca (≥7 días sin lluvia)", "Calor (≥30 °C)",
+         "Frío (calefacciones, chimeneas)"}
 LLUVIA_TRAFICO = {"Lluvia intensa (≥10 mm/h)", "Lluvia moderada"}   # sustituidas por el riesgo medido (DGT)
 
 
-def aplicar(v: dict):
-    """Devuelve ({familia: multiplicador}, [textos de los factores activos])."""
+def aplicar(v: dict, sin_meteo=frozenset()):
+    """Devuelve ({familia: multiplicador}, [textos de los factores activos]).
+    sin_meteo: tipos de siniestro con efecto meteorológico medido (no se les aplican las reglas a mano)."""
     from . import riesgo_trafico
     mult, textos = {}, []
     rr = riesgo_trafico.rr_lluvia(v.get("lluvia_1h", 0) or 0)
@@ -61,6 +68,8 @@ def aplicar(v: dict):
         if activa:
             textos.append(texto)
             for f, k in efectos.items():
+                if f in sin_meteo and texto in METEO:
+                    continue
                 if rr is not None and f == "TRAFICO" and texto in LLUVIA_TRAFICO:
                     continue
                 mult[f] = mult.get(f, 1.0) * k

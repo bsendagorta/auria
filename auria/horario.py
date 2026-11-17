@@ -31,7 +31,11 @@ PARQUE_COD = {p: i for i, p in enumerate(PARQUES)}
 FEATURES = ["parque_cod", "hora_sin", "hora_cos", "dow", "mes_sin", "mes_cos", "festivo", "noche_finde",
             "operacion_trafico", "temp", "humedad", "lluvia_1h", "lluvia_12h", "racha_kmh", "viento_sur",
             "nieve", "dias_sin_lluvia", "trafico_accidentes", "trafico_seguridad", "trafico_obras",
-            "evento_nivel", "nuevas_parque_1h", "log_base", "log_reglas"]
+            "evento_nivel", "nuevas_parque_1h", "log_base", "log_reglas",
+            # situaciones meteorológicas y variables de viento/presión (desde nov. 2026)
+            "viento_kmh", "factor_racha", "dpresion_12h", "lluvia_72h", "ola_m",
+            "SUR_RACHEADO", "NORTE_PERSISTENTE", "GALERNA", "BORRASCA", "VIENTO_FUERTE", "LLUVIA_INTENSA",
+            "LLUVIA_PERSISTENTE", "TORMENTA", "HELADA", "NIEVE", "CALOR", "SECO_PROLONGADO", "MAR_GRUESO"]
 
 
 def _features(d: pd.DataFrame) -> pd.DataFrame:

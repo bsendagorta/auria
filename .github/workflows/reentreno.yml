@@ -50,6 +50,13 @@ jobs:
           python -m auria.modelo --nivel municipio || echo "::warning::modelo municipio falló"
       - name: 4 · Patrones
         run: python -m auria.patrones
+      - name: 4b · Efecto medido de cada situación meteorológica (sur racheado, galerna, borrasca…)
+        run: |
+          if [ ! -f datos/meteo/horaria_parques.csv.gz ] || [ "$(date -u +%d)" = "01" ] || [ "${{ github.event.inputs.meteo }}" = "true" ]; then
+            python -m auria.efectos_meteo --descargar || echo "::warning::efectos meteo fallaron"
+          else
+            python -m auria.efectos_meteo || echo "::warning::efectos meteo fallaron"
+          fi
       - name: 5 · Modelo horario (capturas por minuto)
         run: python -m auria.horario || echo "::warning::modelo horario no entrenado"
       - name: 6 · Evaluación predicho vs real

@@ -125,6 +125,42 @@ def test_trafico():
     assert t["obras"].sum() == 0
 
 
+def test_situaciones_y_prevision():
+    import json
+    import numpy as np
+    import pandas as pd
+    from auria import config, prevision, situaciones
+    from auria.parques import PARQUES
+    horas = pd.date_range(pd.Timestamp.now().floor("h") - pd.Timedelta(days=3), periods=24 * 5, freq="h")
+    partes = []
+    for p in PARQUES:
+        n = len(horas)
+        d = pd.DataFrame({"time": horas.strftime("%Y-%m-%dT%H:%M"), "parque": p, "temperature_2m": 22.0,
+                          "relative_humidity_2m": 35.0, "precipitation": 0.0, "snowfall": 0.0,
+                          "wind_speed_10m": 20.0, "wind_gusts_10m": 75.0, "wind_direction_10m": 180.0,
+                          "pressure_msl": np.linspace(1015, 1000, n), "soil_moisture_0_to_1cm": 0.2, "cape": 0.0})
+        partes.append(d)
+    m = prevision.meteo_desde_crudo(pd.concat(partes))
+    assert m["SUR_RACHEADO"].all() and m["VIENTO_FUERTE"].all() and not m["NORTE_PERSISTENTE"].any()
+    ef = {"anios": [2021, 2025], "activo": {"INCENDIO_FORESTAL_EXTERIOR": True, "METEO_ASISTENCIA": False},
+          "por_parque": {p: {"INCENDIO_FORESTAL_EXTERIOR": {"SUR_RACHEADO": 2.0, "VIENTO_FUERTE": 1.2}}
+                         for p in PARQUES}}
+    ruta = config.DIR_MODELO / "situaciones_efectos.json"
+    previo = ruta.read_text() if ruta.exists() else None
+    ruta.write_text(json.dumps(ef))
+    try:
+        traf = pd.DataFrame(0, index=list(PARQUES), columns=["accidentes", "seguridad_vial", "obras"])
+        out = prevision.predecir(3, meteo=m, traf=traf, guardar=False)
+        h = out["parques"][0]["horas"][0]
+        assert "SUR_RACHEADO" in h["situaciones"] and "Sur racheado" in out["parques"][0]["situacion_ahora"]
+        assert any("×2.4" in f or "×2.0" in f for f in h["factores"]), h["factores"]
+    finally:
+        if previo is None:
+            ruta.unlink()
+        else:
+            ruta.write_text(previo)
+
+
 if __name__ == "__main__":
     for nombre, f in list(globals().items()):
         if nombre.startswith("test_"):

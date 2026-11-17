@@ -10,20 +10,20 @@ Salida: prediccion/ultima.json  y  prediccion/historial/{prediccion,variables}_A
 import argparse
 import json
 import math
+import time
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
 import pandas as pd
 import requests
 
-from . import base_horaria, calendario, config, eventos, reglas, riesgo_trafico, trafico
+from . import situaciones, base_horaria, calendario, config, eventos, reglas, riesgo_trafico, trafico
 from .familias import FAMILIAS
 from .parques import PARQUES
 
 TZ = ZoneInfo("Europe/Madrid")
 NIVELES = [(1.5, "verde"), (2.5, "amarillo"), (4.0, "naranja"), (float("inf"), "rojo")]
-VARS_HORA = ["temperature_2m", "relative_humidity_2m", "precipitation", "wind_gusts_10m",
-             "wind_direction_10m", "snowfall"]
+from .situaciones import VARS_PREVISION as VARS_HORA   # incluye viento medio, presión, suelo y CAPE
 
 
 def nivel(ratio: float) -> str:
@@ -39,7 +39,16 @@ def meteo_parques(dias_pasados=14, dias_futuros=2) -> pd.DataFrame:
         "hourly": ",".join(VARS_HORA), "past_days": dias_pasados, "forecast_days": dias_futuros,
         "timezone": "Europe/Madrid", "wind_speed_unit": "kmh",
     }
-    r = requests.get(config.OPENMETEO_PREVISION, params=params, timeout=60, headers={"User-Agent": config.USER_AGENT})
+    r = None
+    for intento in range(3):
+        try:
+            r = requests.get(config.OPENMETEO_PREVISION, params=params, timeout=60,
+                             headers={"User-Agent": config.USER_AGENT})
+            if r.status_code == 200:
+                break
+        except requests.RequestException:
+            pass
+        time.sleep(10 * (intento + 1))
     r.raise_for_status()
     res = r.json()
     res = res if isinstance(res, list) else [res]
@@ -48,7 +57,32 @@ def meteo_parques(dias_pasados=14, dias_futuros=2) -> pd.DataFrame:
         d = pd.DataFrame(bloque["hourly"])
         d["parque"] = p
         partes.append(d)
-    return preparar_meteo(pd.concat(partes, ignore_index=True))
+    crudo = pd.concat(partes, ignore_index=True)
+    # oleaje en los parques de costa (Open-Meteo Marine); si falla, se sigue sin él
+    from .situaciones import COSTA, clasificar
+    try:
+        cos = [p for p in ids if p in COSTA]
+        rm = requests.get("https://marine-api.open-meteo.com/v1/marine", timeout=30, params={
+            "latitude": ",".join(str(PARQUES[p]["lat"] + 0.08) for p in cos),
+            "longitude": ",".join(str(PARQUES[p]["lon"]) for p in cos), "hourly": "wave_height",
+            "past_days": dias_pasados, "forecast_days": dias_futuros, "timezone": "Europe/Madrid"})
+        rm.raise_for_status()
+        jm = rm.json()
+        jm = jm if isinstance(jm, list) else [jm]
+        olas = pd.concat([pd.DataFrame(b["hourly"]).assign(parque=p) for p, b in zip(cos, jm)])
+        crudo = crudo.merge(olas.rename(columns={"wave_height": "ola_m"}), on=["parque", "time"], how="left")
+    except Exception as e:
+        print(f"Aviso oleaje: {e}")
+    return meteo_desde_crudo(crudo)
+
+
+def meteo_desde_crudo(crudo):
+    """Horas crudas de Open-Meteo (columna 'time') -> variables de riesgo + situaciones por parque y hora."""
+    from .situaciones import clasificar
+    base = preparar_meteo(crudo)
+    sit = clasificar(crudo.rename(columns={"time": "hora"}))
+    extra = [c for c in sit.columns if c not in base.columns or c in ("parque", "hora")]
+    return base.merge(sit[extra], on=["parque", "hora"], how="left")
 
 
 def preparar_meteo(m: pd.DataFrame) -> pd.DataFrame:
@@ -128,6 +162,7 @@ def predecir(horas=6, meteo=None, traf=None, ahora=None, guardar=True):
     evs = eventos.cargar()
     directo, activas, contador = estado_directo()
     modelo = cargar_modelo()
+    efectos_sit = cargar_efectos()
 
     parques_out, filas_hist, filas_vars = [], [], []
     for p, info in PARQUES.items():
@@ -139,12 +174,13 @@ def predecir(horas=6, meteo=None, traf=None, ahora=None, guardar=True):
             # tráfico: forma horaria y por tipo de día de los accidentes reales (DGT), sin cambiar el nivel SPEIS
             normal["TRAFICO"] *= riesgo_trafico.factor(p, hora)[0]
             v = {"temp": 15.0, "humedad": 70.0, "lluvia_1h": 0.0, "lluvia_12h": 0.0, "racha_kmh": 0.0,
-                 "viento_sur": False, "nieve": 0.0, "dias_sin_lluvia": 0}
+                 "viento_sur": False, "nieve": 0.0, "dias_sin_lluvia": 0, "dir_viento": float("nan"),
+                 "viento_kmh": 0.0}
             if not meteo.empty:
                 fila = meteo[(meteo["parque"] == p) & (meteo["hora"] == hora)]
                 if len(fila):
-                    v.update({k: (bool(x) if k == "viento_sur" else float(x))
-                              for k, x in fila.iloc[0].drop(["parque", "hora"]).items()})
+                    v.update({k: (bool(x) if (k == "viento_sur" or k in situaciones.SITUACIONES) else float(x))
+                              for k, x in fila.iloc[0].drop(["parque", "hora"]).items() if pd.notna(x)})
             v.update(calendario.variables_hora(hora))
             if traf is not None and i <= 1:
                 v["trafico_accidentes"] = int(traf.loc[p, "accidentes"])
@@ -156,7 +192,12 @@ def predecir(horas=6, meteo=None, traf=None, ahora=None, guardar=True):
             v["nuevas_parque_1h"] = directo.get(p, {}).get("nuevas_1h", 0)
 
             lluvias.append(v["lluvia_1h"])
-            mult, factores = reglas.aplicar(v)
+            sits = situaciones.activas(v)
+            ef = efectos_sit.get("activo", {})
+            mult, factores = reglas.aplicar(v, sin_meteo={f for f, ok in ef.items() if ok})
+            if sits:
+                mult, txt_sit = aplicar_situaciones(p, sits, v, mult, efectos_sit)
+                factores = txt_sit + factores
             if nombre_ev:
                 factores = [f if f not in ("Evento masivo", "Evento") else f"{f}: {nombre_ev}" for f in factores]
             lam_f = {f: normal[f] * mult.get(f, 1.0) for f in FAMILIAS}
@@ -177,9 +218,11 @@ def predecir(horas=6, meteo=None, traf=None, ahora=None, guardar=True):
                 "familias_top": [{"familia": f, "lambda": round(x, 4), "mult": round(mult.get(f, 1.0), 2)}
                                  for f, x in top],
                 "factores": factores,
-                "meteo": {k: (round(v[k], 1) if isinstance(v[k], float) else v[k])
+                "situaciones": sits, "situacion_txt": situaciones.texto(sits, v),
+                "meteo": {k: (round(v[k], 1) if isinstance(v.get(k), float) else v.get(k))
                           for k in ("temp", "humedad", "lluvia_1h", "lluvia_12h", "racha_kmh", "viento_sur",
-                                    "dias_sin_lluvia")},
+                                    "dias_sin_lluvia", "viento_kmh", "dir_viento", "factor_racha",
+                                    "dpresion_12h", "lluvia_72h", "ola_m")},
             })
             filas_hist.append({"generado": ahora.isoformat(timespec="minutes"), "parque": p, "hora": hora,
                                "horizonte": i, "lambda": lam, "normal": lam_normal, "ratio": ratio,
@@ -196,7 +239,9 @@ def predecir(horas=6, meteo=None, traf=None, ahora=None, guardar=True):
             "id": p, "nombre": info["nombre"], "lat": info["lat"], "lon": info["lon"],
             "salidas_esperadas_6h": round(lam6, 2), "normal_6h": round(norm6, 2),
             "prob_6h": round(1 - math.exp(-lam6), 3), "ratio_max": peor["ratio"], "nivel": peor["nivel"],
-            "hora_pico": peor["hora"], "factores": factores6, "directo": directo.get(p, {}), "horas": horas_out,
+            "hora_pico": peor["hora"], "factores": factores6,
+            "situacion_ahora": horas_out[0]["situacion_txt"],
+            "situaciones_6h": list(dict.fromkeys(x for h in horas_out for x in h["situaciones"])), "directo": directo.get(p, {}), "horas": horas_out,
             "carreteras": riesgo_trafico.carreteras(p, franjas, lluvias),
         })
 
@@ -218,8 +263,49 @@ def predecir(horas=6, meteo=None, traf=None, ahora=None, guardar=True):
         mes = ahora.strftime("%Y-%m")
         for nombre, filas in (("prediccion", filas_hist), ("variables", filas_vars)):
             ruta = hist / f"{nombre}_{mes}.csv"
-            pd.DataFrame(filas).to_csv(ruta, mode="a", header=not ruta.exists(), index=False)
+            nuevo = pd.DataFrame(filas)
+            if ruta.exists():
+                cab = pd.read_csv(ruta, nrows=0).columns.tolist()
+                if cab != nuevo.columns.tolist():      # columnas nuevas: se reescribe con la unión
+                    pd.concat([pd.read_csv(ruta), nuevo], ignore_index=True).to_csv(ruta, index=False)
+                    continue
+            nuevo.to_csv(ruta, mode="a", header=not ruta.exists(), index=False)
     return salida
+
+
+def cargar_efectos():
+    p = config.DIR_MODELO / "situaciones_efectos.json"
+    try:
+        return json.loads(p.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+
+
+def aplicar_situaciones(parque, sits, v, mult, ef):
+    """Multiplica cada tipo de siniestro por el efecto MEDIDO de las situaciones activas en ese parque
+    (solo los tipos cuyo efecto mejoró la predicción en la validación). Tope ×6 / ×0,3 por hora."""
+    from .patrones import ETIQ
+    mult = dict(mult)
+    textos = []
+    por_p = ef.get("por_parque", {}).get(parque, {})
+    for fam, ok in ef.get("activo", {}).items():
+        if not ok:
+            continue
+        k = 1.0
+        for s_ in sits:
+            k *= por_p.get(fam, {}).get(s_, 1.0)
+        mult[fam] = mult.get(fam, 1.0) * min(max(k, 0.3), 6.0)
+    for s_ in sits:
+        cands = [(fam, por_p.get(fam, {}).get(s_)) for fam, ok in ef.get("activo", {}).items() if ok]
+        cands = [(f, m) for f, m in cands if m and m >= 1.15]
+        base = situaciones.texto([s_], v)
+        if cands:
+            f, m = max(cands, key=lambda t: t[1])
+            textos.append(f"{base} → {ETIQ.get(f, f).lower()} ×{m:.1f} (medido {ef.get('anios', ['?'])[0]}-"
+                          f"{ef.get('anios', ['?'])[-1]})")
+        else:
+            textos.append(base)
+    return mult, textos
 
 
 def cargar_modelo():
