@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-17T18:19:50+01:00",
+ "ts": "2026-11-17T18:22:50+01:00",
  "salidas_desde_8": 25,
  "salidas_anio": 5804,
  "actuaciones": [
@@ -53,33 +53,6 @@
    ],
    "n_vehiculos": 1,
    "estado": "REGRESANDO"
-  },
-  {
-   "tipo": "INCENDIO INDUSTRIAL NIVEL 1",
-   "familia": "INCENDIO_INDUSTRIAL",
-   "ubicacion": "",
-   "zona": "",
-   "parque": "SIN_PARQUE",
-   "parque_nombre": "Fuera de zona / Bilbao",
-   "vehiculos": [
-    {
-     "tipo": "Bomba urbana pesada",
-     "estado": "EN_SINIESTRO",
-     "estado_txt": "Vehículo parado en siniestro"
-    },
-    {
-     "tipo": "Unidad de mando y jefatura",
-     "estado": "REGRESANDO",
-     "estado_txt": "Vehículo volviendo de un sin."
-    },
-    {
-     "tipo": "Bomba urbana pesada",
-     "estado": "EN_SINIESTRO",
-     "estado_txt": "Vehículo parado en siniestro"
-    }
-   ],
-   "n_vehiculos": 3,
-   "estado": "EN_SINIESTRO"
   }
  ],
  "por_parque": {
@@ -148,12 +121,12 @@
    "regresando": 0
   },
   "SIN_PARQUE": {
-   "actuaciones": 2,
-   "vehiculos": 4,
+   "actuaciones": 1,
+   "vehiculos": 1,
    "propuesto": 0,
    "en_ruta": 0,
-   "en_siniestro": 2,
-   "regresando": 2
+   "en_siniestro": 0,
+   "regresando": 1
   }
  }
 }
