@@ -296,6 +296,7 @@ id,type,typeEs,nameEs,startDate,endDate,openingHoursEs,municipalityEs,municipali
 2026111109471942,1,Concierto,"""STRAUSS GALA: 200 años de música y elegancia vienesa""",2027-01-02T00:00:00Z,2027-01-02T00:00:00Z,19:00 - 21:00,Bilbao,43.256963,-2.923441,,48020,2026-11-17
 2026102114581500,1,Concierto,"Royal Film Concert Orchestra: ""Morricone y 100 años de cine""",2027-01-03T00:00:00Z,2027-01-03T00:00:00Z,20:00,Bilbao,43.256963,-2.923441,,48020,2026-11-17
 2026110308233394,13,Festival,"Gabonak Arte 2026 - ""Mi primer festival de experiencias artísticas""",2026-12-26T00:00:00Z,2027-01-03T00:00:00Z,,Bilbao,43.256963,-2.923441,,48020,2026-11-17
+2026111714305721,1,Concierto,EGO - Euskal Herriko Gazte Orkestra: Gira de invierno 2026-2027,2026-12-30T00:00:00Z,2027-01-03T00:00:00Z,,Bilbao,43.256963,-2.923441,"Donostia / San Sebastián, Vitoria-Gasteiz, Tolosa y",48020,2026-11-17
 2026092810190716,1,Concierto,"""Johan Strauss"" - Gran Concierto de Año Nuevo",2027-01-04T00:00:00Z,2027-01-04T00:00:00Z,20:00,Bilbao,43.256963,-2.923441,,48020,2026-11-17
 2026111113521841,1,Concierto,Homenaje a los pioneros del Rock de Bilbao,2027-01-04T00:00:00Z,2027-01-04T00:00:00Z,19:30,Bilbao,43.256963,-2.923441,,48020,2026-11-17
 2026111114285016,1,Concierto,DJ SYMPHONIC & ROYAL FILM CONCERT ORCHESTRA,2027-01-04T00:00:00Z,2027-01-04T00:00:00Z,19:30,Bilbao,43.256963,-2.923441,,48020,2026-11-17
@@ -549,3 +550,4 @@ id,type,typeEs,nameEs,startDate,endDate,openingHoursEs,municipalityEs,municipali
 2026111309512916,1,Concierto,Robert Jon & The Wreck,2027-11-04T00:00:00Z,2027-11-04T00:00:00Z,21:00,Bilbao,43.256963,-2.923441,,48020,2026-11-17
 2026102712420102,1,Concierto,Entradas Tierra Santa (5 de noviembre de 2027 - Bilbao),2027-11-05T00:00:00Z,2027-11-05T00:00:00Z,21:00,Bilbao,43.256963,-2.923441,,48020,2026-11-17
 2026111114323159,1,Concierto,Antoñito Molina,2027-11-13T00:00:00Z,2027-11-13T00:00:00Z,21:00,Bilbao,43.256963,-2.923441,,48020,2026-11-17
+2026111714490516,1,Concierto,Entradas Puro Indie (6 y 13 de noviembre - Bilbao),2027-11-14T00:00:00Z,2027-11-14T00:00:00Z,20:30,Bilbao,43.256963,-2.923441,,48020,2026-11-17

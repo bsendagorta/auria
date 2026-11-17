@@ -24,11 +24,11 @@
     "eventos": 44
    },
    "primera_lluvia": {
-    "rr": 0.82,
+    "rr": 0.83,
     "lo": 0.74,
-    "hi": 0.92,
-    "horas": 12468,
-    "eventos": 340
+    "hi": 0.93,
+    "horas": 12557,
+    "eventos": 344
    },
    "niebla": {
     "rr": 0.97,
@@ -103,7 +103,7 @@
   },
   "validacion": {
    "dev_base": 11658.2,
-   "dev_meteo": 11618.1,
+   "dev_meteo": 11618.6,
    "mejora_pct": 0.34,
    "eventos_test": 1533
   },
@@ -130,25 +130,25 @@
     "eventos": 1351
    },
    "lluvia_moderada": {
-    "rr": 1.64,
+    "rr": 1.63,
     "lo": 1.49,
     "hi": 1.79,
     "horas": 13817,
     "eventos": 564
    },
    "lluvia_fuerte": {
-    "rr": 2.02,
+    "rr": 2.01,
     "lo": 1.65,
     "hi": 2.46,
     "horas": 1229,
     "eventos": 106
    },
    "primera_lluvia": {
-    "rr": 0.69,
-    "lo": 0.59,
-    "hi": 0.81,
-    "horas": 12373,
-    "eventos": 173
+    "rr": 0.7,
+    "lo": 0.6,
+    "hi": 0.82,
+    "horas": 12477,
+    "eventos": 176
    },
    "niebla": {
     "rr": 0.68,
@@ -159,8 +159,8 @@
    },
    "HELADA": {
     "rr": 1.53,
-    "lo": 0.96,
-    "hi": 2.41,
+    "lo": 0.97,
+    "hi": 2.42,
     "horas": 666,
     "eventos": 16
    },
@@ -180,7 +180,7 @@
    },
    "SUR_RACHEADO": {
     "rr": 2.04,
-    "lo": 1.71,
+    "lo": 1.7,
     "hi": 2.45,
     "horas": 2480,
     "eventos": 127
@@ -188,7 +188,7 @@
    "NORTE_PERSISTENTE": {
     "rr": 2.21,
     "lo": 1.78,
-    "hi": 2.74,
+    "hi": 2.75,
     "horas": 791,
     "eventos": 100
    },
@@ -223,7 +223,7 @@
   },
   "validacion": {
    "dev_base": 9107.9,
-   "dev_meteo": 8947.8,
+   "dev_meteo": 8947.6,
    "mejora_pct": 1.76,
    "eventos_test": 1054
   },
