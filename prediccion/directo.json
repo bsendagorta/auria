@@ -1,24 +1,24 @@
 {
- "ts": "2026-11-17T13:18:14+01:00",
- "salidas_desde_8": 15,
+ "ts": "2026-11-17T13:21:14+01:00",
+ "salidas_desde_8": 16,
  "salidas_anio": 5800,
  "actuaciones": [
   {
    "tipo": "NEUTRALIZACIÓN DE ABEJAS Y AVISPAS",
    "familia": "ABEJAS_AVISPAS",
    "ubicacion": "KARRANTZA HARANA/VALLE DE",
-   "zona": "BA Presa",
+   "zona": "BA San Esteban",
    "parque": "ZALLA",
    "parque_nombre": "Zalla",
    "vehiculos": [
     {
      "tipo": "Bomba forestal pesada",
-     "estado": "EN_SINIESTRO",
-     "estado_txt": "Vehículo parado en siniestro"
+     "estado": "EN_RUTA",
+     "estado_txt": "Vehículo va a un siniestro"
     }
    ],
    "n_vehiculos": 1,
-   "estado": "EN_SINIESTRO"
+   "estado": "EN_RUTA"
   },
   {
    "tipo": "RETIRADA DE ÁRBOLES",
@@ -121,8 +121,8 @@
    "actuaciones": 1,
    "vehiculos": 1,
    "propuesto": 0,
-   "en_ruta": 0,
-   "en_siniestro": 1,
+   "en_ruta": 1,
+   "en_siniestro": 0,
    "regresando": 0
   },
   "SIN_PARQUE": {
