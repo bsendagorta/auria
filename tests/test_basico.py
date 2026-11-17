@@ -77,6 +77,31 @@ def test_directo():
     assert directo.vehiculo("Auto escala articulada (Vehículo propuesto)")["estado"] == "PROPUESTO"
 
 
+def test_accidentes():
+    import numpy as np
+    from auria import accidentes as A
+    filas = []
+    for i in range(400):   # Barakaldo (municipio) y un tramo de la N-634 sin municipio junto a Durango
+        m, car, km = ("48013", "A-8", 125.0) if i % 2 else ("48027", "N-634", 30.0)
+        filas.append({"ANYO": 2025, "MES": 1 + i % 12, "DIA_SEMANA": 1 + i % 7, "HORA": (7 + i) % 24,
+                      "COD_PROVINCIA": 48, "COD_MUNICIPIO": m, "ZONA_AGRUPADA": 1, "CARRETERA": car,
+                      "KM": km + (i % 3), "CONDICION_METEO": 3 if i % 4 == 0 else 1, "TOTAL_MU30DF": 0,
+                      "TOTAL_HG30DF": i % 10 == 0, "TOTAL_VICTIMAS_30DF": 1})
+    filas.append({**filas[0], "COD_MUNICIPIO": "00000", "CARRETERA": "N-634", "KM": 31.0})
+    filas.append({**filas[0], "COD_MUNICIPIO": "48020", "CARRETERA": "", "KM": None})
+    d = A.preparar(pd.DataFrame(filas))
+    assert d.iloc[-2]["parque"] == "IURRETA" and d.iloc[-2]["parque_por"] == "carretera_km"
+    assert d.iloc[-1]["parque"] == "BILBAO"
+    p = A.perfil_horario(d)
+    w = p["tipo_dia"].map(A.DIAS_TIPO)
+    for (_, _), g in p.groupby(["parque", "franja"]):
+        assert abs(np.average(g["factor"], weights=w[g.index]) - 1) < 1e-3, "el perfil no debe cambiar el nivel"
+    t = A.tramos(d[d["parque"] != "BILBAO"])
+    assert set(t["CARRETERA"]) == {"A-8", "N-634"}
+    ll = A.riesgo_lluvia(d, pd.Series([1.0] * 10 + [0.0] * 30, index=pd.date_range("2025-01-01", periods=40, freq="h")))
+    assert ll["rr_lluvia"] > 0
+
+
 def test_reglas_y_calendario():
     v = {"racha_kmh": 85, "lluvia_1h": 0, "lluvia_12h": 0, "dias_sin_lluvia": 0, "viento_sur": False,
          "humedad": 80, "temp": 12, "nieve": 0, "noche_finde": False, "operacion_trafico": False, "festivo": False}

@@ -1,0 +1,31 @@
+# Descarga los microdatos de accidentes con víctimas de la DGT (2019-2025), se queda con Bizkaia y
+# recalcula: perfil horario de accidentes por parque, riesgo por tramo de carretera y riesgo con lluvia.
+# Mensual (la DGT publica un año nuevo cada otoño) o a mano desde la pestaña Actions.
+name: Accidentes de tráfico (DGT)
+on:
+  schedule:
+    - cron: "43 4 1 * *"
+  workflow_dispatch:
+concurrency:
+  group: datos-auria
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  accidentes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - run: pip install -q pandas numpy requests openpyxl tabulate holidays
+      - name: Descargar DGT y calcular riesgos
+        run: python -m auria.accidentes
+      - name: Subir tablas e informe
+        if: always()
+        run: |
+          scripts/subir_datos.sh "datos: accidentes DGT y riesgo por carretera $(date -u +%Y-%m-%d)"

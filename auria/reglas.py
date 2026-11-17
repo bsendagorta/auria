@@ -45,9 +45,14 @@ REGLAS = [
 ]
 
 
+LLUVIA_TRAFICO = {"Lluvia intensa (≥10 mm/h)", "Lluvia moderada"}   # sustituidas por el riesgo medido (DGT)
+
+
 def aplicar(v: dict):
     """Devuelve ({familia: multiplicador}, [textos de los factores activos])."""
+    from . import riesgo_trafico
     mult, textos = {}, []
+    rr = riesgo_trafico.rr_lluvia(v.get("lluvia_1h", 0) or 0)
     for cond, efectos, texto in REGLAS:
         try:
             activa = cond(v)
@@ -56,5 +61,12 @@ def aplicar(v: dict):
         if activa:
             textos.append(texto)
             for f, k in efectos.items():
+                if rr is not None and f == "TRAFICO" and texto in LLUVIA_TRAFICO:
+                    continue
                 mult[f] = mult.get(f, 1.0) * k
+    if rr is not None:            # riesgo de accidente con lluvia medido con datos reales
+        k = rr if rr != 1.0 else riesgo_trafico.factor_seco()
+        mult["TRAFICO"] = mult.get("TRAFICO", 1.0) * k
+        if rr > 1.05:
+            textos.append(f"Lluvia: riesgo de accidente ×{rr:.1f} (datos DGT)")
     return mult, textos

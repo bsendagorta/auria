@@ -178,6 +178,9 @@ for i, p in enumerate(parques):
             st.markdown("\n".join(f"- {f}" for f in p["factores"][:4]))
         else:
             st.caption("Sin factores de riesgo activos")
+        if p.get("carreteras"):
+            st.caption("🛣️ Más riesgo de accidente: " + " · ".join(
+                f"{c['carretera']} km {c['km_ini']}-{c['km_fin']} ({c['prob']:.1%})" for c in p["carreteras"][:2]))
         d = p.get("directo") or {}
         if d.get("activas"):
             st.caption(f"🚒 {d['activas']} actuación(es) activa(s) ahora")
@@ -197,9 +200,29 @@ h = pd.DataFrame([{
 st.line_chart(h.set_index("hora")[["esperadas", "normal"]])
 st.dataframe(h, hide_index=True, width="stretch")
 
+# --- riesgo de accidente por carretera
+tramos_6h = [{"carretera": c["carretera"], "tramo": f"km {c['km_ini']}-{c['km_fin']}", "parque": p["nombre"],
+              "P(≥1 accidente con víctimas, 6 h)": c["prob"], "accidentes/año": c["accidentes_anio"],
+              "% graves": c["pct_graves"], "hora habitual": f"{c['hora_pico']:02d}:00"}
+             for p in parques for c in p.get("carreteras", [])]
+if tramos_6h:
+    st.subheader("🛣️ Riesgo de accidente por carretera (próximas 6 h)")
+    t6 = pd.DataFrame(tramos_6h).sort_values("P(≥1 accidente con víctimas, 6 h)", ascending=False)
+    st.dataframe(t6, hide_index=True, width="stretch", column_config={
+        "P(≥1 accidente con víctimas, 6 h)": st.column_config.ProgressColumn(
+            format="percent", min_value=0.0, max_value=float(max(0.05, t6.iloc[:, 3].max())))})
+    dgt = datos.get("trafico_dgt") or {}
+    ll = dgt.get("lluvia", {})
+    anios = dgt.get("anios", [])
+    st.caption("Tramos de 5 km de vías interurbanas con más accidentes con víctimas "
+               + (f"({anios[0]}-{anios[-1]}, microdatos DGT)" if anios else "(microdatos DGT)")
+               + ", ajustados por hora, tipo de día y lluvia"
+               + (f" (con lluvia el riesgo es ×{ll['rr_lluvia']:.1f})" if ll.get("rr_lluvia") else "") + ".")
+
 with st.expander("Cómo se calcula"):
     st.markdown("""
 - **Normal**: tasa histórica de salidas del parque para ese mes y franja horaria (Open Data Bizkaia 2023-hoy).
+  En tráfico, además, la forma por hora y tipo de día sale de los accidentes con víctimas de la DGT.
 - **Esperadas**: la tasa normal multiplicada por factores de meteorología (Open-Meteo), calendario, tráfico
   (Open Data Euskadi) y eventos. Cuando hay datos horarios suficientes del recolector, un modelo LightGBM
   reentrenado cada noche sustituye a las reglas si demuestra predecir mejor.

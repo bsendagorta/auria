@@ -16,7 +16,7 @@ from zoneinfo import ZoneInfo
 import pandas as pd
 import requests
 
-from . import base_horaria, calendario, config, eventos, reglas, trafico
+from . import base_horaria, calendario, config, eventos, reglas, riesgo_trafico, trafico
 from .familias import FAMILIAS
 from .parques import PARQUES
 
@@ -132,9 +132,12 @@ def predecir(horas=6, meteo=None, traf=None, ahora=None, guardar=True):
     parques_out, filas_hist, filas_vars = [], [], []
     for p, info in PARQUES.items():
         horas_out = []
+        lluvias = []
         for i, hora in enumerate(franjas):
             fr = base_horaria.franja_de_hora(hora.hour)
             normal = {f: float(base.get((p, f, hora.month, fr), 0.0)) for f in FAMILIAS}
+            # tráfico: forma horaria y por tipo de día de los accidentes reales (DGT), sin cambiar el nivel SPEIS
+            normal["TRAFICO"] *= riesgo_trafico.factor(p, hora)[0]
             v = {"temp": 15.0, "humedad": 70.0, "lluvia_1h": 0.0, "lluvia_12h": 0.0, "racha_kmh": 0.0,
                  "viento_sur": False, "nieve": 0.0, "dias_sin_lluvia": 0}
             if not meteo.empty:
@@ -152,6 +155,7 @@ def predecir(horas=6, meteo=None, traf=None, ahora=None, guardar=True):
             v["activas_parque"] = directo.get(p, {}).get("activas", 0) if i == 0 else 0
             v["nuevas_parque_1h"] = directo.get(p, {}).get("nuevas_1h", 0)
 
+            lluvias.append(v["lluvia_1h"])
             mult, factores = reglas.aplicar(v)
             if nombre_ev:
                 factores = [f if f not in ("Evento masivo", "Evento") else f"{f}: {nombre_ev}" for f in factores]
@@ -193,6 +197,7 @@ def predecir(horas=6, meteo=None, traf=None, ahora=None, guardar=True):
             "salidas_esperadas_6h": round(lam6, 2), "normal_6h": round(norm6, 2),
             "prob_6h": round(1 - math.exp(-lam6), 3), "ratio_max": peor["ratio"], "nivel": peor["nivel"],
             "hora_pico": peor["hora"], "factores": factores6, "directo": directo.get(p, {}), "horas": horas_out,
+            "carreteras": riesgo_trafico.carreteras(p, franjas, lluvias),
         })
 
     salida = {
@@ -203,6 +208,7 @@ def predecir(horas=6, meteo=None, traf=None, ahora=None, guardar=True):
         "parques": sorted(parques_out, key=lambda x: -x["ratio_max"]),
         "activas_ahora": activas,
         "niveles": {n: lim for lim, n in NIVELES},
+        "trafico_dgt": riesgo_trafico.resumen(),
     }
     if guardar:
         (config.DIR_PREDICCION / "ultima.json").write_text(json.dumps(salida, ensure_ascii=False, indent=1),
