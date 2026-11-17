@@ -1,5 +1,7 @@
-# Lee bizkaia.eus cada minuto y recalcula la predicción cada 15 min, sin interrupción: cada hora arranca un tramo de 57 min que captura
-# cada 60 s y sube los datos cada 2 min (y prediccion/directo.json para el panel). (Repositorio público = minutos de Actions ilimitados.)
+# Lee bizkaia.eus cada minuto y recalcula la predicción cada 15 min, sin interrupción.
+# Cada ejecución captura durante 5 h 40 min (GitHub corta a las 6 h) y, al terminar, lanza la siguiente.
+# La programación horaria es solo un respaldo: GitHub no garantiza las tareas programadas y de noche
+# puede saltarse muchas. Si ya hay un tramo en marcha, el nuevo espera (concurrency) y no se solapan.
 name: Recolector cada minuto
 on:
   schedule:
@@ -10,10 +12,11 @@ concurrency:
   cancel-in-progress: false
 permissions:
   contents: write
+  actions: write
 jobs:
   recolector:
     runs-on: ubuntu-latest
-    timeout-minutes: 62
+    timeout-minutes: 355
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -22,7 +25,12 @@ jobs:
           cache: pip
           cache-dependency-path: requirements-ciclo.txt
       - run: pip install -q -r requirements-ciclo.txt
-      - name: Capturar cada minuto durante 57 min
+      - name: Capturar cada minuto (5 h 40 min) y predecir cada 15 min
         env:
           AURIA_ORIGEN: github-min
-        run: python -m auria.bucle --minutos 57 --intervalo 60 --subir-cada 2 --prevision-cada 15
+        run: python -m auria.bucle --minutos 340 --intervalo 60 --subir-cada 2 --prevision-cada 15
+      - name: Encadenar el siguiente tramo
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run recolector-minuto.yml --ref "${GITHUB_REF_NAME}"
