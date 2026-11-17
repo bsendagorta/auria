@@ -143,6 +143,8 @@ def test_situaciones_y_prevision():
     m = prevision.meteo_desde_crudo(pd.concat(partes))
     assert m["SUR_RACHEADO"].all() and m["VIENTO_FUERTE"].all() and not m["NORTE_PERSISTENTE"].any()
     ef = {"anios": [2021, 2025], "activo": {"INCENDIO_FORESTAL_EXTERIOR": True, "METEO_ASISTENCIA": False},
+          "efectos": {"INCENDIO_FORESTAL_EXTERIOR": {"SUR_RACHEADO": {"m": 2.0, "lo": 1.4, "hi": 2.6},
+                                                     "VIENTO_FUERTE": {"m": 1.2, "lo": 0.9, "hi": 1.5}}},
           "por_parque": {p: {"INCENDIO_FORESTAL_EXTERIOR": {"SUR_RACHEADO": 2.0, "VIENTO_FUERTE": 1.2}}
                          for p in PARQUES}}
     ruta = config.DIR_MODELO / "situaciones_efectos.json"
@@ -153,7 +155,7 @@ def test_situaciones_y_prevision():
         out = prevision.predecir(3, meteo=m, traf=traf, guardar=False)
         h = out["parques"][0]["horas"][0]
         assert "SUR_RACHEADO" in h["situaciones"] and "Sur racheado" in out["parques"][0]["situacion_ahora"]
-        assert any("×2.4" in f or "×2.0" in f for f in h["factores"]), h["factores"]
+        assert any("×2.0" in f for f in h["factores"]), h["factores"]
     finally:
         if previo is None:
             ruta.unlink()
