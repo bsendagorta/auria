@@ -1,6 +1,6 @@
 {
- "ts": "2026-11-17T17:49:50+01:00",
- "salidas_desde_8": 23,
+ "ts": "2026-11-17T17:52:50+01:00",
+ "salidas_desde_8": 24,
  "salidas_anio": 5804,
  "actuaciones": [
   {
@@ -55,21 +55,31 @@
    "estado": "EN_SINIESTRO"
   },
   {
-   "tipo": "SANEADO DE CONSTRUCCIONES",
-   "familia": "METEO_ASISTENCIA",
-   "ubicacion": "KARRANTZA HARANA/VALLE DE",
-   "zona": "BA Cézura",
-   "parque": "ZALLA",
-   "parque_nombre": "Zalla",
+   "tipo": "INCENDIO INDUSTRIAL NIVEL 1",
+   "familia": "INCENDIO_INDUSTRIAL",
+   "ubicacion": "",
+   "zona": "",
+   "parque": "SIN_PARQUE",
+   "parque_nombre": "Fuera de zona / Bilbao",
    "vehiculos": [
     {
-     "tipo": "Bomba forestal pesada",
-     "estado": "REGRESANDO",
-     "estado_txt": "Vehículo volviendo de un sin."
+     "tipo": "Bomba urbana pesada",
+     "estado": "EN_SINIESTRO",
+     "estado_txt": "Vehículo parado en siniestro"
+    },
+    {
+     "tipo": "Unidad de mando y jefatura",
+     "estado": "EN_SINIESTRO",
+     "estado_txt": "Vehículo parado en siniestro"
+    },
+    {
+     "tipo": "Bomba urbana pesada",
+     "estado": "EN_SINIESTRO",
+     "estado_txt": "Vehículo parado en siniestro"
     }
    ],
-   "n_vehiculos": 1,
-   "estado": "REGRESANDO"
+   "n_vehiculos": 3,
+   "estado": "EN_SINIESTRO"
   }
  ],
  "por_parque": {
@@ -130,19 +140,19 @@
    "regresando": 0
   },
   "ZALLA": {
-   "actuaciones": 1,
-   "vehiculos": 1,
+   "actuaciones": 0,
+   "vehiculos": 0,
    "propuesto": 0,
    "en_ruta": 0,
    "en_siniestro": 0,
-   "regresando": 1
+   "regresando": 0
   },
   "SIN_PARQUE": {
-   "actuaciones": 1,
-   "vehiculos": 1,
+   "actuaciones": 2,
+   "vehiculos": 4,
    "propuesto": 0,
    "en_ruta": 0,
-   "en_siniestro": 0,
+   "en_siniestro": 3,
    "regresando": 1
   }
  }
