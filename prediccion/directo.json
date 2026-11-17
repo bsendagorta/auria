@@ -1,6 +1,6 @@
 {
- "ts": "2026-11-17T11:13:06+01:00",
- "salidas_desde_8": 11,
+ "ts": "2026-11-17T11:16:06+01:00",
+ "salidas_desde_8": 12,
  "salidas_anio": 5782,
  "actuaciones": [
   {
@@ -30,12 +30,12 @@
    "vehiculos": [
     {
      "tipo": "Auto escala articulada",
-     "estado": "EN_SINIESTRO",
-     "estado_txt": "Vehículo parado en siniestro"
+     "estado": "EN_RUTA",
+     "estado_txt": "Vehículo va a un siniestro"
     }
    ],
    "n_vehiculos": 1,
-   "estado": "EN_SINIESTRO"
+   "estado": "EN_RUTA"
   }
  ],
  "por_parque": {
@@ -43,8 +43,8 @@
    "actuaciones": 1,
    "vehiculos": 1,
    "propuesto": 0,
-   "en_ruta": 0,
-   "en_siniestro": 1,
+   "en_ruta": 1,
+   "en_siniestro": 0,
    "regresando": 0
   },
   "ARTAZA": {
