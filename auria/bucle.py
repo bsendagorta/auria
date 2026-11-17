@@ -41,6 +41,7 @@ def main(argv=None):
     fin = time.monotonic() + a.minutos * 60
     ultima_subida = time.monotonic()
     ultima_prevision = None
+    ultimo_datex = None
     ok = fallos = 0
     while time.monotonic() < fin:
         t0 = time.monotonic()
@@ -49,6 +50,14 @@ def main(argv=None):
             ok += 1
         except Exception:
             fallos += 1          # ya queda registrado en capturas_*.csv con ok=0
+        # incidencias oficiales DATEX II (Tráfico Euskadi) cada 5 min
+        if ultimo_datex is None or time.monotonic() - ultimo_datex >= 300:
+            try:
+                from .datex import capturar as capturar_datex
+                print(f"DATEX II: {len(capturar_datex())} incidencias en Bizkaia", flush=True)
+            except Exception as e:
+                print(f"Aviso DATEX II: {e}", flush=True)
+            ultimo_datex = time.monotonic()
         if a.prevision_cada and (ultima_prevision is None
                                  or time.monotonic() - ultima_prevision >= a.prevision_cada * 60):
             try:
