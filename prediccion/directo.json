@@ -1,6 +1,6 @@
 {
- "ts": "2026-11-17T06:02:42+01:00",
- "salidas_desde_8": 48,
+ "ts": "2026-11-17T06:05:42+01:00",
+ "salidas_desde_8": 49,
  "salidas_anio": 5732,
  "actuaciones": [
   {
@@ -10,6 +10,28 @@
    "zona": "BA Aperribai",
    "parque": "BASAURI",
    "parque_nombre": "Basauri",
+   "vehiculos": [
+    {
+     "tipo": "Auto escala articulada",
+     "estado": "REGRESANDO",
+     "estado_txt": "Vehículo volviendo de un sin."
+    },
+    {
+     "tipo": "Genérico Mando Gestión",
+     "estado": "OTRO",
+     "estado_txt": "Vehículo disponible"
+    }
+   ],
+   "n_vehiculos": 2,
+   "estado": "REGRESANDO"
+  },
+  {
+   "tipo": "SANEADO DE CONSTRUCCIONES",
+   "familia": "METEO_ASISTENCIA",
+   "ubicacion": "ERANDIO",
+   "zona": "AV Axpeko Erribera",
+   "parque": "ARTAZA",
+   "parque_nombre": "Artaza (Leioa)",
    "vehiculos": [
     {
      "tipo": "Auto escala articulada",
@@ -36,23 +58,6 @@
    ],
    "n_vehiculos": 1,
    "estado": "PROPUESTO"
-  },
-  {
-   "tipo": "SANEADO DE CONSTRUCCIONES",
-   "familia": "METEO_ASISTENCIA",
-   "ubicacion": "ERANDIO",
-   "zona": "AV Axpeko Erribera",
-   "parque": "ARTAZA",
-   "parque_nombre": "Artaza (Leioa)",
-   "vehiculos": [
-    {
-     "tipo": "Auto escala articulada",
-     "estado": "EN_SINIESTRO",
-     "estado_txt": "Vehículo parado en siniestro"
-    }
-   ],
-   "n_vehiculos": 1,
-   "estado": "EN_SINIESTRO"
   }
  ],
  "por_parque": {
@@ -82,11 +87,11 @@
   },
   "BASAURI": {
    "actuaciones": 1,
-   "vehiculos": 1,
+   "vehiculos": 2,
    "propuesto": 0,
    "en_ruta": 0,
-   "en_siniestro": 1,
-   "regresando": 0
+   "en_siniestro": 0,
+   "regresando": 1
   },
   "IURRETA": {
    "actuaciones": 0,
