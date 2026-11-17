@@ -1,6 +1,6 @@
 {
- "ts": "2026-11-17T10:10:08+01:00",
- "salidas_desde_8": 5,
+ "ts": "2026-11-17T10:15:06+01:00",
+ "salidas_desde_8": 6,
  "salidas_anio": 5777,
  "actuaciones": [
   {
@@ -13,29 +13,12 @@
    "vehiculos": [
     {
      "tipo": "Transporte Material y Personal",
-     "estado": "EN_RUTA",
-     "estado_txt": "Vehículo va a un siniestro"
+     "estado": "EN_SINIESTRO",
+     "estado_txt": "Vehículo parado en siniestro"
     }
    ],
    "n_vehiculos": 1,
-   "estado": "EN_RUTA"
-  },
-  {
-   "tipo": "SANEADO DE CONSTRUCCIONES",
-   "familia": "METEO_ASISTENCIA",
-   "ubicacion": "GETXO",
-   "zona": "CL Calle Mayor",
-   "parque": "ARTAZA",
-   "parque_nombre": "Artaza (Leioa)",
-   "vehiculos": [
-    {
-     "tipo": "Auto escala articulada",
-     "estado": "EN_RUTA",
-     "estado_txt": "Vehículo va a un siniestro"
-    }
-   ],
-   "n_vehiculos": 1,
-   "estado": "EN_RUTA"
+   "estado": "EN_SINIESTRO"
   },
   {
    "tipo": "SANEADO DE CONSTRUCCIONES",
@@ -70,6 +53,23 @@
    ],
    "n_vehiculos": 1,
    "estado": "EN_SINIESTRO"
+  },
+  {
+   "tipo": "SANEADO DE CONSTRUCCIONES",
+   "familia": "METEO_ASISTENCIA",
+   "ubicacion": "GETXO",
+   "zona": "CL Bidebarrieta",
+   "parque": "ARTAZA",
+   "parque_nombre": "Artaza (Leioa)",
+   "vehiculos": [
+    {
+     "tipo": "Auto escala articulada",
+     "estado": "EN_RUTA",
+     "estado_txt": "Vehículo va a un siniestro"
+    }
+   ],
+   "n_vehiculos": 1,
+   "estado": "EN_RUTA"
   }
  ],
  "por_parque": {
@@ -85,8 +85,8 @@
    "actuaciones": 2,
    "vehiculos": 2,
    "propuesto": 0,
-   "en_ruta": 2,
-   "en_siniestro": 0,
+   "en_ruta": 1,
+   "en_siniestro": 1,
    "regresando": 0
   },
   "DERIO": {
