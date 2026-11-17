@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-17T09:34+01:00",
+ "generado": "2026-11-17T09:50+01:00",
  "horizonte_h": 6,
  "modelo": "base+reglas",
  "fuentes_ok": {
@@ -10,9 +10,9 @@
   "salidas_esperadas_6h": 4.8,
   "normal_6h": 4.8,
   "contador": {
-   "ts": "2026-11-17T09:34:34+01:00",
-   "desde_8": 1,
-   "anio": 5770
+   "ts": "2026-11-17T09:50:43+01:00",
+   "desde_8": 3,
+   "anio": 5777
   }
  },
  "parques": [
@@ -304,7 +304,7 @@
     "Incidencias de seguridad vial (objetos, desprendimientos)"
    ],
    "directo": {
-    "activas": 2,
+    "activas": 1,
     "nuevas_1h": 2
    },
    "horas": [
@@ -1122,7 +1122,7 @@
    "factores": [],
    "directo": {
     "activas": 1,
-    "nuevas_1h": 2
+    "nuevas_1h": 1
    },
    "horas": [
     {
@@ -2181,15 +2181,8 @@
   {
    "tipo": "SANEADO DE CONSTRUCCIONES",
    "ubicacion": "LEIOA",
-   "zona": "CL Langileria",
-   "vehiculos": "Transporte Material y Personal (Vehículo volviendo de un sin.)",
-   "parque": "ARTAZA"
-  },
-  {
-   "tipo": "SANEADO DE CONSTRUCCIONES",
-   "ubicacion": "ERANDIO",
-   "zona": "CL Ibarra",
-   "vehiculos": "Auto escala articulada (Vehículo parado en siniestro)",
+   "zona": "AV Elexalde",
+   "vehiculos": "Auto escala articulada (Vehículo va a un siniestro)",
    "parque": "ARTAZA"
   },
   {
