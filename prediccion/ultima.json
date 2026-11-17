@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-17T12:09+01:00",
+ "generado": "2026-11-17T12:19+01:00",
  "horizonte_h": 6,
  "modelo": "base+reglas",
  "fuentes_ok": {
@@ -10,9 +10,9 @@
   "salidas_esperadas_6h": 4.8,
   "normal_6h": 4.8,
   "contador": {
-   "ts": "2026-11-17T12:09:40+01:00",
+   "ts": "2026-11-17T12:19:17+01:00",
    "desde_8": 14,
-   "anio": 5783
+   "anio": 5786
   }
  },
  "parques": [
