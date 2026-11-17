@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-17T18:12+01:00",
+ "generado": "2026-11-17T18:27+01:00",
  "horizonte_h": 6,
  "modelo": "base+reglas",
  "fuentes_ok": {
@@ -10,8 +10,8 @@
   "salidas_esperadas_6h": 4.3,
   "normal_6h": 4.0,
   "contador": {
-   "ts": "2026-11-17T18:11:48+01:00",
-   "desde_8": 25,
+   "ts": "2026-11-17T18:27:48+01:00",
+   "desde_8": 27,
    "anio": 5804
   }
  },
@@ -393,7 +393,7 @@
     "CALOR"
    ],
    "directo": {
-    "activas": 1,
+    "activas": 0,
     "nuevas_1h": 0
    },
    "horas": [
@@ -2723,32 +2723,11 @@
  ],
  "activas_ahora": [
   {
-   "tipo": "RETÉN DE PREVENCIÓN (SPEIS)",
-   "ubicacion": "Puerto de Bilbao",
-   "zona": "ML MUELLE A-1 (AMPLIACION 1)",
-   "vehiculos": "Bomba urbana ligera (Vehículo volviendo de un sin.)",
-   "parque": "SIN_PARQUE"
-  },
-  {
    "tipo": "SANEADO DE CONSTRUCCIONES",
    "ubicacion": "LEIOA",
    "zona": "GR San Juan",
    "vehiculos": "Auto escala articulada (Vehículo parado en siniestro)",
    "parque": "ARTAZA"
-  },
-  {
-   "tipo": "SANEADO DE CONSTRUCCIONES",
-   "ubicacion": "VALLE DE TRAPAGA",
-   "zona": "CL Luís de Castresana",
-   "vehiculos": "Auto escala articulada (Vehículo parado en siniestro)",
-   "parque": "URIOSTE"
-  },
-  {
-   "tipo": "INCENDIO INDUSTRIAL NIVEL 1",
-   "ubicacion": "",
-   "zona": "",
-   "vehiculos": "Bomba urbana pesada (Vehículo parado en siniestro) | Unidad de mando y jefatura (Vehículo parado en siniestro) | Bomba urbana pesada (Vehículo parado en siniestro)",
-   "parque": "SIN_PARQUE"
   }
  ],
  "niveles": {
