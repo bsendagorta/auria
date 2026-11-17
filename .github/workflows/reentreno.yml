@@ -55,7 +55,7 @@ jobs:
       - name: 6 · Evaluación predicho vs real
         run: |
           python -m auria.resumen_online || true
-          python -m auria.evaluacion || true
+          echo "La evaluación la actualiza el recolector cada 15 min"
       - name: Subir modelo patrones e informes
         if: always()
         run: scripts/subir_datos.sh "modelo - reentreno $(date -u +%Y-%m-%d)"
