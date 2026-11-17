@@ -1,0 +1,64 @@
+{
+ "lluvia": {
+  "p_lluvia_en_accidentes": 0.1637,
+  "p_lluvia_fuerte_en_accidentes": 0.0402,
+  "p_horas_lluvia": 0.1384,
+  "p_horas_lluvia_fuerte": 0.0121,
+  "rr_lluvia": 1.183,
+  "rr_lluvia_fuerte": 3.329,
+  "umbral_lluvia_mm_h": 0.3,
+  "umbral_lluvia_fuerte_mm_h": 2.5
+ },
+ "calibracion_speis": {
+  "URIOSTE": {
+   "salidas_speis_anio": 61.7,
+   "accidentes_dgt_anio": 208.7,
+   "salidas_por_accidente": 0.296
+  },
+  "ARTAZA": {
+   "salidas_speis_anio": 58.0,
+   "accidentes_dgt_anio": 448.3,
+   "salidas_por_accidente": 0.129
+  },
+  "DERIO": {
+   "salidas_speis_anio": 61.3,
+   "accidentes_dgt_anio": 111.7,
+   "salidas_por_accidente": 0.549
+  },
+  "BASAURI": {
+   "salidas_speis_anio": 79.7,
+   "accidentes_dgt_anio": 186.0,
+   "salidas_por_accidente": 0.428
+  },
+  "IURRETA": {
+   "salidas_speis_anio": 44.0,
+   "accidentes_dgt_anio": 135.0,
+   "salidas_por_accidente": 0.326
+  },
+  "ARRATZU": {
+   "salidas_speis_anio": 18.7,
+   "accidentes_dgt_anio": 43.0,
+   "salidas_por_accidente": 0.435
+  },
+  "MARKINA": {
+   "salidas_speis_anio": 11.0,
+   "accidentes_dgt_anio": 28.3,
+   "salidas_por_accidente": 0.389
+  },
+  "ZALLA": {
+   "salidas_speis_anio": 20.3,
+   "accidentes_dgt_anio": 60.3,
+   "salidas_por_accidente": 0.337
+  }
+ },
+ "anios": [
+  2019,
+  2020,
+  2021,
+  2022,
+  2023,
+  2024,
+  2025
+ ],
+ "generado": "2026-11-17"
+}
