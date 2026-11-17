@@ -112,8 +112,23 @@ def leer_csv(ruta):
     return pd.read_csv(io.BytesIO(b), dtype={"cod_ine": str}) if b else None
 
 
-@st.cache_data(ttl=30, show_spinner=False)
+def _directo_api():
+    """La API de GitHub da el fichero recién subido (raw.githubusercontent tiene ~5 min de caché).
+    Sin token permite 60 peticiones/hora por IP: la caché compartida de 75 s se queda en ~48/hora."""
+    repo, tok = _repo()
+    r = requests.get(f"https://api.github.com/repos/{repo}/contents/prediccion/directo.json",
+                     headers={"Accept": "application/vnd.github.raw+json",
+                              **({"Authorization": f"Bearer {tok}"} if tok else {})}, timeout=10)
+    r.raise_for_status()
+    return r.json()
+
+
+@st.cache_data(ttl=75, show_spinner=False)
 def leer_directo():
+    try:
+        return _directo_api(), None
+    except Exception as e:
+        ERRORES["api_directo"] = str(e)
     b, _ = _bajar("prediccion/directo.json", 30, local=False)
     if b:
         return json.loads(b), None
@@ -177,7 +192,7 @@ def seccion_ahora():
         f"normal {biz['normal_6h']:.1f}")
     kpi(k[4], f"{EMOJI[peor['nivel']]} {peor['nombre'].split(' (')[0]}", "Parque con más riesgo",
         f"×{peor['ratio_max']} lo normal")
-    if retraso > 10:
+    if retraso > 12:
         st.warning(f"Última lectura en directo hace {retraso:.0f} min: el recolector puede estar parado.")
 
     izq, der = st.columns([3, 2])
