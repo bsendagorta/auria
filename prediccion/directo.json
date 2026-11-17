@@ -1,25 +1,8 @@
 {
- "ts": "2026-11-17T11:04:06+01:00",
- "salidas_desde_8": 10,
+ "ts": "2026-11-17T11:07:06+01:00",
+ "salidas_desde_8": 11,
  "salidas_anio": 5782,
  "actuaciones": [
-  {
-   "tipo": "NEUTRALIZACIÓN DE ABEJAS Y AVISPAS",
-   "familia": "ABEJAS_AVISPAS",
-   "ubicacion": "GETXO",
-   "zona": "CL Negubide",
-   "parque": "ARTAZA",
-   "parque_nombre": "Artaza (Leioa)",
-   "vehiculos": [
-    {
-     "tipo": "Transporte Material y Personal",
-     "estado": "EN_SINIESTRO",
-     "estado_txt": "Vehículo parado en siniestro"
-    }
-   ],
-   "n_vehiculos": 1,
-   "estado": "EN_SINIESTRO"
-  },
   {
    "tipo": "RETIRADA DE ÁRBOLES",
    "familia": "METEO_ASISTENCIA",
@@ -65,11 +48,11 @@
    "regresando": 0
   },
   "ARTAZA": {
-   "actuaciones": 1,
-   "vehiculos": 1,
+   "actuaciones": 0,
+   "vehiculos": 0,
    "propuesto": 0,
    "en_ruta": 0,
-   "en_siniestro": 1,
+   "en_siniestro": 0,
    "regresando": 0
   },
   "DERIO": {
