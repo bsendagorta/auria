@@ -263,7 +263,10 @@ def informe(res):
          "meteo horaria ERA5 de la zona de cada parque.", ""]
     for r in res.values():
         L += [f"## {r['clase'].capitalize()}: {r['eventos']:,} casos en {r['meses']} meses completos "
-              f"({r['desde']} → {r['hasta']})"]
+              f"({r['desde']} → {r['hasta']}) · meteo: {r.get('fuente_meteo', '')}"]
+        if r.get("comparacion"):
+            L.append(f"Mejora en la validación según la fuente de meteo: ERA5 {r['comparacion']['ERA5']} % · "
+                     f"estaciones {r['comparacion']['estaciones']} %")
         if r.get("validacion"):
             v = r["validacion"]
             L.append(f"Validación 2025-2026 ({v['eventos_test']} casos): desviación {v['dev_base']} → "
@@ -289,14 +292,52 @@ def main(argv=None):
     inc = descargar(a.desde) if (a.descargar or not RUTA.exists()) else pd.read_csv(RUTA, dtype=str)
     d = preparar(inc)
     print(d.groupby("clase").size().to_string())
-    sit = clasificar(pd.read_csv(RUTA_HORARIA))
+    era5 = pd.read_csv(RUTA_HORARIA)
+    sit = clasificar(era5)
+    obs = con_estaciones(era5)
     res = {}
     for clase in ("accidente", "obstaculo"):
-        res[clase] = modelo(tabla_horaria(d, clase, sit), clase)
+        r_era = modelo(tabla_horaria(d, clase, sit), clase)
+        r_era["fuente_meteo"] = "ERA5 (reanálisis)"
+        elegido = r_era
+        if obs is not None:
+            r_obs = modelo(tabla_horaria(d, clase, obs), clase)
+            r_obs["fuente_meteo"] = "estaciones Euskalmet (medido)"
+            v_era, v_obs = (r_era.get("validacion") or {}), (r_obs.get("validacion") or {})
+            r_obs["comparacion"] = {"ERA5": v_era.get("mejora_pct"), "estaciones": v_obs.get("mejora_pct")}
+            # se queda la fuente con la que el modelo predice mejor 2025-2026
+            if v_obs and (not v_era or v_obs["dev_meteo"] - v_obs["dev_base"] < v_era["dev_meteo"] - v_era["dev_base"]):
+                elegido = r_obs
+            else:
+                r_era["comparacion"] = r_obs["comparacion"]
+        res[clase] = elegido
     res["fecha"] = date.today().isoformat()
     RUTA_MODELO.write_text(json.dumps(res, ensure_ascii=False, indent=1), encoding="utf-8")
     informe({k: v for k, v in res.items() if isinstance(v, dict)})
     print(open(config.INFORMES / "accidentes_hora.md", encoding="utf-8").read())
+
+
+def con_estaciones(era5):
+    """La meteo horaria del reanálisis con lluvia, viento, temperatura y humedad MEDIDOS en las estaciones
+    de Euskalmet donde los hay; después se vuelven a calcular las situaciones."""
+    from .estaciones import horaria_parques
+    from .situaciones import clasificar
+    o = horaria_parques()
+    if o.empty:
+        return None
+    e = era5.copy()
+    e["_h"] = pd.to_datetime(e["hora"])
+    o = o.rename(columns={"hora": "_h"})
+    m = e.merge(o[["parque", "_h", "lluvia_obs", "temp_obs", "humedad_obs", "viento_obs", "racha_obs", "dir_obs"]],
+                on=["parque", "_h"], how="left")
+    for k, dest in {"lluvia_obs": "precipitation", "temp_obs": "temperature_2m", "humedad_obs": "relative_humidity_2m",
+                    "viento_obs": "wind_speed_10m", "racha_obs": "wind_gusts_10m", "dir_obs": "wind_direction_10m"}.items():
+        ok = m[k].notna()
+        m[dest] = m[dest].astype(float)
+        m.loc[ok, dest] = m.loc[ok, k]
+    print(f"Horas con lluvia medida: {m['lluvia_obs'].notna().mean():.0%}")
+    return clasificar(m.drop(columns=["_h", "lluvia_obs", "temp_obs", "humedad_obs", "viento_obs", "racha_obs",
+                                      "dir_obs"]))
 
 
 # ------------------------------------------------------------------ uso en directo

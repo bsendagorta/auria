@@ -124,6 +124,20 @@ def dia(estacion, d):
     return t.reset_index().assign(estacion=estacion)
 
 
+def limpiar(t):
+    """Quita códigos de error de Euskalmet (799,9 / 7999…) y pasa el viento de m/s a km/h."""
+    t = t.copy()
+    limites = {"lluvia_obs": (0, 150), "humedad_obs": (0, 100.5), "temp_obs": (-25, 48),
+               "viento_obs": (0, 70), "racha_obs": (0, 90), "dir_obs": (0, 360)}
+    for c, (lo, hi) in limites.items():
+        if c in t:
+            t.loc[~t[c].between(lo, hi), c] = np.nan
+    for c in ("viento_obs", "racha_obs"):
+        if c in t:
+            t[c] = (t[c] * 3.6).round(1)          # la API da m/s (mediana 1,8; máximo 37,8 = 136 km/h)
+    return t
+
+
 def _asignacion():
     cat = pd.read_csv(RUTA_CAT)
     return cat.dropna(subset=["parque"]).sort_values(["parque", "orden"])
@@ -131,6 +145,7 @@ def _asignacion():
 
 def _por_parque(lect):
     """Combina principal y reserva: la principal manda; los huecos se rellenan con la de reserva."""
+    lect = limpiar(lect)
     a = _asignacion()
     filas = []
     for p, g in a.groupby("parque"):

@@ -24,11 +24,11 @@
     "eventos": 44
    },
    "primera_lluvia": {
-    "rr": 0.83,
+    "rr": 0.82,
     "lo": 0.74,
-    "hi": 0.93,
-    "horas": 12557,
-    "eventos": 344
+    "hi": 0.92,
+    "horas": 12468,
+    "eventos": 340
    },
    "niebla": {
     "rr": 0.97,
@@ -52,9 +52,9 @@
     "eventos": 11
    },
    "VIENTO_FUERTE": {
-    "rr": 0.71,
-    "lo": 0.52,
-    "hi": 0.97,
+    "rr": 0.72,
+    "lo": 0.53,
+    "hi": 0.98,
     "horas": 1812,
     "eventos": 38
    },
@@ -68,7 +68,7 @@
    "NORTE_PERSISTENTE": {
     "rr": 1.15,
     "lo": 0.83,
-    "hi": 1.61,
+    "hi": 1.6,
     "horas": 791,
     "eventos": 34
    },
@@ -80,7 +80,7 @@
     "eventos": 323
    },
    "CALOR": {
-    "rr": 1.0,
+    "rr": 1.01,
     "lo": 0.88,
     "hi": 1.14,
     "horas": 13488,
@@ -92,11 +92,18 @@
     "hi": 1.05,
     "horas": 10511,
     "eventos": 274
+   },
+   "fiesta_local": {
+    "rr": 0.95,
+    "lo": 0.81,
+    "hi": 1.11,
+    "horas": 6384,
+    "eventos": 149
    }
   },
   "validacion": {
    "dev_base": 11658.2,
-   "dev_meteo": 11618.6,
+   "dev_meteo": 11618.1,
    "mejora_pct": 0.34,
    "eventos_test": 1533
   },
@@ -105,7 +112,12 @@
   "horas": 345024,
   "meses": 59,
   "desde": "2021-04-01",
-  "hasta": "2026-10-31"
+  "hasta": "2026-10-31",
+  "fuente_meteo": "ERA5 (reanálisis)",
+  "comparacion": {
+   "ERA5": 0.34,
+   "estaciones": 0.33
+  }
  },
  "obstaculo": {
   "clase": "obstaculo",
@@ -125,18 +137,18 @@
     "eventos": 564
    },
    "lluvia_fuerte": {
-    "rr": 2.01,
+    "rr": 2.02,
     "lo": 1.65,
     "hi": 2.46,
     "horas": 1229,
     "eventos": 106
    },
    "primera_lluvia": {
-    "rr": 0.7,
-    "lo": 0.6,
-    "hi": 0.82,
-    "horas": 12477,
-    "eventos": 176
+    "rr": 0.69,
+    "lo": 0.59,
+    "hi": 0.81,
+    "horas": 12373,
+    "eventos": 173
    },
    "niebla": {
     "rr": 0.68,
@@ -146,16 +158,16 @@
     "eventos": 150
    },
    "HELADA": {
-    "rr": 1.52,
+    "rr": 1.53,
     "lo": 0.96,
     "hi": 2.41,
     "horas": 666,
     "eventos": 16
    },
    "NIEVE": {
-    "rr": 1.58,
-    "lo": 0.86,
-    "hi": 2.91,
+    "rr": 1.57,
+    "lo": 0.85,
+    "hi": 2.9,
     "horas": 206,
     "eventos": 8
    },
@@ -168,7 +180,7 @@
    },
    "SUR_RACHEADO": {
     "rr": 2.04,
-    "lo": 1.7,
+    "lo": 1.71,
     "hi": 2.45,
     "horas": 2480,
     "eventos": 127
@@ -176,7 +188,7 @@
    "NORTE_PERSISTENTE": {
     "rr": 2.21,
     "lo": 1.78,
-    "hi": 2.75,
+    "hi": 2.74,
     "horas": 791,
     "eventos": 100
    },
@@ -190,7 +202,7 @@
    "CALOR": {
     "rr": 1.11,
     "lo": 0.96,
-    "hi": 1.29,
+    "hi": 1.28,
     "horas": 13479,
     "eventos": 176
    },
@@ -200,12 +212,19 @@
     "hi": 1.27,
     "horas": 10541,
     "eventos": 397
+   },
+   "fiesta_local": {
+    "rr": 1.02,
+    "lo": 0.84,
+    "hi": 1.23,
+    "horas": 6042,
+    "eventos": 102
    }
   },
   "validacion": {
    "dev_base": 9107.9,
-   "dev_meteo": 8946.8,
-   "mejora_pct": 1.77,
+   "dev_meteo": 8947.8,
+   "mejora_pct": 1.76,
    "eventos_test": 1054
   },
   "activo": true,
@@ -213,7 +232,12 @@
   "horas": 341376,
   "meses": 59,
   "desde": "2021-04-01",
-  "hasta": "2026-11-11"
+  "hasta": "2026-11-11",
+  "fuente_meteo": "ERA5 (reanálisis)",
+  "comparacion": {
+   "ERA5": 1.76,
+   "estaciones": 1.69
+  }
  },
  "fecha": "2026-11-17"
 }

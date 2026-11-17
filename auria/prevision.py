@@ -78,7 +78,7 @@ def meteo_parques(dias_pasados=14, dias_futuros=2) -> pd.DataFrame:
 
 
 def con_observado(crudo):
-    """Sustituye, en las horas ya pasadas, la lluvia, temperatura y humedad del modelo por lo MEDIDO en la
+    """Sustituye, en las horas ya pasadas, lluvia, temperatura, humedad y viento del modelo por lo MEDIDO en la
     estación de Euskalmet de cada parque (prediccion/estaciones_ultimo.csv, lo deja el recolector)."""
     ruta = config.DIR_PREDICCION / "estaciones_ultimo.csv"
     try:
@@ -90,12 +90,14 @@ def con_observado(crudo):
     c = crudo.copy()
     c["_h"] = pd.to_datetime(c["time"])
     o = o.rename(columns={"hora": "_h"})
-    cols = {"lluvia_obs": "precipitation", "temp_obs": "temperature_2m", "humedad_obs": "relative_humidity_2m"}
+    cols = {"lluvia_obs": "precipitation", "temp_obs": "temperature_2m", "humedad_obs": "relative_humidity_2m",
+            "viento_obs": "wind_speed_10m", "racha_obs": "wind_gusts_10m", "dir_obs": "wind_direction_10m"}
     m = c.merge(o[["parque", "_h"] + [k for k in cols if k in o]], on=["parque", "_h"], how="left")
     ahora = pd.Timestamp.now().floor("h")
     for k, dest in cols.items():
         if k in m and dest in m:
             usar = m[k].notna() & (m["_h"] < ahora)
+            m[dest] = m[dest].astype(float)
             m.loc[usar, dest] = m.loc[usar, k]
     m.attrs["horas_observadas"] = int(m["lluvia_obs"].notna().sum()) if "lluvia_obs" in m else 0
     return m.drop(columns=["_h"] + [k for k in cols if k in m])
