@@ -142,9 +142,18 @@ def leer_directo():
 
 
 @st.cache_data(ttl=86400, show_spinner=False)
+def _geo(ruta):
+    b, _ = _bajar(ruta, 3600)
+    if not b:
+        raise RuntimeError(f"sin {ruta}")      # una excepción no queda en caché: se reintenta
+    return json.loads(b)
+
+
 def geo(ruta):
-    b, _ = _bajar(ruta, 86400)
-    return json.loads(b) if b else None
+    try:
+        return _geo(ruta)
+    except Exception:
+        return None
 
 
 def capas_zonas(parques, por_municipio=False):
@@ -187,7 +196,7 @@ def capas_zonas(parques, por_municipio=False):
     capas.append(pdk.Layer("ScatterplotLayer", pd.DataFrame([{"lat": p["lat"], "lon": p["lon"],
                                                               "txt": p["nombre"]} for p in parques]),
                            get_position="[lon, lat]", get_fill_color=[255, 255, 255, 255], get_line_color=[29, 29, 27],
-                           stroked=True, line_width_min_pixels=2, get_radius=6, radius_units="pixels", pickable=True))
+                           stroked=True, line_width_min_pixels=2, get_radius=150, radius_min_pixels=4, radius_max_pixels=7, pickable=True))
     return capas
 
 
@@ -266,8 +275,8 @@ def seccion_ahora():
         if pts:
             capas.append(pdk.Layer("ScatterplotLayer", pd.DataFrame(pts), get_position="[lon, lat]",
                                    get_fill_color=[20, 20, 20, 230], get_line_color=[255, 255, 255],
-                                   stroked=True, line_width_min_pixels=2, get_radius=7, radius_units="pixels",
-                                   pickable=True))
+                                   stroked=True, line_width_min_pixels=2, get_radius=200, radius_min_pixels=5,
+                                   radius_max_pixels=9, pickable=True))
         st.pydeck_chart(pdk.Deck(map_style=None, tooltip={"text": "{txt}"}, layers=capas,
                                  initial_view_state=pdk.ViewState(latitude=43.24, longitude=-2.85, zoom=8.7)),
                         height=430)
