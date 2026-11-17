@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-17T23:04+01:00",
+ "generado": "2026-11-17T23:20+01:00",
  "horizonte_h": 6,
  "modelo": "base+reglas",
  "fuentes_ok": {
@@ -10,7 +10,7 @@
   "salidas_esperadas_6h": 3.7,
   "normal_6h": 3.4,
   "contador": {
-   "ts": "2026-11-17T23:04:36+01:00",
+   "ts": "2026-11-17T23:20:36+01:00",
    "desde_8": 31,
    "anio": 5804
   }
@@ -769,8 +769,8 @@
     "CALOR"
    ],
    "directo": {
-    "activas": 0,
-    "nuevas_1h": 1
+    "activas": 1,
+    "nuevas_1h": 2
    },
    "horas": [
     {
@@ -2834,7 +2834,7 @@
    "tipo": "RETIRADA DE ÁRBOLES",
    "ubicacion": "URDULIZ",
    "zona": "BA Mendiondo",
-   "vehiculos": "Transporte Material y Personal (Vehículo parado en siniestro)",
+   "vehiculos": "Transporte Material y Personal (Vehículo volviendo de un sin.)",
    "parque": "ARTAZA"
   },
   {
@@ -2843,6 +2843,13 @@
    "zona": "A BI-3726 LEZAMA A GAZTELUMENDI",
    "vehiculos": "Transporte Material y Personal (Vehículo parado en siniestro)",
    "parque": "SIN_PARQUE"
+  },
+  {
+   "tipo": "SANEADO DE CONSTRUCCIONES",
+   "ubicacion": "BARAKALDO",
+   "zona": "CL San Bartolome",
+   "vehiculos": "Furgón utiles varios (Vehículo va a un siniestro)",
+   "parque": "URIOSTE"
   }
  ],
  "niveles": {
