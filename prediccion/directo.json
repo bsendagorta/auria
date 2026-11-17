@@ -1,26 +1,8 @@
 {
- "ts": "2026-11-18T00:14:38+01:00",
- "salidas_desde_8": 34,
+ "ts": "2026-11-18T00:17:38+01:00",
+ "salidas_desde_8": 35,
  "salidas_anio": 5804,
- "actuaciones": [
-  {
-   "tipo": "INCENDIO EXTERIOR NIVEL 1",
-   "familia": "INCENDIO_FORESTAL_EXTERIOR",
-   "ubicacion": "BERMEO",
-   "zona": "CL Zubiaurtar Kepa",
-   "parque": "ARRATZU",
-   "parque_nombre": "Arratzu",
-   "vehiculos": [
-    {
-     "tipo": "Bomba urbana pesada",
-     "estado": "REGRESANDO",
-     "estado_txt": "Vehículo volviendo de un sin."
-    }
-   ],
-   "n_vehiculos": 1,
-   "estado": "REGRESANDO"
-  }
- ],
+ "actuaciones": [],
  "por_parque": {
   "URIOSTE": {
    "actuaciones": 0,
@@ -63,12 +45,12 @@
    "regresando": 0
   },
   "ARRATZU": {
-   "actuaciones": 1,
-   "vehiculos": 1,
+   "actuaciones": 0,
+   "vehiculos": 0,
    "propuesto": 0,
    "en_ruta": 0,
    "en_siniestro": 0,
-   "regresando": 1
+   "regresando": 0
   },
   "MARKINA": {
    "actuaciones": 0,
