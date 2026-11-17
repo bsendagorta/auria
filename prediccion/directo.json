@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-17T06:28:42+01:00",
+ "ts": "2026-11-17T06:31:42+01:00",
  "salidas_desde_8": 50,
  "salidas_anio": 5732,
  "actuaciones": [
@@ -35,46 +35,46 @@
    "vehiculos": [
     {
      "tipo": "Transporte Material y Personal",
+     "estado": "EN_RUTA",
+     "estado_txt": "Vehículo va a un siniestro"
+    }
+   ],
+   "n_vehiculos": 1,
+   "estado": "EN_RUTA"
+  },
+  {
+   "tipo": "SANEADO DE CONSTRUCCIONES",
+   "familia": "METEO_ASISTENCIA",
+   "ubicacion": "BARAKALDO-",
+   "zona": "",
+   "parque": "URIOSTE",
+   "parque_nombre": "Urioste (Ortuella)",
+   "vehiculos": [
+    {
+     "tipo": "Auto escala articulada",
      "estado": "PROPUESTO",
      "estado_txt": "Vehículo propuesto"
     }
    ],
    "n_vehiculos": 1,
    "estado": "PROPUESTO"
-  },
-  {
-   "tipo": "RETIRADA DE ÁRBOLES",
-   "familia": "METEO_ASISTENCIA",
-   "ubicacion": "LEIOA",
-   "zona": "CL Langileria",
-   "parque": "ARTAZA",
-   "parque_nombre": "Artaza (Leioa)",
-   "vehiculos": [
-    {
-     "tipo": "Transporte Material y Personal",
-     "estado": "EN_SINIESTRO",
-     "estado_txt": "Vehículo parado en siniestro"
-    }
-   ],
-   "n_vehiculos": 1,
-   "estado": "EN_SINIESTRO"
   }
  ],
  "por_parque": {
   "URIOSTE": {
-   "actuaciones": 0,
-   "vehiculos": 0,
-   "propuesto": 0,
+   "actuaciones": 1,
+   "vehiculos": 1,
+   "propuesto": 1,
    "en_ruta": 0,
    "en_siniestro": 0,
    "regresando": 0
   },
   "ARTAZA": {
-   "actuaciones": 1,
-   "vehiculos": 1,
+   "actuaciones": 0,
+   "vehiculos": 0,
    "propuesto": 0,
    "en_ruta": 0,
-   "en_siniestro": 1,
+   "en_siniestro": 0,
    "regresando": 0
   },
   "DERIO": {
@@ -128,8 +128,8 @@
   "SIN_PARQUE": {
    "actuaciones": 1,
    "vehiculos": 1,
-   "propuesto": 1,
-   "en_ruta": 0,
+   "propuesto": 0,
+   "en_ruta": 1,
    "en_siniestro": 0,
    "regresando": 0
   }
