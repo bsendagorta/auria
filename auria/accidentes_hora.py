@@ -289,10 +289,16 @@ def _cargar(_mtime):
         return {}
 
 
-def factor_hora(v: dict):
-    """(multiplicador de TRÁFICO, [textos]) según la meteo de la hora, o None si no hay modelo validado."""
+# a qué tipo de salida de bomberos se aplica cada modelo horario (obstáculos en calzada = árboles, objetos y
+# desprendimientos: es lo más parecido con hora exacta a las salidas de "saneados, árboles, achiques")
+APLICA = {"accidente": "TRAFICO", "obstaculo": "METEO_ASISTENCIA"}
+NOMBRE = {"accidente": "accidentes", "obstaculo": "caídas de objetos/árboles"}
+
+
+def factor_hora(v: dict, clase="accidente"):
+    """(multiplicador, [textos]) según la meteo de la hora, o None si no hay modelo validado."""
     try:
-        m = _cargar(RUTA_MODELO.stat().st_mtime).get("accidente", {})
+        m = _cargar(RUTA_MODELO.stat().st_mtime).get(clase, {})
     except FileNotFoundError:
         return None
     if not m.get("activo"):
@@ -301,14 +307,19 @@ def factor_hora(v: dict):
     x = {"lluvia_debil": 0.1 <= ll < 1, "lluvia_moderada": 1 <= ll < 4, "lluvia_fuerte": ll >= 4,
          "primera_lluvia": ll >= 0.1 and float(v.get("dias_sin_lluvia") or 0) >= 3,
          "niebla": float(v.get("humedad") or 0) >= 97 and float(v.get("viento_kmh") or 99) < 6 and ll < 0.1}
+    # si la hora no trae la situación ya clasificada, se deduce de la variable básica
+    x.setdefault("VIENTO_FUERTE", v.get("VIENTO_FUERTE", float(v.get("racha_kmh") or 0) >= 70))
+    x.setdefault("HELADA", v.get("HELADA", float(v.get("temp", 15)) <= 0.5))
+    x.setdefault("NIEVE", v.get("NIEVE", float(v.get("nieve") or 0) > 0))
+    x.setdefault("CALOR", v.get("CALOR", float(v.get("temp", 15)) >= 30))
     k, textos = 1.0, []
     for nombre, e in m.get("variables", {}).items():
         activa = x.get(nombre, bool(v.get(nombre, False)))
         if activa and (e["lo"] > 1 or e["hi"] < 1):          # solo efectos claros
             k *= e["rr"]
             if e["rr"] >= 1.1:
-                textos.append(f"{VARIABLES[nombre]}: accidentes ×{e['rr']:.1f} (medido por horas)")
-    return min(max(k, 0.5), 4.0), textos
+                textos.append(f"{VARIABLES[nombre]}: {NOMBRE[clase]} ×{e['rr']:.1f} (medido por horas)")
+    return min(max(k, 0.5), 4.0 if clase == "accidente" else 6.0), textos
 
 
 if __name__ == "__main__":

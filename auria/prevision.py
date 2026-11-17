@@ -293,8 +293,10 @@ def aplicar_situaciones(parque, sits, v, mult, ef):
         e = bizkaia.get(fam, {}).get(s_)
         return bool(e) and (e["lo"] > 1 or e["hi"] < 1)
 
+    from .accidentes_hora import APLICA, factor_hora
+    horario = {APLICA[c] for c in APLICA if factor_hora(v, c) is not None}   # ya medidos por horas
     por_p = {f: {s_: min(max(m, 0.5), 4.0) for s_, m in d.items() if claro(f, s_)}
-             for f, d in ef.get("por_parque", {}).get(parque, {}).items()}
+             for f, d in ef.get("por_parque", {}).get(parque, {}).items() if f not in horario}
     for fam, ok in ef.get("activo", {}).items():
         if not ok:
             continue

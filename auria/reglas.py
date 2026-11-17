@@ -64,6 +64,9 @@ def aplicar(v: dict, sin_meteo=frozenset()):
     hora = accidentes_hora.factor_hora(v)
     if hora is not None:
         sin_meteo = set(sin_meteo) | {"TRAFICO"}
+    obst = accidentes_hora.factor_hora(v, "obstaculo")
+    if obst is not None:
+        sin_meteo = set(sin_meteo) | {"METEO_ASISTENCIA"}
     rr = None if hora is not None else riesgo_trafico.rr_lluvia(v.get("lluvia_1h", 0) or 0)
     for cond, efectos, texto in REGLAS:
         try:
@@ -81,6 +84,9 @@ def aplicar(v: dict, sin_meteo=frozenset()):
     if hora is not None:
         mult["TRAFICO"] = mult.get("TRAFICO", 1.0) * hora[0]
         textos += hora[1]
+    if obst is not None:
+        mult["METEO_ASISTENCIA"] = mult.get("METEO_ASISTENCIA", 1.0) * obst[0]
+        textos += obst[1]
     if rr is not None:            # riesgo de accidente con lluvia medido con datos reales
         k = rr if rr != 1.0 else riesgo_trafico.factor_seco()
         mult["TRAFICO"] = mult.get("TRAFICO", 1.0) * k

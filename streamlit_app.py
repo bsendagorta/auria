@@ -363,11 +363,11 @@ with t_carr:
     ah, _ = leer_json("datos/modelo/accidentes_hora.json", 900)
     if ah and ah.get("accidente", {}).get("variables"):
         from auria.accidentes_hora import VARIABLES as VAH
-        st.markdown("**Meteo de la hora y accidentes** (incidencias de tráfico con hora exacta, Bizkaia sin "
-                    "Bilbao ciudad)")
+        st.markdown("**Meteo de la hora y lo que pasa en la carretera** (incidencias de tráfico con hora exacta, "
+                    "Bizkaia sin Bilbao ciudad, 2021-2026 · riesgo frente a una hora parecida sin esa situación)")
         cols = st.columns(2)
         for col, clase, tit in ((cols[0], "accidente", "Accidentes"), (cols[1], "obstaculo",
-                                                                       "Obstáculos (objetos, desprendimientos…)")):
+                                                                       "Obstáculos: objetos, árboles, desprendimientos (se aplica a saneados y árboles)")):
             r = ah.get(clase, {})
             if not r.get("variables"):
                 continue

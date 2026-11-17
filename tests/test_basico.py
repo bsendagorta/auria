@@ -106,7 +106,7 @@ def test_reglas_y_calendario():
     v = {"racha_kmh": 85, "lluvia_1h": 0, "lluvia_12h": 0, "dias_sin_lluvia": 0, "viento_sur": False,
          "humedad": 80, "temp": 12, "nieve": 0, "noche_finde": False, "operacion_trafico": False, "festivo": False}
     mult, textos = reglas.aplicar(v)
-    assert mult["METEO_ASISTENCIA"] == 5.0 and textos
+    assert mult["METEO_ASISTENCIA"] > 2 and textos     # regla (×5) o efecto medido por horas
     assert calendario.variables_hora(pd.Timestamp("2026-11-20 23:00"))["noche_finde"]
 
 
