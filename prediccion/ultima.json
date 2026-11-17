@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-17T16:20+01:00",
+ "generado": "2026-11-17T16:37+01:00",
  "horizonte_h": 6,
  "modelo": "base+reglas",
  "fuentes_ok": {
@@ -10,7 +10,7 @@
   "salidas_esperadas_6h": 4.5,
   "normal_6h": 4.4,
   "contador": {
-   "ts": "2026-11-17T16:20:48+01:00",
+   "ts": "2026-11-17T16:36:48+01:00",
    "desde_8": 20,
    "anio": 5804
   }
@@ -2619,7 +2619,7 @@
    "tipo": "SANEADO DE CONSTRUCCIONES",
    "ubicacion": "BASAURI",
    "zona": "CL Mojaparte",
-   "vehiculos": "Auto escala articulada (Vehículo va a un siniestro)",
+   "vehiculos": "Auto escala articulada (Vehículo parado en siniestro)",
    "parque": "BASAURI"
   }
  ],
