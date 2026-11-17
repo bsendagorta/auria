@@ -182,12 +182,12 @@ def capas_zonas(parques, por_municipio=False):
                              f"Esperadas 6 h: {p['salidas_esperadas_6h']} (normal {p['normal_6h']})\n"
                              f"Ahora: {sit}\n{pr['n_municipios']} municipios: {pr['municipios']}")
         capas.append(pdk.Layer("GeoJsonLayer", g, get_fill_color="properties.color", get_line_color="properties.borde",
-                               line_width_min_pixels=2.5, pickable=not por_municipio, stroked=True, filled=True))
+                               line_width_min_pixels=2, line_width_max_pixels=3, pickable=not por_municipio, stroked=True, filled=True))
     # el parque (cuartel) como punto
     capas.append(pdk.Layer("ScatterplotLayer", pd.DataFrame([{"lat": p["lat"], "lon": p["lon"],
                                                               "txt": p["nombre"]} for p in parques]),
                            get_position="[lon, lat]", get_fill_color=[255, 255, 255, 255], get_line_color=[29, 29, 27],
-                           stroked=True, line_width_min_pixels=2, get_radius=500, radius_min_pixels=5, pickable=True))
+                           stroked=True, line_width_min_pixels=2, get_radius=6, radius_units="pixels", pickable=True))
     return capas
 
 
@@ -266,15 +266,15 @@ def seccion_ahora():
         if pts:
             capas.append(pdk.Layer("ScatterplotLayer", pd.DataFrame(pts), get_position="[lon, lat]",
                                    get_fill_color=[20, 20, 20, 230], get_line_color=[255, 255, 255],
-                                   stroked=True, line_width_min_pixels=2, get_radius=900,
-                                   radius_min_pixels=6, pickable=True))
+                                   stroked=True, line_width_min_pixels=2, get_radius=7, radius_units="pixels",
+                                   pickable=True))
         st.pydeck_chart(pdk.Deck(map_style=None, tooltip={"text": "{txt}"}, layers=capas,
                                  initial_view_state=pdk.ViewState(latitude=43.24, longitude=-2.85, zoom=8.7)),
                         height=430)
         st.toggle("Ver municipios (color = salidas al año)", key="ver_municipios")
         st.caption("Cada zona es el conjunto de municipios que cubre el parque, con el color de su semáforo. "
                    "Puntos negros: actuaciones en curso. Bilbao (gris) tiene servicio municipal. "
-                   "Límites: IGN (CC-BY 4.0).")
+                   "Límites municipales 1:5.000: Eusko Jaurlaritza / Gobierno Vasco (CC BY 4.0).")
     with der:
         st.markdown(f"**Actuaciones en curso** · leído {ts:%H:%M:%S}")
         if not act:
