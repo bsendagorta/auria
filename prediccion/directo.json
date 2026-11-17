@@ -1,6 +1,6 @@
 {
- "ts": "2026-11-17T17:55:49+01:00",
- "salidas_desde_8": 24,
+ "ts": "2026-11-17T17:58:50+01:00",
+ "salidas_desde_8": 25,
  "salidas_anio": 5804,
  "actuaciones": [
   {
@@ -24,18 +24,18 @@
    "tipo": "SANEADO DE CONSTRUCCIONES",
    "familia": "METEO_ASISTENCIA",
    "ubicacion": "LEIOA",
-   "zona": "BA Aketxe",
+   "zona": "GR San Juan",
    "parque": "ARTAZA",
    "parque_nombre": "Artaza (Leioa)",
    "vehiculos": [
     {
      "tipo": "Auto escala articulada",
-     "estado": "EN_SINIESTRO",
-     "estado_txt": "Vehículo parado en siniestro"
+     "estado": "EN_RUTA",
+     "estado_txt": "Vehículo va a un siniestro"
     }
    ],
    "n_vehiculos": 1,
-   "estado": "EN_SINIESTRO"
+   "estado": "EN_RUTA"
   },
   {
    "tipo": "SANEADO DE CONSTRUCCIONES",
@@ -95,8 +95,8 @@
    "actuaciones": 1,
    "vehiculos": 1,
    "propuesto": 0,
-   "en_ruta": 0,
-   "en_siniestro": 1,
+   "en_ruta": 1,
+   "en_siniestro": 0,
    "regresando": 0
   },
   "DERIO": {
