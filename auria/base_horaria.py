@@ -47,6 +47,14 @@ def construir(df: pd.DataFrame = None, desde: int = 2023) -> pd.DataFrame:
     t["tasa_hora"] = (t["n"] + a * t["tasa_anual"]) / (t["horas"] + a)
     out = t[["parque", "familia", "mes", "franja", "n", "horas", "tasa_hora"]]
     out.to_csv(config.DIR_MODELO / "base_horaria.csv", index=False)
+    # vehículos por intervención: el contador "salidas desde las 08:00" de la web cuenta vehículos
+    rec = pd.to_numeric(d.get("recursos"), errors="coerce")
+    meta = {"vehiculos_por_intervencion": round(float(rec[rec > 0].mean()), 3) if rec.notna().any() else 2.09,
+            "intervenciones_dia": round(len(d) / max(1, d[["anio", "mes"]].drop_duplicates().shape[0]) * 12 / 365, 2),
+            "desde": int(desde)}
+    import json
+    (config.DIR_MODELO / "historico_meta.json").write_text(json.dumps(meta, indent=1), encoding="utf-8")
+    print(f"Vehículos por intervención: {meta['vehiculos_por_intervencion']} · intervenciones/día: {meta['intervenciones_dia']}")
     print("\nTasa base: salidas/día medias por parque (todas las familias):")
     pf = out.groupby(["parque", "mes", "franja"])["tasa_hora"].sum().reset_index()
     pf["dia"] = pf["tasa_hora"] * pf["franja"].map(HORAS_FRANJA)

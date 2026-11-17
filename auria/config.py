@@ -4,13 +4,14 @@ from pathlib import Path
 RAIZ = Path(__file__).resolve().parent.parent
 DATOS = RAIZ / "datos"
 CRUDO = DATOS / "crudo"            # descargas (no se suben a git)
+HISTORICO = DATOS / "historico"    # CSV de Open Data Bizkaia guardados en el repo (GitHub no llega al portal)
 PROCESADO = DATOS / "procesado"    # tablas limpias
 DIR_ONLINE = DATOS / "online"      # capturas en directo, una subcarpeta por recolector
 DIR_MODELO = DATOS / "modelo"      # tasas base y modelo entrenado (se suben a git)
 DIR_PREDICCION = RAIZ / "prediccion"
 INFORMES = RAIZ / "informes"
 
-for _d in (CRUDO, PROCESADO, DIR_ONLINE, DIR_MODELO, DIR_PREDICCION, INFORMES):
+for _d in (CRUDO, HISTORICO, PROCESADO, DIR_ONLINE, DIR_MODELO, DIR_PREDICCION, INFORMES):
     _d.mkdir(parents=True, exist_ok=True)
 
 # --- Fuentes ---------------------------------------------------------------

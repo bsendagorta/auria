@@ -57,13 +57,13 @@ def test_recolector_y_resumen():
     assert d["activas"][2]["zona"] == "CL El Carmen"
     with tempfile.TemporaryDirectory() as tmp:
         t0 = datetime(2026, 11, 15, 23, 50, tzinfo=R.TZ)
-        for i, suma in enumerate([0, 3, 5, 9]):
-            dd = {**d, "anio": d["anio"] + suma}
+        for i, suma in enumerate([0, 3, 5, 9]):       # el contador "desde las 08:00" es el que avanza
+            dd = {**d, "desde_8": d["desde_8"] + suma}
             R.guardar(dd, t0 + timedelta(minutes=10 * i), R.carpeta_origen(tmp))
         _, horario, acts = S.resumir(tmp, guardar=False)
         assert len(acts) == 3, "la misma actuación a caballo de medianoche no se duplica"
         assert set(acts["parque"]) == {"URIOSTE", "ARTAZA"}
-        assert horario["salidas"].sum() == 9
+        assert horario["vehiculos"].sum() == 9
 
 
 def test_directo():

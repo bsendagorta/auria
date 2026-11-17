@@ -186,6 +186,12 @@ def informe(nivel, desde, anio_test, metricas, por_fam, coef, te):
     for f, c in coef.items():
         top = c.sort_values(key=abs, ascending=False).head(6)
         lineas += ["", f"**{f}**: " + ", ".join(f"{k} {v:+.2f}" for k, v in top.items())]
+    import json
+    (config.DIR_MODELO / f"modelo_mensual_{nivel}.json").write_text(json.dumps({
+        "fecha": date.today().isoformat(), "desde": desde, "anio_test": int(anio_test), "mejor": mejor,
+        "metricas": metricas.round(3).to_dict("records"),
+        "coeficientes": {f: c.round(3).to_dict() for f, c in coef.items()},
+    }, ensure_ascii=False, indent=1), encoding="utf-8")
     ruta = config.INFORMES / f"modelo_{nivel}.md"
     ruta.write_text("\n".join(lineas), encoding="utf-8")
     te.to_csv(config.INFORMES / f"validacion_{nivel}.csv", index=False)

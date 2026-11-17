@@ -52,22 +52,45 @@ def actuaciones(act: pd.DataFrame) -> pd.DataFrame:
     return out
 
 
+def vehiculos_por_intervencion() -> float:
+    import json
+    p = config.DIR_MODELO / "historico_meta.json"
+    try:
+        return float(json.loads(p.read_text())["vehiculos_por_intervencion"])
+    except Exception:
+        return 2.09     # media 2023-2025 de Open Data Bizkaia (recursos movilizados por intervención)
+
+
 def incrementos(cap: pd.DataFrame, freq: str) -> pd.DataFrame:
-    """Salidas por periodo = salto del contador anual entre el último valor de cada periodo."""
-    c = cap[cap["ok"] == 1].dropna(subset=["salidas_anio"])
-    if c.empty:
-        return pd.DataFrame(columns=["salidas", "contador_anio", "capturas"])
-    s = c.set_index("t")["salidas_anio"].astype(float).resample(freq).last()
-    s_ff = s.ffill()
-    d = s_ff.diff()
-    reinicio = d < 0                          # 1 de enero: el contador vuelve a 0
-    d[reinicio] = s_ff[reinicio]
-    out = pd.DataFrame({"salidas": d, "contador_anio": s,
-                        "capturas": c.set_index("t")["salidas_anio"].resample(freq).size()})
-    # periodos sin capturas: salidas desconocidas (el salto se acumula en el siguiente con captura)
-    hueco = out["capturas"] == 0
-    out.loc[hueco, "salidas"] = float("nan")
-    return out.iloc[1:]
+    """Intervenciones reales por periodo a partir del contador "salidas desde las 08:00".
+
+    Ese contador cuenta VEHÍCULOS que salen (≈ 2 por intervención: 51 en un día con ~18 intervenciones),
+    así que se divide por los vehículos medios por intervención del histórico.
+
+    (El contador anual de la web no se actualiza en tiempo real: solo sirve como control diario.)
+    Entre dos capturas, salidas = salto del contador; si baja, es el reinicio de las 08:00 y se cuenta
+    el valor nuevo. Si entre dos capturas pasan más de 90 min, ese salto no se puede repartir por horas:
+    el periodo queda como desconocido (NaN) en vez de acumularlo en la hora siguiente.
+    """
+    c = cap[cap["ok"] == 1].dropna(subset=["salidas_desde_8"]).sort_values("t")
+    if len(c) < 2:
+        return pd.DataFrame(columns=["salidas", "capturas", "completo"])
+    v = c["salidas_desde_8"].astype(float).to_numpy()
+    dif = pd.Series(v).diff().to_numpy().copy()
+    reinicio = dif < 0
+    dif[reinicio] = v[reinicio]
+    gap = c["t"].diff().dt.total_seconds().to_numpy() / 60
+    s = pd.DataFrame({"t": c["t"].to_numpy(), "inc": dif, "gap": gap}).iloc[1:]
+    s["valido"] = s["gap"] <= 90
+    s = s.set_index("t")
+    g = s.resample(freq)
+    out = pd.DataFrame({"vehiculos": g["inc"].sum(min_count=1), "capturas": g["inc"].size(),
+                        "completo": g["valido"].min()})
+    out.loc[out["completo"] != True, "vehiculos"] = float("nan")   # noqa: E712
+    out["salidas"] = out["vehiculos"] / vehiculos_por_intervencion()
+    # control: contador anual (último valor del periodo)
+    out["contador_anio"] = cap[cap["ok"] == 1].set_index("t")["salidas_anio"].resample(freq).last()
+    return out
 
 
 def resumir(raiz=None, guardar=True):

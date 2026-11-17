@@ -145,10 +145,17 @@ def main(argv=None):
     ap.add_argument("--offline", action="store_true")
     a = ap.parse_args(argv)
     if not a.offline:
-        descargar()
-    rutas = sorted(config.CRUDO.glob("intervenciones_*.csv"))
+        try:
+            descargar()
+        except Exception as e:      # Open Data Bizkaia no responde desde algunos servidores (GitHub)
+            print(f"Aviso: no se pudo descargar ({e}); se usan los CSV guardados en datos/historico")
+    # prioridad: descarga recién hecha (crudo) > copia guardada en el repositorio (historico)
+    por_nombre = {p.name: p for p in sorted(config.HISTORICO.glob("intervenciones_*.csv"))}
+    por_nombre.update({p.name: p for p in sorted(config.CRUDO.glob("intervenciones_*.csv"))})
+    rutas = sorted(por_nombre.values(), key=lambda p: p.name)
     if not rutas:
-        sys.exit("No hay ficheros en datos/crudo. Ejecuta sin --offline.")
+        sys.exit("No hay ficheros de intervenciones en datos/crudo ni en datos/historico.")
+    print("Ficheros:", ", ".join(f"{p.parent.name}/{p.name}" for p in rutas))
     df = procesar(rutas)
     df.to_csv(config.PROCESADO / "intervenciones.csv", index=False)
     cen = centroides(df)

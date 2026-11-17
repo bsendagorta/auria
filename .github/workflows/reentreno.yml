@@ -1,24 +1,29 @@
-# Cada noche (~03:15 hora peninsular): reentrena el modelo horario si hay datos suficientes.
-# Los lunes además descarga el histórico de Open Data Bizkaia y recalcula las tasas base.
+# Cada noche (~03:15 hora peninsular) AURIA aprende con datos reales:
+#   1. histórico SPEIS 2021-2026 (datos/historico, guardado en el repo) -> tasas base por parque/franja/mes
+#   2. meteorología diaria real por municipio (Open-Meteo, reanálisis) -> patrones meteo de cada familia
+#   3. modelos mensuales (referencia vs GLM vs GBM) con validación en el último año completo
+#   4. patrones (estacionalidad, franja, tendencia, efecto de la meteo)
+#   5. modelo horario LightGBM con las capturas por minuto (solo se activa si bate a la base)
+#   6. evaluación: lo que se predijo vs lo que pasó (contador de bizkaia.eus)
 name: Reentrenamiento nocturno AURIA
 on:
   schedule:
     - cron: "17 2 * * *"
   workflow_dispatch:
     inputs:
-      historico:
-        description: "Forzar descarga del histórico y recálculo de tasas base"
+      meteo:
+        description: "Volver a descargar toda la meteorología histórica"
         type: boolean
         default: false
 concurrency:
-  group: datos-auria
+  group: reentreno-auria
   cancel-in-progress: false
 permissions:
   contents: write
 jobs:
   reentreno:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -27,20 +32,30 @@ jobs:
           cache: pip
           cache-dependency-path: requirements.txt
       - run: pip install -q -r requirements.txt
-      - name: Histórico y tasas base (lunes, primera vez o forzado)
+      - name: 1 · Histórico y tasas base
+        run: python -m auria.historico
+      - name: 2 · Meteorología histórica real (Open-Meteo)
         run: |
-          if [ "$(date -u +%u)" = "1" ] || [ ! -f datos/modelo/base_horaria.csv ] || [ "${{ github.event.inputs.historico }}" = "true" ]; then
-            # Open Data Bizkaia no responde desde los servidores de GitHub (bloqueo de red):
-            # si falla, se conserva la tasa base que ya está en el repositorio.
-            python -m auria.historico || echo "::warning::No se pudo descargar el histórico; se mantiene la tasa base actual"
+          mkdir -p datos/procesado
+          if [ -f datos/modelo/meteo_mensual.csv ] && [ "$(date -u +%d)" != "01" ] && [ "${{ github.event.inputs.meteo }}" != "true" ]; then
+            cp datos/modelo/meteo_mensual.csv datos/procesado/meteo_mensual.csv
+            echo "Meteo mensual reutilizada (se renueva el día 1 de cada mes)"
           else
-            echo "No es lunes: se mantiene la tasa base"
+            python -m auria.meteo --desde 2021-01-01 && cp datos/procesado/meteo_mensual.csv datos/modelo/meteo_mensual.csv \
+              || echo "::warning::No se pudo descargar la meteorología; se entrena sin ella"
           fi
-      - name: Reentrenar modelo horario
-        run: python -m auria.horario
-      - name: Resumen de capturas
-        run: python -m auria.resumen_online || true
-      - name: Subir modelo y métricas
-        if: always()
+      - name: 3 · Modelos mensuales (Bizkaia y municipio)
         run: |
-          scripts/subir_datos.sh "modelo: reentreno $(date -u +%Y-%m-%d)"
+          python -m auria.modelo --nivel bizkaia --desde 2021 || echo "::warning::modelo bizkaia falló"
+          python -m auria.modelo --nivel municipio || echo "::warning::modelo municipio falló"
+      - name: 4 · Patrones
+        run: python -m auria.patrones
+      - name: 5 · Modelo horario (capturas por minuto)
+        run: python -m auria.horario || echo "::warning::modelo horario no entrenado"
+      - name: 6 · Evaluación predicho vs real
+        run: |
+          python -m auria.resumen_online || true
+          python -m auria.evaluacion || true
+      - name: Subir modelo patrones e informes
+        if: always()
+        run: scripts/subir_datos.sh "modelo - reentreno $(date -u +%Y-%m-%d)"

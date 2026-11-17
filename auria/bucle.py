@@ -55,6 +55,8 @@ def main(argv=None):
                 from .prevision import predecir
                 predecir(6)
                 print("predicción actualizada", flush=True)
+                from .evaluacion import evaluar     # acierto real: predicho vs contador de la web
+                evaluar()
             except BaseException as e:      # incluye SystemExit si falta la tasa base
                 print(f"Aviso predicción: {e}", flush=True)
             ultima_prevision = time.monotonic()
