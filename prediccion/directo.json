@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-17T17:08:50+01:00",
+ "ts": "2026-11-17T17:11:50+01:00",
  "salidas_desde_8": 21,
  "salidas_anio": 5804,
  "actuaciones": [
@@ -13,6 +13,23 @@
    "vehiculos": [
     {
      "tipo": "Transporte Material y Personal",
+     "estado": "EN_SINIESTRO",
+     "estado_txt": "Vehículo parado en siniestro"
+    }
+   ],
+   "n_vehiculos": 1,
+   "estado": "EN_SINIESTRO"
+  },
+  {
+   "tipo": "RETÉN DE PREVENCIÓN (SPEIS)",
+   "familia": "NO_OPERATIVO",
+   "ubicacion": "Puerto de Bilbao",
+   "zona": "ML MUELLE A-1 (AMPLIACION 1)",
+   "parque": "SIN_PARQUE",
+   "parque_nombre": "Fuera de zona / Bilbao",
+   "vehiculos": [
+    {
+     "tipo": "Bomba urbana ligera",
      "estado": "EN_RUTA",
      "estado_txt": "Vehículo va a un siniestro"
     }
@@ -60,8 +77,8 @@
    "actuaciones": 2,
    "vehiculos": 2,
    "propuesto": 0,
-   "en_ruta": 2,
-   "en_siniestro": 0,
+   "en_ruta": 1,
+   "en_siniestro": 1,
    "regresando": 0
   },
   "ARTAZA": {
@@ -121,10 +138,10 @@
    "regresando": 0
   },
   "SIN_PARQUE": {
-   "actuaciones": 0,
-   "vehiculos": 0,
+   "actuaciones": 1,
+   "vehiculos": 1,
    "propuesto": 0,
-   "en_ruta": 0,
+   "en_ruta": 1,
    "en_siniestro": 0,
    "regresando": 0
   }
