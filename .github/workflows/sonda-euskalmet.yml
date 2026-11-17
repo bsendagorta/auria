@@ -1,0 +1,35 @@
+name: Sonda Euskalmet
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  sonda:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -q requests PyJWT cryptography pandas numpy
+      - env:
+          EUSKALMET_PRIVATE_KEY: ${{ secrets.EUSKALMET_PRIVATE_KEY }}
+          EUSKALMET_FINGERPRINT: ${{ secrets.EUSKALMET_FINGERPRINT }}
+        run: |
+          python - <<'PY'
+          import json, datetime, requests
+          from auria import euskalmet as E
+          L=[f"disponible: {E.disponible()}"]
+          rutas=["/euskalmet/geo/regions","/euskalmet/geo/regions/basque_country","/euskalmet/geo/regions/basque_country/zones",
+                 f"/euskalmet/alerts/zones/basque_country/forecast/at/{datetime.date.today():%Y/%m/%d}"]
+          tok=E.token(600)
+          for r in rutas:
+              try:
+                  x=requests.get(E.BASE+r,headers={"Authorization":"Bearer "+tok},timeout=30)
+                  L.append(f"== {r} -> {x.status_code}\n{x.text[:2500]}")
+              except Exception as e:
+                  L.append(f"== {r} -> ERR {e}")
+          open("informes/euskalmet_sonda.txt","w").write("\n\n".join(L))
+          PY
+          git config user.name auria-bot; git config user.email auria-bot@users.noreply.github.com
+          git add informes/euskalmet_sonda.txt && git commit -qm "sonda euskalmet" && git pull -q --rebase && git push -q
