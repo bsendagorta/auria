@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-17T06:00+01:00",
+ "generado": "2026-11-17T06:16+01:00",
  "horizonte_h": 6,
  "modelo": "base+reglas",
  "fuentes_ok": {
@@ -10,8 +10,8 @@
   "salidas_esperadas_6h": 4.9,
   "normal_6h": 4.4,
   "contador": {
-   "ts": "2026-11-17T06:00:41+01:00",
-   "desde_8": 48,
+   "ts": "2026-11-17T06:16:41+01:00",
+   "desde_8": 49,
    "anio": 5732
   }
  },
@@ -1891,21 +1891,21 @@
    "tipo": "RETIRADA DE ÁRBOLES",
    "ubicacion": "GALDAKAO",
    "zona": "BA Aperribai",
-   "vehiculos": "Auto escala articulada (Vehículo parado en siniestro)",
+   "vehiculos": "Auto escala articulada (Vehículo volviendo de un sin.) | Genérico Mando Gestión (Vehículo disponible)",
    "parque": "BASAURI"
-  },
-  {
-   "tipo": "RETIRADA DE ÁRBOLES",
-   "ubicacion": "LEIOA",
-   "zona": "CL Langileria",
-   "vehiculos": "Transporte Material y Personal (Vehículo propuesto)",
-   "parque": "ARTAZA"
   },
   {
    "tipo": "SANEADO DE CONSTRUCCIONES",
    "ubicacion": "ERANDIO",
    "zona": "AV Axpeko Erribera",
    "vehiculos": "Auto escala articulada (Vehículo parado en siniestro)",
+   "parque": "ARTAZA"
+  },
+  {
+   "tipo": "RETIRADA DE ÁRBOLES",
+   "ubicacion": "LEIOA",
+   "zona": "CL Langileria",
+   "vehiculos": "Transporte Material y Personal (Vehículo propuesto)",
    "parque": "ARTAZA"
   }
  ],
