@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-17T12:02+01:00",
+ "generado": "2026-11-17T12:09+01:00",
  "horizonte_h": 6,
  "modelo": "base+reglas",
  "fuentes_ok": {
@@ -10,9 +10,9 @@
   "salidas_esperadas_6h": 4.8,
   "normal_6h": 4.8,
   "contador": {
-   "ts": "2026-11-17T12:02:26+01:00",
-   "desde_8": 13,
-   "anio": 5782
+   "ts": "2026-11-17T12:09:40+01:00",
+   "desde_8": 14,
+   "anio": 5783
   }
  },
  "parques": [
@@ -1327,7 +1327,7 @@
    "situacion_ahora": "",
    "situaciones_6h": [],
    "directo": {
-    "activas": 2,
+    "activas": 1,
     "nuevas_1h": 1
    },
    "horas": [
@@ -2583,17 +2583,10 @@
  ],
  "activas_ahora": [
   {
-   "tipo": "NEUTRALIZACIÓN DE ABEJAS Y AVISPAS",
-   "ubicacion": "PORTUGALETE",
-   "zona": "CL Grumete Diego",
-   "vehiculos": "Transporte Material y Personal (Vehículo parado en siniestro)",
-   "parque": "URIOSTE"
-  },
-  {
    "tipo": "RETIRADA DE ÁRBOLES",
    "ubicacion": "LOIU",
    "zona": "AV Katea-Loiu",
-   "vehiculos": "Transporte Material y Personal (Vehículo parado en siniestro) | Auto escala articulada (Vehículo va a un siniestro)",
+   "vehiculos": "Transporte Material y Personal (Vehículo parado en siniestro) | Auto escala articulada (Vehículo parado en siniestro)",
    "parque": "DERIO"
   },
   {
