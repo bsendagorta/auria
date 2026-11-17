@@ -360,6 +360,26 @@ with t_carr:
         ).properties(height=240), width="stretch")
         st.caption("Pocas personas conducen de madrugada, pero cada vehículo tiene más riesgo: por eso el "
                    "número de accidentes y el riesgo individual no coinciden.")
+    ah, _ = leer_json("datos/modelo/accidentes_hora.json", 900)
+    if ah and ah.get("accidente", {}).get("variables"):
+        from auria.accidentes_hora import VARIABLES as VAH
+        st.markdown("**Meteo de la hora y accidentes** (incidencias de tráfico con hora exacta, Bizkaia sin "
+                    "Bilbao ciudad)")
+        cols = st.columns(2)
+        for col, clase, tit in ((cols[0], "accidente", "Accidentes"), (cols[1], "obstaculo",
+                                                                       "Obstáculos (objetos, desprendimientos…)")):
+            r = ah.get(clase, {})
+            if not r.get("variables"):
+                continue
+            with col:
+                v = r.get("validacion") or {}
+                st.caption(f"{tit}: {r['eventos']:,} casos en {r['meses']} meses completos · validación "
+                           f"2025-26: {v.get('mejora_pct', 0):+.2f} % · en directo: {'sí' if r.get('activo') else 'no'}")
+                t = pd.DataFrame([{"situación en esa hora": VAH[k], "×": e["rr"], "IC 95 %": f"{e['lo']}-{e['hi']}",
+                                   "claro": "✓" if (e["lo"] > 1 or e["hi"] < 1) else "", "casos": e["eventos"]}
+                                  for k, e in r["variables"].items()]).sort_values("×", ascending=False)
+                st.dataframe(t, hide_index=True, width="stretch",
+                             column_config={"×": st.column_config.NumberColumn(format="×%.2f")})
     st.caption("Fuentes: accidentes con víctimas DGT (vías interurbanas, sin Bilbao) calibrados con las salidas "
                "reales de SPEIS; intensidad de tráfico de los aforadores del Gobierno Vasco (Open Data Euskadi, "
                "2022-2024). Peligrosidad = accidentes con víctimas por 100 millones de veh·km.")

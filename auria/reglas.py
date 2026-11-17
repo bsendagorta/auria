@@ -50,16 +50,21 @@ REGLAS = [
 METEO = {"Rachas muy fuertes (≥100 km/h)", "Rachas fuertes (80-100 km/h)", "Rachas de 60-80 km/h",
          "Lluvia intensa (≥10 mm/h)", "Lluvia moderada", "Lluvia acumulada alta (≥40 mm en 12 h)",
          "Viento sur seco y cálido (riesgo forestal)", "Vegetación seca (≥7 días sin lluvia)", "Calor (≥30 °C)",
-         "Frío (calefacciones, chimeneas)"}
+         "Frío (calefacciones, chimeneas)", "Primeras lluvias tras días secos (asfalto deslizante)",
+         "Posible hielo o nieve en calzada"}
 LLUVIA_TRAFICO = {"Lluvia intensa (≥10 mm/h)", "Lluvia moderada"}   # sustituidas por el riesgo medido (DGT)
 
 
 def aplicar(v: dict, sin_meteo=frozenset()):
     """Devuelve ({familia: multiplicador}, [textos de los factores activos]).
     sin_meteo: tipos de siniestro con efecto meteorológico medido (no se les aplican las reglas a mano)."""
-    from . import riesgo_trafico
+    from . import accidentes_hora, riesgo_trafico
     mult, textos = {}, []
-    rr = riesgo_trafico.rr_lluvia(v.get("lluvia_1h", 0) or 0)
+    # 1.º efecto medido HORA A HORA (incidencias con hora exacta); si no hay modelo validado, el de la DGT
+    hora = accidentes_hora.factor_hora(v)
+    if hora is not None:
+        sin_meteo = set(sin_meteo) | {"TRAFICO"}
+    rr = None if hora is not None else riesgo_trafico.rr_lluvia(v.get("lluvia_1h", 0) or 0)
     for cond, efectos, texto in REGLAS:
         try:
             activa = cond(v)
@@ -73,6 +78,9 @@ def aplicar(v: dict, sin_meteo=frozenset()):
                 if rr is not None and f == "TRAFICO" and texto in LLUVIA_TRAFICO:
                     continue
                 mult[f] = mult.get(f, 1.0) * k
+    if hora is not None:
+        mult["TRAFICO"] = mult.get("TRAFICO", 1.0) * hora[0]
+        textos += hora[1]
     if rr is not None:            # riesgo de accidente con lluvia medido con datos reales
         k = rr if rr != 1.0 else riesgo_trafico.factor_seco()
         mult["TRAFICO"] = mult.get("TRAFICO", 1.0) * k
