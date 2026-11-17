@@ -7,7 +7,7 @@ Fuente: Estudio de movilidad con Big Data (MITMS), "estudios básicos" por munic
 El servidor solo responde desde España: la descarga la hace el navegador del usuario, que se queda
 con los viajes que LLEGAN a zonas de Bizkaia, por hora y según si quien viaja reside en Bizkaia
 (provincia 48) o viene de fuera. Resultado: datos/movilidad/llegadas_bizkaia.csv
-    fecha, zona (código MITMS: municipio o agrupación), tipo (local|visitante), h00…h23 (viajes)
+    fecha, parque (zonas MITMS sumadas al parque mayoritario), tipo (local|visitante), h00…h23 (viajes)
 
 Este módulo:
   * asigna cada zona a un parque (municipios de la agrupación → parque mayoritario)
@@ -45,7 +45,10 @@ def zona_a_parque():
 def cargar():
     d = pd.read_csv(RUTA, dtype={"zona": str})
     d["fecha"] = pd.to_datetime(d["fecha"])
-    d["parque"] = d["zona"].map(zona_a_parque())
+    if "parque" not in d:                    # fichero por zona MITMS
+        d["parque"] = d["zona"].map(zona_a_parque())
+    else:                                    # ya agregado por parque en el navegador
+        d["zona"] = d["parque"]
     horas = [f"h{h:02d}" for h in range(24)]
     largo = d.melt(id_vars=["fecha", "zona", "tipo", "parque"], value_vars=horas, var_name="h", value_name="viajes")
     largo["hora"] = largo["h"].str[1:].astype(int)
