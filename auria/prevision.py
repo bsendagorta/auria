@@ -40,17 +40,31 @@ def meteo_parques(dias_pasados=14, dias_futuros=2) -> pd.DataFrame:
         "timezone": "Europe/Madrid", "wind_speed_unit": "kmh",
     }
     r = None
-    for intento in range(3):
+    cache = config.CRUDO / "meteo_prevision_cache.json"     # última respuesta buena (no se sube a git)
+    r, error = None, None
+    for intento in range(4):
         try:
             r = requests.get(config.OPENMETEO_PREVISION, params=params, timeout=60,
                              headers={"User-Agent": config.USER_AGENT})
             if r.status_code == 200:
                 break
-        except requests.RequestException:
-            pass
+            error = f"HTTP {r.status_code}"
+        except requests.RequestException as e:
+            error = str(e)[:120]
+        r = None
         time.sleep(10 * (intento + 1))
-    r.raise_for_status()
-    res = r.json()
+    if r is not None:
+        res = r.json()
+        try:
+            cache.write_text(r.text, encoding="utf-8")
+        except OSError:
+            pass
+    elif cache.exists() and time.time() - cache.stat().st_mtime < 6 * 3600:
+        print(f"Aviso meteo: Open-Meteo no responde ({error}); se usa la previsión de hace "
+              f"{(time.time() - cache.stat().st_mtime) / 60:.0f} min")
+        res = json.loads(cache.read_text(encoding="utf-8"))
+    else:
+        raise RuntimeError(f"Open-Meteo no responde: {error}")
     res = res if isinstance(res, list) else [res]
     partes = []
     for p, bloque in zip(ids, res):
