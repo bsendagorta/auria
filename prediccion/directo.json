@@ -1,13 +1,31 @@
 {
- "ts": "2026-11-17T19:55:50+01:00",
+ "ts": "2026-11-17T19:58:49+01:00",
  "salidas_desde_8": 28,
  "salidas_anio": 5804,
- "actuaciones": [],
+ "actuaciones": [
+  {
+   "tipo": "SANEADO DE CONSTRUCCIONES",
+   "familia": "METEO_ASISTENCIA",
+   "ubicacion": "ABANTO Y CIERVANA",
+   "zona": "AV El Minero",
+   "parque": "URIOSTE",
+   "parque_nombre": "Urioste (Ortuella)",
+   "vehiculos": [
+    {
+     "tipo": "Auto escala articulada",
+     "estado": "PROPUESTO",
+     "estado_txt": "Vehículo propuesto"
+    }
+   ],
+   "n_vehiculos": 1,
+   "estado": "PROPUESTO"
+  }
+ ],
  "por_parque": {
   "URIOSTE": {
-   "actuaciones": 0,
-   "vehiculos": 0,
-   "propuesto": 0,
+   "actuaciones": 1,
+   "vehiculos": 1,
+   "propuesto": 1,
    "en_ruta": 0,
    "en_siniestro": 0,
    "regresando": 0
