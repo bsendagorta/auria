@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-17T06:19:42+01:00",
+ "ts": "2026-11-17T06:22:42+01:00",
  "salidas_desde_8": 50,
  "salidas_anio": 5732,
  "actuaciones": [
@@ -28,10 +28,10 @@
   {
    "tipo": "RETIRADA DE ÁRBOLES",
    "familia": "METEO_ASISTENCIA",
-   "ubicacion": "LEIOA",
-   "zona": "CL Langileria",
-   "parque": "ARTAZA",
-   "parque_nombre": "Artaza (Leioa)",
+   "ubicacion": "A BI-3733 BERANGO A EGUZKITZA",
+   "zona": "A BI-3733 BERANGO A EGUZKITZA",
+   "parque": "SIN_PARQUE",
+   "parque_nombre": "Fuera de zona / Bilbao",
    "vehiculos": [
     {
      "tipo": "Transporte Material y Personal",
@@ -41,6 +41,23 @@
    ],
    "n_vehiculos": 1,
    "estado": "PROPUESTO"
+  },
+  {
+   "tipo": "RETIRADA DE ÁRBOLES",
+   "familia": "METEO_ASISTENCIA",
+   "ubicacion": "LEIOA",
+   "zona": "CL Langileria",
+   "parque": "ARTAZA",
+   "parque_nombre": "Artaza (Leioa)",
+   "vehiculos": [
+    {
+     "tipo": "Transporte Material y Personal",
+     "estado": "EN_SINIESTRO",
+     "estado_txt": "Vehículo parado en siniestro"
+    }
+   ],
+   "n_vehiculos": 1,
+   "estado": "EN_SINIESTRO"
   }
  ],
  "por_parque": {
@@ -55,9 +72,9 @@
   "ARTAZA": {
    "actuaciones": 1,
    "vehiculos": 1,
-   "propuesto": 1,
+   "propuesto": 0,
    "en_ruta": 0,
-   "en_siniestro": 0,
+   "en_siniestro": 1,
    "regresando": 0
   },
   "DERIO": {
@@ -109,9 +126,9 @@
    "regresando": 0
   },
   "SIN_PARQUE": {
-   "actuaciones": 0,
-   "vehiculos": 0,
-   "propuesto": 0,
+   "actuaciones": 1,
+   "vehiculos": 1,
+   "propuesto": 1,
    "en_ruta": 0,
    "en_siniestro": 0,
    "regresando": 0
