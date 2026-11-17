@@ -1,6 +1,6 @@
 {
- "ts": "2026-11-17T09:53:57+01:00",
- "salidas_desde_8": 3,
+ "ts": "2026-11-17T09:56:57+01:00",
+ "salidas_desde_8": 4,
  "salidas_anio": 5777,
  "actuaciones": [
   {
@@ -24,7 +24,24 @@
    "tipo": "SANEADO DE CONSTRUCCIONES",
    "familia": "METEO_ASISTENCIA",
    "ubicacion": "VALLE DE TRAPAGA",
-   "zona": "CL Funikular",
+   "zona": "ES San Andrés",
+   "parque": "URIOSTE",
+   "parque_nombre": "Urioste (Ortuella)",
+   "vehiculos": [
+    {
+     "tipo": "Furgón utiles varios",
+     "estado": "PROPUESTO",
+     "estado_txt": "Vehículo propuesto"
+    }
+   ],
+   "n_vehiculos": 1,
+   "estado": "PROPUESTO"
+  },
+  {
+   "tipo": "SANEADO DE CONSTRUCCIONES",
+   "familia": "METEO_ASISTENCIA",
+   "ubicacion": "BARAKALDO",
+   "zona": "CL Ravel",
    "parque": "URIOSTE",
    "parque_nombre": "Urioste (Ortuella)",
    "vehiculos": [
@@ -40,9 +57,9 @@
  ],
  "por_parque": {
   "URIOSTE": {
-   "actuaciones": 1,
-   "vehiculos": 1,
-   "propuesto": 0,
+   "actuaciones": 2,
+   "vehiculos": 2,
+   "propuesto": 1,
    "en_ruta": 1,
    "en_siniestro": 0,
    "regresando": 0
