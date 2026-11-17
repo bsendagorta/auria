@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-17T23:12:38+01:00",
+ "ts": "2026-11-17T23:15:38+01:00",
  "salidas_desde_8": 31,
  "salidas_anio": 5804,
  "actuaciones": [
@@ -36,13 +36,30 @@
    ],
    "n_vehiculos": 1,
    "estado": "EN_SINIESTRO"
+  },
+  {
+   "tipo": "SANEADO DE CONSTRUCCIONES",
+   "familia": "METEO_ASISTENCIA",
+   "ubicacion": "BARAKALDO",
+   "zona": "CL San Bartolome",
+   "parque": "URIOSTE",
+   "parque_nombre": "Urioste (Ortuella)",
+   "vehiculos": [
+    {
+     "tipo": "Furgón utiles varios",
+     "estado": "PROPUESTO",
+     "estado_txt": "Vehículo propuesto"
+    }
+   ],
+   "n_vehiculos": 1,
+   "estado": "PROPUESTO"
   }
  ],
  "por_parque": {
   "URIOSTE": {
-   "actuaciones": 0,
-   "vehiculos": 0,
-   "propuesto": 0,
+   "actuaciones": 1,
+   "vehiculos": 1,
+   "propuesto": 1,
    "en_ruta": 0,
    "en_siniestro": 0,
    "regresando": 0
