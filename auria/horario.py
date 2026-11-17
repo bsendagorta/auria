@@ -35,7 +35,9 @@ FEATURES = ["parque_cod", "hora_sin", "hora_cos", "dow", "mes_sin", "mes_cos", "
             # situaciones meteorológicas y variables de viento/presión (desde nov. 2026)
             "viento_kmh", "factor_racha", "dpresion_12h", "lluvia_72h", "ola_m",
             "SUR_RACHEADO", "NORTE_PERSISTENTE", "GALERNA", "BORRASCA", "VIENTO_FUERTE", "LLUVIA_INTENSA",
-            "LLUVIA_PERSISTENTE", "TORMENTA", "HELADA", "NIEVE", "CALOR", "SECO_PROLONGADO", "MAR_GRUESO"]
+            "LLUVIA_PERSISTENTE", "TORMENTA", "HELADA", "NIEVE", "CALOR", "SECO_PROLONGADO", "MAR_GRUESO",
+            # presencia de gente (móviles) y eventos públicos
+            "presencia_rel", "frac_visitantes"]
 
 
 def _features(d: pd.DataFrame) -> pd.DataFrame:

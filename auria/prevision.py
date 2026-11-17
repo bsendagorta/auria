@@ -215,6 +215,11 @@ def predecir(horas=6, meteo=None, traf=None, ahora=None, guardar=True):
                 v["trafico_obras"] = int(traf.loc[p, "obras"])
             nv, horas_evento, nombre_ev = eventos.en_hora(evs, p, hora)
             v["evento_nivel"], v["horas_para_evento"], v["evento_nombre"] = nv, horas_evento, nombre_ev
+            try:                         # presencia habitual de gente (datos de móviles, MITMS)
+                from .movilidad import presencia
+                v.update(presencia(p, hora) or {})
+            except Exception:
+                pass
             v["activas_parque"] = directo.get(p, {}).get("activas", 0) if i == 0 else 0
             v["nuevas_parque_1h"] = directo.get(p, {}).get("nuevas_1h", 0)
 

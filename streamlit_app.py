@@ -589,7 +589,7 @@ with t_pat:
                 x=alt.X("hora:O"), y=alt.Y("relativo:Q", title="presencia (1 = hora media del parque)"),
                 color=alt.Color("parque:N", legend=alt.Legend(orient="top", title=None)),
                 tooltip=["parque", "hora", alt.Tooltip("relativo:Q", format=".2f"),
-                         alt.Tooltip("visitante:Q", format=",.0f", title="viajes de visitantes")],
+                         alt.Tooltip("frac_visitantes:Q", format=".0%", title="de fuera de Bizkaia")],
             ).properties(height=260), width="stretch")
         ta = pd.DataFrame(mv.get("top_aglomeraciones", []))
         if len(ta):

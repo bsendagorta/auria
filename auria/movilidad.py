@@ -136,8 +136,8 @@ def presencia(parque, ts):
     if k not in _PERFIL.index:
         return None
     r = _PERFIL.loc[k]
-    return {"presencia_rel": float(r["relativo"]),
-            "frac_visitantes": float(r["visitante"] / max(r["total"], 1))}
+    fv = r["frac_visitantes"] if "frac_visitantes" in r else r["visitante"] / max(r["total"], 1)
+    return {"presencia_rel": float(r["relativo"]), "frac_visitantes": float(fv)}
 
 
 if __name__ == "__main__":
