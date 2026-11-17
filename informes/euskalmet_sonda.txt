@@ -1,5 +1,7 @@
 disponible: True | secreto: 1628 caracteres, cabeceras [], saltos 0 | huella 64 caracteres
 
+cuerpo normalizado 1628 sha fc12b1caa83654cc | huella sha 469a56dcac68a0ed
+
 == /euskalmet/geo/regions -> 403
 {"code":"NOT_VERIFIED_JWT","message":"JWT was NOT verified: INVALID_SIGNATURE"}
 
