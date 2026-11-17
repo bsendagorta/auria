@@ -1,24 +1,24 @@
 {
- "ts": "2026-11-17T23:23:38+01:00",
- "salidas_desde_8": 31,
+ "ts": "2026-11-17T23:26:38+01:00",
+ "salidas_desde_8": 32,
  "salidas_anio": 5804,
  "actuaciones": [
   {
-   "tipo": "RETIRADA DE ÁRBOLES",
-   "familia": "METEO_ASISTENCIA",
-   "ubicacion": "URDULIZ",
-   "zona": "BA Mendiondo",
-   "parque": "ARTAZA",
-   "parque_nombre": "Artaza (Leioa)",
+   "tipo": "INCENDIO EXTERIOR NIVEL 1",
+   "familia": "INCENDIO_FORESTAL_EXTERIOR",
+   "ubicacion": "BERMEO",
+   "zona": "CL Zubiaurtar Kepa",
+   "parque": "ARRATZU",
+   "parque_nombre": "Arratzu",
    "vehiculos": [
     {
-     "tipo": "Transporte Material y Personal",
-     "estado": "REGRESANDO",
-     "estado_txt": "Vehículo volviendo de un sin."
+     "tipo": "Bomba urbana pesada",
+     "estado": "PROPUESTO",
+     "estado_txt": "Vehículo propuesto"
     }
    ],
    "n_vehiculos": 1,
-   "estado": "REGRESANDO"
+   "estado": "PROPUESTO"
   },
   {
    "tipo": "RETIRADA DE ÁRBOLES",
@@ -65,12 +65,12 @@
    "regresando": 0
   },
   "ARTAZA": {
-   "actuaciones": 1,
-   "vehiculos": 1,
+   "actuaciones": 0,
+   "vehiculos": 0,
    "propuesto": 0,
    "en_ruta": 0,
    "en_siniestro": 0,
-   "regresando": 1
+   "regresando": 0
   },
   "DERIO": {
    "actuaciones": 0,
@@ -97,9 +97,9 @@
    "regresando": 0
   },
   "ARRATZU": {
-   "actuaciones": 0,
-   "vehiculos": 0,
-   "propuesto": 0,
+   "actuaciones": 1,
+   "vehiculos": 1,
+   "propuesto": 1,
    "en_ruta": 0,
    "en_siniestro": 0,
    "regresando": 0
