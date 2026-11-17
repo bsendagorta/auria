@@ -166,7 +166,7 @@ def analizar(flujos, est):
     pt = pt.T.fillna(pt.mean(axis=1)).T
     imd = (pt * w).sum(axis=1) / w.sum()
     pes = dia.groupby(clave).apply(lambda x: x["pes"].sum() / max(x["veh"].sum(), 1), include_groups=False)
-    fv = f.dropna(subset=["vel"])
+    fv = f[f["vel"].between(5, 160)]          # descarta lecturas de velocidad imposibles
     vel = fv.groupby(clave).apply(lambda x: np.average(x["vel"], weights=x["vehiculos"] + 1e-9),
                                   include_groups=False)
     hp = f[f["tipo_dia"] == "LJ"].groupby(clave + ["hora"])["vehiculos"].sum().groupby(level=clave).idxmax()
