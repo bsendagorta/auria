@@ -1,5 +1,8 @@
 {
- "fecha": "2026-11-16T21:58",
+ "fecha": "2026-11-17T07:55",
  "activo": false,
- "motivo": "aún no hay variables registradas o capturas"
+ "dias": 2,
+ "eventos": 12,
+ "cobertura": 1.0,
+ "motivo": "datos insuficientes: 2/21 días y 12/300 actuaciones. Se sigue con base+reglas."
 }
