@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-17T21:01+01:00",
+ "generado": "2026-11-17T21:20+01:00",
  "horizonte_h": 6,
  "modelo": "base+reglas",
  "fuentes_ok": {
@@ -10,7 +10,7 @@
   "salidas_esperadas_6h": 3.9,
   "normal_6h": 3.5,
   "contador": {
-   "ts": "2026-11-17T21:01:14+01:00",
+   "ts": "2026-11-17T21:20:28+01:00",
    "desde_8": 28,
    "anio": 5804
   }
@@ -2836,7 +2836,7 @@
    "tipo": "RETIRADA DE ÁRBOLES",
    "ubicacion": "URDULIZ",
    "zona": "BA Mendiondo",
-   "vehiculos": "Transporte Material y Personal (Vehículo va a un siniestro)",
+   "vehiculos": "Transporte Material y Personal (Vehículo parado en siniestro)",
    "parque": "ARTAZA"
   },
   {
