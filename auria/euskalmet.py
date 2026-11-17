@@ -70,8 +70,22 @@ def get(ruta, **params):
 
 
 # ------------------------------------------------------------------ avisos (alertas) de Euskalmet
+# zonas de Euskalmet que tocan Bizkaia y parques que cubren (comprobado con /euskalmet/geo/... en nov. 2026)
+ZONAS_BIZKAIA = {
+    "coast_zone": ["ARTAZA", "URIOSTE", "ARRATZU", "MARKINA"],
+    "great_bilbao": ["BASAURI", "DERIO", "ARTAZA", "URIOSTE"],
+    "cantabrian_valleys": ["IURRETA", "ZALLA", "ARRATZU", "MARKINA", "BASAURI", "DERIO"],
+    "cantabrian_mountains": ["ZALLA", "IURRETA", "BASAURI"],
+}
+
+
 def zonas():
-    """Zonas de aviso de Euskalmet (se descubren con la API Geo; la lista cambia poco)."""
+    """Zonas de aviso de Euskalmet que afectan a Bizkaia (las demás —Álava, Gipuzkoa— se ignoran)."""
+    return list(ZONAS_BIZKAIA)
+
+
+def _zonas_api():
+    """Todas las zonas según la API Geo (por si Euskalmet cambia la lista)."""
     for ruta in ("/euskalmet/geo/regions/basque_country/zones", "/euskalmet/geo/regions/basque_country"):
         try:
             j = get(ruta)
