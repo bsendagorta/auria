@@ -1,18 +1,18 @@
 {
- "ts": "2026-11-17T00:23:25+01:00",
- "salidas_desde_8": 38,
+ "ts": "2026-11-17T06:02:42+01:00",
+ "salidas_desde_8": 48,
  "salidas_anio": 5732,
  "actuaciones": [
   {
-   "tipo": "SANEADO DE CONSTRUCCIONES",
+   "tipo": "RETIRADA DE ÁRBOLES",
    "familia": "METEO_ASISTENCIA",
-   "ubicacion": "PORTUGALETE",
-   "zona": "AV Ballonti",
-   "parque": "URIOSTE",
-   "parque_nombre": "Urioste (Ortuella)",
+   "ubicacion": "GALDAKAO",
+   "zona": "BA Aperribai",
+   "parque": "BASAURI",
+   "parque_nombre": "Basauri",
    "vehiculos": [
     {
-     "tipo": "Furgón utiles varios",
+     "tipo": "Auto escala articulada",
      "estado": "EN_SINIESTRO",
      "estado_txt": "Vehículo parado en siniestro"
     }
@@ -21,39 +21,29 @@
    "estado": "EN_SINIESTRO"
   },
   {
-   "tipo": "SANEADO DE CONSTRUCCIONES",
+   "tipo": "RETIRADA DE ÁRBOLES",
    "familia": "METEO_ASISTENCIA",
-   "ubicacion": "GETXO",
-   "zona": "CL El Carmen",
+   "ubicacion": "LEIOA",
+   "zona": "CL Langileria",
    "parque": "ARTAZA",
    "parque_nombre": "Artaza (Leioa)",
    "vehiculos": [
     {
      "tipo": "Transporte Material y Personal",
-     "estado": "REGRESANDO",
-     "estado_txt": "Vehículo volviendo de un sin."
-    },
-    {
-     "tipo": "Furgón utiles varios",
-     "estado": "REGRESANDO",
-     "estado_txt": "Vehículo volviendo de un sin."
-    },
-    {
-     "tipo": "Auto escala articulada",
-     "estado": "REGRESANDO",
-     "estado_txt": "Vehículo volviendo de un sin."
+     "estado": "PROPUESTO",
+     "estado_txt": "Vehículo propuesto"
     }
    ],
-   "n_vehiculos": 3,
-   "estado": "REGRESANDO"
+   "n_vehiculos": 1,
+   "estado": "PROPUESTO"
   },
   {
    "tipo": "SANEADO DE CONSTRUCCIONES",
    "familia": "METEO_ASISTENCIA",
-   "ubicacion": "BARAKALDO",
-   "zona": "CL Gernikako Arbola",
-   "parque": "URIOSTE",
-   "parque_nombre": "Urioste (Ortuella)",
+   "ubicacion": "ERANDIO",
+   "zona": "AV Axpeko Erribera",
+   "parque": "ARTAZA",
+   "parque_nombre": "Artaza (Leioa)",
    "vehiculos": [
     {
      "tipo": "Auto escala articulada",
@@ -67,20 +57,20 @@
  ],
  "por_parque": {
   "URIOSTE": {
-   "actuaciones": 2,
-   "vehiculos": 2,
-   "propuesto": 0,
-   "en_ruta": 0,
-   "en_siniestro": 2,
-   "regresando": 0
-  },
-  "ARTAZA": {
-   "actuaciones": 1,
-   "vehiculos": 3,
+   "actuaciones": 0,
+   "vehiculos": 0,
    "propuesto": 0,
    "en_ruta": 0,
    "en_siniestro": 0,
-   "regresando": 3
+   "regresando": 0
+  },
+  "ARTAZA": {
+   "actuaciones": 2,
+   "vehiculos": 2,
+   "propuesto": 1,
+   "en_ruta": 0,
+   "en_siniestro": 1,
+   "regresando": 0
   },
   "DERIO": {
    "actuaciones": 0,
@@ -91,11 +81,11 @@
    "regresando": 0
   },
   "BASAURI": {
-   "actuaciones": 0,
-   "vehiculos": 0,
+   "actuaciones": 1,
+   "vehiculos": 1,
    "propuesto": 0,
    "en_ruta": 0,
-   "en_siniestro": 0,
+   "en_siniestro": 1,
    "regresando": 0
   },
   "IURRETA": {
