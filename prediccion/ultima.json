@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-17T22:48+01:00",
+ "generado": "2026-11-17T22:55+01:00",
  "horizonte_h": 6,
  "modelo": "base+reglas",
  "fuentes_ok": {
@@ -10,7 +10,7 @@
   "salidas_esperadas_6h": 3.9,
   "normal_6h": 3.5,
   "contador": {
-   "ts": "2026-11-17T22:48:36+01:00",
+   "ts": "2026-11-17T22:55:43+01:00",
    "desde_8": 30,
    "anio": 5804
   }
@@ -410,7 +410,7 @@
     "CALOR"
    ],
    "directo": {
-    "activas": 1,
+    "activas": 0,
     "nuevas_1h": 1
    },
    "horas": [
@@ -771,7 +771,7 @@
    ],
    "directo": {
     "activas": 1,
-    "nuevas_1h": 2
+    "nuevas_1h": 1
    },
    "horas": [
     {
@@ -2838,16 +2838,16 @@
   },
   {
    "tipo": "RETIRADA DE ÁRBOLES",
-   "ubicacion": "LEZAMA",
-   "zona": "BA Goitioltza",
-   "vehiculos": "Transporte Material y Personal (Vehículo propuesto)",
-   "parque": "DERIO"
+   "ubicacion": "A BI-3726 LEZAMA A GAZTELUMENDI",
+   "zona": "A BI-3726 LEZAMA A GAZTELUMENDI",
+   "vehiculos": "Transporte Material y Personal (Vehículo va a un siniestro)",
+   "parque": "SIN_PARQUE"
   },
   {
    "tipo": "SANEADO DE CONSTRUCCIONES",
    "ubicacion": "ORTUELLA",
    "zona": "BA Urioste",
-   "vehiculos": "Auto escala articulada (Vehículo parado en siniestro)",
+   "vehiculos": "Auto escala articulada (Vehículo volviendo de un sin.)",
    "parque": "URIOSTE"
   }
  ],
