@@ -17,7 +17,11 @@ import pandas as pd
 import requests
 
 from . import config
-from .parques import INE_A_PARQUE, NOMBRES
+from .parques import INE_A_PARQUE, PARQUES
+
+
+def _nombre_parque(p):
+    return PARQUES[p]["nombre"] if p in PARQUES else ("Bilbao (servicio municipal)" if p == "BILBAO" else "Sin parque asignado")
 
 URL = "https://www.geo.euskadi.eus/cartografia/DatosDescarga/Limites/MUNICIPIOS_5000_ETRS89.zip"
 DIR = config.DATOS / "geo"
@@ -39,6 +43,9 @@ def _leer_shp(zbytes):
 
 def _codigo_ine(reg, campos):
     """Código INE de 5 cifras (48xxx) a partir de los atributos, sea cual sea el nombre del campo."""
+    if "MUN_PROV" in campos and "MUN_MUNI" in campos:       # esquema del Gobierno Vasco
+        prov, muni = str(reg["MUN_PROV"]).strip().zfill(2), str(reg["MUN_MUNI"]).strip().zfill(3)
+        return f"{prov}{muni}" if prov == "48" and muni.isdigit() else None
     for c in campos:
         v = str(reg[c]).strip()
         if re.fullmatch(r"48\d{3}", v):
@@ -64,7 +71,8 @@ def construir(zbytes=None):
         sal = (d.groupby("cod_ine").size() / 3).round(1).to_dict()
     except FileNotFoundError:
         sal = {}
-    nombre_campo = next((c for c in campos if re.search(r"^(mun|nombre|izena|udal)", c, re.I)), campos[0])
+    nombre_campo = "NOMBRE_TOP" if "NOMBRE_TOP" in campos else next(
+        (c for c in campos if re.search(r"nombre|izena", c, re.I)), campos[0])
     mun, por = [], {}
     for sr in r.iterShapeRecords():
         ine = _codigo_ine(sr.record, campos)
@@ -75,7 +83,7 @@ def construir(zbytes=None):
         nom = str(sr.record[nombre_campo]).strip()
         mun.append({"type": "Feature", "geometry": mapping(g.simplify(TOL, preserve_topology=True)),
                     "properties": {"ine": ine, "nombre": nom, "parque": p, "salidas_anio": sal.get(ine, 0.0),
-                                   "parque_nombre": NOMBRES.get(p, "Bilbao (servicio municipal)")}})
+                                   "parque_nombre": _nombre_parque(p)}})
         por.setdefault(p, []).append(g)
     if len(mun) < 100:
         raise RuntimeError(f"Solo {len(mun)} municipios de Bizkaia: revisar los campos {campos}")
@@ -84,7 +92,7 @@ def construir(zbytes=None):
         u = unary_union(gs).simplify(TOL, preserve_topology=True)
         ms = sorted(f["properties"]["nombre"] for f in mun if f["properties"]["parque"] == p)
         zon.append({"type": "Feature", "geometry": mapping(u), "properties": {
-            "parque": p, "nombre": NOMBRES.get(p, "Bilbao (servicio municipal)"), "n_municipios": len(ms),
+            "parque": p, "nombre": _nombre_parque(p), "n_municipios": len(ms),
             "municipios": ", ".join(ms),
             "salidas_anio": round(sum(f["properties"]["salidas_anio"] for f in mun if f["properties"]["parque"] == p), 1)}})
     DIR.mkdir(parents=True, exist_ok=True)
