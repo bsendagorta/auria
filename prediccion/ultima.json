@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-17T06:16+01:00",
+ "generado": "2026-11-17T06:32+01:00",
  "horizonte_h": 6,
  "modelo": "base+reglas",
  "fuentes_ok": {
@@ -10,8 +10,8 @@
   "salidas_esperadas_6h": 4.9,
   "normal_6h": 4.4,
   "contador": {
-   "ts": "2026-11-17T06:16:41+01:00",
-   "desde_8": 49,
+   "ts": "2026-11-17T06:32:41+01:00",
+   "desde_8": 51,
    "anio": 5732
   }
  },
@@ -32,7 +32,7 @@
     "Rachas de 60-80 km/h"
    ],
    "directo": {
-    "activas": 0,
+    "activas": 1,
     "nuevas_1h": 1
    },
    "horas": [
@@ -269,8 +269,8 @@
     "Rachas de 60-80 km/h"
    ],
    "directo": {
-    "activas": 2,
-    "nuevas_1h": 3
+    "activas": 0,
+    "nuevas_1h": 2
    },
    "horas": [
     {
@@ -975,7 +975,7 @@
    ],
    "directo": {
     "activas": 1,
-    "nuevas_1h": 2
+    "nuevas_1h": 1
    },
    "horas": [
     {
@@ -1896,17 +1896,17 @@
   },
   {
    "tipo": "SANEADO DE CONSTRUCCIONES",
-   "ubicacion": "ERANDIO",
-   "zona": "AV Axpeko Erribera",
-   "vehiculos": "Auto escala articulada (Vehículo parado en siniestro)",
-   "parque": "ARTAZA"
+   "ubicacion": "BARAKALDO-",
+   "zona": "",
+   "vehiculos": "Auto escala articulada (Vehículo propuesto)",
+   "parque": "URIOSTE"
   },
   {
    "tipo": "RETIRADA DE ÁRBOLES",
-   "ubicacion": "LEIOA",
-   "zona": "CL Langileria",
-   "vehiculos": "Transporte Material y Personal (Vehículo propuesto)",
-   "parque": "ARTAZA"
+   "ubicacion": "A BI-3733 BERANGO A EGUZKITZA",
+   "zona": "A BI-3733 BERANGO A EGUZKITZA",
+   "vehiculos": "Auto escala articulada (Vehículo propuesto)",
+   "parque": "SIN_PARQUE"
   }
  ],
  "niveles": {

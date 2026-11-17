@@ -1,6 +1,6 @@
 {
- "ts": "2026-11-17T06:31:42+01:00",
- "salidas_desde_8": 50,
+ "ts": "2026-11-17T06:34:42+01:00",
+ "salidas_desde_8": 51,
  "salidas_anio": 5732,
  "actuaciones": [
   {
@@ -26,29 +26,29 @@
    "estado": "REGRESANDO"
   },
   {
-   "tipo": "RETIRADA DE ÁRBOLES",
-   "familia": "METEO_ASISTENCIA",
-   "ubicacion": "A BI-3733 BERANGO A EGUZKITZA",
-   "zona": "A BI-3733 BERANGO A EGUZKITZA",
-   "parque": "SIN_PARQUE",
-   "parque_nombre": "Fuera de zona / Bilbao",
-   "vehiculos": [
-    {
-     "tipo": "Transporte Material y Personal",
-     "estado": "EN_RUTA",
-     "estado_txt": "Vehículo va a un siniestro"
-    }
-   ],
-   "n_vehiculos": 1,
-   "estado": "EN_RUTA"
-  },
-  {
    "tipo": "SANEADO DE CONSTRUCCIONES",
    "familia": "METEO_ASISTENCIA",
    "ubicacion": "BARAKALDO-",
    "zona": "",
    "parque": "URIOSTE",
    "parque_nombre": "Urioste (Ortuella)",
+   "vehiculos": [
+    {
+     "tipo": "Auto escala articulada",
+     "estado": "PROPUESTO",
+     "estado_txt": "Vehículo propuesto"
+    }
+   ],
+   "n_vehiculos": 1,
+   "estado": "PROPUESTO"
+  },
+  {
+   "tipo": "RETIRADA DE ÁRBOLES",
+   "familia": "METEO_ASISTENCIA",
+   "ubicacion": "A BI-3733 BERANGO A EGUZKITZA",
+   "zona": "A BI-3733 BERANGO A EGUZKITZA",
+   "parque": "SIN_PARQUE",
+   "parque_nombre": "Fuera de zona / Bilbao",
    "vehiculos": [
     {
      "tipo": "Auto escala articulada",
@@ -128,8 +128,8 @@
   "SIN_PARQUE": {
    "actuaciones": 1,
    "vehiculos": 1,
-   "propuesto": 0,
-   "en_ruta": 1,
+   "propuesto": 1,
+   "en_ruta": 0,
    "en_siniestro": 0,
    "regresando": 0
   }
