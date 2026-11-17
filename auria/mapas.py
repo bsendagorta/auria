@@ -17,7 +17,7 @@ import pandas as pd
 import requests
 
 from . import config
-from .parques import INE_A_PARQUE, PARQUES
+from .parques import INE_A_PARQUE, NOMBRES, PARQUES
 
 
 def _nombre_parque(p):
@@ -73,14 +73,21 @@ def construir(zbytes=None):
         sal = {}
     nombre_campo = "NOMBRE_TOP" if "NOMBRE_TOP" in campos else next(
         (c for c in campos if re.search(r"nombre|izena", c, re.I)), campos[0])
-    mun, por = [], {}
+    mun, por, por_ine, nombres_shp = [], {}, {}, {}
     for sr in r.iterShapeRecords():
         ine = _codigo_ine(sr.record, campos)
         if not ine:
             continue
         g = transform(a_wgs, shape(sr.shape.__geo_interface__)).buffer(0)
+        por_ine.setdefault(ine, []).append(g)
+        if ine not in nombres_shp:
+            nombres_shp[ine] = str(sr.record[nombre_campo]).strip()
+    # un municipio puede venir en varios trozos (enclaves): se juntan
+    for ine, gs in por_ine.items():
+        g = unary_union(gs)
         p = INE_A_PARQUE.get(ine, "BILBAO" if ine == "48020" else "SIN_PARQUE")
-        nom = str(sr.record[nombre_campo]).strip()
+        nom = NOMBRES.get(ine, nombres_shp[ine])
+        nom = nom.title() if nom.isupper() else nom
         mun.append({"type": "Feature", "geometry": mapping(g.simplify(TOL, preserve_topology=True)),
                     "properties": {"ine": ine, "nombre": nom, "parque": p, "salidas_anio": sal.get(ine, 0.0),
                                    "parque_nombre": _nombre_parque(p)}})
