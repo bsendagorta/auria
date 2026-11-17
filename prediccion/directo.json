@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-17T22:53:38+01:00",
+ "ts": "2026-11-17T22:56:38+01:00",
  "salidas_desde_8": 30,
  "salidas_anio": 5804,
  "actuaciones": [
@@ -23,10 +23,10 @@
   {
    "tipo": "RETIRADA DE ÁRBOLES",
    "familia": "METEO_ASISTENCIA",
-   "ubicacion": "LEZAMA",
-   "zona": "BA Goitioltza",
-   "parque": "DERIO",
-   "parque_nombre": "Derio",
+   "ubicacion": "A BI-3726 LEZAMA A GAZTELUMENDI",
+   "zona": "A BI-3726 LEZAMA A GAZTELUMENDI",
+   "parque": "SIN_PARQUE",
+   "parque_nombre": "Fuera de zona / Bilbao",
    "vehiculos": [
     {
      "tipo": "Transporte Material y Personal",
@@ -73,10 +73,10 @@
    "regresando": 0
   },
   "DERIO": {
-   "actuaciones": 1,
-   "vehiculos": 1,
+   "actuaciones": 0,
+   "vehiculos": 0,
    "propuesto": 0,
-   "en_ruta": 1,
+   "en_ruta": 0,
    "en_siniestro": 0,
    "regresando": 0
   },
@@ -121,10 +121,10 @@
    "regresando": 0
   },
   "SIN_PARQUE": {
-   "actuaciones": 0,
-   "vehiculos": 0,
+   "actuaciones": 1,
+   "vehiculos": 1,
    "propuesto": 0,
-   "en_ruta": 0,
+   "en_ruta": 1,
    "en_siniestro": 0,
    "regresando": 0
   }
