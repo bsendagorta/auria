@@ -37,4 +37,5 @@ jobs:
           open("informes/euskalmet_sonda.txt","w").write("\n\n".join(L))
           PY
           git config user.name auria-bot; git config user.email auria-bot@users.noreply.github.com
-          git add informes/euskalmet_sonda.txt && git commit -qm "sonda euskalmet" && git pull -q --rebase && git push -q
+          git add informes/euskalmet_sonda.txt && git commit -qm "sonda euskalmet"
+          for i in 1 2 3 4 5; do git pull -q --rebase && git push -q && break; sleep 5; done
