@@ -1,6 +1,6 @@
 {
- "ts": "2026-11-17T18:22:50+01:00",
- "salidas_desde_8": 25,
+ "ts": "2026-11-17T18:25:50+01:00",
+ "salidas_desde_8": 26,
  "salidas_anio": 5804,
  "actuaciones": [
   {
@@ -36,33 +36,16 @@
    ],
    "n_vehiculos": 1,
    "estado": "EN_SINIESTRO"
-  },
-  {
-   "tipo": "SANEADO DE CONSTRUCCIONES",
-   "familia": "METEO_ASISTENCIA",
-   "ubicacion": "VALLE DE TRAPAGA",
-   "zona": "CL Luís de Castresana",
-   "parque": "URIOSTE",
-   "parque_nombre": "Urioste (Ortuella)",
-   "vehiculos": [
-    {
-     "tipo": "Auto escala articulada",
-     "estado": "REGRESANDO",
-     "estado_txt": "Vehículo volviendo de un sin."
-    }
-   ],
-   "n_vehiculos": 1,
-   "estado": "REGRESANDO"
   }
  ],
  "por_parque": {
   "URIOSTE": {
-   "actuaciones": 1,
-   "vehiculos": 1,
+   "actuaciones": 0,
+   "vehiculos": 0,
    "propuesto": 0,
    "en_ruta": 0,
    "en_siniestro": 0,
-   "regresando": 1
+   "regresando": 0
   },
   "ARTAZA": {
    "actuaciones": 1,
