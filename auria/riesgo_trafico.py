@@ -105,7 +105,9 @@ def carreteras(parque, horas, lluvias, n=3):
     return [{"carretera": r.CARRETERA, "km_ini": int(r.km_ini), "km_fin": int(r.km_fin),
              "esperados": round(float(r.esperados), 4), "prob": round(1 - math.exp(-float(r.esperados)), 4),
              "accidentes_anio": float(r.accidentes_anio), "pct_graves": float(r.pct_graves),
-             "hora_pico": int(r.hora_pico)} for r in t.itertuples()]
+             "hora_pico": int(r.hora_pico),
+             "imd": (None if pd.isna(getattr(r, "imd", float("nan"))) else int(r.imd)),
+             "ip": (None if pd.isna(getattr(r, "ip", float("nan"))) else float(r.ip))} for r in t.itertuples()]
 
 
 def resumen():

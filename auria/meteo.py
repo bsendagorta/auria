@@ -21,7 +21,7 @@ VARIABLES = [
     "wind_speed_10m_max", "wind_gusts_10m_max", "wind_direction_10m_dominant",
     "relative_humidity_2m_min", "snowfall_sum",
 ]
-LOTE = 20   # coordenadas por petición
+LOTE = 6    # coordenadas por petición (con 20 y 6 años el archivo de Open-Meteo agota el tiempo)
 
 
 def descargar(municipios: pd.DataFrame, desde: str, hasta: str) -> pd.DataFrame:
@@ -35,9 +35,13 @@ def descargar(municipios: pd.DataFrame, desde: str, hasta: str) -> pd.DataFrame:
             "start_date": desde, "end_date": hasta,
             "daily": ",".join(VARIABLES), "timezone": "Europe/Madrid",
         }
-        for intento in range(4):
-            r = requests.get(config.OPENMETEO_ARCHIVO, params=params, timeout=120,
-                             headers={"User-Agent": config.USER_AGENT})
+        for intento in range(5):
+            try:
+                r = requests.get(config.OPENMETEO_ARCHIVO, params=params, timeout=240,
+                                 headers={"User-Agent": config.USER_AGENT})
+            except requests.RequestException:
+                time.sleep(20 * (intento + 1))
+                continue
             if r.status_code == 429:
                 time.sleep(30 * (intento + 1))
                 continue

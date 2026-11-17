@@ -258,6 +258,7 @@ with t_carr:
     tramos = [{"carretera": c["carretera"], "tramo": f"km {c['km_ini']}-{c['km_fin']}",
                "parque": p["nombre"].split(" (")[0], "P(≥1 accidente con víctimas, 6 h)": c["prob"],
                "accidentes/año": c["accidentes_anio"], "% graves": c["pct_graves"],
+               "IMD (veh/día)": c.get("imd"), "peligrosidad": c.get("ip"),
                "hora habitual": f"{c['hora_pico']:02d}:00"} for p in parques for c in p.get("carreteras", [])]
     dgt = datos.get("trafico_dgt") or {}
     ll = dgt.get("lluvia", {})
@@ -285,9 +286,44 @@ with t_carr:
                             legend=alt.Legend(orient="top", title=None)),
             tooltip=["día", "hora", alt.Tooltip("factor_dia:Q", format=".2f")],
         ).properties(height=260), width="stretch")
-    st.caption("Fuente: microdatos de accidentes con víctimas de la DGT (vías interurbanas, sin Bilbao), "
-               "calibrados con las salidas reales de tráfico de SPEIS. Falta la intensidad de tráfico de cada "
-               "tramo (aforos): es la siguiente fuente a incorporar.")
+    est = leer_csv("datos/modelo/aforos_estaciones.csv")
+    rv = leer_csv("datos/modelo/trafico_riesgo_vehiculo.csv")
+    if est is not None and len(est):
+        c1, c2 = st.columns([3, 2])
+        with c1:
+            st.markdown("**Intensidad de tráfico por estación de aforo** (IMD, vehículos/día)")
+            st.dataframe(est[["carretera", "pk", "estacion", "imd", "pct_pesados", "vel_media", "hora_punta",
+                              "dias_medidos"]].rename(columns={"pct_pesados": "% pesados", "vel_media": "vel. media",
+                                                               "hora_punta": "hora punta", "dias_medidos": "días"}),
+                         hide_index=True, width="stretch", height=320,
+                         column_config={"imd": st.column_config.ProgressColumn(
+                             "IMD", format="%d", min_value=0, max_value=float(est["imd"].max()))})
+        with c2:
+            st.markdown("**Mapa de aforos** (tamaño = IMD)")
+            em = est.dropna(subset=["lat"]).assign(r=lambda x: 300 + 2500 * (x["imd"] / x["imd"].max()) ** .5,
+                                                    txt=lambda x: x["carretera"] + " pk " + x["pk"].astype(str)
+                                                    + "\n" + x["imd"].astype(int).astype(str) + " veh/día")
+            st.pydeck_chart(pdk.Deck(map_style=None, tooltip={"text": "{txt}"},
+                                     initial_view_state=pdk.ViewState(latitude=43.24, longitude=-2.85, zoom=8.6),
+                                     layers=[pdk.Layer("ScatterplotLayer", em, get_position="[lon, lat]",
+                                                       get_radius="r", get_fill_color=[42, 120, 214, 170],
+                                                       stroked=True, get_line_color=[255, 255, 255],
+                                                       line_width_min_pixels=1, pickable=True)]), height=320)
+    if rv is not None and len(rv):
+        rv["día"] = rv["tipo_dia"].map({"LJ": "Lunes-jueves", "V": "Viernes", "S": "Sábado", "D": "Domingo/festivo"})
+        st.markdown("**Riesgo por vehículo según la hora** (accidentes ÷ tráfico; 1 = media del día)")
+        st.altair_chart(alt.Chart(rv).mark_line(strokeWidth=2).encode(
+            x=alt.X("hora:O"), y=alt.Y("riesgo_por_vehiculo:Q", title="riesgo por vehículo"),
+            color=alt.Color("día:N", scale=alt.Scale(domain=["Lunes-jueves", "Viernes", "Sábado", "Domingo/festivo"],
+                                                    range=[AZUL, NARANJA, "#1baf7a", "#6250d6"]),
+                            legend=alt.Legend(orient="top", title=None)),
+            tooltip=["día", "hora", alt.Tooltip("riesgo_por_vehiculo:Q", format=".2f")],
+        ).properties(height=240), width="stretch")
+        st.caption("Pocas personas conducen de madrugada, pero cada vehículo tiene más riesgo: por eso el "
+                   "número de accidentes y el riesgo individual no coinciden.")
+    st.caption("Fuentes: accidentes con víctimas DGT (vías interurbanas, sin Bilbao) calibrados con las salidas "
+               "reales de SPEIS; intensidad de tráfico de los aforadores del Gobierno Vasco (Open Data Euskadi, "
+               "2022-2024). Peligrosidad = accidentes con víctimas por 100 millones de veh·km.")
 
 
 # ------------------------------------------------------------------ APRENDIZAJE

@@ -3,7 +3,7 @@
 set -e
 git config user.name  "auria-bot"
 git config user.email "auria-bot@users.noreply.github.com"
-git add datos/online datos/modelo prediccion informes datos/eventos.csv datos/festivos_locales.csv 2>/dev/null || true
+git add datos/online datos/modelo datos/aforos prediccion informes datos/eventos.csv datos/festivos_locales.csv 2>/dev/null || true
 if git diff --cached --quiet; then echo "Sin cambios"; exit 0; fi
 git commit -q -m "${1:-datos: actualización automática}"
 git config pull.rebase true
