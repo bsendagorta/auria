@@ -1,7 +1,7 @@
 """Incidencias oficiales de tráfico de Euskadi en DATEX II (Dirección de Tráfico del Gobierno Vasco).
 
 Fuente pública (Punto de Acceso Nacional de la DGT, publicación "Incidencias DT-GV", sin licencia ni clave):
-    http://infocar.dgt.es/datex2/dt-gv/SituationPublication/all/content.xml
+    https://nap.dgt.es/datex2/dt-gv/SituationPublication/all/content.xml
 Información validada por el centro de gestión de tráfico de Euskadi y la Ertzaintza.
 
 Cada lectura se guarda (solo Bizkaia, sin Bilbao ciudad) en datos/online/<origen>/datex_AAAA-MM.csv:
@@ -19,7 +19,7 @@ import requests
 from . import config
 from .parques import PARQUES, parque_mas_cercano
 
-URL = "http://infocar.dgt.es/datex2/dt-gv/SituationPublication/all/content.xml"
+URL = "https://nap.dgt.es/datex2/dt-gv/SituationPublication/all/content.xml"   # DATEX II 1.0, cada ~9 min
 BBOX = (42.95, 43.47, -3.46, -2.40)          # Bizkaia (lat_min, lat_max, lon_min, lon_max)
 BILBAO = (43.235, 43.29, -2.98, -2.89)       # Bilbao ciudad (servicio municipal)
 CAMPOS = ["leido", "id", "version", "tipo", "subtipo", "gravedad", "inicio", "carretera", "lat", "lon", "parque"]
@@ -67,7 +67,7 @@ def parsear(xml: bytes):
                 break
         filas.append({
             "id": r.attrib.get("id", ""), "version": r.attrib.get("version", ""), "tipo": tipo, "subtipo": sub,
-            "gravedad": _texto(r, "overallSeverity"), "inicio": _texto(r, "overallStartTime"),
+            "gravedad": _texto(r, "overallSeverity") or _texto(r, "impactOnTraffic"), "inicio": _texto(r, "overallStartTime"),
             "carretera": _texto(r, "roadNumber"), "lat": round(lat, 5), "lon": round(lon, 5),
             "parque": parque_mas_cercano(lat, lon),
         })
