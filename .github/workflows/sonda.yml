@@ -1,0 +1,22 @@
+name: Sonda fuentes
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  sonda:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -q requests PyJWT cryptography pandas numpy
+      - env:
+          EUSKALMET_PRIVATE_KEY: ${{ secrets.EUSKALMET_PRIVATE_KEY }}
+          EUSKALMET_FINGERPRINT: ${{ secrets.EUSKALMET_FINGERPRINT }}
+        run: python scripts/sonda.py > informes/sonda.txt 2>&1 || true
+      - run: |
+          git config user.name auria-bot; git config user.email auria-bot@users.noreply.github.com
+          git add informes/sonda.txt && git commit -qm "sonda fuentes" || exit 0
+          for i in 1 2 3 4 5; do git pull -q --rebase && git push -q && break; sleep 5; done
