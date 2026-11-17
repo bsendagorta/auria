@@ -1,31 +1,8 @@
 {
- "ts": "2026-11-17T15:16:50+01:00",
- "salidas_desde_8": 19,
+ "ts": "2026-11-17T15:19:50+01:00",
+ "salidas_desde_8": 20,
  "salidas_anio": 5804,
- "actuaciones": [
-  {
-   "tipo": "RETIRADA DE ÁRBOLES",
-   "familia": "METEO_ASISTENCIA",
-   "ubicacion": "LOIU",
-   "zona": "AV Katea-Loiu",
-   "parque": "DERIO",
-   "parque_nombre": "Derio",
-   "vehiculos": [
-    {
-     "tipo": "Transporte Material y Personal",
-     "estado": "REGRESANDO",
-     "estado_txt": "Vehículo volviendo de un sin."
-    },
-    {
-     "tipo": "Auto escala articulada",
-     "estado": "REGRESANDO",
-     "estado_txt": "Vehículo volviendo de un sin."
-    }
-   ],
-   "n_vehiculos": 2,
-   "estado": "REGRESANDO"
-  }
- ],
+ "actuaciones": [],
  "por_parque": {
   "URIOSTE": {
    "actuaciones": 0,
@@ -44,12 +21,12 @@
    "regresando": 0
   },
   "DERIO": {
-   "actuaciones": 1,
-   "vehiculos": 2,
+   "actuaciones": 0,
+   "vehiculos": 0,
    "propuesto": 0,
    "en_ruta": 0,
    "en_siniestro": 0,
-   "regresando": 2
+   "regresando": 0
   },
   "BASAURI": {
    "actuaciones": 0,
