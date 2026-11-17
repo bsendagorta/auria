@@ -40,6 +40,18 @@ Generado 2026-11-17 · 30,574 intervenciones operativas (sin Bilbao).
 | Rescate y salvamento          |   1412 |   1573 |   1899 |   1902 |   2056 |
 | Tráfico                       |    422 |    505 |    539 |    514 |    445 |
 
-_Meteorología mensual pendiente (la descarga de Open-Meteo se hace en el reentreno nocturno)._
+## Meteorología del mes (tercil alto ÷ tercil bajo, misma estación)
+Ej.: 1.40 = en los meses más lluviosos hay un 40 % más de esa familia que en los más secos.
+|                               |   lluvia |   días de racha ≥60 km/h |   temperatura máxima |   días de helada |   días secos y cálidos |
+|:------------------------------|---------:|-------------------------:|---------------------:|-----------------:|-----------------------:|
+| Incendio urbano               |     1.01 |                     1.01 |                 0.87 |             1.09 |                   1.15 |
+| Incendio industrial           |     1.08 |                     0.79 |                 0.96 |             1.1  |                   0.93 |
+| Incendio forestal/exterior    |     0.95 |                     1.11 |                 1.28 |             1.31 |                   1.11 |
+| Tráfico                       |     1.26 |                     0.94 |                 0.9  |             0.97 |                   0.9  |
+| Rescate y salvamento          |     1    |                     0.95 |                 1.1  |             1    |                   0.95 |
+| Meteo (árboles, agua, viento) |     1.76 |                     1.61 |                 0.91 |             0.96 |                   0.79 |
+| Abejas y avispas              |     0.87 |                     0.47 |                 3.27 |             0.31 |                   0.98 |
+| Gas y mercancías peligrosas   |     1.04 |                     0.98 |                 1    |             1.07 |                   0.86 |
+| Otras asistencias             |     0.94 |                     0.96 |                 1.07 |             1.18 |                   1.1  |
 
 _Histórico sin día exacto: festivos y meteo del día se miden con las capturas por minuto._
