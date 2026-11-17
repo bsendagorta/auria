@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-17T18:10:49+01:00",
+ "ts": "2026-11-17T18:13:50+01:00",
  "salidas_desde_8": 25,
  "salidas_anio": 5804,
  "actuaciones": [
@@ -47,12 +47,12 @@
    "vehiculos": [
     {
      "tipo": "Auto escala articulada",
-     "estado": "EN_SINIESTRO",
-     "estado_txt": "Vehículo parado en siniestro"
+     "estado": "REGRESANDO",
+     "estado_txt": "Vehículo volviendo de un sin."
     }
    ],
    "n_vehiculos": 1,
-   "estado": "EN_SINIESTRO"
+   "estado": "REGRESANDO"
   },
   {
    "tipo": "INCENDIO INDUSTRIAL NIVEL 1",
@@ -69,8 +69,8 @@
     },
     {
      "tipo": "Unidad de mando y jefatura",
-     "estado": "EN_SINIESTRO",
-     "estado_txt": "Vehículo parado en siniestro"
+     "estado": "REGRESANDO",
+     "estado_txt": "Vehículo volviendo de un sin."
     },
     {
      "tipo": "Bomba urbana pesada",
@@ -88,8 +88,8 @@
    "vehiculos": 1,
    "propuesto": 0,
    "en_ruta": 0,
-   "en_siniestro": 1,
-   "regresando": 0
+   "en_siniestro": 0,
+   "regresando": 1
   },
   "ARTAZA": {
    "actuaciones": 1,
@@ -152,8 +152,8 @@
    "vehiculos": 4,
    "propuesto": 0,
    "en_ruta": 0,
-   "en_siniestro": 3,
-   "regresando": 1
+   "en_siniestro": 2,
+   "regresando": 2
   }
  }
 }
