@@ -1,8 +1,8 @@
 {
- "fecha": "2026-11-17T08:30",
+ "fecha": "2026-11-17T09:11",
  "activo": false,
  "dias": 2,
- "eventos": 12,
+ "eventos": 15,
  "cobertura": 1.0,
- "motivo": "datos insuficientes: 2/21 días y 12/300 actuaciones. Se sigue con base+reglas."
+ "motivo": "datos insuficientes: 2/21 días y 15/300 actuaciones. Se sigue con base+reglas."
 }

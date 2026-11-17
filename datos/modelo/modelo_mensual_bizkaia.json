@@ -16,7 +16,7 @@
    "MAE": 16.3,
    "desv_poisson": 7.719,
    "total_real": 6269.0,
-   "total_pred": 7124.293
+   "total_pred": 7124.294
   },
   {
    "modelo": "gbm",
