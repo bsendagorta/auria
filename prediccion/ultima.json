@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-17T16:04+01:00",
+ "generado": "2026-11-17T16:20+01:00",
  "horizonte_h": 6,
  "modelo": "base+reglas",
  "fuentes_ok": {
@@ -10,7 +10,7 @@
   "salidas_esperadas_6h": 4.5,
   "normal_6h": 4.4,
   "contador": {
-   "ts": "2026-11-17T16:04:48+01:00",
+   "ts": "2026-11-17T16:20:48+01:00",
    "desde_8": 20,
    "anio": 5804
   }
@@ -34,8 +34,8 @@
    "situacion_ahora": "",
    "situaciones_6h": [],
    "directo": {
-    "activas": 0,
-    "nuevas_1h": 0
+    "activas": 1,
+    "nuevas_1h": 1
    },
    "horas": [
     {
@@ -2311,7 +2311,7 @@
    "situacion_ahora": "",
    "situaciones_6h": [],
    "directo": {
-    "activas": 1,
+    "activas": 0,
     "nuevas_1h": 0
    },
    "horas": [
@@ -2616,11 +2616,11 @@
  ],
  "activas_ahora": [
   {
-   "tipo": "RETIRADA DE ÁRBOLES",
-   "ubicacion": "LOIU",
-   "zona": "AV Katea-Loiu",
-   "vehiculos": "Transporte Material y Personal (Vehículo volviendo de un sin.) | Auto escala articulada (Vehículo volviendo de un sin.)",
-   "parque": "DERIO"
+   "tipo": "SANEADO DE CONSTRUCCIONES",
+   "ubicacion": "BASAURI",
+   "zona": "CL Mojaparte",
+   "vehiculos": "Auto escala articulada (Vehículo va a un siniestro)",
+   "parque": "BASAURI"
   }
  ],
  "niveles": {
