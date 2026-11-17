@@ -4,3 +4,5 @@ numpy>=1.26
 requests>=2.31
 holidays>=0.50
 lightgbm>=4.3
+PyJWT
+cryptography

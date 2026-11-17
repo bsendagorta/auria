@@ -8,3 +8,6 @@ datos/procesado/
 datos/online/local/
 datos/online/mac/
 .streamlit/secrets.toml
+# claves privadas (Euskalmet, etc.): nunca al repositorio público
+secretos/
+*.pem

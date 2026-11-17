@@ -42,6 +42,7 @@ def main(argv=None):
     ultima_subida = time.monotonic()
     ultima_prevision = None
     ultimo_datex = None
+    ultimo_euskalmet = None
     ok = fallos = 0
     while time.monotonic() < fin:
         t0 = time.monotonic()
@@ -57,6 +58,14 @@ def main(argv=None):
                 print(f"DATEX II: {len(capturar_datex())} incidencias en Bizkaia", flush=True)
             except Exception as e:
                 print(f"Aviso DATEX II: {e}", flush=True)
+            # avisos de Euskalmet cada 30 min (solo si hay clave en los secretos)
+            try:
+                from . import euskalmet
+                if euskalmet.disponible() and (ultimo_euskalmet is None or time.monotonic() - ultimo_euskalmet >= 1800):
+                    print(f"Euskalmet: avisos de {len(euskalmet.capturar())} zonas", flush=True)
+                    ultimo_euskalmet = time.monotonic()
+            except Exception as e:
+                print(f"Aviso Euskalmet: {e}", flush=True)
             ultimo_datex = time.monotonic()
         if a.prevision_cada and (ultima_prevision is None
                                  or time.monotonic() - ultima_prevision >= a.prevision_cada * 60):

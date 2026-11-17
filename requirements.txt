@@ -9,3 +9,5 @@ lightgbm>=4.3
 streamlit>=1.50
 pydeck>=0.9
 matplotlib
+PyJWT
+cryptography

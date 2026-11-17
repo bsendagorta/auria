@@ -28,6 +28,9 @@ jobs:
       - name: Capturar cada minuto (5 h 40 min) y predecir cada 15 min
         env:
           AURIA_ORIGEN: github-min
+          # clave de Euskalmet: secretos del repositorio (Settings > Secrets and variables > Actions)
+          EUSKALMET_PRIVATE_KEY: ${{ secrets.EUSKALMET_PRIVATE_KEY }}
+          EUSKALMET_FINGERPRINT: ${{ secrets.EUSKALMET_FINGERPRINT }}
         run: python -m auria.bucle --minutos 340 --intervalo 60 --subir-cada 2 --prevision-cada 15
       - name: Encadenar el siguiente tramo
         if: always()
