@@ -1,6 +1,6 @@
 {
- "ts": "2026-11-17T10:15:06+01:00",
- "salidas_desde_8": 6,
+ "ts": "2026-11-17T10:18:06+01:00",
+ "salidas_desde_8": 8,
  "salidas_anio": 5777,
  "actuaciones": [
   {
@@ -21,38 +21,38 @@
    "estado": "EN_SINIESTRO"
   },
   {
-   "tipo": "SANEADO DE CONSTRUCCIONES",
+   "tipo": "RETIRADA DE ÁRBOLES",
    "familia": "METEO_ASISTENCIA",
    "ubicacion": "VALLE DE TRAPAGA",
-   "zona": "ES San Andrés",
+   "zona": "ID Trapaga-Ugarte",
    "parque": "URIOSTE",
    "parque_nombre": "Urioste (Ortuella)",
    "vehiculos": [
     {
      "tipo": "Furgón utiles varios",
-     "estado": "EN_SINIESTRO",
-     "estado_txt": "Vehículo parado en siniestro"
+     "estado": "EN_RUTA",
+     "estado_txt": "Vehículo va a un siniestro"
     }
    ],
    "n_vehiculos": 1,
-   "estado": "EN_SINIESTRO"
+   "estado": "EN_RUTA"
   },
   {
    "tipo": "SANEADO DE CONSTRUCCIONES",
    "familia": "METEO_ASISTENCIA",
    "ubicacion": "BARAKALDO",
-   "zona": "CL Ravel",
+   "zona": "CL Merindad de Uribe",
    "parque": "URIOSTE",
    "parque_nombre": "Urioste (Ortuella)",
    "vehiculos": [
     {
      "tipo": "Auto escala articulada",
-     "estado": "EN_SINIESTRO",
-     "estado_txt": "Vehículo parado en siniestro"
+     "estado": "EN_RUTA",
+     "estado_txt": "Vehículo va a un siniestro"
     }
    ],
    "n_vehiculos": 1,
-   "estado": "EN_SINIESTRO"
+   "estado": "EN_RUTA"
   },
   {
    "tipo": "SANEADO DE CONSTRUCCIONES",
@@ -77,8 +77,8 @@
    "actuaciones": 2,
    "vehiculos": 2,
    "propuesto": 0,
-   "en_ruta": 0,
-   "en_siniestro": 2,
+   "en_ruta": 2,
+   "en_siniestro": 0,
    "regresando": 0
   },
   "ARTAZA": {
