@@ -18,12 +18,20 @@ PLANTILLA = """inicio,fin,nombre,nivel,parques
 
 
 def cargar() -> pd.DataFrame:
+    """Eventos manuales (datos/eventos.csv) + automáticos de datos abiertos (datos/eventos_auto.csv:
+    fiestas locales y agenda cultural, ver auria.eventos_publicos)."""
     if not RUTA.exists():
         RUTA.write_text(PLANTILLA, encoding="utf-8")
-    try:
-        e = pd.read_csv(RUTA, comment="#", skipinitialspace=True)
-    except pd.errors.EmptyDataError:
+    partes = []
+    for ruta in (RUTA, config.DATOS / "eventos_auto.csv"):
+        try:
+            partes.append(pd.read_csv(ruta, comment="#", skipinitialspace=True))
+        except (pd.errors.EmptyDataError, FileNotFoundError):
+            pass
+    partes = [x for x in partes if len(x)]
+    if not partes:
         return pd.DataFrame(columns=["inicio", "fin", "nombre", "nivel", "parques"])
+    e = pd.concat(partes, ignore_index=True)
     if e.empty:
         return e
     e["inicio"] = pd.to_datetime(e["inicio"])

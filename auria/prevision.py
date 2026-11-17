@@ -73,7 +73,32 @@ def meteo_parques(dias_pasados=14, dias_futuros=2) -> pd.DataFrame:
         crudo = crudo.merge(olas.rename(columns={"wave_height": "ola_m"}), on=["parque", "time"], how="left")
     except Exception as e:
         print(f"Aviso oleaje: {e}")
+    crudo = con_observado(crudo)
     return meteo_desde_crudo(crudo)
+
+
+def con_observado(crudo):
+    """Sustituye, en las horas ya pasadas, la lluvia, temperatura y humedad del modelo por lo MEDIDO en la
+    estación de Euskalmet de cada parque (prediccion/estaciones_ultimo.csv, lo deja el recolector)."""
+    ruta = config.DIR_PREDICCION / "estaciones_ultimo.csv"
+    try:
+        o = pd.read_csv(ruta, parse_dates=["hora"])
+    except Exception:
+        return crudo
+    if o.empty:
+        return crudo
+    c = crudo.copy()
+    c["_h"] = pd.to_datetime(c["time"])
+    o = o.rename(columns={"hora": "_h"})
+    cols = {"lluvia_obs": "precipitation", "temp_obs": "temperature_2m", "humedad_obs": "relative_humidity_2m"}
+    m = c.merge(o[["parque", "_h"] + [k for k in cols if k in o]], on=["parque", "_h"], how="left")
+    ahora = pd.Timestamp.now().floor("h")
+    for k, dest in cols.items():
+        if k in m and dest in m:
+            usar = m[k].notna() & (m["_h"] < ahora)
+            m.loc[usar, dest] = m.loc[usar, k]
+    m.attrs["horas_observadas"] = int(m["lluvia_obs"].notna().sum()) if "lluvia_obs" in m else 0
+    return m.drop(columns=["_h"] + [k for k in cols if k in m])
 
 
 def meteo_desde_crudo(crudo):
@@ -187,7 +212,7 @@ def predecir(horas=6, meteo=None, traf=None, ahora=None, guardar=True):
                 v["trafico_seguridad"] = int(traf.loc[p, "seguridad_vial"])
                 v["trafico_obras"] = int(traf.loc[p, "obras"])
             nv, horas_evento, nombre_ev = eventos.en_hora(evs, p, hora)
-            v["evento_nivel"], v["horas_para_evento"] = nv, horas_evento
+            v["evento_nivel"], v["horas_para_evento"], v["evento_nombre"] = nv, horas_evento, nombre_ev
             v["activas_parque"] = directo.get(p, {}).get("activas", 0) if i == 0 else 0
             v["nuevas_parque_1h"] = directo.get(p, {}).get("nuevas_1h", 0)
 

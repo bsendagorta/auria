@@ -50,6 +50,7 @@ VARIABLES = {
     "niebla": "Posible niebla (HR ≥97 %, sin viento)", "HELADA": "Helada", "NIEVE": "Nieve",
     "VIENTO_FUERTE": "Rachas ≥70 km/h", "SUR_RACHEADO": "Sur racheado", "NORTE_PERSISTENTE": "Norte persistente",
     "LLUVIA_PERSISTENTE": "Lluvia persistente", "CALOR": "Calor", "BORRASCA": "Borrasca",
+    "fiesta_local": "Fiesta local en la zona (y su víspera por la tarde)",
 }
 _S = requests.Session()
 _S.headers["User-Agent"] = config.USER_AGENT
@@ -162,7 +163,25 @@ def tabla_horaria(d, clase, sit):
     x["lluvia_fuerte"] = ll >= 4
     x["primera_lluvia"] = (ll >= 0.1) & (x["dias_sin_lluvia"] >= 3)
     x["niebla"] = (x["humedad"] >= 97) & (x["viento_kmh"] < 6) & (ll < 0.1)
+    x["fiesta_local"] = _fiestas(x)
     return x
+
+
+def _fiestas(x):
+    """Hora en la que algún municipio de la zona del parque celebra su fiesta local (o la víspera desde las 18 h)."""
+    from .parques import INE_A_PARQUE
+    ruta = config.DATOS / "festivos_locales.csv"
+    if not ruta.exists():
+        return False
+    f = pd.read_csv(ruta, dtype={"cod_ine": str})
+    f["parque"] = f["cod_ine"].map(INE_A_PARQUE)
+    f["fecha"] = pd.to_datetime(f["fecha"]).dt.date
+    dias = set(zip(f["parque"], f["fecha"]))
+    vispera = set(zip(f["parque"], f["fecha"] - pd.Timedelta(days=1)))
+    fecha = x["hora"].dt.date
+    en_dia = pd.Series([(p, d) in dias for p, d in zip(x["parque"], fecha)], index=x.index)
+    en_visp = pd.Series([(p, d) in vispera for p, d in zip(x["parque"], fecha)], index=x.index) & (x["hora"].dt.hour >= 18)
+    return en_dia | en_visp
 
 
 def _reparto(tr):
@@ -312,6 +331,7 @@ def factor_hora(v: dict, clase="accidente"):
     x.setdefault("HELADA", v.get("HELADA", float(v.get("temp", 15)) <= 0.5))
     x.setdefault("NIEVE", v.get("NIEVE", float(v.get("nieve") or 0) > 0))
     x.setdefault("CALOR", v.get("CALOR", float(v.get("temp", 15)) >= 30))
+    x.setdefault("fiesta_local", "Fiesta local" in str(v.get("evento_nombre", "")))
     k, textos = 1.0, []
     for nombre, e in m.get("variables", {}).items():
         activa = x.get(nombre, bool(v.get(nombre, False)))

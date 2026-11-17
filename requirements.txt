@@ -11,3 +11,6 @@ pydeck>=0.9
 matplotlib
 PyJWT
 cryptography
+shapely
+pyshp
+pyproj

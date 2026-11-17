@@ -6,3 +6,4 @@ holidays>=0.50
 lightgbm>=4.3
 PyJWT
 cryptography
+shapely

@@ -57,6 +57,8 @@ jobs:
           else
             python -m auria.efectos_meteo || echo "::warning::efectos meteo fallaron"
           fi
+      - name: 4a · Fiestas locales y agenda cultural (Open Data Euskadi)
+        run: python -m auria.eventos_publicos || echo "::warning::eventos públicos fallaron"
       - name: 4c · Accidentes y obstáculos con hora exacta frente a la meteo de esa hora
         run: python -m auria.accidentes_hora --descargar || echo "::warning::accidentes por hora fallaron"
       - name: 5 · Modelo horario (capturas por minuto)

@@ -43,6 +43,8 @@ def main(argv=None):
     ultima_prevision = None
     ultimo_datex = None
     ultimo_euskalmet = None
+    ultimo_eventos = None
+    ultima_estacion = None
     ok = fallos = 0
     while time.monotonic() < fin:
         t0 = time.monotonic()
@@ -66,6 +68,22 @@ def main(argv=None):
                     ultimo_euskalmet = time.monotonic()
             except Exception as e:
                 print(f"Aviso Euskalmet: {e}", flush=True)
+            # estaciones de Euskalmet (lo medido) cada 10 min; agenda y fiestas una vez al día
+            try:
+                from . import estaciones
+                if ultima_estacion is None or time.monotonic() - ultima_estacion >= 600:
+                    t = estaciones.directo()
+                    print(f"Estaciones: {len(t)} horas-parque medidas", flush=True)
+                    ultima_estacion = time.monotonic()
+            except Exception as e:
+                print(f"Aviso estaciones: {e}", flush=True)
+            try:
+                if ultimo_eventos is None or time.monotonic() - ultimo_eventos >= 6 * 3600:
+                    from . import eventos_publicos
+                    eventos_publicos.main()
+                    ultimo_eventos = time.monotonic()
+            except Exception as e:
+                print(f"Aviso eventos: {e}", flush=True)
             ultimo_datex = time.monotonic()
         if a.prevision_cada and (ultima_prevision is None
                                  or time.monotonic() - ultima_prevision >= a.prevision_cada * 60):

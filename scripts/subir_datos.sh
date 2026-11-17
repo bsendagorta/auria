@@ -5,7 +5,7 @@ git config user.name  "auria-bot"
 git config user.email "auria-bot@users.noreply.github.com"
 # si quedó un rebase a medias de un intento anterior, se descarta
 git rebase --abort 2>/dev/null || true
-for r in datos/online datos/modelo datos/aforos datos/meteo datos/trafico prediccion informes datos/eventos.csv datos/festivos_locales.csv; do
+for r in datos/online datos/modelo datos/aforos datos/meteo datos/trafico prediccion informes datos/eventos.csv datos/festivos_locales.csv datos/eventos_publicos.csv datos/eventos_auto.csv; do
   [ -e "$r" ] && git add "$r" 2>/dev/null
 done
 if git diff --cached --quiet; then echo "Sin cambios"; exit 0; fi
