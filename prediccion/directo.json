@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-17T09:59:57+01:00",
+ "ts": "2026-11-17T10:02:57+01:00",
  "salidas_desde_8": 4,
  "salidas_anio": 5777,
  "actuaciones": [
@@ -30,12 +30,12 @@
    "vehiculos": [
     {
      "tipo": "Furgón utiles varios",
-     "estado": "PROPUESTO",
-     "estado_txt": "Vehículo propuesto"
+     "estado": "EN_RUTA",
+     "estado_txt": "Vehículo va a un siniestro"
     }
    ],
    "n_vehiculos": 1,
-   "estado": "PROPUESTO"
+   "estado": "EN_RUTA"
   },
   {
    "tipo": "SANEADO DE CONSTRUCCIONES",
@@ -59,8 +59,8 @@
   "URIOSTE": {
    "actuaciones": 2,
    "vehiculos": 2,
-   "propuesto": 1,
-   "en_ruta": 1,
+   "propuesto": 0,
+   "en_ruta": 2,
    "en_siniestro": 0,
    "regresando": 0
   },
