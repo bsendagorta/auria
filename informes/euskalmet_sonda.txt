@@ -1,0 +1,13 @@
+disponible: True | secreto: 1628 caracteres, cabeceras [], saltos 0 | huella 64 caracteres
+
+== /euskalmet/geo/regions -> 403
+{"code":"NOT_VERIFIED_JWT","message":"JWT was NOT verified: INVALID_SIGNATURE"}
+
+== /euskalmet/geo/regions/basque_country -> 403
+{"code":"NOT_VERIFIED_JWT","message":"JWT was NOT verified: INVALID_SIGNATURE"}
+
+== /euskalmet/geo/regions/basque_country/zones -> 403
+{"code":"NOT_VERIFIED_JWT","message":"JWT was NOT verified: INVALID_SIGNATURE"}
+
+== /euskalmet/alerts/zones/basque_country/forecast/at/2026/11/17 -> 403
+{"code":"NOT_VERIFIED_JWT","message":"JWT was NOT verified: INVALID_SIGNATURE"}
