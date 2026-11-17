@@ -70,8 +70,11 @@ def _repo():
         return REPO_POR_DEFECTO, None
 
 
-def _bajar(ruta, cada):
-    """Contenido de un fichero del repo: GitHub (al día) y, si falla, la copia local."""
+ERRORES = {}
+
+
+def _bajar(ruta, cada, local=True):
+    """Contenido de un fichero del repo: GitHub (al día) y, si falla, la API de GitHub o la copia local."""
     repo, tok = _repo()
     try:
         if tok:
@@ -83,9 +86,18 @@ def _bajar(ruta, cada):
                          params={"t": int(datetime.now().timestamp() // cada)}, timeout=15)
         r.raise_for_status()
         return r.content, "GitHub"
-    except Exception:
-        p = RAIZ / ruta
-        return (p.read_bytes(), "copia local") if p.exists() else (None, None)
+    except Exception as e:
+        ERRORES[ruta] = f"raw: {e}"
+    try:   # segunda vía: API de contenidos (otro servidor y otro límite)
+        r = requests.get(f"https://api.github.com/repos/{repo}/contents/{ruta}",
+                         headers={"Accept": "application/vnd.github.raw+json",
+                                  **({"Authorization": f"Bearer {tok}"} if tok else {})}, timeout=15)
+        r.raise_for_status()
+        return r.content, "GitHub API"
+    except Exception as e:
+        ERRORES[ruta] = ERRORES.get(ruta, "") + f" · api: {e}"
+    p = RAIZ / ruta
+    return (p.read_bytes(), "copia local (desactualizada)") if local and p.exists() else (None, None)
 
 
 @st.cache_data(ttl=120, show_spinner=False)
@@ -100,9 +112,9 @@ def leer_csv(ruta):
     return pd.read_csv(io.BytesIO(b), dtype={"cod_ine": str}) if b else None
 
 
-@st.cache_data(ttl=50, show_spinner=False)
+@st.cache_data(ttl=30, show_spinner=False)
 def leer_directo():
-    b, _ = _bajar("prediccion/directo.json", 50)
+    b, _ = _bajar("prediccion/directo.json", 30, local=False)
     if b:
         return json.loads(b), None
     try:   # en local se puede leer la web directamente
@@ -111,7 +123,7 @@ def leer_directo():
         html = requests.get(cfg.URL_SALIDAS_ONLINE, timeout=6, headers={"User-Agent": cfg.USER_AGENT}).text
         return directo.enriquecer(recolector_online.parsear(html)), None
     except Exception as e:
-        return None, str(e)
+        return None, (ERRORES.get("prediccion/directo.json", "") + f" · web: {e}")
 
 
 def kpi(col, valor, etiqueta, detalle=""):
@@ -328,9 +340,9 @@ with t_carr:
 
 # ------------------------------------------------------------------ APRENDIZAJE
 with t_apr:
-    ev, _ = leer_json("datos/modelo/evaluacion.json")
-    mh, _ = leer_json("datos/modelo/modelo_horario.json")
-    mm, _ = leer_json("datos/modelo/modelo_mensual_municipio.json")
+    ev, _ = leer_json("datos/modelo/evaluacion.json", 600)
+    mh, _ = leer_json("datos/modelo/modelo_horario.json", 600)
+    mm, _ = leer_json("datos/modelo/modelo_mensual_municipio.json", 600)
     st.markdown("**¿Acierta AURIA?** Cada hora se compara lo que se predijo con lo que pasó "
                 "(contador de salidas de bizkaia.eus).")
     if ev and ev.get("estado") == "ok":
