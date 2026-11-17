@@ -141,6 +141,56 @@ def leer_directo():
         return None, (ERRORES.get("prediccion/directo.json", "") + f" · web: {e}")
 
 
+@st.cache_data(ttl=86400, show_spinner=False)
+def geo(ruta):
+    b, _ = _bajar(ruta, 86400)
+    return json.loads(b) if b else None
+
+
+def capas_zonas(parques, por_municipio=False):
+    """Zona de actuación de cada parque (silueta de sus municipios) coloreada por el semáforo."""
+    idx = {p["id"]: p for p in parques}
+    capas = []
+    if por_municipio:
+        g = geo("datos/geo/municipios_bizkaia.geojson")
+        if g:
+            mx = max(f["properties"]["salidas_anio"] for f in g["features"] if f["properties"]["parque"] != "BILBAO")
+            for f in g["features"]:
+                pr = f["properties"]
+                if pr["parque"] == "BILBAO":
+                    pr["color"] = [150, 150, 150, 90]
+                else:   # secuencial azul: más salidas, más oscuro
+                    t = (pr["salidas_anio"] / max(mx, 1)) ** 0.5
+                    pr["color"] = [int(205 - 192 * t), int(226 - 172 * t), int(251 - 144 * t), 190]
+                pr["txt"] = f"{pr['nombre']}\nParque: {pr['parque_nombre']}\n{pr['salidas_anio']:.0f} salidas/año (2023-25)"
+            capas.append(pdk.Layer("GeoJsonLayer", g, get_fill_color="properties.color", get_line_color=[255, 255, 255],
+                                   line_width_min_pixels=1, pickable=True, stroked=True, filled=True))
+    g = geo("datos/geo/zonas_parques.geojson")
+    if g:
+        for f in g["features"]:
+            pr = f["properties"]
+            p = idx.get(pr["parque"])
+            if p is None:
+                pr["color"], pr["borde"] = [150, 150, 150, 70], [120, 120, 120, 200]
+                pr["txt"] = f"{pr['nombre']}"
+            else:
+                c = NIVEL_RGB[p["nivel"]]
+                pr["color"] = [0, 0, 0, 0] if por_municipio else c + [95]
+                pr["borde"] = c + [255]
+                sit = p.get("situacion_ahora") or "sin situación meteorológica destacable"
+                pr["txt"] = (f"{p['nombre']} · {EMOJI[p['nivel']]} {p['nivel']} (×{p['ratio_max']} lo normal)\n"
+                             f"Esperadas 6 h: {p['salidas_esperadas_6h']} (normal {p['normal_6h']})\n"
+                             f"Ahora: {sit}\n{pr['n_municipios']} municipios: {pr['municipios']}")
+        capas.append(pdk.Layer("GeoJsonLayer", g, get_fill_color="properties.color", get_line_color="properties.borde",
+                               line_width_min_pixels=2.5, pickable=not por_municipio, stroked=True, filled=True))
+    # el parque (cuartel) como punto
+    capas.append(pdk.Layer("ScatterplotLayer", pd.DataFrame([{"lat": p["lat"], "lon": p["lon"],
+                                                              "txt": p["nombre"]} for p in parques]),
+                           get_position="[lon, lat]", get_fill_color=[255, 255, 255, 255], get_line_color=[29, 29, 27],
+                           stroked=True, line_width_min_pixels=2, get_radius=500, radius_min_pixels=5, pickable=True))
+    return capas
+
+
 def rumbo(g):
     try:
         return ["N", "NE", "E", "SE", "S", "SO", "O", "NO"][int(((float(g) + 22.5) % 360) // 45)]
@@ -212,13 +262,7 @@ def seccion_ahora():
                 pts.append({"lat": ll[0] + 0.004 * (i % 3), "lon": ll[1] + 0.004 * (i // 3 % 3),
                             "txt": f"{FAMILIA_ICONO.get(x['familia'], '•')} {x['tipo']}\n{x['ubicacion']} · "
                                    f"{x['n_vehiculos']} veh."})
-        dp = pd.DataFrame([{"lat": p["lat"], "lon": p["lon"], "color": NIVEL_RGB[p["nivel"]] + [170],
-                            "radio": 2200 + 2600 * p["salidas_esperadas_6h"],
-                            "txt": f"{p['nombre']}\n{EMOJI[p['nivel']]} {p['nivel']} · ×{p['ratio_max']} lo normal\n"
-                                   f"esperadas 6 h: {p['salidas_esperadas_6h']}"} for p in parques])
-        capas = [pdk.Layer("ScatterplotLayer", dp, get_position="[lon, lat]", get_fill_color="color",
-                           get_radius="radio", pickable=True, stroked=True, get_line_color=[255, 255, 255],
-                           line_width_min_pixels=2)]
+        capas = capas_zonas(parques, por_municipio=st.session_state.get("ver_municipios", False))
         if pts:
             capas.append(pdk.Layer("ScatterplotLayer", pd.DataFrame(pts), get_position="[lon, lat]",
                                    get_fill_color=[20, 20, 20, 230], get_line_color=[255, 255, 255],
@@ -227,8 +271,10 @@ def seccion_ahora():
         st.pydeck_chart(pdk.Deck(map_style=None, tooltip={"text": "{txt}"}, layers=capas,
                                  initial_view_state=pdk.ViewState(latitude=43.24, longitude=-2.85, zoom=8.7)),
                         height=430)
-        st.caption("Círculos de color: riesgo de cada parque (semáforo, tamaño = intervenciones esperadas). "
-                   "Puntos negros: actuaciones en curso (situadas en su municipio).")
+        st.toggle("Ver municipios (color = salidas al año)", key="ver_municipios")
+        st.caption("Cada zona es el conjunto de municipios que cubre el parque, con el color de su semáforo. "
+                   "Puntos negros: actuaciones en curso. Bilbao (gris) tiene servicio municipal. "
+                   "Límites: IGN (CC-BY 4.0).")
     with der:
         st.markdown(f"**Actuaciones en curso** · leído {ts:%H:%M:%S}")
         if not act:
