@@ -25,7 +25,21 @@ def credenciales():
         clave = (DIR_SECRETOS / "privateKey.pem").read_text()
     if not huella and (DIR_SECRETOS / "fingerPrint.txt").exists():
         huella = (DIR_SECRETOS / "fingerPrint.txt").read_text()
-    return (clave, huella.strip()) if clave and huella else (None, None)
+    return (_pem(clave), huella.strip()) if clave and huella else (None, None)
+
+
+def _pem(txt):
+    """Rehace el PEM si al pegarlo como secreto se perdieron los saltos de línea o llegó con \\n literales."""
+    import re
+    t = txt.replace("\\n", "\n").replace("\r", "").strip().strip('"').strip("'")
+    m = re.search(r"-----BEGIN ([A-Z ]+)-----(.*?)-----END \1-----", t, re.S)
+    if not m:                       # solo el cuerpo en base64
+        tipo, cuerpo = "PRIVATE KEY", t
+    else:
+        tipo, cuerpo = m.group(1), m.group(2)
+    cuerpo = re.sub(r"[^A-Za-z0-9+/=]", "", cuerpo)
+    lineas = "\n".join(cuerpo[i:i + 64] for i in range(0, len(cuerpo), 64))
+    return f"-----BEGIN {tipo}-----\n{lineas}\n-----END {tipo}-----\n"
 
 
 def disponible():

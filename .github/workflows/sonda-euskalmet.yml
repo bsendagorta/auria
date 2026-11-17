@@ -19,10 +19,15 @@ jobs:
           python - <<'PY'
           import json, datetime, requests
           from auria import euskalmet as E
-          L=[f"disponible: {E.disponible()}"]
+          import os, re
+          raw=os.environ.get("EUSKALMET_PRIVATE_KEY","")
+          L=[f"disponible: {E.disponible()} | secreto: {len(raw)} caracteres, cabeceras {re.findall(r'BEGIN [A-Z ]+', raw)}, saltos {raw.count(chr(10))} | huella {len(os.environ.get('EUSKALMET_FINGERPRINT','').strip())} caracteres"]
           rutas=["/euskalmet/geo/regions","/euskalmet/geo/regions/basque_country","/euskalmet/geo/regions/basque_country/zones",
                  f"/euskalmet/alerts/zones/basque_country/forecast/at/{datetime.date.today():%Y/%m/%d}"]
-          tok=E.token(600)
+          try:
+              tok=E.token(600)
+          except Exception as e:
+              open("informes/euskalmet_sonda.txt","w").write("\n".join(L)+f"\nERROR token: {type(e).__name__}: {e}"); raise SystemExit(0)
           for r in rutas:
               try:
                   x=requests.get(E.BASE+r,headers={"Authorization":"Bearer "+tok},timeout=30)
