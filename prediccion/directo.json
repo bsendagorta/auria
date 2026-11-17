@@ -1,80 +1,41 @@
 {
- "ts": "2026-11-17T06:56:42+01:00",
- "salidas_desde_8": 51,
+ "ts": "2026-11-17T08:40:15+01:00",
+ "salidas_desde_8": 0,
  "salidas_anio": 5732,
  "actuaciones": [
   {
-   "tipo": "RETIRADA DE ÁRBOLES",
-   "familia": "METEO_ASISTENCIA",
-   "ubicacion": "GALDAKAO",
-   "zona": "BA Aperribai",
-   "parque": "BASAURI",
-   "parque_nombre": "Basauri",
-   "vehiculos": [
-    {
-     "tipo": "Auto escala articulada",
-     "estado": "REGRESANDO",
-     "estado_txt": "Vehículo volviendo de un sin."
-    },
-    {
-     "tipo": "Genérico Mando Gestión",
-     "estado": "OTRO",
-     "estado_txt": "Vehículo disponible"
-    }
-   ],
-   "n_vehiculos": 2,
-   "estado": "REGRESANDO"
-  },
-  {
    "tipo": "SANEADO DE CONSTRUCCIONES",
    "familia": "METEO_ASISTENCIA",
-   "ubicacion": "BARAKALDO-",
-   "zona": "",
-   "parque": "URIOSTE",
-   "parque_nombre": "Urioste (Ortuella)",
+   "ubicacion": "LEIOA",
+   "zona": "CL Langileria",
+   "parque": "ARTAZA",
+   "parque_nombre": "Artaza (Leioa)",
    "vehiculos": [
     {
-     "tipo": "Auto escala articulada",
+     "tipo": "Transporte Material y Personal",
      "estado": "EN_SINIESTRO",
      "estado_txt": "Vehículo parado en siniestro"
     }
    ],
    "n_vehiculos": 1,
    "estado": "EN_SINIESTRO"
-  },
-  {
-   "tipo": "RETIRADA DE ÁRBOLES",
-   "familia": "METEO_ASISTENCIA",
-   "ubicacion": "A BI-3733 BERANGO A EGUZKITZA",
-   "zona": "A BI-3733 BERANGO A EGUZKITZA",
-   "parque": "SIN_PARQUE",
-   "parque_nombre": "Fuera de zona / Bilbao",
-   "vehiculos": [
-    {
-     "tipo": "Auto escala articulada",
-     "estado": "PROPUESTO",
-     "estado_txt": "Vehículo propuesto"
-    }
-   ],
-   "n_vehiculos": 1,
-   "estado": "PROPUESTO"
   }
  ],
  "por_parque": {
   "URIOSTE": {
-   "actuaciones": 1,
-   "vehiculos": 1,
-   "propuesto": 0,
-   "en_ruta": 0,
-   "en_siniestro": 1,
-   "regresando": 0
-  },
-  "ARTAZA": {
    "actuaciones": 0,
    "vehiculos": 0,
    "propuesto": 0,
    "en_ruta": 0,
    "en_siniestro": 0,
+   "regresando": 0
+  },
+  "ARTAZA": {
+   "actuaciones": 1,
+   "vehiculos": 1,
+   "propuesto": 0,
+   "en_ruta": 0,
+   "en_siniestro": 1,
    "regresando": 0
   },
   "DERIO": {
@@ -86,12 +47,12 @@
    "regresando": 0
   },
   "BASAURI": {
-   "actuaciones": 1,
-   "vehiculos": 2,
+   "actuaciones": 0,
+   "vehiculos": 0,
    "propuesto": 0,
    "en_ruta": 0,
    "en_siniestro": 0,
-   "regresando": 1
+   "regresando": 0
   },
   "IURRETA": {
    "actuaciones": 0,
@@ -126,9 +87,9 @@
    "regresando": 0
   },
   "SIN_PARQUE": {
-   "actuaciones": 1,
-   "vehiculos": 1,
-   "propuesto": 1,
+   "actuaciones": 0,
+   "vehiculos": 0,
+   "propuesto": 0,
    "en_ruta": 0,
    "en_siniestro": 0,
    "regresando": 0
