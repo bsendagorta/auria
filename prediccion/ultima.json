@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-17T13:09+01:00",
+ "generado": "2026-11-17T13:25+01:00",
  "horizonte_h": 6,
  "modelo": "base+reglas",
  "fuentes_ok": {
@@ -10,8 +10,8 @@
   "salidas_esperadas_6h": 4.8,
   "normal_6h": 4.8,
   "contador": {
-   "ts": "2026-11-17T13:09:13+01:00",
-   "desde_8": 15,
+   "ts": "2026-11-17T13:25:13+01:00",
+   "desde_8": 17,
    "anio": 5800
   }
  },
@@ -34,7 +34,7 @@
    "situaciones_6h": [],
    "directo": {
     "activas": 1,
-    "nuevas_1h": 1
+    "nuevas_1h": 2
    },
    "horas": [
     {
@@ -1324,7 +1324,7 @@
    "situaciones_6h": [],
    "directo": {
     "activas": 1,
-    "nuevas_1h": 0
+    "nuevas_1h": 1
    },
    "horas": [
     {
@@ -2581,8 +2581,8 @@
   {
    "tipo": "NEUTRALIZACIÓN DE ABEJAS Y AVISPAS",
    "ubicacion": "KARRANTZA HARANA/VALLE DE",
-   "zona": "BA Presa",
-   "vehiculos": "Bomba forestal pesada (Vehículo parado en siniestro)",
+   "zona": "BA San Esteban",
+   "vehiculos": "Bomba forestal pesada (Vehículo va a un siniestro)",
    "parque": "ZALLA"
   },
   {
@@ -2594,9 +2594,9 @@
   },
   {
    "tipo": "SANEADO DE CONSTRUCCIONES",
-   "ubicacion": "BARAKALDO",
-   "zona": "CL Merindad de Uribe",
-   "vehiculos": "Auto escala articulada (Vehículo volviendo de un sin.)",
+   "ubicacion": "SANTURTZI",
+   "zona": "AV Antonio Alzaga",
+   "vehiculos": "Auto escala articulada (Vehículo va a un siniestro)",
    "parque": "URIOSTE"
   }
  ],
