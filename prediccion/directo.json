@@ -1,7 +1,7 @@
 {
- "ts": "2026-11-17T09:06:15+01:00",
- "salidas_desde_8": 0,
- "salidas_anio": 5746,
+ "ts": "2026-11-17T09:36:45+01:00",
+ "salidas_desde_8": 1,
+ "salidas_anio": 5770,
  "actuaciones": [
   {
    "tipo": "SANEADO DE CONSTRUCCIONES",
@@ -23,10 +23,10 @@
   {
    "tipo": "SANEADO DE CONSTRUCCIONES",
    "familia": "METEO_ASISTENCIA",
-   "ubicacion": "SESTAO",
-   "zona": "GR Nuestra Señora del Carmen",
-   "parque": "URIOSTE",
-   "parque_nombre": "Urioste (Ortuella)",
+   "ubicacion": "ERANDIO",
+   "zona": "CL Ibarra",
+   "parque": "ARTAZA",
+   "parque_nombre": "Artaza (Leioa)",
    "vehiculos": [
     {
      "tipo": "Auto escala articulada",
@@ -36,6 +36,23 @@
    ],
    "n_vehiculos": 1,
    "estado": "EN_SINIESTRO"
+  },
+  {
+   "tipo": "SANEADO DE CONSTRUCCIONES",
+   "familia": "METEO_ASISTENCIA",
+   "ubicacion": "VALLE DE TRAPAGA",
+   "zona": "CL Funikular",
+   "parque": "URIOSTE",
+   "parque_nombre": "Urioste (Ortuella)",
+   "vehiculos": [
+    {
+     "tipo": "Auto escala articulada",
+     "estado": "EN_RUTA",
+     "estado_txt": "Vehículo va a un siniestro"
+    }
+   ],
+   "n_vehiculos": 1,
+   "estado": "EN_RUTA"
   }
  ],
  "por_parque": {
@@ -43,16 +60,16 @@
    "actuaciones": 1,
    "vehiculos": 1,
    "propuesto": 0,
-   "en_ruta": 0,
-   "en_siniestro": 1,
+   "en_ruta": 1,
+   "en_siniestro": 0,
    "regresando": 0
   },
   "ARTAZA": {
-   "actuaciones": 1,
-   "vehiculos": 1,
+   "actuaciones": 2,
+   "vehiculos": 2,
    "propuesto": 0,
    "en_ruta": 0,
-   "en_siniestro": 0,
+   "en_siniestro": 1,
    "regresando": 1
   },
   "DERIO": {
