@@ -36,7 +36,7 @@ FEATURES = ["parque_cod", "hora_sin", "hora_cos", "dow", "mes_sin", "mes_cos", "
 
 def _features(d: pd.DataFrame) -> pd.DataFrame:
     d = d.copy()
-    hora = pd.to_datetime(d["hora"])
+    hora = pd.to_datetime(d["hora"], format="mixed")
     d["parque_cod"] = d["parque"].map(PARQUE_COD)
     d["hora_sin"], d["hora_cos"] = np.sin(2 * np.pi * hora.dt.hour / 24), np.cos(2 * np.pi * hora.dt.hour / 24)
     d["mes_sin"], d["mes_cos"] = np.sin(2 * np.pi * hora.dt.month / 12), np.cos(2 * np.pi * hora.dt.month / 12)
@@ -55,7 +55,7 @@ def dataset():
     if not var:
         return None, None
     v = pd.concat(var, ignore_index=True)
-    v["hora"] = pd.to_datetime(v["hora"])
+    v["hora"] = pd.to_datetime(v["hora"], format="mixed")
     v = v.drop_duplicates(["parque", "hora"], keep="first")
     r = resumir(guardar=False)
     if r is None:

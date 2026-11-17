@@ -34,7 +34,7 @@ def predicciones() -> pd.DataFrame:
         return pd.DataFrame()
     p = pd.concat([pd.read_csv(r) for r in rutas], ignore_index=True)
     p = p[p["horizonte"] == 0].copy()
-    p["hora"] = pd.to_datetime(p["hora"])
+    p["hora"] = pd.to_datetime(p["hora"], format="mixed")
     p["generado"] = pd.to_datetime(p["generado"].str[:16])
     p = p.sort_values("generado").drop_duplicates(["parque", "hora"], keep="first")
     g = p.groupby("hora")

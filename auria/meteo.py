@@ -103,7 +103,7 @@ def main(argv=None):
     mun = pd.read_csv(config.PROCESADO / "municipios.csv", dtype={"cod_ine": str})
     sin = mun[mun["lat"].isna()]
     if len(sin):
-        print(f"Aviso: {len(sin)} municipios sin coordenadas se omiten: {', '.join(sin['municipio'])}")
+        print(f"Aviso: {len(sin)} municipios sin coordenadas se omiten: {', '.join(sin['municipio'].astype(str))}")
     diaria = descargar(mun, a.desde, a.hasta)
     diaria.to_csv(config.PROCESADO / "meteo_diaria.csv", index=False)
     mensual(diaria).to_csv(config.PROCESADO / "meteo_mensual.csv", index=False)
