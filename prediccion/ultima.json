@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-17T10:13+01:00",
+ "generado": "2026-11-17T10:29+01:00",
  "horizonte_h": 6,
  "modelo": "base+reglas",
  "fuentes_ok": {
@@ -10,9 +10,9 @@
   "salidas_esperadas_6h": 4.8,
   "normal_6h": 4.8,
   "contador": {
-   "ts": "2026-11-17T10:13:04+01:00",
-   "desde_8": 6,
-   "anio": 5777
+   "ts": "2026-11-17T10:29:04+01:00",
+   "desde_8": 8,
+   "anio": 5781
   }
  },
  "parques": [
@@ -1652,7 +1652,7 @@
    "situaciones_6h": [],
    "directo": {
     "activas": 2,
-    "nuevas_1h": 3
+    "nuevas_1h": 5
    },
    "horas": [
     {
@@ -2605,24 +2605,24 @@
    "parque": "ARTAZA"
   },
   {
-   "tipo": "SANEADO DE CONSTRUCCIONES",
+   "tipo": "RETIRADA DE ÁRBOLES",
    "ubicacion": "VALLE DE TRAPAGA",
-   "zona": "ES San Andrés",
-   "vehiculos": "Furgón utiles varios (Vehículo parado en siniestro)",
+   "zona": "ID Trapaga-Ugarte",
+   "vehiculos": "Furgón utiles varios (Vehículo va a un siniestro)",
    "parque": "URIOSTE"
   },
   {
    "tipo": "SANEADO DE CONSTRUCCIONES",
    "ubicacion": "BARAKALDO",
-   "zona": "CL Ravel",
-   "vehiculos": "Auto escala articulada (Vehículo parado en siniestro)",
+   "zona": "CL Merindad de Uribe",
+   "vehiculos": "Auto escala articulada (Vehículo va a un siniestro)",
    "parque": "URIOSTE"
   },
   {
    "tipo": "SANEADO DE CONSTRUCCIONES",
    "ubicacion": "GETXO",
    "zona": "CL Bidebarrieta",
-   "vehiculos": "Auto escala articulada (Vehículo va a un siniestro)",
+   "vehiculos": "Auto escala articulada (Vehículo parado en siniestro)",
    "parque": "ARTAZA"
   }
  ],
