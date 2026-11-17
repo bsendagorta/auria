@@ -108,7 +108,13 @@ def main(argv=None):
     sin = mun[mun["lat"].isna()]
     if len(sin):
         print(f"Aviso: {len(sin)} municipios sin coordenadas se omiten: {', '.join(str(x) for x in sin['municipio'])}")
-    diaria = descargar(mun, a.desde, a.hasta)
+    # Open-Meteo limita por "peso" de las peticiones (≈10 000/día por IP): 114 municipios × 6 años lo
+    # superan. Se descarga un punto por parque (8) y cada municipio toma la meteo de su parque.
+    from .parques import PARQUES, INE_A_PARQUE
+    puntos = pd.DataFrame([{"cod_ine": k, "lat": v["lat"], "lon": v["lon"]} for k, v in PARQUES.items()])
+    por_parque = descargar(puntos, a.desde, a.hasta).rename(columns={"cod_ine": "parque"})
+    mun = mun.assign(parque=mun["cod_ine"].map(INE_A_PARQUE)).dropna(subset=["parque"])
+    diaria = mun[["cod_ine", "parque"]].merge(por_parque, on="parque").drop(columns="parque")
     diaria.to_csv(config.PROCESADO / "meteo_diaria.csv", index=False)
     mensual(diaria).to_csv(config.PROCESADO / "meteo_mensual.csv", index=False)
     print(f"Meteo diaria: {len(diaria):,} filas")
