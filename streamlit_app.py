@@ -27,10 +27,11 @@ def _icono_inicio():
     """Icono y nombre de AURIA al añadir el panel a la pantalla de inicio (iPhone/Android).
     Streamlit no deja tocar su <head>: un script (st.html con JavaScript) añade las etiquetas al
     documento de la app y al de la ventana principal de Streamlit Cloud (mismo origen). Iconos en static/ (servidos en /app/static/)."""
-    v = "3"
+    v = "4"
     st.html(f"""<script>
     (function() {{
-      const base = window.location.origin + "/app/static/";
+      // en Streamlit Cloud la app vive en /~/+/ : los estáticos están en /~/+/app/static/
+      const base = new URL("app/static/", window.location.href.split("?")[0].replace(/[^/]*$/, "")).href;
       const docs = [document];
       try {{ if (window.top !== window) docs.push(window.top.document); }} catch (e) {{}}
       for (const d of docs) {{
