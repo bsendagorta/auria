@@ -1,6 +1,6 @@
 {
- "ts": "2026-11-18T14:34:23+01:00",
- "salidas_desde_8": 6,
+ "ts": "2026-11-18T14:37:23+01:00",
+ "salidas_desde_8": 7,
  "salidas_anio": 5814,
  "actuaciones": [
   {
@@ -24,33 +24,16 @@
    ],
    "n_vehiculos": 2,
    "estado": "EN_SINIESTRO"
-  },
-  {
-   "tipo": "NEUTRALIZACIÓN DE ABEJAS Y AVISPAS",
-   "familia": "ABEJAS_AVISPAS",
-   "ubicacion": "BARAKALDO",
-   "zona": "CL Colina Beurko",
-   "parque": "URIOSTE",
-   "parque_nombre": "Urioste (Ortuella)",
-   "vehiculos": [
-    {
-     "tipo": "Transporte Material y Personal",
-     "estado": "REGRESANDO",
-     "estado_txt": "Vehículo volviendo de un sin."
-    }
-   ],
-   "n_vehiculos": 1,
-   "estado": "REGRESANDO"
   }
  ],
  "por_parque": {
   "URIOSTE": {
-   "actuaciones": 1,
-   "vehiculos": 1,
+   "actuaciones": 0,
+   "vehiculos": 0,
    "propuesto": 0,
    "en_ruta": 0,
    "en_siniestro": 0,
-   "regresando": 1
+   "regresando": 0
   },
   "ARTAZA": {
    "actuaciones": 0,
