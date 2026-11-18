@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-18T20:30+01:00",
+ "generado": "2026-11-18T20:46+01:00",
  "horizonte_h": 6,
  "modelo": "base+reglas",
  "fuentes_ok": {
@@ -10,7 +10,7 @@
   "salidas_esperadas_6h": 3.6,
   "normal_6h": 3.6,
   "contador": {
-   "ts": "2026-11-18T20:30:00+01:00",
+   "ts": "2026-11-18T20:46:52+01:00",
    "desde_8": 11,
    "anio": 5816
   }
