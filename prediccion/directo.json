@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-18T07:09:57+01:00",
+ "ts": "2026-11-18T07:12:54+01:00",
  "salidas_desde_8": 37,
  "salidas_anio": 5804,
  "actuaciones": [
@@ -13,12 +13,12 @@
    "vehiculos": [
     {
      "tipo": "Auto escala articulada",
-     "estado": "EN_RUTA",
-     "estado_txt": "Vehículo va a un siniestro"
+     "estado": "EN_SINIESTRO",
+     "estado_txt": "Vehículo parado en siniestro"
     }
    ],
    "n_vehiculos": 1,
-   "estado": "EN_RUTA"
+   "estado": "EN_SINIESTRO"
   }
  ],
  "por_parque": {
@@ -50,8 +50,8 @@
    "actuaciones": 1,
    "vehiculos": 1,
    "propuesto": 0,
-   "en_ruta": 1,
-   "en_siniestro": 0,
+   "en_ruta": 0,
+   "en_siniestro": 1,
    "regresando": 0
   },
   "IURRETA": {
