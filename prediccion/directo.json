@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-18T14:19:23+01:00",
+ "ts": "2026-11-18T14:22:23+01:00",
  "salidas_desde_8": 6,
  "salidas_anio": 5814,
  "actuaciones": [
@@ -15,9 +15,14 @@
      "tipo": "Bomba urbana pesada",
      "estado": "PROPUESTO",
      "estado_txt": "Vehículo propuesto"
+    },
+    {
+     "tipo": "Unidad de mando y jefatura",
+     "estado": "PROPUESTO",
+     "estado_txt": "Vehículo propuesto"
     }
    ],
-   "n_vehiculos": 1,
+   "n_vehiculos": 2,
    "estado": "PROPUESTO"
   },
   {
@@ -73,8 +78,8 @@
   },
   "IURRETA": {
    "actuaciones": 1,
-   "vehiculos": 1,
-   "propuesto": 1,
+   "vehiculos": 2,
+   "propuesto": 2,
    "en_ruta": 0,
    "en_siniestro": 0,
    "regresando": 0
