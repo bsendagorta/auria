@@ -1,7 +1,7 @@
 {
- "ts": "2026-11-18T11:56:13+01:00",
+ "ts": "2026-11-18T11:59:13+01:00",
  "salidas_desde_8": 4,
- "salidas_anio": 5804,
+ "salidas_anio": 5806,
  "actuaciones": [
   {
    "tipo": "SANEADO DE CONSTRUCCIONES",
@@ -13,17 +13,17 @@
    "vehiculos": [
     {
      "tipo": "Auto escala articulada",
-     "estado": "EN_RUTA",
-     "estado_txt": "Vehículo va a un siniestro"
+     "estado": "EN_SINIESTRO",
+     "estado_txt": "Vehículo parado en siniestro"
     },
     {
      "tipo": "Transporte Material y Personal",
-     "estado": "EN_RUTA",
-     "estado_txt": "Vehículo va a un siniestro"
+     "estado": "EN_SINIESTRO",
+     "estado_txt": "Vehículo parado en siniestro"
     }
    ],
    "n_vehiculos": 2,
-   "estado": "EN_RUTA"
+   "estado": "EN_SINIESTRO"
   }
  ],
  "por_parque": {
@@ -31,8 +31,8 @@
    "actuaciones": 1,
    "vehiculos": 2,
    "propuesto": 0,
-   "en_ruta": 2,
-   "en_siniestro": 0,
+   "en_ruta": 0,
+   "en_siniestro": 2,
    "regresando": 0
   },
   "ARTAZA": {
