@@ -1,8 +1,26 @@
 {
- "ts": "2026-11-18T21:30:51+01:00",
+ "ts": "2026-11-18T21:32:51+01:00",
  "salidas_desde_8": 11,
  "salidas_anio": 5816,
- "actuaciones": [],
+ "actuaciones": [
+  {
+   "tipo": "INCENDIO FORESTAL NIVEL 2",
+   "familia": "INCENDIO_FORESTAL_EXTERIOR",
+   "ubicacion": "KARRANTZA HARANA/VALLE DE",
+   "zona": "BA La Cerca",
+   "parque": "ZALLA",
+   "parque_nombre": "Zalla",
+   "vehiculos": [
+    {
+     "tipo": "Bomba forestal pesada",
+     "estado": "PROPUESTO",
+     "estado_txt": "Vehículo propuesto"
+    }
+   ],
+   "n_vehiculos": 1,
+   "estado": "PROPUESTO"
+  }
+ ],
  "por_parque": {
   "URIOSTE": {
    "actuaciones": 0,
@@ -61,9 +79,9 @@
    "regresando": 0
   },
   "ZALLA": {
-   "actuaciones": 0,
-   "vehiculos": 0,
-   "propuesto": 0,
+   "actuaciones": 1,
+   "vehiculos": 1,
+   "propuesto": 1,
    "en_ruta": 0,
    "en_siniestro": 0,
    "regresando": 0
