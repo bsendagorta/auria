@@ -1,46 +1,8 @@
 {
- "ts": "2026-11-18T05:51:54+01:00",
+ "ts": "2026-11-18T05:54:54+01:00",
  "salidas_desde_8": 37,
  "salidas_anio": 5804,
- "actuaciones": [
-  {
-   "tipo": "INCENDIO INDUSTRIAL NIVEL 2",
-   "familia": "INCENDIO_INDUSTRIAL",
-   "ubicacion": "IGORRE",
-   "zona": "BA Urkizu",
-   "parque": "BASAURI",
-   "parque_nombre": "Basauri",
-   "vehiculos": [
-    {
-     "tipo": "Auto escala articulada",
-     "estado": "EN_SINIESTRO",
-     "estado_txt": "Vehículo parado en siniestro"
-    },
-    {
-     "tipo": "Bomba urbana pesada",
-     "estado": "EN_SINIESTRO",
-     "estado_txt": "Vehículo parado en siniestro"
-    },
-    {
-     "tipo": "Bomba nodriza pesada",
-     "estado": "EN_SINIESTRO",
-     "estado_txt": "Vehículo parado en siniestro"
-    },
-    {
-     "tipo": "Unidad de mando y jefatura",
-     "estado": "EN_SINIESTRO",
-     "estado_txt": "Vehículo parado en siniestro"
-    },
-    {
-     "tipo": "Bomba nodriza pesada",
-     "estado": "REGRESANDO",
-     "estado_txt": "Vehículo volviendo de un sin."
-    }
-   ],
-   "n_vehiculos": 5,
-   "estado": "EN_SINIESTRO"
-  }
- ],
+ "actuaciones": [],
  "por_parque": {
   "URIOSTE": {
    "actuaciones": 0,
@@ -67,12 +29,12 @@
    "regresando": 0
   },
   "BASAURI": {
-   "actuaciones": 1,
-   "vehiculos": 5,
+   "actuaciones": 0,
+   "vehiculos": 0,
    "propuesto": 0,
    "en_ruta": 0,
-   "en_siniestro": 4,
-   "regresando": 1
+   "en_siniestro": 0,
+   "regresando": 0
   },
   "IURRETA": {
    "actuaciones": 0,
