@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-18T10:05+01:00",
+ "generado": "2026-11-18T10:20+01:00",
  "horizonte_h": 6,
  "modelo": "base+reglas",
  "fuentes_ok": {
@@ -10,8 +10,8 @@
   "salidas_esperadas_6h": 4.8,
   "normal_6h": 4.8,
   "contador": {
-   "ts": "2026-11-18T10:04:50+01:00",
-   "desde_8": 1,
+   "ts": "2026-11-18T10:20:50+01:00",
+   "desde_8": 2,
    "anio": 5804
   }
  },
@@ -1007,7 +1007,7 @@
    "situacion_ahora": "",
    "situaciones_6h": [],
    "directo": {
-    "activas": 1,
+    "activas": 0,
     "nuevas_1h": 0
    },
    "horas": [
@@ -2586,17 +2586,17 @@
  ],
  "activas_ahora": [
   {
-   "tipo": "APERTURA CON RIESGO NIVEL 2",
-   "ubicacion": "BARAKALDO",
-   "zona": "CL Landaburu",
-   "vehiculos": "Furgón utiles varios (Vehículo volviendo de un sin.)",
-   "parque": "URIOSTE"
+   "tipo": "RETÉN DE PREVENCIÓN (SPEIS)",
+   "ubicacion": "Puerto de Bilbao",
+   "zona": "ML MUELLE A-1 (AMPLIACION 1)",
+   "vehiculos": "Bomba urbana ligera (Vehículo va a un siniestro)",
+   "parque": "SIN_PARQUE"
   },
   {
    "tipo": "SANEADO DE CONSTRUCCIONES",
    "ubicacion": "ERANDIO",
    "zona": "PL Juanena",
-   "vehiculos": "Transporte Material y Personal (Vehículo propuesto)",
+   "vehiculos": "Transporte Material y Personal (Vehículo volviendo de un sin.)",
    "parque": "ARTAZA"
   }
  ],

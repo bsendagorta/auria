@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-18T10:18:51+01:00",
+ "ts": "2026-11-18T10:20:51+01:00",
  "salidas_desde_8": 2,
  "salidas_anio": 5804,
  "actuaciones": [
@@ -13,12 +13,12 @@
    "vehiculos": [
     {
      "tipo": "Bomba urbana ligera",
-     "estado": "PROPUESTO",
-     "estado_txt": "Vehículo propuesto"
+     "estado": "EN_RUTA",
+     "estado_txt": "Vehículo va a un siniestro"
     }
    ],
    "n_vehiculos": 1,
-   "estado": "PROPUESTO"
+   "estado": "EN_RUTA"
   },
   {
    "tipo": "SANEADO DE CONSTRUCCIONES",
@@ -106,8 +106,8 @@
   "SIN_PARQUE": {
    "actuaciones": 1,
    "vehiculos": 1,
-   "propuesto": 1,
-   "en_ruta": 0,
+   "propuesto": 0,
+   "en_ruta": 1,
    "en_siniestro": 0,
    "regresando": 0
   }
