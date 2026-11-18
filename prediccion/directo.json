@@ -1,8 +1,40 @@
 {
- "ts": "2026-11-18T04:58:54+01:00",
+ "ts": "2026-11-18T05:00:55+01:00",
  "salidas_desde_8": 35,
  "salidas_anio": 5804,
  "actuaciones": [
+  {
+   "tipo": "INCENDIO INDUSTRIAL NIVEL 2",
+   "familia": "INCENDIO_INDUSTRIAL",
+   "ubicacion": "IGORRE",
+   "zona": "BA Urkizu",
+   "parque": "BASAURI",
+   "parque_nombre": "Basauri",
+   "vehiculos": [
+    {
+     "tipo": "Bomba urbana pesada",
+     "estado": "PROPUESTO",
+     "estado_txt": "Vehículo propuesto"
+    },
+    {
+     "tipo": "Bomba urbana pesada",
+     "estado": "PROPUESTO",
+     "estado_txt": "Vehículo propuesto"
+    },
+    {
+     "tipo": "Bomba nodriza pesada",
+     "estado": "PROPUESTO",
+     "estado_txt": "Vehículo propuesto"
+    },
+    {
+     "tipo": "Unidad de mando y jefatura",
+     "estado": "PROPUESTO",
+     "estado_txt": "Vehículo propuesto"
+    }
+   ],
+   "n_vehiculos": 4,
+   "estado": "PROPUESTO"
+  },
   {
    "tipo": "OTRAS ASISTENCIAS TÉCNICAS",
    "familia": "RESCATE_SALVAMENTO",
@@ -52,9 +84,9 @@
    "regresando": 0
   },
   "BASAURI": {
-   "actuaciones": 0,
-   "vehiculos": 0,
-   "propuesto": 0,
+   "actuaciones": 1,
+   "vehiculos": 4,
+   "propuesto": 4,
    "en_ruta": 0,
    "en_siniestro": 0,
    "regresando": 0
