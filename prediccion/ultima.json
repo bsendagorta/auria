@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-18T11:11+01:00",
+ "generado": "2026-11-18T11:30+01:00",
  "horizonte_h": 6,
  "modelo": "base+reglas",
  "fuentes_ok": {
@@ -10,8 +10,8 @@
   "salidas_esperadas_6h": 4.8,
   "normal_6h": 4.8,
   "contador": {
-   "ts": "2026-11-18T11:11:01+01:00",
-   "desde_8": 3,
+   "ts": "2026-11-18T11:30:12+01:00",
+   "desde_8": 4,
    "anio": 5804
   }
  },
@@ -2576,7 +2576,7 @@
    "tipo": "RETÉN DE PREVENCIÓN (SPEIS)",
    "ubicacion": "Puerto de Bilbao",
    "zona": "ML MUELLE A-1 (AMPLIACION 1)",
-   "vehiculos": "Bomba urbana ligera (Vehículo va a un siniestro)",
+   "vehiculos": "Bomba urbana ligera (Vehículo volviendo de un sin.)",
    "parque": "SIN_PARQUE"
   }
  ],
