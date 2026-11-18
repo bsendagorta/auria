@@ -1,23 +1,23 @@
 {
  "estado": "ok",
- "fecha": "2026-11-18T18:58",
+ "fecha": "2026-11-18T19:14",
  "desde": "2026-11-16T23:00:00",
- "hasta": "2026-11-18T17:00:00",
+ "hasta": "2026-11-18T18:00:00",
  "total": {
-  "horas": 36,
-  "salidas_reales": 25.3,
-  "salidas_predichas": 26.7,
-  "sesgo_pct": 5.8,
-  "mae_hora": 0.562,
-  "skill_vs_normal": 0.041
+  "horas": 37,
+  "salidas_reales": 25.7,
+  "salidas_predichas": 27.5,
+  "sesgo_pct": 7.0,
+  "mae_hora": 0.556,
+  "skill_vs_normal": 0.04
  },
  "ultimos_7_dias": {
-  "horas": 36,
-  "salidas_reales": 25.3,
-  "salidas_predichas": 26.7,
-  "sesgo_pct": 5.8,
-  "mae_hora": 0.562,
-  "skill_vs_normal": 0.041
+  "horas": 37,
+  "salidas_reales": 25.7,
+  "salidas_predichas": 27.5,
+  "sesgo_pct": 7.0,
+  "mae_hora": 0.556,
+  "skill_vs_normal": 0.04
  },
  "por_dia": [
   {
@@ -34,9 +34,9 @@
   },
   {
    "dia": "2026-11-18",
-   "real": 5,
-   "predicho": 12.8,
-   "normal": 12.6
+   "real": 6,
+   "predicho": 13.6,
+   "normal": 13.4
   }
  ],
  "lectura": "skill > 0: el modelo predice mejor que la tasa normal; sesgo > 0: predice de más. Las salidas reales incluyen las que no se pueden asignar a un parque."

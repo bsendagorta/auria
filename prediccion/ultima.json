@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-18T19:56+01:00",
+ "generado": "2026-11-18T20:13+01:00",
  "horizonte_h": 6,
  "modelo": "base+reglas",
  "fuentes_ok": {
@@ -7,10 +7,10 @@
   "trafico": true
  },
  "bizkaia": {
-  "salidas_esperadas_6h": 3.9,
-  "normal_6h": 3.8,
+  "salidas_esperadas_6h": 3.6,
+  "normal_6h": 3.6,
   "contador": {
-   "ts": "2026-11-18T19:56:16+01:00",
+   "ts": "2026-11-18T20:13:08+01:00",
    "desde_8": 10,
    "anio": 5816
   }
@@ -21,9 +21,9 @@
    "nombre": "Artaza (Leioa)",
    "lat": 43.335,
    "lon": -2.987,
-   "salidas_esperadas_6h": 0.77,
-   "normal_6h": 0.75,
-   "prob_6h": 0.539,
+   "salidas_esperadas_6h": 0.73,
+   "normal_6h": 0.71,
+   "prob_6h": 0.52,
    "ratio_max": 1.1,
    "nivel": "verde",
    "hora_pico": "2026-11-18T20:00:00",
@@ -38,52 +38,6 @@
     "nuevas_1h": 0
    },
    "horas": [
-    {
-     "hora": "2026-11-18T19:00:00",
-     "lambda": 0.1598,
-     "prob": 0.148,
-     "normal": 0.1531,
-     "ratio": 1.04,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0491,
-       "mult": 1.0
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.035,
-       "mult": 1.0
-      },
-      {
-       "familia": "TRAFICO",
-       "lambda": 0.0181,
-       "mult": 1.56
-      }
-     ],
-     "factores": [
-      "Accidentes de tráfico activos en la zona",
-      "Incidencias de seguridad vial (objetos, desprendimientos)"
-     ],
-     "situaciones": [],
-     "situacion_txt": "",
-     "meteo": {
-      "temp": 15.0,
-      "humedad": 70.0,
-      "lluvia_1h": 0.0,
-      "lluvia_12h": 0.0,
-      "racha_kmh": 0.0,
-      "viento_sur": false,
-      "dias_sin_lluvia": 0,
-      "viento_kmh": 0.0,
-      "dir_viento": NaN,
-      "factor_racha": null,
-      "dpresion_12h": null,
-      "lluvia_72h": null,
-      "ola_m": null
-     }
-    },
     {
      "hora": "2026-11-18T20:00:00",
      "lambda": 0.1423,
@@ -132,10 +86,10 @@
     },
     {
      "hora": "2026-11-18T21:00:00",
-     "lambda": 0.1226,
-     "prob": 0.115,
+     "lambda": 0.1309,
+     "prob": 0.123,
      "normal": 0.1226,
-     "ratio": 1.0,
+     "ratio": 1.07,
      "nivel": "verde",
      "familias_top": [
       {
@@ -149,12 +103,15 @@
        "mult": 1.0
       },
       {
-       "familia": "INCENDIO_FORESTAL_EXTERIOR",
-       "lambda": 0.0196,
-       "mult": 1.0
+       "familia": "TRAFICO",
+       "lambda": 0.0228,
+       "mult": 1.56
       }
      ],
-     "factores": [],
+     "factores": [
+      "Accidentes de tráfico activos en la zona",
+      "Incidencias de seguridad vial (objetos, desprendimientos)"
+     ],
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
@@ -301,95 +258,32 @@
       "lluvia_72h": null,
       "ola_m": null
      }
-    }
-   ],
-   "carreteras": [
-    {
-     "carretera": "BI-637",
-     "km_ini": 10,
-     "km_fin": 15,
-     "esperados": 0.0157,
-     "prob": 0.0156,
-     "accidentes_anio": 28.143,
-     "pct_graves": 3.6,
-     "hora_pico": 14,
-     "imd": null,
-     "ip": null
     },
     {
-     "carretera": "N-637",
-     "km_ini": 10,
-     "km_fin": 15,
-     "esperados": 0.014,
-     "prob": 0.0139,
-     "accidentes_anio": 25.0,
-     "pct_graves": 4.6,
-     "hora_pico": 7,
-     "imd": null,
-     "ip": null
-    },
-    {
-     "carretera": "BI-637",
-     "km_ini": 5,
-     "km_fin": 10,
-     "esperados": 0.0064,
-     "prob": 0.0064,
-     "accidentes_anio": 11.429,
-     "pct_graves": 5.0,
-     "hora_pico": 18,
-     "imd": null,
-     "ip": null
-    }
-   ]
-  },
-  {
-   "id": "DERIO",
-   "nombre": "Derio",
-   "lat": 43.293,
-   "lon": -2.884,
-   "salidas_esperadas_6h": 0.33,
-   "normal_6h": 0.32,
-   "prob_6h": 0.282,
-   "ratio_max": 1.07,
-   "nivel": "verde",
-   "hora_pico": "2026-11-18T20:00:00",
-   "factores": [
-    "Incidencias de seguridad vial (objetos, desprendimientos)"
-   ],
-   "situacion_ahora": "",
-   "situaciones_6h": [],
-   "directo": {
-    "activas": 0,
-    "nuevas_1h": 0
-   },
-   "horas": [
-    {
-     "hora": "2026-11-18T19:00:00",
-     "lambda": 0.0671,
-     "prob": 0.065,
-     "normal": 0.0644,
-     "ratio": 1.04,
+     "hora": "2026-11-19T01:00:00",
+     "lambda": 0.1121,
+     "prob": 0.106,
+     "normal": 0.1121,
+     "ratio": 1.0,
      "nivel": "verde",
      "familias_top": [
       {
        "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0145,
+       "lambda": 0.0339,
        "mult": 1.0
       },
       {
        "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0116,
+       "lambda": 0.0271,
        "mult": 1.0
       },
       {
-       "familia": "ABEJAS_AVISPAS",
-       "lambda": 0.0113,
+       "familia": "INCENDIO_FORESTAL_EXTERIOR",
+       "lambda": 0.0196,
        "mult": 1.0
       }
      ],
-     "factores": [
-      "Incidencias de seguridad vial (objetos, desprendimientos)"
-     ],
+     "factores": [],
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
@@ -407,7 +301,68 @@
       "lluvia_72h": null,
       "ola_m": null
      }
+    }
+   ],
+   "carreteras": [
+    {
+     "carretera": "BI-637",
+     "km_ini": 10,
+     "km_fin": 15,
+     "esperados": 0.0113,
+     "prob": 0.0113,
+     "accidentes_anio": 28.143,
+     "pct_graves": 3.6,
+     "hora_pico": 14,
+     "imd": null,
+     "ip": null
     },
+    {
+     "carretera": "N-637",
+     "km_ini": 10,
+     "km_fin": 15,
+     "esperados": 0.0101,
+     "prob": 0.01,
+     "accidentes_anio": 25.0,
+     "pct_graves": 4.6,
+     "hora_pico": 7,
+     "imd": null,
+     "ip": null
+    },
+    {
+     "carretera": "BI-637",
+     "km_ini": 5,
+     "km_fin": 10,
+     "esperados": 0.0046,
+     "prob": 0.0046,
+     "accidentes_anio": 11.429,
+     "pct_graves": 5.0,
+     "hora_pico": 18,
+     "imd": null,
+     "ip": null
+    }
+   ]
+  },
+  {
+   "id": "DERIO",
+   "nombre": "Derio",
+   "lat": 43.293,
+   "lon": -2.884,
+   "salidas_esperadas_6h": 0.31,
+   "normal_6h": 0.3,
+   "prob_6h": 0.268,
+   "ratio_max": 1.07,
+   "nivel": "verde",
+   "hora_pico": "2026-11-18T20:00:00",
+   "factores": [
+    "Incidencias de seguridad vial (objetos, desprendimientos)"
+   ],
+   "situacion_ahora": "",
+   "situaciones_6h": [],
+   "directo": {
+    "activas": 0,
+    "nuevas_1h": 0
+   },
+   "horas": [
     {
      "hora": "2026-11-18T20:00:00",
      "lambda": 0.0649,
@@ -455,16 +410,16 @@
     },
     {
      "hora": "2026-11-18T21:00:00",
-     "lambda": 0.0549,
-     "prob": 0.053,
+     "lambda": 0.0579,
+     "prob": 0.056,
      "normal": 0.0549,
-     "ratio": 1.0,
+     "ratio": 1.05,
      "nivel": "verde",
      "familias_top": [
       {
        "familia": "TRAFICO",
-       "lambda": 0.0132,
-       "mult": 1.0
+       "lambda": 0.0158,
+       "mult": 1.2
       },
       {
        "familia": "METEO_ASISTENCIA",
@@ -477,7 +432,9 @@
        "mult": 1.0
       }
      ],
-     "factores": [],
+     "factores": [
+      "Incidencias de seguridad vial (objetos, desprendimientos)"
+     ],
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
@@ -624,97 +581,32 @@
       "lluvia_72h": null,
       "ola_m": null
      }
-    }
-   ],
-   "carreteras": [
-    {
-     "carretera": "N-637",
-     "km_ini": 15,
-     "km_fin": 20,
-     "esperados": 0.0088,
-     "prob": 0.0087,
-     "accidentes_anio": 17.286,
-     "pct_graves": 5.8,
-     "hora_pico": 14,
-     "imd": null,
-     "ip": null
     },
     {
-     "carretera": "N-637",
-     "km_ini": 20,
-     "km_fin": 25,
-     "esperados": 0.0043,
-     "prob": 0.0043,
-     "accidentes_anio": 8.429,
-     "pct_graves": 5.1,
-     "hora_pico": 7,
-     "imd": null,
-     "ip": null
-    },
-    {
-     "carretera": "BI-631",
-     "km_ini": 15,
-     "km_fin": 20,
-     "esperados": 0.0041,
-     "prob": 0.0041,
-     "accidentes_anio": 8.143,
-     "pct_graves": 1.8,
-     "hora_pico": 13,
-     "imd": null,
-     "ip": null
-    }
-   ]
-  },
-  {
-   "id": "BASAURI",
-   "nombre": "Basauri",
-   "lat": 43.237,
-   "lon": -2.885,
-   "salidas_esperadas_6h": 0.64,
-   "normal_6h": 0.62,
-   "prob_6h": 0.473,
-   "ratio_max": 1.07,
-   "nivel": "verde",
-   "hora_pico": "2026-11-18T20:00:00",
-   "factores": [
-    "Accidentes de tráfico activos en la zona",
-    "Evento: Festival: Musika Astea de Galdakao 2026"
-   ],
-   "situacion_ahora": "",
-   "situaciones_6h": [],
-   "directo": {
-    "activas": 0,
-    "nuevas_1h": 0
-   },
-   "horas": [
-    {
-     "hora": "2026-11-18T19:00:00",
-     "lambda": 0.1362,
-     "prob": 0.127,
-     "normal": 0.1291,
-     "ratio": 1.05,
+     "hora": "2026-11-19T01:00:00",
+     "lambda": 0.0444,
+     "prob": 0.043,
+     "normal": 0.0444,
+     "ratio": 1.0,
      "nivel": "verde",
      "familias_top": [
       {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0291,
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0113,
        "mult": 1.0
       },
       {
-       "familia": "TRAFICO",
-       "lambda": 0.0213,
-       "mult": 1.49
+       "familia": "INCENDIO_FORESTAL_EXTERIOR",
+       "lambda": 0.0099,
+       "mult": 1.0
       },
       {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0203,
+       "familia": "INCENDIO_URBANO",
+       "lambda": 0.0077,
        "mult": 1.0
       }
      ],
-     "factores": [
-      "Accidentes de tráfico activos en la zona",
-      "Evento: Festival: Musika Astea de Galdakao 2026"
-     ],
+     "factores": [],
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
@@ -732,7 +624,69 @@
       "lluvia_72h": null,
       "ola_m": null
      }
+    }
+   ],
+   "carreteras": [
+    {
+     "carretera": "N-637",
+     "km_ini": 15,
+     "km_fin": 20,
+     "esperados": 0.0062,
+     "prob": 0.0062,
+     "accidentes_anio": 17.286,
+     "pct_graves": 5.8,
+     "hora_pico": 14,
+     "imd": null,
+     "ip": null
     },
+    {
+     "carretera": "N-637",
+     "km_ini": 20,
+     "km_fin": 25,
+     "esperados": 0.003,
+     "prob": 0.003,
+     "accidentes_anio": 8.429,
+     "pct_graves": 5.1,
+     "hora_pico": 7,
+     "imd": null,
+     "ip": null
+    },
+    {
+     "carretera": "BI-631",
+     "km_ini": 15,
+     "km_fin": 20,
+     "esperados": 0.0029,
+     "prob": 0.0029,
+     "accidentes_anio": 8.143,
+     "pct_graves": 1.8,
+     "hora_pico": 13,
+     "imd": null,
+     "ip": null
+    }
+   ]
+  },
+  {
+   "id": "BASAURI",
+   "nombre": "Basauri",
+   "lat": 43.237,
+   "lon": -2.885,
+   "salidas_esperadas_6h": 0.6,
+   "normal_6h": 0.59,
+   "prob_6h": 0.452,
+   "ratio_max": 1.07,
+   "nivel": "verde",
+   "hora_pico": "2026-11-18T20:00:00",
+   "factores": [
+    "Accidentes de tráfico activos en la zona",
+    "Evento: Festival: Musika Astea de Galdakao 2026"
+   ],
+   "situacion_ahora": "",
+   "situaciones_6h": [],
+   "directo": {
+    "activas": 0,
+    "nuevas_1h": 0
+   },
+   "horas": [
     {
      "hora": "2026-11-18T20:00:00",
      "lambda": 0.1124,
@@ -781,10 +735,10 @@
     },
     {
      "hora": "2026-11-18T21:00:00",
-     "lambda": 0.103,
-     "prob": 0.098,
+     "lambda": 0.1068,
+     "prob": 0.101,
      "normal": 0.1014,
-     "ratio": 1.02,
+     "ratio": 1.05,
      "nivel": "verde",
      "familias_top": [
       {
@@ -798,12 +752,13 @@
        "mult": 1.0
       },
       {
-       "familia": "INCENDIO_FORESTAL_EXTERIOR",
-       "lambda": 0.016,
-       "mult": 1.0
+       "familia": "TRAFICO",
+       "lambda": 0.0162,
+       "mult": 1.49
       }
      ],
      "factores": [
+      "Accidentes de tráfico activos en la zona",
       "Evento: Festival: Musika Astea de Galdakao 2026"
      ],
      "situaciones": [],
@@ -958,94 +913,33 @@
       "lluvia_72h": null,
       "ola_m": null
      }
-    }
-   ],
-   "carreteras": [
-    {
-     "carretera": "N-634",
-     "km_ini": 100,
-     "km_fin": 105,
-     "esperados": 0.0078,
-     "prob": 0.0078,
-     "accidentes_anio": 16.429,
-     "pct_graves": 2.6,
-     "hora_pico": 17,
-     "imd": null,
-     "ip": null
     },
     {
-     "carretera": "N-634",
-     "km_ini": 95,
-     "km_fin": 100,
-     "esperados": 0.0059,
-     "prob": 0.0059,
-     "accidentes_anio": 12.429,
-     "pct_graves": 14.9,
-     "hora_pico": 16,
-     "imd": null,
-     "ip": null
-    },
-    {
-     "carretera": "A-8",
-     "km_ini": 110,
-     "km_fin": 115,
-     "esperados": 0.005,
-     "prob": 0.005,
-     "accidentes_anio": 10.429,
-     "pct_graves": 2.7,
-     "hora_pico": 14,
-     "imd": 45083,
-     "ip": 12.7
-    }
-   ]
-  },
-  {
-   "id": "ARRATZU",
-   "nombre": "Arratzu",
-   "lat": 43.309,
-   "lon": -2.64,
-   "salidas_esperadas_6h": 0.18,
-   "normal_6h": 0.18,
-   "prob_6h": 0.168,
-   "ratio_max": 1.03,
-   "nivel": "verde",
-   "hora_pico": "2026-11-18T19:00:00",
-   "factores": [
-    "Accidentes de tráfico activos en la zona"
-   ],
-   "situacion_ahora": "",
-   "situaciones_6h": [],
-   "directo": {
-    "activas": 0,
-    "nuevas_1h": 0
-   },
-   "horas": [
-    {
-     "hora": "2026-11-18T19:00:00",
-     "lambda": 0.0542,
-     "prob": 0.053,
-     "normal": 0.0527,
-     "ratio": 1.03,
+     "hora": "2026-11-19T01:00:00",
+     "lambda": 0.093,
+     "prob": 0.089,
+     "normal": 0.0927,
+     "ratio": 1.0,
      "nivel": "verde",
      "familias_top": [
       {
        "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.014,
-       "mult": 1.0
-      },
-      {
-       "familia": "INCENDIO_FORESTAL_EXTERIOR",
-       "lambda": 0.0112,
+       "lambda": 0.0295,
        "mult": 1.0
       },
       {
        "familia": "INCENDIO_URBANO",
-       "lambda": 0.0099,
+       "lambda": 0.0189,
+       "mult": 1.0
+      },
+      {
+       "familia": "INCENDIO_FORESTAL_EXTERIOR",
+       "lambda": 0.016,
        "mult": 1.0
       }
      ],
      "factores": [
-      "Accidentes de tráfico activos en la zona"
+      "Evento: Festival: Musika Astea de Galdakao 2026"
      ],
      "situaciones": [],
      "situacion_txt": "",
@@ -1064,7 +958,68 @@
       "lluvia_72h": null,
       "ola_m": null
      }
+    }
+   ],
+   "carreteras": [
+    {
+     "carretera": "N-634",
+     "km_ini": 100,
+     "km_fin": 105,
+     "esperados": 0.0056,
+     "prob": 0.0056,
+     "accidentes_anio": 16.429,
+     "pct_graves": 2.6,
+     "hora_pico": 17,
+     "imd": null,
+     "ip": null
     },
+    {
+     "carretera": "N-634",
+     "km_ini": 95,
+     "km_fin": 100,
+     "esperados": 0.0043,
+     "prob": 0.0043,
+     "accidentes_anio": 12.429,
+     "pct_graves": 14.9,
+     "hora_pico": 16,
+     "imd": null,
+     "ip": null
+    },
+    {
+     "carretera": "A-8",
+     "km_ini": 110,
+     "km_fin": 115,
+     "esperados": 0.0036,
+     "prob": 0.0036,
+     "accidentes_anio": 10.429,
+     "pct_graves": 2.7,
+     "hora_pico": 14,
+     "imd": 45083,
+     "ip": 12.7
+    }
+   ]
+  },
+  {
+   "id": "ARRATZU",
+   "nombre": "Arratzu",
+   "lat": 43.309,
+   "lon": -2.64,
+   "salidas_esperadas_6h": 0.15,
+   "normal_6h": 0.15,
+   "prob_6h": 0.143,
+   "ratio_max": 1.03,
+   "nivel": "verde",
+   "hora_pico": "2026-11-18T20:00:00",
+   "factores": [
+    "Accidentes de tráfico activos en la zona"
+   ],
+   "situacion_ahora": "",
+   "situaciones_6h": [],
+   "directo": {
+    "activas": 0,
+    "nuevas_1h": 0
+   },
+   "horas": [
     {
      "hora": "2026-11-18T20:00:00",
      "lambda": 0.0277,
@@ -1112,10 +1067,10 @@
     },
     {
      "hora": "2026-11-18T21:00:00",
-     "lambda": 0.026,
+     "lambda": 0.0265,
      "prob": 0.026,
      "normal": 0.026,
-     "ratio": 1.0,
+     "ratio": 1.02,
      "nivel": "verde",
      "familias_top": [
       {
@@ -1134,7 +1089,9 @@
        "mult": 1.0
       }
      ],
-     "factores": [],
+     "factores": [
+      "Accidentes de tráfico activos en la zona"
+     ],
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
@@ -1281,95 +1238,32 @@
       "lluvia_72h": null,
       "ola_m": null
      }
-    }
-   ],
-   "carreteras": [
-    {
-     "carretera": "BI-635",
-     "km_ini": 30,
-     "km_fin": 35,
-     "esperados": 0.0039,
-     "prob": 0.0039,
-     "accidentes_anio": 7.857,
-     "pct_graves": 7.3,
-     "hora_pico": 15,
-     "imd": null,
-     "ip": null
     },
     {
-     "carretera": "BI-631",
-     "km_ini": 30,
-     "km_fin": 35,
-     "esperados": 0.0027,
-     "prob": 0.0027,
-     "accidentes_anio": 5.429,
-     "pct_graves": 10.5,
-     "hora_pico": 19,
-     "imd": null,
-     "ip": null
-    },
-    {
-     "carretera": "BI-2238",
-     "km_ini": 30,
-     "km_fin": 35,
-     "esperados": 0.0016,
-     "prob": 0.0016,
-     "accidentes_anio": 3.286,
-     "pct_graves": 0.0,
-     "hora_pico": 17,
-     "imd": null,
-     "ip": null
-    }
-   ]
-  },
-  {
-   "id": "IURRETA",
-   "nombre": "Iurreta",
-   "lat": 43.176,
-   "lon": -2.634,
-   "salidas_esperadas_6h": 0.36,
-   "normal_6h": 0.36,
-   "prob_6h": 0.303,
-   "ratio_max": 1.02,
-   "nivel": "verde",
-   "hora_pico": "2026-11-18T20:00:00",
-   "factores": [
-    "Evento: Festival: Festival Jazz Blues Arriola 2026"
-   ],
-   "situacion_ahora": "",
-   "situaciones_6h": [],
-   "directo": {
-    "activas": 0,
-    "nuevas_1h": 0
-   },
-   "horas": [
-    {
-     "hora": "2026-11-18T19:00:00",
-     "lambda": 0.0787,
-     "prob": 0.076,
-     "normal": 0.0777,
-     "ratio": 1.01,
+     "hora": "2026-11-19T01:00:00",
+     "lambda": 0.0248,
+     "prob": 0.025,
+     "normal": 0.0248,
+     "ratio": 1.0,
      "nivel": "verde",
      "familias_top": [
       {
-       "familia": "ABEJAS_AVISPAS",
-       "lambda": 0.0169,
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0096,
        "mult": 1.0
       },
       {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0149,
+       "familia": "INCENDIO_FORESTAL_EXTERIOR",
+       "lambda": 0.0065,
        "mult": 1.0
       },
       {
        "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0143,
+       "lambda": 0.0035,
        "mult": 1.0
       }
      ],
-     "factores": [
-      "Evento: Festival: Festival Jazz Blues Arriola 2026"
-     ],
+     "factores": [],
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
@@ -1387,7 +1281,68 @@
       "lluvia_72h": null,
       "ola_m": null
      }
+    }
+   ],
+   "carreteras": [
+    {
+     "carretera": "BI-635",
+     "km_ini": 30,
+     "km_fin": 35,
+     "esperados": 0.0027,
+     "prob": 0.0027,
+     "accidentes_anio": 7.857,
+     "pct_graves": 7.3,
+     "hora_pico": 15,
+     "imd": null,
+     "ip": null
     },
+    {
+     "carretera": "BI-631",
+     "km_ini": 30,
+     "km_fin": 35,
+     "esperados": 0.0019,
+     "prob": 0.0019,
+     "accidentes_anio": 5.429,
+     "pct_graves": 10.5,
+     "hora_pico": 19,
+     "imd": null,
+     "ip": null
+    },
+    {
+     "carretera": "BI-2238",
+     "km_ini": 30,
+     "km_fin": 35,
+     "esperados": 0.0011,
+     "prob": 0.0011,
+     "accidentes_anio": 3.286,
+     "pct_graves": 0.0,
+     "hora_pico": 17,
+     "imd": null,
+     "ip": null
+    }
+   ]
+  },
+  {
+   "id": "IURRETA",
+   "nombre": "Iurreta",
+   "lat": 43.176,
+   "lon": -2.634,
+   "salidas_esperadas_6h": 0.33,
+   "normal_6h": 0.33,
+   "prob_6h": 0.284,
+   "ratio_max": 1.02,
+   "nivel": "verde",
+   "hora_pico": "2026-11-18T20:00:00",
+   "factores": [
+    "Evento: Festival: Festival Jazz Blues Arriola 2026"
+   ],
+   "situacion_ahora": "",
+   "situaciones_6h": [],
+   "directo": {
+    "activas": 1,
+    "nuevas_1h": 1
+   },
+   "horas": [
     {
      "hora": "2026-11-18T20:00:00",
      "lambda": 0.0609,
@@ -1612,91 +1567,34 @@
       "lluvia_72h": null,
       "ola_m": null
      }
-    }
-   ],
-   "carreteras": [
-    {
-     "carretera": "N-634",
-     "km_ini": 80,
-     "km_fin": 85,
-     "esperados": 0.0052,
-     "prob": 0.0051,
-     "accidentes_anio": 9.857,
-     "pct_graves": 7.2,
-     "hora_pico": 10,
-     "imd": null,
-     "ip": null
     },
     {
-     "carretera": "N-634",
-     "km_ini": 85,
-     "km_fin": 90,
-     "esperados": 0.0045,
-     "prob": 0.0045,
-     "accidentes_anio": 8.571,
-     "pct_graves": 15.0,
-     "hora_pico": 14,
-     "imd": null,
-     "ip": null
-    },
-    {
-     "carretera": "N-634",
-     "km_ini": 90,
-     "km_fin": 95,
-     "esperados": 0.0031,
-     "prob": 0.0031,
-     "accidentes_anio": 5.857,
-     "pct_graves": 22.0,
-     "hora_pico": 20,
-     "imd": null,
-     "ip": null
-    }
-   ]
-  },
-  {
-   "id": "URIOSTE",
-   "nombre": "Urioste (Ortuella)",
-   "lat": 43.3075,
-   "lon": -3.051,
-   "salidas_esperadas_6h": 1.24,
-   "normal_6h": 1.24,
-   "prob_6h": 0.71,
-   "ratio_max": 1.0,
-   "nivel": "verde",
-   "hora_pico": "2026-11-18T19:00:00",
-   "factores": [],
-   "situacion_ahora": "",
-   "situaciones_6h": [],
-   "directo": {
-    "activas": 1,
-    "nuevas_1h": 1
-   },
-   "horas": [
-    {
-     "hora": "2026-11-18T19:00:00",
-     "lambda": 0.235,
-     "prob": 0.209,
-     "normal": 0.235,
+     "hora": "2026-11-19T01:00:00",
+     "lambda": 0.0519,
+     "prob": 0.051,
+     "normal": 0.0516,
      "ratio": 1.0,
      "nivel": "verde",
      "familias_top": [
       {
        "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0957,
-       "mult": 1.0
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0465,
+       "lambda": 0.0159,
        "mult": 1.0
       },
       {
        "familia": "INCENDIO_FORESTAL_EXTERIOR",
-       "lambda": 0.0314,
+       "lambda": 0.0107,
+       "mult": 1.0
+      },
+      {
+       "familia": "INCENDIO_URBANO",
+       "lambda": 0.0088,
        "mult": 1.0
       }
      ],
-     "factores": [],
+     "factores": [
+      "Evento: Festival: Festival Jazz Blues Arriola 2026"
+     ],
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
@@ -1714,7 +1612,66 @@
       "lluvia_72h": null,
       "ola_m": null
      }
+    }
+   ],
+   "carreteras": [
+    {
+     "carretera": "N-634",
+     "km_ini": 80,
+     "km_fin": 85,
+     "esperados": 0.0039,
+     "prob": 0.0039,
+     "accidentes_anio": 9.857,
+     "pct_graves": 7.2,
+     "hora_pico": 10,
+     "imd": null,
+     "ip": null
     },
+    {
+     "carretera": "N-634",
+     "km_ini": 85,
+     "km_fin": 90,
+     "esperados": 0.0034,
+     "prob": 0.0034,
+     "accidentes_anio": 8.571,
+     "pct_graves": 15.0,
+     "hora_pico": 14,
+     "imd": null,
+     "ip": null
+    },
+    {
+     "carretera": "N-634",
+     "km_ini": 90,
+     "km_fin": 95,
+     "esperados": 0.0023,
+     "prob": 0.0023,
+     "accidentes_anio": 5.857,
+     "pct_graves": 22.0,
+     "hora_pico": 20,
+     "imd": null,
+     "ip": null
+    }
+   ]
+  },
+  {
+   "id": "URIOSTE",
+   "nombre": "Urioste (Ortuella)",
+   "lat": 43.3075,
+   "lon": -3.051,
+   "salidas_esperadas_6h": 1.2,
+   "normal_6h": 1.2,
+   "prob_6h": 0.699,
+   "ratio_max": 1.0,
+   "nivel": "verde",
+   "hora_pico": "2026-11-18T20:00:00",
+   "factores": [],
+   "situacion_ahora": "",
+   "situaciones_6h": [],
+   "directo": {
+    "activas": 0,
+    "nuevas_1h": 0
+   },
+   "horas": [
     {
      "hora": "2026-11-18T20:00:00",
      "lambda": 0.2053,
@@ -1929,87 +1886,28 @@
       "lluvia_72h": null,
       "ola_m": null
      }
-    }
-   ],
-   "carreteras": [
-    {
-     "carretera": "A-8",
-     "km_ini": 120,
-     "km_fin": 125,
-     "esperados": 0.0161,
-     "prob": 0.016,
-     "accidentes_anio": 27.714,
-     "pct_graves": 6.7,
-     "hora_pico": 14,
-     "imd": 78380,
-     "ip": 19.4
     },
     {
-     "carretera": "A-8",
-     "km_ini": 125,
-     "km_fin": 130,
-     "esperados": 0.0091,
-     "prob": 0.009,
-     "accidentes_anio": 15.571,
-     "pct_graves": 2.8,
-     "hora_pico": 15,
-     "imd": 23330,
-     "ip": 36.6
-    },
-    {
-     "carretera": "N-637",
-     "km_ini": 5,
-     "km_fin": 10,
-     "esperados": 0.007,
-     "prob": 0.007,
-     "accidentes_anio": 12.0,
-     "pct_graves": 0.0,
-     "hora_pico": 14,
-     "imd": null,
-     "ip": null
-    }
-   ]
-  },
-  {
-   "id": "MARKINA",
-   "nombre": "Markina-Xemein",
-   "lat": 43.268,
-   "lon": -2.497,
-   "salidas_esperadas_6h": 0.12,
-   "normal_6h": 0.12,
-   "prob_6h": 0.112,
-   "ratio_max": 1.0,
-   "nivel": "verde",
-   "hora_pico": "2026-11-18T19:00:00",
-   "factores": [],
-   "situacion_ahora": "",
-   "situaciones_6h": [],
-   "directo": {
-    "activas": 0,
-    "nuevas_1h": 0
-   },
-   "horas": [
-    {
-     "hora": "2026-11-18T19:00:00",
-     "lambda": 0.0235,
-     "prob": 0.023,
-     "normal": 0.0235,
+     "hora": "2026-11-19T01:00:00",
+     "lambda": 0.1968,
+     "prob": 0.179,
+     "normal": 0.1968,
      "ratio": 1.0,
      "nivel": "verde",
      "familias_top": [
       {
        "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0139,
+       "lambda": 0.0645,
        "mult": 1.0
       },
       {
-       "familia": "ABEJAS_AVISPAS",
-       "lambda": 0.0042,
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0427,
        "mult": 1.0
       },
       {
-       "familia": "INCENDIO_URBANO",
-       "lambda": 0.0024,
+       "familia": "INCENDIO_FORESTAL_EXTERIOR",
+       "lambda": 0.0389,
        "mult": 1.0
       }
      ],
@@ -2031,7 +1929,66 @@
       "lluvia_72h": null,
       "ola_m": null
      }
+    }
+   ],
+   "carreteras": [
+    {
+     "carretera": "A-8",
+     "km_ini": 120,
+     "km_fin": 125,
+     "esperados": 0.0114,
+     "prob": 0.0113,
+     "accidentes_anio": 27.714,
+     "pct_graves": 6.7,
+     "hora_pico": 14,
+     "imd": 78380,
+     "ip": 19.4
     },
+    {
+     "carretera": "A-8",
+     "km_ini": 125,
+     "km_fin": 130,
+     "esperados": 0.0064,
+     "prob": 0.0064,
+     "accidentes_anio": 15.571,
+     "pct_graves": 2.8,
+     "hora_pico": 15,
+     "imd": 23330,
+     "ip": 36.6
+    },
+    {
+     "carretera": "N-637",
+     "km_ini": 5,
+     "km_fin": 10,
+     "esperados": 0.0049,
+     "prob": 0.0049,
+     "accidentes_anio": 12.0,
+     "pct_graves": 0.0,
+     "hora_pico": 14,
+     "imd": null,
+     "ip": null
+    }
+   ]
+  },
+  {
+   "id": "MARKINA",
+   "nombre": "Markina-Xemein",
+   "lat": 43.268,
+   "lon": -2.497,
+   "salidas_esperadas_6h": 0.11,
+   "normal_6h": 0.11,
+   "prob_6h": 0.106,
+   "ratio_max": 1.0,
+   "nivel": "verde",
+   "hora_pico": "2026-11-18T20:00:00",
+   "factores": [],
+   "situacion_ahora": "",
+   "situaciones_6h": [],
+   "directo": {
+    "activas": 0,
+    "nuevas_1h": 0
+   },
+   "horas": [
     {
      "hora": "2026-11-18T20:00:00",
      "lambda": 0.0208,
@@ -2246,87 +2203,28 @@
       "lluvia_72h": null,
       "ola_m": null
      }
-    }
-   ],
-   "carreteras": [
-    {
-     "carretera": "BI-633",
-     "km_ini": 55,
-     "km_fin": 60,
-     "esperados": 0.0017,
-     "prob": 0.0017,
-     "accidentes_anio": 3.571,
-     "pct_graves": 12.0,
-     "hora_pico": 12,
-     "imd": null,
-     "ip": null
     },
     {
-     "carretera": "BI-633",
-     "km_ini": 35,
-     "km_fin": 40,
-     "esperados": 0.0014,
-     "prob": 0.0014,
-     "accidentes_anio": 2.857,
-     "pct_graves": 10.0,
-     "hora_pico": 16,
-     "imd": null,
-     "ip": null
-    },
-    {
-     "carretera": "BI-633",
-     "km_ini": 40,
-     "km_fin": 45,
-     "esperados": 0.0014,
-     "prob": 0.0014,
-     "accidentes_anio": 2.857,
-     "pct_graves": 20.0,
-     "hora_pico": 16,
-     "imd": null,
-     "ip": null
-    }
-   ]
-  },
-  {
-   "id": "ZALLA",
-   "nombre": "Zalla",
-   "lat": 43.213,
-   "lon": -3.137,
-   "salidas_esperadas_6h": 0.21,
-   "normal_6h": 0.21,
-   "prob_6h": 0.188,
-   "ratio_max": 1.0,
-   "nivel": "verde",
-   "hora_pico": "2026-11-18T19:00:00",
-   "factores": [],
-   "situacion_ahora": "",
-   "situaciones_6h": [],
-   "directo": {
-    "activas": 0,
-    "nuevas_1h": 0
-   },
-   "horas": [
-    {
-     "hora": "2026-11-18T19:00:00",
-     "lambda": 0.0546,
-     "prob": 0.053,
-     "normal": 0.0546,
+     "hora": "2026-11-19T01:00:00",
+     "lambda": 0.0173,
+     "prob": 0.017,
+     "normal": 0.0173,
      "ratio": 1.0,
      "nivel": "verde",
      "familias_top": [
       {
-       "familia": "ABEJAS_AVISPAS",
-       "lambda": 0.0119,
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0059,
        "mult": 1.0
       },
       {
        "familia": "INCENDIO_FORESTAL_EXTERIOR",
-       "lambda": 0.0114,
+       "lambda": 0.0056,
        "mult": 1.0
       },
       {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0088,
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0028,
        "mult": 1.0
       }
      ],
@@ -2348,7 +2246,66 @@
       "lluvia_72h": null,
       "ola_m": null
      }
+    }
+   ],
+   "carreteras": [
+    {
+     "carretera": "BI-633",
+     "km_ini": 55,
+     "km_fin": 60,
+     "esperados": 0.0013,
+     "prob": 0.0013,
+     "accidentes_anio": 3.571,
+     "pct_graves": 12.0,
+     "hora_pico": 12,
+     "imd": null,
+     "ip": null
     },
+    {
+     "carretera": "BI-633",
+     "km_ini": 35,
+     "km_fin": 40,
+     "esperados": 0.001,
+     "prob": 0.001,
+     "accidentes_anio": 2.857,
+     "pct_graves": 10.0,
+     "hora_pico": 16,
+     "imd": null,
+     "ip": null
+    },
+    {
+     "carretera": "BI-633",
+     "km_ini": 40,
+     "km_fin": 45,
+     "esperados": 0.001,
+     "prob": 0.001,
+     "accidentes_anio": 2.857,
+     "pct_graves": 20.0,
+     "hora_pico": 16,
+     "imd": null,
+     "ip": null
+    }
+   ]
+  },
+  {
+   "id": "ZALLA",
+   "nombre": "Zalla",
+   "lat": 43.213,
+   "lon": -3.137,
+   "salidas_esperadas_6h": 0.18,
+   "normal_6h": 0.18,
+   "prob_6h": 0.166,
+   "ratio_max": 1.0,
+   "nivel": "verde",
+   "hora_pico": "2026-11-18T20:00:00",
+   "factores": [],
+   "situacion_ahora": "",
+   "situaciones_6h": [],
+   "directo": {
+    "activas": 0,
+    "nuevas_1h": 0
+   },
+   "horas": [
     {
      "hora": "2026-11-18T20:00:00",
      "lambda": 0.0338,
@@ -2563,6 +2520,49 @@
       "lluvia_72h": null,
       "ola_m": null
      }
+    },
+    {
+     "hora": "2026-11-19T01:00:00",
+     "lambda": 0.0281,
+     "prob": 0.028,
+     "normal": 0.0281,
+     "ratio": 1.0,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0083,
+       "mult": 1.0
+      },
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0066,
+       "mult": 1.0
+      },
+      {
+       "familia": "INCENDIO_FORESTAL_EXTERIOR",
+       "lambda": 0.0062,
+       "mult": 1.0
+      }
+     ],
+     "factores": [],
+     "situaciones": [],
+     "situacion_txt": "",
+     "meteo": {
+      "temp": 15.0,
+      "humedad": 70.0,
+      "lluvia_1h": 0.0,
+      "lluvia_12h": 0.0,
+      "racha_kmh": 0.0,
+      "viento_sur": false,
+      "dias_sin_lluvia": 0,
+      "viento_kmh": 0.0,
+      "dir_viento": NaN,
+      "factor_racha": null,
+      "dpresion_12h": null,
+      "lluvia_72h": null,
+      "ola_m": null
+     }
     }
    ],
    "carreteras": [
@@ -2570,8 +2570,8 @@
      "carretera": "BI-636",
      "km_ini": 15,
      "km_fin": 20,
-     "esperados": 0.0023,
-     "prob": 0.0023,
+     "esperados": 0.0016,
+     "prob": 0.0016,
      "accidentes_anio": 4.714,
      "pct_graves": 18.2,
      "hora_pico": 8,
@@ -2582,8 +2582,8 @@
      "carretera": "BI-636",
      "km_ini": 20,
      "km_fin": 25,
-     "esperados": 0.0016,
-     "prob": 0.0016,
+     "esperados": 0.0011,
+     "prob": 0.0011,
      "accidentes_anio": 3.286,
      "pct_graves": 4.3,
      "hora_pico": 18,
@@ -2594,8 +2594,8 @@
      "carretera": "BI-3651",
      "km_ini": 10,
      "km_fin": 15,
-     "esperados": 0.0015,
-     "prob": 0.0014,
+     "esperados": 0.001,
+     "prob": 0.001,
      "accidentes_anio": 3.0,
      "pct_graves": 14.3,
      "hora_pico": 11,
@@ -2607,11 +2607,11 @@
  ],
  "activas_ahora": [
   {
-   "tipo": "SANEADO DE CONSTRUCCIONES",
-   "ubicacion": "SESTAO",
-   "zona": "CL Ramón y Cajal",
-   "vehiculos": "Auto escala articulada (Vehículo volviendo de un sin.)",
-   "parque": "URIOSTE"
+   "tipo": "AMENAZA DE SUICIDIO NIVEL 1",
+   "ubicacion": "DURANGO",
+   "zona": "AV Askatasun",
+   "vehiculos": "Furgón utiles varios (Vehículo parado en siniestro) | Bomba urbana pesada (Vehículo parado en siniestro) | Transporte Material y Personal (Vehículo parado en siniestro)",
+   "parque": "IURRETA"
   }
  ],
  "niveles": {
