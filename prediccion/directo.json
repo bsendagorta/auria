@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-18T20:09:09+01:00",
+ "ts": "2026-11-18T20:11:09+01:00",
  "salidas_desde_8": 10,
  "salidas_anio": 5816,
  "actuaciones": [
@@ -13,12 +13,22 @@
    "vehiculos": [
     {
      "tipo": "Furgón utiles varios",
-     "estado": "PROPUESTO",
-     "estado_txt": "Vehículo propuesto"
+     "estado": "EN_RUTA",
+     "estado_txt": "Vehículo va a un siniestro"
+    },
+    {
+     "tipo": "Bomba urbana pesada",
+     "estado": "EN_RUTA",
+     "estado_txt": "Vehículo va a un siniestro"
+    },
+    {
+     "tipo": "Transporte Material y Personal",
+     "estado": "EN_RUTA",
+     "estado_txt": "Vehículo va a un siniestro"
     }
    ],
-   "n_vehiculos": 1,
-   "estado": "PROPUESTO"
+   "n_vehiculos": 3,
+   "estado": "EN_RUTA"
   }
  ],
  "por_parque": {
@@ -56,9 +66,9 @@
   },
   "IURRETA": {
    "actuaciones": 1,
-   "vehiculos": 1,
-   "propuesto": 1,
-   "en_ruta": 0,
+   "vehiculos": 3,
+   "propuesto": 0,
+   "en_ruta": 3,
    "en_siniestro": 0,
    "regresando": 0
   },
