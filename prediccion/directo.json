@@ -1,36 +1,8 @@
 {
- "ts": "2026-11-18T20:33:53+01:00",
+ "ts": "2026-11-18T20:36:53+01:00",
  "salidas_desde_8": 11,
  "salidas_anio": 5816,
- "actuaciones": [
-  {
-   "tipo": "AMENAZA DE SUICIDIO NIVEL 1",
-   "familia": "RESCATE_SALVAMENTO",
-   "ubicacion": "DURANGO",
-   "zona": "AV Askatasun",
-   "parque": "IURRETA",
-   "parque_nombre": "Iurreta",
-   "vehiculos": [
-    {
-     "tipo": "Furgón utiles varios",
-     "estado": "EN_SINIESTRO",
-     "estado_txt": "Vehículo parado en siniestro"
-    },
-    {
-     "tipo": "Bomba urbana pesada",
-     "estado": "REGRESANDO",
-     "estado_txt": "Vehículo volviendo de un sin."
-    },
-    {
-     "tipo": "Auto escala articulada",
-     "estado": "OTRO",
-     "estado_txt": "Vehículo no disponible tempor."
-    }
-   ],
-   "n_vehiculos": 3,
-   "estado": "EN_SINIESTRO"
-  }
- ],
+ "actuaciones": [],
  "por_parque": {
   "URIOSTE": {
    "actuaciones": 0,
@@ -65,12 +37,12 @@
    "regresando": 0
   },
   "IURRETA": {
-   "actuaciones": 1,
-   "vehiculos": 3,
+   "actuaciones": 0,
+   "vehiculos": 0,
    "propuesto": 0,
    "en_ruta": 0,
-   "en_siniestro": 1,
-   "regresando": 1
+   "en_siniestro": 0,
+   "regresando": 0
   },
   "ARRATZU": {
    "actuaciones": 0,
