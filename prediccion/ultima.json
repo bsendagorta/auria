@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-18T00:40+01:00",
+ "generado": "2026-11-18T00:59+01:00",
  "horizonte_h": 6,
  "modelo": "base+reglas",
  "fuentes_ok": {
@@ -10,7 +10,7 @@
   "salidas_esperadas_6h": 3.5,
   "normal_6h": 3.4,
   "contador": {
-   "ts": "2026-11-18T00:40:36+01:00",
+   "ts": "2026-11-18T00:59:51+01:00",
    "desde_8": 35,
    "anio": 5804
   }
@@ -23,15 +23,14 @@
    "lon": -2.987,
    "salidas_esperadas_6h": 0.71,
    "normal_6h": 0.66,
-   "prob_6h": 0.51,
-   "ratio_max": 1.32,
+   "prob_6h": 0.508,
+   "ratio_max": 1.31,
    "nivel": "verde",
    "hora_pico": "2026-11-18T00:00:00",
    "factores": [
     "🌬️ Sur racheado 64 km/h, HR 48 %",
     "🔥 Calor",
     "Rachas de 60-80 km/h",
-    "Incidencias de seguridad vial (objetos, desprendimientos)",
     "Sur racheado: caídas de objetos/árboles ×2.0 (medido por horas)",
     "Lluvia moderada (1-4 mm/h): accidentes ×1.5 (medido por horas)",
     "Lluvia moderada (1-4 mm/h): caídas de objetos/árboles ×1.6 (medido por horas)"
@@ -48,10 +47,10 @@
    "horas": [
     {
      "hora": "2026-11-18T00:00:00",
-     "lambda": 0.1521,
-     "prob": 0.141,
+     "lambda": 0.1505,
+     "prob": 0.14,
      "normal": 0.1153,
-     "ratio": 1.32,
+     "ratio": 1.31,
      "nivel": "verde",
      "familias_top": [
       {
@@ -74,7 +73,6 @@
       "🌬️ Sur racheado 64 km/h, HR 48 %",
       "🔥 Calor",
       "Rachas de 60-80 km/h",
-      "Incidencias de seguridad vial (objetos, desprendimientos)",
       "Sur racheado: caídas de objetos/árboles ×2.0 (medido por horas)"
      ],
      "situaciones": [
@@ -100,10 +98,10 @@
     },
     {
      "hora": "2026-11-18T01:00:00",
-     "lambda": 0.1131,
-     "prob": 0.107,
+     "lambda": 0.1121,
+     "prob": 0.106,
      "normal": 0.1121,
-     "ratio": 1.01,
+     "ratio": 1.0,
      "nivel": "verde",
      "familias_top": [
       {
@@ -122,9 +120,7 @@
        "mult": 1.0
       }
      ],
-     "factores": [
-      "Incidencias de seguridad vial (objetos, desprendimientos)"
-     ],
+     "factores": [],
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
@@ -140,7 +136,7 @@
       "factor_racha": 2.1,
       "dpresion_12h": -0.3,
       "lluvia_72h": 0.0,
-      "ola_m": 1.9
+      "ola_m": 1.8
      }
     },
     {
@@ -275,7 +271,7 @@
       "factor_racha": 1.9,
       "dpresion_12h": 2.8,
       "lluvia_72h": 2.4,
-      "ola_m": 2.3
+      "ola_m": 2.4
      }
     },
     {
@@ -318,7 +314,7 @@
       "factor_racha": 2.1,
       "dpresion_12h": 2.3,
       "lluvia_72h": 2.5,
-      "ola_m": 2.4
+      "ola_m": 2.5
      }
     }
    ],
@@ -368,15 +364,14 @@
    "lon": -2.884,
    "salidas_esperadas_6h": 0.28,
    "normal_6h": 0.27,
-   "prob_6h": 0.247,
-   "ratio_max": 1.28,
+   "prob_6h": 0.246,
+   "ratio_max": 1.26,
    "nivel": "verde",
    "hora_pico": "2026-11-18T00:00:00",
    "factores": [
     "🌬️ Sur racheado 62 km/h, HR 48 %",
     "🔥 Calor",
     "Rachas de 60-80 km/h",
-    "Incidencias de seguridad vial (objetos, desprendimientos)",
     "Sur racheado: caídas de objetos/árboles ×2.0 (medido por horas)",
     "Lluvia moderada (1-4 mm/h): accidentes ×1.5 (medido por horas)",
     "Lluvia moderada (1-4 mm/h): caídas de objetos/árboles ×1.6 (medido por horas)",
@@ -395,10 +390,10 @@
    "horas": [
     {
      "hora": "2026-11-18T00:00:00",
-     "lambda": 0.0583,
-     "prob": 0.057,
+     "lambda": 0.0573,
+     "prob": 0.056,
      "normal": 0.0456,
-     "ratio": 1.28,
+     "ratio": 1.26,
      "nivel": "verde",
      "familias_top": [
       {
@@ -421,7 +416,6 @@
       "🌬️ Sur racheado 62 km/h, HR 48 %",
       "🔥 Calor",
       "Rachas de 60-80 km/h",
-      "Incidencias de seguridad vial (objetos, desprendimientos)",
       "Sur racheado: caídas de objetos/árboles ×2.0 (medido por horas)"
      ],
      "situaciones": [
@@ -447,10 +441,10 @@
     },
     {
      "hora": "2026-11-18T01:00:00",
-     "lambda": 0.0452,
-     "prob": 0.044,
+     "lambda": 0.0444,
+     "prob": 0.043,
      "normal": 0.0444,
-     "ratio": 1.02,
+     "ratio": 1.0,
      "nivel": "verde",
      "familias_top": [
       {
@@ -469,9 +463,7 @@
        "mult": 1.0
       }
      ],
-     "factores": [
-      "Incidencias de seguridad vial (objetos, desprendimientos)"
-     ],
+     "factores": [],
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
@@ -786,7 +778,7 @@
       "factor_racha": 2.6,
       "dpresion_12h": -1.7,
       "lluvia_72h": 0.0,
-      "ola_m": 1.8
+      "ola_m": 1.7
      }
     },
     {
@@ -967,7 +959,7 @@
       "factor_racha": 2.5,
       "dpresion_12h": 2.8,
       "lluvia_72h": 3.7,
-      "ola_m": 2.2
+      "ola_m": 2.3
      }
     },
     {
@@ -1013,7 +1005,7 @@
       "factor_racha": 3.4,
       "dpresion_12h": 2.3,
       "lluvia_72h": 4.0,
-      "ola_m": 2.3
+      "ola_m": 2.4
      }
     }
    ],
@@ -1064,12 +1056,11 @@
    "salidas_esperadas_6h": 0.11,
    "normal_6h": 0.1,
    "prob_6h": 0.106,
-   "ratio_max": 1.18,
+   "ratio_max": 1.17,
    "nivel": "verde",
-   "hora_pico": "2026-11-18T00:00:00",
+   "hora_pico": "2026-11-18T01:00:00",
    "factores": [
     "🌬️ Sur racheado 56 km/h, HR 49 %",
-    "Incidencias de seguridad vial (objetos, desprendimientos)",
     "Sur racheado: caídas de objetos/árboles ×2.0 (medido por horas)",
     "🌬️ Sur racheado 55 km/h, HR 53 %",
     "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
@@ -1089,10 +1080,10 @@
    "horas": [
     {
      "hora": "2026-11-18T00:00:00",
-     "lambda": 0.0207,
-     "prob": 0.021,
+     "lambda": 0.0205,
+     "prob": 0.02,
      "normal": 0.0177,
-     "ratio": 1.18,
+     "ratio": 1.16,
      "nivel": "verde",
      "familias_top": [
       {
@@ -1113,7 +1104,6 @@
      ],
      "factores": [
       "🌬️ Sur racheado 56 km/h, HR 49 %",
-      "Incidencias de seguridad vial (objetos, desprendimientos)",
       "Sur racheado: caídas de objetos/árboles ×2.0 (medido por horas)"
      ],
      "situaciones": [
@@ -1138,7 +1128,7 @@
     },
     {
      "hora": "2026-11-18T01:00:00",
-     "lambda": 0.0204,
+     "lambda": 0.0202,
      "prob": 0.02,
      "normal": 0.0173,
      "ratio": 1.17,
@@ -1162,7 +1152,6 @@
      ],
      "factores": [
       "🌬️ Sur racheado 55 km/h, HR 53 %",
-      "Incidencias de seguridad vial (objetos, desprendimientos)",
       "Sur racheado: caídas de objetos/árboles ×2.0 (medido por horas)"
      ],
      "situaciones": [
@@ -1182,7 +1171,7 @@
       "factor_racha": 2.9,
       "dpresion_12h": 0.2,
       "lluvia_72h": 0.5,
-      "ola_m": 1.7
+      "ola_m": 1.6
      }
     },
     {
@@ -1228,7 +1217,7 @@
       "factor_racha": 2.8,
       "dpresion_12h": 0.4,
       "lluvia_72h": 0.6,
-      "ola_m": 1.8
+      "ola_m": 1.7
      }
     },
     {
@@ -1417,14 +1406,12 @@
    "lon": -2.885,
    "salidas_esperadas_6h": 0.59,
    "normal_6h": 0.56,
-   "prob_6h": 0.448,
+   "prob_6h": 0.445,
    "ratio_max": 1.11,
    "nivel": "verde",
    "hora_pico": "2026-11-18T05:00:00",
    "factores": [
     "🔥 Calor",
-    "Accidentes de tráfico activos en la zona",
-    "Incidencias de seguridad vial (objetos, desprendimientos)",
     "Evento: Festival: Musika Astea de Galdakao 2026",
     "Lluvia moderada (1-4 mm/h): accidentes ×1.5 (medido por horas)",
     "Lluvia moderada (1-4 mm/h): caídas de objetos/árboles ×1.6 (medido por horas)",
@@ -1441,10 +1428,10 @@
    "horas": [
     {
      "hora": "2026-11-18T00:00:00",
-     "lambda": 0.0971,
-     "prob": 0.093,
+     "lambda": 0.0942,
+     "prob": 0.09,
      "normal": 0.0937,
-     "ratio": 1.04,
+     "ratio": 1.0,
      "nivel": "verde",
      "familias_top": [
       {
@@ -1465,8 +1452,6 @@
      ],
      "factores": [
       "🔥 Calor",
-      "Accidentes de tráfico activos en la zona",
-      "Incidencias de seguridad vial (objetos, desprendimientos)",
       "Evento: Festival: Musika Astea de Galdakao 2026"
      ],
      "situaciones": [
@@ -1491,10 +1476,10 @@
     },
     {
      "hora": "2026-11-18T01:00:00",
-     "lambda": 0.0953,
-     "prob": 0.091,
+     "lambda": 0.093,
+     "prob": 0.089,
      "normal": 0.0927,
-     "ratio": 1.03,
+     "ratio": 1.0,
      "nivel": "verde",
      "familias_top": [
       {
@@ -1514,8 +1499,6 @@
       }
      ],
      "factores": [
-      "Accidentes de tráfico activos en la zona",
-      "Incidencias de seguridad vial (objetos, desprendimientos)",
       "Evento: Festival: Musika Astea de Galdakao 2026"
      ],
      "situaciones": [],
@@ -1763,14 +1746,13 @@
    "nombre": "Iurreta",
    "lat": 43.176,
    "lon": -2.634,
-   "salidas_esperadas_6h": 0.32,
+   "salidas_esperadas_6h": 0.31,
    "normal_6h": 0.31,
-   "prob_6h": 0.27,
+   "prob_6h": 0.269,
    "ratio_max": 1.06,
    "nivel": "verde",
    "hora_pico": "2026-11-18T04:00:00",
    "factores": [
-    "Incidencias de seguridad vial (objetos, desprendimientos)",
     "Evento: Festival: Festival Jazz Blues Arriola 2026",
     "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
     "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)",
@@ -1788,10 +1770,10 @@
    "horas": [
     {
      "hora": "2026-11-18T00:00:00",
-     "lambda": 0.0535,
-     "prob": 0.052,
+     "lambda": 0.0527,
+     "prob": 0.051,
      "normal": 0.0524,
-     "ratio": 1.02,
+     "ratio": 1.01,
      "nivel": "verde",
      "familias_top": [
       {
@@ -1811,7 +1793,6 @@
       }
      ],
      "factores": [
-      "Incidencias de seguridad vial (objetos, desprendimientos)",
       "Evento: Festival: Festival Jazz Blues Arriola 2026"
      ],
      "situaciones": [],
@@ -1834,10 +1815,10 @@
     },
     {
      "hora": "2026-11-18T01:00:00",
-     "lambda": 0.0525,
+     "lambda": 0.0519,
      "prob": 0.051,
      "normal": 0.0516,
-     "ratio": 1.02,
+     "ratio": 1.0,
      "nivel": "verde",
      "familias_top": [
       {
@@ -1857,7 +1838,6 @@
       }
      ],
      "factores": [
-      "Incidencias de seguridad vial (objetos, desprendimientos)",
       "Evento: Festival: Festival Jazz Blues Arriola 2026"
      ],
      "situaciones": [],
@@ -2110,13 +2090,11 @@
    "lon": -3.137,
    "salidas_esperadas_6h": 0.17,
    "normal_6h": 0.17,
-   "prob_6h": 0.16,
+   "prob_6h": 0.159,
    "ratio_max": 1.04,
    "nivel": "verde",
    "hora_pico": "2026-11-18T03:00:00",
    "factores": [
-    "Accidentes de tráfico activos en la zona",
-    "Incidencias de seguridad vial (objetos, desprendimientos)",
     "Lluvia moderada (1-4 mm/h): accidentes ×1.5 (medido por horas)",
     "Lluvia moderada (1-4 mm/h): caídas de objetos/árboles ×1.6 (medido por horas)",
     "Lluvia moderada"
@@ -2130,10 +2108,10 @@
    "horas": [
     {
      "hora": "2026-11-18T00:00:00",
-     "lambda": 0.0292,
-     "prob": 0.029,
+     "lambda": 0.0284,
+     "prob": 0.028,
      "normal": 0.0284,
-     "ratio": 1.03,
+     "ratio": 1.0,
      "nivel": "verde",
      "familias_top": [
       {
@@ -2152,10 +2130,7 @@
        "mult": 1.0
       }
      ],
-     "factores": [
-      "Accidentes de tráfico activos en la zona",
-      "Incidencias de seguridad vial (objetos, desprendimientos)"
-     ],
+     "factores": [],
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
@@ -2176,10 +2151,10 @@
     },
     {
      "hora": "2026-11-18T01:00:00",
-     "lambda": 0.0288,
+     "lambda": 0.0281,
      "prob": 0.028,
      "normal": 0.0281,
-     "ratio": 1.02,
+     "ratio": 1.0,
      "nivel": "verde",
      "familias_top": [
       {
@@ -2198,10 +2173,7 @@
        "mult": 1.0
       }
      ],
-     "factores": [
-      "Accidentes de tráfico activos en la zona",
-      "Incidencias de seguridad vial (objetos, desprendimientos)"
-     ],
+     "factores": [],
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
@@ -2507,7 +2479,7 @@
       "factor_racha": 2.5,
       "dpresion_12h": -1.6,
       "lluvia_72h": 0.2,
-      "ola_m": 1.4
+      "ola_m": 1.3
      }
     },
     {
@@ -2692,7 +2664,7 @@
       "factor_racha": 2.5,
       "dpresion_12h": 3.1,
       "lluvia_72h": 4.2,
-      "ola_m": 1.6
+      "ola_m": 1.7
      }
     },
     {
@@ -2738,7 +2710,7 @@
       "factor_racha": 2.8,
       "dpresion_12h": 2.6,
       "lluvia_72h": 4.5,
-      "ola_m": 1.7
+      "ola_m": 1.8
      }
     }
    ],
