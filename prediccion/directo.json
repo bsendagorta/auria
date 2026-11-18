@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-18T14:22:23+01:00",
+ "ts": "2026-11-18T14:25:23+01:00",
  "salidas_desde_8": 6,
  "salidas_anio": 5814,
  "actuaciones": [
@@ -13,8 +13,8 @@
    "vehiculos": [
     {
      "tipo": "Bomba urbana pesada",
-     "estado": "PROPUESTO",
-     "estado_txt": "Vehículo propuesto"
+     "estado": "EN_RUTA",
+     "estado_txt": "Vehículo va a un siniestro"
     },
     {
      "tipo": "Unidad de mando y jefatura",
@@ -23,7 +23,7 @@
     }
    ],
    "n_vehiculos": 2,
-   "estado": "PROPUESTO"
+   "estado": "EN_RUTA"
   },
   {
    "tipo": "NEUTRALIZACIÓN DE ABEJAS Y AVISPAS",
@@ -35,12 +35,12 @@
    "vehiculos": [
     {
      "tipo": "Transporte Material y Personal",
-     "estado": "EN_RUTA",
-     "estado_txt": "Vehículo va a un siniestro"
+     "estado": "REGRESANDO",
+     "estado_txt": "Vehículo volviendo de un sin."
     }
    ],
    "n_vehiculos": 1,
-   "estado": "EN_RUTA"
+   "estado": "REGRESANDO"
   }
  ],
  "por_parque": {
@@ -48,9 +48,9 @@
    "actuaciones": 1,
    "vehiculos": 1,
    "propuesto": 0,
-   "en_ruta": 1,
+   "en_ruta": 0,
    "en_siniestro": 0,
-   "regresando": 0
+   "regresando": 1
   },
   "ARTAZA": {
    "actuaciones": 0,
@@ -79,8 +79,8 @@
   "IURRETA": {
    "actuaciones": 1,
    "vehiculos": 2,
-   "propuesto": 2,
-   "en_ruta": 0,
+   "propuesto": 1,
+   "en_ruta": 1,
    "en_siniestro": 0,
    "regresando": 0
   },
