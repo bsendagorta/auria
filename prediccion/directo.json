@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-18T15:58:23+01:00",
+ "ts": "2026-11-18T16:01:24+01:00",
  "salidas_desde_8": 8,
  "salidas_anio": 5814,
  "actuaciones": [
@@ -13,18 +13,18 @@
    "vehiculos": [
     {
      "tipo": "Unidad de mando y jefatura",
-     "estado": "EN_RUTA",
-     "estado_txt": "Vehículo va a un siniestro"
+     "estado": "EN_SINIESTRO",
+     "estado_txt": "Vehículo parado en siniestro"
     },
     {
      "tipo": "Auto escala articulada",
-     "estado": "EN_RUTA",
-     "estado_txt": "Vehículo va a un siniestro"
+     "estado": "EN_SINIESTRO",
+     "estado_txt": "Vehículo parado en siniestro"
     },
     {
      "tipo": "Bomba urbana pesada",
-     "estado": "EN_RUTA",
-     "estado_txt": "Vehículo va a un siniestro"
+     "estado": "EN_SINIESTRO",
+     "estado_txt": "Vehículo parado en siniestro"
     },
     {
      "tipo": "Furgón utiles varios",
@@ -49,8 +49,8 @@
    "actuaciones": 1,
    "vehiculos": 4,
    "propuesto": 0,
-   "en_ruta": 4,
-   "en_siniestro": 0,
+   "en_ruta": 1,
+   "en_siniestro": 3,
    "regresando": 0
   },
   "DERIO": {
