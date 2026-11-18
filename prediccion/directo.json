@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-18T04:34:54+01:00",
+ "ts": "2026-11-18T04:37:54+01:00",
  "salidas_desde_8": 35,
  "salidas_anio": 5804,
  "actuaciones": [
@@ -13,12 +13,17 @@
    "vehiculos": [
     {
      "tipo": "Transporte Material y Personal",
-     "estado": "PROPUESTO",
-     "estado_txt": "Vehículo propuesto"
+     "estado": "EN_RUTA",
+     "estado_txt": "Vehículo va a un siniestro"
+    },
+    {
+     "tipo": "Furgón utiles varios",
+     "estado": "EN_RUTA",
+     "estado_txt": "Vehículo va a un siniestro"
     }
    ],
-   "n_vehiculos": 1,
-   "estado": "PROPUESTO"
+   "n_vehiculos": 2,
+   "estado": "EN_RUTA"
   }
  ],
  "por_parque": {
@@ -72,9 +77,9 @@
   },
   "MARKINA": {
    "actuaciones": 1,
-   "vehiculos": 1,
-   "propuesto": 1,
-   "en_ruta": 0,
+   "vehiculos": 2,
+   "propuesto": 0,
+   "en_ruta": 2,
    "en_siniestro": 0,
    "regresando": 0
   },
