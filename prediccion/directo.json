@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-18T14:25:23+01:00",
+ "ts": "2026-11-18T14:28:23+01:00",
  "salidas_desde_8": 6,
  "salidas_anio": 5814,
  "actuaciones": [
@@ -18,8 +18,8 @@
     },
     {
      "tipo": "Unidad de mando y jefatura",
-     "estado": "PROPUESTO",
-     "estado_txt": "Vehículo propuesto"
+     "estado": "EN_RUTA",
+     "estado_txt": "Vehículo va a un siniestro"
     }
    ],
    "n_vehiculos": 2,
@@ -79,8 +79,8 @@
   "IURRETA": {
    "actuaciones": 1,
    "vehiculos": 2,
-   "propuesto": 1,
-   "en_ruta": 1,
+   "propuesto": 0,
+   "en_ruta": 2,
    "en_siniestro": 0,
    "regresando": 0
   },
