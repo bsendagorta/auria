@@ -1,41 +1,8 @@
 {
- "ts": "2026-11-18T16:29:23+01:00",
+ "ts": "2026-11-18T16:32:23+01:00",
  "salidas_desde_8": 8,
  "salidas_anio": 5814,
- "actuaciones": [
-  {
-   "tipo": "VISITA A RIESGOS CONCRETOS",
-   "familia": "NO_OPERATIVO",
-   "ubicacion": "ERANDIO",
-   "zona": "CR Kanterabidea",
-   "parque": "ARTAZA",
-   "parque_nombre": "Artaza (Leioa)",
-   "vehiculos": [
-    {
-     "tipo": "Unidad de mando y jefatura",
-     "estado": "EN_SINIESTRO",
-     "estado_txt": "Vehículo parado en siniestro"
-    },
-    {
-     "tipo": "Auto escala articulada",
-     "estado": "EN_SINIESTRO",
-     "estado_txt": "Vehículo parado en siniestro"
-    },
-    {
-     "tipo": "Bomba urbana pesada",
-     "estado": "EN_SINIESTRO",
-     "estado_txt": "Vehículo parado en siniestro"
-    },
-    {
-     "tipo": "Furgón utiles varios",
-     "estado": "EN_SINIESTRO",
-     "estado_txt": "Vehículo parado en siniestro"
-    }
-   ],
-   "n_vehiculos": 4,
-   "estado": "EN_SINIESTRO"
-  }
- ],
+ "actuaciones": [],
  "por_parque": {
   "URIOSTE": {
    "actuaciones": 0,
@@ -46,11 +13,11 @@
    "regresando": 0
   },
   "ARTAZA": {
-   "actuaciones": 1,
-   "vehiculos": 4,
+   "actuaciones": 0,
+   "vehiculos": 0,
    "propuesto": 0,
    "en_ruta": 0,
-   "en_siniestro": 4,
+   "en_siniestro": 0,
    "regresando": 0
   },
   "DERIO": {
