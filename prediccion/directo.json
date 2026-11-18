@@ -1,33 +1,15 @@
 {
- "ts": "2026-11-18T12:54:58+01:00",
- "salidas_desde_8": 5,
+ "ts": "2026-11-18T12:57:58+01:00",
+ "salidas_desde_8": 6,
  "salidas_anio": 5814,
- "actuaciones": [
-  {
-   "tipo": "APERTURA CON RIESGO NIVEL 2",
-   "familia": "RESCATE_SALVAMENTO",
-   "ubicacion": "PORTUGALETE",
-   "zona": "CL General Castaños",
-   "parque": "URIOSTE",
-   "parque_nombre": "Urioste (Ortuella)",
-   "vehiculos": [
-    {
-     "tipo": "Furgón utiles varios",
-     "estado": "EN_SINIESTRO",
-     "estado_txt": "Vehículo parado en siniestro"
-    }
-   ],
-   "n_vehiculos": 1,
-   "estado": "EN_SINIESTRO"
-  }
- ],
+ "actuaciones": [],
  "por_parque": {
   "URIOSTE": {
-   "actuaciones": 1,
-   "vehiculos": 1,
+   "actuaciones": 0,
+   "vehiculos": 0,
    "propuesto": 0,
    "en_ruta": 0,
-   "en_siniestro": 1,
+   "en_siniestro": 0,
    "regresando": 0
   },
   "ARTAZA": {
