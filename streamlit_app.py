@@ -19,7 +19,42 @@ import pydeck as pdk
 import requests
 import streamlit as st
 
-st.set_page_config(page_title="AURIA · Emergencias Bizkaia", page_icon="🚒", layout="wide")
+st.set_page_config(page_title="AURIA · Emergencias Bizkaia", page_icon=str(Path(__file__).parent / "static" / "favicon-64.png"),
+                   layout="wide")
+
+
+def _icono_inicio():
+    """Icono y nombre de AURIA al añadir el panel a la pantalla de inicio (iPhone/Android).
+    Streamlit no deja tocar su <head>: un script (st.html con JavaScript) añade las etiquetas al
+    documento de la app y al de la ventana principal de Streamlit Cloud (mismo origen). Iconos en static/ (servidos en /app/static/)."""
+    v = "3"
+    st.html(f"""<script>
+    (function() {{
+      const base = window.location.origin + "/app/static/";
+      const docs = [document];
+      try {{ if (window.top !== window) docs.push(window.top.document); }} catch (e) {{}}
+      for (const d of docs) {{
+        d.querySelectorAll('link[rel="apple-touch-icon"],link[rel="manifest"]').forEach(x => x.remove());
+        const add = (rel, href, extra) => {{ const l = d.createElement("link"); l.rel = rel; l.href = href;
+          Object.assign(l, extra || {{}}); d.head.appendChild(l); }};
+        add("apple-touch-icon", base + "apple-touch-icon.png?v={v}", {{sizes: "180x180"}});
+        add("icon", base + "icon-192.png?v={v}", {{sizes: "192x192", type: "image/png"}});
+        add("manifest", base + "manifest.json?v={v}");
+        const meta = (n, c) => {{ let m = d.querySelector('meta[name="' + n + '"]');
+          if (!m) {{ m = d.createElement("meta"); m.name = n; d.head.appendChild(m); }} m.content = c; }};
+        meta("apple-mobile-web-app-title", "AURIA");
+        meta("application-name", "AURIA");
+        meta("apple-mobile-web-app-capable", "yes");
+        meta("mobile-web-app-capable", "yes");
+        meta("apple-mobile-web-app-status-bar-style", "black-translucent");
+        meta("theme-color", "#1f2e39");
+        d.title = "AURIA";
+      }}
+    }})();
+    </script>""", unsafe_allow_javascript=True, width="content")
+
+
+_icono_inicio()
 
 REPO_POR_DEFECTO = "bsendagorta/auria"
 RAIZ = Path(__file__).parent

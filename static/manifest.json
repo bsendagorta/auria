@@ -1,0 +1,12 @@
+{
+  "name": "AURIA · Emergencias Bizkaia",
+  "short_name": "AURIA",
+  "start_url": "https://auria-bizkaia.streamlit.app/",
+  "display": "standalone",
+  "background_color": "#1f2e39",
+  "theme_color": "#1f2e39",
+  "icons": [
+    {"src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable"},
+    {"src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}
+  ]
+}
