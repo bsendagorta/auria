@@ -1,31 +1,8 @@
 {
- "ts": "2026-11-18T14:51:23+01:00",
- "salidas_desde_8": 7,
+ "ts": "2026-11-18T14:53:23+01:00",
+ "salidas_desde_8": 8,
  "salidas_anio": 5814,
- "actuaciones": [
-  {
-   "tipo": "FUGA DE GAS NIVEL 1",
-   "familia": "GAS_MMPP",
-   "ubicacion": "DURANGO",
-   "zona": "CL Tabirabide Kalea",
-   "parque": "IURRETA",
-   "parque_nombre": "Iurreta",
-   "vehiculos": [
-    {
-     "tipo": "Bomba urbana pesada",
-     "estado": "REGRESANDO",
-     "estado_txt": "Vehículo volviendo de un sin."
-    },
-    {
-     "tipo": "Unidad de mando y jefatura",
-     "estado": "REGRESANDO",
-     "estado_txt": "Vehículo volviendo de un sin."
-    }
-   ],
-   "n_vehiculos": 2,
-   "estado": "REGRESANDO"
-  }
- ],
+ "actuaciones": [],
  "por_parque": {
   "URIOSTE": {
    "actuaciones": 0,
@@ -60,12 +37,12 @@
    "regresando": 0
   },
   "IURRETA": {
-   "actuaciones": 1,
-   "vehiculos": 2,
+   "actuaciones": 0,
+   "vehiculos": 0,
    "propuesto": 0,
    "en_ruta": 0,
    "en_siniestro": 0,
-   "regresando": 2
+   "regresando": 0
   },
   "ARRATZU": {
    "actuaciones": 0,
