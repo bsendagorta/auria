@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-18T20:13+01:00",
+ "generado": "2026-11-18T20:30+01:00",
  "horizonte_h": 6,
  "modelo": "base+reglas",
  "fuentes_ok": {
@@ -10,8 +10,8 @@
   "salidas_esperadas_6h": 3.6,
   "normal_6h": 3.6,
   "contador": {
-   "ts": "2026-11-18T20:13:08+01:00",
-   "desde_8": 10,
+   "ts": "2026-11-18T20:30:00+01:00",
+   "desde_8": 11,
    "anio": 5816
   }
  },
@@ -2610,7 +2610,7 @@
    "tipo": "AMENAZA DE SUICIDIO NIVEL 1",
    "ubicacion": "DURANGO",
    "zona": "AV Askatasun",
-   "vehiculos": "Furgón utiles varios (Vehículo parado en siniestro) | Bomba urbana pesada (Vehículo parado en siniestro) | Transporte Material y Personal (Vehículo parado en siniestro)",
+   "vehiculos": "Furgón utiles varios (Vehículo parado en siniestro) | Bomba urbana pesada (Vehículo volviendo de un sin.) | Auto escala articulada (Vehículo no disponible tempor.)",
    "parque": "IURRETA"
   }
  ],
