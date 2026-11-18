@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-18T15:41:24+01:00",
+ "ts": "2026-11-18T15:44:23+01:00",
  "salidas_desde_8": 8,
  "salidas_anio": 5814,
  "actuaciones": [
@@ -13,12 +13,27 @@
    "vehiculos": [
     {
      "tipo": "Unidad de mando y jefatura",
-     "estado": "PROPUESTO",
-     "estado_txt": "Vehículo propuesto"
+     "estado": "EN_RUTA",
+     "estado_txt": "Vehículo va a un siniestro"
+    },
+    {
+     "tipo": "Auto escala articulada",
+     "estado": "EN_RUTA",
+     "estado_txt": "Vehículo va a un siniestro"
+    },
+    {
+     "tipo": "Bomba urbana pesada",
+     "estado": "EN_RUTA",
+     "estado_txt": "Vehículo va a un siniestro"
+    },
+    {
+     "tipo": "Furgón utiles varios",
+     "estado": "EN_RUTA",
+     "estado_txt": "Vehículo va a un siniestro"
     }
    ],
-   "n_vehiculos": 1,
-   "estado": "PROPUESTO"
+   "n_vehiculos": 4,
+   "estado": "EN_RUTA"
   }
  ],
  "por_parque": {
@@ -32,9 +47,9 @@
   },
   "ARTAZA": {
    "actuaciones": 1,
-   "vehiculos": 1,
-   "propuesto": 1,
-   "en_ruta": 0,
+   "vehiculos": 4,
+   "propuesto": 0,
+   "en_ruta": 4,
    "en_siniestro": 0,
    "regresando": 0
   },
