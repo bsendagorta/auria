@@ -1,8 +1,26 @@
 {
- "ts": "2026-11-18T06:58:54+01:00",
+ "ts": "2026-11-18T07:01:54+01:00",
  "salidas_desde_8": 37,
  "salidas_anio": 5804,
- "actuaciones": [],
+ "actuaciones": [
+  {
+   "tipo": "SANEADO DE CONSTRUCCIONES",
+   "familia": "METEO_ASISTENCIA",
+   "ubicacion": "BASAURI",
+   "zona": "BA Goiri",
+   "parque": "BASAURI",
+   "parque_nombre": "Basauri",
+   "vehiculos": [
+    {
+     "tipo": "Auto escala articulada",
+     "estado": "PROPUESTO",
+     "estado_txt": "Vehículo propuesto"
+    }
+   ],
+   "n_vehiculos": 1,
+   "estado": "PROPUESTO"
+  }
+ ],
  "por_parque": {
   "URIOSTE": {
    "actuaciones": 0,
@@ -29,9 +47,9 @@
    "regresando": 0
   },
   "BASAURI": {
-   "actuaciones": 0,
-   "vehiculos": 0,
-   "propuesto": 0,
+   "actuaciones": 1,
+   "vehiculos": 1,
+   "propuesto": 1,
    "en_ruta": 0,
    "en_siniestro": 0,
    "regresando": 0
