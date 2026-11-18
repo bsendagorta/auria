@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-18T05:19:54+01:00",
+ "ts": "2026-11-18T05:22:54+01:00",
  "salidas_desde_8": 36,
  "salidas_anio": 5804,
  "actuaciones": [
@@ -50,8 +50,8 @@
     },
     {
      "tipo": "Unidad de mando y jefatura",
-     "estado": "EN_RUTA",
-     "estado_txt": "Vehículo va a un siniestro"
+     "estado": "EN_SINIESTRO",
+     "estado_txt": "Vehículo parado en siniestro"
     },
     {
      "tipo": "Bomba nodriza pesada",
@@ -92,8 +92,8 @@
    "actuaciones": 1,
    "vehiculos": 5,
    "propuesto": 1,
-   "en_ruta": 4,
-   "en_siniestro": 0,
+   "en_ruta": 3,
+   "en_siniestro": 1,
    "regresando": 0
   },
   "IURRETA": {
