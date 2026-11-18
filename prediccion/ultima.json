@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-18T12:01+01:00",
+ "generado": "2026-11-18T12:18+01:00",
  "horizonte_h": 6,
  "modelo": "base+reglas",
  "fuentes_ok": {
@@ -10,9 +10,9 @@
   "salidas_esperadas_6h": 4.8,
   "normal_6h": 4.8,
   "contador": {
-   "ts": "2026-11-18T12:01:12+01:00",
-   "desde_8": 4,
-   "anio": 5808
+   "ts": "2026-11-18T12:18:53+01:00",
+   "desde_8": 5,
+   "anio": 5812
   }
  },
  "parques": [
@@ -2582,7 +2582,7 @@
    "tipo": "SANEADO DE CONSTRUCCIONES",
    "ubicacion": "SANTURTZI",
    "zona": "CL Bullón",
-   "vehiculos": "Auto escala articulada (Vehículo parado en siniestro) | Transporte Material y Personal (Vehículo parado en siniestro)",
+   "vehiculos": "Auto escala articulada (Vehículo volviendo de un sin.) | Transporte Material y Personal (Vehículo volviendo de un sin.)",
    "parque": "URIOSTE"
   }
  ],
