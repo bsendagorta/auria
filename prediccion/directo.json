@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-18T20:23:01+01:00",
+ "ts": "2026-11-18T20:26:01+01:00",
  "salidas_desde_8": 11,
  "salidas_anio": 5816,
  "actuaciones": [
@@ -23,8 +23,8 @@
     },
     {
      "tipo": "Auto escala articulada",
-     "estado": "REGRESANDO",
-     "estado_txt": "Vehículo volviendo de un sin."
+     "estado": "OTRO",
+     "estado_txt": "Vehículo no disponible tempor."
     }
    ],
    "n_vehiculos": 3,
@@ -70,7 +70,7 @@
    "propuesto": 0,
    "en_ruta": 0,
    "en_siniestro": 1,
-   "regresando": 2
+   "regresando": 1
   },
   "ARRATZU": {
    "actuaciones": 0,
