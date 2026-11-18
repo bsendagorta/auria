@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-18T05:16+01:00",
+ "generado": "2026-11-18T05:33+01:00",
  "horizonte_h": 6,
  "modelo": "base+reglas",
  "fuentes_ok": {
@@ -10,7 +10,7 @@
   "salidas_esperadas_6h": 4.2,
   "normal_6h": 4.2,
   "contador": {
-   "ts": "2026-11-18T05:16:53+01:00",
+   "ts": "2026-11-18T05:32:53+01:00",
    "desde_8": 36,
    "anio": 5804
   }
@@ -1393,7 +1393,7 @@
    "situaciones_6h": [],
    "directo": {
     "activas": 1,
-    "nuevas_1h": 1
+    "nuevas_1h": 0
    },
    "horas": [
     {
@@ -2736,7 +2736,7 @@
    "tipo": "INCENDIO INDUSTRIAL NIVEL 2",
    "ubicacion": "IGORRE",
    "zona": "BA Urkizu",
-   "vehiculos": "Auto escala articulada (Vehículo propuesto) | Bomba urbana pesada (Vehículo va a un siniestro) | Bomba nodriza pesada (Vehículo va a un siniestro) | Unidad de mando y jefatura (Vehículo va a un siniestro) | Bomba nodriza pesada (Vehículo propuesto)",
+   "vehiculos": "Auto escala articulada (Vehículo parado en siniestro) | Bomba urbana pesada (Vehículo parado en siniestro) | Bomba nodriza pesada (Vehículo parado en siniestro) | Unidad de mando y jefatura (Vehículo parado en siniestro) | Bomba nodriza pesada (Vehículo volviendo de un sin.)",
    "parque": "BASAURI"
   }
  ],
