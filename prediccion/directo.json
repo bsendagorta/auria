@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-18T09:30:40+01:00",
+ "ts": "2026-11-18T09:36:52+01:00",
  "salidas_desde_8": 0,
  "salidas_anio": 5804,
  "actuaciones": [
@@ -13,6 +13,23 @@
    "vehiculos": [
     {
      "tipo": "Furgón utiles varios",
+     "estado": "EN_SINIESTRO",
+     "estado_txt": "Vehículo parado en siniestro"
+    }
+   ],
+   "n_vehiculos": 1,
+   "estado": "EN_SINIESTRO"
+  },
+  {
+   "tipo": "NEUTRALIZACIÓN DE ABEJAS Y AVISPAS",
+   "familia": "ABEJAS_AVISPAS",
+   "ubicacion": "ZALLA",
+   "zona": "BA Llantada",
+   "parque": "ZALLA",
+   "parque_nombre": "Zalla",
+   "vehiculos": [
+    {
+     "tipo": "Transporte Material y Personal",
      "estado": "EN_SINIESTRO",
      "estado_txt": "Vehículo parado en siniestro"
     }
@@ -79,11 +96,11 @@
    "regresando": 0
   },
   "ZALLA": {
-   "actuaciones": 0,
-   "vehiculos": 0,
+   "actuaciones": 1,
+   "vehiculos": 1,
    "propuesto": 0,
    "en_ruta": 0,
-   "en_siniestro": 0,
+   "en_siniestro": 1,
    "regresando": 0
   },
   "SIN_PARQUE": {
