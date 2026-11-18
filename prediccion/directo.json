@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-18T05:03:54+01:00",
+ "ts": "2026-11-18T05:06:54+01:00",
  "salidas_desde_8": 35,
  "salidas_anio": 5804,
  "actuaciones": [
@@ -13,27 +13,27 @@
    "vehiculos": [
     {
      "tipo": "Bomba urbana pesada",
-     "estado": "PROPUESTO",
-     "estado_txt": "Vehículo propuesto"
+     "estado": "EN_RUTA",
+     "estado_txt": "Vehículo va a un siniestro"
     },
     {
      "tipo": "Bomba urbana pesada",
-     "estado": "PROPUESTO",
-     "estado_txt": "Vehículo propuesto"
+     "estado": "EN_RUTA",
+     "estado_txt": "Vehículo va a un siniestro"
     },
     {
      "tipo": "Bomba nodriza pesada",
-     "estado": "PROPUESTO",
-     "estado_txt": "Vehículo propuesto"
+     "estado": "EN_RUTA",
+     "estado_txt": "Vehículo va a un siniestro"
     },
     {
      "tipo": "Unidad de mando y jefatura",
-     "estado": "PROPUESTO",
-     "estado_txt": "Vehículo propuesto"
+     "estado": "EN_RUTA",
+     "estado_txt": "Vehículo va a un siniestro"
     }
    ],
    "n_vehiculos": 4,
-   "estado": "PROPUESTO"
+   "estado": "EN_RUTA"
   },
   {
    "tipo": "OTRAS ASISTENCIAS TÉCNICAS",
@@ -86,8 +86,8 @@
   "BASAURI": {
    "actuaciones": 1,
    "vehiculos": 4,
-   "propuesto": 4,
-   "en_ruta": 0,
+   "propuesto": 0,
+   "en_ruta": 4,
    "en_siniestro": 0,
    "regresando": 0
   },
