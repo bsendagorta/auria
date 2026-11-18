@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-18T10:03:51+01:00",
+ "ts": "2026-11-18T10:06:51+01:00",
  "salidas_desde_8": 1,
  "salidas_anio": 5804,
  "actuaciones": [
@@ -19,6 +19,23 @@
    ],
    "n_vehiculos": 1,
    "estado": "REGRESANDO"
+  },
+  {
+   "tipo": "SANEADO DE CONSTRUCCIONES",
+   "familia": "METEO_ASISTENCIA",
+   "ubicacion": "ERANDIO",
+   "zona": "PL Juanena",
+   "parque": "ARTAZA",
+   "parque_nombre": "Artaza (Leioa)",
+   "vehiculos": [
+    {
+     "tipo": "Transporte Material y Personal",
+     "estado": "PROPUESTO",
+     "estado_txt": "Vehículo propuesto"
+    }
+   ],
+   "n_vehiculos": 1,
+   "estado": "PROPUESTO"
   }
  ],
  "por_parque": {
@@ -31,9 +48,9 @@
    "regresando": 1
   },
   "ARTAZA": {
-   "actuaciones": 0,
-   "vehiculos": 0,
-   "propuesto": 0,
+   "actuaciones": 1,
+   "vehiculos": 1,
+   "propuesto": 1,
    "en_ruta": 0,
    "en_siniestro": 0,
    "regresando": 0
