@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-18T05:28:54+01:00",
+ "ts": "2026-11-18T05:31:54+01:00",
  "salidas_desde_8": 36,
  "salidas_anio": 5804,
  "actuaciones": [
@@ -35,18 +35,18 @@
    "vehiculos": [
     {
      "tipo": "Auto escala articulada",
-     "estado": "PROPUESTO",
-     "estado_txt": "Vehículo propuesto"
+     "estado": "EN_SINIESTRO",
+     "estado_txt": "Vehículo parado en siniestro"
     },
     {
      "tipo": "Bomba urbana pesada",
-     "estado": "EN_RUTA",
-     "estado_txt": "Vehículo va a un siniestro"
+     "estado": "EN_SINIESTRO",
+     "estado_txt": "Vehículo parado en siniestro"
     },
     {
      "tipo": "Bomba nodriza pesada",
-     "estado": "EN_RUTA",
-     "estado_txt": "Vehículo va a un siniestro"
+     "estado": "EN_SINIESTRO",
+     "estado_txt": "Vehículo parado en siniestro"
     },
     {
      "tipo": "Unidad de mando y jefatura",
@@ -91,9 +91,9 @@
   "BASAURI": {
    "actuaciones": 1,
    "vehiculos": 5,
-   "propuesto": 1,
-   "en_ruta": 3,
-   "en_siniestro": 1,
+   "propuesto": 0,
+   "en_ruta": 1,
+   "en_siniestro": 4,
    "regresando": 0
   },
   "IURRETA": {
