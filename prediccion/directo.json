@@ -1,14 +1,37 @@
 {
- "ts": "2026-11-18T11:38:13+01:00",
+ "ts": "2026-11-18T11:41:13+01:00",
  "salidas_desde_8": 4,
  "salidas_anio": 5804,
- "actuaciones": [],
+ "actuaciones": [
+  {
+   "tipo": "SANEADO DE CONSTRUCCIONES",
+   "familia": "METEO_ASISTENCIA",
+   "ubicacion": "SANTURTZI",
+   "zona": "CL Bullón",
+   "parque": "URIOSTE",
+   "parque_nombre": "Urioste (Ortuella)",
+   "vehiculos": [
+    {
+     "tipo": "Auto escala articulada",
+     "estado": "EN_RUTA",
+     "estado_txt": "Vehículo va a un siniestro"
+    },
+    {
+     "tipo": "Transporte Material y Personal",
+     "estado": "EN_RUTA",
+     "estado_txt": "Vehículo va a un siniestro"
+    }
+   ],
+   "n_vehiculos": 2,
+   "estado": "EN_RUTA"
+  }
+ ],
  "por_parque": {
   "URIOSTE": {
-   "actuaciones": 0,
-   "vehiculos": 0,
+   "actuaciones": 1,
+   "vehiculos": 2,
    "propuesto": 0,
-   "en_ruta": 0,
+   "en_ruta": 2,
    "en_siniestro": 0,
    "regresando": 0
   },
