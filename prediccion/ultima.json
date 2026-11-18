@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-18T05:00+01:00",
+ "generado": "2026-11-18T05:16+01:00",
  "horizonte_h": 6,
  "modelo": "base+reglas",
  "fuentes_ok": {
@@ -10,8 +10,8 @@
   "salidas_esperadas_6h": 4.2,
   "normal_6h": 4.2,
   "contador": {
-   "ts": "2026-11-18T05:00:53+01:00",
-   "desde_8": 35,
+   "ts": "2026-11-18T05:16:53+01:00",
+   "desde_8": 36,
    "anio": 5804
   }
  },
@@ -1092,7 +1092,7 @@
       "temp": 13.8,
       "humedad": 91.0,
       "lluvia_1h": 1.7,
-      "lluvia_12h": 4.1,
+      "lluvia_12h": 4.3,
       "racha_kmh": 25.2,
       "viento_sur": false,
       "dias_sin_lluvia": 3.0,
@@ -1100,7 +1100,7 @@
       "dir_viento": 295.0,
       "factor_racha": 2.1,
       "dpresion_12h": 2.4,
-      "lluvia_72h": 6.0,
+      "lluvia_72h": 6.2,
       "ola_m": null
      }
     },
@@ -1139,7 +1139,7 @@
       "temp": 13.3,
       "humedad": 96.0,
       "lluvia_1h": 3.6,
-      "lluvia_12h": 5.8,
+      "lluvia_12h": 6.0,
       "racha_kmh": 15.1,
       "viento_sur": false,
       "dias_sin_lluvia": 3.0,
@@ -1147,7 +1147,7 @@
       "dir_viento": 239.0,
       "factor_racha": 2.0,
       "dpresion_12h": 3.1,
-      "lluvia_72h": 9.6,
+      "lluvia_72h": 9.8,
       "ola_m": null
      }
     },
@@ -1185,7 +1185,7 @@
       "temp": 13.7,
       "humedad": 91.0,
       "lluvia_1h": 1.4,
-      "lluvia_12h": 9.4,
+      "lluvia_12h": 9.6,
       "racha_kmh": 18.4,
       "viento_sur": false,
       "dias_sin_lluvia": 3.0,
@@ -1193,7 +1193,7 @@
       "dir_viento": 281.0,
       "factor_racha": 2.5,
       "dpresion_12h": 3.1,
-      "lluvia_72h": 11.0,
+      "lluvia_72h": 11.2,
       "ola_m": null
      }
     },
@@ -1231,7 +1231,7 @@
       "temp": 13.5,
       "humedad": 91.0,
       "lluvia_1h": 0.6,
-      "lluvia_12h": 10.8,
+      "lluvia_12h": 11.0,
       "racha_kmh": 14.7,
       "viento_sur": false,
       "dias_sin_lluvia": 3.0,
@@ -1239,7 +1239,7 @@
       "dir_viento": 315.0,
       "factor_racha": 2.3,
       "dpresion_12h": 2.7,
-      "lluvia_72h": 11.6,
+      "lluvia_72h": 11.8,
       "ola_m": null
      }
     },
@@ -1277,7 +1277,7 @@
       "temp": 13.7,
       "humedad": 89.0,
       "lluvia_1h": 0.2,
-      "lluvia_12h": 11.4,
+      "lluvia_12h": 11.6,
       "racha_kmh": 11.2,
       "viento_sur": false,
       "dias_sin_lluvia": 3.0,
@@ -1285,7 +1285,7 @@
       "dir_viento": 70.0,
       "factor_racha": 2.2,
       "dpresion_12h": 3.8,
-      "lluvia_72h": 11.8,
+      "lluvia_72h": 12.0,
       "ola_m": null
      }
     },
@@ -1320,7 +1320,7 @@
       "temp": 13.8,
       "humedad": 90.0,
       "lluvia_1h": 0.0,
-      "lluvia_12h": 11.6,
+      "lluvia_12h": 11.8,
       "racha_kmh": 11.7,
       "viento_sur": false,
       "dias_sin_lluvia": 3.0,
@@ -1328,7 +1328,7 @@
       "dir_viento": 93.0,
       "factor_racha": 2.1,
       "dpresion_12h": 4.3,
-      "lluvia_72h": 11.8,
+      "lluvia_72h": 12.0,
       "ola_m": null
      }
     }
@@ -1430,7 +1430,7 @@
       "temp": 14.3,
       "humedad": 89.0,
       "lluvia_1h": 0.5,
-      "lluvia_12h": 3.3,
+      "lluvia_12h": 3.4,
       "racha_kmh": 17.3,
       "viento_sur": false,
       "dias_sin_lluvia": 3.0,
@@ -1438,7 +1438,7 @@
       "dir_viento": 279.0,
       "factor_racha": 3.5,
       "dpresion_12h": 2.7,
-      "lluvia_72h": 4.2,
+      "lluvia_72h": 4.3,
       "ola_m": 2.0
      }
     },
@@ -1476,7 +1476,7 @@
       "temp": 14.2,
       "humedad": 88.0,
       "lluvia_1h": 1.8,
-      "lluvia_12h": 3.8,
+      "lluvia_12h": 3.9,
       "racha_kmh": 22.3,
       "viento_sur": false,
       "dias_sin_lluvia": 3.0,
@@ -1484,7 +1484,7 @@
       "dir_viento": 302.0,
       "factor_racha": 3.3,
       "dpresion_12h": 3.6,
-      "lluvia_72h": 6.0,
+      "lluvia_72h": 6.1,
       "ola_m": 2.2
      }
     },
@@ -1522,7 +1522,7 @@
       "temp": 14.0,
       "humedad": 85.0,
       "lluvia_1h": 0.5,
-      "lluvia_12h": 5.6,
+      "lluvia_12h": 5.7,
       "racha_kmh": 22.0,
       "viento_sur": false,
       "dias_sin_lluvia": 3.0,
@@ -1530,7 +1530,7 @@
       "dir_viento": 270.0,
       "factor_racha": 3.4,
       "dpresion_12h": 3.7,
-      "lluvia_72h": 6.5,
+      "lluvia_72h": 6.6,
       "ola_m": 2.3
      }
     },
@@ -1568,7 +1568,7 @@
       "temp": 13.8,
       "humedad": 90.0,
       "lluvia_1h": 0.3,
-      "lluvia_12h": 6.1,
+      "lluvia_12h": 6.2,
       "racha_kmh": 13.5,
       "viento_sur": false,
       "dias_sin_lluvia": 3.0,
@@ -1576,7 +1576,7 @@
       "dir_viento": 201.0,
       "factor_racha": 2.7,
       "dpresion_12h": 2.9,
-      "lluvia_72h": 6.9,
+      "lluvia_72h": 7.0,
       "ola_m": 2.3
      }
     },
@@ -1622,7 +1622,7 @@
       "dir_viento": 206.0,
       "factor_racha": 2.9,
       "dpresion_12h": 4.2,
-      "lluvia_72h": 7.2,
+      "lluvia_72h": 7.3,
       "ola_m": 2.3
      }
     },
@@ -1657,7 +1657,7 @@
       "temp": 14.6,
       "humedad": 80.0,
       "lluvia_1h": 0.0,
-      "lluvia_12h": 6.9,
+      "lluvia_12h": 7.0,
       "racha_kmh": 18.6,
       "viento_sur": false,
       "dias_sin_lluvia": 3.0,
@@ -1665,7 +1665,7 @@
       "dir_viento": 219.0,
       "factor_racha": 3.7,
       "dpresion_12h": 4.7,
-      "lluvia_72h": 7.2,
+      "lluvia_72h": 7.3,
       "ola_m": 2.3
      }
     }
@@ -2726,18 +2726,18 @@
  ],
  "activas_ahora": [
   {
-   "tipo": "INCENDIO INDUSTRIAL NIVEL 2",
-   "ubicacion": "IGORRE",
-   "zona": "BA Urkizu",
-   "vehiculos": "Bomba urbana pesada (Vehículo propuesto) | Bomba urbana pesada (Vehículo propuesto) | Bomba nodriza pesada (Vehículo propuesto) | Unidad de mando y jefatura (Vehículo propuesto)",
-   "parque": "BASAURI"
-  },
-  {
    "tipo": "OTRAS ASISTENCIAS TÉCNICAS",
    "ubicacion": "ONDARROA",
    "zona": "CL Txomin Agirre",
    "vehiculos": "Transporte Material y Personal (Vehículo parado en siniestro) | Furgón utiles varios (Vehículo parado en siniestro)",
    "parque": "MARKINA"
+  },
+  {
+   "tipo": "INCENDIO INDUSTRIAL NIVEL 2",
+   "ubicacion": "IGORRE",
+   "zona": "BA Urkizu",
+   "vehiculos": "Auto escala articulada (Vehículo propuesto) | Bomba urbana pesada (Vehículo va a un siniestro) | Bomba nodriza pesada (Vehículo va a un siniestro) | Unidad de mando y jefatura (Vehículo va a un siniestro) | Bomba nodriza pesada (Vehículo propuesto)",
+   "parque": "BASAURI"
   }
  ],
  "niveles": {
