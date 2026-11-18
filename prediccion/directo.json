@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-18T14:45:23+01:00",
+ "ts": "2026-11-18T14:48:23+01:00",
  "salidas_desde_8": 7,
  "salidas_anio": 5814,
  "actuaciones": [
@@ -13,17 +13,17 @@
    "vehiculos": [
     {
      "tipo": "Bomba urbana pesada",
-     "estado": "EN_SINIESTRO",
-     "estado_txt": "Vehículo parado en siniestro"
+     "estado": "REGRESANDO",
+     "estado_txt": "Vehículo volviendo de un sin."
     },
     {
      "tipo": "Unidad de mando y jefatura",
-     "estado": "EN_SINIESTRO",
-     "estado_txt": "Vehículo parado en siniestro"
+     "estado": "REGRESANDO",
+     "estado_txt": "Vehículo volviendo de un sin."
     }
    ],
    "n_vehiculos": 2,
-   "estado": "EN_SINIESTRO"
+   "estado": "REGRESANDO"
   }
  ],
  "por_parque": {
@@ -64,8 +64,8 @@
    "vehiculos": 2,
    "propuesto": 0,
    "en_ruta": 0,
-   "en_siniestro": 2,
-   "regresando": 0
+   "en_siniestro": 0,
+   "regresando": 2
   },
   "ARRATZU": {
    "actuaciones": 0,
