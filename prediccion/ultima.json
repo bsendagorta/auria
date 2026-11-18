@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-18T04:28+01:00",
+ "generado": "2026-11-18T04:36+01:00",
  "horizonte_h": 6,
  "modelo": "base+reglas",
  "fuentes_ok": {
@@ -10,7 +10,7 @@
   "salidas_esperadas_6h": 3.9,
   "normal_6h": 4.0,
   "contador": {
-   "ts": "2026-11-18T04:28:53+01:00",
+   "ts": "2026-11-18T04:36:03+01:00",
    "desde_8": 35,
    "anio": 5804
   }
@@ -1721,8 +1721,8 @@
    "situacion_ahora": "",
    "situaciones_6h": [],
    "directo": {
-    "activas": 0,
-    "nuevas_1h": 0
+    "activas": 1,
+    "nuevas_1h": 1
    },
    "horas": [
     {
@@ -2399,8 +2399,8 @@
    "situacion_ahora": "",
    "situaciones_6h": [],
    "directo": {
-    "activas": 1,
-    "nuevas_1h": 1
+    "activas": 0,
+    "nuevas_1h": 0
    },
    "horas": [
     {
@@ -2719,11 +2719,11 @@
  ],
  "activas_ahora": [
   {
-   "tipo": "INCENDIO EXTERIOR NIVEL 1",
-   "ubicacion": "BERMEO",
-   "zona": "CL Zubiaurtar Kepa",
-   "vehiculos": "Bomba urbana pesada (Vehículo volviendo de un sin.)",
-   "parque": "ARRATZU"
+   "tipo": "OTRAS ASISTENCIAS TÉCNICAS",
+   "ubicacion": "ONDARROA",
+   "zona": "CL Txomin Agirre",
+   "vehiculos": "Transporte Material y Personal (Vehículo propuesto)",
+   "parque": "MARKINA"
   }
  ],
  "niveles": {
