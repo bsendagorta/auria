@@ -1,26 +1,8 @@
 {
- "ts": "2026-11-18T11:26:14+01:00",
- "salidas_desde_8": 3,
+ "ts": "2026-11-18T11:29:13+01:00",
+ "salidas_desde_8": 4,
  "salidas_anio": 5804,
- "actuaciones": [
-  {
-   "tipo": "RETÉN DE PREVENCIÓN (SPEIS)",
-   "familia": "NO_OPERATIVO",
-   "ubicacion": "Puerto de Bilbao",
-   "zona": "ML MUELLE A-1 (AMPLIACION 1)",
-   "parque": "SIN_PARQUE",
-   "parque_nombre": "Fuera de zona / Bilbao",
-   "vehiculos": [
-    {
-     "tipo": "Bomba urbana ligera",
-     "estado": "REGRESANDO",
-     "estado_txt": "Vehículo volviendo de un sin."
-    }
-   ],
-   "n_vehiculos": 1,
-   "estado": "REGRESANDO"
-  }
- ],
+ "actuaciones": [],
  "por_parque": {
   "URIOSTE": {
    "actuaciones": 0,
@@ -87,12 +69,12 @@
    "regresando": 0
   },
   "SIN_PARQUE": {
-   "actuaciones": 1,
-   "vehiculos": 1,
+   "actuaciones": 0,
+   "vehiculos": 0,
    "propuesto": 0,
    "en_ruta": 0,
    "en_siniestro": 0,
-   "regresando": 1
+   "regresando": 0
   }
  }
 }
