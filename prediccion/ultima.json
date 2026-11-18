@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-18T15:33+01:00",
+ "generado": "2026-11-18T15:49+01:00",
  "horizonte_h": 6,
  "modelo": "base+reglas",
  "fuentes_ok": {
@@ -10,367 +10,20 @@
   "salidas_esperadas_6h": 4.7,
   "normal_6h": 4.6,
   "contador": {
-   "ts": "2026-11-18T15:33:22+01:00",
+   "ts": "2026-11-18T15:49:22+01:00",
    "desde_8": 8,
    "anio": 5814
   }
  },
  "parques": [
   {
-   "id": "BASAURI",
-   "nombre": "Basauri",
-   "lat": 43.237,
-   "lon": -2.885,
-   "salidas_esperadas_6h": 0.79,
-   "normal_6h": 0.76,
-   "prob_6h": 0.546,
-   "ratio_max": 1.09,
-   "nivel": "verde",
-   "hora_pico": "2026-11-18T19:00:00",
-   "factores": [
-    "Evento: Festival: Musika Astea de Galdakao 2026",
-    "🌀 Borrasca (presión cayendo)",
-    "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
-    "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)",
-    "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
-   ],
-   "situacion_ahora": "",
-   "situaciones_6h": [
-    "BORRASCA"
-   ],
-   "directo": {
-    "activas": 0,
-    "nuevas_1h": 0
-   },
-   "horas": [
-    {
-     "hora": "2026-11-18T15:00:00",
-     "lambda": 0.1343,
-     "prob": 0.126,
-     "normal": 0.1318,
-     "ratio": 1.02,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0291,
-       "mult": 1.0
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0203,
-       "mult": 1.0
-      },
-      {
-       "familia": "INCENDIO_FORESTAL_EXTERIOR",
-       "lambda": 0.0197,
-       "mult": 1.0
-      }
-     ],
-     "factores": [
-      "Evento: Festival: Musika Astea de Galdakao 2026"
-     ],
-     "situaciones": [],
-     "situacion_txt": "",
-     "meteo": {
-      "temp": 19.2,
-      "humedad": 64.0,
-      "lluvia_1h": 0.0,
-      "lluvia_12h": 1.1,
-      "racha_kmh": 13.0,
-      "viento_sur": false,
-      "dias_sin_lluvia": 2.0,
-      "viento_kmh": 5.8,
-      "dir_viento": 68.0,
-      "factor_racha": 2.2,
-      "dpresion_12h": -1.5,
-      "lluvia_72h": 5.4,
-      "ola_m": null
-     }
-    },
-    {
-     "hora": "2026-11-18T16:00:00",
-     "lambda": 0.1345,
-     "prob": 0.126,
-     "normal": 0.132,
-     "ratio": 1.02,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0291,
-       "mult": 1.0
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0203,
-       "mult": 1.0
-      },
-      {
-       "familia": "INCENDIO_FORESTAL_EXTERIOR",
-       "lambda": 0.0197,
-       "mult": 1.0
-      }
-     ],
-     "factores": [
-      "Evento: Festival: Musika Astea de Galdakao 2026"
-     ],
-     "situaciones": [],
-     "situacion_txt": "",
-     "meteo": {
-      "temp": 19.7,
-      "humedad": 58.0,
-      "lluvia_1h": 0.0,
-      "lluvia_12h": 0.1,
-      "racha_kmh": 7.9,
-      "viento_sur": false,
-      "dias_sin_lluvia": 2.0,
-      "viento_kmh": 2.3,
-      "dir_viento": 309.0,
-      "factor_racha": 1.6,
-      "dpresion_12h": -2.9,
-      "lluvia_72h": 5.4,
-      "ola_m": null
-     }
-    },
-    {
-     "hora": "2026-11-18T17:00:00",
-     "lambda": 0.1363,
-     "prob": 0.127,
-     "normal": 0.1335,
-     "ratio": 1.02,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0291,
-       "mult": 1.0
-      },
-      {
-       "familia": "TRAFICO",
-       "lambda": 0.0214,
-       "mult": 1.15
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0203,
-       "mult": 1.0
-      }
-     ],
-     "factores": [
-      "Evento: Festival: Musika Astea de Galdakao 2026"
-     ],
-     "situaciones": [],
-     "situacion_txt": "",
-     "meteo": {
-      "temp": 20.2,
-      "humedad": 53.0,
-      "lluvia_1h": 0.0,
-      "lluvia_12h": 0.1,
-      "racha_kmh": 16.9,
-      "viento_sur": false,
-      "dias_sin_lluvia": 2.0,
-      "viento_kmh": 9.0,
-      "dir_viento": 209.0,
-      "factor_racha": 1.9,
-      "dpresion_12h": -3.4,
-      "lluvia_72h": 5.4,
-      "ola_m": null
-     }
-    },
-    {
-     "hora": "2026-11-18T18:00:00",
-     "lambda": 0.1354,
-     "prob": 0.127,
-     "normal": 0.1327,
-     "ratio": 1.02,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0291,
-       "mult": 1.0
-      },
-      {
-       "familia": "TRAFICO",
-       "lambda": 0.0205,
-       "mult": 1.15
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0203,
-       "mult": 1.0
-      }
-     ],
-     "factores": [
-      "Evento: Festival: Musika Astea de Galdakao 2026"
-     ],
-     "situaciones": [],
-     "situacion_txt": "",
-     "meteo": {
-      "temp": 19.2,
-      "humedad": 54.0,
-      "lluvia_1h": 0.0,
-      "lluvia_12h": 0.0,
-      "racha_kmh": 16.5,
-      "viento_sur": false,
-      "dias_sin_lluvia": 2.0,
-      "viento_kmh": 8.7,
-      "dir_viento": 188.0,
-      "factor_racha": 1.9,
-      "dpresion_12h": -5.8,
-      "lluvia_72h": 5.3,
-      "ola_m": null
-     }
-    },
-    {
-     "hora": "2026-11-18T19:00:00",
-     "lambda": 0.1408,
-     "prob": 0.131,
-     "normal": 0.1291,
-     "ratio": 1.09,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0291,
-       "mult": 1.0
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0259,
-       "mult": 1.28
-      },
-      {
-       "familia": "TRAFICO",
-       "lambda": 0.0203,
-       "mult": 1.43
-      }
-     ],
-     "factores": [
-      "🌀 Borrasca (presión cayendo)",
-      "Evento: Festival: Musika Astea de Galdakao 2026",
-      "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
-      "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)",
-      "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
-     ],
-     "situaciones": [
-      "BORRASCA"
-     ],
-     "situacion_txt": "🌀 Borrasca (presión cayendo)",
-     "meteo": {
-      "temp": 18.8,
-      "humedad": 61.0,
-      "lluvia_1h": 0.2,
-      "lluvia_12h": 0.0,
-      "racha_kmh": 14.8,
-      "viento_sur": false,
-      "dias_sin_lluvia": 2.0,
-      "viento_kmh": 6.8,
-      "dir_viento": 207.0,
-      "factor_racha": 2.2,
-      "dpresion_12h": -6.9,
-      "lluvia_72h": 5.5,
-      "ola_m": null
-     }
-    },
-    {
-     "hora": "2026-11-18T20:00:00",
-     "lambda": 0.1092,
-     "prob": 0.103,
-     "normal": 0.1052,
-     "ratio": 1.04,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0295,
-       "mult": 1.0
-      },
-      {
-       "familia": "INCENDIO_URBANO",
-       "lambda": 0.0189,
-       "mult": 1.0
-      },
-      {
-       "familia": "TRAFICO",
-       "lambda": 0.0168,
-       "mult": 1.15
-      }
-     ],
-     "factores": [
-      "🌀 Borrasca (presión cayendo)",
-      "Evento: Festival: Musika Astea de Galdakao 2026",
-      "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
-     ],
-     "situaciones": [
-      "BORRASCA"
-     ],
-     "situacion_txt": "🌀 Borrasca (presión cayendo)",
-     "meteo": {
-      "temp": 19.2,
-      "humedad": 67.0,
-      "lluvia_1h": 0.1,
-      "lluvia_12h": 0.2,
-      "racha_kmh": 26.0,
-      "viento_sur": false,
-      "dias_sin_lluvia": 2.0,
-      "viento_kmh": 11.8,
-      "dir_viento": 209.0,
-      "factor_racha": 2.2,
-      "dpresion_12h": -8.8,
-      "lluvia_72h": 5.6,
-      "ola_m": null
-     }
-    }
-   ],
-   "carreteras": [
-    {
-     "carretera": "N-634",
-     "km_ini": 100,
-     "km_fin": 105,
-     "esperados": 0.0167,
-     "prob": 0.0165,
-     "accidentes_anio": 16.429,
-     "pct_graves": 2.6,
-     "hora_pico": 17,
-     "imd": null,
-     "ip": null
-    },
-    {
-     "carretera": "N-634",
-     "km_ini": 95,
-     "km_fin": 100,
-     "esperados": 0.0126,
-     "prob": 0.0125,
-     "accidentes_anio": 12.429,
-     "pct_graves": 14.9,
-     "hora_pico": 16,
-     "imd": null,
-     "ip": null
-    },
-    {
-     "carretera": "A-8",
-     "km_ini": 110,
-     "km_fin": 115,
-     "esperados": 0.0106,
-     "prob": 0.0105,
-     "accidentes_anio": 10.429,
-     "pct_graves": 2.7,
-     "hora_pico": 14,
-     "imd": 45083,
-     "ip": 12.7
-    }
-   ]
-  },
-  {
    "id": "ARTAZA",
    "nombre": "Artaza (Leioa)",
    "lat": 43.335,
    "lon": -2.987,
-   "salidas_esperadas_6h": 0.91,
+   "salidas_esperadas_6h": 0.92,
    "normal_6h": 0.9,
-   "prob_6h": 0.599,
+   "prob_6h": 0.602,
    "ratio_max": 1.04,
    "nivel": "verde",
    "hora_pico": "2026-11-18T15:00:00",
@@ -378,17 +31,15 @@
     "Accidentes de tráfico activos en la zona",
     "Incidencias de seguridad vial (objetos, desprendimientos)",
     "🌀 Borrasca (presión cayendo)",
-    "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)",
-    "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
-    "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)"
+    "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
    ],
    "situacion_ahora": "",
    "situaciones_6h": [
     "BORRASCA"
    ],
    "directo": {
-    "activas": 0,
-    "nuevas_1h": 0
+    "activas": 1,
+    "nuevas_1h": 1
    },
    "horas": [
     {
@@ -422,16 +73,16 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 19.0,
-      "humedad": 57.0,
+      "temp": 19.6,
+      "humedad": 52.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
       "racha_kmh": 13.7,
       "viento_sur": false,
       "dias_sin_lluvia": 4.0,
-      "viento_kmh": 7.8,
-      "dir_viento": 34.0,
-      "factor_racha": 1.8,
+      "viento_kmh": 5.6,
+      "dir_viento": 15.0,
+      "factor_racha": 2.5,
       "dpresion_12h": -1.5,
       "lluvia_72h": 0.5,
       "ola_m": 3.0
@@ -468,15 +119,15 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 19.0,
-      "humedad": 58.0,
+      "temp": 19.4,
+      "humedad": 56.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
-      "racha_kmh": 11.2,
+      "racha_kmh": 10.8,
       "viento_sur": false,
       "dias_sin_lluvia": 4.0,
-      "viento_kmh": 5.3,
-      "dir_viento": 62.0,
+      "viento_kmh": 5.2,
+      "dir_viento": 65.0,
       "factor_racha": 2.1,
       "dpresion_12h": -3.0,
       "lluvia_72h": 0.5,
@@ -511,15 +162,15 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 18.6,
-      "humedad": 72.0,
+      "temp": 18.9,
+      "humedad": 71.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
-      "racha_kmh": 8.6,
+      "racha_kmh": 6.8,
       "viento_sur": false,
       "dias_sin_lluvia": 4.0,
-      "viento_kmh": 6.5,
-      "dir_viento": 96.0,
+      "viento_kmh": 5.1,
+      "dir_viento": 86.0,
       "factor_racha": 1.3,
       "dpresion_12h": -3.6,
       "lluvia_72h": 0.5,
@@ -559,16 +210,16 @@
      ],
      "situacion_txt": "🌀 Borrasca (presión cayendo)",
      "meteo": {
-      "temp": 18.8,
-      "humedad": 54.0,
+      "temp": 19.0,
+      "humedad": 53.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
-      "racha_kmh": 19.7,
+      "racha_kmh": 21.2,
       "viento_sur": false,
       "dias_sin_lluvia": 4.0,
-      "viento_kmh": 11.7,
-      "dir_viento": 177.0,
-      "factor_racha": 1.7,
+      "viento_kmh": 10.4,
+      "dir_viento": 178.0,
+      "factor_racha": 2.0,
       "dpresion_12h": -6.0,
       "lluvia_72h": 0.5,
       "ola_m": 3.2
@@ -576,10 +227,10 @@
     },
     {
      "hora": "2026-11-18T19:00:00",
-     "lambda": 0.1497,
-     "prob": 0.139,
+     "lambda": 0.158,
+     "prob": 0.146,
      "normal": 0.1531,
-     "ratio": 0.98,
+     "ratio": 1.03,
      "nivel": "verde",
      "familias_top": [
       {
@@ -589,8 +240,8 @@
       },
       {
        "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0313,
-       "mult": 0.89
+       "lambda": 0.0399,
+       "mult": 1.14
       },
       {
        "familia": "ABEJAS_AVISPAS",
@@ -600,8 +251,6 @@
      ],
      "factores": [
       "🌀 Borrasca (presión cayendo)",
-      "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
-      "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)",
       "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
      ],
      "situaciones": [
@@ -609,18 +258,18 @@
      ],
      "situacion_txt": "🌀 Borrasca (presión cayendo)",
      "meteo": {
-      "temp": 18.0,
-      "humedad": 68.0,
-      "lluvia_1h": 0.2,
+      "temp": 18.3,
+      "humedad": 61.0,
+      "lluvia_1h": 0.1,
       "lluvia_12h": 0.0,
       "racha_kmh": 14.0,
       "viento_sur": false,
       "dias_sin_lluvia": 4.0,
-      "viento_kmh": 5.0,
-      "dir_viento": 111.0,
-      "factor_racha": 2.8,
+      "viento_kmh": 5.9,
+      "dir_viento": 143.0,
+      "factor_racha": 2.4,
       "dpresion_12h": -7.1,
-      "lluvia_72h": 0.8,
+      "lluvia_72h": 0.6,
       "ola_m": 3.2
      }
     },
@@ -657,18 +306,18 @@
      ],
      "situacion_txt": "🌀 Borrasca (presión cayendo)",
      "meteo": {
-      "temp": 17.3,
-      "humedad": 75.0,
-      "lluvia_1h": 0.1,
-      "lluvia_12h": 0.2,
-      "racha_kmh": 22.1,
+      "temp": 16.8,
+      "humedad": 78.0,
+      "lluvia_1h": 0.0,
+      "lluvia_12h": 0.1,
+      "racha_kmh": 26.1,
       "viento_sur": false,
       "dias_sin_lluvia": 4.0,
-      "viento_kmh": 7.1,
-      "dir_viento": 175.0,
-      "factor_racha": 3.1,
+      "viento_kmh": 10.1,
+      "dir_viento": 123.0,
+      "factor_racha": 2.6,
       "dpresion_12h": -8.4,
-      "lluvia_72h": 0.8,
+      "lluvia_72h": 0.6,
       "ola_m": 3.2
      }
     }
@@ -713,6 +362,349 @@
    ]
   },
   {
+   "id": "BASAURI",
+   "nombre": "Basauri",
+   "lat": 43.237,
+   "lon": -2.885,
+   "salidas_esperadas_6h": 0.78,
+   "normal_6h": 0.76,
+   "prob_6h": 0.543,
+   "ratio_max": 1.04,
+   "nivel": "verde",
+   "hora_pico": "2026-11-18T19:00:00",
+   "factores": [
+    "Evento: Festival: Musika Astea de Galdakao 2026",
+    "🌀 Borrasca (presión cayendo)",
+    "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
+   ],
+   "situacion_ahora": "",
+   "situaciones_6h": [
+    "BORRASCA"
+   ],
+   "directo": {
+    "activas": 0,
+    "nuevas_1h": 0
+   },
+   "horas": [
+    {
+     "hora": "2026-11-18T15:00:00",
+     "lambda": 0.1343,
+     "prob": 0.126,
+     "normal": 0.1318,
+     "ratio": 1.02,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0291,
+       "mult": 1.0
+      },
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0203,
+       "mult": 1.0
+      },
+      {
+       "familia": "INCENDIO_FORESTAL_EXTERIOR",
+       "lambda": 0.0197,
+       "mult": 1.0
+      }
+     ],
+     "factores": [
+      "Evento: Festival: Musika Astea de Galdakao 2026"
+     ],
+     "situaciones": [],
+     "situacion_txt": "",
+     "meteo": {
+      "temp": 19.6,
+      "humedad": 61.0,
+      "lluvia_1h": 0.0,
+      "lluvia_12h": 1.1,
+      "racha_kmh": 13.0,
+      "viento_sur": false,
+      "dias_sin_lluvia": 2.0,
+      "viento_kmh": 4.0,
+      "dir_viento": 80.0,
+      "factor_racha": 2.6,
+      "dpresion_12h": -1.5,
+      "lluvia_72h": 5.4,
+      "ola_m": null
+     }
+    },
+    {
+     "hora": "2026-11-18T16:00:00",
+     "lambda": 0.1345,
+     "prob": 0.126,
+     "normal": 0.132,
+     "ratio": 1.02,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0291,
+       "mult": 1.0
+      },
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0203,
+       "mult": 1.0
+      },
+      {
+       "familia": "INCENDIO_FORESTAL_EXTERIOR",
+       "lambda": 0.0197,
+       "mult": 1.0
+      }
+     ],
+     "factores": [
+      "Evento: Festival: Musika Astea de Galdakao 2026"
+     ],
+     "situaciones": [],
+     "situacion_txt": "",
+     "meteo": {
+      "temp": 20.2,
+      "humedad": 56.0,
+      "lluvia_1h": 0.0,
+      "lluvia_12h": 0.1,
+      "racha_kmh": 8.3,
+      "viento_sur": false,
+      "dias_sin_lluvia": 2.0,
+      "viento_kmh": 3.4,
+      "dir_viento": 252.0,
+      "factor_racha": 1.7,
+      "dpresion_12h": -2.9,
+      "lluvia_72h": 5.4,
+      "ola_m": null
+     }
+    },
+    {
+     "hora": "2026-11-18T17:00:00",
+     "lambda": 0.1363,
+     "prob": 0.127,
+     "normal": 0.1335,
+     "ratio": 1.02,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0291,
+       "mult": 1.0
+      },
+      {
+       "familia": "TRAFICO",
+       "lambda": 0.0214,
+       "mult": 1.15
+      },
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0203,
+       "mult": 1.0
+      }
+     ],
+     "factores": [
+      "Evento: Festival: Musika Astea de Galdakao 2026"
+     ],
+     "situaciones": [],
+     "situacion_txt": "",
+     "meteo": {
+      "temp": 20.5,
+      "humedad": 51.0,
+      "lluvia_1h": 0.0,
+      "lluvia_12h": 0.1,
+      "racha_kmh": 18.0,
+      "viento_sur": false,
+      "dias_sin_lluvia": 2.0,
+      "viento_kmh": 10.2,
+      "dir_viento": 212.0,
+      "factor_racha": 1.8,
+      "dpresion_12h": -3.4,
+      "lluvia_72h": 5.4,
+      "ola_m": null
+     }
+    },
+    {
+     "hora": "2026-11-18T18:00:00",
+     "lambda": 0.1354,
+     "prob": 0.127,
+     "normal": 0.1327,
+     "ratio": 1.02,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0291,
+       "mult": 1.0
+      },
+      {
+       "familia": "TRAFICO",
+       "lambda": 0.0205,
+       "mult": 1.15
+      },
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0203,
+       "mult": 1.0
+      }
+     ],
+     "factores": [
+      "Evento: Festival: Musika Astea de Galdakao 2026"
+     ],
+     "situaciones": [],
+     "situacion_txt": "",
+     "meteo": {
+      "temp": 19.3,
+      "humedad": 53.0,
+      "lluvia_1h": 0.0,
+      "lluvia_12h": 0.0,
+      "racha_kmh": 16.2,
+      "viento_sur": false,
+      "dias_sin_lluvia": 2.0,
+      "viento_kmh": 9.6,
+      "dir_viento": 200.0,
+      "factor_racha": 1.7,
+      "dpresion_12h": -5.8,
+      "lluvia_72h": 5.3,
+      "ola_m": null
+     }
+    },
+    {
+     "hora": "2026-11-18T19:00:00",
+     "lambda": 0.1341,
+     "prob": 0.126,
+     "normal": 0.1291,
+     "ratio": 1.04,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0291,
+       "mult": 1.0
+      },
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0231,
+       "mult": 1.14
+      },
+      {
+       "familia": "INCENDIO_FORESTAL_EXTERIOR",
+       "lambda": 0.0197,
+       "mult": 1.0
+      }
+     ],
+     "factores": [
+      "🌀 Borrasca (presión cayendo)",
+      "Evento: Festival: Musika Astea de Galdakao 2026",
+      "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
+     ],
+     "situaciones": [
+      "BORRASCA"
+     ],
+     "situacion_txt": "🌀 Borrasca (presión cayendo)",
+     "meteo": {
+      "temp": 18.9,
+      "humedad": 59.0,
+      "lluvia_1h": 0.1,
+      "lluvia_12h": 0.0,
+      "racha_kmh": 14.7,
+      "viento_sur": false,
+      "dias_sin_lluvia": 2.0,
+      "viento_kmh": 7.8,
+      "dir_viento": 204.0,
+      "factor_racha": 1.9,
+      "dpresion_12h": -6.9,
+      "lluvia_72h": 5.4,
+      "ola_m": null
+     }
+    },
+    {
+     "hora": "2026-11-18T20:00:00",
+     "lambda": 0.1092,
+     "prob": 0.103,
+     "normal": 0.1052,
+     "ratio": 1.04,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0295,
+       "mult": 1.0
+      },
+      {
+       "familia": "INCENDIO_URBANO",
+       "lambda": 0.0189,
+       "mult": 1.0
+      },
+      {
+       "familia": "TRAFICO",
+       "lambda": 0.0168,
+       "mult": 1.15
+      }
+     ],
+     "factores": [
+      "🌀 Borrasca (presión cayendo)",
+      "Evento: Festival: Musika Astea de Galdakao 2026",
+      "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
+     ],
+     "situaciones": [
+      "BORRASCA"
+     ],
+     "situacion_txt": "🌀 Borrasca (presión cayendo)",
+     "meteo": {
+      "temp": 19.1,
+      "humedad": 66.0,
+      "lluvia_1h": 0.1,
+      "lluvia_12h": 0.1,
+      "racha_kmh": 23.6,
+      "viento_sur": false,
+      "dias_sin_lluvia": 2.0,
+      "viento_kmh": 11.2,
+      "dir_viento": 210.0,
+      "factor_racha": 2.1,
+      "dpresion_12h": -8.8,
+      "lluvia_72h": 5.4,
+      "ola_m": null
+     }
+    }
+   ],
+   "carreteras": [
+    {
+     "carretera": "N-634",
+     "km_ini": 100,
+     "km_fin": 105,
+     "esperados": 0.0167,
+     "prob": 0.0165,
+     "accidentes_anio": 16.429,
+     "pct_graves": 2.6,
+     "hora_pico": 17,
+     "imd": null,
+     "ip": null
+    },
+    {
+     "carretera": "N-634",
+     "km_ini": 95,
+     "km_fin": 100,
+     "esperados": 0.0126,
+     "prob": 0.0125,
+     "accidentes_anio": 12.429,
+     "pct_graves": 14.9,
+     "hora_pico": 16,
+     "imd": null,
+     "ip": null
+    },
+    {
+     "carretera": "A-8",
+     "km_ini": 110,
+     "km_fin": 115,
+     "esperados": 0.0106,
+     "prob": 0.0105,
+     "accidentes_anio": 10.429,
+     "pct_graves": 2.7,
+     "hora_pico": 14,
+     "imd": 45083,
+     "ip": 12.7
+    }
+   ]
+  },
+  {
    "id": "IURRETA",
    "nombre": "Iurreta",
    "lat": 43.176,
@@ -733,8 +725,8 @@
     "BORRASCA"
    ],
    "directo": {
-    "activas": 1,
-    "nuevas_1h": 1
+    "activas": 0,
+    "nuevas_1h": 0
    },
    "horas": [
     {
@@ -765,15 +757,15 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 18.5,
-      "humedad": 76.0,
+      "temp": 19.0,
+      "humedad": 74.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 2.9,
       "racha_kmh": 10.1,
       "viento_sur": false,
       "dias_sin_lluvia": 3.0,
-      "viento_kmh": 3.9,
-      "dir_viento": 146.0,
+      "viento_kmh": 4.6,
+      "dir_viento": 141.0,
       "factor_racha": 2.0,
       "dpresion_12h": -1.2,
       "lluvia_72h": 5.6,
@@ -808,16 +800,16 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 18.7,
-      "humedad": 78.0,
+      "temp": 19.4,
+      "humedad": 71.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 1.2,
-      "racha_kmh": 7.6,
+      "racha_kmh": 9.0,
       "viento_sur": false,
       "dias_sin_lluvia": 3.0,
-      "viento_kmh": 3.8,
-      "dir_viento": 163.0,
-      "factor_racha": 1.5,
+      "viento_kmh": 3.4,
+      "dir_viento": 148.0,
+      "factor_racha": 1.8,
       "dpresion_12h": -2.7,
       "lluvia_72h": 5.6,
       "ola_m": null
@@ -853,16 +845,16 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 18.3,
-      "humedad": 80.0,
+      "temp": 18.9,
+      "humedad": 76.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.6,
-      "racha_kmh": 7.9,
+      "racha_kmh": 3.2,
       "viento_sur": false,
       "dias_sin_lluvia": 3.0,
-      "viento_kmh": 4.2,
-      "dir_viento": 70.0,
-      "factor_racha": 1.6,
+      "viento_kmh": 0.8,
+      "dir_viento": 117.0,
+      "factor_racha": 0.6,
       "dpresion_12h": -3.1,
       "lluvia_72h": 5.4,
       "ola_m": null
@@ -898,16 +890,16 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 17.3,
-      "humedad": 69.0,
+      "temp": 17.7,
+      "humedad": 65.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.5,
-      "racha_kmh": 14.4,
+      "racha_kmh": 10.1,
       "viento_sur": false,
       "dias_sin_lluvia": 3.0,
-      "viento_kmh": 7.9,
-      "dir_viento": 117.0,
-      "factor_racha": 1.8,
+      "viento_kmh": 6.7,
+      "dir_viento": 126.0,
+      "factor_racha": 1.5,
       "dpresion_12h": -5.6,
       "lluvia_72h": 5.4,
       "ola_m": null
@@ -947,16 +939,16 @@
      ],
      "situacion_txt": "🌀 Borrasca (presión cayendo)",
      "meteo": {
-      "temp": 16.7,
-      "humedad": 69.0,
+      "temp": 16.8,
+      "humedad": 68.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.1,
-      "racha_kmh": 17.8,
+      "racha_kmh": 16.8,
       "viento_sur": false,
       "dias_sin_lluvia": 3.0,
-      "viento_kmh": 6.9,
-      "dir_viento": 113.0,
-      "factor_racha": 2.6,
+      "viento_kmh": 8.3,
+      "dir_viento": 120.0,
+      "factor_racha": 2.0,
       "dpresion_12h": -7.3,
       "lluvia_72h": 5.4,
       "ola_m": null
@@ -996,18 +988,18 @@
      ],
      "situacion_txt": "🌀 Borrasca (presión cayendo)",
      "meteo": {
-      "temp": 18.7,
-      "humedad": 66.0,
-      "lluvia_1h": 0.0,
+      "temp": 18.4,
+      "humedad": 69.0,
+      "lluvia_1h": 0.1,
       "lluvia_12h": 0.0,
-      "racha_kmh": 31.8,
-      "viento_sur": true,
+      "racha_kmh": 29.9,
+      "viento_sur": false,
       "dias_sin_lluvia": 3.0,
-      "viento_kmh": 13.8,
-      "dir_viento": 194.0,
-      "factor_racha": 2.3,
+      "viento_kmh": 12.7,
+      "dir_viento": 191.0,
+      "factor_racha": 2.4,
       "dpresion_12h": -8.5,
-      "lluvia_72h": 5.4,
+      "lluvia_72h": 5.5,
       "ola_m": null
      }
     }
@@ -1056,17 +1048,15 @@
    "nombre": "Urioste (Ortuella)",
    "lat": 43.3075,
    "lon": -3.051,
-   "salidas_esperadas_6h": 1.39,
+   "salidas_esperadas_6h": 1.4,
    "normal_6h": 1.38,
-   "prob_6h": 0.75,
+   "prob_6h": 0.753,
    "ratio_max": 1.03,
    "nivel": "verde",
    "hora_pico": "2026-11-18T18:00:00",
    "factores": [
     "🌀 Borrasca (presión cayendo)",
-    "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)",
-    "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
-    "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)"
+    "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
    ],
    "situacion_ahora": "",
    "situaciones_6h": [
@@ -1105,16 +1095,16 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 19.0,
-      "humedad": 55.0,
+      "temp": 19.3,
+      "humedad": 52.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
       "racha_kmh": 14.8,
       "viento_sur": false,
       "dias_sin_lluvia": 4.0,
-      "viento_kmh": 5.4,
-      "dir_viento": 48.0,
-      "factor_racha": 2.7,
+      "viento_kmh": 4.1,
+      "dir_viento": 38.0,
+      "factor_racha": 3.0,
       "dpresion_12h": -1.4,
       "lluvia_72h": 1.3,
       "ola_m": 2.9
@@ -1148,16 +1138,16 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 19.0,
-      "humedad": 58.0,
+      "temp": 19.5,
+      "humedad": 54.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
-      "racha_kmh": 11.2,
+      "racha_kmh": 9.4,
       "viento_sur": false,
       "dias_sin_lluvia": 4.0,
-      "viento_kmh": 4.7,
-      "dir_viento": 58.0,
-      "factor_racha": 2.2,
+      "viento_kmh": 4.4,
+      "dir_viento": 81.0,
+      "factor_racha": 1.9,
       "dpresion_12h": -2.9,
       "lluvia_72h": 1.3,
       "ola_m": 3.0
@@ -1191,16 +1181,16 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 18.6,
-      "humedad": 67.0,
+      "temp": 19.0,
+      "humedad": 65.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
-      "racha_kmh": 6.1,
+      "racha_kmh": 6.8,
       "viento_sur": false,
       "dias_sin_lluvia": 4.0,
-      "viento_kmh": 1.9,
-      "dir_viento": 22.0,
-      "factor_racha": 1.2,
+      "viento_kmh": 2.5,
+      "dir_viento": 8.0,
+      "factor_racha": 1.4,
       "dpresion_12h": -3.7,
       "lluvia_72h": 1.3,
       "ola_m": 3.0
@@ -1239,16 +1229,16 @@
      ],
      "situacion_txt": "🌀 Borrasca (presión cayendo)",
      "meteo": {
-      "temp": 18.6,
-      "humedad": 54.0,
+      "temp": 18.8,
+      "humedad": 53.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
-      "racha_kmh": 16.8,
+      "racha_kmh": 18.4,
       "viento_sur": false,
       "dias_sin_lluvia": 4.0,
-      "viento_kmh": 5.5,
-      "dir_viento": 163.0,
-      "factor_racha": 3.0,
+      "viento_kmh": 4.3,
+      "dir_viento": 180.0,
+      "factor_racha": 3.7,
       "dpresion_12h": -6.0,
       "lluvia_72h": 1.3,
       "ola_m": 3.0
@@ -1256,10 +1246,10 @@
     },
     {
      "hora": "2026-11-18T19:00:00",
-     "lambda": 0.2301,
-     "prob": 0.206,
+     "lambda": 0.2415,
+     "prob": 0.215,
      "normal": 0.235,
-     "ratio": 0.98,
+     "ratio": 1.03,
      "nivel": "verde",
      "familias_top": [
       {
@@ -1269,8 +1259,8 @@
       },
       {
        "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0416,
-       "mult": 0.89
+       "lambda": 0.053,
+       "mult": 1.14
       },
       {
        "familia": "INCENDIO_FORESTAL_EXTERIOR",
@@ -1280,8 +1270,6 @@
      ],
      "factores": [
       "🌀 Borrasca (presión cayendo)",
-      "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
-      "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)",
       "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
      ],
      "situaciones": [
@@ -1289,18 +1277,18 @@
      ],
      "situacion_txt": "🌀 Borrasca (presión cayendo)",
      "meteo": {
-      "temp": 18.0,
-      "humedad": 64.0,
-      "lluvia_1h": 0.1,
+      "temp": 18.5,
+      "humedad": 58.0,
+      "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
-      "racha_kmh": 13.7,
+      "racha_kmh": 12.8,
       "viento_sur": false,
       "dias_sin_lluvia": 4.0,
-      "viento_kmh": 3.3,
-      "dir_viento": 108.0,
-      "factor_racha": 2.7,
+      "viento_kmh": 3.6,
+      "dir_viento": 102.0,
+      "factor_racha": 2.6,
       "dpresion_12h": -7.1,
-      "lluvia_72h": 1.4,
+      "lluvia_72h": 1.3,
       "ola_m": 3.1
      }
     },
@@ -1337,18 +1325,18 @@
      ],
      "situacion_txt": "🌀 Borrasca (presión cayendo)",
      "meteo": {
-      "temp": 17.6,
-      "humedad": 73.0,
+      "temp": 17.1,
+      "humedad": 76.0,
       "lluvia_1h": 0.0,
-      "lluvia_12h": 0.1,
-      "racha_kmh": 21.8,
+      "lluvia_12h": 0.0,
+      "racha_kmh": 25.9,
       "viento_sur": false,
       "dias_sin_lluvia": 4.0,
-      "viento_kmh": 8.2,
+      "viento_kmh": 7.2,
       "dir_viento": 297.0,
-      "factor_racha": 2.7,
+      "factor_racha": 3.6,
       "dpresion_12h": -8.4,
-      "lluvia_72h": 1.4,
+      "lluvia_72h": 1.3,
       "ola_m": 3.1
      }
     }
@@ -1446,16 +1434,16 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 19.3,
-      "humedad": 60.0,
+      "temp": 19.9,
+      "humedad": 61.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
       "racha_kmh": 11.2,
       "viento_sur": false,
       "dias_sin_lluvia": 4.0,
-      "viento_kmh": 5.6,
-      "dir_viento": 50.0,
-      "factor_racha": 2.0,
+      "viento_kmh": 2.2,
+      "dir_viento": 81.0,
+      "factor_racha": 2.2,
       "dpresion_12h": -1.6,
       "lluvia_72h": 0.7,
       "ola_m": null
@@ -1489,15 +1477,15 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 19.2,
-      "humedad": 64.0,
+      "temp": 19.7,
+      "humedad": 58.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
       "racha_kmh": 12.2,
       "viento_sur": false,
       "dias_sin_lluvia": 4.0,
-      "viento_kmh": 6.6,
-      "dir_viento": 81.0,
+      "viento_kmh": 6.5,
+      "dir_viento": 87.0,
       "factor_racha": 1.9,
       "dpresion_12h": -3.0,
       "lluvia_72h": 0.7,
@@ -1532,16 +1520,16 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 18.9,
-      "humedad": 71.0,
+      "temp": 19.9,
+      "humedad": 60.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
-      "racha_kmh": 7.9,
+      "racha_kmh": 16.9,
       "viento_sur": false,
       "dias_sin_lluvia": 4.0,
-      "viento_kmh": 5.3,
-      "dir_viento": 118.0,
-      "factor_racha": 1.5,
+      "viento_kmh": 7.6,
+      "dir_viento": 225.0,
+      "factor_racha": 2.2,
       "dpresion_12h": -3.5,
       "lluvia_72h": 0.7,
       "ola_m": null
@@ -1575,16 +1563,16 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 18.5,
+      "temp": 18.6,
       "humedad": 56.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
-      "racha_kmh": 16.1,
+      "racha_kmh": 13.7,
       "viento_sur": false,
       "dias_sin_lluvia": 4.0,
-      "viento_kmh": 9.8,
-      "dir_viento": 158.0,
-      "factor_racha": 1.6,
+      "viento_kmh": 8.9,
+      "dir_viento": 159.0,
+      "factor_racha": 1.5,
       "dpresion_12h": -5.9,
       "lluvia_72h": 0.7,
       "ola_m": null
@@ -1625,18 +1613,18 @@
      ],
      "situacion_txt": "🌀 Borrasca (presión cayendo)",
      "meteo": {
-      "temp": 18.1,
-      "humedad": 67.0,
-      "lluvia_1h": 0.3,
+      "temp": 18.2,
+      "humedad": 63.0,
+      "lluvia_1h": 0.1,
       "lluvia_12h": 0.0,
-      "racha_kmh": 14.9,
+      "racha_kmh": 14.5,
       "viento_sur": false,
       "dias_sin_lluvia": 4.0,
-      "viento_kmh": 8.1,
-      "dir_viento": 146.0,
+      "viento_kmh": 7.9,
+      "dir_viento": 151.0,
       "factor_racha": 1.8,
       "dpresion_12h": -7.1,
-      "lluvia_72h": 0.6,
+      "lluvia_72h": 0.4,
       "ola_m": null
      }
     },
@@ -1673,18 +1661,18 @@
      ],
      "situacion_txt": "🌀 Borrasca (presión cayendo)",
      "meteo": {
-      "temp": 18.1,
-      "humedad": 74.0,
+      "temp": 18.2,
+      "humedad": 71.0,
       "lluvia_1h": 0.0,
-      "lluvia_12h": 0.3,
-      "racha_kmh": 19.8,
+      "lluvia_12h": 0.1,
+      "racha_kmh": 19.1,
       "viento_sur": false,
       "dias_sin_lluvia": 4.0,
-      "viento_kmh": 8.6,
-      "dir_viento": 198.0,
-      "factor_racha": 2.3,
+      "viento_kmh": 7.3,
+      "dir_viento": 192.0,
+      "factor_racha": 2.6,
       "dpresion_12h": -8.5,
-      "lluvia_72h": 0.6,
+      "lluvia_72h": 0.4,
       "ola_m": null
      }
     }
@@ -1694,8 +1682,8 @@
      "carretera": "N-637",
      "km_ini": 15,
      "km_fin": 20,
-     "esperados": 0.0166,
-     "prob": 0.0165,
+     "esperados": 0.016,
+     "prob": 0.0159,
      "accidentes_anio": 17.286,
      "pct_graves": 5.8,
      "hora_pico": 14,
@@ -1706,8 +1694,8 @@
      "carretera": "N-637",
      "km_ini": 20,
      "km_fin": 25,
-     "esperados": 0.0081,
-     "prob": 0.0081,
+     "esperados": 0.0078,
+     "prob": 0.0078,
      "accidentes_anio": 8.429,
      "pct_graves": 5.1,
      "hora_pico": 7,
@@ -1718,8 +1706,8 @@
      "carretera": "BI-631",
      "km_ini": 15,
      "km_fin": 20,
-     "esperados": 0.0078,
-     "prob": 0.0078,
+     "esperados": 0.0075,
+     "prob": 0.0075,
      "accidentes_anio": 8.143,
      "pct_graves": 1.8,
      "hora_pico": 13,
@@ -1733,18 +1721,18 @@
    "nombre": "Arratzu",
    "lat": 43.309,
    "lon": -2.64,
-   "salidas_esperadas_6h": 0.3,
+   "salidas_esperadas_6h": 0.29,
    "normal_6h": 0.29,
-   "prob_6h": 0.256,
+   "prob_6h": 0.255,
    "ratio_max": 1.03,
    "nivel": "verde",
    "hora_pico": "2026-11-18T15:00:00",
    "factores": [
     "Accidentes de tráfico activos en la zona",
     "🌀 Borrasca (presión cayendo)",
-    "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)",
     "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
-    "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)"
+    "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)",
+    "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
    ],
    "situacion_ahora": "",
    "situaciones_6h": [
@@ -1785,15 +1773,15 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 19.3,
-      "humedad": 65.0,
+      "temp": 19.5,
+      "humedad": 63.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
       "racha_kmh": 8.3,
       "viento_sur": false,
       "dias_sin_lluvia": 3.0,
-      "viento_kmh": 2.4,
-      "dir_viento": 333.0,
+      "viento_kmh": 1.1,
+      "dir_viento": 342.0,
       "factor_racha": 1.7,
       "dpresion_12h": -1.4,
       "lluvia_72h": 0.4,
@@ -1830,15 +1818,15 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 19.4,
-      "humedad": 65.0,
+      "temp": 19.8,
+      "humedad": 63.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
       "racha_kmh": 2.9,
       "viento_sur": false,
       "dias_sin_lluvia": 3.0,
-      "viento_kmh": 2.3,
-      "dir_viento": 321.0,
+      "viento_kmh": 0.8,
+      "dir_viento": 333.0,
       "factor_racha": 0.6,
       "dpresion_12h": -2.9,
       "lluvia_72h": 0.4,
@@ -1873,16 +1861,16 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 18.8,
+      "temp": 19.0,
       "humedad": 68.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
-      "racha_kmh": 4.3,
+      "racha_kmh": 3.2,
       "viento_sur": false,
       "dias_sin_lluvia": 3.0,
-      "viento_kmh": 0.4,
-      "dir_viento": 180.0,
-      "factor_racha": 0.9,
+      "viento_kmh": 0.0,
+      "dir_viento": 270.0,
+      "factor_racha": 0.6,
       "dpresion_12h": -3.2,
       "lluvia_72h": 0.4,
       "ola_m": 2.2
@@ -1916,16 +1904,16 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 17.9,
-      "humedad": 62.0,
+      "temp": 18.3,
+      "humedad": 60.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
-      "racha_kmh": 14.9,
+      "racha_kmh": 16.9,
       "viento_sur": false,
       "dias_sin_lluvia": 3.0,
-      "viento_kmh": 5.9,
-      "dir_viento": 170.0,
-      "factor_racha": 2.5,
+      "viento_kmh": 6.2,
+      "dir_viento": 201.0,
+      "factor_racha": 2.7,
       "dpresion_12h": -5.9,
       "lluvia_72h": 0.3,
       "ola_m": 2.3
@@ -1933,10 +1921,10 @@
     },
     {
      "hora": "2026-11-18T19:00:00",
-     "lambda": 0.0534,
-     "prob": 0.052,
+     "lambda": 0.0523,
+     "prob": 0.051,
      "normal": 0.0527,
-     "ratio": 1.01,
+     "ratio": 0.99,
      "nivel": "verde",
      "familias_top": [
       {
@@ -1957,6 +1945,8 @@
      ],
      "factores": [
       "🌀 Borrasca (presión cayendo)",
+      "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
+      "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)",
       "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
      ],
      "situaciones": [
@@ -1964,18 +1954,18 @@
      ],
      "situacion_txt": "🌀 Borrasca (presión cayendo)",
      "meteo": {
-      "temp": 17.5,
-      "humedad": 66.0,
+      "temp": 17.6,
+      "humedad": 69.0,
       "lluvia_1h": 0.1,
       "lluvia_12h": 0.0,
-      "racha_kmh": 11.3,
+      "racha_kmh": 10.9,
       "viento_sur": false,
       "dias_sin_lluvia": 3.0,
-      "viento_kmh": 3.5,
-      "dir_viento": 238.0,
-      "factor_racha": 2.3,
+      "viento_kmh": 2.3,
+      "dir_viento": 100.0,
+      "factor_racha": 2.2,
       "dpresion_12h": -7.2,
-      "lluvia_72h": 0.4,
+      "lluvia_72h": 0.5,
       "ola_m": 2.3
      }
     },
@@ -2014,15 +2004,15 @@
      ],
      "situacion_txt": "🌀 Borrasca (presión cayendo)",
      "meteo": {
-      "temp": 17.1,
-      "humedad": 78.0,
-      "lluvia_1h": 0.3,
-      "lluvia_12h": 0.0,
-      "racha_kmh": 14.1,
+      "temp": 16.8,
+      "humedad": 79.0,
+      "lluvia_1h": 0.1,
+      "lluvia_12h": 0.1,
+      "racha_kmh": 16.9,
       "viento_sur": false,
       "dias_sin_lluvia": 3.0,
-      "viento_kmh": 6.4,
-      "dir_viento": 247.0,
+      "viento_kmh": 7.7,
+      "dir_viento": 279.0,
       "factor_racha": 2.2,
       "dpresion_12h": -8.8,
       "lluvia_72h": 0.6,
@@ -2035,8 +2025,8 @@
      "carretera": "BI-635",
      "km_ini": 30,
      "km_fin": 35,
-     "esperados": 0.0081,
-     "prob": 0.0081,
+     "esperados": 0.0079,
+     "prob": 0.0078,
      "accidentes_anio": 7.857,
      "pct_graves": 7.3,
      "hora_pico": 15,
@@ -2047,8 +2037,8 @@
      "carretera": "BI-631",
      "km_ini": 30,
      "km_fin": 35,
-     "esperados": 0.0056,
-     "prob": 0.0056,
+     "esperados": 0.0054,
+     "prob": 0.0054,
      "accidentes_anio": 5.429,
      "pct_graves": 10.5,
      "hora_pico": 19,
@@ -2059,8 +2049,8 @@
      "carretera": "BI-2238",
      "km_ini": 30,
      "km_fin": 35,
-     "esperados": 0.0034,
-     "prob": 0.0034,
+     "esperados": 0.0033,
+     "prob": 0.0033,
      "accidentes_anio": 3.286,
      "pct_graves": 0.0,
      "hora_pico": 17,
@@ -2076,15 +2066,13 @@
    "lon": -3.137,
    "salidas_esperadas_6h": 0.31,
    "normal_6h": 0.31,
-   "prob_6h": 0.266,
+   "prob_6h": 0.267,
    "ratio_max": 1.03,
    "nivel": "verde",
    "hora_pico": "2026-11-18T20:00:00",
    "factores": [
     "🌀 Borrasca (presión cayendo)",
-    "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)",
-    "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
-    "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)"
+    "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
    ],
    "situacion_ahora": "",
    "situaciones_6h": [
@@ -2123,15 +2111,15 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 19.7,
-      "humedad": 56.0,
+      "temp": 20.4,
+      "humedad": 53.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
       "racha_kmh": 6.8,
       "viento_sur": false,
       "dias_sin_lluvia": 3.0,
-      "viento_kmh": 0.5,
-      "dir_viento": 225.0,
+      "viento_kmh": 1.9,
+      "dir_viento": 292.0,
       "factor_racha": 1.4,
       "dpresion_12h": -1.2,
       "lluvia_72h": 1.8,
@@ -2166,16 +2154,16 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 20.0,
-      "humedad": 50.0,
+      "temp": 20.6,
+      "humedad": 47.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
-      "racha_kmh": 22.0,
+      "racha_kmh": 26.6,
       "viento_sur": false,
       "dias_sin_lluvia": 3.0,
-      "viento_kmh": 6.5,
-      "dir_viento": 270.0,
-      "factor_racha": 3.4,
+      "viento_kmh": 9.9,
+      "dir_viento": 251.0,
+      "factor_racha": 2.7,
       "dpresion_12h": -3.1,
       "lluvia_72h": 1.6,
       "ola_m": null
@@ -2209,15 +2197,15 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 19.5,
-      "humedad": 53.0,
+      "temp": 19.8,
+      "humedad": 51.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
-      "racha_kmh": 23.4,
+      "racha_kmh": 26.3,
       "viento_sur": false,
       "dias_sin_lluvia": 3.0,
-      "viento_kmh": 8.3,
-      "dir_viento": 236.0,
+      "viento_kmh": 9.4,
+      "dir_viento": 238.0,
       "factor_racha": 2.8,
       "dpresion_12h": -3.8,
       "lluvia_72h": 1.6,
@@ -2257,16 +2245,16 @@
      ],
      "situacion_txt": "🌀 Borrasca (presión cayendo)",
      "meteo": {
-      "temp": 18.4,
+      "temp": 18.6,
       "humedad": 54.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
-      "racha_kmh": 16.0,
+      "racha_kmh": 18.7,
       "viento_sur": false,
       "dias_sin_lluvia": 3.0,
-      "viento_kmh": 5.0,
-      "dir_viento": 219.0,
-      "factor_racha": 3.2,
+      "viento_kmh": 7.3,
+      "dir_viento": 237.0,
+      "factor_racha": 2.6,
       "dpresion_12h": -6.1,
       "lluvia_72h": 1.6,
       "ola_m": null
@@ -2274,10 +2262,10 @@
     },
     {
      "hora": "2026-11-18T19:00:00",
-     "lambda": 0.054,
-     "prob": 0.053,
+     "lambda": 0.0556,
+     "prob": 0.054,
      "normal": 0.0546,
-     "ratio": 0.99,
+     "ratio": 1.02,
      "nivel": "verde",
      "familias_top": [
       {
@@ -2298,8 +2286,6 @@
      ],
      "factores": [
       "🌀 Borrasca (presión cayendo)",
-      "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
-      "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)",
       "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
      ],
      "situaciones": [
@@ -2307,16 +2293,16 @@
      ],
      "situacion_txt": "🌀 Borrasca (presión cayendo)",
      "meteo": {
-      "temp": 18.0,
-      "humedad": 68.0,
+      "temp": 18.2,
+      "humedad": 63.0,
       "lluvia_1h": 0.1,
       "lluvia_12h": 0.0,
-      "racha_kmh": 13.5,
+      "racha_kmh": 10.2,
       "viento_sur": false,
       "dias_sin_lluvia": 3.0,
-      "viento_kmh": 3.3,
-      "dir_viento": 236.0,
-      "factor_racha": 2.7,
+      "viento_kmh": 3.4,
+      "dir_viento": 197.0,
+      "factor_racha": 2.0,
       "dpresion_12h": -7.1,
       "lluvia_72h": 1.4,
       "ola_m": null
@@ -2355,16 +2341,16 @@
      ],
      "situacion_txt": "🌀 Borrasca (presión cayendo)",
      "meteo": {
-      "temp": 18.1,
-      "humedad": 74.0,
+      "temp": 18.2,
+      "humedad": 71.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.1,
-      "racha_kmh": 18.6,
+      "racha_kmh": 18.2,
       "viento_sur": false,
       "dias_sin_lluvia": 3.0,
-      "viento_kmh": 7.1,
-      "dir_viento": 282.0,
-      "factor_racha": 2.6,
+      "viento_kmh": 7.3,
+      "dir_viento": 280.0,
+      "factor_racha": 2.5,
       "dpresion_12h": -8.4,
       "lluvia_72h": 1.4,
       "ola_m": null
@@ -2464,15 +2450,15 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 19.2,
+      "temp": 19.5,
       "humedad": 65.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 2.3,
       "racha_kmh": 3.6,
       "viento_sur": false,
       "dias_sin_lluvia": 3.0,
-      "viento_kmh": 1.9,
-      "dir_viento": 22.0,
+      "viento_kmh": 1.8,
+      "dir_viento": 180.0,
       "factor_racha": 0.7,
       "dpresion_12h": -1.3,
       "lluvia_72h": 4.4,
@@ -2507,16 +2493,16 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 18.0,
-      "humedad": 65.0,
+      "temp": 18.5,
+      "humedad": 64.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.9,
-      "racha_kmh": 14.0,
+      "racha_kmh": 14.8,
       "viento_sur": false,
       "dias_sin_lluvia": 3.0,
-      "viento_kmh": 5.4,
-      "dir_viento": 356.0,
-      "factor_racha": 2.6,
+      "viento_kmh": 5.9,
+      "dir_viento": 349.0,
+      "factor_racha": 2.5,
       "dpresion_12h": -2.4,
       "lluvia_72h": 4.2,
       "ola_m": 2.6
@@ -2550,16 +2536,16 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 17.4,
-      "humedad": 71.0,
+      "temp": 17.7,
+      "humedad": 68.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.5,
-      "racha_kmh": 7.2,
+      "racha_kmh": 10.4,
       "viento_sur": false,
       "dias_sin_lluvia": 3.0,
-      "viento_kmh": 3.2,
-      "dir_viento": 333.0,
-      "factor_racha": 1.4,
+      "viento_kmh": 3.7,
+      "dir_viento": 349.0,
+      "factor_racha": 2.1,
       "dpresion_12h": -3.0,
       "lluvia_72h": 4.1,
       "ola_m": 2.6
@@ -2593,16 +2579,16 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 16.0,
-      "humedad": 75.0,
+      "temp": 16.8,
+      "humedad": 70.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.5,
-      "racha_kmh": 1.6,
+      "racha_kmh": 1.1,
       "viento_sur": false,
       "dias_sin_lluvia": 3.0,
-      "viento_kmh": 1.6,
-      "dir_viento": 262.0,
-      "factor_racha": 0.3,
+      "viento_kmh": 1.3,
+      "dir_viento": 304.0,
+      "factor_racha": 0.2,
       "dpresion_12h": -5.4,
       "lluvia_72h": 4.0,
       "ola_m": 2.6
@@ -2641,15 +2627,15 @@
      ],
      "situacion_txt": "🌀 Borrasca (presión cayendo)",
      "meteo": {
-      "temp": 17.3,
-      "humedad": 63.0,
+      "temp": 17.5,
+      "humedad": 62.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.1,
-      "racha_kmh": 21.2,
+      "racha_kmh": 21.3,
       "viento_sur": false,
       "dias_sin_lluvia": 3.0,
-      "viento_kmh": 8.8,
-      "dir_viento": 200.0,
+      "viento_kmh": 9.0,
+      "dir_viento": 197.0,
       "factor_racha": 2.4,
       "dpresion_12h": -7.4,
       "lluvia_72h": 4.0,
@@ -2695,14 +2681,14 @@
       "humedad": 67.0,
       "lluvia_1h": 0.1,
       "lluvia_12h": 0.0,
-      "racha_kmh": 38.8,
+      "racha_kmh": 36.5,
       "viento_sur": true,
       "dias_sin_lluvia": 3.0,
-      "viento_kmh": 15.8,
+      "viento_kmh": 14.8,
       "dir_viento": 198.0,
       "factor_racha": 2.5,
       "dpresion_12h": -8.9,
-      "lluvia_72h": 4.2,
+      "lluvia_72h": 4.1,
       "ola_m": 2.7
      }
     }
@@ -2749,11 +2735,11 @@
  ],
  "activas_ahora": [
   {
-   "tipo": "FUGA DE GAS NIVEL 1",
-   "ubicacion": "DURANGO",
-   "zona": "CL Tabirabide Kalea",
-   "vehiculos": "Bomba urbana pesada (Vehículo volviendo de un sin.) | Unidad de mando y jefatura (Vehículo volviendo de un sin.)",
-   "parque": "IURRETA"
+   "tipo": "VISITA A RIESGOS CONCRETOS",
+   "ubicacion": "ERANDIO",
+   "zona": "CR Kanterabidea",
+   "vehiculos": "Unidad de mando y jefatura (Vehículo va a un siniestro) | Auto escala articulada (Vehículo va a un siniestro) | Bomba urbana pesada (Vehículo va a un siniestro) | Furgón utiles varios (Vehículo va a un siniestro)",
+   "parque": "ARTAZA"
   }
  ],
  "niveles": {
