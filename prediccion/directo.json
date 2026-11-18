@@ -1,8 +1,30 @@
 {
- "ts": "2026-11-18T05:08:54+01:00",
- "salidas_desde_8": 35,
+ "ts": "2026-11-18T05:11:55+01:00",
+ "salidas_desde_8": 36,
  "salidas_anio": 5804,
  "actuaciones": [
+  {
+   "tipo": "OTRAS ASISTENCIAS TÉCNICAS",
+   "familia": "RESCATE_SALVAMENTO",
+   "ubicacion": "ONDARROA",
+   "zona": "CL Txomin Agirre",
+   "parque": "MARKINA",
+   "parque_nombre": "Markina-Xemein",
+   "vehiculos": [
+    {
+     "tipo": "Transporte Material y Personal",
+     "estado": "EN_SINIESTRO",
+     "estado_txt": "Vehículo parado en siniestro"
+    },
+    {
+     "tipo": "Furgón utiles varios",
+     "estado": "EN_SINIESTRO",
+     "estado_txt": "Vehículo parado en siniestro"
+    }
+   ],
+   "n_vehiculos": 2,
+   "estado": "EN_SINIESTRO"
+  },
   {
    "tipo": "INCENDIO INDUSTRIAL NIVEL 2",
    "familia": "INCENDIO_INDUSTRIAL",
@@ -30,32 +52,15 @@
      "tipo": "Unidad de mando y jefatura",
      "estado": "EN_RUTA",
      "estado_txt": "Vehículo va a un siniestro"
-    }
-   ],
-   "n_vehiculos": 4,
-   "estado": "EN_RUTA"
-  },
-  {
-   "tipo": "OTRAS ASISTENCIAS TÉCNICAS",
-   "familia": "RESCATE_SALVAMENTO",
-   "ubicacion": "ONDARROA",
-   "zona": "CL Txomin Agirre",
-   "parque": "MARKINA",
-   "parque_nombre": "Markina-Xemein",
-   "vehiculos": [
-    {
-     "tipo": "Transporte Material y Personal",
-     "estado": "EN_SINIESTRO",
-     "estado_txt": "Vehículo parado en siniestro"
     },
     {
-     "tipo": "Furgón utiles varios",
-     "estado": "EN_SINIESTRO",
-     "estado_txt": "Vehículo parado en siniestro"
+     "tipo": "Bomba nodriza pesada",
+     "estado": "PROPUESTO",
+     "estado_txt": "Vehículo propuesto"
     }
    ],
-   "n_vehiculos": 2,
-   "estado": "EN_SINIESTRO"
+   "n_vehiculos": 5,
+   "estado": "EN_RUTA"
   }
  ],
  "por_parque": {
@@ -85,8 +90,8 @@
   },
   "BASAURI": {
    "actuaciones": 1,
-   "vehiculos": 4,
-   "propuesto": 0,
+   "vehiculos": 5,
+   "propuesto": 1,
    "en_ruta": 4,
    "en_siniestro": 0,
    "regresando": 0
