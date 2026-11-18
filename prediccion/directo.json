@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-18T22:45:54+01:00",
+ "ts": "2026-11-18T22:49:48+01:00",
  "salidas_desde_8": 11,
  "salidas_anio": 5816,
  "actuaciones": [
@@ -13,12 +13,12 @@
    "vehiculos": [
     {
      "tipo": "Bomba forestal pesada",
-     "estado": "EN_RUTA",
-     "estado_txt": "Vehículo va a un siniestro"
+     "estado": "REGRESANDO",
+     "estado_txt": "Vehículo volviendo de un sin."
     }
    ],
    "n_vehiculos": 1,
-   "estado": "EN_RUTA"
+   "estado": "REGRESANDO"
   }
  ],
  "por_parque": {
@@ -82,9 +82,9 @@
    "actuaciones": 1,
    "vehiculos": 1,
    "propuesto": 0,
-   "en_ruta": 1,
+   "en_ruta": 0,
    "en_siniestro": 0,
-   "regresando": 0
+   "regresando": 1
   },
   "SIN_PARQUE": {
    "actuaciones": 0,
