@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-19T01:17+01:00",
+ "generado": "2026-11-19T01:33+01:00",
  "horizonte_h": 6,
  "modelo": "base+reglas",
  "fuentes_ok": {
@@ -10,7 +10,7 @@
   "salidas_esperadas_6h": 3.5,
   "normal_6h": 3.4,
   "contador": {
-   "ts": "2026-11-19T01:17:10+01:00",
+   "ts": "2026-11-19T01:33:10+01:00",
    "desde_8": 12,
    "anio": 5819
   }
@@ -2692,7 +2692,7 @@
    "tipo": "OTRAS ASISTENCIAS TÉCNICAS",
    "ubicacion": "GERNIKA-LUMO",
    "zona": "CL Urrengoerrota",
-   "vehiculos": "Furgón utiles varios (Vehículo propuesto)",
+   "vehiculos": "Furgón utiles varios (Vehículo parado en siniestro) | Transporte Material y Personal (Vehículo parado en siniestro)",
    "parque": "ARRATZU"
   }
  ],
