@@ -32,7 +32,8 @@ def publicar_estado_bloqueo(desde):
         d = json.loads(ruta.read_text(encoding="utf-8"))
     except Exception:
         d = {"actuaciones": [], "por_parque": {}}
-    d["bloqueado"] = {"desde": desde.isoformat(timespec="minutes"),
+    previo = (d.get("bloqueado") or {}).get("desde")          # se conserva el inicio entre tramos
+    d["bloqueado"] = {"desde": previo or desde.isoformat(timespec="minutes"),
                       "motivo": "bizkaia.eus responde con una verificación antibots a las lecturas automáticas",
                       "comprobado": datetime.now(TZ).isoformat(timespec="minutes")}
     ruta.write_text(json.dumps(d, ensure_ascii=False, indent=1), encoding="utf-8")
@@ -65,7 +66,7 @@ def main(argv=None):
         if time.monotonic() >= proximo_intento:
             from .recolector_online import Bloqueado
             try:
-                publicar_directo(capturar())
+                publicar_directo(capturar())        # directo.json nuevo: sin la marca de bloqueo
                 ok += 1
                 bloqueado_desde, proximo_intento = None, 0.0
             except Bloqueado:
