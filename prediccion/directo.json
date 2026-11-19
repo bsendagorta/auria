@@ -76,5 +76,10 @@
    "en_siniestro": 0,
    "regresando": 0
   }
+ },
+ "bloqueado": {
+  "desde": "2026-11-19T11:18+01:00",
+  "motivo": "bizkaia.eus responde con una verificación antibots a las lecturas automáticas",
+  "comprobado": "2026-11-19T11:18+01:00"
  }
 }
