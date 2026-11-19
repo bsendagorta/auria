@@ -331,6 +331,17 @@ def seccion_ahora():
         st.markdown(f"**Actuaciones en curso** · leído {ts:%H:%M:%S}")
         if not act:
             st.success("Sin actuaciones en curso.")
+        if vivo.get("bloqueado"):
+            mes = datetime.now().strftime("%Y-%m")
+            tw = leer_csv(f"datos/online/tweets/tweets_{mes}.csv")
+            if tw is not None and len(tw):
+                tw["ts"] = pd.to_datetime(tw["ts"])
+                tw = tw.sort_values("ts", ascending=False).head(12)
+                st.markdown("**Últimas actuaciones · vía @BomberosBizkaia (X)**")
+                st.dataframe(tw.assign(hora=tw["ts"].dt.strftime("%d/%m %H:%M"))[
+                    ["hora", "tipo", "municipio"]], hide_index=True, width="stretch", height=300)
+                st.caption("Capturadas desde la cuenta pública de Bomberos de Bizkaia mientras la web de "
+                           "salidas bloquea la lectura automática.")
         for x in act:
             with st.container(border=True):
                 st.markdown(f"{FAMILIA_ICONO.get(x['familia'], '•')} **{x['tipo'].capitalize()}**  \n"
