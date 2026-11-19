@@ -25,6 +25,19 @@ def publicar_directo(datos):
                                                        encoding="utf-8")
 
 
+def publicar_estado_bloqueo(desde):
+    """Marca en directo.json que la lectura está bloqueada por la web (el panel lo explica)."""
+    ruta = config.DIR_PREDICCION / "directo.json"
+    try:
+        d = json.loads(ruta.read_text(encoding="utf-8"))
+    except Exception:
+        d = {"actuaciones": [], "por_parque": {}}
+    d["bloqueado"] = {"desde": desde.isoformat(timespec="minutes"),
+                      "motivo": "bizkaia.eus responde con una verificación antibots a las lecturas automáticas",
+                      "comprobado": datetime.now(TZ).isoformat(timespec="minutes")}
+    ruta.write_text(json.dumps(d, ensure_ascii=False, indent=1), encoding="utf-8")
+
+
 def subir(mensaje):
     r = subprocess.run(["scripts/subir_datos.sh", mensaje], capture_output=True, text=True)
     print((r.stdout + r.stderr).strip() or "subido", flush=True)
@@ -46,13 +59,23 @@ def main(argv=None):
     ultimo_eventos = None
     ultima_estacion = None
     ok = fallos = 0
+    bloqueado_desde, proximo_intento = None, 0.0
     while time.monotonic() < fin:
         t0 = time.monotonic()
-        try:
-            publicar_directo(capturar())
-            ok += 1
-        except Exception:
-            fallos += 1          # ya queda registrado en capturas_*.csv con ok=0
+        if time.monotonic() >= proximo_intento:
+            from .recolector_online import Bloqueado
+            try:
+                publicar_directo(capturar())
+                ok += 1
+                bloqueado_desde, proximo_intento = None, 0.0
+            except Bloqueado:
+                # la web no quiere lecturas automáticas: no se insiste cada minuto (se prueba cada 30 min)
+                fallos += 1
+                bloqueado_desde = bloqueado_desde or datetime.now(TZ)
+                proximo_intento = time.monotonic() + 1800
+                publicar_estado_bloqueo(bloqueado_desde)
+            except Exception:
+                fallos += 1          # ya queda registrado en capturas_*.csv con ok=0
         # incidencias oficiales DATEX II (Tráfico Euskadi) cada 5 min
         if ultimo_datex is None or time.monotonic() - ultimo_datex >= 300:
             try:

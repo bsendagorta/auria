@@ -294,7 +294,14 @@ def seccion_ahora():
         f"normal {biz['normal_6h']:.1f}")
     kpi(k[4], f"{EMOJI[peor['nivel']]} {peor['nombre'].split(' (')[0]}", "Parque con más riesgo",
         f"×{peor['ratio_max']} lo normal")
-    if retraso > 12:
+    if vivo.get("bloqueado"):
+        b = vivo["bloqueado"]
+        st.error(f"Sin lectura en directo desde {b['desde'][11:16]} del {b['desde'][8:10]}/{b['desde'][5:7]}: "
+                 "la web de Bomberos de Bizkaia ha empezado a bloquear las lecturas automáticas (verificación "
+                 "antibots). AURIA sigue prediciendo con meteorología, tráfico, eventos y su histórico; lo que ves "
+                 f"abajo es la última situación leída. Se vuelve a comprobar cada 30 min (último intento "
+                 f"{b['comprobado'][11:16]}).")
+    elif retraso > 12:
         st.warning(f"Última lectura en directo hace {retraso:.0f} min: el recolector puede estar parado.")
 
     izq, der = st.columns([3, 2])

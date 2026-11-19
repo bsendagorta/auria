@@ -154,10 +154,18 @@ def guardar(datos, ahora: datetime, carpeta: Path, error=None):
         for t in datos["activas"]])
 
 
+class Bloqueado(Exception):
+    """La web devuelve la página de verificación antibots (F5/TSPD) en vez del contenido."""
+
+
 def descargar_html() -> str:
     import requests
     r = requests.get(config.URL_SALIDAS_ONLINE, timeout=30, headers={"User-Agent": config.USER_AGENT})
     r.raise_for_status()
+    if "desde 08:00" not in r.text and ("TSPD" in r.text or "bobcmn" in r.text):
+        # Desde el 19-11-2026 bizkaia.eus responde a los clientes automáticos con una verificación antibots.
+        # No se intenta saltar: se registra y se reintenta con mucha menos frecuencia.
+        raise Bloqueado("bizkaia.eus pide verificación antibots (lectura automática bloqueada)")
     return r.text
 
 
