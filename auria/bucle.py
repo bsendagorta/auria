@@ -11,32 +11,10 @@ import sys
 import time
 from datetime import datetime
 
-import json
-
-from . import config
-from .directo import enriquecer
-from .recolector_online import Bloqueado, PAUSA_BLOQUEO, TZ, bloqueo_pendiente, capturar
-
-
-def publicar_directo(datos):
-    """Deja la situación en directo en prediccion/directo.json (lo lee el panel)."""
-    d = enriquecer(datos)
-    (config.DIR_PREDICCION / "directo.json").write_text(json.dumps(d, ensure_ascii=False, indent=1),
-                                                       encoding="utf-8")
-
-
-def publicar_estado_bloqueo(desde):
-    """Marca en directo.json que la lectura está bloqueada por la web (el panel lo explica)."""
-    ruta = config.DIR_PREDICCION / "directo.json"
-    try:
-        d = json.loads(ruta.read_text(encoding="utf-8"))
-    except Exception:
-        d = {"actuaciones": [], "por_parque": {}}
-    previo = (d.get("bloqueado") or {}).get("desde")          # se conserva el inicio entre tramos
-    d["bloqueado"] = {"desde": previo or desde.isoformat(timespec="minutes"),
-                      "motivo": "bizkaia.eus responde con una verificación antibots a las lecturas automáticas",
-                      "comprobado": datetime.now(TZ).isoformat(timespec="seconds")}
-    ruta.write_text(json.dumps(d, ensure_ascii=False, indent=1), encoding="utf-8")
+from .recolector_online import (
+    Bloqueado, PAUSA_BLOQUEO, TZ, bloqueo_pendiente, capturar,
+    publicar_directo, publicar_estado_bloqueo,
+)
 
 
 def subir(mensaje):
@@ -60,7 +38,6 @@ def main(argv=None):
     ultimo_eventos = None
     ultima_estacion = None
     ok = fallos = 0
-    bloqueado_desde = None
     proximo_intento = time.monotonic() + bloqueo_pendiente(datetime.now(TZ))
     while time.monotonic() < fin:
         t0 = time.monotonic()
@@ -68,13 +45,12 @@ def main(argv=None):
             try:
                 publicar_directo(capturar())        # directo.json nuevo: sin la marca de bloqueo
                 ok += 1
-                bloqueado_desde, proximo_intento = None, 0.0
+                proximo_intento = 0.0
             except Bloqueado:
                 # la web no quiere lecturas automáticas: no se insiste cada minuto (se prueba cada 30 min)
                 fallos += 1
-                bloqueado_desde = bloqueado_desde or datetime.now(TZ)
                 proximo_intento = time.monotonic() + PAUSA_BLOQUEO
-                publicar_estado_bloqueo(bloqueado_desde)
+                publicar_estado_bloqueo(datetime.now(TZ))
             except Exception:
                 fallos += 1          # ya queda registrado en capturas_*.csv con ok=0
         # incidencias oficiales DATEX II (Tráfico Euskadi) cada 5 min
