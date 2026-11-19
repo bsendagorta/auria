@@ -617,6 +617,35 @@ with t_pat:
                 "dev_ref": "referencia", "dev_situaciones": "con situaciones", "mejora_pct": "mejora %",
                 "salidas_test": "salidas"}), width="stretch")
 
+    serie = leer_csv("datos/memorias/series_anual.csv")
+    if serie is not None and len(serie):
+        st.markdown("---")
+        st.markdown("### Contexto histórico · memorias del SPEIS (2018-2025)")
+        st.caption("Total de salidas al año según las memorias anuales de la Diputación. Es contexto de largo "
+                   "plazo: no entra en el modelo (son cifras agregadas), pero sirve para situar la tendencia.")
+        largo = serie.melt("anio", ["incendios", "salvamentos", "asistencias"], var_name="tipo", value_name="n").dropna()
+        base = alt.Chart(serie).mark_bar(color="#8a8984", opacity=0.25).encode(
+            x=alt.X("anio:O", title=None), y=alt.Y("salidas:Q", title="salidas/año"),
+            tooltip=["anio", "salidas"])
+        if len(largo):
+            barras = alt.Chart(largo).mark_bar().encode(
+                x=alt.X("anio:O", title=None), y=alt.Y("n:Q", title="salidas/año", stack=True),
+                color=alt.Color("tipo:N", scale=alt.Scale(domain=["incendios", "salvamentos", "asistencias"],
+                                                          range=[NARANJA, AZUL, "#1baf7a"]),
+                                legend=alt.Legend(orient="top", title=None)),
+                tooltip=["anio", "tipo", "n"])
+            st.altair_chart(base + barras, width="stretch")
+        else:
+            st.altair_chart(base, width="stretch")
+        c = serie.dropna(subset=["incendios"])
+        if len(c):
+            u = c.iloc[-1]
+            st.caption(f"En {int(u['anio'])}: {int(u['salidas']):,} salidas · {int(u['incendios']):,} incendios, "
+                       f"{int(u['salvamentos']):,} salvamentos, {int(u['asistencias']):,} asistencias técnicas. "
+                       "Las memorias traen también el reparto por hora y día de la semana, pero solo como "
+                       "gráficos: el día de la semana que se ha podido reconstruir (2022) sale casi plano, "
+                       "así que no se usa como variable.".replace(",", "."))
+
     mv, _ = leer_json("datos/modelo/movilidad.json", 900)
     if mv:
         st.markdown("---")
