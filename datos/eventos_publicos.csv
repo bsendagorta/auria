@@ -5,7 +5,6 @@ id,type,typeEs,nameEs,startDate,endDate,openingHoursEs,municipalityEs,municipali
 2026102912010289,1,Concierto,Ixura Haize Taldea,2026-11-18T00:00:00Z,2026-11-18T00:00:00Z,13:30,Markina-Xemein,43.270604,-2.497155,Pasacalles,48060,2026-11-18
 2026111009050416,1,Concierto,Musika Astea de Galdakao 2026: Dúo Boreal,2026-11-18T00:00:00Z,2026-11-18T00:00:00Z,19:30,Galdakao,43.221425,-2.813527,,48916,2026-11-18
 2026111010571039,1,Concierto,"MusikUme: ""Euripean""",2026-11-18T00:00:00Z,2026-11-18T00:00:00Z,10:00,Erandio,43.307458,-2.946418,"Txakurzulo, 10",48902,2026-11-18
-2026101609064574,1,Concierto,Negufest 2027: BERNAL,2027-01-22T00:00:00Z,2027-01-22T00:00:00Z,21:00,Bilbao,43.256963,-2.923441,,48020,2026-11-19
 2026060108345273,1,Concierto,BESMAYA (19 de noviembre - Bilbao),2026-11-19T00:00:00Z,2026-11-19T00:00:00Z,20:30,Bilbao,43.256963,-2.923441,,48020,2026-11-19
 2026062611061197,1,Concierto,Catherine Russell,2026-11-19T00:00:00Z,2026-11-19T00:00:00Z,20:00,Bilbao,43.256963,-2.923441,,48020,2026-11-19
 2026082013211330,1,Concierto,Ciclo HerriJazz Ibiltaria: Haika Jazz Quartet,2026-11-19T00:00:00Z,2026-11-19T00:00:00Z,20:00,Amorebieta-Etxano,43.220496,-2.733236,,48003,2026-11-19
@@ -109,6 +108,7 @@ id,type,typeEs,nameEs,startDate,endDate,openingHoursEs,municipalityEs,municipali
 2026102711074461,13,Festival,Iparra Galdu Gabe 2026 - Jornadas sobre Iparralde,2026-11-06T00:00:00Z,2026-11-26T00:00:00Z,,Getxo,43.362286,-3.012567,,48044,2026-11-19
 2026103009214410,13,Festival,"Ciclo ""Ellas hacen ciencia"" 2026",2026-11-05T00:00:00Z,2026-11-26T00:00:00Z,19:00,Bilbao,43.256963,-2.923441,,48020,2026-11-19
 2026111108121536,1,Concierto,MEM 2026: Tek Káu + Sam Brao & Hilario Rodeiro,2026-11-26T00:00:00Z,2026-11-26T00:00:00Z,19:00,Bilbao,43.256963,-2.923441,,48020,2026-11-19
+2026111912431735,1,Concierto,"""Iraganeko oihartzunak, gaurko ahotsak""",2026-11-26T00:00:00Z,2026-11-26T00:00:00Z,19:00,Bilbao,43.256963,-2.923441,Iglesia de La Encarnación (Atxuri),48020,2026-11-19
 2026061715372109,1,Concierto,Entradas Carlos Ares - fin de gira (26 y 27 de noviembre - Bilbao),2026-11-26T00:00:00Z,2026-11-27T00:00:00Z,21:30,Bilbao,43.256963,-2.923441,,48020,2026-11-19
 2026090811021334,1,Concierto,ESANEZIN,2026-11-27T00:00:00Z,2026-11-27T00:00:00Z,20:00,Lemoa,43.208759,-2.774116,,48055,2026-11-19
 2026091513203303,13,Festival,Bazen Behin 2026 - programa de cuentacuentos de Barakaldo,2026-09-18T00:00:00Z,2026-11-27T00:00:00Z,18:00-19:00 (los viernes),Barakaldo,43.296826,-2.985259,"Biblioteca de San Vicente, Biblioteca de Arteagabeitia, Biblioteca Cruces, Biblioteca de Retuerto, Biblioteca de Lutxana y Biblioteca Rontegi",48013,2026-11-19
@@ -151,9 +151,10 @@ id,type,typeEs,nameEs,startDate,endDate,openingHoursEs,municipalityEs,municipali
 2026111012314107,1,Concierto,Festival de Villancicos 2026 en Erandio,2026-11-28T00:00:00Z,2026-11-28T00:00:00Z,17:00,Erandio,43.307458,-2.946418,,48902,2026-11-19
 2026111014063579,1,Concierto,Bizkaiko hotsak 2026: Katarina Lamotte,2026-11-28T00:00:00Z,2026-11-28T00:00:00Z,12:30,Elorrio,43.130386,-2.542155,Iglesia de San Pedro Apóstol,48032,2026-11-19
 2026111209173404,1,Concierto,Etxekalte (Fair Saturday 2026),2026-11-28T00:00:00Z,2026-11-28T00:00:00Z,19:30,Bilbao,43.256963,-2.923441,,48020,2026-11-19
-2026111613420814,13,Festival,Programa Fair Saturday 2026 (Bilbao / Bizkaia),2026-11-28T00:00:00Z,2026-11-28T00:00:00Z,,Bilbao,43.256963,-2.923441,,48020,2026-11-19
+2026111613420814,13,Festival,Programa Fair Saturday 2026 (Bilbao / Bizkaia),2026-11-27T00:00:00Z,2026-11-28T00:00:00Z,,Bilbao,43.256963,-2.923441,,48020,2026-11-19
 2026111709441230,1,Concierto,Día del Euskera 2026 en Txorierri: Olaia Inziarte,2026-11-28T00:00:00Z,2026-11-28T00:00:00Z,21:00,Lezama,43.272212,-2.832319,Frontón,48081,2026-11-19
 2026111910232216,1,Concierto,"Fair Saturday 2026: Coral de Bilbao: ""Elkarrekin kantuz""",2026-11-28T00:00:00Z,2026-11-28T00:00:00Z,20:30,Bilbao,43.256963,-2.923441,,48020,2026-11-19
+2026111911520166,1,Concierto,Orfeon San Anton Abesbatza,2026-11-28T00:00:00Z,2026-11-28T00:00:00Z,20:45,Bilbao,43.256963,-2.923441,Iglesia del Sagrado Corazon,48020,2026-11-19
 2026070812284852,1,Concierto,"Amancio Prada: ""50º Aniversario Rosalía de Castro""",2026-11-29T00:00:00Z,2026-11-29T00:00:00Z,19:00,Bilbao,43.256963,-2.923441,,48020,2026-11-19
 2026100212570911,13,Festival,Jornadas de Novela Histórica de Portugalete 2026,2026-11-27T00:00:00Z,2026-11-29T00:00:00Z,,Portugalete,43.320624,-3.020331,,48078,2026-11-19
 2026100613245263,1,Concierto,AMAURY SANTACRUZ,2026-11-29T00:00:00Z,2026-11-29T00:00:00Z,18:00,Bilbao,43.256963,-2.923441,,48020,2026-11-19
@@ -244,6 +245,7 @@ id,type,typeEs,nameEs,startDate,endDate,openingHoursEs,municipalityEs,municipali
 2026111113372667,13,Festival,Quincena Musical de Durango 2026,2026-11-08T00:00:00Z,2026-12-13T00:00:00Z,,Durango,43.169068,-2.632655,,48027,2026-11-19
 2026111612300623,13,Festival,"FAKA 2026 - Feria de Fanzine, Autoedición y Contracultura",2026-12-11T00:00:00Z,2026-12-13T00:00:00Z,,Bilbao,43.256963,-2.923441,Karmela,48020,2026-11-19
 2026111613042284,1,Concierto,"THE JAZZ ROOM: ""Un viaje al corazón de Nueva Orleans""",2026-12-13T00:00:00Z,2026-12-13T00:00:00Z,17:00 + 19:00,Bilbao,43.256963,-2.923441,,48020,2026-11-19
+2026111911304691,13,Festival,Loraldia Plaza 2026 (Zaratamo-Arrigorriaga),2026-11-27T00:00:00Z,2026-12-13T00:00:00Z,,Zaratamo,43.211505,-2.873626,Arrigorriaga y,48097,2026-11-19
 2026090809064982,1,Concierto,"Bilbao Orkestra Sinfonikoa (BOS): ""Grandes solistas en recital: Claire Huangci""",2026-12-14T00:00:00Z,2026-12-14T00:00:00Z,19:30,Bilbao,43.256963,-2.923441,,48020,2026-11-19
 2026093009281584,1,Concierto,Banda Municipal de Txistularis de Bilbao: CONCIERTO DE NAVIDAD,2026-12-14T00:00:00Z,2026-12-14T00:00:00Z,,Bilbao,43.256963,-2.923441,,48020,2026-11-19
 2026092210494449,1,Concierto,"The Blues Brothers Tribute Show: ""Soul Mission""",2026-12-15T00:00:00Z,2026-12-15T00:00:00Z,20:00,Bilbao,43.256963,-2.923441,,48020,2026-11-19
@@ -352,6 +354,7 @@ id,type,typeEs,nameEs,startDate,endDate,openingHoursEs,municipalityEs,municipali
 2026082512304019,1,Concierto,"""Veladas: Studio Ghibli Tributo""",2027-01-22T00:00:00Z,2027-01-22T00:00:00Z,20:30,Bilbao,43.256963,-2.923441,,48020,2026-11-19
 2026100609254644,1,Concierto,Banda Municipal de Música de Bilbao: Concierto de clausura de los XI Encuentros de Dirección Orquestal,2027-01-22T00:00:00Z,2027-01-22T00:00:00Z,18:00,Bilbao,43.256963,-2.923441,,48020,2026-11-19
 2026100613331771,1,Concierto,Negufest 2027: Entradas concierto Pignoise (22 de enero - Bilbao),2027-01-22T00:00:00Z,2027-01-22T00:00:00Z,21:00,Bilbao,43.256963,-2.923441,,48020,2026-11-19
+2026101609064574,1,Concierto,Negufest 2027: BERNAL,2027-01-22T00:00:00Z,2027-01-22T00:00:00Z,21:00,Bilbao,43.256963,-2.923441,,48020,2026-11-19
 2026102708371196,1,Concierto,Entradas Guille Toledano (22 de enero - Bilbao),2027-01-22T00:00:00Z,2027-01-22T00:00:00Z,21:00,Bilbao,43.256963,-2.923441,,48020,2026-11-19
 2026110305011148,1,Concierto,Anonimak (Getxo),2027-01-22T00:00:00Z,2027-01-22T00:00:00Z,20:00:00,Getxo,43.362286,-3.012567,,48044,2026-11-19
 2026040709073708,1,Concierto,"CANDLELIGHT Bilbao: ""Tributo a Hans Zimmer""",2027-01-23T00:00:00Z,2027-01-23T00:00:00Z,21:00,Bilbao,43.256963,-2.923441,Iglesia de la Encarnación (Atxuri),48020,2026-11-19
