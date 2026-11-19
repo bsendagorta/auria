@@ -1,23 +1,23 @@
 {
  "estado": "ok",
- "fecha": "2026-11-19T00:48",
+ "fecha": "2026-11-19T01:04",
  "desde": "2026-11-16T23:00:00",
- "hasta": "2026-11-18T23:00:00",
+ "hasta": "2026-11-19T00:00:00",
  "total": {
-  "horas": 42,
+  "horas": 43,
   "salidas_reales": 26.7,
-  "salidas_predichas": 30.9,
-  "sesgo_pct": 15.7,
-  "mae_hora": 0.547,
-  "skill_vs_normal": 0.03
+  "salidas_predichas": 31.5,
+  "sesgo_pct": 17.9,
+  "mae_hora": 0.548,
+  "skill_vs_normal": 0.029
  },
  "ultimos_7_dias": {
-  "horas": 42,
+  "horas": 43,
   "salidas_reales": 26.7,
-  "salidas_predichas": 30.9,
-  "sesgo_pct": 15.7,
-  "mae_hora": 0.547,
-  "skill_vs_normal": 0.03
+  "salidas_predichas": 31.5,
+  "sesgo_pct": 17.9,
+  "mae_hora": 0.548,
+  "skill_vs_normal": 0.029
  },
  "por_dia": [
   {
