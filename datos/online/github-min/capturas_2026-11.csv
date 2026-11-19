@@ -2432,3 +2432,6 @@ ts,salidas_desde_8,salidas_anio,n_activas,ok,error
 2026-11-19T01:12:10+01:00,,,,0,"HTTPSConnectionPool(host='www.bizkaia.eus', port=443): Read timed out. (read timeout=30)"
 2026-11-19T01:13:10+01:00,,,,0,"HTTPSConnectionPool(host='www.bizkaia.eus', port=443): Read timed out. (read timeout=30)"
 2026-11-19T01:14:10+01:00,,,,0,"HTTPSConnectionPool(host='www.bizkaia.eus', port=443): Read timed out. (read timeout=30)"
+2026-11-19T01:15:10+01:00,12,5819,1,1,
+2026-11-19T01:16:10+01:00,12,5819,1,1,
+2026-11-19T01:17:10+01:00,12,5819,1,1,
