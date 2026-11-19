@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-19T21:34+01:00",
+ "generado": "2026-11-19T21:50+01:00",
  "horizonte_h": 6,
  "modelo": "base+reglas",
  "fuentes_ok": {
@@ -73,8 +73,8 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 12.2,
-      "humedad": 78.0,
+      "temp": 11.8,
+      "humedad": 82.0,
       "lluvia_1h": 0.1,
       "lluvia_12h": 0.0,
       "racha_kmh": 19.1,
@@ -119,16 +119,16 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 11.7,
-      "humedad": 79.0,
+      "temp": 12.2,
+      "humedad": 75.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.1,
-      "racha_kmh": 2.2,
+      "racha_kmh": 14.4,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
       "viento_kmh": 5.5,
       "dir_viento": 259.0,
-      "factor_racha": 0.4,
+      "factor_racha": 2.6,
       "dpresion_12h": 5.1,
       "lluvia_72h": 6.0,
       "ola_m": null
@@ -162,16 +162,16 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 12.6,
-      "humedad": 70.0,
+      "temp": 12.7,
+      "humedad": 69.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.1,
-      "racha_kmh": 22.3,
+      "racha_kmh": 25.9,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
       "viento_kmh": 12.5,
       "dir_viento": 229.0,
-      "factor_racha": 1.8,
+      "factor_racha": 2.1,
       "dpresion_12h": 6.0,
       "lluvia_72h": 6.0,
       "ola_m": null
@@ -205,16 +205,16 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 11.7,
-      "humedad": 72.0,
+      "temp": 12.1,
+      "humedad": 70.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.1,
-      "racha_kmh": 16.2,
+      "racha_kmh": 23.0,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
       "viento_kmh": 10.1,
       "dir_viento": 235.0,
-      "factor_racha": 1.6,
+      "factor_racha": 2.3,
       "dpresion_12h": 5.7,
       "lluvia_72h": 6.0,
       "ola_m": null
@@ -248,16 +248,16 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 12.1,
-      "humedad": 70.0,
+      "temp": 12.6,
+      "humedad": 68.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.1,
-      "racha_kmh": 25.5,
+      "racha_kmh": 29.0,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
       "viento_kmh": 14.6,
       "dir_viento": 232.0,
-      "factor_racha": 1.8,
+      "factor_racha": 2.0,
       "dpresion_12h": 6.0,
       "lluvia_72h": 6.0,
       "ola_m": null
@@ -291,16 +291,16 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 12.6,
+      "temp": 12.7,
       "humedad": 68.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.1,
-      "racha_kmh": 27.2,
+      "racha_kmh": 28.8,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
       "viento_kmh": 14.4,
       "dir_viento": 237.0,
-      "factor_racha": 1.9,
+      "factor_racha": 2.0,
       "dpresion_12h": 6.0,
       "lluvia_72h": 6.0,
       "ola_m": null
@@ -403,7 +403,7 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 13.5,
+      "temp": 13.4,
       "humedad": 69.0,
       "lluvia_1h": 0.3,
       "lluvia_12h": 0.0,
@@ -449,16 +449,16 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 13.7,
-      "humedad": 64.0,
+      "temp": 13.9,
+      "humedad": 62.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.3,
-      "racha_kmh": 12.2,
+      "racha_kmh": 22.0,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
       "viento_kmh": 13.2,
       "dir_viento": 235.0,
-      "factor_racha": 0.9,
+      "factor_racha": 1.7,
       "dpresion_12h": 5.2,
       "lluvia_72h": 18.1,
       "ola_m": null
@@ -494,16 +494,16 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 13.8,
+      "temp": 13.7,
       "humedad": 62.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.3,
-      "racha_kmh": 20.9,
+      "racha_kmh": 22.3,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
       "viento_kmh": 12.3,
       "dir_viento": 232.0,
-      "factor_racha": 1.7,
+      "factor_racha": 1.8,
       "dpresion_12h": 6.0,
       "lluvia_72h": 18.1,
       "ola_m": null
@@ -584,11 +584,11 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 13.0,
-      "humedad": 65.0,
+      "temp": 13.2,
+      "humedad": 64.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.3,
-      "racha_kmh": 22.6,
+      "racha_kmh": 22.9,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
       "viento_kmh": 12.9,
@@ -631,12 +631,12 @@
       "humedad": 64.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.3,
-      "racha_kmh": 25.2,
+      "racha_kmh": 24.3,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
       "viento_kmh": 12.8,
       "dir_viento": 227.0,
-      "factor_racha": 2.0,
+      "factor_racha": 1.9,
       "dpresion_12h": 6.1,
       "lluvia_72h": 18.1,
       "ola_m": null
@@ -735,8 +735,8 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 12.7,
-      "humedad": 69.0,
+      "temp": 12.1,
+      "humedad": 77.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.1,
       "racha_kmh": 31.7,
@@ -781,16 +781,16 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 12.0,
-      "humedad": 72.0,
+      "temp": 11.4,
+      "humedad": 76.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
-      "racha_kmh": 16.2,
+      "racha_kmh": 13.0,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
       "viento_kmh": 4.7,
       "dir_viento": 328.0,
-      "factor_racha": 3.2,
+      "factor_racha": 2.6,
       "dpresion_12h": 5.5,
       "lluvia_72h": 14.1,
       "ola_m": null
@@ -826,16 +826,16 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 12.6,
-      "humedad": 66.0,
+      "temp": 11.8,
+      "humedad": 71.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
-      "racha_kmh": 23.4,
+      "racha_kmh": 20.5,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
       "viento_kmh": 10.0,
       "dir_viento": 257.0,
-      "factor_racha": 2.3,
+      "factor_racha": 2.0,
       "dpresion_12h": 6.0,
       "lluvia_72h": 14.1,
       "ola_m": null
@@ -871,16 +871,16 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 12.2,
-      "humedad": 68.0,
+      "temp": 11.8,
+      "humedad": 71.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
-      "racha_kmh": 21.0,
+      "racha_kmh": 22.3,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
       "viento_kmh": 9.8,
       "dir_viento": 264.0,
-      "factor_racha": 2.1,
+      "factor_racha": 2.3,
       "dpresion_12h": 5.8,
       "lluvia_72h": 14.1,
       "ola_m": null
@@ -920,12 +920,12 @@
       "humedad": 72.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
-      "racha_kmh": 19.7,
+      "racha_kmh": 22.1,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
       "viento_kmh": 10.8,
       "dir_viento": 250.0,
-      "factor_racha": 1.8,
+      "factor_racha": 2.0,
       "dpresion_12h": 6.4,
       "lluvia_72h": 14.1,
       "ola_m": null
@@ -965,7 +965,7 @@
       "humedad": 71.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
-      "racha_kmh": 24.1,
+      "racha_kmh": 24.3,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
       "viento_kmh": 12.0,
@@ -1071,8 +1071,8 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 11.3,
-      "humedad": 80.0,
+      "temp": 11.0,
+      "humedad": 86.0,
       "lluvia_1h": 0.1,
       "lluvia_12h": 0.0,
       "racha_kmh": 19.1,
@@ -1116,16 +1116,16 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 11.2,
-      "humedad": 80.0,
+      "temp": 10.8,
+      "humedad": 83.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.1,
-      "racha_kmh": 11.2,
+      "racha_kmh": 7.2,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
       "viento_kmh": 2.8,
       "dir_viento": 130.0,
-      "factor_racha": 2.2,
+      "factor_racha": 1.4,
       "dpresion_12h": 5.3,
       "lluvia_72h": 10.3,
       "ola_m": 2.6
@@ -1159,16 +1159,16 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 11.4,
-      "humedad": 80.0,
+      "temp": 11.5,
+      "humedad": 76.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.1,
-      "racha_kmh": 11.2,
+      "racha_kmh": 19.8,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
       "viento_kmh": 9.4,
       "dir_viento": 227.0,
-      "factor_racha": 1.2,
+      "factor_racha": 2.1,
       "dpresion_12h": 5.8,
       "lluvia_72h": 10.3,
       "ola_m": 2.6
@@ -1202,16 +1202,16 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 11.1,
-      "humedad": 76.0,
+      "temp": 10.9,
+      "humedad": 77.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.1,
-      "racha_kmh": 14.9,
+      "racha_kmh": 14.4,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
       "viento_kmh": 5.4,
       "dir_viento": 233.0,
-      "factor_racha": 2.8,
+      "factor_racha": 2.7,
       "dpresion_12h": 5.8,
       "lluvia_72h": 10.3,
       "ola_m": 2.6
@@ -1245,16 +1245,16 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 10.6,
+      "temp": 10.8,
       "humedad": 77.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.1,
-      "racha_kmh": 13.3,
+      "racha_kmh": 12.1,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
       "viento_kmh": 5.8,
       "dir_viento": 212.0,
-      "factor_racha": 2.3,
+      "factor_racha": 2.1,
       "dpresion_12h": 6.3,
       "lluvia_72h": 10.3,
       "ola_m": 2.6
@@ -1288,11 +1288,11 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 10.7,
-      "humedad": 78.0,
+      "temp": 10.9,
+      "humedad": 77.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.1,
-      "racha_kmh": 18.7,
+      "racha_kmh": 19.1,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
       "viento_kmh": 8.6,
@@ -1338,6 +1338,662 @@
      "accidentes_anio": 3.286,
      "pct_graves": 0.0,
      "hora_pico": 17,
+     "imd": null,
+     "ip": null
+    }
+   ]
+  },
+  {
+   "id": "ARTAZA",
+   "nombre": "Artaza (Leioa)",
+   "lat": 43.335,
+   "lon": -2.987,
+   "salidas_esperadas_6h": 0.71,
+   "normal_6h": 0.7,
+   "prob_6h": 0.508,
+   "ratio_max": 1.05,
+   "nivel": "verde",
+   "hora_pico": "2026-11-19T22:00:00",
+   "factores": [
+    "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
+    "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)"
+   ],
+   "situacion_ahora": "",
+   "situaciones_6h": [],
+   "directo": {
+    "activas": 0,
+    "nuevas_1h": 0
+   },
+   "horas": [
+    {
+     "hora": "2026-11-19T21:00:00",
+     "lambda": 0.1226,
+     "prob": 0.115,
+     "normal": 0.1226,
+     "ratio": 1.0,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0339,
+       "mult": 1.0
+      },
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0271,
+       "mult": 1.0
+      },
+      {
+       "familia": "INCENDIO_FORESTAL_EXTERIOR",
+       "lambda": 0.0196,
+       "mult": 1.0
+      }
+     ],
+     "factores": [],
+     "situaciones": [],
+     "situacion_txt": "",
+     "meteo": {
+      "temp": 12.5,
+      "humedad": 78.0,
+      "lluvia_1h": 0.0,
+      "lluvia_12h": 0.1,
+      "racha_kmh": 19.8,
+      "viento_sur": false,
+      "dias_sin_lluvia": 0.0,
+      "viento_kmh": 6.6,
+      "dir_viento": 189.0,
+      "factor_racha": 3.0,
+      "dpresion_12h": 5.8,
+      "lluvia_72h": 8.2,
+      "ola_m": 3.7
+     }
+    },
+    {
+     "hora": "2026-11-19T22:00:00",
+     "lambda": 0.124,
+     "prob": 0.117,
+     "normal": 0.1176,
+     "ratio": 1.05,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0379,
+       "mult": 1.12
+      },
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0271,
+       "mult": 1.0
+      },
+      {
+       "familia": "INCENDIO_FORESTAL_EXTERIOR",
+       "lambda": 0.0196,
+       "mult": 1.0
+      }
+     ],
+     "factores": [
+      "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
+      "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)"
+     ],
+     "situaciones": [],
+     "situacion_txt": "",
+     "meteo": {
+      "temp": 11.3,
+      "humedad": 85.0,
+      "lluvia_1h": 0.1,
+      "lluvia_12h": 0.1,
+      "racha_kmh": 7.6,
+      "viento_sur": false,
+      "dias_sin_lluvia": 0.0,
+      "viento_kmh": 4.4,
+      "dir_viento": 125.0,
+      "factor_racha": 1.5,
+      "dpresion_12h": 5.3,
+      "lluvia_72h": 8.3,
+      "ola_m": 3.6
+     }
+    },
+    {
+     "hora": "2026-11-19T23:00:00",
+     "lambda": 0.1158,
+     "prob": 0.109,
+     "normal": 0.1158,
+     "ratio": 1.0,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0339,
+       "mult": 1.0
+      },
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0271,
+       "mult": 1.0
+      },
+      {
+       "familia": "INCENDIO_FORESTAL_EXTERIOR",
+       "lambda": 0.0196,
+       "mult": 1.0
+      }
+     ],
+     "factores": [],
+     "situaciones": [],
+     "situacion_txt": "",
+     "meteo": {
+      "temp": 11.9,
+      "humedad": 70.0,
+      "lluvia_1h": 0.0,
+      "lluvia_12h": 0.2,
+      "racha_kmh": 18.0,
+      "viento_sur": false,
+      "dias_sin_lluvia": 0.0,
+      "viento_kmh": 8.9,
+      "dir_viento": 223.0,
+      "factor_racha": 2.0,
+      "dpresion_12h": 6.1,
+      "lluvia_72h": 8.3,
+      "ola_m": 3.6
+     }
+    },
+    {
+     "hora": "2026-11-20T00:00:00",
+     "lambda": 0.1207,
+     "prob": 0.114,
+     "normal": 0.1207,
+     "ratio": 1.0,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0339,
+       "mult": 1.0
+      },
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0271,
+       "mult": 1.0
+      },
+      {
+       "familia": "INCENDIO_FORESTAL_EXTERIOR",
+       "lambda": 0.0196,
+       "mult": 1.0
+      }
+     ],
+     "factores": [],
+     "situaciones": [],
+     "situacion_txt": "",
+     "meteo": {
+      "temp": 10.8,
+      "humedad": 73.0,
+      "lluvia_1h": 0.0,
+      "lluvia_12h": 0.2,
+      "racha_kmh": 7.9,
+      "viento_sur": false,
+      "dias_sin_lluvia": 1.0,
+      "viento_kmh": 5.6,
+      "dir_viento": 207.0,
+      "factor_racha": 1.4,
+      "dpresion_12h": 5.8,
+      "lluvia_72h": 8.3,
+      "ola_m": 3.6
+     }
+    },
+    {
+     "hora": "2026-11-20T01:00:00",
+     "lambda": 0.1159,
+     "prob": 0.109,
+     "normal": 0.1159,
+     "ratio": 1.0,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0339,
+       "mult": 1.0
+      },
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0271,
+       "mult": 1.0
+      },
+      {
+       "familia": "INCENDIO_FORESTAL_EXTERIOR",
+       "lambda": 0.0196,
+       "mult": 1.0
+      }
+     ],
+     "factores": [],
+     "situaciones": [],
+     "situacion_txt": "",
+     "meteo": {
+      "temp": 11.2,
+      "humedad": 72.0,
+      "lluvia_1h": 0.0,
+      "lluvia_12h": 0.2,
+      "racha_kmh": 20.4,
+      "viento_sur": false,
+      "dias_sin_lluvia": 1.0,
+      "viento_kmh": 12.3,
+      "dir_viento": 222.0,
+      "factor_racha": 1.7,
+      "dpresion_12h": 6.0,
+      "lluvia_72h": 8.3,
+      "ola_m": 3.5
+     }
+    },
+    {
+     "hora": "2026-11-20T02:00:00",
+     "lambda": 0.1108,
+     "prob": 0.105,
+     "normal": 0.1108,
+     "ratio": 1.0,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0339,
+       "mult": 1.0
+      },
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0271,
+       "mult": 1.0
+      },
+      {
+       "familia": "INCENDIO_FORESTAL_EXTERIOR",
+       "lambda": 0.0196,
+       "mult": 1.0
+      }
+     ],
+     "factores": [],
+     "situaciones": [],
+     "situacion_txt": "",
+     "meteo": {
+      "temp": 11.1,
+      "humedad": 73.0,
+      "lluvia_1h": 0.0,
+      "lluvia_12h": 0.2,
+      "racha_kmh": 19.4,
+      "viento_sur": false,
+      "dias_sin_lluvia": 1.0,
+      "viento_kmh": 10.6,
+      "dir_viento": 227.0,
+      "factor_racha": 1.8,
+      "dpresion_12h": 6.2,
+      "lluvia_72h": 8.3,
+      "ola_m": 3.5
+     }
+    }
+   ],
+   "carreteras": [
+    {
+     "carretera": "BI-637",
+     "km_ini": 10,
+     "km_fin": 15,
+     "esperados": 0.0096,
+     "prob": 0.0095,
+     "accidentes_anio": 28.143,
+     "pct_graves": 3.6,
+     "hora_pico": 14,
+     "imd": null,
+     "ip": null
+    },
+    {
+     "carretera": "N-637",
+     "km_ini": 10,
+     "km_fin": 15,
+     "esperados": 0.0085,
+     "prob": 0.0085,
+     "accidentes_anio": 25.0,
+     "pct_graves": 4.6,
+     "hora_pico": 7,
+     "imd": null,
+     "ip": null
+    },
+    {
+     "carretera": "BI-637",
+     "km_ini": 5,
+     "km_fin": 10,
+     "esperados": 0.0039,
+     "prob": 0.0039,
+     "accidentes_anio": 11.429,
+     "pct_graves": 5.0,
+     "hora_pico": 18,
+     "imd": null,
+     "ip": null
+    }
+   ]
+  },
+  {
+   "id": "URIOSTE",
+   "nombre": "Urioste (Ortuella)",
+   "lat": 43.3075,
+   "lon": -3.051,
+   "salidas_esperadas_6h": 1.2,
+   "normal_6h": 1.19,
+   "prob_6h": 0.7,
+   "ratio_max": 1.04,
+   "nivel": "verde",
+   "hora_pico": "2026-11-19T22:00:00",
+   "factores": [
+    "Evento: Festival: FIOP 2026 - Festival Internacional de Ochotes de Portugalete",
+    "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
+    "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)"
+   ],
+   "situacion_ahora": "",
+   "situaciones_6h": [],
+   "directo": {
+    "activas": 0,
+    "nuevas_1h": 0
+   },
+   "horas": [
+    {
+     "hora": "2026-11-19T21:00:00",
+     "lambda": 0.2034,
+     "prob": 0.184,
+     "normal": 0.2024,
+     "ratio": 1.01,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0645,
+       "mult": 1.0
+      },
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0427,
+       "mult": 1.0
+      },
+      {
+       "familia": "INCENDIO_FORESTAL_EXTERIOR",
+       "lambda": 0.0389,
+       "mult": 1.0
+      }
+     ],
+     "factores": [
+      "Evento: Festival: FIOP 2026 - Festival Internacional de Ochotes de Portugalete"
+     ],
+     "situaciones": [],
+     "situacion_txt": "",
+     "meteo": {
+      "temp": 13.0,
+      "humedad": 73.0,
+      "lluvia_1h": 0.0,
+      "lluvia_12h": 0.0,
+      "racha_kmh": 13.3,
+      "viento_sur": false,
+      "dias_sin_lluvia": 0.0,
+      "viento_kmh": 6.3,
+      "dir_viento": 193.0,
+      "factor_racha": 2.1,
+      "dpresion_12h": 5.8,
+      "lluvia_72h": 7.4,
+      "ola_m": 3.5
+     }
+    },
+    {
+     "hora": "2026-11-19T22:00:00",
+     "lambda": 0.2075,
+     "prob": 0.187,
+     "normal": 0.2003,
+     "ratio": 1.04,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0645,
+       "mult": 1.0
+      },
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0478,
+       "mult": 1.12
+      },
+      {
+       "familia": "INCENDIO_FORESTAL_EXTERIOR",
+       "lambda": 0.0389,
+       "mult": 1.0
+      }
+     ],
+     "factores": [
+      "Evento: Festival: FIOP 2026 - Festival Internacional de Ochotes de Portugalete",
+      "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
+      "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)"
+     ],
+     "situaciones": [],
+     "situacion_txt": "",
+     "meteo": {
+      "temp": 13.1,
+      "humedad": 69.0,
+      "lluvia_1h": 0.1,
+      "lluvia_12h": 0.0,
+      "racha_kmh": 19.8,
+      "viento_sur": false,
+      "dias_sin_lluvia": 0.0,
+      "viento_kmh": 10.7,
+      "dir_viento": 228.0,
+      "factor_racha": 1.9,
+      "dpresion_12h": 5.4,
+      "lluvia_72h": 7.5,
+      "ola_m": 3.4
+     }
+    },
+    {
+     "hora": "2026-11-19T23:00:00",
+     "lambda": 0.199,
+     "prob": 0.18,
+     "normal": 0.1986,
+     "ratio": 1.0,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0645,
+       "mult": 1.0
+      },
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0427,
+       "mult": 1.0
+      },
+      {
+       "familia": "INCENDIO_FORESTAL_EXTERIOR",
+       "lambda": 0.0389,
+       "mult": 1.0
+      }
+     ],
+     "factores": [
+      "Evento: Festival: FIOP 2026 - Festival Internacional de Ochotes de Portugalete"
+     ],
+     "situaciones": [],
+     "situacion_txt": "",
+     "meteo": {
+      "temp": 12.5,
+      "humedad": 68.0,
+      "lluvia_1h": 0.0,
+      "lluvia_12h": 0.1,
+      "racha_kmh": 20.2,
+      "viento_sur": false,
+      "dias_sin_lluvia": 0.0,
+      "viento_kmh": 10.0,
+      "dir_viento": 221.0,
+      "factor_racha": 2.0,
+      "dpresion_12h": 6.0,
+      "lluvia_72h": 7.5,
+      "ola_m": 3.4
+     }
+    },
+    {
+     "hora": "2026-11-20T00:00:00",
+     "lambda": 0.2008,
+     "prob": 0.182,
+     "normal": 0.2001,
+     "ratio": 1.0,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0645,
+       "mult": 1.0
+      },
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0427,
+       "mult": 1.0
+      },
+      {
+       "familia": "INCENDIO_FORESTAL_EXTERIOR",
+       "lambda": 0.0389,
+       "mult": 1.0
+      }
+     ],
+     "factores": [
+      "Evento: Festival: FIOP 2026 - Festival Internacional de Ochotes de Portugalete"
+     ],
+     "situaciones": [],
+     "situacion_txt": "",
+     "meteo": {
+      "temp": 11.9,
+      "humedad": 70.0,
+      "lluvia_1h": 0.0,
+      "lluvia_12h": 0.1,
+      "racha_kmh": 18.4,
+      "viento_sur": false,
+      "dias_sin_lluvia": 1.0,
+      "viento_kmh": 10.9,
+      "dir_viento": 214.0,
+      "factor_racha": 1.7,
+      "dpresion_12h": 5.7,
+      "lluvia_72h": 7.5,
+      "ola_m": 3.4
+     }
+    },
+    {
+     "hora": "2026-11-20T01:00:00",
+     "lambda": 0.1972,
+     "prob": 0.179,
+     "normal": 0.197,
+     "ratio": 1.0,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0645,
+       "mult": 1.0
+      },
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0427,
+       "mult": 1.0
+      },
+      {
+       "familia": "INCENDIO_FORESTAL_EXTERIOR",
+       "lambda": 0.0389,
+       "mult": 1.0
+      }
+     ],
+     "factores": [
+      "Evento: Festival: FIOP 2026 - Festival Internacional de Ochotes de Portugalete"
+     ],
+     "situaciones": [],
+     "situacion_txt": "",
+     "meteo": {
+      "temp": 12.2,
+      "humedad": 69.0,
+      "lluvia_1h": 0.0,
+      "lluvia_12h": 0.1,
+      "racha_kmh": 28.2,
+      "viento_sur": false,
+      "dias_sin_lluvia": 1.0,
+      "viento_kmh": 13.8,
+      "dir_viento": 219.0,
+      "factor_racha": 2.0,
+      "dpresion_12h": 6.1,
+      "lluvia_72h": 7.5,
+      "ola_m": 3.4
+     }
+    },
+    {
+     "hora": "2026-11-20T02:00:00",
+     "lambda": 0.1961,
+     "prob": 0.178,
+     "normal": 0.1961,
+     "ratio": 1.0,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0645,
+       "mult": 1.0
+      },
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0427,
+       "mult": 1.0
+      },
+      {
+       "familia": "INCENDIO_FORESTAL_EXTERIOR",
+       "lambda": 0.0389,
+       "mult": 1.0
+      }
+     ],
+     "factores": [],
+     "situaciones": [],
+     "situacion_txt": "",
+     "meteo": {
+      "temp": 12.1,
+      "humedad": 69.0,
+      "lluvia_1h": 0.0,
+      "lluvia_12h": 0.1,
+      "racha_kmh": 27.5,
+      "viento_sur": false,
+      "dias_sin_lluvia": 1.0,
+      "viento_kmh": 13.4,
+      "dir_viento": 220.0,
+      "factor_racha": 2.0,
+      "dpresion_12h": 6.2,
+      "lluvia_72h": 7.5,
+      "ola_m": 3.3
+     }
+    }
+   ],
+   "carreteras": [
+    {
+     "carretera": "A-8",
+     "km_ini": 120,
+     "km_fin": 125,
+     "esperados": 0.0087,
+     "prob": 0.0087,
+     "accidentes_anio": 27.714,
+     "pct_graves": 6.7,
+     "hora_pico": 14,
+     "imd": 78380,
+     "ip": 19.4
+    },
+    {
+     "carretera": "A-8",
+     "km_ini": 125,
+     "km_fin": 130,
+     "esperados": 0.0049,
+     "prob": 0.0049,
+     "accidentes_anio": 15.571,
+     "pct_graves": 2.8,
+     "hora_pico": 15,
+     "imd": 23330,
+     "ip": 36.6
+    },
+    {
+     "carretera": "N-637",
+     "km_ini": 5,
+     "km_fin": 10,
+     "esperados": 0.0038,
+     "prob": 0.0038,
+     "accidentes_anio": 12.0,
+     "pct_graves": 0.0,
+     "hora_pico": 14,
      "imd": null,
      "ip": null
     }
@@ -1393,8 +2049,8 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 12.0,
-      "humedad": 72.0,
+      "temp": 11.8,
+      "humedad": 73.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.1,
       "racha_kmh": 25.2,
@@ -1439,18 +2095,18 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 11.7,
-      "humedad": 79.0,
-      "lluvia_1h": 0.1,
+      "temp": 12.1,
+      "humedad": 73.0,
+      "lluvia_1h": 0.2,
       "lluvia_12h": 0.1,
-      "racha_kmh": 12.6,
+      "racha_kmh": 22.3,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
       "viento_kmh": 9.0,
       "dir_viento": 217.0,
-      "factor_racha": 1.4,
+      "factor_racha": 2.5,
       "dpresion_12h": 5.7,
-      "lluvia_72h": 11.9,
+      "lluvia_72h": 12.0,
       "ola_m": 3.1
      }
     },
@@ -1483,17 +2139,17 @@
      "situacion_txt": "",
      "meteo": {
       "temp": 11.9,
-      "humedad": 72.0,
+      "humedad": 71.0,
       "lluvia_1h": 0.0,
-      "lluvia_12h": 0.2,
-      "racha_kmh": 23.4,
+      "lluvia_12h": 0.3,
+      "racha_kmh": 27.0,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
       "viento_kmh": 10.5,
       "dir_viento": 218.0,
-      "factor_racha": 2.2,
+      "factor_racha": 2.6,
       "dpresion_12h": 6.0,
-      "lluvia_72h": 11.9,
+      "lluvia_72h": 12.0,
       "ola_m": 3.1
      }
     },
@@ -1525,18 +2181,18 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 11.8,
+      "temp": 11.7,
       "humedad": 71.0,
       "lluvia_1h": 0.0,
-      "lluvia_12h": 0.2,
-      "racha_kmh": 22.2,
+      "lluvia_12h": 0.3,
+      "racha_kmh": 22.7,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
       "viento_kmh": 8.9,
       "dir_viento": 223.0,
       "factor_racha": 2.5,
       "dpresion_12h": 5.8,
-      "lluvia_72h": 11.9,
+      "lluvia_72h": 12.0,
       "ola_m": 3.0
      }
     },
@@ -1568,18 +2224,18 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 11.5,
+      "temp": 11.6,
       "humedad": 73.0,
       "lluvia_1h": 0.0,
-      "lluvia_12h": 0.2,
-      "racha_kmh": 21.1,
+      "lluvia_12h": 0.3,
+      "racha_kmh": 20.7,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
       "viento_kmh": 7.7,
       "dir_viento": 217.0,
       "factor_racha": 2.7,
       "dpresion_12h": 6.5,
-      "lluvia_72h": 11.9,
+      "lluvia_72h": 12.0,
       "ola_m": 3.0
      }
     },
@@ -1611,18 +2267,18 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 11.5,
+      "temp": 11.6,
       "humedad": 73.0,
       "lluvia_1h": 0.0,
-      "lluvia_12h": 0.2,
-      "racha_kmh": 24.3,
+      "lluvia_12h": 0.3,
+      "racha_kmh": 24.5,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
       "viento_kmh": 9.6,
       "dir_viento": 221.0,
       "factor_racha": 2.5,
       "dpresion_12h": 5.9,
-      "lluvia_72h": 11.9,
+      "lluvia_72h": 12.0,
       "ola_m": 3.0
      }
     }
@@ -1661,652 +2317,6 @@
      "accidentes_anio": 2.857,
      "pct_graves": 20.0,
      "hora_pico": 16,
-     "imd": null,
-     "ip": null
-    }
-   ]
-  },
-  {
-   "id": "URIOSTE",
-   "nombre": "Urioste (Ortuella)",
-   "lat": 43.3075,
-   "lon": -3.051,
-   "salidas_esperadas_6h": 1.2,
-   "normal_6h": 1.19,
-   "prob_6h": 0.698,
-   "ratio_max": 1.01,
-   "nivel": "verde",
-   "hora_pico": "2026-11-19T21:00:00",
-   "factores": [
-    "Evento: Festival: FIOP 2026 - Festival Internacional de Ochotes de Portugalete"
-   ],
-   "situacion_ahora": "",
-   "situaciones_6h": [],
-   "directo": {
-    "activas": 0,
-    "nuevas_1h": 0
-   },
-   "horas": [
-    {
-     "hora": "2026-11-19T21:00:00",
-     "lambda": 0.2034,
-     "prob": 0.184,
-     "normal": 0.2024,
-     "ratio": 1.01,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0645,
-       "mult": 1.0
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0427,
-       "mult": 1.0
-      },
-      {
-       "familia": "INCENDIO_FORESTAL_EXTERIOR",
-       "lambda": 0.0389,
-       "mult": 1.0
-      }
-     ],
-     "factores": [
-      "Evento: Festival: FIOP 2026 - Festival Internacional de Ochotes de Portugalete"
-     ],
-     "situaciones": [],
-     "situacion_txt": "",
-     "meteo": {
-      "temp": 13.0,
-      "humedad": 72.0,
-      "lluvia_1h": 0.0,
-      "lluvia_12h": 0.0,
-      "racha_kmh": 13.3,
-      "viento_sur": false,
-      "dias_sin_lluvia": 0.0,
-      "viento_kmh": 6.3,
-      "dir_viento": 193.0,
-      "factor_racha": 2.1,
-      "dpresion_12h": 5.8,
-      "lluvia_72h": 7.4,
-      "ola_m": 3.5
-     }
-    },
-    {
-     "hora": "2026-11-19T22:00:00",
-     "lambda": 0.2011,
-     "prob": 0.182,
-     "normal": 0.2003,
-     "ratio": 1.0,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0645,
-       "mult": 1.0
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0427,
-       "mult": 1.0
-      },
-      {
-       "familia": "INCENDIO_FORESTAL_EXTERIOR",
-       "lambda": 0.0389,
-       "mult": 1.0
-      }
-     ],
-     "factores": [
-      "Evento: Festival: FIOP 2026 - Festival Internacional de Ochotes de Portugalete"
-     ],
-     "situaciones": [],
-     "situacion_txt": "",
-     "meteo": {
-      "temp": 12.6,
-      "humedad": 71.0,
-      "lluvia_1h": 0.0,
-      "lluvia_12h": 0.0,
-      "racha_kmh": 9.4,
-      "viento_sur": false,
-      "dias_sin_lluvia": 0.0,
-      "viento_kmh": 10.7,
-      "dir_viento": 228.0,
-      "factor_racha": 0.9,
-      "dpresion_12h": 5.4,
-      "lluvia_72h": 7.4,
-      "ola_m": 3.4
-     }
-    },
-    {
-     "hora": "2026-11-19T23:00:00",
-     "lambda": 0.199,
-     "prob": 0.18,
-     "normal": 0.1986,
-     "ratio": 1.0,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0645,
-       "mult": 1.0
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0427,
-       "mult": 1.0
-      },
-      {
-       "familia": "INCENDIO_FORESTAL_EXTERIOR",
-       "lambda": 0.0389,
-       "mult": 1.0
-      }
-     ],
-     "factores": [
-      "Evento: Festival: FIOP 2026 - Festival Internacional de Ochotes de Portugalete"
-     ],
-     "situaciones": [],
-     "situacion_txt": "",
-     "meteo": {
-      "temp": 12.8,
-      "humedad": 64.0,
-      "lluvia_1h": 0.0,
-      "lluvia_12h": 0.0,
-      "racha_kmh": 25.2,
-      "viento_sur": false,
-      "dias_sin_lluvia": 0.0,
-      "viento_kmh": 10.0,
-      "dir_viento": 221.0,
-      "factor_racha": 2.5,
-      "dpresion_12h": 6.0,
-      "lluvia_72h": 7.4,
-      "ola_m": 3.4
-     }
-    },
-    {
-     "hora": "2026-11-20T00:00:00",
-     "lambda": 0.2008,
-     "prob": 0.182,
-     "normal": 0.2001,
-     "ratio": 1.0,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0645,
-       "mult": 1.0
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0427,
-       "mult": 1.0
-      },
-      {
-       "familia": "INCENDIO_FORESTAL_EXTERIOR",
-       "lambda": 0.0389,
-       "mult": 1.0
-      }
-     ],
-     "factores": [
-      "Evento: Festival: FIOP 2026 - Festival Internacional de Ochotes de Portugalete"
-     ],
-     "situaciones": [],
-     "situacion_txt": "",
-     "meteo": {
-      "temp": 12.0,
-      "humedad": 67.0,
-      "lluvia_1h": 0.0,
-      "lluvia_12h": 0.0,
-      "racha_kmh": 14.7,
-      "viento_sur": false,
-      "dias_sin_lluvia": 1.0,
-      "viento_kmh": 10.9,
-      "dir_viento": 214.0,
-      "factor_racha": 1.4,
-      "dpresion_12h": 5.7,
-      "lluvia_72h": 7.4,
-      "ola_m": 3.4
-     }
-    },
-    {
-     "hora": "2026-11-20T01:00:00",
-     "lambda": 0.1972,
-     "prob": 0.179,
-     "normal": 0.197,
-     "ratio": 1.0,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0645,
-       "mult": 1.0
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0427,
-       "mult": 1.0
-      },
-      {
-       "familia": "INCENDIO_FORESTAL_EXTERIOR",
-       "lambda": 0.0389,
-       "mult": 1.0
-      }
-     ],
-     "factores": [
-      "Evento: Festival: FIOP 2026 - Festival Internacional de Ochotes de Portugalete"
-     ],
-     "situaciones": [],
-     "situacion_txt": "",
-     "meteo": {
-      "temp": 12.2,
-      "humedad": 68.0,
-      "lluvia_1h": 0.0,
-      "lluvia_12h": 0.0,
-      "racha_kmh": 28.8,
-      "viento_sur": false,
-      "dias_sin_lluvia": 1.0,
-      "viento_kmh": 13.8,
-      "dir_viento": 219.0,
-      "factor_racha": 2.1,
-      "dpresion_12h": 6.1,
-      "lluvia_72h": 7.4,
-      "ola_m": 3.4
-     }
-    },
-    {
-     "hora": "2026-11-20T02:00:00",
-     "lambda": 0.1961,
-     "prob": 0.178,
-     "normal": 0.1961,
-     "ratio": 1.0,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0645,
-       "mult": 1.0
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0427,
-       "mult": 1.0
-      },
-      {
-       "familia": "INCENDIO_FORESTAL_EXTERIOR",
-       "lambda": 0.0389,
-       "mult": 1.0
-      }
-     ],
-     "factores": [],
-     "situaciones": [],
-     "situacion_txt": "",
-     "meteo": {
-      "temp": 12.2,
-      "humedad": 68.0,
-      "lluvia_1h": 0.0,
-      "lluvia_12h": 0.0,
-      "racha_kmh": 28.8,
-      "viento_sur": false,
-      "dias_sin_lluvia": 1.0,
-      "viento_kmh": 13.4,
-      "dir_viento": 220.0,
-      "factor_racha": 2.1,
-      "dpresion_12h": 6.2,
-      "lluvia_72h": 7.4,
-      "ola_m": 3.3
-     }
-    }
-   ],
-   "carreteras": [
-    {
-     "carretera": "A-8",
-     "km_ini": 120,
-     "km_fin": 125,
-     "esperados": 0.0087,
-     "prob": 0.0087,
-     "accidentes_anio": 27.714,
-     "pct_graves": 6.7,
-     "hora_pico": 14,
-     "imd": 78380,
-     "ip": 19.4
-    },
-    {
-     "carretera": "A-8",
-     "km_ini": 125,
-     "km_fin": 130,
-     "esperados": 0.0049,
-     "prob": 0.0049,
-     "accidentes_anio": 15.571,
-     "pct_graves": 2.8,
-     "hora_pico": 15,
-     "imd": 23330,
-     "ip": 36.6
-    },
-    {
-     "carretera": "N-637",
-     "km_ini": 5,
-     "km_fin": 10,
-     "esperados": 0.0038,
-     "prob": 0.0038,
-     "accidentes_anio": 12.0,
-     "pct_graves": 0.0,
-     "hora_pico": 14,
-     "imd": null,
-     "ip": null
-    }
-   ]
-  },
-  {
-   "id": "ARTAZA",
-   "nombre": "Artaza (Leioa)",
-   "lat": 43.335,
-   "lon": -2.987,
-   "salidas_esperadas_6h": 0.7,
-   "normal_6h": 0.7,
-   "prob_6h": 0.505,
-   "ratio_max": 1.0,
-   "nivel": "verde",
-   "hora_pico": "2026-11-19T21:00:00",
-   "factores": [],
-   "situacion_ahora": "",
-   "situaciones_6h": [],
-   "directo": {
-    "activas": 0,
-    "nuevas_1h": 0
-   },
-   "horas": [
-    {
-     "hora": "2026-11-19T21:00:00",
-     "lambda": 0.1226,
-     "prob": 0.115,
-     "normal": 0.1226,
-     "ratio": 1.0,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0339,
-       "mult": 1.0
-      },
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0271,
-       "mult": 1.0
-      },
-      {
-       "familia": "INCENDIO_FORESTAL_EXTERIOR",
-       "lambda": 0.0196,
-       "mult": 1.0
-      }
-     ],
-     "factores": [],
-     "situaciones": [],
-     "situacion_txt": "",
-     "meteo": {
-      "temp": 12.7,
-      "humedad": 75.0,
-      "lluvia_1h": 0.0,
-      "lluvia_12h": 0.1,
-      "racha_kmh": 19.8,
-      "viento_sur": false,
-      "dias_sin_lluvia": 0.0,
-      "viento_kmh": 6.6,
-      "dir_viento": 189.0,
-      "factor_racha": 3.0,
-      "dpresion_12h": 5.8,
-      "lluvia_72h": 8.2,
-      "ola_m": 3.7
-     }
-    },
-    {
-     "hora": "2026-11-19T22:00:00",
-     "lambda": 0.1176,
-     "prob": 0.111,
-     "normal": 0.1176,
-     "ratio": 1.0,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0339,
-       "mult": 1.0
-      },
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0271,
-       "mult": 1.0
-      },
-      {
-       "familia": "INCENDIO_FORESTAL_EXTERIOR",
-       "lambda": 0.0196,
-       "mult": 1.0
-      }
-     ],
-     "factores": [],
-     "situaciones": [],
-     "situacion_txt": "",
-     "meteo": {
-      "temp": 11.9,
-      "humedad": 76.0,
-      "lluvia_1h": 0.0,
-      "lluvia_12h": 0.1,
-      "racha_kmh": 5.8,
-      "viento_sur": false,
-      "dias_sin_lluvia": 0.0,
-      "viento_kmh": 4.4,
-      "dir_viento": 125.0,
-      "factor_racha": 1.2,
-      "dpresion_12h": 5.3,
-      "lluvia_72h": 8.2,
-      "ola_m": 3.6
-     }
-    },
-    {
-     "hora": "2026-11-19T23:00:00",
-     "lambda": 0.1158,
-     "prob": 0.109,
-     "normal": 0.1158,
-     "ratio": 1.0,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0339,
-       "mult": 1.0
-      },
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0271,
-       "mult": 1.0
-      },
-      {
-       "familia": "INCENDIO_FORESTAL_EXTERIOR",
-       "lambda": 0.0196,
-       "mult": 1.0
-      }
-     ],
-     "factores": [],
-     "situaciones": [],
-     "situacion_txt": "",
-     "meteo": {
-      "temp": 12.6,
-      "humedad": 64.0,
-      "lluvia_1h": 0.0,
-      "lluvia_12h": 0.1,
-      "racha_kmh": 22.0,
-      "viento_sur": false,
-      "dias_sin_lluvia": 0.0,
-      "viento_kmh": 8.9,
-      "dir_viento": 223.0,
-      "factor_racha": 2.5,
-      "dpresion_12h": 6.1,
-      "lluvia_72h": 8.2,
-      "ola_m": 3.6
-     }
-    },
-    {
-     "hora": "2026-11-20T00:00:00",
-     "lambda": 0.1207,
-     "prob": 0.114,
-     "normal": 0.1207,
-     "ratio": 1.0,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0339,
-       "mult": 1.0
-      },
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0271,
-       "mult": 1.0
-      },
-      {
-       "familia": "INCENDIO_FORESTAL_EXTERIOR",
-       "lambda": 0.0196,
-       "mult": 1.0
-      }
-     ],
-     "factores": [],
-     "situaciones": [],
-     "situacion_txt": "",
-     "meteo": {
-      "temp": 11.1,
-      "humedad": 71.0,
-      "lluvia_1h": 0.0,
-      "lluvia_12h": 0.1,
-      "racha_kmh": 11.5,
-      "viento_sur": false,
-      "dias_sin_lluvia": 1.0,
-      "viento_kmh": 5.6,
-      "dir_viento": 207.0,
-      "factor_racha": 2.0,
-      "dpresion_12h": 5.8,
-      "lluvia_72h": 8.2,
-      "ola_m": 3.6
-     }
-    },
-    {
-     "hora": "2026-11-20T01:00:00",
-     "lambda": 0.1159,
-     "prob": 0.109,
-     "normal": 0.1159,
-     "ratio": 1.0,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0339,
-       "mult": 1.0
-      },
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0271,
-       "mult": 1.0
-      },
-      {
-       "familia": "INCENDIO_FORESTAL_EXTERIOR",
-       "lambda": 0.0196,
-       "mult": 1.0
-      }
-     ],
-     "factores": [],
-     "situaciones": [],
-     "situacion_txt": "",
-     "meteo": {
-      "temp": 11.2,
-      "humedad": 71.0,
-      "lluvia_1h": 0.0,
-      "lluvia_12h": 0.1,
-      "racha_kmh": 20.2,
-      "viento_sur": false,
-      "dias_sin_lluvia": 1.0,
-      "viento_kmh": 12.3,
-      "dir_viento": 222.0,
-      "factor_racha": 1.6,
-      "dpresion_12h": 6.0,
-      "lluvia_72h": 8.2,
-      "ola_m": 3.5
-     }
-    },
-    {
-     "hora": "2026-11-20T02:00:00",
-     "lambda": 0.1108,
-     "prob": 0.105,
-     "normal": 0.1108,
-     "ratio": 1.0,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0339,
-       "mult": 1.0
-      },
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0271,
-       "mult": 1.0
-      },
-      {
-       "familia": "INCENDIO_FORESTAL_EXTERIOR",
-       "lambda": 0.0196,
-       "mult": 1.0
-      }
-     ],
-     "factores": [],
-     "situaciones": [],
-     "situacion_txt": "",
-     "meteo": {
-      "temp": 11.2,
-      "humedad": 72.0,
-      "lluvia_1h": 0.0,
-      "lluvia_12h": 0.1,
-      "racha_kmh": 20.2,
-      "viento_sur": false,
-      "dias_sin_lluvia": 1.0,
-      "viento_kmh": 10.6,
-      "dir_viento": 227.0,
-      "factor_racha": 1.9,
-      "dpresion_12h": 6.2,
-      "lluvia_72h": 8.2,
-      "ola_m": 3.5
-     }
-    }
-   ],
-   "carreteras": [
-    {
-     "carretera": "BI-637",
-     "km_ini": 10,
-     "km_fin": 15,
-     "esperados": 0.0096,
-     "prob": 0.0095,
-     "accidentes_anio": 28.143,
-     "pct_graves": 3.6,
-     "hora_pico": 14,
-     "imd": null,
-     "ip": null
-    },
-    {
-     "carretera": "N-637",
-     "km_ini": 10,
-     "km_fin": 15,
-     "esperados": 0.0085,
-     "prob": 0.0085,
-     "accidentes_anio": 25.0,
-     "pct_graves": 4.6,
-     "hora_pico": 7,
-     "imd": null,
-     "ip": null
-    },
-    {
-     "carretera": "BI-637",
-     "km_ini": 5,
-     "km_fin": 10,
-     "esperados": 0.0039,
-     "prob": 0.0039,
-     "accidentes_anio": 11.429,
-     "pct_graves": 5.0,
-     "hora_pico": 18,
      "imd": null,
      "ip": null
     }
@@ -2359,8 +2369,8 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 12.3,
-      "humedad": 82.0,
+      "temp": 11.9,
+      "humedad": 86.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.3,
       "racha_kmh": 1.1,
@@ -2402,16 +2412,16 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 12.6,
-      "humedad": 71.0,
+      "temp": 12.7,
+      "humedad": 70.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.3,
-      "racha_kmh": 16.9,
+      "racha_kmh": 24.1,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
       "viento_kmh": 10.6,
       "dir_viento": 252.0,
-      "factor_racha": 1.6,
+      "factor_racha": 2.3,
       "dpresion_12h": 5.3,
       "lluvia_72h": 7.3,
       "ola_m": null
@@ -2445,16 +2455,16 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 12.5,
+      "temp": 12.7,
       "humedad": 70.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.3,
-      "racha_kmh": 20.9,
+      "racha_kmh": 25.2,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
       "viento_kmh": 13.1,
       "dir_viento": 238.0,
-      "factor_racha": 1.6,
+      "factor_racha": 1.9,
       "dpresion_12h": 5.8,
       "lluvia_72h": 7.3,
       "ola_m": null
@@ -2488,16 +2498,16 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 12.0,
+      "temp": 12.1,
       "humedad": 71.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.3,
-      "racha_kmh": 17.6,
+      "racha_kmh": 20.5,
       "viento_sur": false,
       "dias_sin_lluvia": 1.0,
       "viento_kmh": 10.3,
       "dir_viento": 234.0,
-      "factor_racha": 1.7,
+      "factor_racha": 2.0,
       "dpresion_12h": 5.7,
       "lluvia_72h": 7.3,
       "ola_m": null
@@ -2531,16 +2541,16 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 12.0,
-      "humedad": 71.0,
+      "temp": 12.1,
+      "humedad": 70.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.3,
-      "racha_kmh": 25.0,
+      "racha_kmh": 25.3,
       "viento_sur": false,
       "dias_sin_lluvia": 1.0,
       "viento_kmh": 12.3,
       "dir_viento": 238.0,
-      "factor_racha": 2.0,
+      "factor_racha": 2.1,
       "dpresion_12h": 6.3,
       "lluvia_72h": 7.3,
       "ola_m": null
@@ -2578,12 +2588,12 @@
       "humedad": 70.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.3,
-      "racha_kmh": 27.9,
+      "racha_kmh": 26.6,
       "viento_sur": false,
       "dias_sin_lluvia": 1.0,
       "viento_kmh": 12.2,
       "dir_viento": 239.0,
-      "factor_racha": 2.3,
+      "factor_racha": 2.2,
       "dpresion_12h": 6.2,
       "lluvia_72h": 7.3,
       "ola_m": null
