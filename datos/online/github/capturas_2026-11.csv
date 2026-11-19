@@ -8,3 +8,4 @@ ts,salidas_desde_8,salidas_anio,n_activas,ok,error
 2026-11-18T13:10:55+01:00,6,5814,0,1,
 2026-11-18T21:38:23+01:00,11,5816,1,1,
 2026-11-19T03:02:32+01:00,,,,0,"HTTPSConnectionPool(host='www.bizkaia.eus', port=443): Max retries exceeded with url: /es/bomberas-bomberos-bizkaia (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.bizkaia.eus', port=443) at 0x79bb3aef0950>, 'Connection to www.bizkaia.eus timed out. (connect timeout=30)'))"
+2026-11-19T11:10:06+01:00,,,,0,No se encontraron los contadores: la web puede haber cambiado
