@@ -15,7 +15,7 @@ import json
 
 from . import config
 from .directo import enriquecer
-from .recolector_online import TZ, capturar
+from .recolector_online import Bloqueado, PAUSA_BLOQUEO, TZ, bloqueo_pendiente, capturar
 
 
 def publicar_directo(datos):
@@ -35,7 +35,7 @@ def publicar_estado_bloqueo(desde):
     previo = (d.get("bloqueado") or {}).get("desde")          # se conserva el inicio entre tramos
     d["bloqueado"] = {"desde": previo or desde.isoformat(timespec="minutes"),
                       "motivo": "bizkaia.eus responde con una verificación antibots a las lecturas automáticas",
-                      "comprobado": datetime.now(TZ).isoformat(timespec="minutes")}
+                      "comprobado": datetime.now(TZ).isoformat(timespec="seconds")}
     ruta.write_text(json.dumps(d, ensure_ascii=False, indent=1), encoding="utf-8")
 
 
@@ -60,11 +60,11 @@ def main(argv=None):
     ultimo_eventos = None
     ultima_estacion = None
     ok = fallos = 0
-    bloqueado_desde, proximo_intento = None, 0.0
+    bloqueado_desde = None
+    proximo_intento = time.monotonic() + bloqueo_pendiente(datetime.now(TZ))
     while time.monotonic() < fin:
         t0 = time.monotonic()
         if time.monotonic() >= proximo_intento:
-            from .recolector_online import Bloqueado
             try:
                 publicar_directo(capturar())        # directo.json nuevo: sin la marca de bloqueo
                 ok += 1
@@ -73,7 +73,7 @@ def main(argv=None):
                 # la web no quiere lecturas automáticas: no se insiste cada minuto (se prueba cada 30 min)
                 fallos += 1
                 bloqueado_desde = bloqueado_desde or datetime.now(TZ)
-                proximo_intento = time.monotonic() + 1800
+                proximo_intento = time.monotonic() + PAUSA_BLOQUEO
                 publicar_estado_bloqueo(bloqueado_desde)
             except Exception:
                 fallos += 1          # ya queda registrado en capturas_*.csv con ok=0
