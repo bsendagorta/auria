@@ -18,6 +18,7 @@ Uso:  python -m auria.recolector_online
 """
 import argparse
 import csv
+import json
 import os
 import re
 import sys
@@ -158,6 +159,23 @@ class Bloqueado(Exception):
     """La web devuelve la página de verificación antibots (F5/TSPD) en vez del contenido."""
 
 
+# El recolector principal publica esta marca tanto para el siguiente tramo
+# como para la captura de respaldo.
+PAUSA_BLOQUEO = 1800
+
+
+def bloqueo_pendiente(ahora):
+    ruta = config.DIR_PREDICCION / "directo.json"
+    try:
+        estado = json.loads(ruta.read_text(encoding="utf-8")).get("bloqueado")
+        if estado:
+            comprobado = datetime.fromisoformat(estado["comprobado"])
+            return max(0, PAUSA_BLOQUEO - (ahora - comprobado).total_seconds())
+    except (OSError, ValueError, TypeError, KeyError, AttributeError):
+        pass
+    return 0
+
+
 def descargar_html() -> str:
     import requests
     r = requests.get(config.URL_SALIDAS_ONLINE, timeout=30, headers={"User-Agent": config.USER_AGENT})
@@ -189,6 +207,9 @@ def main(argv=None):
     ap.add_argument("--html", help="parsear un fichero HTML local en vez de descargar")
     a = ap.parse_args(argv)
     html = Path(a.html).read_text(encoding="utf-8") if a.html else None
+    if html is None and os.environ.get("AURIA_ORIGEN") == "github" and bloqueo_pendiente(datetime.now(TZ)):
+        print("Captura de respaldo aplazada por el bloqueo de Bizkaia")
+        return
     try:
         capturar(html)
     except Exception:
