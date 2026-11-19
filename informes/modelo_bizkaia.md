@@ -1,5 +1,5 @@
 # AURIA — Modelo mensual (bizkaia)
-Generado: 2026-11-18 · datos desde 2021 · año de prueba: 2025
+Generado: 2026-11-19 · datos desde 2021 · año de prueba: 2025
 
 ## Métricas en el año de prueba (menor = mejor)
 | modelo   |    MAE |   desv_poisson |   total_real |   total_pred |
