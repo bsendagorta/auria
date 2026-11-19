@@ -164,6 +164,29 @@ class Bloqueado(Exception):
 PAUSA_BLOQUEO = 1800
 
 
+def publicar_directo(datos):
+    """Deja la situación en directo en prediccion/directo.json (lo lee el panel)."""
+    from .directo import enriquecer
+
+    d = enriquecer(datos)
+    (config.DIR_PREDICCION / "directo.json").write_text(json.dumps(d, ensure_ascii=False, indent=1),
+                                                       encoding="utf-8")
+
+
+def publicar_estado_bloqueo(ahora):
+    """Marca en directo.json que la lectura está bloqueada por la web (el panel lo explica)."""
+    ruta = config.DIR_PREDICCION / "directo.json"
+    try:
+        d = json.loads(ruta.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        d = {"actuaciones": [], "por_parque": {}}
+    previo = (d.get("bloqueado") or {}).get("desde")          # se conserva el inicio entre tramos
+    d["bloqueado"] = {"desde": previo or ahora.isoformat(timespec="minutes"),
+                      "motivo": "bizkaia.eus responde con una verificación antibots a las lecturas automáticas",
+                      "comprobado": ahora.isoformat(timespec="seconds")}
+    ruta.write_text(json.dumps(d, ensure_ascii=False, indent=1), encoding="utf-8")
+
+
 def bloqueo_pendiente(ahora):
     ruta = config.DIR_PREDICCION / "directo.json"
     try:
@@ -207,11 +230,18 @@ def main(argv=None):
     ap.add_argument("--html", help="parsear un fichero HTML local en vez de descargar")
     a = ap.parse_args(argv)
     html = Path(a.html).read_text(encoding="utf-8") if a.html else None
-    if html is None and os.environ.get("AURIA_ORIGEN") == "github" and bloqueo_pendiente(datetime.now(TZ)):
+    respaldo_github = html is None and os.environ.get("AURIA_ORIGEN") == "github"
+    if respaldo_github and bloqueo_pendiente(datetime.now(TZ)):
         print("Captura de respaldo aplazada por el bloqueo de Bizkaia")
         return
     try:
-        capturar(html)
+        datos = capturar(html)
+        if respaldo_github:
+            publicar_directo(datos)
+    except Bloqueado:
+        if respaldo_github:
+            publicar_estado_bloqueo(datetime.now(TZ))
+        sys.exit(1)
     except Exception:
         sys.exit(1)
 
