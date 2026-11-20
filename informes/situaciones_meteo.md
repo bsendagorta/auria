@@ -1,5 +1,5 @@
 # AURIA — Situaciones meteorológicas y salidas reales (2021-2025)
-Generado 2026-11-19. Meteo horaria ERA5 por parque · salidas SPEIS por parque, tipo y mes.
+Generado 2026-11-20. Meteo horaria ERA5 por parque · salidas SPEIS por parque, tipo y mes.
 
 ## Días al año de cada situación (media por parque)
 |                                     |   ARRATZU |   ARTAZA |   BASAURI |   DERIO |   IURRETA |   MARKINA |   URIOSTE |   ZALLA |
