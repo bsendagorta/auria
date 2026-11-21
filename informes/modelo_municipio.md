@@ -1,5 +1,5 @@
 # AURIA — Modelo mensual (municipio)
-Generado: 2026-11-20 · datos desde 2023 · año de prueba: 2025
+Generado: 2026-11-21 · datos desde 2023 · año de prueba: 2025
 
 ## Métricas en el año de prueba (menor = mejor)
 | modelo   |   MAE |   desv_poisson |   total_real |   total_pred |

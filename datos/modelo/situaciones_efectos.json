@@ -1881,6 +1881,6 @@
   "dev_situaciones": 2015.3,
   "mejora_pct": 1.2
  },
- "fecha": "2026-11-20",
+ "fecha": "2026-11-21",
  "lectura": "m = salidas en un día con esa situación ÷ salidas en un día normal del mismo mes y parque. lo-hi = intervalo del 95 %. Solo se aplican en directo los tipos marcados como activos (los que mejoran la predicción del año de prueba)."
 }

@@ -1,5 +1,5 @@
 # AURIA — Accidentes y obstáculos con hora exacta frente a la meteo de esa hora
-Generado 2026-11-20. Incidencias de tráfico de Open Data Euskadi (Bizkaia sin Bilbao ciudad) × meteo horaria ERA5 de la zona de cada parque.
+Generado 2026-11-21. Incidencias de tráfico de Open Data Euskadi (Bizkaia sin Bilbao ciudad) × meteo horaria ERA5 de la zona de cada parque.
 
 ## Accidente: 7,747 casos en 60 meses completos (2021-04-01 → 2026-11-11) · meteo: ERA5 (reanálisis)
 Mejora en la validación según la fuente de meteo: ERA5 0.33 % · estaciones 0.33 %
