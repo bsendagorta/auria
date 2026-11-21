@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-21T08:56+01:00",
+ "generado": "2026-11-21T09:12+01:00",
  "horizonte_h": 6,
  "modelo": "base+reglas",
  "fuentes_ok": {
@@ -7,7 +7,7 @@
   "trafico": true
  },
  "bizkaia": {
-  "salidas_esperadas_6h": 6.1,
+  "salidas_esperadas_6h": 6.2,
   "normal_6h": 4.8,
   "contador": {
    "ts": "2026-11-19T09:14:44+01:00",
@@ -21,27 +21,25 @@
    "nombre": "Urioste (Ortuella)",
    "lat": 43.3075,
    "lon": -3.051,
-   "salidas_esperadas_6h": 2.73,
-   "normal_6h": 1.57,
-   "prob_6h": 0.935,
+   "salidas_esperadas_6h": 2.84,
+   "normal_6h": 1.55,
+   "prob_6h": 0.942,
    "ratio_max": 1.88,
    "nivel": "amarillo",
    "hora_pico": "2026-11-21T09:00:00",
    "factores": [
     "🌀 Borrasca (presión cayendo)",
-    "Rachas de 60-80 km/h",
-    "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
-    "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)",
-    "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)",
     "💨 Rachas ≥70 km/h 71 km/h",
+    "Rachas de 60-80 km/h",
     "Rachas ≥70 km/h: caídas de objetos/árboles ×3.9 (medido por horas)",
+    "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)",
     "💨 Rachas ≥70 km/h 77 km/h",
     "💨 Rachas ≥70 km/h 74 km/h",
     "💨 Rachas ≥70 km/h 78 km/h",
     "💨 Rachas ≥70 km/h 82 km/h",
     "Rachas fuertes (80-100 km/h)"
    ],
-   "situacion_ahora": "🌀 Borrasca (presión cayendo)",
+   "situacion_ahora": "🌀 Borrasca (presión cayendo) · 💨 Rachas ≥70 km/h 71 km/h",
    "situaciones_6h": [
     "BORRASCA",
     "VIENTO_FUERTE"
@@ -51,57 +49,6 @@
     "nuevas_1h": 0
    },
    "horas": [
-    {
-     "hora": "2026-11-21T08:00:00",
-     "lambda": 0.2773,
-     "prob": 0.242,
-     "normal": 0.258,
-     "ratio": 1.07,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0919,
-       "mult": 1.0
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0858,
-       "mult": 1.28
-      },
-      {
-       "familia": "INCENDIO_URBANO",
-       "lambda": 0.0313,
-       "mult": 1.0
-      }
-     ],
-     "factores": [
-      "🌀 Borrasca (presión cayendo)",
-      "Rachas de 60-80 km/h",
-      "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
-      "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)",
-      "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
-     ],
-     "situaciones": [
-      "BORRASCA"
-     ],
-     "situacion_txt": "🌀 Borrasca (presión cayendo)",
-     "meteo": {
-      "temp": 15.3,
-      "humedad": 61.0,
-      "lluvia_1h": 0.1,
-      "lluvia_12h": 0.2,
-      "racha_kmh": 63.4,
-      "viento_sur": true,
-      "dias_sin_lluvia": 2.0,
-      "viento_kmh": 26.7,
-      "dir_viento": 209.0,
-      "factor_racha": 2.4,
-      "dpresion_12h": -6.5,
-      "lluvia_72h": 9.5,
-      "ola_m": 1.6
-     }
-    },
     {
      "hora": "2026-11-21T09:00:00",
      "lambda": 0.4875,
@@ -142,7 +89,7 @@
       "temp": 15.5,
       "humedad": 60.0,
       "lluvia_1h": 0.0,
-      "lluvia_12h": 0.3,
+      "lluvia_12h": 0.2,
       "racha_kmh": 71.3,
       "viento_sur": true,
       "dias_sin_lluvia": 2.0,
@@ -150,7 +97,7 @@
       "dir_viento": 212.0,
       "factor_racha": 2.4,
       "dpresion_12h": -6.7,
-      "lluvia_72h": 9.4,
+      "lluvia_72h": 9.3,
       "ola_m": 1.5
      }
     },
@@ -194,7 +141,7 @@
       "temp": 16.0,
       "humedad": 57.0,
       "lluvia_1h": 0.0,
-      "lluvia_12h": 0.3,
+      "lluvia_12h": 0.2,
       "racha_kmh": 77.4,
       "viento_sur": true,
       "dias_sin_lluvia": 2.0,
@@ -202,7 +149,7 @@
       "dir_viento": 213.0,
       "factor_racha": 2.3,
       "dpresion_12h": -7.3,
-      "lluvia_72h": 9.4,
+      "lluvia_72h": 9.3,
       "ola_m": 1.5
      }
     },
@@ -246,7 +193,7 @@
       "temp": 16.6,
       "humedad": 58.0,
       "lluvia_1h": 0.0,
-      "lluvia_12h": 0.3,
+      "lluvia_12h": 0.2,
       "racha_kmh": 74.2,
       "viento_sur": true,
       "dias_sin_lluvia": 2.0,
@@ -254,7 +201,7 @@
       "dir_viento": 212.0,
       "factor_racha": 2.3,
       "dpresion_12h": -8.5,
-      "lluvia_72h": 9.4,
+      "lluvia_72h": 9.3,
       "ola_m": 1.4
      }
     },
@@ -298,7 +245,7 @@
       "temp": 16.7,
       "humedad": 61.0,
       "lluvia_1h": 0.0,
-      "lluvia_12h": 0.3,
+      "lluvia_12h": 0.2,
       "racha_kmh": 77.9,
       "viento_sur": true,
       "dias_sin_lluvia": 2.0,
@@ -306,7 +253,7 @@
       "dir_viento": 213.0,
       "factor_racha": 2.3,
       "dpresion_12h": -7.9,
-      "lluvia_72h": 9.4,
+      "lluvia_72h": 9.3,
       "ola_m": 1.4
      }
     },
@@ -350,7 +297,7 @@
       "temp": 16.5,
       "humedad": 65.0,
       "lluvia_1h": 0.1,
-      "lluvia_12h": 0.3,
+      "lluvia_12h": 0.2,
       "racha_kmh": 81.7,
       "viento_sur": true,
       "dias_sin_lluvia": 2.0,
@@ -358,8 +305,60 @@
       "dir_viento": 208.0,
       "factor_racha": 2.4,
       "dpresion_12h": -8.4,
-      "lluvia_72h": 9.5,
+      "lluvia_72h": 9.4,
       "ola_m": 1.4
+     }
+    },
+    {
+     "hora": "2026-11-21T14:00:00",
+     "lambda": 0.3922,
+     "prob": 0.324,
+     "normal": 0.2344,
+     "ratio": 1.67,
+     "nivel": "amarillo",
+     "familias_top": [
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.2053,
+       "mult": 4.41
+      },
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0957,
+       "mult": 1.0
+      },
+      {
+       "familia": "INCENDIO_FORESTAL_EXTERIOR",
+       "lambda": 0.0314,
+       "mult": 1.0
+      }
+     ],
+     "factores": [
+      "🌀 Borrasca (presión cayendo)",
+      "💨 Rachas ≥70 km/h 78 km/h",
+      "Rachas de 60-80 km/h",
+      "Rachas ≥70 km/h: caídas de objetos/árboles ×3.9 (medido por horas)",
+      "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
+     ],
+     "situaciones": [
+      "BORRASCA",
+      "VIENTO_FUERTE"
+     ],
+     "situacion_txt": "🌀 Borrasca (presión cayendo) · 💨 Rachas ≥70 km/h 78 km/h",
+     "meteo": {
+      "temp": 16.6,
+      "humedad": 65.0,
+      "lluvia_1h": 0.0,
+      "lluvia_12h": 0.2,
+      "racha_kmh": 78.1,
+      "viento_sur": true,
+      "dias_sin_lluvia": 2.0,
+      "viento_kmh": 32.0,
+      "dir_viento": 207.0,
+      "factor_racha": 2.4,
+      "dpresion_12h": -8.9,
+      "lluvia_72h": 9.4,
+      "ola_m": 1.3
      }
     }
    ],
@@ -368,8 +367,8 @@
      "carretera": "A-8",
      "km_ini": 120,
      "km_fin": 125,
-     "esperados": 0.0225,
-     "prob": 0.0223,
+     "esperados": 0.0255,
+     "prob": 0.0252,
      "accidentes_anio": 27.714,
      "pct_graves": 6.7,
      "hora_pico": 14,
@@ -380,8 +379,8 @@
      "carretera": "A-8",
      "km_ini": 125,
      "km_fin": 130,
-     "esperados": 0.0127,
-     "prob": 0.0126,
+     "esperados": 0.0143,
+     "prob": 0.0142,
      "accidentes_anio": 15.571,
      "pct_graves": 2.8,
      "hora_pico": 15,
@@ -392,8 +391,8 @@
      "carretera": "N-637",
      "km_ini": 5,
      "km_fin": 10,
-     "esperados": 0.0098,
-     "prob": 0.0097,
+     "esperados": 0.011,
+     "prob": 0.011,
      "accidentes_anio": 12.0,
      "pct_graves": 0.0,
      "hora_pico": 14,
@@ -407,9 +406,9 @@
    "nombre": "Derio",
    "lat": 43.293,
    "lon": -2.884,
-   "salidas_esperadas_6h": 0.4,
+   "salidas_esperadas_6h": 0.41,
    "normal_6h": 0.39,
-   "prob_6h": 0.328,
+   "prob_6h": 0.333,
    "ratio_max": 1.1,
    "nivel": "verde",
    "hora_pico": "2026-11-21T13:00:00",
@@ -428,49 +427,6 @@
     "nuevas_1h": 0
    },
    "horas": [
-    {
-     "hora": "2026-11-21T08:00:00",
-     "lambda": 0.059,
-     "prob": 0.057,
-     "normal": 0.059,
-     "ratio": 1.0,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "ABEJAS_AVISPAS",
-       "lambda": 0.0188,
-       "mult": 1.0
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0141,
-       "mult": 1.0
-      },
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0074,
-       "mult": 1.0
-      }
-     ],
-     "factores": [],
-     "situaciones": [],
-     "situacion_txt": "",
-     "meteo": {
-      "temp": 13.6,
-      "humedad": 72.0,
-      "lluvia_1h": 0.0,
-      "lluvia_12h": 0.0,
-      "racha_kmh": 26.6,
-      "viento_sur": false,
-      "dias_sin_lluvia": 1.0,
-      "viento_kmh": 17.8,
-      "dir_viento": 166.0,
-      "factor_racha": 1.5,
-      "dpresion_12h": -5.6,
-      "lluvia_72h": 13.2,
-      "ola_m": null
-     }
-    },
     {
      "hora": "2026-11-21T09:00:00",
      "lambda": 0.0625,
@@ -707,223 +663,28 @@
       "lluvia_72h": 13.3,
       "ola_m": null
      }
-    }
-   ],
-   "carreteras": [
-    {
-     "carretera": "N-637",
-     "km_ini": 15,
-     "km_fin": 20,
-     "esperados": 0.0222,
-     "prob": 0.0219,
-     "accidentes_anio": 17.286,
-     "pct_graves": 5.8,
-     "hora_pico": 14,
-     "imd": null,
-     "ip": null
     },
     {
-     "carretera": "N-637",
-     "km_ini": 20,
-     "km_fin": 25,
-     "esperados": 0.0108,
-     "prob": 0.0108,
-     "accidentes_anio": 8.429,
-     "pct_graves": 5.1,
-     "hora_pico": 7,
-     "imd": null,
-     "ip": null
-    },
-    {
-     "carretera": "BI-631",
-     "km_ini": 15,
-     "km_fin": 20,
-     "esperados": 0.0104,
-     "prob": 0.0104,
-     "accidentes_anio": 8.143,
-     "pct_graves": 1.8,
-     "hora_pico": 13,
-     "imd": null,
-     "ip": null
-    }
-   ]
-  },
-  {
-   "id": "ZALLA",
-   "nombre": "Zalla",
-   "lat": 43.213,
-   "lon": -3.137,
-   "salidas_esperadas_6h": 0.28,
-   "normal_6h": 0.27,
-   "prob_6h": 0.245,
-   "ratio_max": 1.07,
-   "nivel": "verde",
-   "hora_pico": "2026-11-21T13:00:00",
-   "factores": [
-    "🌀 Borrasca (presión cayendo)",
-    "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)",
-    "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
-    "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)"
-   ],
-   "situacion_ahora": "",
-   "situaciones_6h": [
-    "BORRASCA"
-   ],
-   "directo": {
-    "activas": 0,
-    "nuevas_1h": 0
-   },
-   "horas": [
-    {
-     "hora": "2026-11-21T08:00:00",
-     "lambda": 0.0453,
-     "prob": 0.044,
-     "normal": 0.0453,
-     "ratio": 1.0,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0167,
-       "mult": 1.0
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0108,
-       "mult": 1.0
-      },
-      {
-       "familia": "ABEJAS_AVISPAS",
-       "lambda": 0.0106,
-       "mult": 1.0
-      }
-     ],
-     "factores": [],
-     "situaciones": [],
-     "situacion_txt": "",
-     "meteo": {
-      "temp": 13.6,
-      "humedad": 73.0,
-      "lluvia_1h": 0.0,
-      "lluvia_12h": 0.1,
-      "racha_kmh": 31.0,
-      "viento_sur": true,
-      "dias_sin_lluvia": 1.0,
-      "viento_kmh": 12.5,
-      "dir_viento": 213.0,
-      "factor_racha": 2.5,
-      "dpresion_12h": -5.5,
-      "lluvia_72h": 11.8,
-      "ola_m": null
-     }
-    },
-    {
-     "hora": "2026-11-21T09:00:00",
-     "lambda": 0.0456,
-     "prob": 0.045,
-     "normal": 0.0456,
-     "ratio": 1.0,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0167,
-       "mult": 1.0
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0108,
-       "mult": 1.0
-      },
-      {
-       "familia": "ABEJAS_AVISPAS",
-       "lambda": 0.0106,
-       "mult": 1.0
-      }
-     ],
-     "factores": [],
-     "situaciones": [],
-     "situacion_txt": "",
-     "meteo": {
-      "temp": 14.0,
-      "humedad": 68.0,
-      "lluvia_1h": 0.0,
-      "lluvia_12h": 0.1,
-      "racha_kmh": 36.0,
-      "viento_sur": false,
-      "dias_sin_lluvia": 1.0,
-      "viento_kmh": 15.5,
-      "dir_viento": 234.0,
-      "factor_racha": 2.3,
-      "dpresion_12h": -5.5,
-      "lluvia_72h": 8.6,
-      "ola_m": null
-     }
-    },
-    {
-     "hora": "2026-11-21T10:00:00",
-     "lambda": 0.046,
-     "prob": 0.045,
-     "normal": 0.046,
-     "ratio": 1.0,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0167,
-       "mult": 1.0
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0108,
-       "mult": 1.0
-      },
-      {
-       "familia": "ABEJAS_AVISPAS",
-       "lambda": 0.0106,
-       "mult": 1.0
-      }
-     ],
-     "factores": [],
-     "situaciones": [],
-     "situacion_txt": "",
-     "meteo": {
-      "temp": 14.7,
-      "humedad": 64.0,
-      "lluvia_1h": 0.0,
-      "lluvia_12h": 0.1,
-      "racha_kmh": 34.6,
-      "viento_sur": false,
-      "dias_sin_lluvia": 1.0,
-      "viento_kmh": 12.5,
-      "dir_viento": 231.0,
-      "factor_racha": 2.8,
-      "dpresion_12h": -5.4,
-      "lluvia_72h": 8.6,
-      "ola_m": null
-     }
-    },
-    {
-     "hora": "2026-11-21T11:00:00",
-     "lambda": 0.0478,
-     "prob": 0.047,
-     "normal": 0.0463,
+     "hora": "2026-11-21T14:00:00",
+     "lambda": 0.0667,
+     "prob": 0.065,
+     "normal": 0.0647,
      "ratio": 1.03,
      "nivel": "verde",
      "familias_top": [
       {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0167,
-       "mult": 1.0
-      },
-      {
        "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0123,
+       "lambda": 0.0165,
        "mult": 1.14
       },
       {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0116,
+       "mult": 1.0
+      },
+      {
        "familia": "ABEJAS_AVISPAS",
-       "lambda": 0.0106,
+       "lambda": 0.0113,
        "mult": 1.0
       }
      ],
@@ -937,153 +698,55 @@
      "situacion_txt": "🌀 Borrasca (presión cayendo)",
      "meteo": {
       "temp": 15.3,
-      "humedad": 65.0,
+      "humedad": 73.0,
       "lluvia_1h": 0.0,
-      "lluvia_12h": 0.1,
-      "racha_kmh": 34.6,
-      "viento_sur": true,
-      "dias_sin_lluvia": 1.0,
-      "viento_kmh": 8.9,
-      "dir_viento": 220.0,
-      "factor_racha": 3.9,
-      "dpresion_12h": -6.6,
-      "lluvia_72h": 8.6,
-      "ola_m": null
-     }
-    },
-    {
-     "hora": "2026-11-21T12:00:00",
-     "lambda": 0.0474,
-     "prob": 0.046,
-     "normal": 0.0459,
-     "ratio": 1.03,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0167,
-       "mult": 1.0
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0123,
-       "mult": 1.14
-      },
-      {
-       "familia": "ABEJAS_AVISPAS",
-       "lambda": 0.0106,
-       "mult": 1.0
-      }
-     ],
-     "factores": [
-      "🌀 Borrasca (presión cayendo)",
-      "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
-     ],
-     "situaciones": [
-      "BORRASCA"
-     ],
-     "situacion_txt": "🌀 Borrasca (presión cayendo)",
-     "meteo": {
-      "temp": 15.4,
-      "humedad": 71.0,
-      "lluvia_1h": 0.1,
-      "lluvia_12h": 0.1,
-      "racha_kmh": 31.6,
-      "viento_sur": true,
-      "dias_sin_lluvia": 1.0,
-      "viento_kmh": 6.6,
-      "dir_viento": 214.0,
-      "factor_racha": 4.8,
-      "dpresion_12h": -6.3,
-      "lluvia_72h": 8.6,
-      "ola_m": null
-     }
-    },
-    {
-     "hora": "2026-11-21T13:00:00",
-     "lambda": 0.0487,
-     "prob": 0.048,
-     "normal": 0.0455,
-     "ratio": 1.07,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0167,
-       "mult": 1.0
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0138,
-       "mult": 1.28
-      },
-      {
-       "familia": "ABEJAS_AVISPAS",
-       "lambda": 0.0106,
-       "mult": 1.0
-      }
-     ],
-     "factores": [
-      "🌀 Borrasca (presión cayendo)",
-      "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
-      "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)",
-      "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
-     ],
-     "situaciones": [
-      "BORRASCA"
-     ],
-     "situacion_txt": "🌀 Borrasca (presión cayendo)",
-     "meteo": {
-      "temp": 14.7,
-      "humedad": 80.0,
-      "lluvia_1h": 0.5,
       "lluvia_12h": 0.2,
-      "racha_kmh": 31.3,
+      "racha_kmh": 51.8,
       "viento_sur": true,
       "dias_sin_lluvia": 1.0,
-      "viento_kmh": 10.3,
-      "dir_viento": 199.0,
-      "factor_racha": 3.0,
-      "dpresion_12h": -6.6,
-      "lluvia_72h": 9.1,
+      "viento_kmh": 28.0,
+      "dir_viento": 181.0,
+      "factor_racha": 1.9,
+      "dpresion_12h": -8.0,
+      "lluvia_72h": 13.3,
       "ola_m": null
      }
     }
    ],
    "carreteras": [
     {
-     "carretera": "BI-636",
+     "carretera": "N-637",
      "km_ini": 15,
      "km_fin": 20,
-     "esperados": 0.0071,
-     "prob": 0.0071,
-     "accidentes_anio": 4.714,
-     "pct_graves": 18.2,
-     "hora_pico": 8,
+     "esperados": 0.0233,
+     "prob": 0.023,
+     "accidentes_anio": 17.286,
+     "pct_graves": 5.8,
+     "hora_pico": 14,
      "imd": null,
      "ip": null
     },
     {
-     "carretera": "BI-636",
+     "carretera": "N-637",
      "km_ini": 20,
      "km_fin": 25,
-     "esperados": 0.0049,
-     "prob": 0.0049,
-     "accidentes_anio": 3.286,
-     "pct_graves": 4.3,
-     "hora_pico": 18,
+     "esperados": 0.0114,
+     "prob": 0.0113,
+     "accidentes_anio": 8.429,
+     "pct_graves": 5.1,
+     "hora_pico": 7,
      "imd": null,
      "ip": null
     },
     {
-     "carretera": "BI-3651",
-     "km_ini": 10,
-     "km_fin": 15,
-     "esperados": 0.0045,
-     "prob": 0.0045,
-     "accidentes_anio": 3.0,
-     "pct_graves": 14.3,
-     "hora_pico": 11,
+     "carretera": "BI-631",
+     "km_ini": 15,
+     "km_fin": 20,
+     "esperados": 0.011,
+     "prob": 0.0109,
+     "accidentes_anio": 8.143,
+     "pct_graves": 1.8,
+     "hora_pico": 13,
      "imd": null,
      "ip": null
     }
@@ -1094,12 +757,12 @@
    "nombre": "Iurreta",
    "lat": 43.176,
    "lon": -2.634,
-   "salidas_esperadas_6h": 0.45,
-   "normal_6h": 0.44,
-   "prob_6h": 0.364,
-   "ratio_max": 1.06,
+   "salidas_esperadas_6h": 0.46,
+   "normal_6h": 0.45,
+   "prob_6h": 0.371,
+   "ratio_max": 1.08,
    "nivel": "verde",
-   "hora_pico": "2026-11-21T13:00:00",
+   "hora_pico": "2026-11-21T14:00:00",
    "factores": [
     "Evento: Festival: Jokoan - Festival de juegos de mesa 2026",
     "🌀 Borrasca (presión cayendo)",
@@ -1116,49 +779,6 @@
     "nuevas_1h": 0
    },
    "horas": [
-    {
-     "hora": "2026-11-21T08:00:00",
-     "lambda": 0.0721,
-     "prob": 0.07,
-     "normal": 0.0721,
-     "ratio": 1.0,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.026,
-       "mult": 1.0
-      },
-      {
-       "familia": "ABEJAS_AVISPAS",
-       "lambda": 0.0215,
-       "mult": 1.0
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.012,
-       "mult": 1.0
-      }
-     ],
-     "factores": [],
-     "situaciones": [],
-     "situacion_txt": "",
-     "meteo": {
-      "temp": 13.2,
-      "humedad": 72.0,
-      "lluvia_1h": 0.0,
-      "lluvia_12h": 0.2,
-      "racha_kmh": 22.0,
-      "viento_sur": false,
-      "dias_sin_lluvia": 1.0,
-      "viento_kmh": 7.5,
-      "dir_viento": 125.0,
-      "factor_racha": 2.9,
-      "dpresion_12h": -4.9,
-      "lluvia_72h": 7.3,
-      "ola_m": null
-     }
-    },
     {
      "hora": "2026-11-21T09:00:00",
      "lambda": 0.0735,
@@ -1397,6 +1017,57 @@
       "lluvia_72h": 7.0,
       "ola_m": null
      }
+    },
+    {
+     "hora": "2026-11-21T14:00:00",
+     "lambda": 0.0827,
+     "prob": 0.079,
+     "normal": 0.0765,
+     "ratio": 1.08,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0183,
+       "mult": 1.28
+      },
+      {
+       "familia": "ABEJAS_AVISPAS",
+       "lambda": 0.0169,
+       "mult": 1.0
+      },
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0149,
+       "mult": 1.0
+      }
+     ],
+     "factores": [
+      "🌀 Borrasca (presión cayendo)",
+      "Evento: Festival: Jokoan - Festival de juegos de mesa 2026",
+      "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
+      "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)",
+      "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
+     ],
+     "situaciones": [
+      "BORRASCA"
+     ],
+     "situacion_txt": "🌀 Borrasca (presión cayendo)",
+     "meteo": {
+      "temp": 13.9,
+      "humedad": 84.0,
+      "lluvia_1h": 0.2,
+      "lluvia_12h": 0.3,
+      "racha_kmh": 28.2,
+      "viento_sur": false,
+      "dias_sin_lluvia": 1.0,
+      "viento_kmh": 13.8,
+      "dir_viento": 95.0,
+      "factor_racha": 2.0,
+      "dpresion_12h": -7.2,
+      "lluvia_72h": 7.2,
+      "ola_m": null
+     }
     }
    ],
    "carreteras": [
@@ -1404,8 +1075,8 @@
      "carretera": "N-634",
      "km_ini": 80,
      "km_fin": 85,
-     "esperados": 0.01,
-     "prob": 0.01,
+     "esperados": 0.0105,
+     "prob": 0.0104,
      "accidentes_anio": 9.857,
      "pct_graves": 7.2,
      "hora_pico": 10,
@@ -1416,8 +1087,8 @@
      "carretera": "N-634",
      "km_ini": 85,
      "km_fin": 90,
-     "esperados": 0.0087,
-     "prob": 0.0087,
+     "esperados": 0.0091,
+     "prob": 0.0091,
      "accidentes_anio": 8.571,
      "pct_graves": 15.0,
      "hora_pico": 14,
@@ -1428,8 +1099,8 @@
      "carretera": "N-634",
      "km_ini": 90,
      "km_fin": 95,
-     "esperados": 0.006,
-     "prob": 0.0059,
+     "esperados": 0.0062,
+     "prob": 0.0062,
      "accidentes_anio": 5.857,
      "pct_graves": 22.0,
      "hora_pico": 20,
@@ -1439,19 +1110,21 @@
    ]
   },
   {
-   "id": "ARTAZA",
-   "nombre": "Artaza (Leioa)",
-   "lat": 43.335,
-   "lon": -2.987,
-   "salidas_esperadas_6h": 0.89,
-   "normal_6h": 0.86,
-   "prob_6h": 0.59,
-   "ratio_max": 1.05,
+   "id": "BASAURI",
+   "nombre": "Basauri",
+   "lat": 43.237,
+   "lon": -2.885,
+   "salidas_esperadas_6h": 0.76,
+   "normal_6h": 0.75,
+   "prob_6h": 0.534,
+   "ratio_max": 1.07,
    "nivel": "verde",
-   "hora_pico": "2026-11-21T09:00:00",
+   "hora_pico": "2026-11-21T14:00:00",
    "factores": [
     "🌀 Borrasca (presión cayendo)",
-    "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
+    "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)",
+    "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
+    "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)"
    ],
    "situacion_ahora": "",
    "situaciones_6h": [
@@ -1463,26 +1136,26 @@
    },
    "horas": [
     {
-     "hora": "2026-11-21T08:00:00",
-     "lambda": 0.1384,
-     "prob": 0.129,
-     "normal": 0.1384,
+     "hora": "2026-11-21T09:00:00",
+     "lambda": 0.1192,
+     "prob": 0.112,
+     "normal": 0.1192,
      "ratio": 1.0,
      "nivel": "verde",
      "familias_top": [
       {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.046,
-       "mult": 1.0
-      },
-      {
        "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0437,
+       "lambda": 0.0447,
        "mult": 1.0
       },
       {
        "familia": "ABEJAS_AVISPAS",
-       "lambda": 0.0185,
+       "lambda": 0.0242,
+       "mult": 1.0
+      },
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0152,
        "mult": 1.0
       }
      ],
@@ -1491,20 +1164,674 @@
      "situacion_txt": "",
      "meteo": {
       "temp": 15.0,
-      "humedad": 63.0,
+      "humedad": 62.0,
       "lluvia_1h": 0.0,
-      "lluvia_12h": 0.0,
-      "racha_kmh": 31.3,
+      "lluvia_12h": 0.2,
+      "racha_kmh": 33.1,
       "viento_sur": true,
-      "dias_sin_lluvia": 2.0,
-      "viento_kmh": 16.9,
-      "dir_viento": 153.0,
-      "factor_racha": 1.9,
-      "dpresion_12h": -5.9,
-      "lluvia_72h": 8.3,
-      "ola_m": 1.6
+      "dias_sin_lluvia": 1.0,
+      "viento_kmh": 18.4,
+      "dir_viento": 206.0,
+      "factor_racha": 1.8,
+      "dpresion_12h": -5.8,
+      "lluvia_72h": 15.9,
+      "ola_m": null
      }
     },
+    {
+     "hora": "2026-11-21T10:00:00",
+     "lambda": 0.125,
+     "prob": 0.118,
+     "normal": 0.1229,
+     "ratio": 1.02,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0447,
+       "mult": 1.0
+      },
+      {
+       "familia": "ABEJAS_AVISPAS",
+       "lambda": 0.0242,
+       "mult": 1.0
+      },
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0173,
+       "mult": 1.14
+      }
+     ],
+     "factores": [
+      "🌀 Borrasca (presión cayendo)",
+      "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
+     ],
+     "situaciones": [
+      "BORRASCA"
+     ],
+     "situacion_txt": "🌀 Borrasca (presión cayendo)",
+     "meteo": {
+      "temp": 15.6,
+      "humedad": 59.0,
+      "lluvia_1h": 0.0,
+      "lluvia_12h": 0.2,
+      "racha_kmh": 40.0,
+      "viento_sur": true,
+      "dias_sin_lluvia": 1.0,
+      "viento_kmh": 22.7,
+      "dir_viento": 200.0,
+      "factor_racha": 1.8,
+      "dpresion_12h": -6.3,
+      "lluvia_72h": 15.9,
+      "ola_m": null
+     }
+    },
+    {
+     "hora": "2026-11-21T11:00:00",
+     "lambda": 0.1275,
+     "prob": 0.12,
+     "normal": 0.1254,
+     "ratio": 1.02,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0447,
+       "mult": 1.0
+      },
+      {
+       "familia": "ABEJAS_AVISPAS",
+       "lambda": 0.0242,
+       "mult": 1.0
+      },
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0173,
+       "mult": 1.14
+      }
+     ],
+     "factores": [
+      "🌀 Borrasca (presión cayendo)",
+      "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
+     ],
+     "situaciones": [
+      "BORRASCA"
+     ],
+     "situacion_txt": "🌀 Borrasca (presión cayendo)",
+     "meteo": {
+      "temp": 15.8,
+      "humedad": 61.0,
+      "lluvia_1h": 0.0,
+      "lluvia_12h": 0.2,
+      "racha_kmh": 46.1,
+      "viento_sur": true,
+      "dias_sin_lluvia": 1.0,
+      "viento_kmh": 23.1,
+      "dir_viento": 198.0,
+      "factor_racha": 2.0,
+      "dpresion_12h": -7.1,
+      "lluvia_72h": 15.9,
+      "ola_m": null
+     }
+    },
+    {
+     "hora": "2026-11-21T12:00:00",
+     "lambda": 0.1277,
+     "prob": 0.12,
+     "normal": 0.1256,
+     "ratio": 1.02,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0447,
+       "mult": 1.0
+      },
+      {
+       "familia": "ABEJAS_AVISPAS",
+       "lambda": 0.0242,
+       "mult": 1.0
+      },
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0173,
+       "mult": 1.14
+      }
+     ],
+     "factores": [
+      "🌀 Borrasca (presión cayendo)",
+      "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
+     ],
+     "situaciones": [
+      "BORRASCA"
+     ],
+     "situacion_txt": "🌀 Borrasca (presión cayendo)",
+     "meteo": {
+      "temp": 15.8,
+      "humedad": 66.0,
+      "lluvia_1h": 0.0,
+      "lluvia_12h": 0.2,
+      "racha_kmh": 43.7,
+      "viento_sur": true,
+      "dias_sin_lluvia": 1.0,
+      "viento_kmh": 19.9,
+      "dir_viento": 191.0,
+      "factor_racha": 2.2,
+      "dpresion_12h": -6.9,
+      "lluvia_72h": 15.9,
+      "ola_m": null
+     }
+    },
+    {
+     "hora": "2026-11-21T13:00:00",
+     "lambda": 0.1261,
+     "prob": 0.118,
+     "normal": 0.124,
+     "ratio": 1.02,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0447,
+       "mult": 1.0
+      },
+      {
+       "familia": "ABEJAS_AVISPAS",
+       "lambda": 0.0242,
+       "mult": 1.0
+      },
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0173,
+       "mult": 1.14
+      }
+     ],
+     "factores": [
+      "🌀 Borrasca (presión cayendo)",
+      "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
+     ],
+     "situaciones": [
+      "BORRASCA"
+     ],
+     "situacion_txt": "🌀 Borrasca (presión cayendo)",
+     "meteo": {
+      "temp": 15.1,
+      "humedad": 73.0,
+      "lluvia_1h": 0.1,
+      "lluvia_12h": 0.2,
+      "racha_kmh": 45.2,
+      "viento_sur": true,
+      "dias_sin_lluvia": 1.0,
+      "viento_kmh": 20.6,
+      "dir_viento": 184.0,
+      "factor_racha": 2.2,
+      "dpresion_12h": -6.9,
+      "lluvia_72h": 16.0,
+      "ola_m": null
+     }
+    },
+    {
+     "hora": "2026-11-21T14:00:00",
+     "lambda": 0.1372,
+     "prob": 0.128,
+     "normal": 0.1283,
+     "ratio": 1.07,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0291,
+       "mult": 1.0
+      },
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0259,
+       "mult": 1.28
+      },
+      {
+       "familia": "INCENDIO_FORESTAL_EXTERIOR",
+       "lambda": 0.0197,
+       "mult": 1.0
+      }
+     ],
+     "factores": [
+      "🌀 Borrasca (presión cayendo)",
+      "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
+      "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)",
+      "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
+     ],
+     "situaciones": [
+      "BORRASCA"
+     ],
+     "situacion_txt": "🌀 Borrasca (presión cayendo)",
+     "meteo": {
+      "temp": 15.2,
+      "humedad": 74.0,
+      "lluvia_1h": 0.1,
+      "lluvia_12h": 0.2,
+      "racha_kmh": 41.1,
+      "viento_sur": true,
+      "dias_sin_lluvia": 1.0,
+      "viento_kmh": 15.4,
+      "dir_viento": 175.0,
+      "factor_racha": 2.7,
+      "dpresion_12h": -7.5,
+      "lluvia_72h": 16.1,
+      "ola_m": null
+     }
+    }
+   ],
+   "carreteras": [
+    {
+     "carretera": "N-634",
+     "km_ini": 100,
+     "km_fin": 105,
+     "esperados": 0.0167,
+     "prob": 0.0165,
+     "accidentes_anio": 16.429,
+     "pct_graves": 2.6,
+     "hora_pico": 17,
+     "imd": null,
+     "ip": null
+    },
+    {
+     "carretera": "N-634",
+     "km_ini": 95,
+     "km_fin": 100,
+     "esperados": 0.0126,
+     "prob": 0.0125,
+     "accidentes_anio": 12.429,
+     "pct_graves": 14.9,
+     "hora_pico": 16,
+     "imd": null,
+     "ip": null
+    },
+    {
+     "carretera": "A-8",
+     "km_ini": 110,
+     "km_fin": 115,
+     "esperados": 0.0106,
+     "prob": 0.0105,
+     "accidentes_anio": 10.429,
+     "pct_graves": 2.7,
+     "hora_pico": 14,
+     "imd": 45083,
+     "ip": 12.7
+    }
+   ]
+  },
+  {
+   "id": "ZALLA",
+   "nombre": "Zalla",
+   "lat": 43.213,
+   "lon": -3.137,
+   "salidas_esperadas_6h": 0.29,
+   "normal_6h": 0.28,
+   "prob_6h": 0.254,
+   "ratio_max": 1.07,
+   "nivel": "verde",
+   "hora_pico": "2026-11-21T13:00:00",
+   "factores": [
+    "🌀 Borrasca (presión cayendo)",
+    "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)",
+    "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
+    "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)"
+   ],
+   "situacion_ahora": "",
+   "situaciones_6h": [
+    "BORRASCA"
+   ],
+   "directo": {
+    "activas": 0,
+    "nuevas_1h": 0
+   },
+   "horas": [
+    {
+     "hora": "2026-11-21T09:00:00",
+     "lambda": 0.0456,
+     "prob": 0.045,
+     "normal": 0.0456,
+     "ratio": 1.0,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0167,
+       "mult": 1.0
+      },
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0108,
+       "mult": 1.0
+      },
+      {
+       "familia": "ABEJAS_AVISPAS",
+       "lambda": 0.0106,
+       "mult": 1.0
+      }
+     ],
+     "factores": [],
+     "situaciones": [],
+     "situacion_txt": "",
+     "meteo": {
+      "temp": 14.0,
+      "humedad": 68.0,
+      "lluvia_1h": 0.0,
+      "lluvia_12h": 0.1,
+      "racha_kmh": 36.0,
+      "viento_sur": false,
+      "dias_sin_lluvia": 1.0,
+      "viento_kmh": 15.5,
+      "dir_viento": 234.0,
+      "factor_racha": 2.3,
+      "dpresion_12h": -5.5,
+      "lluvia_72h": 8.6,
+      "ola_m": null
+     }
+    },
+    {
+     "hora": "2026-11-21T10:00:00",
+     "lambda": 0.046,
+     "prob": 0.045,
+     "normal": 0.046,
+     "ratio": 1.0,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0167,
+       "mult": 1.0
+      },
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0108,
+       "mult": 1.0
+      },
+      {
+       "familia": "ABEJAS_AVISPAS",
+       "lambda": 0.0106,
+       "mult": 1.0
+      }
+     ],
+     "factores": [],
+     "situaciones": [],
+     "situacion_txt": "",
+     "meteo": {
+      "temp": 14.7,
+      "humedad": 64.0,
+      "lluvia_1h": 0.0,
+      "lluvia_12h": 0.1,
+      "racha_kmh": 34.6,
+      "viento_sur": false,
+      "dias_sin_lluvia": 1.0,
+      "viento_kmh": 12.5,
+      "dir_viento": 231.0,
+      "factor_racha": 2.8,
+      "dpresion_12h": -5.4,
+      "lluvia_72h": 8.6,
+      "ola_m": null
+     }
+    },
+    {
+     "hora": "2026-11-21T11:00:00",
+     "lambda": 0.0478,
+     "prob": 0.047,
+     "normal": 0.0463,
+     "ratio": 1.03,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0167,
+       "mult": 1.0
+      },
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0123,
+       "mult": 1.14
+      },
+      {
+       "familia": "ABEJAS_AVISPAS",
+       "lambda": 0.0106,
+       "mult": 1.0
+      }
+     ],
+     "factores": [
+      "🌀 Borrasca (presión cayendo)",
+      "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
+     ],
+     "situaciones": [
+      "BORRASCA"
+     ],
+     "situacion_txt": "🌀 Borrasca (presión cayendo)",
+     "meteo": {
+      "temp": 15.3,
+      "humedad": 65.0,
+      "lluvia_1h": 0.0,
+      "lluvia_12h": 0.1,
+      "racha_kmh": 34.6,
+      "viento_sur": true,
+      "dias_sin_lluvia": 1.0,
+      "viento_kmh": 8.9,
+      "dir_viento": 220.0,
+      "factor_racha": 3.9,
+      "dpresion_12h": -6.6,
+      "lluvia_72h": 8.6,
+      "ola_m": null
+     }
+    },
+    {
+     "hora": "2026-11-21T12:00:00",
+     "lambda": 0.0474,
+     "prob": 0.046,
+     "normal": 0.0459,
+     "ratio": 1.03,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0167,
+       "mult": 1.0
+      },
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0123,
+       "mult": 1.14
+      },
+      {
+       "familia": "ABEJAS_AVISPAS",
+       "lambda": 0.0106,
+       "mult": 1.0
+      }
+     ],
+     "factores": [
+      "🌀 Borrasca (presión cayendo)",
+      "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
+     ],
+     "situaciones": [
+      "BORRASCA"
+     ],
+     "situacion_txt": "🌀 Borrasca (presión cayendo)",
+     "meteo": {
+      "temp": 15.4,
+      "humedad": 71.0,
+      "lluvia_1h": 0.1,
+      "lluvia_12h": 0.1,
+      "racha_kmh": 31.6,
+      "viento_sur": true,
+      "dias_sin_lluvia": 1.0,
+      "viento_kmh": 6.6,
+      "dir_viento": 214.0,
+      "factor_racha": 4.8,
+      "dpresion_12h": -6.3,
+      "lluvia_72h": 8.6,
+      "ola_m": null
+     }
+    },
+    {
+     "hora": "2026-11-21T13:00:00",
+     "lambda": 0.0487,
+     "prob": 0.048,
+     "normal": 0.0455,
+     "ratio": 1.07,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0167,
+       "mult": 1.0
+      },
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0138,
+       "mult": 1.28
+      },
+      {
+       "familia": "ABEJAS_AVISPAS",
+       "lambda": 0.0106,
+       "mult": 1.0
+      }
+     ],
+     "factores": [
+      "🌀 Borrasca (presión cayendo)",
+      "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
+      "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)",
+      "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
+     ],
+     "situaciones": [
+      "BORRASCA"
+     ],
+     "situacion_txt": "🌀 Borrasca (presión cayendo)",
+     "meteo": {
+      "temp": 14.7,
+      "humedad": 80.0,
+      "lluvia_1h": 0.5,
+      "lluvia_12h": 0.2,
+      "racha_kmh": 31.3,
+      "viento_sur": true,
+      "dias_sin_lluvia": 1.0,
+      "viento_kmh": 10.3,
+      "dir_viento": 199.0,
+      "factor_racha": 3.0,
+      "dpresion_12h": -6.6,
+      "lluvia_72h": 9.1,
+      "ola_m": null
+     }
+    },
+    {
+     "hora": "2026-11-21T14:00:00",
+     "lambda": 0.0569,
+     "prob": 0.055,
+     "normal": 0.0545,
+     "ratio": 1.04,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "ABEJAS_AVISPAS",
+       "lambda": 0.0119,
+       "mult": 1.0
+      },
+      {
+       "familia": "INCENDIO_FORESTAL_EXTERIOR",
+       "lambda": 0.0114,
+       "mult": 1.0
+      },
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0088,
+       "mult": 1.28
+      }
+     ],
+     "factores": [
+      "🌀 Borrasca (presión cayendo)",
+      "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
+      "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)",
+      "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
+     ],
+     "situaciones": [
+      "BORRASCA"
+     ],
+     "situacion_txt": "🌀 Borrasca (presión cayendo)",
+     "meteo": {
+      "temp": 15.1,
+      "humedad": 82.0,
+      "lluvia_1h": 0.5,
+      "lluvia_12h": 0.6,
+      "racha_kmh": 29.3,
+      "viento_sur": false,
+      "dias_sin_lluvia": 1.0,
+      "viento_kmh": 5.9,
+      "dir_viento": 133.0,
+      "factor_racha": 5.0,
+      "dpresion_12h": -7.3,
+      "lluvia_72h": 9.5,
+      "ola_m": null
+     }
+    }
+   ],
+   "carreteras": [
+    {
+     "carretera": "BI-636",
+     "km_ini": 15,
+     "km_fin": 20,
+     "esperados": 0.0073,
+     "prob": 0.0073,
+     "accidentes_anio": 4.714,
+     "pct_graves": 18.2,
+     "hora_pico": 8,
+     "imd": null,
+     "ip": null
+    },
+    {
+     "carretera": "BI-636",
+     "km_ini": 20,
+     "km_fin": 25,
+     "esperados": 0.0051,
+     "prob": 0.0051,
+     "accidentes_anio": 3.286,
+     "pct_graves": 4.3,
+     "hora_pico": 18,
+     "imd": null,
+     "ip": null
+    },
+    {
+     "carretera": "BI-3651",
+     "km_ini": 10,
+     "km_fin": 15,
+     "esperados": 0.0046,
+     "prob": 0.0046,
+     "accidentes_anio": 3.0,
+     "pct_graves": 14.3,
+     "hora_pico": 11,
+     "imd": null,
+     "ip": null
+    }
+   ]
+  },
+  {
+   "id": "ARTAZA",
+   "nombre": "Artaza (Leioa)",
+   "lat": 43.335,
+   "lon": -2.987,
+   "salidas_esperadas_6h": 0.91,
+   "normal_6h": 0.87,
+   "prob_6h": 0.597,
+   "ratio_max": 1.05,
+   "nivel": "verde",
+   "hora_pico": "2026-11-21T09:00:00",
+   "factores": [
+    "🌀 Borrasca (presión cayendo)",
+    "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
+   ],
+   "situacion_ahora": "🌀 Borrasca (presión cayendo)",
+   "situaciones_6h": [
+    "BORRASCA"
+   ],
+   "directo": {
+    "activas": 0,
+    "nuevas_1h": 0
+   },
+   "horas": [
     {
      "hora": "2026-11-21T09:00:00",
      "lambda": 0.1472,
@@ -1744,6 +2071,54 @@
       "lluvia_72h": 8.3,
       "ola_m": 1.4
      }
+    },
+    {
+     "hora": "2026-11-21T14:00:00",
+     "lambda": 0.1566,
+     "prob": 0.145,
+     "normal": 0.1517,
+     "ratio": 1.03,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0491,
+       "mult": 1.0
+      },
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0399,
+       "mult": 1.14
+      },
+      {
+       "familia": "ABEJAS_AVISPAS",
+       "lambda": 0.0156,
+       "mult": 1.0
+      }
+     ],
+     "factores": [
+      "🌀 Borrasca (presión cayendo)",
+      "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
+     ],
+     "situaciones": [
+      "BORRASCA"
+     ],
+     "situacion_txt": "🌀 Borrasca (presión cayendo)",
+     "meteo": {
+      "temp": 16.3,
+      "humedad": 68.0,
+      "lluvia_1h": 0.0,
+      "lluvia_12h": 0.0,
+      "racha_kmh": 47.4,
+      "viento_sur": true,
+      "dias_sin_lluvia": 2.0,
+      "viento_kmh": 22.1,
+      "dir_viento": 155.0,
+      "factor_racha": 2.1,
+      "dpresion_12h": -7.9,
+      "lluvia_72h": 8.3,
+      "ola_m": 1.4
+     }
     }
    ],
    "carreteras": [
@@ -1751,8 +2126,8 @@
      "carretera": "BI-637",
      "km_ini": 10,
      "km_fin": 15,
-     "esperados": 0.0316,
-     "prob": 0.0311,
+     "esperados": 0.0338,
+     "prob": 0.0332,
      "accidentes_anio": 28.143,
      "pct_graves": 3.6,
      "hora_pico": 14,
@@ -1763,8 +2138,8 @@
      "carretera": "N-637",
      "km_ini": 10,
      "km_fin": 15,
-     "esperados": 0.028,
-     "prob": 0.0276,
+     "esperados": 0.03,
+     "prob": 0.0296,
      "accidentes_anio": 25.0,
      "pct_graves": 4.6,
      "hora_pico": 7,
@@ -1775,8 +2150,8 @@
      "carretera": "BI-637",
      "km_ini": 5,
      "km_fin": 10,
-     "esperados": 0.0128,
-     "prob": 0.0127,
+     "esperados": 0.0137,
+     "prob": 0.0136,
      "accidentes_anio": 11.429,
      "pct_graves": 5.0,
      "hora_pico": 18,
@@ -1790,15 +2165,17 @@
    "nombre": "Arratzu",
    "lat": 43.309,
    "lon": -2.64,
-   "salidas_esperadas_6h": 0.4,
-   "normal_6h": 0.39,
-   "prob_6h": 0.326,
-   "ratio_max": 1.03,
+   "salidas_esperadas_6h": 0.39,
+   "normal_6h": 0.38,
+   "prob_6h": 0.322,
+   "ratio_max": 1.04,
    "nivel": "verde",
-   "hora_pico": "2026-11-21T10:00:00",
+   "hora_pico": "2026-11-21T14:00:00",
    "factores": [
     "🌀 Borrasca (presión cayendo)",
-    "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
+    "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)",
+    "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
+    "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)"
    ],
    "situacion_ahora": "",
    "situaciones_6h": [
@@ -1809,49 +2186,6 @@
     "nuevas_1h": 1
    },
    "horas": [
-    {
-     "hora": "2026-11-21T08:00:00",
-     "lambda": 0.0608,
-     "prob": 0.059,
-     "normal": 0.0608,
-     "ratio": 1.0,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0197,
-       "mult": 1.0
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.012,
-       "mult": 1.0
-      },
-      {
-       "familia": "ABEJAS_AVISPAS",
-       "lambda": 0.0103,
-       "mult": 1.0
-      }
-     ],
-     "factores": [],
-     "situaciones": [],
-     "situacion_txt": "",
-     "meteo": {
-      "temp": 13.6,
-      "humedad": 71.0,
-      "lluvia_1h": 0.0,
-      "lluvia_12h": 0.0,
-      "racha_kmh": 23.8,
-      "viento_sur": false,
-      "dias_sin_lluvia": 1.0,
-      "viento_kmh": 11.6,
-      "dir_viento": 187.0,
-      "factor_racha": 2.0,
-      "dpresion_12h": -5.6,
-      "lluvia_72h": 23.1,
-      "ola_m": 1.2
-     }
-    },
     {
      "hora": "2026-11-21T09:00:00",
      "lambda": 0.0636,
@@ -2086,6 +2420,56 @@
       "lluvia_72h": 22.9,
       "ola_m": 1.0
      }
+    },
+    {
+     "hora": "2026-11-21T14:00:00",
+     "lambda": 0.0537,
+     "prob": 0.052,
+     "normal": 0.0515,
+     "ratio": 1.04,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.014,
+       "mult": 1.0
+      },
+      {
+       "familia": "INCENDIO_FORESTAL_EXTERIOR",
+       "lambda": 0.0112,
+       "mult": 1.0
+      },
+      {
+       "familia": "INCENDIO_URBANO",
+       "lambda": 0.0099,
+       "mult": 1.0
+      }
+     ],
+     "factores": [
+      "🌀 Borrasca (presión cayendo)",
+      "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
+      "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)",
+      "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
+     ],
+     "situaciones": [
+      "BORRASCA"
+     ],
+     "situacion_txt": "🌀 Borrasca (presión cayendo)",
+     "meteo": {
+      "temp": 15.7,
+      "humedad": 76.0,
+      "lluvia_1h": 0.1,
+      "lluvia_12h": 0.0,
+      "racha_kmh": 37.3,
+      "viento_sur": true,
+      "dias_sin_lluvia": 1.0,
+      "viento_kmh": 14.5,
+      "dir_viento": 184.0,
+      "factor_racha": 2.6,
+      "dpresion_12h": -7.9,
+      "lluvia_72h": 23.1,
+      "ola_m": 1.0
+     }
     }
    ],
    "carreteras": [
@@ -2093,8 +2477,8 @@
      "carretera": "BI-635",
      "km_ini": 30,
      "km_fin": 35,
-     "esperados": 0.0087,
-     "prob": 0.0086,
+     "esperados": 0.0091,
+     "prob": 0.0091,
      "accidentes_anio": 7.857,
      "pct_graves": 7.3,
      "hora_pico": 15,
@@ -2105,8 +2489,8 @@
      "carretera": "BI-631",
      "km_ini": 30,
      "km_fin": 35,
-     "esperados": 0.006,
-     "prob": 0.006,
+     "esperados": 0.0063,
+     "prob": 0.0063,
      "accidentes_anio": 5.429,
      "pct_graves": 10.5,
      "hora_pico": 19,
@@ -2117,8 +2501,8 @@
      "carretera": "BI-2238",
      "km_ini": 30,
      "km_fin": 35,
-     "esperados": 0.0036,
-     "prob": 0.0036,
+     "esperados": 0.0038,
+     "prob": 0.0038,
      "accidentes_anio": 3.286,
      "pct_graves": 0.0,
      "hora_pico": 17,
@@ -2128,363 +2512,23 @@
    ]
   },
   {
-   "id": "BASAURI",
-   "nombre": "Basauri",
-   "lat": 43.237,
-   "lon": -2.885,
-   "salidas_esperadas_6h": 0.74,
-   "normal_6h": 0.73,
-   "prob_6h": 0.524,
-   "ratio_max": 1.02,
-   "nivel": "verde",
-   "hora_pico": "2026-11-21T10:00:00",
-   "factores": [
-    "🌀 Borrasca (presión cayendo)",
-    "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
-   ],
-   "situacion_ahora": "",
-   "situaciones_6h": [
-    "BORRASCA"
-   ],
-   "directo": {
-    "activas": 0,
-    "nuevas_1h": 0
-   },
-   "horas": [
-    {
-     "hora": "2026-11-21T08:00:00",
-     "lambda": 0.1163,
-     "prob": 0.11,
-     "normal": 0.1163,
-     "ratio": 1.0,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0447,
-       "mult": 1.0
-      },
-      {
-       "familia": "ABEJAS_AVISPAS",
-       "lambda": 0.0242,
-       "mult": 1.0
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0152,
-       "mult": 1.0
-      }
-     ],
-     "factores": [],
-     "situaciones": [],
-     "situacion_txt": "",
-     "meteo": {
-      "temp": 14.6,
-      "humedad": 66.0,
-      "lluvia_1h": 0.0,
-      "lluvia_12h": 0.2,
-      "racha_kmh": 27.0,
-      "viento_sur": false,
-      "dias_sin_lluvia": 1.0,
-      "viento_kmh": 15.3,
-      "dir_viento": 195.0,
-      "factor_racha": 1.8,
-      "dpresion_12h": -5.5,
-      "lluvia_72h": 17.8,
-      "ola_m": null
-     }
-    },
-    {
-     "hora": "2026-11-21T09:00:00",
-     "lambda": 0.1192,
-     "prob": 0.112,
-     "normal": 0.1192,
-     "ratio": 1.0,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0447,
-       "mult": 1.0
-      },
-      {
-       "familia": "ABEJAS_AVISPAS",
-       "lambda": 0.0242,
-       "mult": 1.0
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0152,
-       "mult": 1.0
-      }
-     ],
-     "factores": [],
-     "situaciones": [],
-     "situacion_txt": "",
-     "meteo": {
-      "temp": 15.0,
-      "humedad": 62.0,
-      "lluvia_1h": 0.0,
-      "lluvia_12h": 0.2,
-      "racha_kmh": 33.1,
-      "viento_sur": true,
-      "dias_sin_lluvia": 1.0,
-      "viento_kmh": 18.4,
-      "dir_viento": 206.0,
-      "factor_racha": 1.8,
-      "dpresion_12h": -5.8,
-      "lluvia_72h": 15.9,
-      "ola_m": null
-     }
-    },
-    {
-     "hora": "2026-11-21T10:00:00",
-     "lambda": 0.125,
-     "prob": 0.118,
-     "normal": 0.1229,
-     "ratio": 1.02,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0447,
-       "mult": 1.0
-      },
-      {
-       "familia": "ABEJAS_AVISPAS",
-       "lambda": 0.0242,
-       "mult": 1.0
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0173,
-       "mult": 1.14
-      }
-     ],
-     "factores": [
-      "🌀 Borrasca (presión cayendo)",
-      "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
-     ],
-     "situaciones": [
-      "BORRASCA"
-     ],
-     "situacion_txt": "🌀 Borrasca (presión cayendo)",
-     "meteo": {
-      "temp": 15.6,
-      "humedad": 59.0,
-      "lluvia_1h": 0.0,
-      "lluvia_12h": 0.2,
-      "racha_kmh": 40.0,
-      "viento_sur": true,
-      "dias_sin_lluvia": 1.0,
-      "viento_kmh": 22.7,
-      "dir_viento": 200.0,
-      "factor_racha": 1.8,
-      "dpresion_12h": -6.3,
-      "lluvia_72h": 15.9,
-      "ola_m": null
-     }
-    },
-    {
-     "hora": "2026-11-21T11:00:00",
-     "lambda": 0.1275,
-     "prob": 0.12,
-     "normal": 0.1254,
-     "ratio": 1.02,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0447,
-       "mult": 1.0
-      },
-      {
-       "familia": "ABEJAS_AVISPAS",
-       "lambda": 0.0242,
-       "mult": 1.0
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0173,
-       "mult": 1.14
-      }
-     ],
-     "factores": [
-      "🌀 Borrasca (presión cayendo)",
-      "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
-     ],
-     "situaciones": [
-      "BORRASCA"
-     ],
-     "situacion_txt": "🌀 Borrasca (presión cayendo)",
-     "meteo": {
-      "temp": 15.8,
-      "humedad": 61.0,
-      "lluvia_1h": 0.0,
-      "lluvia_12h": 0.2,
-      "racha_kmh": 46.1,
-      "viento_sur": true,
-      "dias_sin_lluvia": 1.0,
-      "viento_kmh": 23.1,
-      "dir_viento": 198.0,
-      "factor_racha": 2.0,
-      "dpresion_12h": -7.1,
-      "lluvia_72h": 15.9,
-      "ola_m": null
-     }
-    },
-    {
-     "hora": "2026-11-21T12:00:00",
-     "lambda": 0.1277,
-     "prob": 0.12,
-     "normal": 0.1256,
-     "ratio": 1.02,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0447,
-       "mult": 1.0
-      },
-      {
-       "familia": "ABEJAS_AVISPAS",
-       "lambda": 0.0242,
-       "mult": 1.0
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0173,
-       "mult": 1.14
-      }
-     ],
-     "factores": [
-      "🌀 Borrasca (presión cayendo)",
-      "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
-     ],
-     "situaciones": [
-      "BORRASCA"
-     ],
-     "situacion_txt": "🌀 Borrasca (presión cayendo)",
-     "meteo": {
-      "temp": 15.8,
-      "humedad": 66.0,
-      "lluvia_1h": 0.0,
-      "lluvia_12h": 0.2,
-      "racha_kmh": 43.7,
-      "viento_sur": true,
-      "dias_sin_lluvia": 1.0,
-      "viento_kmh": 19.9,
-      "dir_viento": 191.0,
-      "factor_racha": 2.2,
-      "dpresion_12h": -6.9,
-      "lluvia_72h": 15.9,
-      "ola_m": null
-     }
-    },
-    {
-     "hora": "2026-11-21T13:00:00",
-     "lambda": 0.1261,
-     "prob": 0.118,
-     "normal": 0.124,
-     "ratio": 1.02,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0447,
-       "mult": 1.0
-      },
-      {
-       "familia": "ABEJAS_AVISPAS",
-       "lambda": 0.0242,
-       "mult": 1.0
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0173,
-       "mult": 1.14
-      }
-     ],
-     "factores": [
-      "🌀 Borrasca (presión cayendo)",
-      "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
-     ],
-     "situaciones": [
-      "BORRASCA"
-     ],
-     "situacion_txt": "🌀 Borrasca (presión cayendo)",
-     "meteo": {
-      "temp": 15.1,
-      "humedad": 73.0,
-      "lluvia_1h": 0.1,
-      "lluvia_12h": 0.2,
-      "racha_kmh": 45.2,
-      "viento_sur": true,
-      "dias_sin_lluvia": 1.0,
-      "viento_kmh": 20.6,
-      "dir_viento": 184.0,
-      "factor_racha": 2.2,
-      "dpresion_12h": -6.9,
-      "lluvia_72h": 16.0,
-      "ola_m": null
-     }
-    }
-   ],
-   "carreteras": [
-    {
-     "carretera": "N-634",
-     "km_ini": 100,
-     "km_fin": 105,
-     "esperados": 0.0155,
-     "prob": 0.0154,
-     "accidentes_anio": 16.429,
-     "pct_graves": 2.6,
-     "hora_pico": 17,
-     "imd": null,
-     "ip": null
-    },
-    {
-     "carretera": "N-634",
-     "km_ini": 95,
-     "km_fin": 100,
-     "esperados": 0.0117,
-     "prob": 0.0116,
-     "accidentes_anio": 12.429,
-     "pct_graves": 14.9,
-     "hora_pico": 16,
-     "imd": null,
-     "ip": null
-    },
-    {
-     "carretera": "A-8",
-     "km_ini": 110,
-     "km_fin": 115,
-     "esperados": 0.0098,
-     "prob": 0.0098,
-     "accidentes_anio": 10.429,
-     "pct_graves": 2.7,
-     "hora_pico": 14,
-     "imd": 45083,
-     "ip": 12.7
-    }
-   ]
-  },
-  {
    "id": "MARKINA",
    "nombre": "Markina-Xemein",
    "lat": 43.268,
    "lon": -2.497,
-   "salidas_esperadas_6h": 0.18,
+   "salidas_esperadas_6h": 0.17,
    "normal_6h": 0.17,
-   "prob_6h": 0.161,
+   "prob_6h": 0.158,
    "ratio_max": 1.02,
    "nivel": "verde",
    "hora_pico": "2026-11-21T09:00:00",
    "factores": [
     "🌀 Borrasca (presión cayendo)",
-    "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
+    "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)",
+    "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
+    "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)"
    ],
-   "situacion_ahora": "",
+   "situacion_ahora": "🌀 Borrasca (presión cayendo)",
    "situaciones_6h": [
     "BORRASCA"
    ],
@@ -2493,49 +2537,6 @@
     "nuevas_1h": 0
    },
    "horas": [
-    {
-     "hora": "2026-11-21T08:00:00",
-     "lambda": 0.0279,
-     "prob": 0.027,
-     "normal": 0.0279,
-     "ratio": 1.0,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0105,
-       "mult": 1.0
-      },
-      {
-       "familia": "ABEJAS_AVISPAS",
-       "lambda": 0.0098,
-       "mult": 1.0
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0037,
-       "mult": 1.0
-      }
-     ],
-     "factores": [],
-     "situaciones": [],
-     "situacion_txt": "",
-     "meteo": {
-      "temp": 13.8,
-      "humedad": 69.0,
-      "lluvia_1h": 0.0,
-      "lluvia_12h": 0.9,
-      "racha_kmh": 31.3,
-      "viento_sur": true,
-      "dias_sin_lluvia": 1.0,
-      "viento_kmh": 15.3,
-      "dir_viento": 214.0,
-      "factor_racha": 2.0,
-      "dpresion_12h": -5.3,
-      "lluvia_72h": 14.1,
-      "ola_m": 1.5
-     }
-    },
     {
      "hora": "2026-11-21T09:00:00",
      "lambda": 0.0288,
@@ -2572,7 +2573,7 @@
       "temp": 14.2,
       "humedad": 68.0,
       "lluvia_1h": 0.0,
-      "lluvia_12h": 0.9,
+      "lluvia_12h": 1.0,
       "racha_kmh": 38.9,
       "viento_sur": true,
       "dias_sin_lluvia": 1.0,
@@ -2580,7 +2581,7 @@
       "dir_viento": 200.0,
       "factor_racha": 2.5,
       "dpresion_12h": -6.0,
-      "lluvia_72h": 13.9,
+      "lluvia_72h": 14.0,
       "ola_m": 1.4
      }
     },
@@ -2615,7 +2616,7 @@
       "temp": 14.8,
       "humedad": 66.0,
       "lluvia_1h": 0.0,
-      "lluvia_12h": 0.9,
+      "lluvia_12h": 1.0,
       "racha_kmh": 47.9,
       "viento_sur": true,
       "dias_sin_lluvia": 1.0,
@@ -2623,7 +2624,7 @@
       "dir_viento": 202.0,
       "factor_racha": 2.7,
       "dpresion_12h": -5.9,
-      "lluvia_72h": 13.9,
+      "lluvia_72h": 14.0,
       "ola_m": 1.4
      }
     },
@@ -2663,7 +2664,7 @@
       "temp": 15.4,
       "humedad": 64.0,
       "lluvia_1h": 0.0,
-      "lluvia_12h": 0.9,
+      "lluvia_12h": 1.0,
       "racha_kmh": 47.2,
       "viento_sur": true,
       "dias_sin_lluvia": 1.0,
@@ -2671,7 +2672,7 @@
       "dir_viento": 204.0,
       "factor_racha": 2.7,
       "dpresion_12h": -7.2,
-      "lluvia_72h": 13.9,
+      "lluvia_72h": 14.0,
       "ola_m": 1.3
      }
     },
@@ -2711,7 +2712,7 @@
       "temp": 15.8,
       "humedad": 66.0,
       "lluvia_1h": 0.0,
-      "lluvia_12h": 0.9,
+      "lluvia_12h": 1.0,
       "racha_kmh": 49.1,
       "viento_sur": true,
       "dias_sin_lluvia": 1.0,
@@ -2719,7 +2720,7 @@
       "dir_viento": 201.0,
       "factor_racha": 2.6,
       "dpresion_12h": -7.2,
-      "lluvia_72h": 13.9,
+      "lluvia_72h": 14.0,
       "ola_m": 1.3
      }
     },
@@ -2759,7 +2760,7 @@
       "temp": 15.5,
       "humedad": 72.0,
       "lluvia_1h": 0.0,
-      "lluvia_12h": 0.9,
+      "lluvia_12h": 1.0,
       "racha_kmh": 50.4,
       "viento_sur": true,
       "dias_sin_lluvia": 1.0,
@@ -2767,7 +2768,57 @@
       "dir_viento": 199.0,
       "factor_racha": 2.7,
       "dpresion_12h": -6.9,
-      "lluvia_72h": 13.9,
+      "lluvia_72h": 14.0,
+      "ola_m": 1.2
+     }
+    },
+    {
+     "hora": "2026-11-21T14:00:00",
+     "lambda": 0.0239,
+     "prob": 0.024,
+     "normal": 0.0236,
+     "ratio": 1.01,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0139,
+       "mult": 1.0
+      },
+      {
+       "familia": "ABEJAS_AVISPAS",
+       "lambda": 0.0042,
+       "mult": 1.0
+      },
+      {
+       "familia": "INCENDIO_URBANO",
+       "lambda": 0.0024,
+       "mult": 1.0
+      }
+     ],
+     "factores": [
+      "🌀 Borrasca (presión cayendo)",
+      "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
+      "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)",
+      "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
+     ],
+     "situaciones": [
+      "BORRASCA"
+     ],
+     "situacion_txt": "🌀 Borrasca (presión cayendo)",
+     "meteo": {
+      "temp": 14.8,
+      "humedad": 79.0,
+      "lluvia_1h": 0.1,
+      "lluvia_12h": 1.0,
+      "racha_kmh": 53.4,
+      "viento_sur": true,
+      "dias_sin_lluvia": 1.0,
+      "viento_kmh": 16.7,
+      "dir_viento": 201.0,
+      "factor_racha": 3.2,
+      "dpresion_12h": -7.7,
+      "lluvia_72h": 14.1,
       "ola_m": 1.2
      }
     }
@@ -2777,8 +2828,8 @@
      "carretera": "BI-633",
      "km_ini": 55,
      "km_fin": 60,
-     "esperados": 0.0042,
-     "prob": 0.0042,
+     "esperados": 0.0044,
+     "prob": 0.0044,
      "accidentes_anio": 3.571,
      "pct_graves": 12.0,
      "hora_pico": 12,
@@ -2789,8 +2840,8 @@
      "carretera": "BI-633",
      "km_ini": 35,
      "km_fin": 40,
-     "esperados": 0.0034,
-     "prob": 0.0034,
+     "esperados": 0.0036,
+     "prob": 0.0036,
      "accidentes_anio": 2.857,
      "pct_graves": 10.0,
      "hora_pico": 16,
@@ -2801,8 +2852,8 @@
      "carretera": "BI-633",
      "km_ini": 40,
      "km_fin": 45,
-     "esperados": 0.0034,
-     "prob": 0.0034,
+     "esperados": 0.0036,
+     "prob": 0.0036,
      "accidentes_anio": 2.857,
      "pct_graves": 20.0,
      "hora_pico": 16,
