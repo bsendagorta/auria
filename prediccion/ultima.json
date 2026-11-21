@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-21T13:59+01:00",
+ "generado": "2026-11-21T14:15+01:00",
  "horizonte_h": 6,
  "modelo": "base+reglas",
  "fuentes_ok": {
@@ -7,7 +7,7 @@
   "trafico": true
  },
  "bizkaia": {
-  "salidas_esperadas_6h": 5.6,
+  "salidas_esperadas_6h": 5.5,
   "normal_6h": 4.7,
   "contador": {
    "ts": "2026-11-19T09:14:44+01:00",
@@ -21,19 +21,18 @@
    "nombre": "Urioste (Ortuella)",
    "lat": 43.3075,
    "lon": -3.051,
-   "salidas_esperadas_6h": 1.97,
-   "normal_6h": 1.43,
-   "prob_6h": 0.861,
-   "ratio_max": 1.86,
+   "salidas_esperadas_6h": 1.77,
+   "normal_6h": 1.41,
+   "prob_6h": 0.83,
+   "ratio_max": 1.67,
    "nivel": "amarillo",
-   "hora_pico": "2026-11-21T13:00:00",
+   "hora_pico": "2026-11-21T14:00:00",
    "factores": [
     "🌀 Borrasca (presión cayendo)",
-    "💨 Rachas ≥70 km/h 74 km/h",
+    "💨 Rachas ≥70 km/h 72 km/h",
     "Rachas de 60-80 km/h",
     "Rachas ≥70 km/h: caídas de objetos/árboles ×3.9 (medido por horas)",
     "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)",
-    "💨 Rachas ≥70 km/h 72 km/h",
     "Evento: Festival: FIOP 2026 - Festival Internacional de Ochotes de Portugalete",
     "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
     "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)",
@@ -41,7 +40,7 @@
     "Lluvia moderada (1-4 mm/h): accidentes ×1.5 (medido por horas)",
     "Lluvia moderada (1-4 mm/h): caídas de objetos/árboles ×1.6 (medido por horas)"
    ],
-   "situacion_ahora": "🌀 Borrasca (presión cayendo) · 💨 Rachas ≥70 km/h 74 km/h",
+   "situacion_ahora": "🌀 Borrasca (presión cayendo) · 💨 Rachas ≥70 km/h 72 km/h",
    "situaciones_6h": [
     "BORRASCA",
     "VIENTO_FUERTE"
@@ -51,58 +50,6 @@
     "nuevas_1h": 0
    },
    "horas": [
-    {
-     "hora": "2026-11-21T13:00:00",
-     "lambda": 0.49,
-     "prob": 0.387,
-     "normal": 0.2632,
-     "ratio": 1.86,
-     "nivel": "amarillo",
-     "familias_top": [
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.2963,
-       "mult": 4.41
-      },
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0919,
-       "mult": 1.0
-      },
-      {
-       "familia": "INCENDIO_URBANO",
-       "lambda": 0.0313,
-       "mult": 1.0
-      }
-     ],
-     "factores": [
-      "🌀 Borrasca (presión cayendo)",
-      "💨 Rachas ≥70 km/h 74 km/h",
-      "Rachas de 60-80 km/h",
-      "Rachas ≥70 km/h: caídas de objetos/árboles ×3.9 (medido por horas)",
-      "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
-     ],
-     "situaciones": [
-      "BORRASCA",
-      "VIENTO_FUERTE"
-     ],
-     "situacion_txt": "🌀 Borrasca (presión cayendo) · 💨 Rachas ≥70 km/h 74 km/h",
-     "meteo": {
-      "temp": 16.9,
-      "humedad": 62.0,
-      "lluvia_1h": 0.0,
-      "lluvia_12h": 0.1,
-      "racha_kmh": 74.5,
-      "viento_sur": true,
-      "dias_sin_lluvia": 2.0,
-      "viento_kmh": 31.9,
-      "dir_viento": 207.0,
-      "factor_racha": 2.3,
-      "dpresion_12h": -8.5,
-      "lluvia_72h": 9.2,
-      "ola_m": 1.3
-     }
-    },
     {
      "hora": "2026-11-21T14:00:00",
      "lambda": 0.3922,
@@ -359,6 +306,53 @@
       "lluvia_72h": 14.6,
       "ola_m": 1.1
      }
+    },
+    {
+     "hora": "2026-11-21T19:00:00",
+     "lambda": 0.2862,
+     "prob": 0.249,
+     "normal": 0.2343,
+     "ratio": 1.22,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.1149,
+       "mult": 1.2
+      },
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0759,
+       "mult": 1.63
+      },
+      {
+       "familia": "INCENDIO_FORESTAL_EXTERIOR",
+       "lambda": 0.0314,
+       "mult": 1.0
+      }
+     ],
+     "factores": [
+      "Evento masivo: Festival: Bilbao Elrow 2026 (21 de noviembre - BEC)",
+      "Lluvia moderada (1-4 mm/h): accidentes ×1.5 (medido por horas)",
+      "Lluvia moderada (1-4 mm/h): caídas de objetos/árboles ×1.6 (medido por horas)"
+     ],
+     "situaciones": [],
+     "situacion_txt": "",
+     "meteo": {
+      "temp": 15.2,
+      "humedad": 79.0,
+      "lluvia_1h": 1.2,
+      "lluvia_12h": 5.4,
+      "racha_kmh": 54.1,
+      "viento_sur": true,
+      "dias_sin_lluvia": 2.0,
+      "viento_kmh": 19.3,
+      "dir_viento": 218.0,
+      "factor_racha": 2.8,
+      "dpresion_12h": -5.6,
+      "lluvia_72h": 14.3,
+      "ola_m": 1.0
+     }
     }
    ],
    "carreteras": [
@@ -366,8 +360,8 @@
      "carretera": "A-8",
      "km_ini": 120,
      "km_fin": 125,
-     "esperados": 0.0387,
-     "prob": 0.038,
+     "esperados": 0.0399,
+     "prob": 0.0391,
      "accidentes_anio": 27.714,
      "pct_graves": 6.7,
      "hora_pico": 14,
@@ -378,8 +372,8 @@
      "carretera": "A-8",
      "km_ini": 125,
      "km_fin": 130,
-     "esperados": 0.0218,
-     "prob": 0.0215,
+     "esperados": 0.0224,
+     "prob": 0.0221,
      "accidentes_anio": 15.571,
      "pct_graves": 2.8,
      "hora_pico": 15,
@@ -390,8 +384,8 @@
      "carretera": "N-637",
      "km_ini": 5,
      "km_fin": 10,
-     "esperados": 0.0168,
-     "prob": 0.0166,
+     "esperados": 0.0173,
+     "prob": 0.0171,
      "accidentes_anio": 12.0,
      "pct_graves": 0.0,
      "hora_pico": 14,
@@ -405,9 +399,9 @@
    "nombre": "Derio",
    "lat": 43.293,
    "lon": -2.884,
-   "salidas_esperadas_6h": 0.42,
+   "salidas_esperadas_6h": 0.43,
    "normal_6h": 0.38,
-   "prob_6h": 0.345,
+   "prob_6h": 0.35,
    "ratio_max": 1.25,
    "nivel": "verde",
    "hora_pico": "2026-11-21T17:00:00",
@@ -429,54 +423,6 @@
     "nuevas_1h": 0
    },
    "horas": [
-    {
-     "hora": "2026-11-21T13:00:00",
-     "lambda": 0.0669,
-     "prob": 0.065,
-     "normal": 0.0649,
-     "ratio": 1.03,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "ABEJAS_AVISPAS",
-       "lambda": 0.0188,
-       "mult": 1.0
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0161,
-       "mult": 1.14
-      },
-      {
-       "familia": "TRAFICO",
-       "lambda": 0.0111,
-       "mult": 1.0
-      }
-     ],
-     "factores": [
-      "🌀 Borrasca (presión cayendo)",
-      "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
-     ],
-     "situaciones": [
-      "BORRASCA"
-     ],
-     "situacion_txt": "🌀 Borrasca (presión cayendo)",
-     "meteo": {
-      "temp": 15.9,
-      "humedad": 69.0,
-      "lluvia_1h": 0.0,
-      "lluvia_12h": 0.0,
-      "racha_kmh": 47.5,
-      "viento_sur": true,
-      "dias_sin_lluvia": 1.0,
-      "viento_kmh": 26.4,
-      "dir_viento": 185.0,
-      "factor_racha": 1.8,
-      "dpresion_12h": -7.6,
-      "lluvia_72h": 13.1,
-      "ola_m": null
-     }
-    },
     {
      "hora": "2026-11-21T14:00:00",
      "lambda": 0.0667,
@@ -725,6 +671,52 @@
       "lluvia_72h": 18.4,
       "ola_m": null
      }
+    },
+    {
+     "hora": "2026-11-21T19:00:00",
+     "lambda": 0.0745,
+     "prob": 0.072,
+     "normal": 0.0623,
+     "ratio": 1.2,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0236,
+       "mult": 1.63
+      },
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0116,
+       "mult": 1.0
+      },
+      {
+       "familia": "ABEJAS_AVISPAS",
+       "lambda": 0.0113,
+       "mult": 1.0
+      }
+     ],
+     "factores": [
+      "Lluvia moderada (1-4 mm/h): accidentes ×1.5 (medido por horas)",
+      "Lluvia moderada (1-4 mm/h): caídas de objetos/árboles ×1.6 (medido por horas)"
+     ],
+     "situaciones": [],
+     "situacion_txt": "",
+     "meteo": {
+      "temp": 14.1,
+      "humedad": 84.0,
+      "lluvia_1h": 1.3,
+      "lluvia_12h": 5.3,
+      "racha_kmh": 33.2,
+      "viento_sur": true,
+      "dias_sin_lluvia": 1.0,
+      "viento_kmh": 15.0,
+      "dir_viento": 189.0,
+      "factor_racha": 2.2,
+      "dpresion_12h": -5.6,
+      "lluvia_72h": 18.9,
+      "ola_m": null
+     }
     }
    ],
    "carreteras": [
@@ -732,8 +724,8 @@
      "carretera": "N-637",
      "km_ini": 15,
      "km_fin": 20,
-     "esperados": 0.0208,
-     "prob": 0.0206,
+     "esperados": 0.0195,
+     "prob": 0.0193,
      "accidentes_anio": 17.286,
      "pct_graves": 5.8,
      "hora_pico": 14,
@@ -744,8 +736,8 @@
      "carretera": "N-637",
      "km_ini": 20,
      "km_fin": 25,
-     "esperados": 0.0101,
-     "prob": 0.0101,
+     "esperados": 0.0095,
+     "prob": 0.0095,
      "accidentes_anio": 8.429,
      "pct_graves": 5.1,
      "hora_pico": 7,
@@ -756,8 +748,8 @@
      "carretera": "BI-631",
      "km_ini": 15,
      "km_fin": 20,
-     "esperados": 0.0098,
-     "prob": 0.0097,
+     "esperados": 0.0092,
+     "prob": 0.0091,
      "accidentes_anio": 8.143,
      "pct_graves": 1.8,
      "hora_pico": 13,
@@ -767,13 +759,386 @@
    ]
   },
   {
+   "id": "BASAURI",
+   "nombre": "Basauri",
+   "lat": 43.237,
+   "lon": -2.885,
+   "salidas_esperadas_6h": 0.88,
+   "normal_6h": 0.76,
+   "prob_6h": 0.585,
+   "ratio_max": 1.24,
+   "nivel": "verde",
+   "hora_pico": "2026-11-21T15:00:00",
+   "factores": [
+    "🌀 Borrasca (presión cayendo)",
+    "Accidentes de tráfico activos en la zona",
+    "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
+    "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)",
+    "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)",
+    "Evento: Festival: Musika Astea de Galdakao 2026",
+    "Lluvia moderada (1-4 mm/h): accidentes ×1.5 (medido por horas)",
+    "Lluvia moderada (1-4 mm/h): caídas de objetos/árboles ×1.6 (medido por horas)"
+   ],
+   "situacion_ahora": "🌀 Borrasca (presión cayendo)",
+   "situaciones_6h": [
+    "BORRASCA"
+   ],
+   "directo": {
+    "activas": 0,
+    "nuevas_1h": 0
+   },
+   "horas": [
+    {
+     "hora": "2026-11-21T14:00:00",
+     "lambda": 0.1422,
+     "prob": 0.133,
+     "normal": 0.1283,
+     "ratio": 1.11,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0291,
+       "mult": 1.0
+      },
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0259,
+       "mult": 1.28
+      },
+      {
+       "familia": "TRAFICO",
+       "lambda": 0.0217,
+       "mult": 1.61
+      }
+     ],
+     "factores": [
+      "🌀 Borrasca (presión cayendo)",
+      "Accidentes de tráfico activos en la zona",
+      "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
+      "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)",
+      "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
+     ],
+     "situaciones": [
+      "BORRASCA"
+     ],
+     "situacion_txt": "🌀 Borrasca (presión cayendo)",
+     "meteo": {
+      "temp": 14.8,
+      "humedad": 78.0,
+      "lluvia_1h": 0.3,
+      "lluvia_12h": 0.2,
+      "racha_kmh": 35.6,
+      "viento_sur": true,
+      "dias_sin_lluvia": 1.0,
+      "viento_kmh": 14.9,
+      "dir_viento": 187.0,
+      "factor_racha": 2.4,
+      "dpresion_12h": -7.4,
+      "lluvia_72h": 16.2,
+      "ola_m": null
+     }
+    },
+    {
+     "hora": "2026-11-21T15:00:00",
+     "lambda": 0.1557,
+     "prob": 0.144,
+     "normal": 0.1255,
+     "ratio": 1.24,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0376,
+       "mult": 1.86
+      },
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0291,
+       "mult": 1.0
+      },
+      {
+       "familia": "TRAFICO",
+       "lambda": 0.0234,
+       "mult": 2.2
+      }
+     ],
+     "factores": [
+      "🌀 Borrasca (presión cayendo)",
+      "Accidentes de tráfico activos en la zona",
+      "Evento: Festival: Musika Astea de Galdakao 2026",
+      "Lluvia moderada (1-4 mm/h): accidentes ×1.5 (medido por horas)",
+      "Lluvia moderada (1-4 mm/h): caídas de objetos/árboles ×1.6 (medido por horas)",
+      "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
+     ],
+     "situaciones": [
+      "BORRASCA"
+     ],
+     "situacion_txt": "🌀 Borrasca (presión cayendo)",
+     "meteo": {
+      "temp": 14.9,
+      "humedad": 78.0,
+      "lluvia_1h": 1.0,
+      "lluvia_12h": 0.5,
+      "racha_kmh": 35.6,
+      "viento_sur": true,
+      "dias_sin_lluvia": 1.0,
+      "viento_kmh": 14.8,
+      "dir_viento": 184.0,
+      "factor_racha": 2.4,
+      "dpresion_12h": -7.1,
+      "lluvia_72h": 17.2,
+      "ola_m": null
+     }
+    },
+    {
+     "hora": "2026-11-21T16:00:00",
+     "lambda": 0.1498,
+     "prob": 0.139,
+     "normal": 0.1253,
+     "ratio": 1.2,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0376,
+       "mult": 1.86
+      },
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0291,
+       "mult": 1.0
+      },
+      {
+       "familia": "INCENDIO_FORESTAL_EXTERIOR",
+       "lambda": 0.0197,
+       "mult": 1.0
+      }
+     ],
+     "factores": [
+      "🌀 Borrasca (presión cayendo)",
+      "Evento: Festival: Musika Astea de Galdakao 2026",
+      "Lluvia moderada (1-4 mm/h): accidentes ×1.5 (medido por horas)",
+      "Lluvia moderada (1-4 mm/h): caídas de objetos/árboles ×1.6 (medido por horas)",
+      "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
+     ],
+     "situaciones": [
+      "BORRASCA"
+     ],
+     "situacion_txt": "🌀 Borrasca (presión cayendo)",
+     "meteo": {
+      "temp": 14.9,
+      "humedad": 79.0,
+      "lluvia_1h": 1.3,
+      "lluvia_12h": 1.5,
+      "racha_kmh": 27.7,
+      "viento_sur": false,
+      "dias_sin_lluvia": 1.0,
+      "viento_kmh": 8.7,
+      "dir_viento": 173.0,
+      "factor_racha": 3.2,
+      "dpresion_12h": -6.7,
+      "lluvia_72h": 18.5,
+      "ola_m": null
+     }
+    },
+    {
+     "hora": "2026-11-21T17:00:00",
+     "lambda": 0.1546,
+     "prob": 0.143,
+     "normal": 0.1281,
+     "ratio": 1.21,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0376,
+       "mult": 1.86
+      },
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0291,
+       "mult": 1.0
+      },
+      {
+       "familia": "TRAFICO",
+       "lambda": 0.0224,
+       "mult": 1.69
+      }
+     ],
+     "factores": [
+      "🌀 Borrasca (presión cayendo)",
+      "Evento: Festival: Musika Astea de Galdakao 2026",
+      "Lluvia moderada (1-4 mm/h): accidentes ×1.5 (medido por horas)",
+      "Lluvia moderada (1-4 mm/h): caídas de objetos/árboles ×1.6 (medido por horas)",
+      "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
+     ],
+     "situaciones": [
+      "BORRASCA"
+     ],
+     "situacion_txt": "🌀 Borrasca (presión cayendo)",
+     "meteo": {
+      "temp": 14.5,
+      "humedad": 82.0,
+      "lluvia_1h": 2.5,
+      "lluvia_12h": 2.7,
+      "racha_kmh": 24.8,
+      "viento_sur": false,
+      "dias_sin_lluvia": 1.0,
+      "viento_kmh": 10.0,
+      "dir_viento": 163.0,
+      "factor_racha": 2.5,
+      "dpresion_12h": -6.5,
+      "lluvia_72h": 21.0,
+      "ola_m": null
+     }
+    },
+    {
+     "hora": "2026-11-21T18:00:00",
+     "lambda": 0.1414,
+     "prob": 0.132,
+     "normal": 0.1296,
+     "ratio": 1.09,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0291,
+       "mult": 1.0
+      },
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0259,
+       "mult": 1.28
+      },
+      {
+       "familia": "TRAFICO",
+       "lambda": 0.021,
+       "mult": 1.43
+      }
+     ],
+     "factores": [
+      "🌀 Borrasca (presión cayendo)",
+      "Evento: Festival: Musika Astea de Galdakao 2026",
+      "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
+      "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)",
+      "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
+     ],
+     "situaciones": [
+      "BORRASCA"
+     ],
+     "situacion_txt": "🌀 Borrasca (presión cayendo)",
+     "meteo": {
+      "temp": 14.5,
+      "humedad": 80.0,
+      "lluvia_1h": 0.9,
+      "lluvia_12h": 5.2,
+      "racha_kmh": 24.5,
+      "viento_sur": false,
+      "dias_sin_lluvia": 1.0,
+      "viento_kmh": 9.3,
+      "dir_viento": 174.0,
+      "factor_racha": 2.6,
+      "dpresion_12h": -6.2,
+      "lluvia_72h": 21.9,
+      "ola_m": null
+     }
+    },
+    {
+     "hora": "2026-11-21T19:00:00",
+     "lambda": 0.1359,
+     "prob": 0.127,
+     "normal": 0.1279,
+     "ratio": 1.06,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0291,
+       "mult": 1.0
+      },
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0227,
+       "mult": 1.12
+      },
+      {
+       "familia": "INCENDIO_FORESTAL_EXTERIOR",
+       "lambda": 0.0197,
+       "mult": 1.0
+      }
+     ],
+     "factores": [
+      "Evento: Festival: Musika Astea de Galdakao 2026",
+      "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
+      "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)"
+     ],
+     "situaciones": [],
+     "situacion_txt": "",
+     "meteo": {
+      "temp": 14.4,
+      "humedad": 81.0,
+      "lluvia_1h": 0.5,
+      "lluvia_12h": 6.0,
+      "racha_kmh": 23.0,
+      "viento_sur": false,
+      "dias_sin_lluvia": 1.0,
+      "viento_kmh": 9.9,
+      "dir_viento": 173.0,
+      "factor_racha": 2.3,
+      "dpresion_12h": -5.7,
+      "lluvia_72h": 21.3,
+      "ola_m": null
+     }
+    }
+   ],
+   "carreteras": [
+    {
+     "carretera": "N-634",
+     "km_ini": 100,
+     "km_fin": 105,
+     "esperados": 0.0211,
+     "prob": 0.0209,
+     "accidentes_anio": 16.429,
+     "pct_graves": 2.6,
+     "hora_pico": 17,
+     "imd": null,
+     "ip": null
+    },
+    {
+     "carretera": "N-634",
+     "km_ini": 95,
+     "km_fin": 100,
+     "esperados": 0.016,
+     "prob": 0.0159,
+     "accidentes_anio": 12.429,
+     "pct_graves": 14.9,
+     "hora_pico": 16,
+     "imd": null,
+     "ip": null
+    },
+    {
+     "carretera": "A-8",
+     "km_ini": 110,
+     "km_fin": 115,
+     "esperados": 0.0134,
+     "prob": 0.0133,
+     "accidentes_anio": 10.429,
+     "pct_graves": 2.7,
+     "hora_pico": 14,
+     "imd": 45083,
+     "ip": 12.7
+    }
+   ]
+  },
+  {
    "id": "ARTAZA",
    "nombre": "Artaza (Leioa)",
    "lat": 43.335,
    "lon": -2.987,
-   "salidas_esperadas_6h": 0.99,
-   "normal_6h": 0.89,
-   "prob_6h": 0.628,
+   "salidas_esperadas_6h": 1.01,
+   "normal_6h": 0.9,
+   "prob_6h": 0.637,
    "ratio_max": 1.23,
    "nivel": "verde",
    "hora_pico": "2026-11-21T17:00:00",
@@ -794,54 +1159,6 @@
     "nuevas_1h": 0
    },
    "horas": [
-    {
-     "hora": "2026-11-21T13:00:00",
-     "lambda": 0.152,
-     "prob": 0.141,
-     "normal": 0.1456,
-     "ratio": 1.04,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0525,
-       "mult": 1.14
-      },
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0437,
-       "mult": 1.0
-      },
-      {
-       "familia": "ABEJAS_AVISPAS",
-       "lambda": 0.0185,
-       "mult": 1.0
-      }
-     ],
-     "factores": [
-      "🌀 Borrasca (presión cayendo)",
-      "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
-     ],
-     "situaciones": [
-      "BORRASCA"
-     ],
-     "situacion_txt": "🌀 Borrasca (presión cayendo)",
-     "meteo": {
-      "temp": 17.0,
-      "humedad": 63.0,
-      "lluvia_1h": 0.0,
-      "lluvia_12h": 0.0,
-      "racha_kmh": 44.3,
-      "viento_sur": true,
-      "dias_sin_lluvia": 2.0,
-      "viento_kmh": 21.8,
-      "dir_viento": 158.0,
-      "factor_racha": 2.0,
-      "dpresion_12h": -7.8,
-      "lluvia_72h": 8.3,
-      "ola_m": 1.4
-     }
-    },
     {
      "hora": "2026-11-21T14:00:00",
      "lambda": 0.1566,
@@ -1087,6 +1404,52 @@
       "lluvia_72h": 11.4,
       "ola_m": 1.1
      }
+    },
+    {
+     "hora": "2026-11-21T19:00:00",
+     "lambda": 0.1764,
+     "prob": 0.162,
+     "normal": 0.1502,
+     "ratio": 1.17,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.057,
+       "mult": 1.63
+      },
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0491,
+       "mult": 1.0
+      },
+      {
+       "familia": "ABEJAS_AVISPAS",
+       "lambda": 0.0156,
+       "mult": 1.0
+      }
+     ],
+     "factores": [
+      "Lluvia moderada (1-4 mm/h): accidentes ×1.5 (medido por horas)",
+      "Lluvia moderada (1-4 mm/h): caídas de objetos/árboles ×1.6 (medido por horas)"
+     ],
+     "situaciones": [],
+     "situacion_txt": "",
+     "meteo": {
+      "temp": 14.6,
+      "humedad": 84.0,
+      "lluvia_1h": 1.3,
+      "lluvia_12h": 3.1,
+      "racha_kmh": 27.6,
+      "viento_sur": false,
+      "dias_sin_lluvia": 2.0,
+      "viento_kmh": 13.3,
+      "dir_viento": 142.0,
+      "factor_racha": 2.1,
+      "dpresion_12h": -5.7,
+      "lluvia_72h": 11.8,
+      "ola_m": 1.1
+     }
     }
    ],
    "carreteras": [
@@ -1094,8 +1457,8 @@
      "carretera": "BI-637",
      "km_ini": 10,
      "km_fin": 15,
-     "esperados": 0.0261,
-     "prob": 0.0258,
+     "esperados": 0.0241,
+     "prob": 0.0238,
      "accidentes_anio": 28.143,
      "pct_graves": 3.6,
      "hora_pico": 14,
@@ -1106,8 +1469,8 @@
      "carretera": "N-637",
      "km_ini": 10,
      "km_fin": 15,
-     "esperados": 0.0232,
-     "prob": 0.0229,
+     "esperados": 0.0214,
+     "prob": 0.0212,
      "accidentes_anio": 25.0,
      "pct_graves": 4.6,
      "hora_pico": 7,
@@ -1118,8 +1481,8 @@
      "carretera": "BI-637",
      "km_ini": 5,
      "km_fin": 10,
-     "esperados": 0.0106,
-     "prob": 0.0105,
+     "esperados": 0.0098,
+     "prob": 0.0097,
      "accidentes_anio": 11.429,
      "pct_graves": 5.0,
      "hora_pico": 18,
@@ -1133,9 +1496,9 @@
    "nombre": "Iurreta",
    "lat": 43.176,
    "lon": -2.634,
-   "salidas_esperadas_6h": 0.53,
+   "salidas_esperadas_6h": 0.54,
    "normal_6h": 0.46,
-   "prob_6h": 0.412,
+   "prob_6h": 0.414,
    "ratio_max": 1.22,
    "nivel": "verde",
    "hora_pico": "2026-11-21T18:00:00",
@@ -1158,57 +1521,6 @@
     "nuevas_1h": 0
    },
    "horas": [
-    {
-     "hora": "2026-11-21T13:00:00",
-     "lambda": 0.0784,
-     "prob": 0.075,
-     "normal": 0.0738,
-     "ratio": 1.06,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.026,
-       "mult": 1.0
-      },
-      {
-       "familia": "ABEJAS_AVISPAS",
-       "lambda": 0.0215,
-       "mult": 1.0
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0153,
-       "mult": 1.28
-      }
-     ],
-     "factores": [
-      "🌀 Borrasca (presión cayendo)",
-      "Evento: Festival: Jokoan - Festival de juegos de mesa 2026",
-      "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
-      "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)",
-      "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
-     ],
-     "situaciones": [
-      "BORRASCA"
-     ],
-     "situacion_txt": "🌀 Borrasca (presión cayendo)",
-     "meteo": {
-      "temp": 15.0,
-      "humedad": 76.0,
-      "lluvia_1h": 0.1,
-      "lluvia_12h": 0.2,
-      "racha_kmh": 29.2,
-      "viento_sur": false,
-      "dias_sin_lluvia": 1.0,
-      "viento_kmh": 7.1,
-      "dir_viento": 105.0,
-      "factor_racha": 4.1,
-      "dpresion_12h": -7.0,
-      "lluvia_72h": 7.0,
-      "ola_m": null
-     }
-    },
     {
      "hora": "2026-11-21T14:00:00",
      "lambda": 0.0827,
@@ -1459,6 +1771,53 @@
       "lluvia_72h": 13.7,
       "ola_m": null
      }
+    },
+    {
+     "hora": "2026-11-21T19:00:00",
+     "lambda": 0.0828,
+     "prob": 0.079,
+     "normal": 0.0781,
+     "ratio": 1.06,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "ABEJAS_AVISPAS",
+       "lambda": 0.0169,
+       "mult": 1.0
+      },
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.016,
+       "mult": 1.12
+      },
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0149,
+       "mult": 1.0
+      }
+     ],
+     "factores": [
+      "Evento: Festival: Festival Jazz Blues Arriola 2026",
+      "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
+      "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)"
+     ],
+     "situaciones": [],
+     "situacion_txt": "",
+     "meteo": {
+      "temp": 13.1,
+      "humedad": 87.0,
+      "lluvia_1h": 0.6,
+      "lluvia_12h": 6.8,
+      "racha_kmh": 17.6,
+      "viento_sur": false,
+      "dias_sin_lluvia": 1.0,
+      "viento_kmh": 7.8,
+      "dir_viento": 58.0,
+      "factor_racha": 2.3,
+      "dpresion_12h": -5.7,
+      "lluvia_72h": 14.2,
+      "ola_m": null
+     }
     }
    ],
    "carreteras": [
@@ -1466,8 +1825,8 @@
      "carretera": "N-634",
      "km_ini": 80,
      "km_fin": 85,
-     "esperados": 0.0125,
-     "prob": 0.0124,
+     "esperados": 0.0128,
+     "prob": 0.0127,
      "accidentes_anio": 9.857,
      "pct_graves": 7.2,
      "hora_pico": 10,
@@ -1478,8 +1837,8 @@
      "carretera": "N-634",
      "km_ini": 85,
      "km_fin": 90,
-     "esperados": 0.0109,
-     "prob": 0.0108,
+     "esperados": 0.0111,
+     "prob": 0.0111,
      "accidentes_anio": 8.571,
      "pct_graves": 15.0,
      "hora_pico": 14,
@@ -1490,8 +1849,8 @@
      "carretera": "N-634",
      "km_ini": 90,
      "km_fin": 95,
-     "esperados": 0.0074,
-     "prob": 0.0074,
+     "esperados": 0.0076,
+     "prob": 0.0076,
      "accidentes_anio": 5.857,
      "pct_graves": 22.0,
      "hora_pico": 20,
@@ -1501,387 +1860,13 @@
    ]
   },
   {
-   "id": "BASAURI",
-   "nombre": "Basauri",
-   "lat": 43.237,
-   "lon": -2.885,
-   "salidas_esperadas_6h": 0.87,
-   "normal_6h": 0.76,
-   "prob_6h": 0.58,
-   "ratio_max": 1.21,
-   "nivel": "verde",
-   "hora_pico": "2026-11-21T17:00:00",
-   "factores": [
-    "🌀 Borrasca (presión cayendo)",
-    "Accidentes de tráfico activos en la zona",
-    "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)",
-    "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
-    "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)",
-    "Evento: Festival: Musika Astea de Galdakao 2026",
-    "Lluvia moderada (1-4 mm/h): accidentes ×1.5 (medido por horas)",
-    "Lluvia moderada (1-4 mm/h): caídas de objetos/árboles ×1.6 (medido por horas)"
-   ],
-   "situacion_ahora": "🌀 Borrasca (presión cayendo)",
-   "situaciones_6h": [
-    "BORRASCA"
-   ],
-   "directo": {
-    "activas": 0,
-    "nuevas_1h": 0
-   },
-   "horas": [
-    {
-     "hora": "2026-11-21T13:00:00",
-     "lambda": 0.1298,
-     "prob": 0.122,
-     "normal": 0.124,
-     "ratio": 1.05,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0447,
-       "mult": 1.0
-      },
-      {
-       "familia": "ABEJAS_AVISPAS",
-       "lambda": 0.0242,
-       "mult": 1.0
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0173,
-       "mult": 1.14
-      }
-     ],
-     "factores": [
-      "🌀 Borrasca (presión cayendo)",
-      "Accidentes de tráfico activos en la zona",
-      "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
-     ],
-     "situaciones": [
-      "BORRASCA"
-     ],
-     "situacion_txt": "🌀 Borrasca (presión cayendo)",
-     "meteo": {
-      "temp": 15.6,
-      "humedad": 70.0,
-      "lluvia_1h": 0.0,
-      "lluvia_12h": 0.2,
-      "racha_kmh": 45.4,
-      "viento_sur": true,
-      "dias_sin_lluvia": 1.0,
-      "viento_kmh": 23.7,
-      "dir_viento": 194.0,
-      "factor_racha": 1.9,
-      "dpresion_12h": -7.4,
-      "lluvia_72h": 15.9,
-      "ola_m": null
-     }
-    },
-    {
-     "hora": "2026-11-21T14:00:00",
-     "lambda": 0.1422,
-     "prob": 0.133,
-     "normal": 0.1283,
-     "ratio": 1.11,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0291,
-       "mult": 1.0
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0259,
-       "mult": 1.28
-      },
-      {
-       "familia": "TRAFICO",
-       "lambda": 0.0217,
-       "mult": 1.61
-      }
-     ],
-     "factores": [
-      "🌀 Borrasca (presión cayendo)",
-      "Accidentes de tráfico activos en la zona",
-      "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
-      "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)",
-      "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
-     ],
-     "situaciones": [
-      "BORRASCA"
-     ],
-     "situacion_txt": "🌀 Borrasca (presión cayendo)",
-     "meteo": {
-      "temp": 14.8,
-      "humedad": 78.0,
-      "lluvia_1h": 0.3,
-      "lluvia_12h": 0.2,
-      "racha_kmh": 35.6,
-      "viento_sur": true,
-      "dias_sin_lluvia": 1.0,
-      "viento_kmh": 14.9,
-      "dir_viento": 187.0,
-      "factor_racha": 2.4,
-      "dpresion_12h": -7.4,
-      "lluvia_72h": 16.2,
-      "ola_m": null
-     }
-    },
-    {
-     "hora": "2026-11-21T15:00:00",
-     "lambda": 0.1503,
-     "prob": 0.14,
-     "normal": 0.1255,
-     "ratio": 1.2,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0376,
-       "mult": 1.86
-      },
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0291,
-       "mult": 1.0
-      },
-      {
-       "familia": "INCENDIO_FORESTAL_EXTERIOR",
-       "lambda": 0.0197,
-       "mult": 1.0
-      }
-     ],
-     "factores": [
-      "🌀 Borrasca (presión cayendo)",
-      "Evento: Festival: Musika Astea de Galdakao 2026",
-      "Lluvia moderada (1-4 mm/h): accidentes ×1.5 (medido por horas)",
-      "Lluvia moderada (1-4 mm/h): caídas de objetos/árboles ×1.6 (medido por horas)",
-      "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
-     ],
-     "situaciones": [
-      "BORRASCA"
-     ],
-     "situacion_txt": "🌀 Borrasca (presión cayendo)",
-     "meteo": {
-      "temp": 14.9,
-      "humedad": 78.0,
-      "lluvia_1h": 1.0,
-      "lluvia_12h": 0.5,
-      "racha_kmh": 35.6,
-      "viento_sur": true,
-      "dias_sin_lluvia": 1.0,
-      "viento_kmh": 14.8,
-      "dir_viento": 184.0,
-      "factor_racha": 2.4,
-      "dpresion_12h": -7.1,
-      "lluvia_72h": 17.2,
-      "ola_m": null
-     }
-    },
-    {
-     "hora": "2026-11-21T16:00:00",
-     "lambda": 0.1498,
-     "prob": 0.139,
-     "normal": 0.1253,
-     "ratio": 1.2,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0376,
-       "mult": 1.86
-      },
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0291,
-       "mult": 1.0
-      },
-      {
-       "familia": "INCENDIO_FORESTAL_EXTERIOR",
-       "lambda": 0.0197,
-       "mult": 1.0
-      }
-     ],
-     "factores": [
-      "🌀 Borrasca (presión cayendo)",
-      "Evento: Festival: Musika Astea de Galdakao 2026",
-      "Lluvia moderada (1-4 mm/h): accidentes ×1.5 (medido por horas)",
-      "Lluvia moderada (1-4 mm/h): caídas de objetos/árboles ×1.6 (medido por horas)",
-      "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
-     ],
-     "situaciones": [
-      "BORRASCA"
-     ],
-     "situacion_txt": "🌀 Borrasca (presión cayendo)",
-     "meteo": {
-      "temp": 14.9,
-      "humedad": 79.0,
-      "lluvia_1h": 1.3,
-      "lluvia_12h": 1.5,
-      "racha_kmh": 27.7,
-      "viento_sur": false,
-      "dias_sin_lluvia": 1.0,
-      "viento_kmh": 8.7,
-      "dir_viento": 173.0,
-      "factor_racha": 3.2,
-      "dpresion_12h": -6.7,
-      "lluvia_72h": 18.5,
-      "ola_m": null
-     }
-    },
-    {
-     "hora": "2026-11-21T17:00:00",
-     "lambda": 0.1546,
-     "prob": 0.143,
-     "normal": 0.1281,
-     "ratio": 1.21,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0376,
-       "mult": 1.86
-      },
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0291,
-       "mult": 1.0
-      },
-      {
-       "familia": "TRAFICO",
-       "lambda": 0.0224,
-       "mult": 1.69
-      }
-     ],
-     "factores": [
-      "🌀 Borrasca (presión cayendo)",
-      "Evento: Festival: Musika Astea de Galdakao 2026",
-      "Lluvia moderada (1-4 mm/h): accidentes ×1.5 (medido por horas)",
-      "Lluvia moderada (1-4 mm/h): caídas de objetos/árboles ×1.6 (medido por horas)",
-      "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
-     ],
-     "situaciones": [
-      "BORRASCA"
-     ],
-     "situacion_txt": "🌀 Borrasca (presión cayendo)",
-     "meteo": {
-      "temp": 14.5,
-      "humedad": 82.0,
-      "lluvia_1h": 2.5,
-      "lluvia_12h": 2.7,
-      "racha_kmh": 24.8,
-      "viento_sur": false,
-      "dias_sin_lluvia": 1.0,
-      "viento_kmh": 10.0,
-      "dir_viento": 163.0,
-      "factor_racha": 2.5,
-      "dpresion_12h": -6.5,
-      "lluvia_72h": 21.0,
-      "ola_m": null
-     }
-    },
-    {
-     "hora": "2026-11-21T18:00:00",
-     "lambda": 0.1414,
-     "prob": 0.132,
-     "normal": 0.1296,
-     "ratio": 1.09,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0291,
-       "mult": 1.0
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0259,
-       "mult": 1.28
-      },
-      {
-       "familia": "TRAFICO",
-       "lambda": 0.021,
-       "mult": 1.43
-      }
-     ],
-     "factores": [
-      "🌀 Borrasca (presión cayendo)",
-      "Evento: Festival: Musika Astea de Galdakao 2026",
-      "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
-      "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)",
-      "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
-     ],
-     "situaciones": [
-      "BORRASCA"
-     ],
-     "situacion_txt": "🌀 Borrasca (presión cayendo)",
-     "meteo": {
-      "temp": 14.5,
-      "humedad": 80.0,
-      "lluvia_1h": 0.9,
-      "lluvia_12h": 5.2,
-      "racha_kmh": 24.5,
-      "viento_sur": false,
-      "dias_sin_lluvia": 1.0,
-      "viento_kmh": 9.3,
-      "dir_viento": 174.0,
-      "factor_racha": 2.6,
-      "dpresion_12h": -6.2,
-      "lluvia_72h": 21.9,
-      "ola_m": null
-     }
-    }
-   ],
-   "carreteras": [
-    {
-     "carretera": "N-634",
-     "km_ini": 100,
-     "km_fin": 105,
-     "esperados": 0.0214,
-     "prob": 0.0211,
-     "accidentes_anio": 16.429,
-     "pct_graves": 2.6,
-     "hora_pico": 17,
-     "imd": null,
-     "ip": null
-    },
-    {
-     "carretera": "N-634",
-     "km_ini": 95,
-     "km_fin": 100,
-     "esperados": 0.0162,
-     "prob": 0.016,
-     "accidentes_anio": 12.429,
-     "pct_graves": 14.9,
-     "hora_pico": 16,
-     "imd": null,
-     "ip": null
-    },
-    {
-     "carretera": "A-8",
-     "km_ini": 110,
-     "km_fin": 115,
-     "esperados": 0.0136,
-     "prob": 0.0135,
-     "accidentes_anio": 10.429,
-     "pct_graves": 2.7,
-     "hora_pico": 14,
-     "imd": 45083,
-     "ip": 12.7
-    }
-   ]
-  },
-  {
    "id": "ZALLA",
    "nombre": "Zalla",
    "lat": 43.213,
    "lon": -3.137,
-   "salidas_esperadas_6h": 0.35,
+   "salidas_esperadas_6h": 0.36,
    "normal_6h": 0.32,
-   "prob_6h": 0.295,
+   "prob_6h": 0.302,
    "ratio_max": 1.16,
    "nivel": "verde",
    "hora_pico": "2026-11-21T17:00:00",
@@ -1904,56 +1889,6 @@
     "nuevas_1h": 0
    },
    "horas": [
-    {
-     "hora": "2026-11-21T13:00:00",
-     "lambda": 0.0487,
-     "prob": 0.048,
-     "normal": 0.0455,
-     "ratio": 1.07,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0167,
-       "mult": 1.0
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0138,
-       "mult": 1.28
-      },
-      {
-       "familia": "ABEJAS_AVISPAS",
-       "lambda": 0.0106,
-       "mult": 1.0
-      }
-     ],
-     "factores": [
-      "🌀 Borrasca (presión cayendo)",
-      "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
-      "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)",
-      "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
-     ],
-     "situaciones": [
-      "BORRASCA"
-     ],
-     "situacion_txt": "🌀 Borrasca (presión cayendo)",
-     "meteo": {
-      "temp": 15.4,
-      "humedad": 73.0,
-      "lluvia_1h": 0.1,
-      "lluvia_12h": 0.1,
-      "racha_kmh": 36.0,
-      "viento_sur": true,
-      "dias_sin_lluvia": 1.0,
-      "viento_kmh": 12.3,
-      "dir_viento": 212.0,
-      "factor_racha": 2.9,
-      "dpresion_12h": -6.9,
-      "lluvia_72h": 8.7,
-      "ola_m": null
-     }
-    },
     {
      "hora": "2026-11-21T14:00:00",
      "lambda": 0.0569,
@@ -2200,6 +2135,52 @@
       "lluvia_72h": 21.4,
       "ola_m": null
      }
+    },
+    {
+     "hora": "2026-11-21T19:00:00",
+     "lambda": 0.0593,
+     "prob": 0.058,
+     "normal": 0.0541,
+     "ratio": 1.1,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "ABEJAS_AVISPAS",
+       "lambda": 0.0119,
+       "mult": 1.0
+      },
+      {
+       "familia": "INCENDIO_FORESTAL_EXTERIOR",
+       "lambda": 0.0114,
+       "mult": 1.0
+      },
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0112,
+       "mult": 1.63
+      }
+     ],
+     "factores": [
+      "Lluvia moderada (1-4 mm/h): accidentes ×1.5 (medido por horas)",
+      "Lluvia moderada (1-4 mm/h): caídas de objetos/árboles ×1.6 (medido por horas)"
+     ],
+     "situaciones": [],
+     "situacion_txt": "",
+     "meteo": {
+      "temp": 13.0,
+      "humedad": 93.0,
+      "lluvia_1h": 1.7,
+      "lluvia_12h": 12.9,
+      "racha_kmh": 10.2,
+      "viento_sur": false,
+      "dias_sin_lluvia": 1.0,
+      "viento_kmh": 4.8,
+      "dir_viento": 91.0,
+      "factor_racha": 2.0,
+      "dpresion_12h": -5.3,
+      "lluvia_72h": 23.1,
+      "ola_m": null
+     }
     }
    ],
    "carreteras": [
@@ -2207,8 +2188,8 @@
      "carretera": "BI-636",
      "km_ini": 15,
      "km_fin": 20,
-     "esperados": 0.0068,
-     "prob": 0.0068,
+     "esperados": 0.0067,
+     "prob": 0.0067,
      "accidentes_anio": 4.714,
      "pct_graves": 18.2,
      "hora_pico": 8,
@@ -2219,8 +2200,8 @@
      "carretera": "BI-636",
      "km_ini": 20,
      "km_fin": 25,
-     "esperados": 0.0048,
-     "prob": 0.0048,
+     "esperados": 0.0047,
+     "prob": 0.0046,
      "accidentes_anio": 3.286,
      "pct_graves": 4.3,
      "hora_pico": 18,
@@ -2231,8 +2212,8 @@
      "carretera": "BI-3651",
      "km_ini": 10,
      "km_fin": 15,
-     "esperados": 0.0043,
-     "prob": 0.0043,
+     "esperados": 0.0042,
+     "prob": 0.0042,
      "accidentes_anio": 3.0,
      "pct_graves": 14.3,
      "hora_pico": 11,
@@ -2246,17 +2227,17 @@
    "nombre": "Arratzu",
    "lat": 43.309,
    "lon": -2.64,
-   "salidas_esperadas_6h": 0.35,
-   "normal_6h": 0.32,
-   "prob_6h": 0.294,
+   "salidas_esperadas_6h": 0.34,
+   "normal_6h": 0.31,
+   "prob_6h": 0.287,
    "ratio_max": 1.14,
    "nivel": "verde",
    "hora_pico": "2026-11-21T18:00:00",
    "factores": [
     "🌀 Borrasca (presión cayendo)",
-    "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)",
     "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
     "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)",
+    "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)",
     "Evento: Fiestas: Fiestas de Aurrekoetxea 2026 en Bermeo: Santa Zezilia",
     "Lluvia moderada (1-4 mm/h): accidentes ×1.5 (medido por horas)",
     "Lluvia moderada (1-4 mm/h): caídas de objetos/árboles ×1.6 (medido por horas)"
@@ -2270,54 +2251,6 @@
     "nuevas_1h": 1
    },
    "horas": [
-    {
-     "hora": "2026-11-21T13:00:00",
-     "lambda": 0.0663,
-     "prob": 0.064,
-     "normal": 0.0646,
-     "ratio": 1.03,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0197,
-       "mult": 1.0
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0137,
-       "mult": 1.14
-      },
-      {
-       "familia": "ABEJAS_AVISPAS",
-       "lambda": 0.0103,
-       "mult": 1.0
-      }
-     ],
-     "factores": [
-      "🌀 Borrasca (presión cayendo)",
-      "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
-     ],
-     "situaciones": [
-      "BORRASCA"
-     ],
-     "situacion_txt": "🌀 Borrasca (presión cayendo)",
-     "meteo": {
-      "temp": 16.4,
-      "humedad": 69.0,
-      "lluvia_1h": 0.0,
-      "lluvia_12h": 0.0,
-      "racha_kmh": 33.1,
-      "viento_sur": true,
-      "dias_sin_lluvia": 1.0,
-      "viento_kmh": 12.8,
-      "dir_viento": 196.0,
-      "factor_racha": 2.6,
-      "dpresion_12h": -7.7,
-      "lluvia_72h": 22.9,
-      "ola_m": 1.0
-     }
-    },
     {
      "hora": "2026-11-21T14:00:00",
      "lambda": 0.0537,
@@ -2571,6 +2504,53 @@
       "lluvia_72h": 28.7,
       "ola_m": 0.9
      }
+    },
+    {
+     "hora": "2026-11-21T19:00:00",
+     "lambda": 0.0559,
+     "prob": 0.054,
+     "normal": 0.0531,
+     "ratio": 1.05,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.014,
+       "mult": 1.0
+      },
+      {
+       "familia": "INCENDIO_FORESTAL_EXTERIOR",
+       "lambda": 0.0112,
+       "mult": 1.0
+      },
+      {
+       "familia": "INCENDIO_URBANO",
+       "lambda": 0.0099,
+       "mult": 1.0
+      }
+     ],
+     "factores": [
+      "Evento: Fiestas: Fiestas de Aurrekoetxea 2026 en Bermeo: Santa Zezilia",
+      "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
+      "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)"
+     ],
+     "situaciones": [],
+     "situacion_txt": "",
+     "meteo": {
+      "temp": 13.8,
+      "humedad": 86.0,
+      "lluvia_1h": 0.6,
+      "lluvia_12h": 5.7,
+      "racha_kmh": 25.0,
+      "viento_sur": false,
+      "dias_sin_lluvia": 1.0,
+      "viento_kmh": 9.2,
+      "dir_viento": 203.0,
+      "factor_racha": 2.7,
+      "dpresion_12h": -5.8,
+      "lluvia_72h": 28.6,
+      "ola_m": 0.8
+     }
     }
    ],
    "carreteras": [
@@ -2578,8 +2558,8 @@
      "carretera": "BI-635",
      "km_ini": 30,
      "km_fin": 35,
-     "esperados": 0.009,
-     "prob": 0.009,
+     "esperados": 0.0093,
+     "prob": 0.0092,
      "accidentes_anio": 7.857,
      "pct_graves": 7.3,
      "hora_pico": 15,
@@ -2590,8 +2570,8 @@
      "carretera": "BI-631",
      "km_ini": 30,
      "km_fin": 35,
-     "esperados": 0.0062,
-     "prob": 0.0062,
+     "esperados": 0.0064,
+     "prob": 0.0064,
      "accidentes_anio": 5.429,
      "pct_graves": 10.5,
      "hora_pico": 19,
@@ -2602,8 +2582,8 @@
      "carretera": "BI-2238",
      "km_ini": 30,
      "km_fin": 35,
-     "esperados": 0.0038,
-     "prob": 0.0038,
+     "esperados": 0.0039,
+     "prob": 0.0039,
      "accidentes_anio": 3.286,
      "pct_graves": 0.0,
      "hora_pico": 17,
@@ -2617,17 +2597,17 @@
    "nombre": "Markina-Xemein",
    "lat": 43.268,
    "lon": -2.497,
-   "salidas_esperadas_6h": 0.15,
-   "normal_6h": 0.15,
-   "prob_6h": 0.139,
+   "salidas_esperadas_6h": 0.14,
+   "normal_6h": 0.14,
+   "prob_6h": 0.134,
    "ratio_max": 1.04,
    "nivel": "verde",
    "hora_pico": "2026-11-21T17:00:00",
    "factores": [
     "🌀 Borrasca (presión cayendo)",
-    "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)",
     "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
     "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)",
+    "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)",
     "Lluvia moderada (1-4 mm/h): accidentes ×1.5 (medido por horas)",
     "Lluvia moderada (1-4 mm/h): caídas de objetos/árboles ×1.6 (medido por horas)"
    ],
@@ -2640,54 +2620,6 @@
     "nuevas_1h": 0
    },
    "horas": [
-    {
-     "hora": "2026-11-21T13:00:00",
-     "lambda": 0.0295,
-     "prob": 0.029,
-     "normal": 0.029,
-     "ratio": 1.02,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0105,
-       "mult": 1.0
-      },
-      {
-       "familia": "ABEJAS_AVISPAS",
-       "lambda": 0.0098,
-       "mult": 1.0
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0043,
-       "mult": 1.14
-      }
-     ],
-     "factores": [
-      "🌀 Borrasca (presión cayendo)",
-      "Borrasca: caídas de objetos/árboles ×1.1 (medido por horas)"
-     ],
-     "situaciones": [
-      "BORRASCA"
-     ],
-     "situacion_txt": "🌀 Borrasca (presión cayendo)",
-     "meteo": {
-      "temp": 16.2,
-      "humedad": 68.0,
-      "lluvia_1h": 0.0,
-      "lluvia_12h": 1.0,
-      "racha_kmh": 49.3,
-      "viento_sur": true,
-      "dias_sin_lluvia": 1.0,
-      "viento_kmh": 20.5,
-      "dir_viento": 211.0,
-      "factor_racha": 2.4,
-      "dpresion_12h": -7.5,
-      "lluvia_72h": 14.0,
-      "ola_m": 1.2
-     }
-    },
     {
      "hora": "2026-11-21T14:00:00",
      "lambda": 0.0239,
@@ -2726,7 +2658,7 @@
       "temp": 15.1,
       "humedad": 77.0,
       "lluvia_1h": 0.1,
-      "lluvia_12h": 1.0,
+      "lluvia_12h": 1.1,
       "racha_kmh": 52.2,
       "viento_sur": true,
       "dias_sin_lluvia": 1.0,
@@ -2734,7 +2666,7 @@
       "dir_viento": 204.0,
       "factor_racha": 2.6,
       "dpresion_12h": -8.2,
-      "lluvia_72h": 14.1,
+      "lluvia_72h": 14.2,
       "ola_m": 1.2
      }
     },
@@ -2776,7 +2708,7 @@
       "temp": 14.2,
       "humedad": 84.0,
       "lluvia_1h": 0.6,
-      "lluvia_12h": 1.1,
+      "lluvia_12h": 1.2,
       "racha_kmh": 40.0,
       "viento_sur": true,
       "dias_sin_lluvia": 1.0,
@@ -2784,7 +2716,7 @@
       "dir_viento": 200.0,
       "factor_racha": 3.0,
       "dpresion_12h": -7.4,
-      "lluvia_72h": 14.7,
+      "lluvia_72h": 14.8,
       "ola_m": 1.1
      }
     },
@@ -2826,7 +2758,7 @@
       "temp": 13.9,
       "humedad": 86.0,
       "lluvia_1h": 0.7,
-      "lluvia_12h": 1.4,
+      "lluvia_12h": 1.5,
       "racha_kmh": 29.2,
       "viento_sur": false,
       "dias_sin_lluvia": 1.0,
@@ -2834,7 +2766,7 @@
       "dir_viento": 200.0,
       "factor_racha": 2.7,
       "dpresion_12h": -6.4,
-      "lluvia_72h": 15.4,
+      "lluvia_72h": 15.5,
       "ola_m": 1.1
      }
     },
@@ -2876,7 +2808,7 @@
       "temp": 13.5,
       "humedad": 87.0,
       "lluvia_1h": 1.5,
-      "lluvia_12h": 1.8,
+      "lluvia_12h": 1.9,
       "racha_kmh": 26.6,
       "viento_sur": false,
       "dias_sin_lluvia": 1.0,
@@ -2884,7 +2816,7 @@
       "dir_viento": 199.0,
       "factor_racha": 3.0,
       "dpresion_12h": -6.6,
-      "lluvia_72h": 16.9,
+      "lluvia_72h": 17.0,
       "ola_m": 1.1
      }
     },
@@ -2926,7 +2858,7 @@
       "temp": 13.4,
       "humedad": 86.0,
       "lluvia_1h": 1.0,
-      "lluvia_12h": 3.3,
+      "lluvia_12h": 3.4,
       "racha_kmh": 30.1,
       "viento_sur": true,
       "dias_sin_lluvia": 1.0,
@@ -2934,6 +2866,52 @@
       "dir_viento": 202.0,
       "factor_racha": 2.5,
       "dpresion_12h": -6.8,
+      "lluvia_72h": 18.0,
+      "ola_m": 1.0
+     }
+    },
+    {
+     "hora": "2026-11-21T19:00:00",
+     "lambda": 0.0238,
+     "prob": 0.024,
+     "normal": 0.0236,
+     "ratio": 1.01,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0139,
+       "mult": 1.0
+      },
+      {
+       "familia": "ABEJAS_AVISPAS",
+       "lambda": 0.0042,
+       "mult": 1.0
+      },
+      {
+       "familia": "INCENDIO_URBANO",
+       "lambda": 0.0024,
+       "mult": 1.0
+      }
+     ],
+     "factores": [
+      "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
+      "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)"
+     ],
+     "situaciones": [],
+     "situacion_txt": "",
+     "meteo": {
+      "temp": 13.5,
+      "humedad": 86.0,
+      "lluvia_1h": 0.2,
+      "lluvia_12h": 4.1,
+      "racha_kmh": 30.5,
+      "viento_sur": true,
+      "dias_sin_lluvia": 1.0,
+      "viento_kmh": 9.8,
+      "dir_viento": 201.0,
+      "factor_racha": 3.1,
+      "dpresion_12h": -5.7,
       "lluvia_72h": 17.9,
       "ola_m": 1.0
      }
@@ -2944,8 +2922,8 @@
      "carretera": "BI-633",
      "km_ini": 55,
      "km_fin": 60,
-     "esperados": 0.0036,
-     "prob": 0.0036,
+     "esperados": 0.0034,
+     "prob": 0.0034,
      "accidentes_anio": 3.571,
      "pct_graves": 12.0,
      "hora_pico": 12,
@@ -2956,8 +2934,8 @@
      "carretera": "BI-633",
      "km_ini": 35,
      "km_fin": 40,
-     "esperados": 0.0029,
-     "prob": 0.0029,
+     "esperados": 0.0028,
+     "prob": 0.0028,
      "accidentes_anio": 2.857,
      "pct_graves": 10.0,
      "hora_pico": 16,
@@ -2968,8 +2946,8 @@
      "carretera": "BI-633",
      "km_ini": 40,
      "km_fin": 45,
-     "esperados": 0.0029,
-     "prob": 0.0029,
+     "esperados": 0.0028,
+     "prob": 0.0028,
      "accidentes_anio": 2.857,
      "pct_graves": 20.0,
      "hora_pico": 16,
