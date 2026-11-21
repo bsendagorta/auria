@@ -152,3 +152,4 @@
 {"leido": "2026-11-21T00:14:36+01:00", "avisos": {"coast_zone": [], "great_bilbao": [], "cantabrian_valleys": [], "cantabrian_mountains": []}}
 {"leido": "2026-11-21T00:50:37+01:00", "avisos": {"coast_zone": [], "great_bilbao": [], "cantabrian_valleys": [], "cantabrian_mountains": []}}
 {"leido": "2026-11-21T01:26:36+01:00", "avisos": {"coast_zone": [], "great_bilbao": [], "cantabrian_valleys": [], "cantabrian_mountains": []}}
+{"leido": "2026-11-21T02:02:53+01:00", "avisos": {"coast_zone": [], "great_bilbao": {"error": "503 Server Error: Service Temporarily Unavailable for url: https://api.euskadi.eus/euskalmet/alerts/zones/great_bilbao/forecast/at/2026/11/21"}, "cantabrian_valleys": [], "cantabrian_mountains": []}}
