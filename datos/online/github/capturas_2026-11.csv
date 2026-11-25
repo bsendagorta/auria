@@ -24,3 +24,4 @@ Call log:
   - navigating to ""https://www.bizkaia.eus/es/bomberas-bomberos-bizkaia"", waiting until ""networkidle""
 "
 2026-11-25T12:25:33+01:00,,,,0,bizkaia.eus pide verificación antibots (lectura automática bloqueada)
+2026-11-25T21:00:26+01:00,,,,0,cannot import name 'stealth_sync' from 'playwright_stealth' (/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/site-packages/playwright_stealth/__init__.py)
