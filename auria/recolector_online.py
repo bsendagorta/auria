@@ -212,16 +212,14 @@ def descargar_html() -> str:
         try:
             page.goto(config.URL_SALIDAS_ONLINE, timeout=60000, wait_until="networkidle")
             
-            # Esperar a que aparezca el texto clave en lugar de un selector CSS específico
-            page.wait_for_timeout(5000)  # Esperar 5 segundos para que el JS cargue
+            # Esperar 5 segundos a que el JS cargue el contenido dinámico
+            page.wait_for_timeout(5000)
             
             html = page.content()
             
-            # Verificar si la página contiene los datos esperados
             if "desde 08:00" not in html and ("TSPD" in html or "bobcmn" in html):
                 raise Bloqueado("bizkaia.eus pide verificación antibots (lectura automática bloqueada)")
             
-            # Si no encontramos el selector pero sí el texto, intentamos parsear de todos modos
             if "desde 08:00" not in html:
                 raise ValueError("La página no contiene los contadores esperados")
             
