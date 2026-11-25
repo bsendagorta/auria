@@ -26,6 +26,11 @@ jobs:
         run: |
           pip install -q playwright
           playwright install --with-deps chromium
+      - name: Limpiar caché de Python
+        run: |
+          find . -type d -name __pycache__ -exec rm -rf {} + 2>/dev/null || true
+          find . -name "*.pyc" -delete 2>/dev/null || true
+          echo "Caché de Python limpiado"
       - name: Captura de salidas en directo
         env:
           AURIA_ORIGEN: github
