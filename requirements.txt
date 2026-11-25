@@ -1,0 +1,16 @@
+pandas>=2.1
+numpy>=1.26
+requests>=2.31
+scikit-learn>=1.4
+holidays>=0.50
+tabulate>=0.9
+openpyxl>=3.1
+lightgbm>=4.3
+streamlit>=1.50
+pydeck>=0.9
+matplotlib
+PyJWT
+cryptography
+shapely
+pyshp
+pyproj
