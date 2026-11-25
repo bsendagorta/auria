@@ -3649,3 +3649,6 @@ ts,salidas_desde_8,salidas_anio,n_activas,ok,error
 2026-11-25T15:40:38+01:00,,,,0,bizkaia.eus pide verificación antibots (lectura automática bloqueada)
 2026-11-25T16:11:38+01:00,,,,0,bizkaia.eus pide verificación antibots (lectura automática bloqueada)
 2026-11-25T16:42:38+01:00,,,,0,bizkaia.eus pide verificación antibots (lectura automática bloqueada)
+2026-11-25T21:19:38+01:00,,,,0,cannot import name 'stealth_sync' from 'playwright_stealth' (/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/site-packages/playwright_stealth/__init__.py)
+2026-11-25T21:21:19+01:00,,,,0,cannot import name 'stealth_sync' from 'playwright_stealth' (/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/site-packages/playwright_stealth/__init__.py)
+2026-11-25T21:22:19+01:00,,,,0,cannot import name 'stealth_sync' from 'playwright_stealth' (/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/site-packages/playwright_stealth/__init__.py)
