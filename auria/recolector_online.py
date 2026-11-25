@@ -200,26 +200,41 @@ def bloqueo_pendiente(ahora):
 
 def descargar_html() -> str:
     from playwright.sync_api import sync_playwright
+    from playwright_stealth import stealth_sync
     
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
-        context = browser.new_context(
-            user_agent=config.USER_AGENT,
-            viewport={"width": 1920, "height": 1080}
+        # Lanzar con argumentos que ocultan que es un bot
+        browser = p.chromium.launch(
+            headless=True,
+            args=[
+                '--disable-blink-features=AutomationControlled',
+                '--no-sandbox',
+                '--disable-setuid-sandbox',
+                '--disable-web-security'
+            ]
         )
+        context = browser.new_context(
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+            viewport={"width": 1920, "height": 1080},
+            locale="es-ES",
+            timezone_id="Europe/Madrid"
+        )
+        
+        # Aplicar el parche stealth para eliminar huellas de automatización
+        stealth_sync(context)
+        
         page = context.new_page()
         
         try:
-            # CAMBIO CLAVE: usamos domcontentloaded en lugar de networkidle
-            # para evitar timeouts por scripts de terceros bloqueados o colgados
             page.goto(config.URL_SALIDAS_ONLINE, timeout=60000, wait_until="domcontentloaded")
             
-            # Esperar 5 segundos a que el JS de la web cargue el contenido dinámico
+            # Esperar a que el JS de la web renderice los contadores
             page.wait_for_timeout(5000)
             
             html = page.content()
             
-            if "desde 08:00" not in html and ("TSPD" in html or "bobcmn" in html):
+            # Comprobación robusta del bloqueo
+            if "desde 08:00" not in html and ("TSPD" in html or "bobcmn" in html or "Checking your browser" in html or "ray" in html):
                 raise Bloqueado("bizkaia.eus pide verificación antibots (lectura automática bloqueada)")
             
             if "desde 08:00" not in html:
