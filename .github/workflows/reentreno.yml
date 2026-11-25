@@ -1,0 +1,72 @@
+# Cada noche (~03:15 hora peninsular) AURIA aprende con datos reales:
+#   1. histórico SPEIS 2021-2026 (datos/historico, guardado en el repo) -> tasas base por parque/franja/mes
+#   2. meteorología diaria real por municipio (Open-Meteo, reanálisis) -> patrones meteo de cada familia
+#   3. modelos mensuales (referencia vs GLM vs GBM) con validación en el último año completo
+#   4. patrones (estacionalidad, franja, tendencia, efecto de la meteo)
+#   5. modelo horario LightGBM con las capturas por minuto (solo se activa si bate a la base)
+#   6. evaluación: lo que se predijo vs lo que pasó (contador de bizkaia.eus)
+name: Reentrenamiento nocturno AURIA
+on:
+  schedule:
+    - cron: "17 2 * * *"
+  workflow_dispatch:
+    inputs:
+      meteo:
+        description: "Volver a descargar toda la meteorología histórica"
+        type: boolean
+        default: false
+concurrency:
+  group: reentreno-auria
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  reentreno:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - run: pip install -q -r requirements.txt
+      - name: 1 · Histórico y tasas base
+        run: python -m auria.historico
+      - name: 2 · Meteorología histórica real (Open-Meteo)
+        run: |
+          mkdir -p datos/procesado
+          if [ -f datos/modelo/meteo_mensual.csv ] && [ "$(date -u +%d)" != "01" ] && [ "${{ github.event.inputs.meteo }}" != "true" ]; then
+            cp datos/modelo/meteo_mensual.csv datos/procesado/meteo_mensual.csv
+            echo "Meteo mensual reutilizada (se renueva el día 1 de cada mes)"
+          else
+            python -m auria.meteo --desde 2021-01-01 && cp datos/procesado/meteo_mensual.csv datos/modelo/meteo_mensual.csv \
+              || echo "::warning::No se pudo descargar la meteorología; se entrena sin ella"
+          fi
+      - name: 3 · Modelos mensuales (Bizkaia y municipio)
+        run: |
+          python -m auria.modelo --nivel bizkaia --desde 2021 || echo "::warning::modelo bizkaia falló"
+          python -m auria.modelo --nivel municipio || echo "::warning::modelo municipio falló"
+      - name: 4 · Patrones
+        run: python -m auria.patrones
+      - name: 4b · Efecto medido de cada situación meteorológica (sur racheado, galerna, borrasca…)
+        run: |
+          if [ ! -f datos/meteo/horaria_parques.csv.gz ] || [ "$(date -u +%d)" = "01" ] || [ "${{ github.event.inputs.meteo }}" = "true" ]; then
+            python -m auria.efectos_meteo --descargar || echo "::warning::efectos meteo fallaron"
+          else
+            python -m auria.efectos_meteo || echo "::warning::efectos meteo fallaron"
+          fi
+      - name: 4a · Fiestas locales y agenda cultural (Open Data Euskadi)
+        run: python -m auria.eventos_publicos || echo "::warning::eventos públicos fallaron"
+      - name: 4c · Accidentes y obstáculos con hora exacta frente a la meteo de esa hora
+        run: python -m auria.accidentes_hora --descargar || echo "::warning::accidentes por hora fallaron"
+      - name: 5 · Modelo horario (capturas por minuto)
+        run: python -m auria.horario || echo "::warning::modelo horario no entrenado"
+      - name: 6 · Evaluación predicho vs real
+        run: |
+          python -m auria.resumen_online || true
+          echo "La evaluación la actualiza el recolector cada 15 min"
+      - name: Subir modelo patrones e informes
+        if: always()
+        run: scripts/subir_datos.sh "modelo - reentreno $(date -u +%Y-%m-%d)"

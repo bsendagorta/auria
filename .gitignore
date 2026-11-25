@@ -1,0 +1,20 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+datos/crudo/
+datos/procesado/
+# capturas del Mac (no se mezclan con las de GitHub salvo que lo decidas)
+datos/online/local/
+datos/online/mac/
+.streamlit/secrets.toml
+# claves privadas (Euskalmet, etc.): nunca al repositorio público
+secretos/
+*.pem
+# Archivos pesados que no necesita Streamlit
+memorias/
+datos/crudo/
+informes/*.pkl
+informes/*.joblib
+memorias/
+datos/crudo/

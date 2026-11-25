@@ -1,0 +1,37 @@
+# Intensidad de tráfico real de Bizkaia (aforadores del Gobierno Vasco, Open Data Euskadi):
+# IMD por estación, perfil horario del tráfico, índice de peligrosidad por tramo y riesgo por vehículo.
+# Los flujos publicados llegan hasta 2024: basta con lanzarlo a mano o una vez al mes (incremental).
+name: Aforos de tráfico
+on:
+  schedule:
+    - cron: "13 5 2 * *"
+  workflow_dispatch:
+    inputs:
+      desde:
+        description: "Primer año"
+        default: "2022"
+      hasta:
+        description: "Último año"
+        default: "2024"
+concurrency:
+  group: aforos-auria
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  aforos:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - run: pip install -q pandas numpy requests tabulate holidays
+      - name: Descargar aforos y calcular exposición
+        run: python -m auria.aforos --desde "${{ github.event.inputs.desde || '2022' }}" --hasta "${{ github.event.inputs.hasta || '2024' }}"
+      - name: Subir aforos e informe
+        if: always()
+        run: scripts/subir_datos.sh "datos - aforos de tráfico $(date -u +%Y-%m-%d)"

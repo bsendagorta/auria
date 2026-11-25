@@ -1,0 +1,39 @@
+# Cada 15 min: recalcula la predicción de las próximas 6 horas (y hace una captura de respaldo).
+# La captura continua, cada minuto, la hace la tarea "Recolector cada minuto".
+name: Ciclo AURIA (captura + predicción)
+on:
+  schedule:
+    - cron: "7,22,37,52 * * * *"
+  workflow_dispatch:
+concurrency:
+  group: datos-auria
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  ciclo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: requirements-ciclo.txt
+      - run: pip install -q -r requirements-ciclo.txt
+      - name: Instalar Playwright (navegador para evitar antibot)
+        run: |
+          pip install -q playwright
+          playwright install --with-deps chromium
+      - name: Captura de salidas en directo
+        env:
+          AURIA_ORIGEN: github
+        run: |
+          python -m auria.recolector_online || echo "::warning::Fallo en la captura (queda registrado)"
+      - name: Predicción próximas 6 horas
+        run: python -m auria.prevision
+      - name: Subir datos
+        if: always()
+        run: |
+          scripts/subir_datos.sh "datos: ciclo $(date -u +%Y-%m-%dT%H:%MZ)"

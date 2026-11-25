@@ -1,0 +1,36 @@
+estacion,nombre,municipio,tipo,altitud,lat,lon,medidas,lluvia,viento,parque,orden,dist_km
+C002,Arteaga,Gautegiz Arteaga,METEOROLOGICAL,19,43.347,-2.65714,"direction_sigma,humidity,irradiance,max_speed,mean_direction,mean_speed,precipitation,speed_sigma,temperature",True,True,ARRATZU,0.0,4.4
+C003,Derio,Derio,METEOROLOGICAL,30,43.2911,-2.87342,,False,False,,,
+C019,Matxitxako,Bermeo,METEOROLOGICAL,433,43.4375,-2.7636,"direction_sigma,humidity,irradiance,max_speed,mean_direction,mean_speed,precipitation,speed_sigma,temperature",True,True,,,
+C022,Urkiola,Abadiño,METEOROLOGICAL,709,43.1,-2.64658,"direction_sigma,humidity,irradiance,max_speed,mean_direction,mean_speed,precipitation,speed_sigma,temperature",True,True,,,
+C033,Igorre,Igorre,METEOROLOGICAL,150,43.1686,-2.7842,"direction_sigma,humidity,irradiance,max_speed,mean_direction,mean_speed,precipitation,speed_sigma,temperature",True,True,,,
+C036,Iurreta,Iurreta,METEOROLOGICAL,175,43.1769,-2.622,"direction_sigma,humidity,irradiance,max_speed,mean_direction,mean_speed,precipitation,speed_sigma,temperature",True,True,IURRETA,0.0,1.0
+C036,Iurreta,Iurreta,METEOROLOGICAL,175,43.1769,-2.622,"direction_sigma,humidity,irradiance,max_speed,mean_direction,mean_speed,precipitation,speed_sigma,temperature",True,True,MARKINA,1.0,14.3
+C037,Venta Alta,Arrigorriaga,METEOROLOGICAL,162,43.2145,-2.89976,"direction_sigma,humidity,irradiance,max_speed,mean_direction,mean_speed,precipitation,speed_sigma,temperature",True,True,DERIO,1.0,8.8
+C037,Venta Alta,Arrigorriaga,METEOROLOGICAL,162,43.2145,-2.89976,"direction_sigma,humidity,irradiance,max_speed,mean_direction,mean_speed,precipitation,speed_sigma,temperature",True,True,BASAURI,0.0,2.8
+C038,Galindo,Sestao,METEOROLOGICAL,5,43.3042,-2.99878,"direction_sigma,humidity,max_speed,mean_direction,mean_speed,precipitation,speed_sigma,temperature",True,True,URIOSTE,1.0,4.2
+C038,Galindo,Sestao,METEOROLOGICAL,5,43.3042,-2.99878,"direction_sigma,humidity,max_speed,mean_direction,mean_speed,precipitation,speed_sigma,temperature",True,True,ARTAZA,0.0,3.5
+C038,Galindo,Sestao,METEOROLOGICAL,5,43.3042,-2.99878,"direction_sigma,humidity,max_speed,mean_direction,mean_speed,precipitation,speed_sigma,temperature",True,True,ZALLA,1.0,15.1
+C039,Deusto,Bilbao,METEOROLOGICAL,3,43.2834,-2.96791,,False,False,,,
+C03A,Zorrotza,Bilbao,METEOROLOGICAL,5,43.284979,-2.968458,"direction_sigma,humidity,irradiance,max_speed,mean_direction,mean_speed,precipitation,pressure,sheet_level_2,speed_sigma,temperature",True,True,ARTAZA,1.0,5.8
+C03A,Zorrotza,Bilbao,METEOROLOGICAL,5,43.284979,-2.968458,"direction_sigma,humidity,irradiance,max_speed,mean_direction,mean_speed,precipitation,pressure,sheet_level_2,speed_sigma,temperature",True,True,DERIO,0.0,6.9
+C03A,Zorrotza,Bilbao,METEOROLOGICAL,5,43.284979,-2.968458,"direction_sigma,humidity,irradiance,max_speed,mean_direction,mean_speed,precipitation,pressure,sheet_level_2,speed_sigma,temperature",True,True,BASAURI,1.0,8.6
+C042,Punta Galea,Getxo,METEOROLOGICAL,61,43.3752,-3.03608,"direction_sigma,humidity,irradiance,max_speed,mean_direction,mean_speed,pressure,speed_sigma,temperature",False,True,,,
+C045,La Garbea,Balmaseda,METEOROLOGICAL,717,43.217,-3.19368,"direction_sigma,humidity,max_speed,mean_direction,mean_speed,precipitation,speed_sigma,temperature",True,True,,,
+C046,Oiz,Munitibar-Arbatzegi Gerrikaitz,METEOROLOGICAL,998,43.2304,-2.5954,"direction_sigma,humidity,max_speed,mean_direction,mean_speed,precipitation,speed_sigma,temperature",True,True,,,
+C053,Barazar,Zeanuri,METEOROLOGICAL,608,43.0703,-2.71048,,False,False,,,
+C061,Arboleda,Valle de Trápaga-Trapagaran,METEOROLOGICAL,329,43.2967,-3.06747,"direction_sigma,humidity,irradiance,max_speed,mean_direction,mean_speed,precipitation,speed_sigma,temperature",True,True,URIOSTE,0.0,1.8
+C061,Arboleda,Valle de Trápaga-Trapagaran,METEOROLOGICAL,329,43.2967,-3.06747,"direction_sigma,humidity,irradiance,max_speed,mean_direction,mean_speed,precipitation,speed_sigma,temperature",True,True,ZALLA,0.0,10.9
+C062,Garai,Garai,METEOROLOGICAL,566,43.2125,-2.6002777,"humidity,precipitation,temperature",True,False,,,
+C065,Cerroja,Karrantza Harana/Valle de Carranza,METEOROLOGICAL,677,43.2112,-3.40713,"direction_sigma,humidity,max_speed,mean_direction,mean_speed,precipitation,pressure,speed_sigma,temperature",True,True,,,
+C066,Untzueta,Orozko,METEOROLOGICAL,764,43.1372,-2.9071,"direction_sigma,humidity,max_speed,mean_direction,mean_speed,speed_sigma,temperature",False,True,,,
+C069,Almike (Bermeo),Bermeo,METEOROLOGICAL,106,43.4137,-2.73229,"direction_sigma,humidity,irradiance,max_speed,mean_direction,mean_speed,precipitation,speed_sigma,temperature",True,True,ARRATZU,1.0,13.8
+C072,Orduña,Urduña/Orduña,METEOROLOGICAL,934,42.9837,-3.03726,"direction_sigma,humidity,max_speed,mean_direction,mean_speed,precipitation,speed_sigma,temperature",True,True,,,
+C073,Mallabia,Mallabia,METEOROLOGICAL,325,43.1926263,-2.5295246,"direction_sigma,humidity,max_speed,mean_direction,mean_speed,precipitation,speed_sigma,temperature",True,True,IURRETA,1.0,8.7
+C073,Mallabia,Mallabia,METEOROLOGICAL,325,43.1926263,-2.5295246,"direction_sigma,humidity,max_speed,mean_direction,mean_speed,precipitation,speed_sigma,temperature",True,True,MARKINA,0.0,8.8
+C075,Eitzaga,Zaldibar,METEOROLOGICAL,270,43.1761,-2.50096,,False,False,,,
+C087,Urduliz,Urduliz,METEOROLOGICAL,76,43.3841289,-2.9568635,"humidity,precipitation,temperature",True,False,,,
+C0B6,Berna,Iurreta,METEOROLOGICAL,95,43.1871,-2.67238,"humidity,precipitation,sheet_level_1,temperature",True,False,,,
+C0C6,Jarralta,Sopuerta,METEOROLOGICAL,171,43.2792301,-3.1687352,"humidity,precipitation,temperature",True,False,,,
+C0C7,Cueto,Trucios-Turtzioz,METEOROLOGICAL,285,43.2776135,-3.2742476,"humidity,precipitation,temperature",True,False,,,
+C0C8,Aulesti,Aulesti,METEOROLOGICAL,73,43.2985761,-2.5585943,"sheet_level_2,sheet_level_3",False,False,,,

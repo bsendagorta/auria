@@ -1,0 +1,21 @@
+ts,salidas_desde_8,salidas_anio,n_activas,ok,error
+2026-11-16T22:55:22+01:00,35,5732,2,1,
+2026-11-16T23:14:57+01:00,35,5732,1,1,
+2026-11-17T05:26:52+01:00,47,5732,3,1,
+2026-11-17T14:47:16+01:00,18,5804,2,1,
+2026-11-17T22:55:43+01:00,30,5804,3,1,
+2026-11-18T04:36:03+01:00,35,5804,1,1,
+2026-11-18T13:10:55+01:00,6,5814,0,1,
+2026-11-18T21:38:23+01:00,11,5816,1,1,
+2026-11-19T03:02:32+01:00,,,,0,"HTTPSConnectionPool(host='www.bizkaia.eus', port=443): Max retries exceeded with url: /es/bomberas-bomberos-bizkaia (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.bizkaia.eus', port=443) at 0x79bb3aef0950>, 'Connection to www.bizkaia.eus timed out. (connect timeout=30)'))"
+2026-11-19T11:10:06+01:00,,,,0,No se encontraron los contadores: la web puede haber cambiado
+2026-11-19T20:01:58+01:00,,,,0,bizkaia.eus pide verificación antibots (lectura automática bloqueada)
+2026-11-20T02:10:56+01:00,,,,0,bizkaia.eus pide verificación antibots (lectura automática bloqueada)
+2026-11-22T00:57:39+01:00,,,,0,bizkaia.eus pide verificación antibots (lectura automática bloqueada)
+2026-11-23T02:10:10+01:00,,,,0,bizkaia.eus pide verificación antibots (lectura automática bloqueada)
+2026-11-24T06:29:11+01:00,,,,0,bizkaia.eus pide verificación antibots (lectura automática bloqueada)
+2026-11-24T17:15:34+01:00,,,,0,bizkaia.eus pide verificación antibots (lectura automática bloqueada)
+2026-11-25T11:45:09+01:00,,,,0,"Page.wait_for_selector: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator(""ul[id$='_salidas']"") to be visible
+"

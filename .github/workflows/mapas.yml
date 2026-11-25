@@ -1,0 +1,21 @@
+# Límites municipales oficiales (Gobierno Vasco, 1:5.000) -> zonas de actuación de los parques para el mapa
+name: Mapas
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  mapas:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -q pandas numpy requests pyshp pyproj shapely tabulate holidays
+      - run: python -m auria.historico || true
+      - run: python -m auria.mapas
+      - run: |
+          git config user.name auria-bot; git config user.email auria-bot@users.noreply.github.com
+          git add datos/geo && git commit -qm "mapas: límites municipales 1:5.000 Gobierno Vasco" || exit 0
+          for i in 1 2 3 4 5; do git pull -q --rebase && git push -q && break; sleep 5; done

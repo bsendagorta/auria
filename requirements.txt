@@ -1,0 +1,17 @@
+pandas
+numpy
+scikit-learn
+lightgbm
+matplotlib
+requests
+pyshp
+pyproj
+shapely
+tabulate
+holidays
+PyJWT
+cryptography
+openpyxl
+scipy
+streamlit
+playwright

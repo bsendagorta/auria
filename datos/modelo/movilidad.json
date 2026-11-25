@@ -1,0 +1,196 @@
+{
+ "fecha": "2026-11-17",
+ "dias": 71,
+ "desde": "2024-01-10",
+ "hasta": "2025-06-11",
+ "top_aglomeraciones": [
+  {
+   "parque": "IURRETA",
+   "fecha": "2024-10-12",
+   "tipo_dia": "D",
+   "visitantes": 16599,
+   "indice_visitantes": 2.27,
+   "indice_locales": 1.58,
+   "fiesta_local": false
+  },
+  {
+   "parque": "ARRATZU",
+   "fecha": "2024-08-17",
+   "tipo_dia": "S",
+   "visitantes": 14318,
+   "indice_visitantes": 2.13,
+   "indice_locales": 0.96,
+   "fiesta_local": false
+  },
+  {
+   "parque": "ARRATZU",
+   "fecha": "2025-08-16",
+   "tipo_dia": "S",
+   "visitantes": 13249,
+   "indice_visitantes": 1.97,
+   "indice_locales": 0.95,
+   "fiesta_local": true
+  },
+  {
+   "parque": "ARRATZU",
+   "fecha": "2024-08-10",
+   "tipo_dia": "S",
+   "visitantes": 12807,
+   "indice_visitantes": 1.9,
+   "indice_locales": 1.03,
+   "fiesta_local": false
+  },
+  {
+   "parque": "BASAURI",
+   "fecha": "2024-10-12",
+   "tipo_dia": "D",
+   "visitantes": 25105,
+   "indice_visitantes": 1.83,
+   "indice_locales": 1.49,
+   "fiesta_local": false
+  },
+  {
+   "parque": "MARKINA",
+   "fecha": "2024-08-10",
+   "tipo_dia": "S",
+   "visitantes": 11624,
+   "indice_visitantes": 1.77,
+   "indice_locales": 1.1,
+   "fiesta_local": false
+  },
+  {
+   "parque": "ARRATZU",
+   "fecha": "2024-08-24",
+   "tipo_dia": "S",
+   "visitantes": 11602,
+   "indice_visitantes": 1.72,
+   "indice_locales": 0.91,
+   "fiesta_local": false
+  },
+  {
+   "parque": "ARRATZU",
+   "fecha": "2025-08-09",
+   "tipo_dia": "S",
+   "visitantes": 11430,
+   "indice_visitantes": 1.7,
+   "indice_locales": 1.04,
+   "fiesta_local": false
+  },
+  {
+   "parque": "MARKINA",
+   "fecha": "2024-08-17",
+   "tipo_dia": "S",
+   "visitantes": 11022,
+   "indice_visitantes": 1.68,
+   "indice_locales": 1.03,
+   "fiesta_local": true
+  },
+  {
+   "parque": "ARRATZU",
+   "fecha": "2024-08-03",
+   "tipo_dia": "S",
+   "visitantes": 10843,
+   "indice_visitantes": 1.61,
+   "indice_locales": 1,
+   "fiesta_local": false
+  },
+  {
+   "parque": "ARRATZU",
+   "fecha": "2024-08-20",
+   "tipo_dia": "LJ",
+   "visitantes": 12788,
+   "indice_visitantes": 1.61,
+   "indice_locales": 0.95,
+   "fiesta_local": false
+  },
+  {
+   "parque": "ARRATZU",
+   "fecha": "2024-08-22",
+   "tipo_dia": "LJ",
+   "visitantes": 12860,
+   "indice_visitantes": 1.61,
+   "indice_locales": 0.98,
+   "fiesta_local": false
+  },
+  {
+   "parque": "ARRATZU",
+   "fecha": "2025-08-14",
+   "tipo_dia": "LJ",
+   "visitantes": 12074,
+   "indice_visitantes": 1.52,
+   "indice_locales": 1.04,
+   "fiesta_local": false
+  },
+  {
+   "parque": "ARRATZU",
+   "fecha": "2024-08-21",
+   "tipo_dia": "LJ",
+   "visitantes": 12117,
+   "indice_visitantes": 1.52,
+   "indice_locales": 0.94,
+   "fiesta_local": false
+  },
+  {
+   "parque": "ARRATZU",
+   "fecha": "2024-08-19",
+   "tipo_dia": "LJ",
+   "visitantes": 12061,
+   "indice_visitantes": 1.51,
+   "indice_locales": 0.99,
+   "fiesta_local": false
+  }
+ ],
+ "fiestas_locales": {
+  "URIOSTE": {
+   "dias_fiesta": 3,
+   "visitantes_en_fiesta": 0.95,
+   "visitantes_resto": 1
+  },
+  "IURRETA": {
+   "dias_fiesta": 1,
+   "visitantes_en_fiesta": 1.11,
+   "visitantes_resto": 0.98
+  },
+  "BASAURI": {
+   "dias_fiesta": 3,
+   "visitantes_en_fiesta": 0.89,
+   "visitantes_resto": 1.01
+  },
+  "ARTAZA": {
+   "dias_fiesta": 2,
+   "visitantes_en_fiesta": 1.01,
+   "visitantes_resto": 1
+  },
+  "ARRATZU": {
+   "dias_fiesta": 2,
+   "visitantes_en_fiesta": 1.63,
+   "visitantes_resto": 1.01
+  },
+  "ZALLA": {
+   "dias_fiesta": 3,
+   "visitantes_en_fiesta": 1.05,
+   "visitantes_resto": 1
+  },
+  "MARKINA": {
+   "dias_fiesta": 2,
+   "visitantes_en_fiesta": 1.34,
+   "visitantes_resto": 0.9
+  },
+  "DERIO": {
+   "dias_fiesta": 2,
+   "visitantes_en_fiesta": 1.07,
+   "visitantes_resto": 0.99
+  }
+ },
+ "agosto_2024": {
+  "URIOSTE": 0.99,
+  "IURRETA": 0.85,
+  "BASAURI": 0.96,
+  "ARTAZA": 1.07,
+  "ARRATZU": 1.3,
+  "ZALLA": 1.02,
+  "MARKINA": 1.13,
+  "DERIO": 1.07
+ },
+ "nota": "Viajes que llegan a cada zona según datos anónimos de móviles (MITMS, estudios básicos v2). Muestra: un miércoles y un sábado por mes de 2024 a junio de 2025 y agosto de 2024 completo (los ficheros diarios posteriores a julio de 2025 casi no están publicados). Índice 2 = el doble de visitantes que un día parecido del mismo parque."
+}

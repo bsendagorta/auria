@@ -1,0 +1,1886 @@
+{
+ "anios": [
+  2021,
+  2022,
+  2023,
+  2024,
+  2025
+ ],
+ "anio_test": 2025,
+ "validacion": {
+  "ABEJAS_AVISPAS": {
+   "dev_ref": 205.0,
+   "dev_situaciones": 212.8,
+   "mejora_pct": -3.8,
+   "salidas_test": 977
+  },
+  "GAS_MMPP": {
+   "dev_ref": 122.8,
+   "dev_situaciones": 124.3,
+   "mejora_pct": -1.2,
+   "salidas_test": 216
+  },
+  "INCENDIO_FORESTAL_EXTERIOR": {
+   "dev_ref": 257.3,
+   "dev_situaciones": 263.5,
+   "mejora_pct": -2.4,
+   "salidas_test": 884
+  },
+  "INCENDIO_INDUSTRIAL": {
+   "dev_ref": 119.5,
+   "dev_situaciones": 119.4,
+   "mejora_pct": 0.0,
+   "salidas_test": 107
+  },
+  "INCENDIO_URBANO": {
+   "dev_ref": 146.1,
+   "dev_situaciones": 149.1,
+   "mejora_pct": -2.1,
+   "salidas_test": 711
+  },
+  "METEO_ASISTENCIA": {
+   "dev_ref": 576.2,
+   "dev_situaciones": 531.1,
+   "mejora_pct": 7.8,
+   "salidas_test": 725
+  },
+  "OTRAS_ASISTENCIAS": {
+   "dev_ref": 134.7,
+   "dev_situaciones": 133.6,
+   "mejora_pct": 0.8,
+   "salidas_test": 143
+  },
+  "RESCATE_SALVAMENTO": {
+   "dev_ref": 255.6,
+   "dev_situaciones": 256.6,
+   "mejora_pct": -0.4,
+   "salidas_test": 2053
+  },
+  "TRAFICO": {
+   "dev_ref": 223.3,
+   "dev_situaciones": 224.9,
+   "mejora_pct": -0.7,
+   "salidas_test": 444
+  }
+ },
+ "efectos": {
+  "ABEJAS_AVISPAS": {
+   "SUR_RACHEADO": {
+    "m": 0.75,
+    "lo": 0.18,
+    "hi": 1.33,
+    "z": -0.8,
+    "dias": 445
+   },
+   "NORTE_PERSISTENTE": {
+    "m": 0.89,
+    "lo": 0.25,
+    "hi": 1.52,
+    "z": -0.4,
+    "dias": 89
+   },
+   "GALERNA": {
+    "m": 1.19,
+    "lo": 0.59,
+    "hi": 1.79,
+    "z": 0.6,
+    "dias": 119
+   },
+   "BORRASCA": {
+    "m": 0.65,
+    "lo": 0.2,
+    "hi": 1.1,
+    "z": -1.5,
+    "dias": 1414
+   },
+   "VIENTO_FUERTE": {
+    "m": 0.69,
+    "lo": 0.1,
+    "hi": 1.28,
+    "z": -1.0,
+    "dias": 391
+   },
+   "LLUVIA_INTENSA": {
+    "m": 0.76,
+    "lo": 0.13,
+    "hi": 1.39,
+    "z": -0.7,
+    "dias": 29
+   },
+   "LLUVIA_PERSISTENTE": {
+    "m": 1.07,
+    "lo": 0.55,
+    "hi": 1.58,
+    "z": 0.2,
+    "dias": 460
+   },
+   "HELADA": {
+    "m": 0.83,
+    "lo": 0.18,
+    "hi": 1.47,
+    "z": -0.5,
+    "dias": 162
+   },
+   "NIEVE": {
+    "m": 1.0,
+    "lo": 0.36,
+    "hi": 1.65,
+    "z": 0.0,
+    "dias": 28
+   },
+   "CALOR": {
+    "m": 1.07,
+    "lo": 0.83,
+    "hi": 1.31,
+    "z": 0.6,
+    "dias": 1077
+   },
+   "SECO_PROLONGADO": {
+    "m": 1.04,
+    "lo": 0.59,
+    "hi": 1.5,
+    "z": 0.2,
+    "dias": 281
+   },
+   "MAR_GRUESO": {
+    "m": 0.91,
+    "lo": 0.28,
+    "hi": 1.54,
+    "z": -0.3,
+    "dias": 93
+   }
+  },
+  "GAS_MMPP": {
+   "SUR_RACHEADO": {
+    "m": 0.95,
+    "lo": 0.3,
+    "hi": 1.59,
+    "z": -0.2,
+    "dias": 445
+   },
+   "NORTE_PERSISTENTE": {
+    "m": 0.99,
+    "lo": 0.33,
+    "hi": 1.64,
+    "z": -0.0,
+    "dias": 89
+   },
+   "GALERNA": {
+    "m": 0.96,
+    "lo": 0.28,
+    "hi": 1.64,
+    "z": -0.1,
+    "dias": 119
+   },
+   "BORRASCA": {
+    "m": 1.02,
+    "lo": 0.47,
+    "hi": 1.57,
+    "z": 0.1,
+    "dias": 1414
+   },
+   "VIENTO_FUERTE": {
+    "m": 1.05,
+    "lo": 0.44,
+    "hi": 1.66,
+    "z": 0.2,
+    "dias": 391
+   },
+   "LLUVIA_INTENSA": {
+    "m": 0.99,
+    "lo": 0.3,
+    "hi": 1.67,
+    "z": -0.0,
+    "dias": 29
+   },
+   "LLUVIA_PERSISTENTE": {
+    "m": 0.81,
+    "lo": 0.22,
+    "hi": 1.4,
+    "z": -0.6,
+    "dias": 460
+   },
+   "HELADA": {
+    "m": 1.07,
+    "lo": 0.42,
+    "hi": 1.72,
+    "z": 0.2,
+    "dias": 162
+   },
+   "NIEVE": {
+    "m": 1.04,
+    "lo": 0.36,
+    "hi": 1.72,
+    "z": 0.1,
+    "dias": 28
+   },
+   "CALOR": {
+    "m": 1.09,
+    "lo": 0.62,
+    "hi": 1.57,
+    "z": 0.4,
+    "dias": 1077
+   },
+   "SECO_PROLONGADO": {
+    "m": 1.26,
+    "lo": 0.63,
+    "hi": 1.89,
+    "z": 0.8,
+    "dias": 281
+   },
+   "MAR_GRUESO": {
+    "m": 0.99,
+    "lo": 0.35,
+    "hi": 1.64,
+    "z": -0.0,
+    "dias": 93
+   }
+  },
+  "INCENDIO_FORESTAL_EXTERIOR": {
+   "SUR_RACHEADO": {
+    "m": 1.2,
+    "lo": 0.67,
+    "hi": 1.73,
+    "z": 0.7,
+    "dias": 445
+   },
+   "NORTE_PERSISTENTE": {
+    "m": 1.02,
+    "lo": 0.43,
+    "hi": 1.62,
+    "z": 0.1,
+    "dias": 89
+   },
+   "GALERNA": {
+    "m": 0.88,
+    "lo": 0.26,
+    "hi": 1.5,
+    "z": -0.4,
+    "dias": 119
+   },
+   "BORRASCA": {
+    "m": 0.83,
+    "lo": 0.43,
+    "hi": 1.23,
+    "z": -0.8,
+    "dias": 1414
+   },
+   "VIENTO_FUERTE": {
+    "m": 1.42,
+    "lo": 0.91,
+    "hi": 1.93,
+    "z": 1.6,
+    "dias": 391
+   },
+   "LLUVIA_INTENSA": {
+    "m": 0.81,
+    "lo": 0.17,
+    "hi": 1.45,
+    "z": -0.6,
+    "dias": 29
+   },
+   "LLUVIA_PERSISTENTE": {
+    "m": 0.46,
+    "lo": 0.1,
+    "hi": 0.93,
+    "z": -2.2,
+    "dias": 460
+   },
+   "HELADA": {
+    "m": 1.08,
+    "lo": 0.52,
+    "hi": 1.65,
+    "z": 0.3,
+    "dias": 162
+   },
+   "NIEVE": {
+    "m": 0.84,
+    "lo": 0.2,
+    "hi": 1.48,
+    "z": -0.5,
+    "dias": 28
+   },
+   "CALOR": {
+    "m": 1.16,
+    "lo": 0.87,
+    "hi": 1.45,
+    "z": 1.1,
+    "dias": 1077
+   },
+   "SECO_PROLONGADO": {
+    "m": 0.81,
+    "lo": 0.3,
+    "hi": 1.33,
+    "z": -0.7,
+    "dias": 281
+   },
+   "MAR_GRUESO": {
+    "m": 0.89,
+    "lo": 0.32,
+    "hi": 1.46,
+    "z": -0.4,
+    "dias": 93
+   }
+  },
+  "INCENDIO_INDUSTRIAL": {
+   "SUR_RACHEADO": {
+    "m": 0.97,
+    "lo": 0.27,
+    "hi": 1.67,
+    "z": -0.1,
+    "dias": 445
+   },
+   "NORTE_PERSISTENTE": {
+    "m": 1.14,
+    "lo": 0.43,
+    "hi": 1.86,
+    "z": 0.4,
+    "dias": 89
+   },
+   "GALERNA": {
+    "m": 1.05,
+    "lo": 0.33,
+    "hi": 1.77,
+    "z": 0.1,
+    "dias": 119
+   },
+   "BORRASCA": {
+    "m": 1.03,
+    "lo": 0.42,
+    "hi": 1.65,
+    "z": 0.1,
+    "dias": 1414
+   },
+   "VIENTO_FUERTE": {
+    "m": 0.97,
+    "lo": 0.28,
+    "hi": 1.66,
+    "z": -0.1,
+    "dias": 391
+   },
+   "LLUVIA_INTENSA": {
+    "m": 1.07,
+    "lo": 0.34,
+    "hi": 1.79,
+    "z": 0.2,
+    "dias": 29
+   },
+   "LLUVIA_PERSISTENTE": {
+    "m": 1.27,
+    "lo": 0.6,
+    "hi": 1.94,
+    "z": 0.8,
+    "dias": 460
+   },
+   "HELADA": {
+    "m": 1.01,
+    "lo": 0.31,
+    "hi": 1.71,
+    "z": 0.0,
+    "dias": 162
+   },
+   "NIEVE": {
+    "m": 1.06,
+    "lo": 0.34,
+    "hi": 1.79,
+    "z": 0.2,
+    "dias": 28
+   },
+   "CALOR": {
+    "m": 0.93,
+    "lo": 0.39,
+    "hi": 1.47,
+    "z": -0.2,
+    "dias": 1077
+   },
+   "SECO_PROLONGADO": {
+    "m": 1.15,
+    "lo": 0.49,
+    "hi": 1.8,
+    "z": 0.4,
+    "dias": 281
+   },
+   "MAR_GRUESO": {
+    "m": 0.94,
+    "lo": 0.22,
+    "hi": 1.65,
+    "z": -0.2,
+    "dias": 93
+   }
+  },
+  "INCENDIO_URBANO": {
+   "SUR_RACHEADO": {
+    "m": 0.99,
+    "lo": 0.48,
+    "hi": 1.5,
+    "z": -0.0,
+    "dias": 445
+   },
+   "NORTE_PERSISTENTE": {
+    "m": 0.96,
+    "lo": 0.39,
+    "hi": 1.54,
+    "z": -0.1,
+    "dias": 89
+   },
+   "GALERNA": {
+    "m": 1.21,
+    "lo": 0.61,
+    "hi": 1.81,
+    "z": 0.7,
+    "dias": 119
+   },
+   "BORRASCA": {
+    "m": 0.85,
+    "lo": 0.49,
+    "hi": 1.22,
+    "z": -0.8,
+    "dias": 1414
+   },
+   "VIENTO_FUERTE": {
+    "m": 0.72,
+    "lo": 0.25,
+    "hi": 1.18,
+    "z": -1.2,
+    "dias": 391
+   },
+   "LLUVIA_INTENSA": {
+    "m": 0.98,
+    "lo": 0.34,
+    "hi": 1.63,
+    "z": -0.0,
+    "dias": 29
+   },
+   "LLUVIA_PERSISTENTE": {
+    "m": 1.47,
+    "lo": 1.08,
+    "hi": 1.86,
+    "z": 2.4,
+    "dias": 460
+   },
+   "HELADA": {
+    "m": 1.15,
+    "lo": 0.61,
+    "hi": 1.69,
+    "z": 0.5,
+    "dias": 162
+   },
+   "NIEVE": {
+    "m": 1.04,
+    "lo": 0.41,
+    "hi": 1.67,
+    "z": 0.1,
+    "dias": 28
+   },
+   "CALOR": {
+    "m": 1.08,
+    "lo": 0.82,
+    "hi": 1.35,
+    "z": 0.6,
+    "dias": 1077
+   },
+   "SECO_PROLONGADO": {
+    "m": 1.25,
+    "lo": 0.77,
+    "hi": 1.73,
+    "z": 1.0,
+    "dias": 281
+   },
+   "MAR_GRUESO": {
+    "m": 1.04,
+    "lo": 0.5,
+    "hi": 1.58,
+    "z": 0.1,
+    "dias": 93
+   }
+  },
+  "METEO_ASISTENCIA": {
+   "SUR_RACHEADO": {
+    "m": 0.39,
+    "lo": 0.1,
+    "hi": 1.08,
+    "z": -1.7,
+    "dias": 445
+   },
+   "NORTE_PERSISTENTE": {
+    "m": 0.34,
+    "lo": 0.1,
+    "hi": 1.1,
+    "z": -1.7,
+    "dias": 89
+   },
+   "GALERNA": {
+    "m": 1.72,
+    "lo": 0.92,
+    "hi": 2.52,
+    "z": 1.8,
+    "dias": 119
+   },
+   "BORRASCA": {
+    "m": 2.79,
+    "lo": 2.28,
+    "hi": 3.3,
+    "z": 6.9,
+    "dias": 1414
+   },
+   "VIENTO_FUERTE": {
+    "m": 3.25,
+    "lo": 2.62,
+    "hi": 3.89,
+    "z": 6.9,
+    "dias": 391
+   },
+   "LLUVIA_INTENSA": {
+    "m": 1.09,
+    "lo": 0.23,
+    "hi": 1.95,
+    "z": 0.2,
+    "dias": 29
+   },
+   "LLUVIA_PERSISTENTE": {
+    "m": 0.4,
+    "lo": 0.1,
+    "hi": 0.9,
+    "z": -2.3,
+    "dias": 460
+   },
+   "HELADA": {
+    "m": 0.02,
+    "lo": 0.1,
+    "hi": 0.77,
+    "z": -2.5,
+    "dias": 162
+   },
+   "NIEVE": {
+    "m": 0.77,
+    "lo": 0.1,
+    "hi": 1.61,
+    "z": -0.5,
+    "dias": 28
+   },
+   "CALOR": {
+    "m": 2.17,
+    "lo": 1.81,
+    "hi": 2.53,
+    "z": 6.4,
+    "dias": 1077
+   },
+   "SECO_PROLONGADO": {
+    "m": 1.09,
+    "lo": 0.44,
+    "hi": 1.74,
+    "z": 0.3,
+    "dias": 281
+   },
+   "MAR_GRUESO": {
+    "m": 3.32,
+    "lo": 2.61,
+    "hi": 4.02,
+    "z": 6.4,
+    "dias": 93
+   }
+  },
+  "OTRAS_ASISTENCIAS": {
+   "SUR_RACHEADO": {
+    "m": 1.11,
+    "lo": 0.4,
+    "hi": 1.82,
+    "z": 0.3,
+    "dias": 445
+   },
+   "NORTE_PERSISTENTE": {
+    "m": 1.03,
+    "lo": 0.3,
+    "hi": 1.76,
+    "z": 0.1,
+    "dias": 89
+   },
+   "GALERNA": {
+    "m": 0.98,
+    "lo": 0.25,
+    "hi": 1.72,
+    "z": -0.0,
+    "dias": 119
+   },
+   "BORRASCA": {
+    "m": 1.49,
+    "lo": 0.87,
+    "hi": 2.1,
+    "z": 1.6,
+    "dias": 1414
+   },
+   "VIENTO_FUERTE": {
+    "m": 1.1,
+    "lo": 0.41,
+    "hi": 1.79,
+    "z": 0.3,
+    "dias": 391
+   },
+   "LLUVIA_INTENSA": {
+    "m": 0.98,
+    "lo": 0.23,
+    "hi": 1.72,
+    "z": -0.1,
+    "dias": 29
+   },
+   "LLUVIA_PERSISTENTE": {
+    "m": 0.86,
+    "lo": 0.19,
+    "hi": 1.53,
+    "z": -0.4,
+    "dias": 460
+   },
+   "HELADA": {
+    "m": 0.87,
+    "lo": 0.14,
+    "hi": 1.6,
+    "z": -0.3,
+    "dias": 162
+   },
+   "NIEVE": {
+    "m": 1.0,
+    "lo": 0.25,
+    "hi": 1.74,
+    "z": -0.0,
+    "dias": 28
+   },
+   "CALOR": {
+    "m": 1.22,
+    "lo": 0.71,
+    "hi": 1.72,
+    "z": 0.8,
+    "dias": 1077
+   },
+   "SECO_PROLONGADO": {
+    "m": 1.17,
+    "lo": 0.47,
+    "hi": 1.86,
+    "z": 0.5,
+    "dias": 281
+   },
+   "MAR_GRUESO": {
+    "m": 1.12,
+    "lo": 0.4,
+    "hi": 1.84,
+    "z": 0.3,
+    "dias": 93
+   }
+  },
+  "RESCATE_SALVAMENTO": {
+   "SUR_RACHEADO": {
+    "m": 0.75,
+    "lo": 0.3,
+    "hi": 1.21,
+    "z": -1.1,
+    "dias": 445
+   },
+   "NORTE_PERSISTENTE": {
+    "m": 1.2,
+    "lo": 0.68,
+    "hi": 1.72,
+    "z": 0.7,
+    "dias": 89
+   },
+   "GALERNA": {
+    "m": 1.04,
+    "lo": 0.49,
+    "hi": 1.59,
+    "z": 0.1,
+    "dias": 119
+   },
+   "BORRASCA": {
+    "m": 1.01,
+    "lo": 0.72,
+    "hi": 1.31,
+    "z": 0.1,
+    "dias": 1414
+   },
+   "VIENTO_FUERTE": {
+    "m": 0.79,
+    "lo": 0.39,
+    "hi": 1.2,
+    "z": -1.0,
+    "dias": 391
+   },
+   "LLUVIA_INTENSA": {
+    "m": 1.03,
+    "lo": 0.41,
+    "hi": 1.65,
+    "z": 0.1,
+    "dias": 29
+   },
+   "LLUVIA_PERSISTENTE": {
+    "m": 1.16,
+    "lo": 0.83,
+    "hi": 1.5,
+    "z": 1.0,
+    "dias": 460
+   },
+   "HELADA": {
+    "m": 0.76,
+    "lo": 0.26,
+    "hi": 1.25,
+    "z": -1.0,
+    "dias": 162
+   },
+   "NIEVE": {
+    "m": 0.93,
+    "lo": 0.32,
+    "hi": 1.55,
+    "z": -0.2,
+    "dias": 28
+   },
+   "CALOR": {
+    "m": 0.9,
+    "lo": 0.71,
+    "hi": 1.08,
+    "z": -1.1,
+    "dias": 1077
+   },
+   "SECO_PROLONGADO": {
+    "m": 1.05,
+    "lo": 0.64,
+    "hi": 1.46,
+    "z": 0.3,
+    "dias": 281
+   },
+   "MAR_GRUESO": {
+    "m": 1.03,
+    "lo": 0.55,
+    "hi": 1.51,
+    "z": 0.1,
+    "dias": 93
+   }
+  },
+  "TRAFICO": {
+   "SUR_RACHEADO": {
+    "m": 0.7,
+    "lo": 0.1,
+    "hi": 1.31,
+    "z": -1.0,
+    "dias": 445
+   },
+   "NORTE_PERSISTENTE": {
+    "m": 1.0,
+    "lo": 0.36,
+    "hi": 1.64,
+    "z": -0.0,
+    "dias": 89
+   },
+   "GALERNA": {
+    "m": 0.97,
+    "lo": 0.32,
+    "hi": 1.63,
+    "z": -0.1,
+    "dias": 119
+   },
+   "BORRASCA": {
+    "m": 1.1,
+    "lo": 0.6,
+    "hi": 1.6,
+    "z": 0.4,
+    "dias": 1414
+   },
+   "VIENTO_FUERTE": {
+    "m": 0.69,
+    "lo": 0.1,
+    "hi": 1.28,
+    "z": -1.0,
+    "dias": 391
+   },
+   "LLUVIA_INTENSA": {
+    "m": 0.99,
+    "lo": 0.33,
+    "hi": 1.66,
+    "z": -0.0,
+    "dias": 29
+   },
+   "LLUVIA_PERSISTENTE": {
+    "m": 1.27,
+    "lo": 0.69,
+    "hi": 1.84,
+    "z": 0.9,
+    "dias": 460
+   },
+   "HELADA": {
+    "m": 1.09,
+    "lo": 0.45,
+    "hi": 1.72,
+    "z": 0.3,
+    "dias": 162
+   },
+   "NIEVE": {
+    "m": 0.98,
+    "lo": 0.32,
+    "hi": 1.65,
+    "z": -0.1,
+    "dias": 28
+   },
+   "CALOR": {
+    "m": 0.92,
+    "lo": 0.5,
+    "hi": 1.34,
+    "z": -0.4,
+    "dias": 1077
+   },
+   "SECO_PROLONGADO": {
+    "m": 0.69,
+    "lo": 0.1,
+    "hi": 1.31,
+    "z": -1.0,
+    "dias": 281
+   },
+   "MAR_GRUESO": {
+    "m": 0.74,
+    "lo": 0.12,
+    "hi": 1.36,
+    "z": -0.8,
+    "dias": 93
+   }
+  }
+ },
+ "por_parque": {
+  "URIOSTE": {
+   "ABEJAS_AVISPAS": {
+    "SUR_RACHEADO": 0.78,
+    "NORTE_PERSISTENTE": 0.87,
+    "GALERNA": 1.14,
+    "BORRASCA": 0.63,
+    "VIENTO_FUERTE": 0.7,
+    "LLUVIA_INTENSA": 0.8,
+    "LLUVIA_PERSISTENTE": 1.07,
+    "HELADA": 0.86,
+    "NIEVE": 1.0,
+    "CALOR": 1.1,
+    "SECO_PROLONGADO": 0.98,
+    "MAR_GRUESO": 0.88
+   },
+   "GAS_MMPP": {
+    "SUR_RACHEADO": 0.96,
+    "NORTE_PERSISTENTE": 0.96,
+    "GALERNA": 0.95,
+    "BORRASCA": 1.03,
+    "VIENTO_FUERTE": 1.05,
+    "LLUVIA_INTENSA": 1.0,
+    "LLUVIA_PERSISTENTE": 0.82,
+    "HELADA": 1.06,
+    "NIEVE": 1.03,
+    "CALOR": 1.11,
+    "SECO_PROLONGADO": 1.23,
+    "MAR_GRUESO": 0.96
+   },
+   "INCENDIO_FORESTAL_EXTERIOR": {
+    "SUR_RACHEADO": 1.14,
+    "NORTE_PERSISTENTE": 0.97,
+    "GALERNA": 0.87,
+    "BORRASCA": 0.91,
+    "VIENTO_FUERTE": 1.34,
+    "LLUVIA_INTENSA": 0.83,
+    "LLUVIA_PERSISTENTE": 0.47,
+    "HELADA": 1.05,
+    "NIEVE": 0.87,
+    "CALOR": 1.12,
+    "SECO_PROLONGADO": 0.8,
+    "MAR_GRUESO": 0.85
+   },
+   "INCENDIO_INDUSTRIAL": {
+    "SUR_RACHEADO": 0.98,
+    "NORTE_PERSISTENTE": 1.16,
+    "GALERNA": 1.05,
+    "BORRASCA": 1.05,
+    "VIENTO_FUERTE": 0.96,
+    "LLUVIA_INTENSA": 1.06,
+    "LLUVIA_PERSISTENTE": 1.26,
+    "HELADA": 1.01,
+    "NIEVE": 1.05,
+    "CALOR": 0.85,
+    "SECO_PROLONGADO": 1.1,
+    "MAR_GRUESO": 0.94
+   },
+   "INCENDIO_URBANO": {
+    "SUR_RACHEADO": 0.99,
+    "NORTE_PERSISTENTE": 0.97,
+    "GALERNA": 1.2,
+    "BORRASCA": 0.88,
+    "VIENTO_FUERTE": 0.64,
+    "LLUVIA_INTENSA": 0.97,
+    "LLUVIA_PERSISTENTE": 1.42,
+    "HELADA": 1.13,
+    "NIEVE": 1.03,
+    "CALOR": 1.16,
+    "SECO_PROLONGADO": 1.29,
+    "MAR_GRUESO": 1.06
+   },
+   "METEO_ASISTENCIA": {
+    "SUR_RACHEADO": -0.04,
+    "NORTE_PERSISTENTE": -0.13,
+    "GALERNA": 2.06,
+    "BORRASCA": 3.44,
+    "VIENTO_FUERTE": 3.74,
+    "LLUVIA_INTENSA": 1.04,
+    "LLUVIA_PERSISTENTE": -0.13,
+    "HELADA": -0.13,
+    "NIEVE": 0.71,
+    "CALOR": 2.73,
+    "SECO_PROLONGADO": 1.15,
+    "MAR_GRUESO": 4.32
+   },
+   "OTRAS_ASISTENCIAS": {
+    "SUR_RACHEADO": 1.11,
+    "NORTE_PERSISTENTE": 1.02,
+    "GALERNA": 1.0,
+    "BORRASCA": 1.56,
+    "VIENTO_FUERTE": 1.08,
+    "LLUVIA_INTENSA": 0.98,
+    "LLUVIA_PERSISTENTE": 0.82,
+    "HELADA": 0.88,
+    "NIEVE": 1.0,
+    "CALOR": 1.18,
+    "SECO_PROLONGADO": 1.16,
+    "MAR_GRUESO": 1.12
+   },
+   "RESCATE_SALVAMENTO": {
+    "SUR_RACHEADO": 0.78,
+    "NORTE_PERSISTENTE": 1.2,
+    "GALERNA": 1.04,
+    "BORRASCA": 0.94,
+    "VIENTO_FUERTE": 0.87,
+    "LLUVIA_INTENSA": 1.01,
+    "LLUVIA_PERSISTENTE": 1.15,
+    "HELADA": 0.81,
+    "NIEVE": 0.95,
+    "CALOR": 0.81,
+    "SECO_PROLONGADO": 1.14,
+    "MAR_GRUESO": 1.02
+   },
+   "TRAFICO": {
+    "SUR_RACHEADO": 0.64,
+    "NORTE_PERSISTENTE": 1.0,
+    "GALERNA": 0.98,
+    "BORRASCA": 1.06,
+    "VIENTO_FUERTE": 0.65,
+    "LLUVIA_INTENSA": 0.97,
+    "LLUVIA_PERSISTENTE": 1.29,
+    "HELADA": 1.07,
+    "NIEVE": 0.98,
+    "CALOR": 1.03,
+    "SECO_PROLONGADO": 0.71,
+    "MAR_GRUESO": 0.74
+   }
+  },
+  "ARTAZA": {
+   "ABEJAS_AVISPAS": {
+    "SUR_RACHEADO": 0.78,
+    "NORTE_PERSISTENTE": 0.92,
+    "GALERNA": 1.17,
+    "BORRASCA": 0.7,
+    "VIENTO_FUERTE": 0.74,
+    "LLUVIA_INTENSA": 0.81,
+    "LLUVIA_PERSISTENTE": 1.11,
+    "HELADA": 0.85,
+    "NIEVE": 1.0,
+    "CALOR": 0.94,
+    "SECO_PROLONGADO": 1.11,
+    "MAR_GRUESO": 0.94
+   },
+   "GAS_MMPP": {
+    "SUR_RACHEADO": 0.93,
+    "NORTE_PERSISTENTE": 0.99,
+    "GALERNA": 0.96,
+    "BORRASCA": 1.0,
+    "VIENTO_FUERTE": 1.05,
+    "LLUVIA_INTENSA": 0.99,
+    "LLUVIA_PERSISTENTE": 0.86,
+    "HELADA": 1.06,
+    "NIEVE": 1.04,
+    "CALOR": 1.02,
+    "SECO_PROLONGADO": 1.22,
+    "MAR_GRUESO": 1.02
+   },
+   "INCENDIO_FORESTAL_EXTERIOR": {
+    "SUR_RACHEADO": 1.17,
+    "NORTE_PERSISTENTE": 1.05,
+    "GALERNA": 0.9,
+    "BORRASCA": 0.85,
+    "VIENTO_FUERTE": 1.4,
+    "LLUVIA_INTENSA": 0.84,
+    "LLUVIA_PERSISTENTE": 0.51,
+    "HELADA": 1.08,
+    "NIEVE": 0.84,
+    "CALOR": 1.13,
+    "SECO_PROLONGADO": 0.88,
+    "MAR_GRUESO": 0.92
+   },
+   "INCENDIO_INDUSTRIAL": {
+    "SUR_RACHEADO": 0.99,
+    "NORTE_PERSISTENTE": 1.14,
+    "GALERNA": 1.06,
+    "BORRASCA": 1.07,
+    "VIENTO_FUERTE": 0.98,
+    "LLUVIA_INTENSA": 1.07,
+    "LLUVIA_PERSISTENTE": 1.29,
+    "HELADA": 1.02,
+    "NIEVE": 1.07,
+    "CALOR": 0.96,
+    "SECO_PROLONGADO": 1.14,
+    "MAR_GRUESO": 0.92
+   },
+   "INCENDIO_URBANO": {
+    "SUR_RACHEADO": 1.02,
+    "NORTE_PERSISTENTE": 0.94,
+    "GALERNA": 1.16,
+    "BORRASCA": 0.86,
+    "VIENTO_FUERTE": 0.8,
+    "LLUVIA_INTENSA": 0.99,
+    "LLUVIA_PERSISTENTE": 1.31,
+    "HELADA": 1.14,
+    "NIEVE": 1.02,
+    "CALOR": 0.96,
+    "SECO_PROLONGADO": 1.2,
+    "MAR_GRUESO": 0.98
+   },
+   "METEO_ASISTENCIA": {
+    "SUR_RACHEADO": 0.31,
+    "NORTE_PERSISTENTE": 0.35,
+    "GALERNA": 1.9,
+    "BORRASCA": 3.02,
+    "VIENTO_FUERTE": 3.76,
+    "LLUVIA_INTENSA": 1.16,
+    "LLUVIA_PERSISTENTE": 0.16,
+    "HELADA": -0.03,
+    "NIEVE": 0.65,
+    "CALOR": 2.29,
+    "SECO_PROLONGADO": 1.25,
+    "MAR_GRUESO": 4.1
+   },
+   "OTRAS_ASISTENCIAS": {
+    "SUR_RACHEADO": 1.14,
+    "NORTE_PERSISTENTE": 1.03,
+    "GALERNA": 0.97,
+    "BORRASCA": 1.44,
+    "VIENTO_FUERTE": 1.1,
+    "LLUVIA_INTENSA": 0.98,
+    "LLUVIA_PERSISTENTE": 0.89,
+    "HELADA": 0.88,
+    "NIEVE": 1.0,
+    "CALOR": 1.16,
+    "SECO_PROLONGADO": 1.15,
+    "MAR_GRUESO": 1.11
+   },
+   "RESCATE_SALVAMENTO": {
+    "SUR_RACHEADO": 0.73,
+    "NORTE_PERSISTENTE": 1.14,
+    "GALERNA": 1.02,
+    "BORRASCA": 0.99,
+    "VIENTO_FUERTE": 0.72,
+    "LLUVIA_INTENSA": 1.02,
+    "LLUVIA_PERSISTENTE": 1.12,
+    "HELADA": 0.81,
+    "NIEVE": 0.93,
+    "CALOR": 0.96,
+    "SECO_PROLONGADO": 1.04,
+    "MAR_GRUESO": 1.04
+   },
+   "TRAFICO": {
+    "SUR_RACHEADO": 0.72,
+    "NORTE_PERSISTENTE": 1.0,
+    "GALERNA": 0.97,
+    "BORRASCA": 1.05,
+    "VIENTO_FUERTE": 0.69,
+    "LLUVIA_INTENSA": 0.99,
+    "LLUVIA_PERSISTENTE": 1.28,
+    "HELADA": 1.07,
+    "NIEVE": 0.98,
+    "CALOR": 0.82,
+    "SECO_PROLONGADO": 0.75,
+    "MAR_GRUESO": 0.74
+   }
+  },
+  "DERIO": {
+   "ABEJAS_AVISPAS": {
+    "SUR_RACHEADO": 0.77,
+    "NORTE_PERSISTENTE": 0.9,
+    "GALERNA": 1.17,
+    "BORRASCA": 0.68,
+    "VIENTO_FUERTE": 0.73,
+    "LLUVIA_INTENSA": 0.82,
+    "LLUVIA_PERSISTENTE": 1.11,
+    "HELADA": 0.85,
+    "NIEVE": 1.01,
+    "CALOR": 0.91,
+    "SECO_PROLONGADO": 0.96,
+    "MAR_GRUESO": 0.93
+   },
+   "GAS_MMPP": {
+    "SUR_RACHEADO": 0.95,
+    "NORTE_PERSISTENTE": 1.0,
+    "GALERNA": 0.96,
+    "BORRASCA": 0.99,
+    "VIENTO_FUERTE": 1.06,
+    "LLUVIA_INTENSA": 0.98,
+    "LLUVIA_PERSISTENTE": 0.81,
+    "HELADA": 1.05,
+    "NIEVE": 1.05,
+    "CALOR": 1.12,
+    "SECO_PROLONGADO": 1.3,
+    "MAR_GRUESO": 0.99
+   },
+   "INCENDIO_FORESTAL_EXTERIOR": {
+    "SUR_RACHEADO": 1.24,
+    "NORTE_PERSISTENTE": 1.05,
+    "GALERNA": 0.89,
+    "BORRASCA": 0.82,
+    "VIENTO_FUERTE": 1.39,
+    "LLUVIA_INTENSA": 0.84,
+    "LLUVIA_PERSISTENTE": 0.48,
+    "HELADA": 1.09,
+    "NIEVE": 0.84,
+    "CALOR": 1.26,
+    "SECO_PROLONGADO": 0.89,
+    "MAR_GRUESO": 0.91
+   },
+   "INCENDIO_INDUSTRIAL": {
+    "SUR_RACHEADO": 0.96,
+    "NORTE_PERSISTENTE": 1.14,
+    "GALERNA": 1.05,
+    "BORRASCA": 0.98,
+    "VIENTO_FUERTE": 0.98,
+    "LLUVIA_INTENSA": 1.06,
+    "LLUVIA_PERSISTENTE": 1.26,
+    "HELADA": 1.03,
+    "NIEVE": 1.07,
+    "CALOR": 1.0,
+    "SECO_PROLONGADO": 1.2,
+    "MAR_GRUESO": 0.94
+   },
+   "INCENDIO_URBANO": {
+    "SUR_RACHEADO": 0.97,
+    "NORTE_PERSISTENTE": 0.97,
+    "GALERNA": 1.17,
+    "BORRASCA": 0.84,
+    "VIENTO_FUERTE": 0.82,
+    "LLUVIA_INTENSA": 0.98,
+    "LLUVIA_PERSISTENTE": 1.44,
+    "HELADA": 1.13,
+    "NIEVE": 1.06,
+    "CALOR": 1.13,
+    "SECO_PROLONGADO": 1.26,
+    "MAR_GRUESO": 1.03
+   },
+   "METEO_ASISTENCIA": {
+    "SUR_RACHEADO": 0.32,
+    "NORTE_PERSISTENTE": 0.35,
+    "GALERNA": 1.78,
+    "BORRASCA": 2.92,
+    "VIENTO_FUERTE": 3.46,
+    "LLUVIA_INTENSA": 1.11,
+    "LLUVIA_PERSISTENTE": 0.4,
+    "HELADA": 0.06,
+    "NIEVE": 0.75,
+    "CALOR": 2.17,
+    "SECO_PROLONGADO": 1.08,
+    "MAR_GRUESO": 3.41
+   },
+   "OTRAS_ASISTENCIAS": {
+    "SUR_RACHEADO": 1.12,
+    "NORTE_PERSISTENTE": 1.03,
+    "GALERNA": 0.98,
+    "BORRASCA": 1.49,
+    "VIENTO_FUERTE": 1.1,
+    "LLUVIA_INTENSA": 0.98,
+    "LLUVIA_PERSISTENTE": 0.85,
+    "HELADA": 0.86,
+    "NIEVE": 1.0,
+    "CALOR": 1.2,
+    "SECO_PROLONGADO": 1.16,
+    "MAR_GRUESO": 1.12
+   },
+   "RESCATE_SALVAMENTO": {
+    "SUR_RACHEADO": 0.76,
+    "NORTE_PERSISTENTE": 1.17,
+    "GALERNA": 1.06,
+    "BORRASCA": 1.07,
+    "VIENTO_FUERTE": 0.84,
+    "LLUVIA_INTENSA": 1.03,
+    "LLUVIA_PERSISTENTE": 1.22,
+    "HELADA": 0.81,
+    "NIEVE": 0.95,
+    "CALOR": 0.8,
+    "SECO_PROLONGADO": 1.02,
+    "MAR_GRUESO": 1.03
+   },
+   "TRAFICO": {
+    "SUR_RACHEADO": 0.78,
+    "NORTE_PERSISTENTE": 1.01,
+    "GALERNA": 0.97,
+    "BORRASCA": 1.16,
+    "VIENTO_FUERTE": 0.79,
+    "LLUVIA_INTENSA": 1.0,
+    "LLUVIA_PERSISTENTE": 1.23,
+    "HELADA": 1.09,
+    "NIEVE": 0.98,
+    "CALOR": 0.95,
+    "SECO_PROLONGADO": 0.74,
+    "MAR_GRUESO": 0.79
+   }
+  },
+  "BASAURI": {
+   "ABEJAS_AVISPAS": {
+    "SUR_RACHEADO": 0.81,
+    "NORTE_PERSISTENTE": 0.9,
+    "GALERNA": 1.18,
+    "BORRASCA": 0.72,
+    "VIENTO_FUERTE": 0.72,
+    "LLUVIA_INTENSA": 0.8,
+    "LLUVIA_PERSISTENTE": 1.01,
+    "HELADA": 0.84,
+    "NIEVE": 1.0,
+    "CALOR": 1.18,
+    "SECO_PROLONGADO": 1.07,
+    "MAR_GRUESO": 0.92
+   },
+   "GAS_MMPP": {
+    "SUR_RACHEADO": 0.96,
+    "NORTE_PERSISTENTE": 0.99,
+    "GALERNA": 0.96,
+    "BORRASCA": 1.01,
+    "VIENTO_FUERTE": 1.04,
+    "LLUVIA_INTENSA": 0.98,
+    "LLUVIA_PERSISTENTE": 0.77,
+    "HELADA": 1.09,
+    "NIEVE": 1.04,
+    "CALOR": 1.1,
+    "SECO_PROLONGADO": 1.24,
+    "MAR_GRUESO": 0.99
+   },
+   "INCENDIO_FORESTAL_EXTERIOR": {
+    "SUR_RACHEADO": 1.16,
+    "NORTE_PERSISTENTE": 1.02,
+    "GALERNA": 0.91,
+    "BORRASCA": 0.84,
+    "VIENTO_FUERTE": 1.31,
+    "LLUVIA_INTENSA": 0.83,
+    "LLUVIA_PERSISTENTE": 0.49,
+    "HELADA": 1.08,
+    "NIEVE": 0.87,
+    "CALOR": 1.27,
+    "SECO_PROLONGADO": 0.87,
+    "MAR_GRUESO": 0.91
+   },
+   "INCENDIO_INDUSTRIAL": {
+    "SUR_RACHEADO": 0.97,
+    "NORTE_PERSISTENTE": 1.12,
+    "GALERNA": 1.05,
+    "BORRASCA": 1.02,
+    "VIENTO_FUERTE": 0.98,
+    "LLUVIA_INTENSA": 1.06,
+    "LLUVIA_PERSISTENTE": 1.27,
+    "HELADA": 1.0,
+    "NIEVE": 1.05,
+    "CALOR": 0.93,
+    "SECO_PROLONGADO": 1.14,
+    "MAR_GRUESO": 0.94
+   },
+   "INCENDIO_URBANO": {
+    "SUR_RACHEADO": 0.98,
+    "NORTE_PERSISTENTE": 0.98,
+    "GALERNA": 1.18,
+    "BORRASCA": 0.93,
+    "VIENTO_FUERTE": 0.77,
+    "LLUVIA_INTENSA": 1.01,
+    "LLUVIA_PERSISTENTE": 1.52,
+    "HELADA": 1.13,
+    "NIEVE": 1.03,
+    "CALOR": 1.0,
+    "SECO_PROLONGADO": 1.14,
+    "MAR_GRUESO": 1.03
+   },
+   "METEO_ASISTENCIA": {
+    "SUR_RACHEADO": 0.36,
+    "NORTE_PERSISTENTE": 0.36,
+    "GALERNA": 1.76,
+    "BORRASCA": 2.94,
+    "VIENTO_FUERTE": 3.53,
+    "LLUVIA_INTENSA": 1.1,
+    "LLUVIA_PERSISTENTE": 0.66,
+    "HELADA": 0.07,
+    "NIEVE": 0.76,
+    "CALOR": 2.3,
+    "SECO_PROLONGADO": 0.99,
+    "MAR_GRUESO": 3.4
+   },
+   "OTRAS_ASISTENCIAS": {
+    "SUR_RACHEADO": 1.1,
+    "NORTE_PERSISTENTE": 1.03,
+    "GALERNA": 0.97,
+    "BORRASCA": 1.4,
+    "VIENTO_FUERTE": 1.11,
+    "LLUVIA_INTENSA": 0.97,
+    "LLUVIA_PERSISTENTE": 0.9,
+    "HELADA": 0.88,
+    "NIEVE": 1.0,
+    "CALOR": 1.24,
+    "SECO_PROLONGADO": 1.17,
+    "MAR_GRUESO": 1.11
+   },
+   "RESCATE_SALVAMENTO": {
+    "SUR_RACHEADO": 0.77,
+    "NORTE_PERSISTENTE": 1.15,
+    "GALERNA": 1.01,
+    "BORRASCA": 1.04,
+    "VIENTO_FUERTE": 0.86,
+    "LLUVIA_INTENSA": 1.04,
+    "LLUVIA_PERSISTENTE": 1.17,
+    "HELADA": 0.72,
+    "NIEVE": 0.95,
+    "CALOR": 0.75,
+    "SECO_PROLONGADO": 0.87,
+    "MAR_GRUESO": 1.02
+   },
+   "TRAFICO": {
+    "SUR_RACHEADO": 0.75,
+    "NORTE_PERSISTENTE": 1.0,
+    "GALERNA": 0.99,
+    "BORRASCA": 1.09,
+    "VIENTO_FUERTE": 0.76,
+    "LLUVIA_INTENSA": 1.01,
+    "LLUVIA_PERSISTENTE": 1.24,
+    "HELADA": 1.06,
+    "NIEVE": 0.99,
+    "CALOR": 0.85,
+    "SECO_PROLONGADO": 0.68,
+    "MAR_GRUESO": 0.8
+   }
+  },
+  "IURRETA": {
+   "ABEJAS_AVISPAS": {
+    "SUR_RACHEADO": 0.8,
+    "NORTE_PERSISTENTE": 0.91,
+    "GALERNA": 1.17,
+    "BORRASCA": 0.72,
+    "VIENTO_FUERTE": 0.74,
+    "LLUVIA_INTENSA": 0.75,
+    "LLUVIA_PERSISTENTE": 0.96,
+    "HELADA": 0.85,
+    "NIEVE": 1.0,
+    "CALOR": 1.09,
+    "SECO_PROLONGADO": 1.01,
+    "MAR_GRUESO": 0.92
+   },
+   "GAS_MMPP": {
+    "SUR_RACHEADO": 0.96,
+    "NORTE_PERSISTENTE": 0.99,
+    "GALERNA": 0.97,
+    "BORRASCA": 1.04,
+    "VIENTO_FUERTE": 1.02,
+    "LLUVIA_INTENSA": 0.98,
+    "LLUVIA_PERSISTENTE": 0.81,
+    "HELADA": 1.07,
+    "NIEVE": 1.04,
+    "CALOR": 1.13,
+    "SECO_PROLONGADO": 1.24,
+    "MAR_GRUESO": 0.99
+   },
+   "INCENDIO_FORESTAL_EXTERIOR": {
+    "SUR_RACHEADO": 1.15,
+    "NORTE_PERSISTENTE": 1.02,
+    "GALERNA": 0.89,
+    "BORRASCA": 0.82,
+    "VIENTO_FUERTE": 1.46,
+    "LLUVIA_INTENSA": 0.82,
+    "LLUVIA_PERSISTENTE": 0.54,
+    "HELADA": 1.1,
+    "NIEVE": 0.87,
+    "CALOR": 1.08,
+    "SECO_PROLONGADO": 0.79,
+    "MAR_GRUESO": 0.91
+   },
+   "INCENDIO_INDUSTRIAL": {
+    "SUR_RACHEADO": 0.97,
+    "NORTE_PERSISTENTE": 1.13,
+    "GALERNA": 1.05,
+    "BORRASCA": 1.05,
+    "VIENTO_FUERTE": 0.97,
+    "LLUVIA_INTENSA": 1.07,
+    "LLUVIA_PERSISTENTE": 1.26,
+    "HELADA": 1.01,
+    "NIEVE": 1.06,
+    "CALOR": 0.96,
+    "SECO_PROLONGADO": 1.14,
+    "MAR_GRUESO": 0.94
+   },
+   "INCENDIO_URBANO": {
+    "SUR_RACHEADO": 1.0,
+    "NORTE_PERSISTENTE": 0.97,
+    "GALERNA": 1.17,
+    "BORRASCA": 0.97,
+    "VIENTO_FUERTE": 0.76,
+    "LLUVIA_INTENSA": 0.99,
+    "LLUVIA_PERSISTENTE": 1.44,
+    "HELADA": 1.11,
+    "NIEVE": 1.03,
+    "CALOR": 1.12,
+    "SECO_PROLONGADO": 1.28,
+    "MAR_GRUESO": 1.03
+   },
+   "METEO_ASISTENCIA": {
+    "SUR_RACHEADO": 0.4,
+    "NORTE_PERSISTENTE": 0.27,
+    "GALERNA": 1.84,
+    "BORRASCA": 3.11,
+    "VIENTO_FUERTE": 3.62,
+    "LLUVIA_INTENSA": 1.1,
+    "LLUVIA_PERSISTENTE": 0.56,
+    "HELADA": 0.01,
+    "NIEVE": 0.74,
+    "CALOR": 2.39,
+    "SECO_PROLONGADO": 1.12,
+    "MAR_GRUESO": 3.56
+   },
+   "OTRAS_ASISTENCIAS": {
+    "SUR_RACHEADO": 1.11,
+    "NORTE_PERSISTENTE": 1.03,
+    "GALERNA": 1.0,
+    "BORRASCA": 1.49,
+    "VIENTO_FUERTE": 1.09,
+    "LLUVIA_INTENSA": 0.98,
+    "LLUVIA_PERSISTENTE": 0.83,
+    "HELADA": 0.88,
+    "NIEVE": 1.0,
+    "CALOR": 1.23,
+    "SECO_PROLONGADO": 1.21,
+    "MAR_GRUESO": 1.12
+   },
+   "RESCATE_SALVAMENTO": {
+    "SUR_RACHEADO": 0.84,
+    "NORTE_PERSISTENTE": 1.16,
+    "GALERNA": 1.05,
+    "BORRASCA": 0.99,
+    "VIENTO_FUERTE": 0.77,
+    "LLUVIA_INTENSA": 1.01,
+    "LLUVIA_PERSISTENTE": 1.06,
+    "HELADA": 0.78,
+    "NIEVE": 0.95,
+    "CALOR": 1.13,
+    "SECO_PROLONGADO": 1.11,
+    "MAR_GRUESO": 1.03
+   },
+   "TRAFICO": {
+    "SUR_RACHEADO": 0.73,
+    "NORTE_PERSISTENTE": 1.0,
+    "GALERNA": 0.97,
+    "BORRASCA": 1.06,
+    "VIENTO_FUERTE": 0.76,
+    "LLUVIA_INTENSA": 0.99,
+    "LLUVIA_PERSISTENTE": 1.2,
+    "HELADA": 1.08,
+    "NIEVE": 0.98,
+    "CALOR": 1.01,
+    "SECO_PROLONGADO": 0.73,
+    "MAR_GRUESO": 0.78
+   }
+  },
+  "ARRATZU": {
+   "ABEJAS_AVISPAS": {
+    "SUR_RACHEADO": 0.8,
+    "NORTE_PERSISTENTE": 0.9,
+    "GALERNA": 1.16,
+    "BORRASCA": 0.7,
+    "VIENTO_FUERTE": 0.75,
+    "LLUVIA_INTENSA": 0.78,
+    "LLUVIA_PERSISTENTE": 1.04,
+    "HELADA": 0.85,
+    "NIEVE": 1.0,
+    "CALOR": 1.2,
+    "SECO_PROLONGADO": 1.11,
+    "MAR_GRUESO": 0.93
+   },
+   "GAS_MMPP": {
+    "SUR_RACHEADO": 0.94,
+    "NORTE_PERSISTENTE": 0.98,
+    "GALERNA": 0.97,
+    "BORRASCA": 1.0,
+    "VIENTO_FUERTE": 1.04,
+    "LLUVIA_INTENSA": 0.99,
+    "LLUVIA_PERSISTENTE": 0.86,
+    "HELADA": 1.07,
+    "NIEVE": 1.04,
+    "CALOR": 1.08,
+    "SECO_PROLONGADO": 1.25,
+    "MAR_GRUESO": 0.99
+   },
+   "INCENDIO_FORESTAL_EXTERIOR": {
+    "SUR_RACHEADO": 1.17,
+    "NORTE_PERSISTENTE": 1.01,
+    "GALERNA": 0.92,
+    "BORRASCA": 0.85,
+    "VIENTO_FUERTE": 1.33,
+    "LLUVIA_INTENSA": 0.86,
+    "LLUVIA_PERSISTENTE": 0.62,
+    "HELADA": 1.06,
+    "NIEVE": 0.87,
+    "CALOR": 1.05,
+    "SECO_PROLONGADO": 0.8,
+    "MAR_GRUESO": 0.9
+   },
+   "INCENDIO_INDUSTRIAL": {
+    "SUR_RACHEADO": 0.96,
+    "NORTE_PERSISTENTE": 1.16,
+    "GALERNA": 1.06,
+    "BORRASCA": 1.03,
+    "VIENTO_FUERTE": 0.95,
+    "LLUVIA_INTENSA": 1.08,
+    "LLUVIA_PERSISTENTE": 1.29,
+    "HELADA": 1.0,
+    "NIEVE": 1.07,
+    "CALOR": 0.92,
+    "SECO_PROLONGADO": 1.18,
+    "MAR_GRUESO": 0.93
+   },
+   "INCENDIO_URBANO": {
+    "SUR_RACHEADO": 0.95,
+    "NORTE_PERSISTENTE": 0.97,
+    "GALERNA": 1.18,
+    "BORRASCA": 0.75,
+    "VIENTO_FUERTE": 0.73,
+    "LLUVIA_INTENSA": 0.98,
+    "LLUVIA_PERSISTENTE": 1.37,
+    "HELADA": 1.11,
+    "NIEVE": 1.03,
+    "CALOR": 1.04,
+    "SECO_PROLONGADO": 1.23,
+    "MAR_GRUESO": 1.04
+   },
+   "METEO_ASISTENCIA": {
+    "SUR_RACHEADO": 0.39,
+    "NORTE_PERSISTENTE": 0.31,
+    "GALERNA": 1.75,
+    "BORRASCA": 2.96,
+    "VIENTO_FUERTE": 3.41,
+    "LLUVIA_INTENSA": 1.1,
+    "LLUVIA_PERSISTENTE": 0.47,
+    "HELADA": 0.06,
+    "NIEVE": 0.76,
+    "CALOR": 2.15,
+    "SECO_PROLONGADO": 1.08,
+    "MAR_GRUESO": 3.42
+   },
+   "OTRAS_ASISTENCIAS": {
+    "SUR_RACHEADO": 1.1,
+    "NORTE_PERSISTENTE": 1.03,
+    "GALERNA": 0.99,
+    "BORRASCA": 1.5,
+    "VIENTO_FUERTE": 1.1,
+    "LLUVIA_INTENSA": 0.97,
+    "LLUVIA_PERSISTENTE": 0.89,
+    "HELADA": 0.86,
+    "NIEVE": 1.0,
+    "CALOR": 1.21,
+    "SECO_PROLONGADO": 1.15,
+    "MAR_GRUESO": 1.12
+   },
+   "RESCATE_SALVAMENTO": {
+    "SUR_RACHEADO": 0.84,
+    "NORTE_PERSISTENTE": 1.16,
+    "GALERNA": 1.03,
+    "BORRASCA": 1.04,
+    "VIENTO_FUERTE": 0.83,
+    "LLUVIA_INTENSA": 1.04,
+    "LLUVIA_PERSISTENTE": 1.18,
+    "HELADA": 0.8,
+    "NIEVE": 0.95,
+    "CALOR": 0.89,
+    "SECO_PROLONGADO": 1.05,
+    "MAR_GRUESO": 1.03
+   },
+   "TRAFICO": {
+    "SUR_RACHEADO": 0.76,
+    "NORTE_PERSISTENTE": 1.0,
+    "GALERNA": 0.98,
+    "BORRASCA": 1.13,
+    "VIENTO_FUERTE": 0.72,
+    "LLUVIA_INTENSA": 0.98,
+    "LLUVIA_PERSISTENTE": 1.24,
+    "HELADA": 1.09,
+    "NIEVE": 0.98,
+    "CALOR": 0.94,
+    "SECO_PROLONGADO": 0.73,
+    "MAR_GRUESO": 0.76
+   }
+  },
+  "MARKINA": {
+   "ABEJAS_AVISPAS": {
+    "SUR_RACHEADO": 0.78,
+    "NORTE_PERSISTENTE": 0.91,
+    "GALERNA": 1.15,
+    "BORRASCA": 0.68,
+    "VIENTO_FUERTE": 0.74,
+    "LLUVIA_INTENSA": 0.81,
+    "LLUVIA_PERSISTENTE": 1.04,
+    "HELADA": 0.85,
+    "NIEVE": 1.0,
+    "CALOR": 1.07,
+    "SECO_PROLONGADO": 1.02,
+    "MAR_GRUESO": 0.93
+   },
+   "GAS_MMPP": {
+    "SUR_RACHEADO": 0.94,
+    "NORTE_PERSISTENTE": 0.98,
+    "GALERNA": 0.96,
+    "BORRASCA": 1.02,
+    "VIENTO_FUERTE": 1.04,
+    "LLUVIA_INTENSA": 0.99,
+    "LLUVIA_PERSISTENTE": 0.8,
+    "HELADA": 1.08,
+    "NIEVE": 1.04,
+    "CALOR": 1.09,
+    "SECO_PROLONGADO": 1.27,
+    "MAR_GRUESO": 0.97
+   },
+   "INCENDIO_FORESTAL_EXTERIOR": {
+    "SUR_RACHEADO": 1.16,
+    "NORTE_PERSISTENTE": 1.02,
+    "GALERNA": 0.9,
+    "BORRASCA": 0.85,
+    "VIENTO_FUERTE": 1.35,
+    "LLUVIA_INTENSA": 0.84,
+    "LLUVIA_PERSISTENTE": 0.58,
+    "HELADA": 1.07,
+    "NIEVE": 0.87,
+    "CALOR": 1.09,
+    "SECO_PROLONGADO": 0.87,
+    "MAR_GRUESO": 0.91
+   },
+   "INCENDIO_INDUSTRIAL": {
+    "SUR_RACHEADO": 0.95,
+    "NORTE_PERSISTENTE": 1.19,
+    "GALERNA": 1.06,
+    "BORRASCA": 1.03,
+    "VIENTO_FUERTE": 0.96,
+    "LLUVIA_INTENSA": 1.09,
+    "LLUVIA_PERSISTENTE": 1.32,
+    "HELADA": 1.01,
+    "NIEVE": 1.08,
+    "CALOR": 0.88,
+    "SECO_PROLONGADO": 1.17,
+    "MAR_GRUESO": 0.92
+   },
+   "INCENDIO_URBANO": {
+    "SUR_RACHEADO": 1.02,
+    "NORTE_PERSISTENTE": 0.97,
+    "GALERNA": 1.19,
+    "BORRASCA": 0.86,
+    "VIENTO_FUERTE": 0.76,
+    "LLUVIA_INTENSA": 0.99,
+    "LLUVIA_PERSISTENTE": 1.39,
+    "HELADA": 1.13,
+    "NIEVE": 1.03,
+    "CALOR": 1.03,
+    "SECO_PROLONGADO": 1.17,
+    "MAR_GRUESO": 1.04
+   },
+   "METEO_ASISTENCIA": {
+    "SUR_RACHEADO": 0.29,
+    "NORTE_PERSISTENTE": 0.29,
+    "GALERNA": 1.79,
+    "BORRASCA": 2.84,
+    "VIENTO_FUERTE": 3.43,
+    "LLUVIA_INTENSA": 1.09,
+    "LLUVIA_PERSISTENTE": 0.27,
+    "HELADA": 0.03,
+    "NIEVE": 0.75,
+    "CALOR": 2.2,
+    "SECO_PROLONGADO": 1.06,
+    "MAR_GRUESO": 3.57
+   },
+   "OTRAS_ASISTENCIAS": {
+    "SUR_RACHEADO": 1.1,
+    "NORTE_PERSISTENTE": 1.03,
+    "GALERNA": 0.99,
+    "BORRASCA": 1.55,
+    "VIENTO_FUERTE": 1.14,
+    "LLUVIA_INTENSA": 0.98,
+    "LLUVIA_PERSISTENTE": 0.84,
+    "HELADA": 0.86,
+    "NIEVE": 1.0,
+    "CALOR": 1.32,
+    "SECO_PROLONGADO": 1.19,
+    "MAR_GRUESO": 1.17
+   },
+   "RESCATE_SALVAMENTO": {
+    "SUR_RACHEADO": 0.79,
+    "NORTE_PERSISTENTE": 1.16,
+    "GALERNA": 1.04,
+    "BORRASCA": 0.99,
+    "VIENTO_FUERTE": 0.83,
+    "LLUVIA_INTENSA": 1.03,
+    "LLUVIA_PERSISTENTE": 1.12,
+    "HELADA": 0.8,
+    "NIEVE": 0.95,
+    "CALOR": 0.99,
+    "SECO_PROLONGADO": 1.04,
+    "MAR_GRUESO": 1.02
+   },
+   "TRAFICO": {
+    "SUR_RACHEADO": 0.74,
+    "NORTE_PERSISTENTE": 1.0,
+    "GALERNA": 0.97,
+    "BORRASCA": 1.1,
+    "VIENTO_FUERTE": 0.72,
+    "LLUVIA_INTENSA": 0.99,
+    "LLUVIA_PERSISTENTE": 1.22,
+    "HELADA": 1.08,
+    "NIEVE": 0.98,
+    "CALOR": 0.98,
+    "SECO_PROLONGADO": 0.73,
+    "MAR_GRUESO": 0.76
+   }
+  },
+  "ZALLA": {
+   "ABEJAS_AVISPAS": {
+    "SUR_RACHEADO": 0.77,
+    "NORTE_PERSISTENTE": 0.91,
+    "GALERNA": 1.17,
+    "BORRASCA": 0.72,
+    "VIENTO_FUERTE": 0.71,
+    "LLUVIA_INTENSA": 0.81,
+    "LLUVIA_PERSISTENTE": 1.09,
+    "HELADA": 0.85,
+    "NIEVE": 1.0,
+    "CALOR": 1.12,
+    "SECO_PROLONGADO": 1.04,
+    "MAR_GRUESO": 0.92
+   },
+   "GAS_MMPP": {
+    "SUR_RACHEADO": 0.94,
+    "NORTE_PERSISTENTE": 0.98,
+    "GALERNA": 0.94,
+    "BORRASCA": 1.04,
+    "VIENTO_FUERTE": 1.05,
+    "LLUVIA_INTENSA": 0.98,
+    "LLUVIA_PERSISTENTE": 0.77,
+    "HELADA": 1.11,
+    "NIEVE": 1.05,
+    "CALOR": 1.07,
+    "SECO_PROLONGADO": 1.3,
+    "MAR_GRUESO": 0.99
+   },
+   "INCENDIO_FORESTAL_EXTERIOR": {
+    "SUR_RACHEADO": 1.23,
+    "NORTE_PERSISTENTE": 1.02,
+    "GALERNA": 0.88,
+    "BORRASCA": 0.84,
+    "VIENTO_FUERTE": 1.3,
+    "LLUVIA_INTENSA": 0.83,
+    "LLUVIA_PERSISTENTE": 0.5,
+    "HELADA": 1.08,
+    "NIEVE": 0.87,
+    "CALOR": 1.13,
+    "SECO_PROLONGADO": 0.8,
+    "MAR_GRUESO": 0.91
+   },
+   "INCENDIO_INDUSTRIAL": {
+    "SUR_RACHEADO": 0.99,
+    "NORTE_PERSISTENTE": 1.17,
+    "GALERNA": 1.05,
+    "BORRASCA": 1.05,
+    "VIENTO_FUERTE": 0.97,
+    "LLUVIA_INTENSA": 1.08,
+    "LLUVIA_PERSISTENTE": 1.31,
+    "HELADA": 1.0,
+    "NIEVE": 1.07,
+    "CALOR": 0.94,
+    "SECO_PROLONGADO": 1.16,
+    "MAR_GRUESO": 0.93
+   },
+   "INCENDIO_URBANO": {
+    "SUR_RACHEADO": 1.0,
+    "NORTE_PERSISTENTE": 0.96,
+    "GALERNA": 1.18,
+    "BORRASCA": 0.87,
+    "VIENTO_FUERTE": 0.72,
+    "LLUVIA_INTENSA": 0.99,
+    "LLUVIA_PERSISTENTE": 1.43,
+    "HELADA": 1.19,
+    "NIEVE": 1.03,
+    "CALOR": 1.12,
+    "SECO_PROLONGADO": 1.22,
+    "MAR_GRUESO": 1.03
+   },
+   "METEO_ASISTENCIA": {
+    "SUR_RACHEADO": 0.27,
+    "NORTE_PERSISTENTE": 0.27,
+    "GALERNA": 1.83,
+    "BORRASCA": 3.13,
+    "VIENTO_FUERTE": 3.8,
+    "LLUVIA_INTENSA": 1.12,
+    "LLUVIA_PERSISTENTE": 0.36,
+    "HELADA": -0.03,
+    "NIEVE": 0.74,
+    "CALOR": 2.35,
+    "SECO_PROLONGADO": 1.03,
+    "MAR_GRUESO": 3.65
+   },
+   "OTRAS_ASISTENCIAS": {
+    "SUR_RACHEADO": 1.12,
+    "NORTE_PERSISTENTE": 1.03,
+    "GALERNA": 0.99,
+    "BORRASCA": 1.49,
+    "VIENTO_FUERTE": 1.11,
+    "LLUVIA_INTENSA": 0.97,
+    "LLUVIA_PERSISTENTE": 0.84,
+    "HELADA": 0.86,
+    "NIEVE": 1.0,
+    "CALOR": 1.25,
+    "SECO_PROLONGADO": 1.17,
+    "MAR_GRUESO": 1.12
+   },
+   "RESCATE_SALVAMENTO": {
+    "SUR_RACHEADO": 0.8,
+    "NORTE_PERSISTENTE": 1.15,
+    "GALERNA": 1.03,
+    "BORRASCA": 1.05,
+    "VIENTO_FUERTE": 0.86,
+    "LLUVIA_INTENSA": 1.01,
+    "LLUVIA_PERSISTENTE": 1.11,
+    "HELADA": 0.84,
+    "NIEVE": 0.95,
+    "CALOR": 1.0,
+    "SECO_PROLONGADO": 1.13,
+    "MAR_GRUESO": 1.03
+   },
+   "TRAFICO": {
+    "SUR_RACHEADO": 0.73,
+    "NORTE_PERSISTENTE": 1.0,
+    "GALERNA": 0.97,
+    "BORRASCA": 1.08,
+    "VIENTO_FUERTE": 0.7,
+    "LLUVIA_INTENSA": 0.99,
+    "LLUVIA_PERSISTENTE": 1.21,
+    "HELADA": 1.07,
+    "NIEVE": 0.98,
+    "CALOR": 0.88,
+    "SECO_PROLONGADO": 0.71,
+    "MAR_GRUESO": 0.77
+   }
+  }
+ },
+ "activo": {
+  "ABEJAS_AVISPAS": false,
+  "GAS_MMPP": false,
+  "INCENDIO_FORESTAL_EXTERIOR": false,
+  "INCENDIO_INDUSTRIAL": false,
+  "INCENDIO_URBANO": false,
+  "METEO_ASISTENCIA": true,
+  "OTRAS_ASISTENCIAS": true,
+  "RESCATE_SALVAMENTO": false,
+  "TRAFICO": false
+ },
+ "validacion_total": {
+  "dev_ref": 2040.5,
+  "dev_situaciones": 2015.3,
+  "mejora_pct": 1.2
+ },
+ "fecha": "2026-11-24",
+ "lectura": "m = salidas en un día con esa situación ÷ salidas en un día normal del mismo mes y parque. lo-hi = intervalo del 95 %. Solo se aplican en directo los tipos marcados como activos (los que mejoran la predicción del año de prueba)."
+}

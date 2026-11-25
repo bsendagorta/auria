@@ -1,0 +1,6 @@
+ts,id,tipo,ubicacion,municipio,familia,parque,operativa
+2026-11-19T09:34:07+01:00,2123333991084282317,Incendio matorrales,Lutxana,Erandio,INCENDIO_FORESTAL_EXTERIOR,ARTAZA,True
+2026-11-18T17:48:49+01:00,2123096098105421996,Saneado construcciones,Ramón y Cajal,Sestao,METEO_ASISTENCIA,URIOSTE,True
+2026-11-18T14:20:08+01:00,2123043579773739236,Aviso fuga de gas,Tarabide,Durango,GAS_MMPP,IURRETA,True
+2026-11-18T11:31:19+01:00,2123001094473126031,Saneado de construcciones,Bullón,Santurtzi,METEO_ASISTENCIA,URIOSTE,True
+2026-11-18T10:06:04+01:00,2122979641820360965,Saneado construcciones,Juanene,Erandio,METEO_ASISTENCIA,ARTAZA,True
