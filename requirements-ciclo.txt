@@ -15,3 +15,4 @@ openpyxl
 scipy
 streamlit
 playwright
+playwright-stealth
