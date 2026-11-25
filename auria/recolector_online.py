@@ -210,9 +210,11 @@ def descargar_html() -> str:
         page = context.new_page()
         
         try:
-            page.goto(config.URL_SALIDAS_ONLINE, timeout=60000, wait_until="networkidle")
+            # CAMBIO CLAVE: usamos domcontentloaded en lugar de networkidle
+            # para evitar timeouts por scripts de terceros bloqueados o colgados
+            page.goto(config.URL_SALIDAS_ONLINE, timeout=60000, wait_until="domcontentloaded")
             
-            # Esperar 5 segundos a que el JS cargue el contenido dinámico
+            # Esperar 5 segundos a que el JS de la web cargue el contenido dinámico
             page.wait_for_timeout(5000)
             
             html = page.content()
