@@ -15,7 +15,7 @@ C039,Deusto,Bilbao,METEOROLOGICAL,3,43.2834,-2.96791,,False,False,,,
 C03A,Zorrotza,Bilbao,METEOROLOGICAL,5,43.284979,-2.968458,"direction_sigma,humidity,irradiance,max_speed,mean_direction,mean_speed,precipitation,pressure,sheet_level_2,speed_sigma,temperature",True,True,ARTAZA,1.0,5.8
 C03A,Zorrotza,Bilbao,METEOROLOGICAL,5,43.284979,-2.968458,"direction_sigma,humidity,irradiance,max_speed,mean_direction,mean_speed,precipitation,pressure,sheet_level_2,speed_sigma,temperature",True,True,DERIO,0.0,6.9
 C03A,Zorrotza,Bilbao,METEOROLOGICAL,5,43.284979,-2.968458,"direction_sigma,humidity,irradiance,max_speed,mean_direction,mean_speed,precipitation,pressure,sheet_level_2,speed_sigma,temperature",True,True,BASAURI,1.0,8.6
-C042,Punta Galea,Getxo,METEOROLOGICAL,61,43.3752,-3.03608,"direction_sigma,humidity,irradiance,max_speed,mean_direction,mean_speed,pressure,speed_sigma,temperature",False,True,,,
+C042,Punta Galea,Getxo,METEOROLOGICAL,61,43.3752,-3.03608,"humidity,irradiance,max_speed,mean_speed,pressure,speed_sigma,temperature",False,True,,,
 C045,La Garbea,Balmaseda,METEOROLOGICAL,717,43.217,-3.19368,"direction_sigma,humidity,max_speed,mean_direction,mean_speed,precipitation,speed_sigma,temperature",True,True,,,
 C046,Oiz,Munitibar-Arbatzegi Gerrikaitz,METEOROLOGICAL,998,43.2304,-2.5954,"direction_sigma,humidity,max_speed,mean_direction,mean_speed,precipitation,speed_sigma,temperature",True,True,,,
 C053,Barazar,Zeanuri,METEOROLOGICAL,608,43.0703,-2.71048,,False,False,,,
