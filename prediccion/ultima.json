@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-26T10:34+01:00",
+ "generado": "2026-11-26T10:50+01:00",
  "horizonte_h": 6,
  "modelo": "base+reglas",
  "fuentes_ok": {
@@ -7,7 +7,7 @@
   "trafico": true
  },
  "bizkaia": {
-  "salidas_esperadas_6h": 5.1,
+  "salidas_esperadas_6h": 5.2,
   "normal_6h": 4.8,
   "contador": {
    "ts": "2026-11-19T09:14:44+01:00",
@@ -23,7 +23,7 @@
    "lon": -2.884,
    "salidas_esperadas_6h": 0.41,
    "normal_6h": 0.38,
-   "prob_6h": 0.334,
+   "prob_6h": 0.339,
    "ratio_max": 1.45,
    "nivel": "verde",
    "hora_pico": "2026-11-26T10:00:00",
@@ -78,16 +78,16 @@
      ],
      "situacion_txt": "☔ Lluvia persistente / suelo saturado",
      "meteo": {
-      "temp": 11.4,
-      "humedad": 80.0,
+      "temp": 11.6,
+      "humedad": 79.0,
       "lluvia_1h": 2.6,
       "lluvia_12h": 11.6,
       "racha_kmh": 26.3,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
-      "viento_kmh": 13.6,
-      "dir_viento": 287.0,
-      "factor_racha": 1.9,
+      "viento_kmh": 12.9,
+      "dir_viento": 288.0,
+      "factor_racha": 2.0,
       "dpresion_12h": 2.2,
       "lluvia_72h": 33.0,
       "ola_m": null
@@ -121,16 +121,16 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 12.3,
-      "humedad": 78.0,
+      "temp": 12.2,
+      "humedad": 80.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 10.3,
-      "racha_kmh": 31.0,
+      "racha_kmh": 34.2,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
-      "viento_kmh": 15.9,
-      "dir_viento": 275.0,
-      "factor_racha": 1.9,
+      "viento_kmh": 17.2,
+      "dir_viento": 281.0,
+      "factor_racha": 2.0,
       "dpresion_12h": 3.2,
       "lluvia_72h": 33.0,
       "ola_m": null
@@ -138,10 +138,10 @@
     },
     {
      "hora": "2026-11-26T12:00:00",
-     "lambda": 0.0619,
-     "prob": 0.06,
+     "lambda": 0.0655,
+     "prob": 0.063,
      "normal": 0.0619,
-     "ratio": 1.0,
+     "ratio": 1.06,
      "nivel": "verde",
      "familias_top": [
       {
@@ -151,31 +151,34 @@
       },
       {
        "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0141,
-       "mult": 1.0
+       "lambda": 0.0158,
+       "mult": 1.12
       },
       {
        "familia": "TRAFICO",
-       "lambda": 0.008,
-       "mult": 1.0
+       "lambda": 0.01,
+       "mult": 1.24
       }
      ],
-     "factores": [],
+     "factores": [
+      "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
+      "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)"
+     ],
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 12.7,
-      "humedad": 77.0,
-      "lluvia_1h": 0.0,
+      "temp": 12.3,
+      "humedad": 81.0,
+      "lluvia_1h": 0.2,
       "lluvia_12h": 6.9,
-      "racha_kmh": 28.4,
+      "racha_kmh": 29.9,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
-      "viento_kmh": 14.2,
-      "dir_viento": 277.0,
-      "factor_racha": 2.0,
+      "viento_kmh": 15.4,
+      "dir_viento": 281.0,
+      "factor_racha": 1.9,
       "dpresion_12h": 3.0,
-      "lluvia_72h": 33.0,
+      "lluvia_72h": 33.2,
       "ola_m": null
      }
     },
@@ -207,18 +210,18 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 13.2,
-      "humedad": 75.0,
+      "temp": 12.9,
+      "humedad": 76.0,
       "lluvia_1h": 0.0,
-      "lluvia_12h": 6.2,
-      "racha_kmh": 37.1,
+      "lluvia_12h": 6.4,
+      "racha_kmh": 32.0,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
-      "viento_kmh": 18.0,
-      "dir_viento": 286.0,
-      "factor_racha": 2.1,
+      "viento_kmh": 17.1,
+      "dir_viento": 285.0,
+      "factor_racha": 1.9,
       "dpresion_12h": 1.1,
-      "lluvia_72h": 33.0,
+      "lluvia_72h": 33.2,
       "ola_m": null
      }
     },
@@ -254,32 +257,32 @@
      "situacion_txt": "",
      "meteo": {
       "temp": 12.9,
-      "humedad": 75.0,
-      "lluvia_1h": 0.1,
-      "lluvia_12h": 5.3,
-      "racha_kmh": 34.4,
+      "humedad": 77.0,
+      "lluvia_1h": 0.3,
+      "lluvia_12h": 5.5,
+      "racha_kmh": 32.8,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
-      "viento_kmh": 15.9,
-      "dir_viento": 285.0,
-      "factor_racha": 2.2,
+      "viento_kmh": 14.5,
+      "dir_viento": 280.0,
+      "factor_racha": 2.3,
       "dpresion_12h": 1.2,
-      "lluvia_72h": 33.1,
+      "lluvia_72h": 33.5,
       "ola_m": null
      }
     },
     {
      "hora": "2026-11-26T15:00:00",
-     "lambda": 0.0635,
-     "prob": 0.062,
+     "lambda": 0.0671,
+     "prob": 0.065,
      "normal": 0.0635,
-     "ratio": 1.0,
+     "ratio": 1.06,
      "nivel": "verde",
      "familias_top": [
       {
        "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0145,
-       "mult": 1.0
+       "lambda": 0.0162,
+       "mult": 1.12
       },
       {
        "familia": "RESCATE_SALVAMENTO",
@@ -292,22 +295,25 @@
        "mult": 1.0
       }
      ],
-     "factores": [],
+     "factores": [
+      "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
+      "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)"
+     ],
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 13.1,
+      "temp": 13.0,
       "humedad": 75.0,
       "lluvia_1h": 0.1,
-      "lluvia_12h": 5.3,
-      "racha_kmh": 33.9,
+      "lluvia_12h": 5.7,
+      "racha_kmh": 33.7,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
-      "viento_kmh": 17.1,
-      "dir_viento": 289.0,
+      "viento_kmh": 17.0,
+      "dir_viento": 288.0,
       "factor_racha": 2.0,
       "dpresion_12h": 0.8,
-      "lluvia_72h": 33.2,
+      "lluvia_72h": 33.6,
       "ola_m": null
      }
     }
@@ -358,10 +364,10 @@
    "lon": -2.634,
    "salidas_esperadas_6h": 0.57,
    "normal_6h": 0.46,
-   "prob_6h": 0.432,
+   "prob_6h": 0.435,
    "ratio_max": 1.36,
    "nivel": "verde",
-   "hora_pico": "2026-11-26T13:00:00",
+   "hora_pico": "2026-11-26T12:00:00",
    "factores": [
     "☔ Lluvia persistente / suelo saturado",
     "Lluvia moderada (1-4 mm/h): accidentes ×1.5 (medido por horas)",
@@ -422,9 +428,9 @@
       "racha_kmh": 24.1,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
-      "viento_kmh": 10.0,
-      "dir_viento": 285.0,
-      "factor_racha": 2.4,
+      "viento_kmh": 12.1,
+      "dir_viento": 287.0,
+      "factor_racha": 2.0,
       "dpresion_12h": 2.5,
       "lluvia_72h": 67.5,
       "ola_m": null
@@ -466,33 +472,33 @@
      ],
      "situacion_txt": "☔ Lluvia persistente / suelo saturado",
      "meteo": {
-      "temp": 10.8,
-      "humedad": 86.0,
-      "lluvia_1h": 0.1,
+      "temp": 10.7,
+      "humedad": 87.0,
+      "lluvia_1h": 0.2,
       "lluvia_12h": 22.7,
-      "racha_kmh": 21.6,
+      "racha_kmh": 20.9,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
-      "viento_kmh": 9.7,
-      "dir_viento": 309.0,
-      "factor_racha": 2.2,
+      "viento_kmh": 9.1,
+      "dir_viento": 304.0,
+      "factor_racha": 2.3,
       "dpresion_12h": 2.8,
-      "lluvia_72h": 67.6,
+      "lluvia_72h": 67.7,
       "ola_m": null
      }
     },
     {
      "hora": "2026-11-26T12:00:00",
-     "lambda": 0.0954,
-     "prob": 0.091,
+     "lambda": 0.1007,
+     "prob": 0.096,
      "normal": 0.0741,
-     "ratio": 1.29,
+     "ratio": 1.36,
      "nivel": "verde",
      "familias_top": [
       {
        "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0308,
-       "mult": 2.56
+       "lambda": 0.0379,
+       "mult": 3.16
       },
       {
        "familia": "RESCATE_SALVAMENTO",
@@ -508,9 +514,8 @@
      "factores": [
       "☔ Lluvia persistente / suelo saturado",
       "Lluvia moderada",
-      "Lluvia moderada (1-4 mm/h): accidentes ×1.5 (medido por horas)",
       "Lluvia persistente: accidentes ×1.2 (medido por horas)",
-      "Lluvia moderada (1-4 mm/h): caídas de objetos/árboles ×1.6 (medido por horas)",
+      "Lluvia fuerte (≥4 mm/h): caídas de objetos/árboles ×2.0 (medido por horas)",
       "Lluvia persistente: caídas de objetos/árboles ×1.6 (medido por horas)"
      ],
      "situaciones": [
@@ -518,18 +523,18 @@
      ],
      "situacion_txt": "☔ Lluvia persistente / suelo saturado",
      "meteo": {
-      "temp": 10.7,
+      "temp": 10.4,
       "humedad": 92.0,
-      "lluvia_1h": 3.0,
-      "lluvia_12h": 17.7,
-      "racha_kmh": 24.1,
+      "lluvia_1h": 5.7,
+      "lluvia_12h": 17.8,
+      "racha_kmh": 28.8,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
-      "viento_kmh": 8.2,
-      "dir_viento": 331.0,
-      "factor_racha": 2.9,
+      "viento_kmh": 9.3,
+      "dir_viento": 332.0,
+      "factor_racha": 3.1,
       "dpresion_12h": 3.5,
-      "lluvia_72h": 70.6,
+      "lluvia_72h": 73.4,
       "ola_m": null
      }
     },
@@ -569,18 +574,18 @@
      ],
      "situacion_txt": "☔ Lluvia persistente / suelo saturado",
      "meteo": {
-      "temp": 10.9,
-      "humedad": 91.0,
-      "lluvia_1h": 5.8,
-      "lluvia_12h": 18.0,
-      "racha_kmh": 26.0,
+      "temp": 10.7,
+      "humedad": 90.0,
+      "lluvia_1h": 6.1,
+      "lluvia_12h": 20.8,
+      "racha_kmh": 19.4,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
-      "viento_kmh": 5.4,
-      "dir_viento": 314.0,
-      "factor_racha": 4.8,
+      "viento_kmh": 8.2,
+      "dir_viento": 311.0,
+      "factor_racha": 2.4,
       "dpresion_12h": 1.7,
-      "lluvia_72h": 76.3,
+      "lluvia_72h": 79.5,
       "ola_m": null
      }
     },
@@ -621,17 +626,17 @@
      "situacion_txt": "☔ Lluvia persistente / suelo saturado",
      "meteo": {
       "temp": 11.8,
-      "humedad": 87.0,
+      "humedad": 85.0,
       "lluvia_1h": 0.2,
-      "lluvia_12h": 21.4,
-      "racha_kmh": 27.7,
+      "lluvia_12h": 24.5,
+      "racha_kmh": 29.3,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
-      "viento_kmh": 12.5,
-      "dir_viento": 289.0,
-      "factor_racha": 2.2,
+      "viento_kmh": 12.7,
+      "dir_viento": 290.0,
+      "factor_racha": 2.3,
       "dpresion_12h": 1.4,
-      "lluvia_72h": 76.5,
+      "lluvia_72h": 79.8,
       "ola_m": null
      }
     },
@@ -671,18 +676,18 @@
      ],
      "situacion_txt": "☔ Lluvia persistente / suelo saturado",
      "meteo": {
-      "temp": 12.3,
-      "humedad": 83.0,
-      "lluvia_1h": 0.2,
-      "lluvia_12h": 20.4,
-      "racha_kmh": 35.8,
+      "temp": 11.8,
+      "humedad": 86.0,
+      "lluvia_1h": 0.3,
+      "lluvia_12h": 23.6,
+      "racha_kmh": 30.6,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
-      "viento_kmh": 12.1,
-      "dir_viento": 300.0,
-      "factor_racha": 3.0,
+      "viento_kmh": 10.5,
+      "dir_viento": 311.0,
+      "factor_racha": 2.9,
       "dpresion_12h": 0.6,
-      "lluvia_72h": 76.8,
+      "lluvia_72h": 80.1,
       "ola_m": null
      }
     }
@@ -692,8 +697,8 @@
      "carretera": "N-634",
      "km_ini": 80,
      "km_fin": 85,
-     "esperados": 0.0208,
-     "prob": 0.0206,
+     "esperados": 0.0212,
+     "prob": 0.021,
      "accidentes_anio": 9.857,
      "pct_graves": 7.2,
      "hora_pico": 10,
@@ -704,8 +709,8 @@
      "carretera": "N-634",
      "km_ini": 85,
      "km_fin": 90,
-     "esperados": 0.0181,
-     "prob": 0.0179,
+     "esperados": 0.0185,
+     "prob": 0.0183,
      "accidentes_anio": 8.571,
      "pct_graves": 15.0,
      "hora_pico": 14,
@@ -716,8 +721,8 @@
      "carretera": "N-634",
      "km_ini": 90,
      "km_fin": 95,
-     "esperados": 0.0124,
-     "prob": 0.0123,
+     "esperados": 0.0126,
+     "prob": 0.0125,
      "accidentes_anio": 5.857,
      "pct_graves": 22.0,
      "hora_pico": 20,
@@ -790,15 +795,15 @@
      ],
      "situacion_txt": "☔ Lluvia persistente / suelo saturado",
      "meteo": {
-      "temp": 10.2,
-      "humedad": 93.0,
+      "temp": 9.9,
+      "humedad": 95.0,
       "lluvia_1h": 3.3,
       "lluvia_12h": 29.8,
       "racha_kmh": 15.1,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
-      "viento_kmh": 3.1,
-      "dir_viento": 201.0,
+      "viento_kmh": 4.1,
+      "dir_viento": 218.0,
       "factor_racha": 3.0,
       "dpresion_12h": 3.1,
       "lluvia_72h": 95.0,
@@ -841,18 +846,18 @@
      ],
      "situacion_txt": "☔ Lluvia persistente / suelo saturado",
      "meteo": {
-      "temp": 11.1,
+      "temp": 10.9,
       "humedad": 89.0,
-      "lluvia_1h": 1.0,
+      "lluvia_1h": 1.8,
       "lluvia_12h": 30.4,
-      "racha_kmh": 14.4,
+      "racha_kmh": 18.4,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
-      "viento_kmh": 4.6,
-      "dir_viento": 231.0,
-      "factor_racha": 2.9,
+      "viento_kmh": 4.1,
+      "dir_viento": 285.0,
+      "factor_racha": 3.7,
       "dpresion_12h": 3.5,
-      "lluvia_72h": 96.0,
+      "lluvia_72h": 96.8,
       "ola_m": 1.7
      }
     },
@@ -892,18 +897,18 @@
      ],
      "situacion_txt": "☔ Lluvia persistente / suelo saturado",
      "meteo": {
-      "temp": 11.2,
+      "temp": 10.9,
       "humedad": 83.0,
       "lluvia_1h": 1.0,
-      "lluvia_12h": 29.0,
-      "racha_kmh": 20.5,
+      "lluvia_12h": 29.8,
+      "racha_kmh": 30.6,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
-      "viento_kmh": 5.2,
-      "dir_viento": 282.0,
-      "factor_racha": 3.9,
+      "viento_kmh": 10.5,
+      "dir_viento": 276.0,
+      "factor_racha": 2.9,
       "dpresion_12h": 3.7,
-      "lluvia_72h": 97.0,
+      "lluvia_72h": 97.8,
       "ola_m": 1.7
      }
     },
@@ -943,18 +948,18 @@
      ],
      "situacion_txt": "☔ Lluvia persistente / suelo saturado",
      "meteo": {
-      "temp": 12.1,
-      "humedad": 79.0,
-      "lluvia_1h": 0.3,
-      "lluvia_12h": 28.2,
-      "racha_kmh": 17.8,
+      "temp": 11.7,
+      "humedad": 78.0,
+      "lluvia_1h": 0.6,
+      "lluvia_12h": 29.0,
+      "racha_kmh": 14.8,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
-      "viento_kmh": 4.0,
-      "dir_viento": 269.0,
-      "factor_racha": 3.6,
+      "viento_kmh": 5.1,
+      "dir_viento": 262.0,
+      "factor_racha": 2.9,
       "dpresion_12h": 2.0,
-      "lluvia_72h": 97.3,
+      "lluvia_72h": 98.4,
       "ola_m": 1.6
      }
     },
@@ -984,7 +989,6 @@
      ],
      "factores": [
       "☔ Lluvia persistente / suelo saturado",
-      "Lluvia moderada",
       "Lluvia moderada (1-4 mm/h): accidentes ×1.5 (medido por horas)",
       "Lluvia persistente: accidentes ×1.2 (medido por horas)",
       "Lluvia moderada (1-4 mm/h): caídas de objetos/árboles ×1.6 (medido por horas)",
@@ -995,16 +999,16 @@
      ],
      "situacion_txt": "☔ Lluvia persistente / suelo saturado",
      "meteo": {
-      "temp": 11.9,
-      "humedad": 86.0,
-      "lluvia_1h": 3.5,
-      "lluvia_12h": 27.6,
-      "racha_kmh": 18.7,
+      "temp": 11.6,
+      "humedad": 87.0,
+      "lluvia_1h": 2.4,
+      "lluvia_12h": 28.6,
+      "racha_kmh": 17.6,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
-      "viento_kmh": 5.0,
-      "dir_viento": 321.0,
-      "factor_racha": 3.7,
+      "viento_kmh": 4.6,
+      "dir_viento": 265.0,
+      "factor_racha": 3.5,
       "dpresion_12h": 1.6,
       "lluvia_72h": 100.8,
       "ola_m": 1.6
@@ -1048,16 +1052,16 @@
      "meteo": {
       "temp": 12.3,
       "humedad": 85.0,
-      "lluvia_1h": 0.9,
+      "lluvia_1h": 0.2,
       "lluvia_12h": 28.3,
-      "racha_kmh": 23.4,
+      "racha_kmh": 22.0,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
-      "viento_kmh": 8.0,
-      "dir_viento": 296.0,
-      "factor_racha": 2.9,
+      "viento_kmh": 6.8,
+      "dir_viento": 309.0,
+      "factor_racha": 3.2,
       "dpresion_12h": 0.7,
-      "lluvia_72h": 101.8,
+      "lluvia_72h": 101.0,
       "ola_m": 1.5
      }
     }
@@ -1067,8 +1071,8 @@
      "carretera": "BI-633",
      "km_ini": 55,
      "km_fin": 60,
-     "esperados": 0.0073,
-     "prob": 0.0073,
+     "esperados": 0.0058,
+     "prob": 0.0058,
      "accidentes_anio": 3.571,
      "pct_graves": 12.0,
      "hora_pico": 12,
@@ -1079,8 +1083,8 @@
      "carretera": "BI-633",
      "km_ini": 35,
      "km_fin": 40,
-     "esperados": 0.0058,
-     "prob": 0.0058,
+     "esperados": 0.0046,
+     "prob": 0.0046,
      "accidentes_anio": 2.857,
      "pct_graves": 10.0,
      "hora_pico": 16,
@@ -1091,385 +1095,11 @@
      "carretera": "BI-633",
      "km_ini": 40,
      "km_fin": 45,
-     "esperados": 0.0058,
-     "prob": 0.0058,
+     "esperados": 0.0046,
+     "prob": 0.0046,
      "accidentes_anio": 2.857,
      "pct_graves": 20.0,
      "hora_pico": 16,
-     "imd": null,
-     "ip": null
-    }
-   ]
-  },
-  {
-   "id": "ARRATZU",
-   "nombre": "Arratzu",
-   "lat": 43.309,
-   "lon": -2.64,
-   "salidas_esperadas_6h": 0.43,
-   "normal_6h": 0.36,
-   "prob_6h": 0.349,
-   "ratio_max": 1.22,
-   "nivel": "verde",
-   "hora_pico": "2026-11-26T14:00:00",
-   "factores": [
-    "☔ Lluvia persistente / suelo saturado",
-    "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
-    "Lluvia persistente: accidentes ×1.2 (medido por horas)",
-    "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)",
-    "Lluvia persistente: caídas de objetos/árboles ×1.6 (medido por horas)",
-    "Lluvia moderada (1-4 mm/h): accidentes ×1.5 (medido por horas)",
-    "Lluvia moderada (1-4 mm/h): caídas de objetos/árboles ×1.6 (medido por horas)",
-    "Evento: Fiestas: Programa Fiestas Santa Catalina 2026 en Mundaka"
-   ],
-   "situacion_ahora": "☔ Lluvia persistente / suelo saturado",
-   "situaciones_6h": [
-    "LLUVIA_PERSISTENTE"
-   ],
-   "directo": {},
-   "horas": [
-    {
-     "hora": "2026-11-26T10:00:00",
-     "lambda": 0.075,
-     "prob": 0.072,
-     "normal": 0.0635,
-     "ratio": 1.18,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0211,
-       "mult": 1.76
-      },
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0197,
-       "mult": 1.0
-      },
-      {
-       "familia": "ABEJAS_AVISPAS",
-       "lambda": 0.0103,
-       "mult": 1.0
-      }
-     ],
-     "factores": [
-      "☔ Lluvia persistente / suelo saturado",
-      "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
-      "Lluvia persistente: accidentes ×1.2 (medido por horas)",
-      "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)",
-      "Lluvia persistente: caídas de objetos/árboles ×1.6 (medido por horas)"
-     ],
-     "situaciones": [
-      "LLUVIA_PERSISTENTE"
-     ],
-     "situacion_txt": "☔ Lluvia persistente / suelo saturado",
-     "meteo": {
-      "temp": 10.4,
-      "humedad": 92.0,
-      "lluvia_1h": 0.5,
-      "lluvia_12h": 12.5,
-      "racha_kmh": 18.0,
-      "viento_sur": false,
-      "dias_sin_lluvia": 0.0,
-      "viento_kmh": 6.4,
-      "dir_viento": 232.0,
-      "factor_racha": 2.8,
-      "dpresion_12h": 2.5,
-      "lluvia_72h": 61.0,
-      "ola_m": 1.6
-     }
-    },
-    {
-     "hora": "2026-11-26T11:00:00",
-     "lambda": 0.0757,
-     "prob": 0.073,
-     "normal": 0.064,
-     "ratio": 1.18,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0211,
-       "mult": 1.76
-      },
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0197,
-       "mult": 1.0
-      },
-      {
-       "familia": "ABEJAS_AVISPAS",
-       "lambda": 0.0103,
-       "mult": 1.0
-      }
-     ],
-     "factores": [
-      "☔ Lluvia persistente / suelo saturado",
-      "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
-      "Lluvia persistente: accidentes ×1.2 (medido por horas)",
-      "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)",
-      "Lluvia persistente: caídas de objetos/árboles ×1.6 (medido por horas)"
-     ],
-     "situaciones": [
-      "LLUVIA_PERSISTENTE"
-     ],
-     "situacion_txt": "☔ Lluvia persistente / suelo saturado",
-     "meteo": {
-      "temp": 11.0,
-      "humedad": 90.0,
-      "lluvia_1h": 0.4,
-      "lluvia_12h": 11.2,
-      "racha_kmh": 21.2,
-      "viento_sur": false,
-      "dias_sin_lluvia": 0.0,
-      "viento_kmh": 5.7,
-      "dir_viento": 288.0,
-      "factor_racha": 3.7,
-      "dpresion_12h": 3.3,
-      "lluvia_72h": 61.4,
-      "ola_m": 1.5
-     }
-    },
-    {
-     "hora": "2026-11-26T12:00:00",
-     "lambda": 0.0763,
-     "prob": 0.073,
-     "normal": 0.0644,
-     "ratio": 1.19,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0211,
-       "mult": 1.76
-      },
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0197,
-       "mult": 1.0
-      },
-      {
-       "familia": "ABEJAS_AVISPAS",
-       "lambda": 0.0103,
-       "mult": 1.0
-      }
-     ],
-     "factores": [
-      "☔ Lluvia persistente / suelo saturado",
-      "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
-      "Lluvia persistente: accidentes ×1.2 (medido por horas)",
-      "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)",
-      "Lluvia persistente: caídas de objetos/árboles ×1.6 (medido por horas)"
-     ],
-     "situaciones": [
-      "LLUVIA_PERSISTENTE"
-     ],
-     "situacion_txt": "☔ Lluvia persistente / suelo saturado",
-     "meteo": {
-      "temp": 11.3,
-      "humedad": 85.0,
-      "lluvia_1h": 0.8,
-      "lluvia_12h": 11.2,
-      "racha_kmh": 14.0,
-      "viento_sur": false,
-      "dias_sin_lluvia": 0.0,
-      "viento_kmh": 5.0,
-      "dir_viento": 249.0,
-      "factor_racha": 2.8,
-      "dpresion_12h": 3.6,
-      "lluvia_72h": 62.2,
-      "ola_m": 1.5
-     }
-    },
-    {
-     "hora": "2026-11-26T13:00:00",
-     "lambda": 0.077,
-     "prob": 0.074,
-     "normal": 0.0648,
-     "ratio": 1.19,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0211,
-       "mult": 1.76
-      },
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0197,
-       "mult": 1.0
-      },
-      {
-       "familia": "ABEJAS_AVISPAS",
-       "lambda": 0.0103,
-       "mult": 1.0
-      }
-     ],
-     "factores": [
-      "☔ Lluvia persistente / suelo saturado",
-      "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
-      "Lluvia persistente: accidentes ×1.2 (medido por horas)",
-      "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)",
-      "Lluvia persistente: caídas de objetos/árboles ×1.6 (medido por horas)"
-     ],
-     "situaciones": [
-      "LLUVIA_PERSISTENTE"
-     ],
-     "situacion_txt": "☔ Lluvia persistente / suelo saturado",
-     "meteo": {
-      "temp": 11.4,
-      "humedad": 91.0,
-      "lluvia_1h": 0.2,
-      "lluvia_12h": 11.7,
-      "racha_kmh": 17.7,
-      "viento_sur": false,
-      "dias_sin_lluvia": 0.0,
-      "viento_kmh": 8.2,
-      "dir_viento": 233.0,
-      "factor_racha": 2.2,
-      "dpresion_12h": 2.2,
-      "lluvia_72h": 62.5,
-      "ola_m": 1.4
-     }
-    },
-    {
-     "hora": "2026-11-26T14:00:00",
-     "lambda": 0.0655,
-     "prob": 0.063,
-     "normal": 0.0535,
-     "ratio": 1.22,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.014,
-       "mult": 1.0
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0125,
-       "mult": 2.56
-      },
-      {
-       "familia": "INCENDIO_FORESTAL_EXTERIOR",
-       "lambda": 0.0112,
-       "mult": 1.0
-      }
-     ],
-     "factores": [
-      "☔ Lluvia persistente / suelo saturado",
-      "Lluvia moderada (1-4 mm/h): accidentes ×1.5 (medido por horas)",
-      "Lluvia persistente: accidentes ×1.2 (medido por horas)",
-      "Lluvia moderada (1-4 mm/h): caídas de objetos/árboles ×1.6 (medido por horas)",
-      "Lluvia persistente: caídas de objetos/árboles ×1.6 (medido por horas)"
-     ],
-     "situaciones": [
-      "LLUVIA_PERSISTENTE"
-     ],
-     "situacion_txt": "☔ Lluvia persistente / suelo saturado",
-     "meteo": {
-      "temp": 12.5,
-      "humedad": 85.0,
-      "lluvia_1h": 1.2,
-      "lluvia_12h": 11.8,
-      "racha_kmh": 33.3,
-      "viento_sur": false,
-      "dias_sin_lluvia": 0.0,
-      "viento_kmh": 12.3,
-      "dir_viento": 272.0,
-      "factor_racha": 2.7,
-      "dpresion_12h": 1.6,
-      "lluvia_72h": 63.6,
-      "ola_m": 1.4
-     }
-    },
-    {
-     "hora": "2026-11-26T15:00:00",
-     "lambda": 0.0602,
-     "prob": 0.058,
-     "normal": 0.0529,
-     "ratio": 1.14,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.014,
-       "mult": 1.0
-      },
-      {
-       "familia": "INCENDIO_FORESTAL_EXTERIOR",
-       "lambda": 0.0112,
-       "mult": 1.0
-      },
-      {
-       "familia": "INCENDIO_URBANO",
-       "lambda": 0.0099,
-       "mult": 1.0
-      }
-     ],
-     "factores": [
-      "☔ Lluvia persistente / suelo saturado",
-      "Evento: Fiestas: Programa Fiestas Santa Catalina 2026 en Mundaka",
-      "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
-      "Lluvia persistente: accidentes ×1.2 (medido por horas)",
-      "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)",
-      "Lluvia persistente: caídas de objetos/árboles ×1.6 (medido por horas)"
-     ],
-     "situaciones": [
-      "LLUVIA_PERSISTENTE"
-     ],
-     "situacion_txt": "☔ Lluvia persistente / suelo saturado",
-     "meteo": {
-      "temp": 12.8,
-      "humedad": 84.0,
-      "lluvia_1h": 0.1,
-      "lluvia_12h": 12.0,
-      "racha_kmh": 28.0,
-      "viento_sur": false,
-      "dias_sin_lluvia": 0.0,
-      "viento_kmh": 10.8,
-      "dir_viento": 274.0,
-      "factor_racha": 2.6,
-      "dpresion_12h": 1.0,
-      "lluvia_72h": 63.8,
-      "ola_m": 1.3
-     }
-    }
-   ],
-   "carreteras": [
-    {
-     "carretera": "BI-635",
-     "km_ini": 30,
-     "km_fin": 35,
-     "esperados": 0.0093,
-     "prob": 0.0093,
-     "accidentes_anio": 7.857,
-     "pct_graves": 7.3,
-     "hora_pico": 15,
-     "imd": null,
-     "ip": null
-    },
-    {
-     "carretera": "BI-631",
-     "km_ini": 30,
-     "km_fin": 35,
-     "esperados": 0.0064,
-     "prob": 0.0064,
-     "accidentes_anio": 5.429,
-     "pct_graves": 10.5,
-     "hora_pico": 19,
-     "imd": null,
-     "ip": null
-    },
-    {
-     "carretera": "BI-2238",
-     "km_ini": 30,
-     "km_fin": 35,
-     "esperados": 0.0039,
-     "prob": 0.0039,
-     "accidentes_anio": 3.286,
-     "pct_graves": 0.0,
-     "hora_pico": 17,
      "imd": null,
      "ip": null
     }
@@ -1533,16 +1163,16 @@
      ],
      "situacion_txt": "☔ Lluvia persistente / suelo saturado",
      "meteo": {
-      "temp": 11.6,
-      "humedad": 80.0,
+      "temp": 11.8,
+      "humedad": 78.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 12.0,
       "racha_kmh": 34.6,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
-      "viento_kmh": 17.7,
+      "viento_kmh": 16.2,
       "dir_viento": 283.0,
-      "factor_racha": 1.9,
+      "factor_racha": 2.1,
       "dpresion_12h": 2.0,
       "lluvia_72h": 33.5,
       "ola_m": 2.1
@@ -1576,15 +1206,15 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 12.5,
-      "humedad": 76.0,
+      "temp": 12.0,
+      "humedad": 79.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 8.7,
-      "racha_kmh": 34.6,
+      "racha_kmh": 38.5,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
-      "viento_kmh": 17.9,
-      "dir_viento": 279.0,
+      "viento_kmh": 19.9,
+      "dir_viento": 276.0,
       "factor_racha": 1.9,
       "dpresion_12h": 3.0,
       "lluvia_72h": 33.5,
@@ -1619,16 +1249,16 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 12.8,
-      "humedad": 75.0,
+      "temp": 12.5,
+      "humedad": 78.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 4.6,
-      "racha_kmh": 38.2,
+      "racha_kmh": 33.5,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
-      "viento_kmh": 20.3,
-      "dir_viento": 282.0,
-      "factor_racha": 1.9,
+      "viento_kmh": 16.8,
+      "dir_viento": 280.0,
+      "factor_racha": 2.0,
       "dpresion_12h": 2.9,
       "lluvia_72h": 33.5,
       "ola_m": 1.9
@@ -1662,15 +1292,15 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 13.3,
-      "humedad": 75.0,
+      "temp": 13.1,
+      "humedad": 76.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 3.7,
-      "racha_kmh": 36.5,
+      "racha_kmh": 33.8,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
-      "viento_kmh": 19.6,
-      "dir_viento": 285.0,
+      "viento_kmh": 17.5,
+      "dir_viento": 278.0,
       "factor_racha": 1.9,
       "dpresion_12h": 1.3,
       "lluvia_72h": 33.5,
@@ -1712,11 +1342,11 @@
       "humedad": 72.0,
       "lluvia_1h": 0.1,
       "lluvia_12h": 2.4,
-      "racha_kmh": 34.2,
+      "racha_kmh": 32.4,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
-      "viento_kmh": 18.5,
-      "dir_viento": 283.0,
+      "viento_kmh": 17.3,
+      "dir_viento": 280.0,
       "factor_racha": 1.9,
       "dpresion_12h": 1.3,
       "lluvia_72h": 33.6,
@@ -1755,15 +1385,15 @@
      "situacion_txt": "",
      "meteo": {
       "temp": 12.9,
-      "humedad": 78.0,
-      "lluvia_1h": 0.2,
+      "humedad": 77.0,
+      "lluvia_1h": 0.1,
       "lluvia_12h": 2.4,
-      "racha_kmh": 35.5,
+      "racha_kmh": 34.7,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
-      "viento_kmh": 17.3,
-      "dir_viento": 283.0,
-      "factor_racha": 2.0,
+      "viento_kmh": 16.3,
+      "dir_viento": 279.0,
+      "factor_racha": 2.1,
       "dpresion_12h": 0.4,
       "lluvia_72h": 33.8,
       "ola_m": 1.6
@@ -1810,22 +1440,725 @@
    ]
   },
   {
+   "id": "ARRATZU",
+   "nombre": "Arratzu",
+   "lat": 43.309,
+   "lon": -2.64,
+   "salidas_esperadas_6h": 0.42,
+   "normal_6h": 0.36,
+   "prob_6h": 0.346,
+   "ratio_max": 1.19,
+   "nivel": "verde",
+   "hora_pico": "2026-11-26T12:00:00",
+   "factores": [
+    "☔ Lluvia persistente / suelo saturado",
+    "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
+    "Lluvia persistente: accidentes ×1.2 (medido por horas)",
+    "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)",
+    "Lluvia persistente: caídas de objetos/árboles ×1.6 (medido por horas)",
+    "Evento: Fiestas: Programa Fiestas Santa Catalina 2026 en Mundaka"
+   ],
+   "situacion_ahora": "☔ Lluvia persistente / suelo saturado",
+   "situaciones_6h": [
+    "LLUVIA_PERSISTENTE"
+   ],
+   "directo": {},
+   "horas": [
+    {
+     "hora": "2026-11-26T10:00:00",
+     "lambda": 0.075,
+     "prob": 0.072,
+     "normal": 0.0635,
+     "ratio": 1.18,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0211,
+       "mult": 1.76
+      },
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0197,
+       "mult": 1.0
+      },
+      {
+       "familia": "ABEJAS_AVISPAS",
+       "lambda": 0.0103,
+       "mult": 1.0
+      }
+     ],
+     "factores": [
+      "☔ Lluvia persistente / suelo saturado",
+      "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
+      "Lluvia persistente: accidentes ×1.2 (medido por horas)",
+      "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)",
+      "Lluvia persistente: caídas de objetos/árboles ×1.6 (medido por horas)"
+     ],
+     "situaciones": [
+      "LLUVIA_PERSISTENTE"
+     ],
+     "situacion_txt": "☔ Lluvia persistente / suelo saturado",
+     "meteo": {
+      "temp": 10.2,
+      "humedad": 94.0,
+      "lluvia_1h": 0.5,
+      "lluvia_12h": 12.5,
+      "racha_kmh": 18.0,
+      "viento_sur": false,
+      "dias_sin_lluvia": 0.0,
+      "viento_kmh": 6.5,
+      "dir_viento": 214.0,
+      "factor_racha": 2.8,
+      "dpresion_12h": 2.5,
+      "lluvia_72h": 61.0,
+      "ola_m": 1.6
+     }
+    },
+    {
+     "hora": "2026-11-26T11:00:00",
+     "lambda": 0.0757,
+     "prob": 0.073,
+     "normal": 0.064,
+     "ratio": 1.18,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0211,
+       "mult": 1.76
+      },
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0197,
+       "mult": 1.0
+      },
+      {
+       "familia": "ABEJAS_AVISPAS",
+       "lambda": 0.0103,
+       "mult": 1.0
+      }
+     ],
+     "factores": [
+      "☔ Lluvia persistente / suelo saturado",
+      "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
+      "Lluvia persistente: accidentes ×1.2 (medido por horas)",
+      "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)",
+      "Lluvia persistente: caídas de objetos/árboles ×1.6 (medido por horas)"
+     ],
+     "situaciones": [
+      "LLUVIA_PERSISTENTE"
+     ],
+     "situacion_txt": "☔ Lluvia persistente / suelo saturado",
+     "meteo": {
+      "temp": 11.0,
+      "humedad": 86.0,
+      "lluvia_1h": 0.8,
+      "lluvia_12h": 11.2,
+      "racha_kmh": 17.6,
+      "viento_sur": false,
+      "dias_sin_lluvia": 0.0,
+      "viento_kmh": 5.8,
+      "dir_viento": 330.0,
+      "factor_racha": 3.0,
+      "dpresion_12h": 3.3,
+      "lluvia_72h": 61.8,
+      "ola_m": 1.5
+     }
+    },
+    {
+     "hora": "2026-11-26T12:00:00",
+     "lambda": 0.0763,
+     "prob": 0.073,
+     "normal": 0.0644,
+     "ratio": 1.19,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0211,
+       "mult": 1.76
+      },
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0197,
+       "mult": 1.0
+      },
+      {
+       "familia": "ABEJAS_AVISPAS",
+       "lambda": 0.0103,
+       "mult": 1.0
+      }
+     ],
+     "factores": [
+      "☔ Lluvia persistente / suelo saturado",
+      "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
+      "Lluvia persistente: accidentes ×1.2 (medido por horas)",
+      "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)",
+      "Lluvia persistente: caídas de objetos/árboles ×1.6 (medido por horas)"
+     ],
+     "situaciones": [
+      "LLUVIA_PERSISTENTE"
+     ],
+     "situacion_txt": "☔ Lluvia persistente / suelo saturado",
+     "meteo": {
+      "temp": 11.2,
+      "humedad": 84.0,
+      "lluvia_1h": 0.8,
+      "lluvia_12h": 11.6,
+      "racha_kmh": 18.0,
+      "viento_sur": false,
+      "dias_sin_lluvia": 0.0,
+      "viento_kmh": 3.9,
+      "dir_viento": 248.0,
+      "factor_racha": 3.6,
+      "dpresion_12h": 3.6,
+      "lluvia_72h": 62.6,
+      "ola_m": 1.5
+     }
+    },
+    {
+     "hora": "2026-11-26T13:00:00",
+     "lambda": 0.077,
+     "prob": 0.074,
+     "normal": 0.0648,
+     "ratio": 1.19,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0211,
+       "mult": 1.76
+      },
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0197,
+       "mult": 1.0
+      },
+      {
+       "familia": "ABEJAS_AVISPAS",
+       "lambda": 0.0103,
+       "mult": 1.0
+      }
+     ],
+     "factores": [
+      "☔ Lluvia persistente / suelo saturado",
+      "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
+      "Lluvia persistente: accidentes ×1.2 (medido por horas)",
+      "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)",
+      "Lluvia persistente: caídas de objetos/árboles ×1.6 (medido por horas)"
+     ],
+     "situaciones": [
+      "LLUVIA_PERSISTENTE"
+     ],
+     "situacion_txt": "☔ Lluvia persistente / suelo saturado",
+     "meteo": {
+      "temp": 10.7,
+      "humedad": 92.0,
+      "lluvia_1h": 0.7,
+      "lluvia_12h": 12.1,
+      "racha_kmh": 19.8,
+      "viento_sur": false,
+      "dias_sin_lluvia": 0.0,
+      "viento_kmh": 6.7,
+      "dir_viento": 254.0,
+      "factor_racha": 3.0,
+      "dpresion_12h": 2.2,
+      "lluvia_72h": 63.3,
+      "ola_m": 1.4
+     }
+    },
+    {
+     "hora": "2026-11-26T14:00:00",
+     "lambda": 0.06,
+     "prob": 0.058,
+     "normal": 0.0535,
+     "ratio": 1.12,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.014,
+       "mult": 1.0
+      },
+      {
+       "familia": "INCENDIO_FORESTAL_EXTERIOR",
+       "lambda": 0.0112,
+       "mult": 1.0
+      },
+      {
+       "familia": "INCENDIO_URBANO",
+       "lambda": 0.0099,
+       "mult": 1.0
+      }
+     ],
+     "factores": [
+      "☔ Lluvia persistente / suelo saturado",
+      "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
+      "Lluvia persistente: accidentes ×1.2 (medido por horas)",
+      "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)",
+      "Lluvia persistente: caídas de objetos/árboles ×1.6 (medido por horas)"
+     ],
+     "situaciones": [
+      "LLUVIA_PERSISTENTE"
+     ],
+     "situacion_txt": "☔ Lluvia persistente / suelo saturado",
+     "meteo": {
+      "temp": 12.1,
+      "humedad": 86.0,
+      "lluvia_1h": 0.4,
+      "lluvia_12h": 12.7,
+      "racha_kmh": 32.3,
+      "viento_sur": false,
+      "dias_sin_lluvia": 0.0,
+      "viento_kmh": 12.1,
+      "dir_viento": 282.0,
+      "factor_racha": 2.7,
+      "dpresion_12h": 1.6,
+      "lluvia_72h": 63.7,
+      "ola_m": 1.4
+     }
+    },
+    {
+     "hora": "2026-11-26T15:00:00",
+     "lambda": 0.0602,
+     "prob": 0.058,
+     "normal": 0.0529,
+     "ratio": 1.14,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.014,
+       "mult": 1.0
+      },
+      {
+       "familia": "INCENDIO_FORESTAL_EXTERIOR",
+       "lambda": 0.0112,
+       "mult": 1.0
+      },
+      {
+       "familia": "INCENDIO_URBANO",
+       "lambda": 0.0099,
+       "mult": 1.0
+      }
+     ],
+     "factores": [
+      "☔ Lluvia persistente / suelo saturado",
+      "Evento: Fiestas: Programa Fiestas Santa Catalina 2026 en Mundaka",
+      "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
+      "Lluvia persistente: accidentes ×1.2 (medido por horas)",
+      "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)",
+      "Lluvia persistente: caídas de objetos/árboles ×1.6 (medido por horas)"
+     ],
+     "situaciones": [
+      "LLUVIA_PERSISTENTE"
+     ],
+     "situacion_txt": "☔ Lluvia persistente / suelo saturado",
+     "meteo": {
+      "temp": 12.6,
+      "humedad": 85.0,
+      "lluvia_1h": 0.1,
+      "lluvia_12h": 12.1,
+      "racha_kmh": 28.6,
+      "viento_sur": false,
+      "dias_sin_lluvia": 0.0,
+      "viento_kmh": 10.1,
+      "dir_viento": 272.0,
+      "factor_racha": 2.8,
+      "dpresion_12h": 1.0,
+      "lluvia_72h": 63.8,
+      "ola_m": 1.3
+     }
+    }
+   ],
+   "carreteras": [
+    {
+     "carretera": "BI-635",
+     "km_ini": 30,
+     "km_fin": 35,
+     "esperados": 0.0096,
+     "prob": 0.0096,
+     "accidentes_anio": 7.857,
+     "pct_graves": 7.3,
+     "hora_pico": 15,
+     "imd": null,
+     "ip": null
+    },
+    {
+     "carretera": "BI-631",
+     "km_ini": 30,
+     "km_fin": 35,
+     "esperados": 0.0066,
+     "prob": 0.0066,
+     "accidentes_anio": 5.429,
+     "pct_graves": 10.5,
+     "hora_pico": 19,
+     "imd": null,
+     "ip": null
+    },
+    {
+     "carretera": "BI-2238",
+     "km_ini": 30,
+     "km_fin": 35,
+     "esperados": 0.004,
+     "prob": 0.004,
+     "accidentes_anio": 3.286,
+     "pct_graves": 0.0,
+     "hora_pico": 17,
+     "imd": null,
+     "ip": null
+    }
+   ]
+  },
+  {
+   "id": "URIOSTE",
+   "nombre": "Urioste (Ortuella)",
+   "lat": 43.3075,
+   "lon": -3.051,
+   "salidas_esperadas_6h": 1.6,
+   "normal_6h": 1.53,
+   "prob_6h": 0.798,
+   "ratio_max": 1.18,
+   "nivel": "verde",
+   "hora_pico": "2026-11-26T11:00:00",
+   "factores": [
+    "Lluvia moderada (1-4 mm/h): accidentes ×1.5 (medido por horas)",
+    "Lluvia moderada (1-4 mm/h): caídas de objetos/árboles ×1.6 (medido por horas)",
+    "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
+    "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)",
+    "Evento: Festival: Programa Festival Internacional de Títeres de Sestao 2026"
+   ],
+   "situacion_ahora": "",
+   "situaciones_6h": [],
+   "directo": {},
+   "horas": [
+    {
+     "hora": "2026-11-26T10:00:00",
+     "lambda": 0.2638,
+     "prob": 0.232,
+     "normal": 0.2638,
+     "ratio": 1.0,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0919,
+       "mult": 1.0
+      },
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0672,
+       "mult": 1.0
+      },
+      {
+       "familia": "INCENDIO_URBANO",
+       "lambda": 0.0313,
+       "mult": 1.0
+      }
+     ],
+     "factores": [],
+     "situaciones": [],
+     "situacion_txt": "",
+     "meteo": {
+      "temp": 11.7,
+      "humedad": 79.0,
+      "lluvia_1h": 0.0,
+      "lluvia_12h": 11.6,
+      "racha_kmh": 37.8,
+      "viento_sur": false,
+      "dias_sin_lluvia": 0.0,
+      "viento_kmh": 18.1,
+      "dir_viento": 265.0,
+      "factor_racha": 2.1,
+      "dpresion_12h": 2.3,
+      "lluvia_72h": 25.3,
+      "ola_m": 2.0
+     }
+    },
+    {
+     "hora": "2026-11-26T11:00:00",
+     "lambda": 0.3114,
+     "prob": 0.268,
+     "normal": 0.2646,
+     "ratio": 1.18,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.1095,
+       "mult": 1.63
+      },
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0919,
+       "mult": 1.0
+      },
+      {
+       "familia": "INCENDIO_URBANO",
+       "lambda": 0.0313,
+       "mult": 1.0
+      }
+     ],
+     "factores": [
+      "Lluvia moderada (1-4 mm/h): accidentes ×1.5 (medido por horas)",
+      "Lluvia moderada (1-4 mm/h): caídas de objetos/árboles ×1.6 (medido por horas)"
+     ],
+     "situaciones": [],
+     "situacion_txt": "",
+     "meteo": {
+      "temp": 11.7,
+      "humedad": 81.0,
+      "lluvia_1h": 1.0,
+      "lluvia_12h": 9.1,
+      "racha_kmh": 38.5,
+      "viento_sur": false,
+      "dias_sin_lluvia": 0.0,
+      "viento_kmh": 11.7,
+      "dir_viento": 279.0,
+      "factor_racha": 3.3,
+      "dpresion_12h": 2.7,
+      "lluvia_72h": 26.3,
+      "ola_m": 1.9
+     }
+    },
+    {
+     "hora": "2026-11-26T12:00:00",
+     "lambda": 0.2751,
+     "prob": 0.241,
+     "normal": 0.2647,
+     "ratio": 1.04,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0919,
+       "mult": 1.0
+      },
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0752,
+       "mult": 1.12
+      },
+      {
+       "familia": "INCENDIO_URBANO",
+       "lambda": 0.0313,
+       "mult": 1.0
+      }
+     ],
+     "factores": [
+      "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
+      "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)"
+     ],
+     "situaciones": [],
+     "situacion_txt": "",
+     "meteo": {
+      "temp": 12.1,
+      "humedad": 77.0,
+      "lluvia_1h": 0.2,
+      "lluvia_12h": 6.5,
+      "racha_kmh": 35.3,
+      "viento_sur": false,
+      "dias_sin_lluvia": 0.0,
+      "viento_kmh": 17.3,
+      "dir_viento": 266.0,
+      "factor_racha": 2.0,
+      "dpresion_12h": 2.9,
+      "lluvia_72h": 26.5,
+      "ola_m": 1.8
+     }
+    },
+    {
+     "hora": "2026-11-26T13:00:00",
+     "lambda": 0.2751,
+     "prob": 0.241,
+     "normal": 0.2647,
+     "ratio": 1.04,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0919,
+       "mult": 1.0
+      },
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0752,
+       "mult": 1.12
+      },
+      {
+       "familia": "INCENDIO_URBANO",
+       "lambda": 0.0313,
+       "mult": 1.0
+      }
+     ],
+     "factores": [
+      "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
+      "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)"
+     ],
+     "situaciones": [],
+     "situacion_txt": "",
+     "meteo": {
+      "temp": 12.5,
+      "humedad": 79.0,
+      "lluvia_1h": 0.4,
+      "lluvia_12h": 5.3,
+      "racha_kmh": 39.6,
+      "viento_sur": false,
+      "dias_sin_lluvia": 0.0,
+      "viento_kmh": 15.5,
+      "dir_viento": 265.0,
+      "factor_racha": 2.5,
+      "dpresion_12h": 1.0,
+      "lluvia_72h": 26.9,
+      "ola_m": 1.7
+     }
+    },
+    {
+     "hora": "2026-11-26T14:00:00",
+     "lambda": 0.2347,
+     "prob": 0.209,
+     "normal": 0.2347,
+     "ratio": 1.0,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0957,
+       "mult": 1.0
+      },
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0465,
+       "mult": 1.0
+      },
+      {
+       "familia": "INCENDIO_FORESTAL_EXTERIOR",
+       "lambda": 0.0314,
+       "mult": 1.0
+      }
+     ],
+     "factores": [],
+     "situaciones": [],
+     "situacion_txt": "",
+     "meteo": {
+      "temp": 13.0,
+      "humedad": 73.0,
+      "lluvia_1h": 0.1,
+      "lluvia_12h": 3.4,
+      "racha_kmh": 34.3,
+      "viento_sur": false,
+      "dias_sin_lluvia": 0.0,
+      "viento_kmh": 15.1,
+      "dir_viento": 273.0,
+      "factor_racha": 2.3,
+      "dpresion_12h": 1.5,
+      "lluvia_72h": 27.0,
+      "ola_m": 1.7
+     }
+    },
+    {
+     "hora": "2026-11-26T15:00:00",
+     "lambda": 0.2415,
+     "prob": 0.215,
+     "normal": 0.2344,
+     "ratio": 1.03,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0957,
+       "mult": 1.0
+      },
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0521,
+       "mult": 1.12
+      },
+      {
+       "familia": "INCENDIO_FORESTAL_EXTERIOR",
+       "lambda": 0.0314,
+       "mult": 1.0
+      }
+     ],
+     "factores": [
+      "Evento: Festival: Programa Festival Internacional de Títeres de Sestao 2026",
+      "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
+      "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)"
+     ],
+     "situaciones": [],
+     "situacion_txt": "",
+     "meteo": {
+      "temp": 12.8,
+      "humedad": 76.0,
+      "lluvia_1h": 0.3,
+      "lluvia_12h": 3.1,
+      "racha_kmh": 29.9,
+      "viento_sur": false,
+      "dias_sin_lluvia": 0.0,
+      "viento_kmh": 12.2,
+      "dir_viento": 273.0,
+      "factor_racha": 2.5,
+      "dpresion_12h": 0.3,
+      "lluvia_72h": 27.3,
+      "ola_m": 1.6
+     }
+    }
+   ],
+   "carreteras": [
+    {
+     "carretera": "A-8",
+     "km_ini": 120,
+     "km_fin": 125,
+     "esperados": 0.0323,
+     "prob": 0.0317,
+     "accidentes_anio": 27.714,
+     "pct_graves": 6.7,
+     "hora_pico": 14,
+     "imd": 78380,
+     "ip": 19.4
+    },
+    {
+     "carretera": "A-8",
+     "km_ini": 125,
+     "km_fin": 130,
+     "esperados": 0.0181,
+     "prob": 0.018,
+     "accidentes_anio": 15.571,
+     "pct_graves": 2.8,
+     "hora_pico": 15,
+     "imd": 23330,
+     "ip": 36.6
+    },
+    {
+     "carretera": "N-637",
+     "km_ini": 5,
+     "km_fin": 10,
+     "esperados": 0.014,
+     "prob": 0.0139,
+     "accidentes_anio": 12.0,
+     "pct_graves": 0.0,
+     "hora_pico": 14,
+     "imd": null,
+     "ip": null
+    }
+   ]
+  },
+  {
    "id": "BASAURI",
    "nombre": "Basauri",
    "lat": 43.237,
    "lon": -2.885,
    "salidas_esperadas_6h": 0.78,
    "normal_6h": 0.76,
-   "prob_6h": 0.543,
+   "prob_6h": 0.541,
    "ratio_max": 1.09,
    "nivel": "verde",
    "hora_pico": "2026-11-26T10:00:00",
    "factores": [
     "☔ Lluvia persistente / suelo saturado",
     "Lluvia persistente: accidentes ×1.2 (medido por horas)",
-    "Lluvia persistente: caídas de objetos/árboles ×1.6 (medido por horas)",
-    "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
-    "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)"
+    "Lluvia persistente: caídas de objetos/árboles ×1.6 (medido por horas)"
    ],
    "situacion_ahora": "☔ Lluvia persistente / suelo saturado",
    "situaciones_6h": [
@@ -1867,16 +2200,16 @@
      ],
      "situacion_txt": "☔ Lluvia persistente / suelo saturado",
      "meteo": {
-      "temp": 12.1,
+      "temp": 12.2,
       "humedad": 72.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 13.5,
       "racha_kmh": 23.8,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
-      "viento_kmh": 9.4,
-      "dir_viento": 268.0,
-      "factor_racha": 2.5,
+      "viento_kmh": 8.0,
+      "dir_viento": 260.0,
+      "factor_racha": 3.0,
       "dpresion_12h": 2.0,
       "lluvia_72h": 36.7,
       "ola_m": null
@@ -1917,15 +2250,15 @@
      "situacion_txt": "☔ Lluvia persistente / suelo saturado",
      "meteo": {
       "temp": 12.6,
-      "humedad": 72.0,
+      "humedad": 74.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 9.3,
-      "racha_kmh": 25.2,
+      "racha_kmh": 26.6,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
-      "viento_kmh": 11.3,
-      "dir_viento": 263.0,
-      "factor_racha": 2.2,
+      "viento_kmh": 11.6,
+      "dir_viento": 265.0,
+      "factor_racha": 2.3,
       "dpresion_12h": 2.2,
       "lluvia_72h": 36.7,
       "ola_m": null
@@ -1933,10 +2266,10 @@
     },
     {
      "hora": "2026-11-26T12:00:00",
-     "lambda": 0.1284,
-     "prob": 0.12,
+     "lambda": 0.1237,
+     "prob": 0.116,
      "normal": 0.1237,
-     "ratio": 1.04,
+     "ratio": 1.0,
      "nivel": "verde",
      "familias_top": [
       {
@@ -1951,29 +2284,26 @@
       },
       {
        "familia": "METEO_ASISTENCIA",
-       "lambda": 0.017,
-       "mult": 1.12
+       "lambda": 0.0152,
+       "mult": 1.0
       }
      ],
-     "factores": [
-      "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
-      "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)"
-     ],
+     "factores": [],
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 12.9,
-      "humedad": 73.0,
-      "lluvia_1h": 0.1,
+      "temp": 12.6,
+      "humedad": 75.0,
+      "lluvia_1h": 0.0,
       "lluvia_12h": 5.5,
-      "racha_kmh": 21.6,
+      "racha_kmh": 23.8,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
-      "viento_kmh": 8.3,
-      "dir_viento": 252.0,
-      "factor_racha": 2.6,
+      "viento_kmh": 10.5,
+      "dir_viento": 262.0,
+      "factor_racha": 2.3,
       "dpresion_12h": 3.0,
-      "lluvia_72h": 36.8,
+      "lluvia_72h": 36.7,
       "ola_m": null
      }
     },
@@ -2005,18 +2335,18 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 13.4,
-      "humedad": 70.0,
+      "temp": 13.2,
+      "humedad": 71.0,
       "lluvia_1h": 0.0,
-      "lluvia_12h": 3.9,
-      "racha_kmh": 33.8,
+      "lluvia_12h": 3.8,
+      "racha_kmh": 28.8,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
-      "viento_kmh": 12.1,
-      "dir_viento": 275.0,
-      "factor_racha": 2.8,
+      "viento_kmh": 10.5,
+      "dir_viento": 274.0,
+      "factor_racha": 2.7,
       "dpresion_12h": 1.4,
-      "lluvia_72h": 36.8,
+      "lluvia_72h": 36.7,
       "ola_m": null
      }
     },
@@ -2049,17 +2379,17 @@
      "situacion_txt": "",
      "meteo": {
       "temp": 13.6,
-      "humedad": 67.0,
-      "lluvia_1h": 0.1,
-      "lluvia_12h": 2.5,
-      "racha_kmh": 28.4,
+      "humedad": 66.0,
+      "lluvia_1h": 0.0,
+      "lluvia_12h": 2.4,
+      "racha_kmh": 29.9,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
-      "viento_kmh": 10.2,
-      "dir_viento": 280.0,
-      "factor_racha": 2.8,
+      "viento_kmh": 11.2,
+      "dir_viento": 292.0,
+      "factor_racha": 2.7,
       "dpresion_12h": 0.9,
-      "lluvia_72h": 36.9,
+      "lluvia_72h": 36.7,
       "ola_m": null
      }
     },
@@ -2094,15 +2424,15 @@
       "temp": 13.6,
       "humedad": 66.0,
       "lluvia_1h": 0.0,
-      "lluvia_12h": 2.5,
-      "racha_kmh": 33.0,
+      "lluvia_12h": 2.3,
+      "racha_kmh": 33.7,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
-      "viento_kmh": 12.9,
-      "dir_viento": 295.0,
-      "factor_racha": 2.6,
+      "viento_kmh": 13.6,
+      "dir_viento": 297.0,
+      "factor_racha": 2.5,
       "dpresion_12h": 0.4,
-      "lluvia_72h": 36.9,
+      "lluvia_72h": 36.7,
       "ola_m": null
      }
     }
@@ -2143,331 +2473,6 @@
      "hora_pico": 14,
      "imd": 45083,
      "ip": 12.7
-    }
-   ]
-  },
-  {
-   "id": "URIOSTE",
-   "nombre": "Urioste (Ortuella)",
-   "lat": 43.3075,
-   "lon": -3.051,
-   "salidas_esperadas_6h": 1.54,
-   "normal_6h": 1.53,
-   "prob_6h": 0.787,
-   "ratio_max": 1.04,
-   "nivel": "verde",
-   "hora_pico": "2026-11-26T13:00:00",
-   "factores": [
-    "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
-    "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)",
-    "Evento: Festival: Programa Festival Internacional de Títeres de Sestao 2026"
-   ],
-   "situacion_ahora": "",
-   "situaciones_6h": [],
-   "directo": {},
-   "horas": [
-    {
-     "hora": "2026-11-26T10:00:00",
-     "lambda": 0.2638,
-     "prob": 0.232,
-     "normal": 0.2638,
-     "ratio": 1.0,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0919,
-       "mult": 1.0
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0672,
-       "mult": 1.0
-      },
-      {
-       "familia": "INCENDIO_URBANO",
-       "lambda": 0.0313,
-       "mult": 1.0
-      }
-     ],
-     "factores": [],
-     "situaciones": [],
-     "situacion_txt": "",
-     "meteo": {
-      "temp": 11.4,
-      "humedad": 80.0,
-      "lluvia_1h": 0.0,
-      "lluvia_12h": 11.6,
-      "racha_kmh": 37.8,
-      "viento_sur": false,
-      "dias_sin_lluvia": 0.0,
-      "viento_kmh": 18.4,
-      "dir_viento": 269.0,
-      "factor_racha": 2.0,
-      "dpresion_12h": 2.3,
-      "lluvia_72h": 25.3,
-      "ola_m": 2.0
-     }
-    },
-    {
-     "hora": "2026-11-26T11:00:00",
-     "lambda": 0.2646,
-     "prob": 0.232,
-     "normal": 0.2646,
-     "ratio": 1.0,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0919,
-       "mult": 1.0
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0672,
-       "mult": 1.0
-      },
-      {
-       "familia": "INCENDIO_URBANO",
-       "lambda": 0.0313,
-       "mult": 1.0
-      }
-     ],
-     "factores": [],
-     "situaciones": [],
-     "situacion_txt": "",
-     "meteo": {
-      "temp": 12.3,
-      "humedad": 75.0,
-      "lluvia_1h": 0.0,
-      "lluvia_12h": 9.1,
-      "racha_kmh": 35.3,
-      "viento_sur": false,
-      "dias_sin_lluvia": 0.0,
-      "viento_kmh": 12.7,
-      "dir_viento": 277.0,
-      "factor_racha": 2.8,
-      "dpresion_12h": 2.7,
-      "lluvia_72h": 25.3,
-      "ola_m": 1.9
-     }
-    },
-    {
-     "hora": "2026-11-26T12:00:00",
-     "lambda": 0.2647,
-     "prob": 0.233,
-     "normal": 0.2647,
-     "ratio": 1.0,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0919,
-       "mult": 1.0
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0672,
-       "mult": 1.0
-      },
-      {
-       "familia": "INCENDIO_URBANO",
-       "lambda": 0.0313,
-       "mult": 1.0
-      }
-     ],
-     "factores": [],
-     "situaciones": [],
-     "situacion_txt": "",
-     "meteo": {
-      "temp": 12.5,
-      "humedad": 73.0,
-      "lluvia_1h": 0.0,
-      "lluvia_12h": 5.5,
-      "racha_kmh": 37.4,
-      "viento_sur": false,
-      "dias_sin_lluvia": 0.0,
-      "viento_kmh": 17.0,
-      "dir_viento": 274.0,
-      "factor_racha": 2.2,
-      "dpresion_12h": 2.9,
-      "lluvia_72h": 25.3,
-      "ola_m": 1.8
-     }
-    },
-    {
-     "hora": "2026-11-26T13:00:00",
-     "lambda": 0.2751,
-     "prob": 0.241,
-     "normal": 0.2647,
-     "ratio": 1.04,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0919,
-       "mult": 1.0
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0752,
-       "mult": 1.12
-      },
-      {
-       "familia": "INCENDIO_URBANO",
-       "lambda": 0.0313,
-       "mult": 1.0
-      }
-     ],
-     "factores": [
-      "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
-      "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)"
-     ],
-     "situaciones": [],
-     "situacion_txt": "",
-     "meteo": {
-      "temp": 12.8,
-      "humedad": 76.0,
-      "lluvia_1h": 0.2,
-      "lluvia_12h": 4.1,
-      "racha_kmh": 38.9,
-      "viento_sur": false,
-      "dias_sin_lluvia": 0.0,
-      "viento_kmh": 15.8,
-      "dir_viento": 278.0,
-      "factor_racha": 2.5,
-      "dpresion_12h": 1.0,
-      "lluvia_72h": 25.5,
-      "ola_m": 1.7
-     }
-    },
-    {
-     "hora": "2026-11-26T14:00:00",
-     "lambda": 0.2347,
-     "prob": 0.209,
-     "normal": 0.2347,
-     "ratio": 1.0,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0957,
-       "mult": 1.0
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0465,
-       "mult": 1.0
-      },
-      {
-       "familia": "INCENDIO_FORESTAL_EXTERIOR",
-       "lambda": 0.0314,
-       "mult": 1.0
-      }
-     ],
-     "factores": [],
-     "situaciones": [],
-     "situacion_txt": "",
-     "meteo": {
-      "temp": 13.0,
-      "humedad": 74.0,
-      "lluvia_1h": 0.1,
-      "lluvia_12h": 2.0,
-      "racha_kmh": 35.5,
-      "viento_sur": false,
-      "dias_sin_lluvia": 0.0,
-      "viento_kmh": 15.1,
-      "dir_viento": 273.0,
-      "factor_racha": 2.4,
-      "dpresion_12h": 1.5,
-      "lluvia_72h": 25.5,
-      "ola_m": 1.7
-     }
-    },
-    {
-     "hora": "2026-11-26T15:00:00",
-     "lambda": 0.2415,
-     "prob": 0.215,
-     "normal": 0.2344,
-     "ratio": 1.03,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0957,
-       "mult": 1.0
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0521,
-       "mult": 1.12
-      },
-      {
-       "familia": "INCENDIO_FORESTAL_EXTERIOR",
-       "lambda": 0.0314,
-       "mult": 1.0
-      }
-     ],
-     "factores": [
-      "Evento: Festival: Programa Festival Internacional de Títeres de Sestao 2026",
-      "Lluvia débil (0,1-1 mm/h): accidentes ×1.2 (medido por horas)",
-      "Lluvia débil (0,1-1 mm/h): caídas de objetos/árboles ×1.1 (medido por horas)"
-     ],
-     "situaciones": [],
-     "situacion_txt": "",
-     "meteo": {
-      "temp": 12.6,
-      "humedad": 79.0,
-      "lluvia_1h": 0.6,
-      "lluvia_12h": 1.6,
-      "racha_kmh": 31.4,
-      "viento_sur": false,
-      "dias_sin_lluvia": 0.0,
-      "viento_kmh": 11.4,
-      "dir_viento": 268.0,
-      "factor_racha": 2.8,
-      "dpresion_12h": 0.3,
-      "lluvia_72h": 26.1,
-      "ola_m": 1.6
-     }
-    }
-   ],
-   "carreteras": [
-    {
-     "carretera": "A-8",
-     "km_ini": 120,
-     "km_fin": 125,
-     "esperados": 0.0301,
-     "prob": 0.0296,
-     "accidentes_anio": 27.714,
-     "pct_graves": 6.7,
-     "hora_pico": 14,
-     "imd": 78380,
-     "ip": 19.4
-    },
-    {
-     "carretera": "A-8",
-     "km_ini": 125,
-     "km_fin": 130,
-     "esperados": 0.0169,
-     "prob": 0.0168,
-     "accidentes_anio": 15.571,
-     "pct_graves": 2.8,
-     "hora_pico": 15,
-     "imd": 23330,
-     "ip": 36.6
-    },
-    {
-     "carretera": "N-637",
-     "km_ini": 5,
-     "km_fin": 10,
-     "esperados": 0.013,
-     "prob": 0.0129,
-     "accidentes_anio": 12.0,
-     "pct_graves": 0.0,
-     "hora_pico": 14,
-     "imd": null,
-     "ip": null
     }
    ]
   },
@@ -2519,7 +2524,7 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 10.4,
+      "temp": 10.7,
       "humedad": 84.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 11.6,
@@ -2527,7 +2532,7 @@
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
       "viento_kmh": 11.5,
-      "dir_viento": 266.0,
+      "dir_viento": 268.0,
       "factor_racha": 1.9,
       "dpresion_12h": 2.7,
       "lluvia_72h": 24.5,
@@ -2565,14 +2570,14 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 11.4,
-      "humedad": 81.0,
+      "temp": 11.3,
+      "humedad": 82.0,
       "lluvia_1h": 0.1,
       "lluvia_12h": 9.1,
-      "racha_kmh": 22.0,
+      "racha_kmh": 27.7,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
-      "viento_kmh": 11.2,
+      "viento_kmh": 13.7,
       "dir_viento": 270.0,
       "factor_racha": 2.0,
       "dpresion_12h": 3.4,
@@ -2611,16 +2616,16 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 11.3,
-      "humedad": 84.0,
+      "temp": 11.5,
+      "humedad": 83.0,
       "lluvia_1h": 0.2,
       "lluvia_12h": 5.6,
-      "racha_kmh": 19.1,
+      "racha_kmh": 20.5,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
-      "viento_kmh": 9.4,
-      "dir_viento": 270.0,
-      "factor_racha": 2.0,
+      "viento_kmh": 9.7,
+      "dir_viento": 272.0,
+      "factor_racha": 2.1,
       "dpresion_12h": 3.1,
       "lluvia_72h": 24.8,
       "ola_m": null
@@ -2655,15 +2660,15 @@
      "situacion_txt": "",
      "meteo": {
       "temp": 12.2,
-      "humedad": 76.0,
+      "humedad": 78.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 4.4,
-      "racha_kmh": 27.3,
+      "racha_kmh": 26.6,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
-      "viento_kmh": 11.2,
-      "dir_viento": 280.0,
-      "factor_racha": 2.4,
+      "viento_kmh": 11.7,
+      "dir_viento": 279.0,
+      "factor_racha": 2.3,
       "dpresion_12h": 1.2,
       "lluvia_72h": 24.8,
       "ola_m": null
@@ -2697,15 +2702,15 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 12.9,
+      "temp": 12.7,
       "humedad": 71.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 2.1,
-      "racha_kmh": 28.1,
+      "racha_kmh": 29.3,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
-      "viento_kmh": 10.3,
-      "dir_viento": 285.0,
+      "viento_kmh": 11.0,
+      "dir_viento": 287.0,
       "factor_racha": 2.7,
       "dpresion_12h": 1.2,
       "lluvia_72h": 24.8,
@@ -2742,16 +2747,16 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 13.1,
-      "humedad": 70.0,
+      "temp": 13.0,
+      "humedad": 71.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 1.7,
-      "racha_kmh": 22.1,
+      "racha_kmh": 21.8,
       "viento_sur": false,
       "dias_sin_lluvia": 0.0,
-      "viento_kmh": 8.4,
-      "dir_viento": 289.0,
-      "factor_racha": 2.6,
+      "viento_kmh": 9.0,
+      "dir_viento": 285.0,
+      "factor_racha": 2.4,
       "dpresion_12h": 0.4,
       "lluvia_72h": 24.8,
       "ola_m": null
