@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-27T20:55+01:00",
+ "generado": "2026-11-27T21:12+01:00",
  "horizonte_h": 6,
  "modelo": "base+reglas",
  "fuentes_ok": {
@@ -7,8 +7,8 @@
   "trafico": true
  },
  "bizkaia": {
-  "salidas_esperadas_6h": 4.1,
-  "normal_6h": 3.7,
+  "salidas_esperadas_6h": 4.0,
+  "normal_6h": 3.6,
   "contador": {
    "ts": "2026-11-19T09:14:44+01:00",
    "desde_8": 0,
@@ -21,12 +21,12 @@
    "nombre": "Derio",
    "lat": 43.293,
    "lon": -2.884,
-   "salidas_esperadas_6h": 0.38,
-   "normal_6h": 0.32,
-   "prob_6h": 0.315,
-   "ratio_max": 1.24,
+   "salidas_esperadas_6h": 0.36,
+   "normal_6h": 0.31,
+   "prob_6h": 0.303,
+   "ratio_max": 1.31,
    "nivel": "verde",
-   "hora_pico": "2026-11-27T20:00:00",
+   "hora_pico": "2026-11-27T22:00:00",
    "factores": [
     "Accidentes de tráfico activos en la zona",
     "Evento masivo: Festival: Programa Festival Ei! Bilbao 2026 (27 noviembre - Bilbao Arena - Miribilla)",
@@ -36,52 +36,6 @@
    "situaciones_6h": [],
    "directo": {},
    "horas": [
-    {
-     "hora": "2026-11-27T20:00:00",
-     "lambda": 0.0731,
-     "prob": 0.071,
-     "normal": 0.0588,
-     "ratio": 1.24,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "TRAFICO",
-       "lambda": 0.03,
-       "mult": 1.76
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0113,
-       "mult": 1.0
-      },
-      {
-       "familia": "INCENDIO_FORESTAL_EXTERIOR",
-       "lambda": 0.0099,
-       "mult": 1.0
-      }
-     ],
-     "factores": [
-      "Accidentes de tráfico activos en la zona",
-      "Evento masivo: Festival: Programa Festival Ei! Bilbao 2026 (27 noviembre - Bilbao Arena - Miribilla)"
-     ],
-     "situaciones": [],
-     "situacion_txt": "",
-     "meteo": {
-      "temp": 10.0,
-      "humedad": 90.0,
-      "lluvia_1h": 0.0,
-      "lluvia_12h": 0.1,
-      "racha_kmh": 11.5,
-      "viento_sur": false,
-      "dias_sin_lluvia": 0.0,
-      "viento_kmh": 8.1,
-      "dir_viento": 111.0,
-      "factor_racha": 1.4,
-      "dpresion_12h": 1.1,
-      "lluvia_72h": 57.1,
-      "ola_m": null
-     }
-    },
     {
      "hora": "2026-11-27T21:00:00",
      "lambda": 0.0684,
@@ -130,16 +84,16 @@
     },
     {
      "hora": "2026-11-27T22:00:00",
-     "lambda": 0.0645,
-     "prob": 0.062,
+     "lambda": 0.0709,
+     "prob": 0.068,
      "normal": 0.0539,
-     "ratio": 1.2,
+     "ratio": 1.31,
      "nivel": "verde",
      "familias_top": [
       {
        "familia": "TRAFICO",
-       "lambda": 0.0214,
-       "mult": 1.76
+       "lambda": 0.0278,
+       "mult": 2.28
       },
       {
        "familia": "METEO_ASISTENCIA",
@@ -154,6 +108,7 @@
      ],
      "factores": [
       "Noche de fin de semana",
+      "Accidentes de tráfico activos en la zona",
       "Evento masivo: Festival: Programa Festival Ei! Bilbao 2026 (27 noviembre - Bilbao Arena - Miribilla)"
      ],
      "situaciones": [],
@@ -311,6 +266,52 @@
       "lluvia_72h": 57.1,
       "ola_m": null
      }
+    },
+    {
+     "hora": "2026-11-28T02:00:00",
+     "lambda": 0.0498,
+     "prob": 0.049,
+     "normal": 0.0455,
+     "ratio": 1.09,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0113,
+       "mult": 1.0
+      },
+      {
+       "familia": "INCENDIO_FORESTAL_EXTERIOR",
+       "lambda": 0.0099,
+       "mult": 1.0
+      },
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0083,
+       "mult": 1.2
+      }
+     ],
+     "factores": [
+      "Noche de fin de semana",
+      "Evento masivo: Festival: Programa Festival Ei! Bilbao 2026 (27 noviembre - Bilbao Arena - Miribilla)"
+     ],
+     "situaciones": [],
+     "situacion_txt": "",
+     "meteo": {
+      "temp": 7.6,
+      "humedad": 84.0,
+      "lluvia_1h": 0.0,
+      "lluvia_12h": 0.0,
+      "racha_kmh": 12.1,
+      "viento_sur": false,
+      "dias_sin_lluvia": 1.0,
+      "viento_kmh": 8.8,
+      "dir_viento": 100.0,
+      "factor_racha": 1.4,
+      "dpresion_12h": 2.0,
+      "lluvia_72h": 57.1,
+      "ola_m": null
+     }
     }
    ],
    "carreteras": [
@@ -318,8 +319,8 @@
      "carretera": "N-637",
      "km_ini": 15,
      "km_fin": 20,
-     "esperados": 0.0078,
-     "prob": 0.0078,
+     "esperados": 0.0063,
+     "prob": 0.0063,
      "accidentes_anio": 17.286,
      "pct_graves": 5.8,
      "hora_pico": 14,
@@ -330,8 +331,8 @@
      "carretera": "N-637",
      "km_ini": 20,
      "km_fin": 25,
-     "esperados": 0.0038,
-     "prob": 0.0038,
+     "esperados": 0.0031,
+     "prob": 0.0031,
      "accidentes_anio": 8.429,
      "pct_graves": 5.1,
      "hora_pico": 7,
@@ -342,8 +343,8 @@
      "carretera": "BI-631",
      "km_ini": 15,
      "km_fin": 20,
-     "esperados": 0.0037,
-     "prob": 0.0037,
+     "esperados": 0.003,
+     "prob": 0.003,
      "accidentes_anio": 8.143,
      "pct_graves": 1.8,
      "hora_pico": 13,
@@ -357,10 +358,10 @@
    "nombre": "Iurreta",
    "lat": 43.176,
    "lon": -2.634,
-   "salidas_esperadas_6h": 0.39,
-   "normal_6h": 0.34,
-   "prob_6h": 0.325,
-   "ratio_max": 1.19,
+   "salidas_esperadas_6h": 0.38,
+   "normal_6h": 0.33,
+   "prob_6h": 0.319,
+   "ratio_max": 1.24,
    "nivel": "verde",
    "hora_pico": "2026-11-27T22:00:00",
    "factores": [
@@ -377,57 +378,6 @@
    ],
    "directo": {},
    "horas": [
-    {
-     "hora": "2026-11-27T20:00:00",
-     "lambda": 0.0692,
-     "prob": 0.067,
-     "normal": 0.0587,
-     "ratio": 1.18,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0159,
-       "mult": 1.0
-      },
-      {
-       "familia": "TRAFICO",
-       "lambda": 0.0141,
-       "mult": 1.66
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0128,
-       "mult": 1.57
-      }
-     ],
-     "factores": [
-      "☔ Lluvia persistente / suelo saturado",
-      "Incidencias de seguridad vial (objetos, desprendimientos)",
-      "Evento: Fiestas: Programa Fiestas San Andrés de Zaldibar 2026",
-      "Lluvia persistente: accidentes ×1.2 (medido por horas)",
-      "Lluvia persistente: caídas de objetos/árboles ×1.6 (medido por horas)"
-     ],
-     "situaciones": [
-      "LLUVIA_PERSISTENTE"
-     ],
-     "situacion_txt": "☔ Lluvia persistente / suelo saturado",
-     "meteo": {
-      "temp": 9.1,
-      "humedad": 94.0,
-      "lluvia_1h": 0.0,
-      "lluvia_12h": 0.0,
-      "racha_kmh": 4.3,
-      "viento_sur": false,
-      "dias_sin_lluvia": 0.0,
-      "viento_kmh": 1.8,
-      "dir_viento": 90.0,
-      "factor_racha": 0.9,
-      "dpresion_12h": 1.3,
-      "lluvia_72h": 87.7,
-      "ola_m": null
-     }
-    },
     {
      "hora": "2026-11-27T21:00:00",
      "lambda": 0.07,
@@ -481,21 +431,21 @@
     },
     {
      "hora": "2026-11-27T22:00:00",
-     "lambda": 0.0689,
-     "prob": 0.067,
+     "lambda": 0.072,
+     "prob": 0.07,
      "normal": 0.058,
-     "ratio": 1.19,
+     "ratio": 1.24,
      "nivel": "verde",
      "familias_top": [
+      {
+       "familia": "TRAFICO",
+       "lambda": 0.0169,
+       "mult": 2.15
+      },
       {
        "familia": "RESCATE_SALVAMENTO",
        "lambda": 0.0159,
        "mult": 1.0
-      },
-      {
-       "familia": "TRAFICO",
-       "lambda": 0.0141,
-       "mult": 1.79
       },
       {
        "familia": "METEO_ASISTENCIA",
@@ -506,6 +456,7 @@
      "factores": [
       "☔ Lluvia persistente / suelo saturado",
       "Noche de fin de semana",
+      "Incidencias de seguridad vial (objetos, desprendimientos)",
       "Evento: Fiestas: Programa Fiestas San Andrés de Zaldibar 2026",
       "Lluvia persistente: accidentes ×1.2 (medido por horas)",
       "Lluvia persistente: caídas de objetos/árboles ×1.6 (medido por horas)"
@@ -682,6 +633,56 @@
       "lluvia_72h": 87.7,
       "ola_m": null
      }
+    },
+    {
+     "hora": "2026-11-28T02:00:00",
+     "lambda": 0.0579,
+     "prob": 0.056,
+     "normal": 0.0522,
+     "ratio": 1.11,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0159,
+       "mult": 1.0
+      },
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0128,
+       "mult": 1.57
+      },
+      {
+       "familia": "INCENDIO_FORESTAL_EXTERIOR",
+       "lambda": 0.0107,
+       "mult": 1.0
+      }
+     ],
+     "factores": [
+      "☔ Lluvia persistente / suelo saturado",
+      "Noche de fin de semana",
+      "Lluvia persistente: accidentes ×1.2 (medido por horas)",
+      "Lluvia persistente: caídas de objetos/árboles ×1.6 (medido por horas)"
+     ],
+     "situaciones": [
+      "LLUVIA_PERSISTENTE"
+     ],
+     "situacion_txt": "☔ Lluvia persistente / suelo saturado",
+     "meteo": {
+      "temp": 6.5,
+      "humedad": 91.0,
+      "lluvia_1h": 0.0,
+      "lluvia_12h": 0.0,
+      "racha_kmh": 3.6,
+      "viento_sur": false,
+      "dias_sin_lluvia": 1.0,
+      "viento_kmh": 2.8,
+      "dir_viento": 77.0,
+      "factor_racha": 0.7,
+      "dpresion_12h": 2.0,
+      "lluvia_72h": 87.7,
+      "ola_m": null
+     }
     }
    ],
    "carreteras": [
@@ -689,8 +690,8 @@
      "carretera": "N-634",
      "km_ini": 80,
      "km_fin": 85,
-     "esperados": 0.0049,
-     "prob": 0.0049,
+     "esperados": 0.004,
+     "prob": 0.004,
      "accidentes_anio": 9.857,
      "pct_graves": 7.2,
      "hora_pico": 10,
@@ -701,8 +702,8 @@
      "carretera": "N-634",
      "km_ini": 85,
      "km_fin": 90,
-     "esperados": 0.0043,
-     "prob": 0.0043,
+     "esperados": 0.0035,
+     "prob": 0.0035,
      "accidentes_anio": 8.571,
      "pct_graves": 15.0,
      "hora_pico": 14,
@@ -713,8 +714,8 @@
      "carretera": "N-634",
      "km_ini": 90,
      "km_fin": 95,
-     "esperados": 0.0029,
-     "prob": 0.0029,
+     "esperados": 0.0024,
+     "prob": 0.0024,
      "accidentes_anio": 5.857,
      "pct_graves": 22.0,
      "hora_pico": 20,
@@ -728,12 +729,12 @@
    "nombre": "Artaza (Leioa)",
    "lat": 43.335,
    "lon": -2.987,
-   "salidas_esperadas_6h": 0.83,
-   "normal_6h": 0.73,
-   "prob_6h": 0.565,
-   "ratio_max": 1.17,
+   "salidas_esperadas_6h": 0.81,
+   "normal_6h": 0.71,
+   "prob_6h": 0.553,
+   "ratio_max": 1.2,
    "nivel": "verde",
-   "hora_pico": "2026-11-27T20:00:00",
+   "hora_pico": "2026-11-27T22:00:00",
    "factores": [
     "Accidentes de tráfico activos en la zona",
     "Evento masivo: Festival: Programa Festival Ei! Bilbao 2026 (27 noviembre - Bilbao Arena - Miribilla)",
@@ -743,52 +744,6 @@
    "situaciones_6h": [],
    "directo": {},
    "horas": [
-    {
-     "hora": "2026-11-27T20:00:00",
-     "lambda": 0.1532,
-     "prob": 0.142,
-     "normal": 0.1307,
-     "ratio": 1.17,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "TRAFICO",
-       "lambda": 0.0398,
-       "mult": 1.76
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0339,
-       "mult": 1.0
-      },
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0325,
-       "mult": 1.2
-      }
-     ],
-     "factores": [
-      "Accidentes de tráfico activos en la zona",
-      "Evento masivo: Festival: Programa Festival Ei! Bilbao 2026 (27 noviembre - Bilbao Arena - Miribilla)"
-     ],
-     "situaciones": [],
-     "situacion_txt": "",
-     "meteo": {
-      "temp": 11.0,
-      "humedad": 87.0,
-      "lluvia_1h": 0.0,
-      "lluvia_12h": 0.4,
-      "racha_kmh": 20.9,
-      "viento_sur": false,
-      "dias_sin_lluvia": 0.0,
-      "viento_kmh": 11.7,
-      "dir_viento": 133.0,
-      "factor_racha": 1.8,
-      "dpresion_12h": 1.1,
-      "lluvia_72h": 58.4,
-      "ola_m": 1.3
-     }
-    },
     {
      "hora": "2026-11-27T21:00:00",
      "lambda": 0.1441,
@@ -837,10 +792,10 @@
     },
     {
      "hora": "2026-11-27T22:00:00",
-     "lambda": 0.1391,
-     "prob": 0.13,
+     "lambda": 0.1469,
+     "prob": 0.137,
      "normal": 0.1226,
-     "ratio": 1.13,
+     "ratio": 1.2,
      "nivel": "verde",
      "familias_top": [
       {
@@ -849,18 +804,19 @@
        "mult": 1.0
       },
       {
+       "familia": "TRAFICO",
+       "lambda": 0.0335,
+       "mult": 2.28
+      },
+      {
        "familia": "RESCATE_SALVAMENTO",
        "lambda": 0.0325,
        "mult": 1.2
-      },
-      {
-       "familia": "TRAFICO",
-       "lambda": 0.0257,
-       "mult": 1.76
       }
      ],
      "factores": [
       "Noche de fin de semana",
+      "Accidentes de tráfico activos en la zona",
       "Evento masivo: Festival: Programa Festival Ei! Bilbao 2026 (27 noviembre - Bilbao Arena - Miribilla)"
      ],
      "situaciones": [],
@@ -1018,6 +974,52 @@
       "lluvia_72h": 58.4,
       "ola_m": 1.7
      }
+    },
+    {
+     "hora": "2026-11-28T02:00:00",
+     "lambda": 0.1189,
+     "prob": 0.112,
+     "normal": 0.1111,
+     "ratio": 1.07,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0339,
+       "mult": 1.0
+      },
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0325,
+       "mult": 1.2
+      },
+      {
+       "familia": "INCENDIO_FORESTAL_EXTERIOR",
+       "lambda": 0.0196,
+       "mult": 1.0
+      }
+     ],
+     "factores": [
+      "Noche de fin de semana",
+      "Evento masivo: Festival: Programa Festival Ei! Bilbao 2026 (27 noviembre - Bilbao Arena - Miribilla)"
+     ],
+     "situaciones": [],
+     "situacion_txt": "",
+     "meteo": {
+      "temp": 9.5,
+      "humedad": 78.0,
+      "lluvia_1h": 0.0,
+      "lluvia_12h": 0.1,
+      "racha_kmh": 22.4,
+      "viento_sur": false,
+      "dias_sin_lluvia": 1.0,
+      "viento_kmh": 14.2,
+      "dir_viento": 125.0,
+      "factor_racha": 1.6,
+      "dpresion_12h": 1.8,
+      "lluvia_72h": 58.4,
+      "ola_m": 1.8
+     }
     }
    ],
    "carreteras": [
@@ -1025,8 +1027,8 @@
      "carretera": "BI-637",
      "km_ini": 10,
      "km_fin": 15,
-     "esperados": 0.015,
-     "prob": 0.0149,
+     "esperados": 0.0116,
+     "prob": 0.0116,
      "accidentes_anio": 28.143,
      "pct_graves": 3.6,
      "hora_pico": 14,
@@ -1037,8 +1039,8 @@
      "carretera": "N-637",
      "km_ini": 10,
      "km_fin": 15,
-     "esperados": 0.0133,
-     "prob": 0.0132,
+     "esperados": 0.0103,
+     "prob": 0.0103,
      "accidentes_anio": 25.0,
      "pct_graves": 4.6,
      "hora_pico": 7,
@@ -1049,8 +1051,8 @@
      "carretera": "BI-637",
      "km_ini": 5,
      "km_fin": 10,
-     "esperados": 0.0061,
-     "prob": 0.0061,
+     "esperados": 0.0047,
+     "prob": 0.0047,
      "accidentes_anio": 11.429,
      "pct_graves": 5.0,
      "hora_pico": 18,
@@ -1064,12 +1066,12 @@
    "nombre": "Basauri",
    "lat": 43.237,
    "lon": -2.885,
-   "salidas_esperadas_6h": 0.7,
-   "normal_6h": 0.61,
-   "prob_6h": 0.503,
-   "ratio_max": 1.17,
+   "salidas_esperadas_6h": 0.69,
+   "normal_6h": 0.6,
+   "prob_6h": 0.496,
+   "ratio_max": 1.2,
    "nivel": "verde",
-   "hora_pico": "2026-11-27T20:00:00",
+   "hora_pico": "2026-11-27T22:00:00",
    "factores": [
     "Incidencias de seguridad vial (objetos, desprendimientos)",
     "Evento masivo: Festival: Programa Festival Ei! Bilbao 2026 (27 noviembre - Bilbao Arena - Miribilla)",
@@ -1079,52 +1081,6 @@
    "situaciones_6h": [],
    "directo": {},
    "horas": [
-    {
-     "hora": "2026-11-27T20:00:00",
-     "lambda": 0.1275,
-     "prob": 0.12,
-     "normal": 0.1091,
-     "ratio": 1.17,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0354,
-       "mult": 1.2
-      },
-      {
-       "familia": "TRAFICO",
-       "lambda": 0.03,
-       "mult": 1.62
-      },
-      {
-       "familia": "INCENDIO_URBANO",
-       "lambda": 0.0189,
-       "mult": 1.0
-      }
-     ],
-     "factores": [
-      "Incidencias de seguridad vial (objetos, desprendimientos)",
-      "Evento masivo: Festival: Programa Festival Ei! Bilbao 2026 (27 noviembre - Bilbao Arena - Miribilla)"
-     ],
-     "situaciones": [],
-     "situacion_txt": "",
-     "meteo": {
-      "temp": 11.5,
-      "humedad": 84.0,
-      "lluvia_1h": 0.0,
-      "lluvia_12h": 0.6,
-      "racha_kmh": 12.2,
-      "viento_sur": false,
-      "dias_sin_lluvia": 0.0,
-      "viento_kmh": 4.7,
-      "dir_viento": 171.0,
-      "factor_racha": 2.4,
-      "dpresion_12h": 1.3,
-      "lluvia_72h": 47.8,
-      "ola_m": null
-     }
-    },
     {
      "hora": "2026-11-27T21:00:00",
      "lambda": 0.1234,
@@ -1173,10 +1129,10 @@
     },
     {
      "hora": "2026-11-27T22:00:00",
-     "lambda": 0.1185,
-     "prob": 0.112,
+     "lambda": 0.1239,
+     "prob": 0.117,
      "normal": 0.1031,
-     "ratio": 1.15,
+     "ratio": 1.2,
      "nivel": "verde",
      "familias_top": [
       {
@@ -1186,8 +1142,8 @@
       },
       {
        "familia": "TRAFICO",
-       "lambda": 0.022,
-       "mult": 1.76
+       "lambda": 0.0264,
+       "mult": 2.11
       },
       {
        "familia": "INCENDIO_URBANO",
@@ -1197,6 +1153,7 @@
      ],
      "factores": [
       "Noche de fin de semana",
+      "Incidencias de seguridad vial (objetos, desprendimientos)",
       "Evento masivo: Festival: Programa Festival Ei! Bilbao 2026 (27 noviembre - Bilbao Arena - Miribilla)"
      ],
      "situaciones": [],
@@ -1354,6 +1311,52 @@
       "lluvia_72h": 47.8,
       "ola_m": null
      }
+    },
+    {
+     "hora": "2026-11-28T02:00:00",
+     "lambda": 0.1085,
+     "prob": 0.103,
+     "normal": 0.0974,
+     "ratio": 1.11,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0354,
+       "mult": 1.2
+      },
+      {
+       "familia": "INCENDIO_URBANO",
+       "lambda": 0.0189,
+       "mult": 1.0
+      },
+      {
+       "familia": "INCENDIO_FORESTAL_EXTERIOR",
+       "lambda": 0.016,
+       "mult": 1.0
+      }
+     ],
+     "factores": [
+      "Noche de fin de semana",
+      "Evento masivo: Festival: Programa Festival Ei! Bilbao 2026 (27 noviembre - Bilbao Arena - Miribilla)"
+     ],
+     "situaciones": [],
+     "situacion_txt": "",
+     "meteo": {
+      "temp": 9.9,
+      "humedad": 75.0,
+      "lluvia_1h": 0.0,
+      "lluvia_12h": 0.0,
+      "racha_kmh": 16.7,
+      "viento_sur": false,
+      "dias_sin_lluvia": 1.0,
+      "viento_kmh": 8.8,
+      "dir_viento": 119.0,
+      "factor_racha": 1.9,
+      "dpresion_12h": 2.1,
+      "lluvia_72h": 47.8,
+      "ola_m": null
+     }
     }
    ],
    "carreteras": [
@@ -1361,8 +1364,8 @@
      "carretera": "N-634",
      "km_ini": 100,
      "km_fin": 105,
-     "esperados": 0.0092,
-     "prob": 0.0091,
+     "esperados": 0.0076,
+     "prob": 0.0076,
      "accidentes_anio": 16.429,
      "pct_graves": 2.6,
      "hora_pico": 17,
@@ -1373,8 +1376,8 @@
      "carretera": "N-634",
      "km_ini": 95,
      "km_fin": 100,
-     "esperados": 0.0069,
-     "prob": 0.0069,
+     "esperados": 0.0058,
+     "prob": 0.0058,
      "accidentes_anio": 12.429,
      "pct_graves": 14.9,
      "hora_pico": 16,
@@ -1385,8 +1388,8 @@
      "carretera": "A-8",
      "km_ini": 110,
      "km_fin": 115,
-     "esperados": 0.0058,
-     "prob": 0.0058,
+     "esperados": 0.0048,
+     "prob": 0.0048,
      "accidentes_anio": 10.429,
      "pct_graves": 2.7,
      "hora_pico": 14,
@@ -1401,8 +1404,8 @@
    "lat": 43.268,
    "lon": -2.497,
    "salidas_esperadas_6h": 0.13,
-   "normal_6h": 0.12,
-   "prob_6h": 0.122,
+   "normal_6h": 0.11,
+   "prob_6h": 0.119,
    "ratio_max": 1.15,
    "nivel": "verde",
    "hora_pico": "2026-11-27T22:00:00",
@@ -1418,55 +1421,6 @@
    ],
    "directo": {},
    "horas": [
-    {
-     "hora": "2026-11-27T20:00:00",
-     "lambda": 0.0232,
-     "prob": 0.023,
-     "normal": 0.0208,
-     "ratio": 1.11,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0059,
-       "mult": 1.0
-      },
-      {
-       "familia": "INCENDIO_FORESTAL_EXTERIOR",
-       "lambda": 0.0056,
-       "mult": 1.0
-      },
-      {
-       "familia": "TRAFICO",
-       "lambda": 0.0048,
-       "mult": 1.2
-      }
-     ],
-     "factores": [
-      "☔ Lluvia persistente / suelo saturado",
-      "Lluvia persistente: accidentes ×1.2 (medido por horas)",
-      "Lluvia persistente: caídas de objetos/árboles ×1.6 (medido por horas)"
-     ],
-     "situaciones": [
-      "LLUVIA_PERSISTENTE"
-     ],
-     "situacion_txt": "☔ Lluvia persistente / suelo saturado",
-     "meteo": {
-      "temp": 8.8,
-      "humedad": 96.0,
-      "lluvia_1h": 0.0,
-      "lluvia_12h": 0.0,
-      "racha_kmh": 1.8,
-      "viento_sur": false,
-      "dias_sin_lluvia": 0.0,
-      "viento_kmh": 2.0,
-      "dir_viento": 225.0,
-      "factor_racha": 0.4,
-      "dpresion_12h": 1.3,
-      "lluvia_72h": 91.8,
-      "ola_m": 1.0
-     }
-    },
     {
      "hora": "2026-11-27T21:00:00",
      "lambda": 0.0222,
@@ -1715,6 +1669,56 @@
       "lluvia_72h": 91.8,
       "ola_m": 1.3
      }
+    },
+    {
+     "hora": "2026-11-28T02:00:00",
+     "lambda": 0.0194,
+     "prob": 0.019,
+     "normal": 0.0175,
+     "ratio": 1.11,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0059,
+       "mult": 1.0
+      },
+      {
+       "familia": "INCENDIO_FORESTAL_EXTERIOR",
+       "lambda": 0.0056,
+       "mult": 1.0
+      },
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0043,
+       "mult": 1.57
+      }
+     ],
+     "factores": [
+      "☔ Lluvia persistente / suelo saturado",
+      "Noche de fin de semana",
+      "Lluvia persistente: accidentes ×1.2 (medido por horas)",
+      "Lluvia persistente: caídas de objetos/árboles ×1.6 (medido por horas)"
+     ],
+     "situaciones": [
+      "LLUVIA_PERSISTENTE"
+     ],
+     "situacion_txt": "☔ Lluvia persistente / suelo saturado",
+     "meteo": {
+      "temp": 7.1,
+      "humedad": 89.0,
+      "lluvia_1h": 0.0,
+      "lluvia_12h": 0.0,
+      "racha_kmh": 5.4,
+      "viento_sur": false,
+      "dias_sin_lluvia": 1.0,
+      "viento_kmh": 2.7,
+      "dir_viento": 214.0,
+      "factor_racha": 1.1,
+      "dpresion_12h": 2.0,
+      "lluvia_72h": 91.8,
+      "ola_m": 1.4
+     }
     }
    ],
    "carreteras": [
@@ -1722,8 +1726,8 @@
      "carretera": "BI-633",
      "km_ini": 55,
      "km_fin": 60,
-     "esperados": 0.0016,
-     "prob": 0.0016,
+     "esperados": 0.0012,
+     "prob": 0.0012,
      "accidentes_anio": 3.571,
      "pct_graves": 12.0,
      "hora_pico": 12,
@@ -1734,8 +1738,8 @@
      "carretera": "BI-633",
      "km_ini": 35,
      "km_fin": 40,
-     "esperados": 0.0013,
-     "prob": 0.0013,
+     "esperados": 0.001,
+     "prob": 0.001,
      "accidentes_anio": 2.857,
      "pct_graves": 10.0,
      "hora_pico": 16,
@@ -1746,8 +1750,8 @@
      "carretera": "BI-633",
      "km_ini": 40,
      "km_fin": 45,
-     "esperados": 0.0013,
-     "prob": 0.0013,
+     "esperados": 0.001,
+     "prob": 0.001,
      "accidentes_anio": 2.857,
      "pct_graves": 20.0,
      "hora_pico": 16,
@@ -1761,9 +1765,9 @@
    "nombre": "Arratzu",
    "lat": 43.309,
    "lon": -2.64,
-   "salidas_esperadas_6h": 0.18,
+   "salidas_esperadas_6h": 0.17,
    "normal_6h": 0.16,
-   "prob_6h": 0.161,
+   "prob_6h": 0.16,
    "ratio_max": 1.13,
    "nivel": "verde",
    "hora_pico": "2026-11-27T22:00:00",
@@ -1780,56 +1784,6 @@
    ],
    "directo": {},
    "horas": [
-    {
-     "hora": "2026-11-27T20:00:00",
-     "lambda": 0.0296,
-     "prob": 0.029,
-     "normal": 0.0268,
-     "ratio": 1.11,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0096,
-       "mult": 1.0
-      },
-      {
-       "familia": "INCENDIO_FORESTAL_EXTERIOR",
-       "lambda": 0.0065,
-       "mult": 1.0
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0055,
-       "mult": 1.57
-      }
-     ],
-     "factores": [
-      "☔ Lluvia persistente / suelo saturado",
-      "Evento: Fiestas: Programa Fiestas Santa Catalina 2026 en Mundaka",
-      "Lluvia persistente: accidentes ×1.2 (medido por horas)",
-      "Lluvia persistente: caídas de objetos/árboles ×1.6 (medido por horas)"
-     ],
-     "situaciones": [
-      "LLUVIA_PERSISTENTE"
-     ],
-     "situacion_txt": "☔ Lluvia persistente / suelo saturado",
-     "meteo": {
-      "temp": 9.8,
-      "humedad": 93.0,
-      "lluvia_1h": 0.0,
-      "lluvia_12h": 0.1,
-      "racha_kmh": 8.6,
-      "viento_sur": false,
-      "dias_sin_lluvia": 0.0,
-      "viento_kmh": 1.8,
-      "dir_viento": 169.0,
-      "factor_racha": 1.7,
-      "dpresion_12h": 1.1,
-      "lluvia_72h": 93.6,
-      "ola_m": 0.9
-     }
-    },
     {
      "hora": "2026-11-27T21:00:00",
      "lambda": 0.0293,
@@ -2083,6 +2037,56 @@
       "lluvia_72h": 93.6,
       "ola_m": 1.1
      }
+    },
+    {
+     "hora": "2026-11-28T02:00:00",
+     "lambda": 0.028,
+     "prob": 0.028,
+     "normal": 0.0255,
+     "ratio": 1.1,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0096,
+       "mult": 1.0
+      },
+      {
+       "familia": "INCENDIO_FORESTAL_EXTERIOR",
+       "lambda": 0.0065,
+       "mult": 1.0
+      },
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0055,
+       "mult": 1.57
+      }
+     ],
+     "factores": [
+      "☔ Lluvia persistente / suelo saturado",
+      "Noche de fin de semana",
+      "Lluvia persistente: accidentes ×1.2 (medido por horas)",
+      "Lluvia persistente: caídas de objetos/árboles ×1.6 (medido por horas)"
+     ],
+     "situaciones": [
+      "LLUVIA_PERSISTENTE"
+     ],
+     "situacion_txt": "☔ Lluvia persistente / suelo saturado",
+     "meteo": {
+      "temp": 6.3,
+      "humedad": 94.0,
+      "lluvia_1h": 0.0,
+      "lluvia_12h": 0.0,
+      "racha_kmh": 4.1,
+      "viento_sur": false,
+      "dias_sin_lluvia": 1.0,
+      "viento_kmh": 3.4,
+      "dir_viento": 109.0,
+      "factor_racha": 0.8,
+      "dpresion_12h": 1.9,
+      "lluvia_72h": 93.6,
+      "ola_m": 1.2
+     }
     }
    ],
    "carreteras": [
@@ -2090,8 +2094,8 @@
      "carretera": "BI-635",
      "km_ini": 30,
      "km_fin": 35,
-     "esperados": 0.0044,
-     "prob": 0.0044,
+     "esperados": 0.0038,
+     "prob": 0.0038,
      "accidentes_anio": 7.857,
      "pct_graves": 7.3,
      "hora_pico": 15,
@@ -2102,8 +2106,8 @@
      "carretera": "BI-631",
      "km_ini": 30,
      "km_fin": 35,
-     "esperados": 0.003,
-     "prob": 0.003,
+     "esperados": 0.0027,
+     "prob": 0.0026,
      "accidentes_anio": 5.429,
      "pct_graves": 10.5,
      "hora_pico": 19,
@@ -2114,8 +2118,8 @@
      "carretera": "BI-2238",
      "km_ini": 30,
      "km_fin": 35,
-     "esperados": 0.0018,
-     "prob": 0.0018,
+     "esperados": 0.0016,
+     "prob": 0.0016,
      "accidentes_anio": 3.286,
      "pct_graves": 0.0,
      "hora_pico": 17,
@@ -2129,9 +2133,9 @@
    "nombre": "Urioste (Ortuella)",
    "lat": 43.3075,
    "lon": -3.051,
-   "salidas_esperadas_6h": 1.32,
-   "normal_6h": 1.22,
-   "prob_6h": 0.732,
+   "salidas_esperadas_6h": 1.3,
+   "normal_6h": 1.21,
+   "prob_6h": 0.729,
    "ratio_max": 1.09,
    "nivel": "verde",
    "hora_pico": "2026-11-27T22:00:00",
@@ -2143,51 +2147,6 @@
    "situaciones_6h": [],
    "directo": {},
    "horas": [
-    {
-     "hora": "2026-11-27T20:00:00",
-     "lambda": 0.225,
-     "prob": 0.201,
-     "normal": 0.2078,
-     "ratio": 1.08,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0774,
-       "mult": 1.2
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0427,
-       "mult": 1.0
-      },
-      {
-       "familia": "INCENDIO_FORESTAL_EXTERIOR",
-       "lambda": 0.0389,
-       "mult": 1.0
-      }
-     ],
-     "factores": [
-      "Evento masivo: Festival: Programa Festival Ei! Bilbao 2026 (27 noviembre - Bilbao Arena - Miribilla)"
-     ],
-     "situaciones": [],
-     "situacion_txt": "",
-     "meteo": {
-      "temp": 10.5,
-      "humedad": 89.0,
-      "lluvia_1h": 0.0,
-      "lluvia_12h": 1.3,
-      "racha_kmh": 3.2,
-      "viento_sur": false,
-      "dias_sin_lluvia": 0.0,
-      "viento_kmh": 12.0,
-      "dir_viento": 221.0,
-      "factor_racha": 0.3,
-      "dpresion_12h": 1.2,
-      "lluvia_72h": 52.0,
-      "ola_m": 1.2
-     }
-    },
     {
      "hora": "2026-11-27T21:00:00",
      "lambda": 0.22,
@@ -2416,6 +2375,52 @@
       "lluvia_72h": 52.0,
       "ola_m": 1.6
      }
+    },
+    {
+     "hora": "2026-11-28T02:00:00",
+     "lambda": 0.2129,
+     "prob": 0.192,
+     "normal": 0.1981,
+     "ratio": 1.07,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0774,
+       "mult": 1.2
+      },
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0427,
+       "mult": 1.0
+      },
+      {
+       "familia": "INCENDIO_FORESTAL_EXTERIOR",
+       "lambda": 0.0389,
+       "mult": 1.0
+      }
+     ],
+     "factores": [
+      "Noche de fin de semana",
+      "Evento masivo: Festival: Programa Festival Ei! Bilbao 2026 (27 noviembre - Bilbao Arena - Miribilla)"
+     ],
+     "situaciones": [],
+     "situacion_txt": "",
+     "meteo": {
+      "temp": 10.3,
+      "humedad": 72.0,
+      "lluvia_1h": 0.0,
+      "lluvia_12h": 0.0,
+      "racha_kmh": 20.1,
+      "viento_sur": false,
+      "dias_sin_lluvia": 0.0,
+      "viento_kmh": 10.2,
+      "dir_viento": 209.0,
+      "factor_racha": 2.0,
+      "dpresion_12h": 1.4,
+      "lluvia_72h": 52.0,
+      "ola_m": 1.7
+     }
     }
    ],
    "carreteras": [
@@ -2423,8 +2428,8 @@
      "carretera": "A-8",
      "km_ini": 120,
      "km_fin": 125,
-     "esperados": 0.0174,
-     "prob": 0.0172,
+     "esperados": 0.0134,
+     "prob": 0.0133,
      "accidentes_anio": 27.714,
      "pct_graves": 6.7,
      "hora_pico": 14,
@@ -2435,8 +2440,8 @@
      "carretera": "A-8",
      "km_ini": 125,
      "km_fin": 130,
-     "esperados": 0.0098,
-     "prob": 0.0097,
+     "esperados": 0.0075,
+     "prob": 0.0075,
      "accidentes_anio": 15.571,
      "pct_graves": 2.8,
      "hora_pico": 15,
@@ -2447,8 +2452,8 @@
      "carretera": "N-637",
      "km_ini": 5,
      "km_fin": 10,
-     "esperados": 0.0075,
-     "prob": 0.0075,
+     "esperados": 0.0058,
+     "prob": 0.0058,
      "accidentes_anio": 12.0,
      "pct_graves": 0.0,
      "hora_pico": 14,
@@ -2462,9 +2467,9 @@
    "nombre": "Zalla",
    "lat": 43.213,
    "lon": -3.137,
-   "salidas_esperadas_6h": 0.2,
-   "normal_6h": 0.19,
-   "prob_6h": 0.178,
+   "salidas_esperadas_6h": 0.19,
+   "normal_6h": 0.18,
+   "prob_6h": 0.175,
    "ratio_max": 1.07,
    "nivel": "verde",
    "hora_pico": "2026-11-27T22:00:00",
@@ -2476,51 +2481,6 @@
    "situaciones_6h": [],
    "directo": {},
    "horas": [
-    {
-     "hora": "2026-11-27T20:00:00",
-     "lambda": 0.0322,
-     "prob": 0.032,
-     "normal": 0.0316,
-     "ratio": 1.02,
-     "nivel": "verde",
-     "familias_top": [
-      {
-       "familia": "RESCATE_SALVAMENTO",
-       "lambda": 0.0083,
-       "mult": 1.0
-      },
-      {
-       "familia": "METEO_ASISTENCIA",
-       "lambda": 0.0066,
-       "mult": 1.0
-      },
-      {
-       "familia": "INCENDIO_FORESTAL_EXTERIOR",
-       "lambda": 0.0062,
-       "mult": 1.0
-      }
-     ],
-     "factores": [
-      "Evento: Festival: Enkarzine 2026 - Festival internacional de Cortometrajes"
-     ],
-     "situaciones": [],
-     "situacion_txt": "",
-     "meteo": {
-      "temp": 10.8,
-      "humedad": 79.0,
-      "lluvia_1h": 0.0,
-      "lluvia_12h": 1.3,
-      "racha_kmh": 7.9,
-      "viento_sur": false,
-      "dias_sin_lluvia": 0.0,
-      "viento_kmh": 3.3,
-      "dir_viento": 167.0,
-      "factor_racha": 1.6,
-      "dpresion_12h": 1.0,
-      "lluvia_72h": 48.0,
-      "ola_m": null
-     }
-    },
     {
      "hora": "2026-11-27T21:00:00",
      "lambda": 0.0329,
@@ -2749,6 +2709,51 @@
       "lluvia_72h": 48.0,
       "ola_m": null
      }
+    },
+    {
+     "hora": "2026-11-28T02:00:00",
+     "lambda": 0.0289,
+     "prob": 0.029,
+     "normal": 0.0286,
+     "ratio": 1.01,
+     "nivel": "verde",
+     "familias_top": [
+      {
+       "familia": "RESCATE_SALVAMENTO",
+       "lambda": 0.0083,
+       "mult": 1.0
+      },
+      {
+       "familia": "METEO_ASISTENCIA",
+       "lambda": 0.0066,
+       "mult": 1.0
+      },
+      {
+       "familia": "INCENDIO_FORESTAL_EXTERIOR",
+       "lambda": 0.0062,
+       "mult": 1.0
+      }
+     ],
+     "factores": [
+      "Noche de fin de semana"
+     ],
+     "situaciones": [],
+     "situacion_txt": "",
+     "meteo": {
+      "temp": 8.6,
+      "humedad": 82.0,
+      "lluvia_1h": 0.0,
+      "lluvia_12h": 0.0,
+      "racha_kmh": 12.0,
+      "viento_sur": false,
+      "dias_sin_lluvia": 0.0,
+      "viento_kmh": 5.8,
+      "dir_viento": 87.0,
+      "factor_racha": 2.1,
+      "dpresion_12h": 2.3,
+      "lluvia_72h": 48.0,
+      "ola_m": null
+     }
     }
    ],
    "carreteras": [
@@ -2756,8 +2761,8 @@
      "carretera": "BI-636",
      "km_ini": 15,
      "km_fin": 20,
-     "esperados": 0.0021,
-     "prob": 0.0021,
+     "esperados": 0.0018,
+     "prob": 0.0018,
      "accidentes_anio": 4.714,
      "pct_graves": 18.2,
      "hora_pico": 8,
@@ -2768,8 +2773,8 @@
      "carretera": "BI-636",
      "km_ini": 20,
      "km_fin": 25,
-     "esperados": 0.0015,
-     "prob": 0.0015,
+     "esperados": 0.0013,
+     "prob": 0.0013,
      "accidentes_anio": 3.286,
      "pct_graves": 4.3,
      "hora_pico": 18,
@@ -2780,8 +2785,8 @@
      "carretera": "BI-3651",
      "km_ini": 10,
      "km_fin": 15,
-     "esperados": 0.0014,
-     "prob": 0.0014,
+     "esperados": 0.0012,
+     "prob": 0.0012,
      "accidentes_anio": 3.0,
      "pct_graves": 14.3,
      "hora_pico": 11,
