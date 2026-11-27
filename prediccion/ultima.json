@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-27T12:12+01:00",
+ "generado": "2026-11-27T12:28+01:00",
  "horizonte_h": 6,
  "modelo": "base+reglas",
  "fuentes_ok": {
@@ -222,7 +222,7 @@
      "situacion_txt": "☔ Lluvia persistente / suelo saturado",
      "meteo": {
       "temp": 15.2,
-      "humedad": 75.0,
+      "humedad": 76.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
       "racha_kmh": 7.4,
@@ -272,7 +272,7 @@
      "situacion_txt": "☔ Lluvia persistente / suelo saturado",
      "meteo": {
       "temp": 15.2,
-      "humedad": 77.0,
+      "humedad": 79.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
       "racha_kmh": 8.6,
@@ -322,7 +322,7 @@
      "situacion_txt": "☔ Lluvia persistente / suelo saturado",
      "meteo": {
       "temp": 14.4,
-      "humedad": 88.0,
+      "humedad": 85.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
       "racha_kmh": 7.9,
@@ -582,7 +582,7 @@
      "situacion_txt": "☔ Lluvia persistente / suelo saturado",
      "meteo": {
       "temp": 15.4,
-      "humedad": 76.0,
+      "humedad": 77.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.1,
       "racha_kmh": 9.0,
@@ -632,7 +632,7 @@
      "situacion_txt": "☔ Lluvia persistente / suelo saturado",
      "meteo": {
       "temp": 15.5,
-      "humedad": 75.0,
+      "humedad": 77.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.1,
       "racha_kmh": 6.8,
@@ -915,7 +915,7 @@
      "situacion_txt": "",
      "meteo": {
       "temp": 16.4,
-      "humedad": 71.0,
+      "humedad": 70.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 1.4,
       "racha_kmh": 9.3,
@@ -1278,7 +1278,7 @@
      "situacion_txt": "",
      "meteo": {
       "temp": 16.4,
-      "humedad": 69.0,
+      "humedad": 70.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.3,
       "racha_kmh": 10.6,
@@ -1323,7 +1323,7 @@
      "situacion_txt": "",
      "meteo": {
       "temp": 15.5,
-      "humedad": 79.0,
+      "humedad": 80.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.3,
       "racha_kmh": 8.6,
@@ -1556,7 +1556,7 @@
      "situacion_txt": "",
      "meteo": {
       "temp": 16.4,
-      "humedad": 65.0,
+      "humedad": 66.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.6,
       "racha_kmh": 15.5,
@@ -1904,7 +1904,7 @@
      "situacion_txt": "☔ Lluvia persistente / suelo saturado",
      "meteo": {
       "temp": 15.7,
-      "humedad": 75.0,
+      "humedad": 76.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.1,
       "racha_kmh": 9.0,
@@ -1953,7 +1953,7 @@
      "situacion_txt": "☔ Lluvia persistente / suelo saturado",
      "meteo": {
       "temp": 15.1,
-      "humedad": 79.0,
+      "humedad": 80.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.1,
       "racha_kmh": 11.0,
@@ -2275,7 +2275,7 @@
      "situacion_txt": "",
      "meteo": {
       "temp": 16.2,
-      "humedad": 71.0,
+      "humedad": 70.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.1,
       "racha_kmh": 5.8,
@@ -2320,7 +2320,7 @@
      "situacion_txt": "",
      "meteo": {
       "temp": 15.1,
-      "humedad": 83.0,
+      "humedad": 80.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.1,
       "racha_kmh": 6.0,
