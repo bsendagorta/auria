@@ -6684,3 +6684,6 @@ ts,salidas_desde_8,salidas_anio,n_activas,ok,error
 2026-11-28T00:33:23+01:00,,,,0,cannot import name 'stealth_sync' from 'playwright_stealth' (/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/site-packages/playwright_stealth/__init__.py)
 2026-11-28T00:34:23+01:00,,,,0,cannot import name 'stealth_sync' from 'playwright_stealth' (/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/site-packages/playwright_stealth/__init__.py)
 2026-11-28T00:35:23+01:00,,,,0,cannot import name 'stealth_sync' from 'playwright_stealth' (/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/site-packages/playwright_stealth/__init__.py)
+2026-11-28T00:36:23+01:00,,,,0,cannot import name 'stealth_sync' from 'playwright_stealth' (/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/site-packages/playwright_stealth/__init__.py)
+2026-11-28T00:37:23+01:00,,,,0,cannot import name 'stealth_sync' from 'playwright_stealth' (/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/site-packages/playwright_stealth/__init__.py)
+2026-11-28T00:38:23+01:00,,,,0,cannot import name 'stealth_sync' from 'playwright_stealth' (/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/site-packages/playwright_stealth/__init__.py)
