@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-27T22:31+01:00",
+ "generado": "2026-11-27T22:46+01:00",
  "horizonte_h": 6,
  "modelo": "base+reglas",
  "fuentes_ok": {
@@ -68,7 +68,7 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 9.2,
+      "temp": 9.1,
       "humedad": 87.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.1,
@@ -115,7 +115,7 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 8.9,
+      "temp": 8.7,
       "humedad": 86.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
@@ -161,7 +161,7 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 8.3,
+      "temp": 8.2,
       "humedad": 86.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
@@ -519,7 +519,7 @@
      ],
      "situacion_txt": "☔ Lluvia persistente / suelo saturado",
      "meteo": {
-      "temp": 6.9,
+      "temp": 7.0,
       "humedad": 93.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
@@ -620,7 +620,7 @@
      ],
      "situacion_txt": "☔ Lluvia persistente / suelo saturado",
      "meteo": {
-      "temp": 6.5,
+      "temp": 6.6,
       "humedad": 92.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
@@ -777,7 +777,7 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 10.3,
+      "temp": 10.0,
       "humedad": 83.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.4,
@@ -824,7 +824,7 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 9.8,
+      "temp": 9.7,
       "humedad": 82.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.1,
@@ -870,7 +870,7 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 9.6,
+      "temp": 9.5,
       "humedad": 81.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.1,
@@ -916,7 +916,7 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 9.6,
+      "temp": 9.4,
       "humedad": 80.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.1,
@@ -962,7 +962,7 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 9.6,
+      "temp": 9.5,
       "humedad": 80.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.1,
@@ -1254,7 +1254,7 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 10.2,
+      "temp": 10.1,
       "humedad": 77.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
@@ -1459,7 +1459,7 @@
      ],
      "situacion_txt": "☔ Lluvia persistente / suelo saturado",
      "meteo": {
-      "temp": 8.0,
+      "temp": 8.1,
       "humedad": 93.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
@@ -1509,7 +1509,7 @@
      ],
      "situacion_txt": "☔ Lluvia persistente / suelo saturado",
      "meteo": {
-      "temp": 7.9,
+      "temp": 7.7,
       "humedad": 92.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
@@ -1559,7 +1559,7 @@
      ],
      "situacion_txt": "☔ Lluvia persistente / suelo saturado",
      "meteo": {
-      "temp": 7.6,
+      "temp": 7.4,
       "humedad": 92.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
@@ -1609,7 +1609,7 @@
      ],
      "situacion_txt": "☔ Lluvia persistente / suelo saturado",
      "meteo": {
-      "temp": 7.4,
+      "temp": 7.1,
       "humedad": 91.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
@@ -1659,7 +1659,7 @@
      ],
      "situacion_txt": "☔ Lluvia persistente / suelo saturado",
      "meteo": {
-      "temp": 7.1,
+      "temp": 6.9,
       "humedad": 91.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
@@ -1824,7 +1824,7 @@
      ],
      "situacion_txt": "☔ Lluvia persistente / suelo saturado",
      "meteo": {
-      "temp": 7.8,
+      "temp": 7.6,
       "humedad": 98.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
@@ -1875,7 +1875,7 @@
      ],
      "situacion_txt": "☔ Lluvia persistente / suelo saturado",
      "meteo": {
-      "temp": 7.5,
+      "temp": 7.4,
       "humedad": 95.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
@@ -1977,7 +1977,7 @@
      ],
      "situacion_txt": "☔ Lluvia persistente / suelo saturado",
      "meteo": {
-      "temp": 6.7,
+      "temp": 6.8,
       "humedad": 94.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
@@ -2027,7 +2027,7 @@
      ],
      "situacion_txt": "☔ Lluvia persistente / suelo saturado",
      "meteo": {
-      "temp": 6.3,
+      "temp": 6.2,
       "humedad": 95.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
@@ -2077,7 +2077,7 @@
      ],
      "situacion_txt": "☔ Lluvia persistente / suelo saturado",
      "meteo": {
-      "temp": 5.9,
+      "temp": 6.0,
       "humedad": 94.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
@@ -2182,7 +2182,7 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 11.1,
+      "temp": 10.9,
       "humedad": 76.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.1,
@@ -2274,7 +2274,7 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 10.7,
+      "temp": 10.6,
       "humedad": 74.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
@@ -2320,7 +2320,7 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 10.5,
+      "temp": 10.3,
       "humedad": 74.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
@@ -2366,7 +2366,7 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 10.5,
+      "temp": 10.2,
       "humedad": 73.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
@@ -2412,7 +2412,7 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 10.6,
+      "temp": 10.2,
       "humedad": 73.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
@@ -2517,7 +2517,7 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 9.6,
+      "temp": 9.4,
       "humedad": 84.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.1,
@@ -2563,7 +2563,7 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 9.1,
+      "temp": 9.2,
       "humedad": 83.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.1,
@@ -2655,7 +2655,7 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 8.7,
+      "temp": 8.5,
       "humedad": 83.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
@@ -2700,7 +2700,7 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 8.7,
+      "temp": 8.5,
       "humedad": 83.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
@@ -2745,7 +2745,7 @@
      "situaciones": [],
      "situacion_txt": "",
      "meteo": {
-      "temp": 8.7,
+      "temp": 8.5,
       "humedad": 82.0,
       "lluvia_1h": 0.0,
       "lluvia_12h": 0.0,
