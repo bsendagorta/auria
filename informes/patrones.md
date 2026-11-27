@@ -1,5 +1,5 @@
 # AURIA — Patrones reales SPEIS (2021-2025)
-Generado 2026-11-26 · 30,574 intervenciones operativas (sin Bilbao).
+Generado 2026-11-27 · 30,574 intervenciones operativas (sin Bilbao).
 
 ## Estacionalidad (1 = mes medio)
 | familia                       |    E |    F |    M |    A |    M |    J |    J |    A |    S |    O |    N |    D |

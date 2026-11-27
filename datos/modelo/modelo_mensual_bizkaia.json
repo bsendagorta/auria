@@ -1,5 +1,5 @@
 {
- "fecha": "2026-11-26",
+ "fecha": "2026-11-27",
  "desde": 2021,
  "anio_test": 2025,
  "mejor": "gbm",
@@ -16,7 +16,7 @@
    "MAE": 16.3,
    "desv_poisson": 7.719,
    "total_real": 6269.0,
-   "total_pred": 7124.293
+   "total_pred": 7124.294
   },
   {
    "modelo": "gbm",
