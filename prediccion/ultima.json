@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-27T13:00+01:00",
+ "generado": "2026-11-27T13:06+01:00",
  "horizonte_h": 6,
  "modelo": "base+reglas",
  "fuentes_ok": {
@@ -446,7 +446,7 @@
       "factor_racha": 2.4,
       "dpresion_12h": 0.9,
       "lluvia_72h": 94.9,
-      "ola_m": 0.6
+      "ola_m": 0.7
      }
     },
     {
@@ -797,7 +797,7 @@
       "factor_racha": 1.4,
       "dpresion_12h": 1.0,
       "lluvia_72h": 52.8,
-      "ola_m": 0.8
+      "ola_m": 0.9
      }
     },
     {
@@ -930,7 +930,7 @@
       "factor_racha": 1.8,
       "dpresion_12h": 0.8,
       "lluvia_72h": 52.1,
-      "ola_m": 0.9
+      "ola_m": 1.0
      }
     },
     {
@@ -1207,7 +1207,7 @@
       "factor_racha": 1.7,
       "dpresion_12h": 0.3,
       "lluvia_72h": 58.4,
-      "ola_m": 0.9
+      "ola_m": 1.0
      }
     },
     {
@@ -1295,7 +1295,7 @@
       "factor_racha": 1.9,
       "dpresion_12h": 0.5,
       "lluvia_72h": 58.3,
-      "ola_m": 1.1
+      "ola_m": 1.0
      }
     },
     {
@@ -1776,7 +1776,7 @@
       "factor_racha": 2.1,
       "dpresion_12h": 0.8,
       "lluvia_72h": 93.1,
-      "ola_m": 0.7
+      "ola_m": 0.8
      }
     },
     {
