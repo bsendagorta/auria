@@ -28,3 +28,4 @@ Call log:
 2026-11-26T03:47:19+01:00,,,,0,cannot import name 'stealth_sync' from 'playwright_stealth' (/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/site-packages/playwright_stealth/__init__.py)
 2026-11-26T12:34:57+01:00,,,,0,cannot import name 'stealth_sync' from 'playwright_stealth' (/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/site-packages/playwright_stealth/__init__.py)
 2026-11-26T21:32:30+01:00,,,,0,cannot import name 'stealth_sync' from 'playwright_stealth' (/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/site-packages/playwright_stealth/__init__.py)
+2026-11-27T04:16:37+01:00,,,,0,cannot import name 'stealth_sync' from 'playwright_stealth' (/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/site-packages/playwright_stealth/__init__.py)
