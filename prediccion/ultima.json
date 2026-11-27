@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-27T02:16+01:00",
+ "generado": "2026-11-27T02:32+01:00",
  "horizonte_h": 6,
  "modelo": "base+reglas",
  "fuentes_ok": {
@@ -82,7 +82,7 @@
       "viento_kmh": 2.6,
       "dir_viento": 214.0,
       "factor_racha": 0.6,
-      "dpresion_12h": 0.4,
+      "dpresion_12h": 0.3,
       "lluvia_72h": 92.9,
       "ola_m": 0.9
      }
@@ -131,7 +131,7 @@
       "viento_kmh": 3.6,
       "dir_viento": 217.0,
       "factor_racha": 0.8,
-      "dpresion_12h": 0.7,
+      "dpresion_12h": 0.6,
       "lluvia_72h": 92.9,
       "ola_m": 0.9
      }
@@ -180,7 +180,7 @@
       "viento_kmh": 3.6,
       "dir_viento": 217.0,
       "factor_racha": 0.9,
-      "dpresion_12h": 0.8,
+      "dpresion_12h": 0.7,
       "lluvia_72h": 92.9,
       "ola_m": 0.9
      }
@@ -229,7 +229,7 @@
       "viento_kmh": 3.5,
       "dir_viento": 190.0,
       "factor_racha": 1.0,
-      "dpresion_12h": 0.7,
+      "dpresion_12h": 0.6,
       "lluvia_72h": 92.9,
       "ola_m": 0.8
      }
@@ -278,7 +278,7 @@
       "viento_kmh": 3.6,
       "dir_viento": 204.0,
       "factor_racha": 0.9,
-      "dpresion_12h": 0.1,
+      "dpresion_12h": 0.0,
       "lluvia_72h": 92.9,
       "ola_m": 0.8
      }
@@ -438,7 +438,7 @@
       "viento_kmh": 1.8,
       "dir_viento": 79.0,
       "factor_racha": 1.0,
-      "dpresion_12h": 0.4,
+      "dpresion_12h": 0.3,
       "lluvia_72h": 88.1,
       "ola_m": null
      }
@@ -487,7 +487,7 @@
       "viento_kmh": 3.7,
       "dir_viento": 79.0,
       "factor_racha": 0.9,
-      "dpresion_12h": 0.8,
+      "dpresion_12h": 0.7,
       "lluvia_72h": 88.1,
       "ola_m": null
      }
@@ -536,7 +536,7 @@
       "viento_kmh": 3.4,
       "dir_viento": 72.0,
       "factor_racha": 0.9,
-      "dpresion_12h": 1.2,
+      "dpresion_12h": 1.1,
       "lluvia_72h": 88.1,
       "ola_m": null
      }
@@ -585,7 +585,7 @@
       "viento_kmh": 2.4,
       "dir_viento": 69.0,
       "factor_racha": 0.7,
-      "dpresion_12h": 0.9,
+      "dpresion_12h": 0.7,
       "lluvia_72h": 88.1,
       "ola_m": null
      }
@@ -794,7 +794,7 @@
       "viento_kmh": 1.9,
       "dir_viento": 112.0,
       "factor_racha": 0.6,
-      "dpresion_12h": 0.1,
+      "dpresion_12h": 0.0,
       "lluvia_72h": 94.8,
       "ola_m": 0.8
      }
@@ -843,7 +843,7 @@
       "viento_kmh": 2.9,
       "dir_viento": 120.0,
       "factor_racha": 0.6,
-      "dpresion_12h": 0.6,
+      "dpresion_12h": 0.5,
       "lluvia_72h": 94.8,
       "ola_m": 0.8
      }
@@ -892,7 +892,7 @@
       "viento_kmh": 2.7,
       "dir_viento": 113.0,
       "factor_racha": 0.5,
-      "dpresion_12h": 0.8,
+      "dpresion_12h": 0.7,
       "lluvia_72h": 94.8,
       "ola_m": 0.8
      }
@@ -941,7 +941,7 @@
       "viento_kmh": 2.9,
       "dir_viento": 105.0,
       "factor_racha": 0.7,
-      "dpresion_12h": 0.6,
+      "dpresion_12h": 0.4,
       "lluvia_72h": 94.8,
       "ola_m": 0.7
      }
@@ -1039,7 +1039,7 @@
       "viento_kmh": 3.0,
       "dir_viento": 102.0,
       "factor_racha": 0.9,
-      "dpresion_12h": -0.2,
+      "dpresion_12h": -0.3,
       "lluvia_72h": 94.8,
       "ola_m": 0.7
      }
@@ -1138,7 +1138,7 @@
       "viento_kmh": 5.1,
       "dir_viento": 225.0,
       "factor_racha": 0.7,
-      "dpresion_12h": -0.3,
+      "dpresion_12h": -0.6,
       "lluvia_72h": 51.3,
       "ola_m": 1.0
      }
@@ -1310,7 +1310,7 @@
       "viento_kmh": 4.7,
       "dir_viento": 273.0,
       "factor_racha": 0.6,
-      "dpresion_12h": -0.6,
+      "dpresion_12h": -0.5,
       "lluvia_72h": 51.3,
       "ola_m": 0.9
      }
@@ -1452,7 +1452,7 @@
       "viento_kmh": 13.0,
       "dir_viento": 118.0,
       "factor_racha": 1.6,
-      "dpresion_12h": 0.0,
+      "dpresion_12h": -0.2,
       "lluvia_72h": 58.3,
       "ola_m": 1.0
      }
@@ -1538,7 +1538,7 @@
       "viento_kmh": 11.1,
       "dir_viento": 115.0,
       "factor_racha": 1.5,
-      "dpresion_12h": 0.4,
+      "dpresion_12h": 0.3,
       "lluvia_72h": 58.3,
       "ola_m": 1.0
      }
@@ -1581,7 +1581,7 @@
       "viento_kmh": 11.9,
       "dir_viento": 113.0,
       "factor_racha": 1.6,
-      "dpresion_12h": 0.2,
+      "dpresion_12h": 0.1,
       "lluvia_72h": 58.3,
       "ola_m": 0.9
      }
@@ -1624,7 +1624,7 @@
       "viento_kmh": 12.6,
       "dir_viento": 118.0,
       "factor_racha": 1.6,
-      "dpresion_12h": -0.2,
+      "dpresion_12h": -0.1,
       "lluvia_72h": 58.3,
       "ola_m": 0.9
      }
@@ -1766,7 +1766,7 @@
       "viento_kmh": 9.9,
       "dir_viento": 100.0,
       "factor_racha": 1.2,
-      "dpresion_12h": 0.0,
+      "dpresion_12h": -0.1,
       "lluvia_72h": 57.3,
       "ola_m": null
      }
@@ -1809,7 +1809,7 @@
       "viento_kmh": 9.1,
       "dir_viento": 99.0,
       "factor_racha": 1.3,
-      "dpresion_12h": 0.6,
+      "dpresion_12h": 0.5,
       "lluvia_72h": 57.3,
       "ola_m": null
      }
@@ -1852,7 +1852,7 @@
       "viento_kmh": 8.0,
       "dir_viento": 98.0,
       "factor_racha": 1.3,
-      "dpresion_12h": 0.7,
+      "dpresion_12h": 0.6,
       "lluvia_72h": 57.3,
       "ola_m": null
      }
@@ -1895,7 +1895,7 @@
       "viento_kmh": 8.8,
       "dir_viento": 98.0,
       "factor_racha": 1.3,
-      "dpresion_12h": 0.4,
+      "dpresion_12h": 0.3,
       "lluvia_72h": 57.3,
       "ola_m": null
      }
@@ -1981,7 +1981,7 @@
       "viento_kmh": 8.1,
       "dir_viento": 99.0,
       "factor_racha": 1.5,
-      "dpresion_12h": -0.3,
+      "dpresion_12h": -0.4,
       "lluvia_72h": 57.3,
       "ola_m": null
      }
@@ -2080,7 +2080,7 @@
       "viento_kmh": 6.1,
       "dir_viento": 140.0,
       "factor_racha": 2.5,
-      "dpresion_12h": 0.2,
+      "dpresion_12h": 0.1,
       "lluvia_72h": 47.7,
       "ola_m": null
      }
@@ -2166,7 +2166,7 @@
       "viento_kmh": 7.4,
       "dir_viento": 166.0,
       "factor_racha": 2.0,
-      "dpresion_12h": 0.7,
+      "dpresion_12h": 0.6,
       "lluvia_72h": 47.7,
       "ola_m": null
      }
@@ -2209,7 +2209,7 @@
       "viento_kmh": 7.1,
       "dir_viento": 148.0,
       "factor_racha": 2.0,
-      "dpresion_12h": 0.4,
+      "dpresion_12h": 0.3,
       "lluvia_72h": 47.7,
       "ola_m": null
      }
@@ -2295,7 +2295,7 @@
       "viento_kmh": 7.1,
       "dir_viento": 124.0,
       "factor_racha": 2.1,
-      "dpresion_12h": -0.3,
+      "dpresion_12h": -0.4,
       "lluvia_72h": 47.7,
       "ola_m": null
      }
@@ -2394,7 +2394,7 @@
       "viento_kmh": 5.1,
       "dir_viento": 141.0,
       "factor_racha": 2.0,
-      "dpresion_12h": 0.2,
+      "dpresion_12h": 0.1,
       "lluvia_72h": 46.5,
       "ola_m": null
      }
@@ -2437,7 +2437,7 @@
       "viento_kmh": 5.4,
       "dir_viento": 143.0,
       "factor_racha": 1.5,
-      "dpresion_12h": 0.8,
+      "dpresion_12h": 0.7,
       "lluvia_72h": 46.5,
       "ola_m": null
      }
@@ -2480,7 +2480,7 @@
       "viento_kmh": 4.7,
       "dir_viento": 148.0,
       "factor_racha": 1.5,
-      "dpresion_12h": 0.9,
+      "dpresion_12h": 0.8,
       "lluvia_72h": 46.5,
       "ola_m": null
      }
@@ -2523,7 +2523,7 @@
       "viento_kmh": 4.5,
       "dir_viento": 125.0,
       "factor_racha": 1.5,
-      "dpresion_12h": 0.5,
+      "dpresion_12h": 0.4,
       "lluvia_72h": 46.5,
       "ola_m": null
      }
@@ -2566,7 +2566,7 @@
       "viento_kmh": 4.4,
       "dir_viento": 100.0,
       "factor_racha": 1.6,
-      "dpresion_12h": 0.3,
+      "dpresion_12h": 0.4,
       "lluvia_72h": 46.5,
       "ola_m": null
      }
